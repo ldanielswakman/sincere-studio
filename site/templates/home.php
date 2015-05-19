@@ -1,15 +1,27 @@
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
+  <main>
 
-    <div class="text">
-      <h1><?php echo $page->title()->html() ?></h1>
-      <?php echo $page->text()->kirbytext() ?>
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="text">
+          <h1><?php echo $page->title()->html() ?></h1>
+          <?php echo $page->text()->kirbytext() ?>
+        </div>
+
+      </div>
     </div>
 
-    <hr>
+    <hr />
 
-    <?php snippet('projects') ?>
+    <div class="row">
+      <div class="col-md-12">
+
+        <?php snippet('projects') ?>
+        
+      </div>
+    </div>
 
   </main>
 
