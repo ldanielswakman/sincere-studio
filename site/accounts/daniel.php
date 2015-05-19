@@ -8,6 +8,6 @@ language: en
 role: admin
 token: 387ffdb27245ede019dc518091ef333426bd936e
 history:
+  - null
   - projects
   - home
-  - null
