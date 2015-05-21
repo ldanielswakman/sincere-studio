@@ -19,29 +19,29 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 /* --- Webfont includes --- */
 @font-face {
   font-family: 'Meta';
-  src: url('fonts/metanormal-roman-webfont.woff') format('woff'),
-       url('fonts/metanormal-roman-webfont.ttf') format('truetype');
+  src: url('../fonts/metanormal-roman-webfont.woff') format('woff'),
+       url('../fonts/metanormal-roman-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Meta';
-  src: url('fonts/metanormal-italic-webfont.woff') format('woff'),
-       url('fonts/metanormal-italic-webfont.ttf') format('truetype');
+  src: url('../fonts/metanormal-italic-webfont.woff') format('woff'),
+       url('../fonts/metanormal-italic-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'Meta';
-  src: url('fonts/metabold-roman-webfont.woff') format('woff'),
-       url('fonts/metabold-roman-webfont.ttf') format('truetype');
+  src: url('../fonts/metabold-roman-webfont.woff') format('woff'),
+       url('../fonts/metabold-roman-webfont.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Meta';
-  src: url('fonts/metabold-italic-webfont.woff') format('woff'),
-       url('fonts/metabold-italic-webfont.ttf') format('truetype');
+  src: url('../fonts/metabold-italic-webfont.woff') format('woff'),
+       url('../fonts/metabold-italic-webfont.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
 }
@@ -81,6 +81,9 @@ a:focus {
 img {
   max-width: 100%;
 }
+hr {
+  border-bottom: 1px solid #ccc;
+}
 
 
 
@@ -94,16 +97,85 @@ img {
 .u-alignright {
   text-align: right;
 }
+.u-mt5 {
+  margin-top: 5px;
+}
+.u-mt10 {
+  margin-top: 10px;
+}
+.u-mt20 {
+  margin-top: 20px;
+}
+.u-mt30 {
+  margin-top: 30px;
+}
+.u-mt40 {
+  margin-top: 40px;
+}
+.u-pt5 {
+  padding-top: 5px;
+}
+.u-pt10 {
+  padding-top: 10px;
+}
+.u-pt20 {
+  padding-top: 20px;
+}
+.u-pt30 {
+  padding-top: 30px;
+}
+.u-pt40 {
+  padding-top: 40px;
+}
 
+
+
+/* --- Buttons --- */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  line-height: 20px;
+  font-size: 1em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.btn.btn-lg {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.btn.btn-sm {
+  padding: 5px 10px;
+  font-size: 0.8em;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.btn.btn-outline {
+  background-color: transparent;
+  border: 1px solid #34c2d8;
+  color: #34c2d8;
+}
+.btn.btn-outline:hover,
+.btn.btn-outline:focus {
+  background-color: #34c2d8;
+  color: #fff;
+}
 
 
 /* --- Layout --- */
 .row {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 main {
   background-color: #eee;
+}
+section {
+  padding: 50px 0;
 }
 
 
@@ -120,6 +192,10 @@ header h6 {
   color: #ccc;
   font-weight: normal;
   text-transform: uppercase;
+}
+.home header {
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
 
 
@@ -189,6 +265,24 @@ header h6 {
 #logo.animated .logo-svg-path {
   -webkit-animation: dash 2s ease-in-out;
   animation: dash 2s ease-in-out;
+}
+@keyframes dash {
+  from { stroke-dashoffset: 500; }
+    to { stroke-dashoffset:   0; }
+}
+@-webkit-keyframes dash {
+  from { stroke-dashoffset: 500; }
+    to { stroke-dashoffset:   0; }
+}
+.home #logo { 
+  top: 30px; 
+}
+
+
+
+/* --- Home --- */
+.home big {
+  font-size: 1.55em;
 }
 
 

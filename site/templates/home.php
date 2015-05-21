@@ -2,16 +2,15 @@
 
   <main>
 
-    <div class="row">
-      <div class="col-md-12">
+    <section>
 
-        <div class="text">
-          <h1><?php echo $page->title()->html() ?></h1>
-          <?php echo $page->text()->kirbytext() ?>
-        </div>
+      <div class="row">
+
+        <?php echo $page->text()->kirbytext() ?>
 
       </div>
-    </div>
+
+    </section>
 
     <hr />
 
