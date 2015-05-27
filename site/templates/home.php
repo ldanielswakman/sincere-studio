@@ -2,7 +2,7 @@
 
   <main>
 
-    <section>
+    <section class="u-mb40">
 
       <div class="row">
 
@@ -12,15 +12,7 @@
 
     </section>
 
-    <hr />
-
-    <div class="row">
-      <div class="col-md-12">
-
-        <?php snippet('projects') ?>
-        
-      </div>
-    </div>
+    <?php snippet('projects') ?>
 
   </main>
 

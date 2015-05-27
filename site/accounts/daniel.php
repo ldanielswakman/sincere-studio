@@ -8,4 +8,6 @@ language: en
 role: admin
 token: c1c7a97006deb3fbfcd1803e4d0adcb1e65cb88d
 history:
+  - work/math-garden-thesis-cover
+  - work/project-a
   - home
