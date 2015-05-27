@@ -11,3 +11,15 @@ fields:
   text:
     label: Text
     type:  textarea
+  featured1:
+    label: Featured Project 1
+    type: select
+    options: children
+  featured2:
+    label: Featured Project 2
+    type: select
+    options: children
+  featured3:
+    label: Featured Project 3
+    type: select
+    options: children

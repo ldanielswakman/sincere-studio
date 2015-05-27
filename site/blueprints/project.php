@@ -20,6 +20,10 @@ fields:
   projecturl:
     label: URL
     type:  url
+  featuredimage:
+    label: Featured Image
+    type: select
+    options: images
   sections:
     label: Sections
     type: structure

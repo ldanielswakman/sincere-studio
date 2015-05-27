@@ -34,8 +34,8 @@
               <?php
               $tags = explode(',', $page->tags()->html());
               foreach ($tags as $key => $tag) :
-              echo '<a href="/work/tag:' . $tag . '">' . $tag . '</a>';
-              echo (($key+1) < count($tags)) ? ', ' : '';
+                echo '<a href="' . u('/work/tag:' . $tag) . '">' . $tag . '</a>';
+                echo (($key+1) < count($tags)) ? ', ' : '';
               endforeach;
               ?>
             </p>
