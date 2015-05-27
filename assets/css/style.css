@@ -65,7 +65,7 @@ body {
   font-kerning: normal;
 }
 ::selection {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 51, 85, 0.75);
   color: #fff;
 }
 a {
@@ -84,6 +84,9 @@ img {
 hr {
   border-bottom: 1px solid #ccc;
 }
+h2 {
+  font-weight: normal;
+}
 h4 {
   text-align: center;
   text-transform: uppercase;
@@ -92,6 +95,13 @@ h4 {
   color: #999;
   color: rgba(0, 0, 0, .4);
   font-weight: 300;
+}
+p {
+  font-size: 1em;
+  line-height: 1.8em;
+}
+p.meta {
+  color: #99a;
 }
 
 
@@ -136,6 +146,25 @@ h4 {
 .u-mb40 {
   margin-bottom: 40px;
 }
+.u-mr5 {
+  margin-right: 5px;
+}
+.u-mr10 {
+  margin-right: 10px;
+}
+.u-mr20 {
+  margin-right: 20px;
+}
+.u-mr30 {
+  margin-right: 30px;
+}
+.u-mr40 {
+  margin-right: 40px;
+}
+.u-mv5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 .u-mv10 {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -166,6 +195,22 @@ h4 {
 }
 .u-pt40 {
   padding-top: 40px;
+}
+.u-pv10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.u-pv20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.u-pv30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.u-pv40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 
@@ -206,6 +251,7 @@ h4 {
 }
 
 
+
 /* --- Layout --- */
 .row {
   max-width: 1100px;
@@ -217,7 +263,9 @@ main {
 }
 section {
   padding: 50px 0;
-}
+  background-position: center 30%;
+  background-size: cover;
+} 
 
 
 
