@@ -17,6 +17,9 @@ fields:
   tags:
     label: Tags
     type:  tags
+  projecturl:
+    label: URL
+    type:  url
   sections:
     label: Sections
     type: structure
