@@ -10,10 +10,12 @@ fields:
     type:  text
   year:
     label: Year
-    type:  text
-  text:
-    label: Text
-    type:  textarea
+    type: text
+  description:
+    label: > 
+      Description <em>(1 sentence)</em>
+    type: text
+    icon: font
   tags:
     label: Tags
     type:  tags

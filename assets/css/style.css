@@ -87,7 +87,7 @@ hr {
 h2 {
   font-weight: normal;
 }
-h4 {
+h5 {
   text-align: center;
   text-transform: uppercase;
   font-size: 1em;
@@ -121,6 +121,14 @@ p.meta a:hover, p.meta a:focus {
 }
 .u-alignright {
   text-align: right;
+}
+.u-floatleft {
+  display: inline-block;
+  float: left;
+}
+.u-floatright {
+  display: inline-block;
+  float: right;
 }
 .u-mt5 {
   margin-top: 5px;
@@ -279,6 +287,57 @@ p.meta a:hover, p.meta a:focus {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.u-ph10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.u-ph20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.u-ph30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.u-ph40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.u-ph50 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.u-ph60 {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+
+
+/* --- Icons (extends Ionicons) --- */
+.ion-15x {
+  font-size: 1.5em;
+}
+.ion-2x {
+  font-size: 2em;
+}
+.ion-3x {
+  font-size: 3em;
+}
+.ion-4x {
+  font-size: 4em;
+}
+
+
+
+/* --- Colour classes --- */
+.c-white {
+  color: #fff;
+}
+.c-lightgray {
+  color: #ccc;
+}
+
 
 
 
@@ -316,6 +375,15 @@ p.meta a:hover, p.meta a:focus {
   background-color: #34c2d8;
   color: #fff;
 }
+.btn-circle {
+  width: 42px;
+  height: 42px;
+  padding: 10px;
+  line-height: 24px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
 
 
 
@@ -333,14 +401,24 @@ p.meta a:hover, p.meta a:focus {
   margin-left: auto;
   margin-right: auto;
 }
+.row.row-full {
+  max-width: 100%;
+}
+.row.row-nopadding > [class^="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
 main {
   background-color: #eee;
 }
 section {
   padding: 50px 0;
-  background-position: center 30%;
+  background-position: 50% 0;
   background-size: cover;
 } 
+section.slide {
+  min-height: 90vh;
+}
 
 
 
@@ -456,22 +534,74 @@ header h6 {
 
 
 /* --- Page: Work --- */
-.featured .featured-project {
+.featured {
+  padding: 0;
+}
+.featured-project {
   position: relative;
   display: block;
-  height: 220px;
+  height: 200px;
   background-size: cover;
   background-position: center center;
   background-color: rgba(0, 0, 0, .1);
+  background-blend-mode: saturation;
 }
-.featured .featured-project .text {
+.featured-project .text {
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   padding-top: 90px;
-  background-color: rgba(0, 51, 85, 0.25);
+  background-color: rgba(0, 51, 85, 0.5);
   text-align: center;
   color: #fff;
   font-weight: bold;
+  letter-spacing: 0.05em;
+  -webkit-transition: all 0.2s cubic-bezier(1,0,0,1);
+  -moz-transition: all 0.2s cubic-bezier(1,0,0,1);
+  transition: all 0.2s cubic-bezier(1,0,0,1);
+}
+.featured-project:hover .text,
+.featured-project:focus .text {
+  padding-top: 160px;
+  background-color: rgba(0, 51, 85, 0.05);
+}
+.filter-container {
+  display: inline-block;
+  color: #ccc;
+}
+.filter-container:hover, 
+.filter-container:focus {
+  color: #999;
+}
+#project_filter {
+  display: inline-block;
+  margin-right: 10px;
+  background: none;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+#project_filter:focus {
+  outline: none;
+}
+.filter-container:after {
+  content: '\f3d0';
+  float: right;
+  font-family: 'Ionicons';
+}
+
+
+
+/* --- Page: Project --- */
+section.cta {
+  background-color: #888;
+  color: #fff;
+}
+section.cta:hover {
+  background-color: #777;
+}
+section.cta em {
+  opacity: 0.75;
 }
 
 

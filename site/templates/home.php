@@ -12,7 +12,7 @@
 
     </section>
 
-    <?php snippet('projects') ?>
+    <?php snippet('featured') ?>
 
   </main>
 

@@ -17,20 +17,21 @@
     // Bootstrap
     echo css('//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css');
     // Google Webfonts
-    // echo css('http://fonts.googleapis.com/css?family=Quando');
     // echo css('http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700italic,700,300,300italic');
     // Ionicons
     echo css('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
     // JQuery, SmoothScroll & Fastclick
     echo js('http://code.jquery.com/jquery-1.11.1.min.js');
-    // echo js('http://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js');
+    echo js('http://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js');
+    echo js('https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js');
     // echo js('http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js');
   // if localhost then load local assets
   else :
     echo css('assets/css/bootstrap.min.css');
     echo css('assets/css/ionicons.min.css');
     echo js('assets/js/jquery-1.11.1.min.js');
-    // echo js('assets/js/jquery.smooth-scroll.min.js');
+    echo js('assets/js/jquery.smooth-scroll.min.js');
+    echo js('assets/js/isotope.pkgd.min.js');
     // echo js('assets/js/fastclick.min.js');
   endif;
 

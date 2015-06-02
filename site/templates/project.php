@@ -11,11 +11,11 @@
       $imagecolumn = kirbytext($section['imagecolumn']);
       $needle = 'src="';
       $image_url = explode('" ',substr(strstr($imagecolumn, $needle), strlen($needle)))[0];
-      $bg = ' style="background-image: url(' . $image_url . '); min-height: 500px;"';
+      $bg = ' class="slide" style="background-image: url(' . $image_url . ');"';
     endif;
     ?>
 
-    <section<?php echo $bg ?>>
+    <section<?php echo ' id="part' . ($key+1) . '" ' . $bg ?>>
 
       <div class="row u-pv40">
 
@@ -31,13 +31,7 @@
             <p class="meta u-mt40"><i class="ion ion-android-calendar u-mr10"></i> <?php echo $page->year()->html() ?></p>
             <p class="meta">
               <i class="ion ion-pricetags u-mr10"></i>
-              <?php
-              $tags = explode(',', $page->tags()->html());
-              foreach ($tags as $key => $tag) :
-                echo '<a href="' . u('/work/tag:' . $tag) . '">' . $tag . '</a>';
-                echo (($key+1) < count($tags)) ? ', ' : '';
-              endforeach;
-              ?>
+              <?php snippet('project_tags', array('page' => $page) ); ?>
             </p>
             <?php 
             if(strlen($page->projecturl()->kirbytext()) > 0) :
@@ -50,11 +44,19 @@
                 <a href="<?php echo $page->projecturl()->html() ?>" target="_blank"><?php echo $cleanurl ?></a>
               </p>
             <?php endif; ?>
+
+            <div class="u-aligncenter u-mt40">
+              <a href="<?php echo '#part' . ($key) ?>" class="btn btn-outline btn-circle"><i class="ion ion-chevron-down"></i></a>
+            </div>
+
           <?php endif; ?>
 
         </div>
 
-        <?php if ($section['fullscreen'] != '1') : ?>
+        <?php 
+        // show right column normally if not fullscreen
+        if ($section['fullscreen'] != '1') : 
+        ?>
         <div class="col-md-8">
           <?php echo kirbytext($section['imagecolumn']) ?>
         </div>
@@ -66,14 +68,28 @@
 
     <?php endforeach; ?>
 
-    <nav class="nextprev cf" role="navigation">
-      <?php if($prev = $page->prevVisible()): ?>
-      <a class="prev" href="<?php echo $prev->url() ?>">&larr; previous</a>
-      <?php endif ?>
-      <?php if($next = $page->nextVisible()): ?>
-      <a class="next" href="<?php echo $next->url() ?>">next &rarr;</a>
-      <?php endif ?>
-    </nav>
+    <?php if($next = $page->nextVisible()): ?>
+    <a href="<?php echo $next->url() ?>">
+      <section class="cta">
+        <div class="row">
+          <div class="col-md-5 col-md-offset-1 u-alignright">
+              <p><big>
+                <em>next up:</em><br />
+                <?php echo (strlen($next->description()) > 0) ? $next->description() : '<h3>' . $next->title() . '</h3>' ?>
+              </big></p>
+          </div>
+          <div class="col-md-2">
+            <?php if(strlen($next->featuredimage()) > 0): ?>
+            <img src="<?php echo $next->url() . '/' . $next->featuredimage() ?>" alt="<?php echo $next->title() ?>" />
+            <?php endif; ?>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <i class="ion ion-ios-arrow-thin-right ion-3x u-mt30"></i>
+          </div>
+        </div>
+      </section>
+    </a>
+    <?php endif; ?>
 
   </main>
 
