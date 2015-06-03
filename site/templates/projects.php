@@ -32,7 +32,7 @@
             projects
 
             <span class="filter-container">
-              &mdash; 
+              &rarr;
               <select id="project_filter" data-base-url="<?php echo $page->url(); ?>">
                 <?php
                 // build a list of available tags in work subpages
@@ -52,6 +52,12 @@
               });
             </script>
 
+            <?php if($tag = param('tag')) : ?>
+            <a href="<?php echo $page->url() . '#projects' ?>" class="u-ml10">
+              <i class="ion ion-android-close"></i>
+            </a>
+            <?php endif; ?>
+
           </h3>
 
 
@@ -60,22 +66,27 @@
 
       <div class="row project-container">
         <?php 
-        $projects = $page->children()->visible();
+        $projects = $page->children()->visible()->sortBy('year', 'desc');
         if($tag = param('tag')) {
           $projects = $projects->filterBy('tags', urldecode($tag), ',');
         }
         foreach($projects as $project): ?>
-        <div class="col-md-4 project u-pv30">
-          <a href="<?php echo $project->url() ?>">
+        <div class="col-md-4 project u-pv40">
+          <a href="<?php echo $project->url() ?>" title="<?php echo $project->title()->html() ?>" class="u-inlineblock">
 
-            <h4 class="project-title"><?php echo $project->title()->html() ?></h4>
+            <?php if ($img = $project->featuredimage()): ?>
+              <div class="project-teaser u-mb20" style="background-image: url('<?php echo $project->url() . '/' . $img ?>')"></div>
+            <?php endif; ?>
+
+            <h4 class="project-title u-mb10"><?php echo $project->title()->html() ?></h4>
             <p class="meta"><?php echo $project->description() ?></p>
-            <p class="meta">
-              <small>
-                <?php snippet('project_tags', array('page' => $project) ); ?>
-              </small>
-            </p>
+
           </a>
+          <p class="meta">
+            <small>
+              <?php snippet('project_tags', array('page' => $project) ); ?>
+            </small>
+          </p>
         </div>
         <?php endforeach; ?>
       </div>
