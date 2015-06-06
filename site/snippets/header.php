@@ -45,7 +45,11 @@
   <![endif]-->
 
 </head>
-<body class="<?php echo $page->template() ?>">
+<?php 
+$bodyClass = $page->template();
+$bodyClass .= ($page->isHomePage()) ? ' header-full' : ''; 
+?>
+<body class="<?php echo $bodyClass ?>">
 
   <header>
     <div class="row">

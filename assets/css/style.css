@@ -447,6 +447,28 @@ header h6 {
 .home header {
   padding-top: 55px;
   padding-bottom: 55px;
+  -webkit-transition: padding 1s ease-in-out;
+  -moz-transition: padding 1s ease-in-out;
+  transition: padding 1s ease-in-out;
+}
+.home header h6, .home header nav {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.home.header-full header {
+  padding-top: calc(50vh - 50px);
+  padding-bottom: calc(50vh - 50px);
+}
+.home.header-full header h6,
+.home.header-full header nav {
+  opacity: 0;
+}
+.home.header-full #logo {
+  -webkit-transform: translateY(calc(50vh - 75px));
+  -moz-transform: translateY(calc(50vh - 75px));
+  transform: translateY(calc(50vh - 75px));
 }
 
 
@@ -479,6 +501,7 @@ header h6 {
 }
 
 
+
 /* --- Logo --- */
 #logo {
   position: fixed;
@@ -489,13 +512,17 @@ header h6 {
   margin-left: -75px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  border-radius: 50%;z-index: 3;
+  border-radius: 50%;
+  z-index: 3;
   line-height: 150px;
   text-align: center;
   font-size: 28px;
   color: #035;
   font-weight: 300;
   letter-spacing: -0.02em;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  -moz-transition: -moz-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 #logo:hover,
 #logo:focus {

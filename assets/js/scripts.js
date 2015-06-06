@@ -7,9 +7,12 @@ $(document).ready(function() {
 
   //reading the start 'top' value of #logo
   $logoTopInit = $('#logo').offset().top - $(window).scrollTop();
+  $logoTopInit = 30;
 
   //adding animation to svg logo
   $('#logo').addClass('animated');
+  //adding animation to svg logo
+  setTimeout(function() { $('body').removeClass('header-full'); }, 1500);
 
   // initiating smooth scroll plugin
   $('a[href^="#"]').smoothScroll( { afterScroll: function() { location.hash = $(this).attr('href'); $(this).blur(); } });
