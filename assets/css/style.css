@@ -444,6 +444,10 @@ header h6 {
   font-weight: normal;
   text-transform: uppercase;
 }
+header h6 a {
+  color: #ccc;
+  font-weight: normal;
+}
 .home header {
   padding-top: 55px;
   padding-bottom: 55px;

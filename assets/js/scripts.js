@@ -7,7 +7,7 @@ $(document).ready(function() {
 
   //reading the start 'top' value of #logo
   $logoTopInit = $('#logo').offset().top - $(window).scrollTop();
-  $logoTopInit = 30;
+  $logoTopInit = ($('body').hasClass('home')) ? 30 : -30;
 
   //adding animation to svg logo
   $('#logo').addClass('animated');

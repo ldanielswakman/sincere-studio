@@ -9,7 +9,7 @@ role: admin
 token: c1c7a97006deb3fbfcd1803e4d0adcb1e65cb88d
 history:
   - work/anky-mager
+  - work/de-blonde-tafel
   - work/de-wingerd
-  - work/feyclinic
   - work/math-garden-thesis-cover
   - work/het-visitekaartje

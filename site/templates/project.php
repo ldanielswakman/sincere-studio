@@ -23,11 +23,9 @@
 
           <?php if ($key == 0) : ?>
             <h2 class="u-mb40"><?php echo $page->title()->kirbytext() ?></h2>
-          <?php endif; ?>
 
-          <p><?php echo kirbytext($section['textcolumn']) ?></p>
+            <big><em><?php echo $page->description()->kirbytext() ?></em></big>
 
-          <?php if ($key == 0) : ?>
             <p class="meta u-mt40"><i class="ion ion-android-calendar u-mr10"></i> <?php echo $page->year()->html() ?></p>
             <p class="meta">
               <i class="ion ion-pricetags u-mr10"></i>
@@ -50,6 +48,8 @@
             </div>
 
           <?php endif; ?>
+
+          <p><?php echo kirbytext($section['textcolumn']) ?></p>
 
         </div>
 

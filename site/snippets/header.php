@@ -54,7 +54,21 @@ $bodyClass .= ($page->isHomePage()) ? ' header-full' : '';
   <header>
     <div class="row">
       <div class="col-md-5">
-        <h6><?php echo $page->title()->html() ?></h6>
+        <h6>
+          <?php 
+          if ($page->template() == 'project') :
+            echo '<a href="' . $page->parent()->url() . '">' .
+              '<i class="ion ion-ios-arrow-back u-mr5"></i>' .
+              $page->parent()->title() . ' / ' .
+              '</a>';
+            echo $page->title()->html();
+          elseif ($page->isHomePage()) :
+            echo 'Graphic & web design';
+          else:
+            echo $page->title()->html();
+          endif;
+          ?>
+        </h6>
       </div>
       <div class="col-md-2">
         <a href="<?php echo ($page->url() != $site->url) ? $site->url : '#top' ?>" id="logo">
