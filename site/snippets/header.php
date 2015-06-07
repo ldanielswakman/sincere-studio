@@ -59,8 +59,8 @@ $bodyClass .= ($page->isHomePage()) ? ' header-full' : '';
           if ($page->template() == 'project') :
             echo '<a href="' . $page->parent()->url() . '">' .
               '<i class="ion ion-ios-arrow-back u-mr5"></i>' .
-              $page->parent()->title() . ' / ' .
-              '</a>';
+              $page->parent()->title() .
+              '</a>' . ' / ';
             echo $page->title()->html();
           elseif ($page->isHomePage()) :
             echo 'Graphic & web design';

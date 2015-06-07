@@ -1,11 +1,11 @@
 <?php
-$featured[] = page(page('work')->uri() . '/' . page('work')->featured1());
-$featured[] = page(page('work')->uri() . '/' . page('work')->featured2());
-$featured[] = page(page('work')->uri() . '/' . page('work')->featured3());
+$featured[] = page($page->uri() . '/' . $page->featured1());
+$featured[] = page($page->uri() . '/' . $page->featured2());
+$featured[] = page($page->uri() . '/' . $page->featured3());
 foreach ($featured as $project) : 
 ?>
 
-<div class="col-md-4">
+<div class="col-xs-4 u-fullheight">
   <?php
   $style = ($project->hasImages()) ? ' style="background-image: url( ' . $project->url() . '/' . $project->featuredimage() . ');"' : '';
   ?>

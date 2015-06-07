@@ -12,7 +12,10 @@
 
     </section>
 
-    <?php snippet('featured') ?>
+
+    <div class="row row-nopadding row-full">
+      <?php snippet('featured') ?>
+    </div>
 
   </main>
 

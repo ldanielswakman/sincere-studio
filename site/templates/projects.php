@@ -2,23 +2,18 @@
 
   <main>
 
-    <section class="featured bg-darkBlue">
+    <section class="nopadding bg-darkBlue u-relative">
 
-      <div class="row u-pv60">
-        <div class="col-md-8 col-md-offset-2">
-
-          <div class="text">
-            <p><big><em>
-              Currently I'm working on creating a <a href="javascript:void(0)">local governance platform</a> and redesigning the identity of a <a href="javascript:void(0)">chef website</a>. Recently I've worked on:
-            </em></big></p>
-            <?php // echo $page->text()->kirbytext() ?>
-          </div>
-
-        </div>
+      <div class="row row-nopadding row-full u-abs-full">
+        <?php snippet('featured', array('page' => $page )); ?>
       </div>
 
-      <div class="row row-nopadding row-full">
-        <?php snippet('featured'); ?>
+      <div class="row u-pv60">
+        <div class="col-md-6">
+
+          <p class="text"><?php echo $page->text()->kirbytext() ?></p>
+
+        </div>
       </div>
 
     </section>
@@ -35,7 +30,7 @@
               &rarr;
               <select id="project_filter" data-base-url="<?php echo $page->url(); ?>">
                 <?php
-                // build a list of available tags in work subpages
+                // build a list of existing tags in subpages
                 $tag_list = $page->children()->visible()->pluck('tags', ',', true);
                 array_unshift($tag_list, 'all');
                 foreach($tag_list as $tag):
@@ -92,6 +87,20 @@
       </div>
 
     </section>
+
+    <?php if($page->slug() == 'work'): ?>
+    <section class="bg-grey2">
+      <div class="row">
+        <div class="col-md-6">
+
+          <big><em>
+            <a href="<?php echo u('/architecture') ?>" class="">My background is in architecture and urban design. </a>
+          </em></big>
+          
+        </div>
+      </div>
+    </section>
+    <?php endif; ?>
 
   </main>
 

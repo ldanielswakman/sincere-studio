@@ -44,7 +44,7 @@
             <?php endif; ?>
 
             <div class="u-aligncenter u-mt40">
-              <a href="<?php echo '#part' . ($key) ?>" class="btn btn-outline btn-circle"><i class="ion ion-chevron-down"></i></a>
+              <a href="<?php echo '#part' . ($key+2) ?>" class="btn btn-outline btn-circle"><i class="ion ion-chevron-down"></i></a>
             </div>
 
           <?php endif; ?>

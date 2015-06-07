@@ -2,15 +2,19 @@
 
   <main>
 
-    <div class="row">
-      <div class="col-md-12">
+    <section>
 
-        <div class="text">
-          <?php echo $page->text()->kirbytext() ?>
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="text">
+            <?php echo $page->text()->kirbytext() ?>
+          </div>
+
         </div>
-
       </div>
-    </div>
+
+    </section>
 
   </main>
 
