@@ -22,31 +22,7 @@
         <div class="col-md-4">
 
           <?php if ($key == 0) : ?>
-            <h2 class="u-mb40"><?php echo $page->title()->kirbytext() ?></h2>
-
-            <big><em><?php echo $page->description()->kirbytext() ?></em></big>
-
-            <p class="meta u-mt40"><i class="ion ion-android-calendar u-mr10"></i> <?php echo $page->year()->html() ?></p>
-            <p class="meta">
-              <i class="ion ion-pricetags u-mr10"></i>
-              <?php snippet('project_tags', array('page' => $page) ); ?>
-            </p>
-            <?php 
-            if(strlen($page->projecturl()->kirbytext()) > 0) :
-              // removes http and trailing slashes
-              $needle = '://';
-              $cleanurl = rtrim(substr(strstr($page->projecturl()->html(), $needle), strlen($needle)), '/');
-            ?>
-              <p class="meta">
-                <i class="ion ion-forward u-mr10"></i>
-                <a href="<?php echo $page->projecturl()->html() ?>" target="_blank"><?php echo $cleanurl ?></a>
-              </p>
-            <?php endif; ?>
-
-            <div class="u-aligncenter u-mt40">
-              <a href="<?php echo '#part' . ($key+2) ?>" class="btn btn-outline btn-circle"><i class="ion ion-chevron-down"></i></a>
-            </div>
-
+            <?php snippet('project_info', array('page' => $page )); ?>
           <?php endif; ?>
 
           <p><?php echo kirbytext($section['textcolumn']) ?></p>
@@ -68,11 +44,24 @@
 
     <?php endforeach; ?>
 
+    <?php if (count(yaml($page->sections())) == 0) : ?>
+    <section>
+      <div class="row u-pv40">
+        <div class="col-md-4">
+          <?php snippet('project_info', array('page' => $page )); ?>
+        </div>
+        <div class="col-md-8">
+          <img src="<?php echo $page->url() . '/' . $page->featuredimage(); ?>" alt="" />
+        </div>
+      </div>
+    </section>
+    <?php endif; ?>
+
     <?php if($next = $page->nextVisible()): ?>
     <a href="<?php echo $next->url() ?>">
       <section class="cta">
         <div class="row">
-          <div class="col-md-5 col-md-offset-1 u-alignright">
+          <div class="col-md-4 col-md-offset-2 u-alignright">
               <p><big>
                 <em>next up:</em><br />
                 <?php echo (strlen($next->description()) > 0) ? $next->description() : '<h3>' . $next->title() . '</h3>' ?>
@@ -80,7 +69,7 @@
           </div>
           <div class="col-md-2">
             <?php if(strlen($next->featuredimage()) > 0): ?>
-            <img src="<?php echo $next->url() . '/' . $next->featuredimage() ?>" alt="<?php echo $next->title() ?>" />
+              <img src="<?php echo $next->url() . '/' . $next->featuredimage() ?>" alt="<?php echo $next->title() ?>" />
             <?php endif; ?>
           </div>
           <div class="col-md-3 col-md-offset-1">
@@ -90,6 +79,20 @@
       </section>
     </a>
     <?php endif; ?>
+
+    <a href="<?php echo $page->parent()->url() ?>">
+      <section class="cta u-pv10">
+        <div class="row">
+            <div class="col-md-4">
+              <i class="ion ion-ios-arrow-thin-left ion-2x u-floatleft u-mr10"></i>
+              <span class="u-inlineblock u-floatleft u-pt5 c-greylight">
+                <?php if($next = $page->nextVisible()) { echo 'or, '; } ?>
+                get back to work
+              </span>
+            </div>
+        </div>
+      </section>
+    </a>
 
   </main>
 

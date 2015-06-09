@@ -13,3 +13,5 @@ history:
   - architecture
   - architecture/ocean-pavilion
   - architecture/compocity
+firstname: Daniel
+lastname: Swakman

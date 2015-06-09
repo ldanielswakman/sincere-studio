@@ -2,7 +2,7 @@
 
   <main>
 
-    <section class="nopadding bg-darkBlue u-relative">
+    <section class="nopadding u-relative">
 
       <div class="row row-nopadding row-full u-abs-full">
         <?php snippet('featured', array('page' => $page )); ?>

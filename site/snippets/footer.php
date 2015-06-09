@@ -1,4 +1,4 @@
-  <footer class="bg-grey5">
+  <footer>
 
     <div class="row">
 

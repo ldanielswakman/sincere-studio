@@ -108,11 +108,18 @@ p {
 p.meta {
   color: #99a;
 }
+p a {
+  display: inline-block;
+  border-bottom: 1px dashed rgba(0, 0, 0, .25);
+}
+p a:hover, p a:focus {
+  border-bottom: 1px solid currentColor;
+}
 p.meta a {
   color: #99a;
 }
 p.meta a:hover, p.meta a:focus {
-  border-bottom: 1px solid #99a;
+  border-bottom-color: #99a;
 }
 
 
@@ -358,7 +365,35 @@ p.meta a:hover, p.meta a:focus {
 
 
 
-/* --- Colour classes --- */
+/* --- background and colour classes --- */
+.bg-darkBlue {
+  background-color: #446c87;
+  color: #eee;
+}
+.bg-grey1 {
+  background-color: #eee;
+}
+.bg-grey2 {
+  background-color: #ccc;
+}
+.bg-grey3 {
+  background-color: #aaa;
+}
+.bg-grey4 {
+  background-color: #999;
+}
+.bg-grey5 {
+  background-color: #888;
+  color: #fff;
+}
+.bg-grey6 {
+  background-color: #666;
+  color: #fff;
+}
+.bg-grey7 {
+  background-color: #333;
+  color: #fff;
+}
 .c-white {
   color: #fff;
 }
@@ -414,38 +449,6 @@ p.meta a:hover, p.meta a:focus {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-}
-
-
-
-/* --- background and colour classes --- */
-.bg-darkBlue {
-  background-color: #446c87;
-  color: #eee;
-}
-.bg-grey1 {
-  background-color: #eee;
-}
-.bg-grey2 {
-  background-color: #ccc;
-}
-.bg-grey3 {
-  background-color: #aaa;
-}
-.bg-grey4 {
-  background-color: #999;
-}
-.bg-grey5 {
-  background-color: #888;
-  color: #fff;
-}
-.bg-grey5 {
-  background-color: #666;
-  color: #fff;
-}
-.bg-grey6 {
-  background-color: #333;
-  color: #fff;
 }
 
 
@@ -639,7 +642,7 @@ body:not(.home) .menu a:focus {
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   padding-top: 90px;
-  background-color: rgba(68, 108, 135, 0.75);
+  background-color: rgba(200, 200, 200, 0.75);
   text-align: center;
   color: transparent;
   font-weight: bold;
@@ -654,7 +657,7 @@ body:not(.home) .menu a:focus {
 }
 .featured-project:hover .text,
 .featured-project:focus .text {
-  background-color: rgba(68, 108, 135, 0.05);
+  background-color: rgba(200, 200, 200, 0.05);
 }
 /* all projects list */
 #projects h4 {
@@ -722,5 +725,6 @@ section.cta em {
 /* --- Footer --- */
 footer {
   padding: 50px 0;
+  background-color: #666;
   color: #ccc;
 }
