@@ -27,7 +27,7 @@
             projects
 
             <span class="filter-container">
-              &rarr;
+              —
               <select id="project_filter" data-base-url="<?php echo $page->url(); ?>">
                 <?php
                 // build a list of existing tags in subpages

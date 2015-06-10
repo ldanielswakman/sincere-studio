@@ -110,7 +110,7 @@ p.meta {
 }
 p a {
   display: inline-block;
-  border-bottom: 1px dashed rgba(0, 0, 0, .25);
+  border-bottom: 1px dashed rgba(0, 0, 0, .2);
 }
 p a:hover, p a:focus {
   border-bottom: 1px solid currentColor;
@@ -362,7 +362,23 @@ p.meta a:hover, p.meta a:focus {
 .ion-4x {
   font-size: 4em;
 }
-
+.ion-rotate {
+  -webkit-animation: ionRotate 1s infinite linear;
+  -moz-animation: ionRotate 1s infinite linear;
+  animation: ionRotate 1s infinite linear;
+}
+@-webkit-keyframes ionRotate {
+    0% { -webkit-transform: rotate(0); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes ionRotate {
+    0% { -moz-transform: rotate(0); }
+  100% { -moz-transform: rotate(360deg); }
+}
+@keyframes ionRotate {
+    0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
 
 
 /* --- background and colour classes --- */
@@ -450,6 +466,16 @@ p.meta a:hover, p.meta a:focus {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
+.btn.btn-whiteoutline {
+  background-color: transparent;
+  border: 1px solid #eee;
+  color: #eee;
+}
+.btn.btn-whiteoutline:hover,
+.btn.btn-whiteoutline:focus {
+  background-color: #fff;
+  color: #888;
+}
 
 
 
@@ -476,6 +502,15 @@ section {
 } 
 section.slide {
   min-height: 90vh;
+}
+
+
+
+/* --- Grid system extension (BS) --- */
+@media screen and (max-width: 767px) {
+  .col-xs-hide {
+    display: none;
+  }
 }
 
 
@@ -524,6 +559,15 @@ header h6 a {
   -moz-transform: translateY(calc(50vh - 75px));
   transform: translateY(calc(50vh - 75px));
 }
+ @media screen and (max-width: 767px) {
+  header {
+    padding: 10px 0;
+    line-height: 40px;
+  }
+  .home header {
+    padding: 40px 0;
+  }
+}
 
 
 
@@ -547,11 +591,23 @@ header h6 a {
   color: #035;
 }
 .menu a.active {
-  border-bottom-color: #becbd4; /*9eafba;*/
+  border-color: #becbd4; /*9eafba;*/
 }
 body:not(.home) .menu a:hover,
 body:not(.home) .menu a:focus {
   border-bottom-color: #035;
+}
+@media screen and (max-width: 767px) {
+  .menu {
+    margin-right: -15px;
+  }
+  .menu li {
+    display: block;
+  }
+  .menu a {
+    border-bottom: 0;
+    border-right: 5px solid transparent;
+  }
 }
 
 
@@ -612,6 +668,64 @@ body:not(.home) .menu a:focus {
 }
 .home #logo { 
   top: 30px; 
+}
+@media screen and (max-width: 767px) {
+  #logo {
+    left: 105px;
+  }
+}
+
+
+
+/* --- Twitter feed --- */
+#twitterfeed p {
+  font-size: 1.2em;
+  font-family: Vollkorn;
+  color: #eee;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+#twitterfeed a {
+  display: inline;
+  color: #ccc;
+}
+
+#twitterfeed a:hover,
+#twitterfeed a:focus {
+  color: #fff;
+}
+#twitterfeed .timePosted a {
+  margin-top: 5px;
+  border: none;
+  font-size: 0.75em;
+}
+#twitterfeed p.interact {
+  margin-left: -10px;
+}
+#twitterfeed .twitter_reply_icon,
+#twitterfeed .twitter_retweet_icon,
+#twitterfeed .twitter_fav_icon {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #999;
+  font-size: 0;
+  border: none;
+}
+#twitterfeed .twitter_reply_icon:before,
+#twitterfeed .twitter_retweet_icon:before,
+#twitterfeed .twitter_fav_icon:before {
+  font-family: "Ionicons";
+  font-size: 16pt;
+}
+#twitterfeed .twitter_reply_icon:before {
+  content: "\f21e";
+}
+#twitterfeed .twitter_retweet_icon:before {
+  content: "\f201";
+}
+#twitterfeed .twitter_fav_icon:before {
+  content: "\f2fc";
 }
 
 

@@ -38,6 +38,7 @@
   // assets
   echo css('assets/css/style.css');
   echo js('assets/js/scripts.js');
+  echo js('assets/js/twitterfetcher.min.js');
   ?>
 
   <!--[if lt IE 9]>
@@ -53,7 +54,7 @@ $bodyClass .= ($page->isHomePage()) ? ' header-full' : '';
 
   <header>
     <div class="row">
-      <div class="col-md-5">
+      <div class="col-md-5 col-xs-hide">
         <h6>
           <?php 
           if ($page->template() == 'project') :
@@ -70,7 +71,7 @@ $bodyClass .= ($page->isHomePage()) ? ' header-full' : '';
           ?>
         </h6>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-2 col-xs-6">
         <a href="<?php echo ($page->url() != $site->url) ? $site->url : '#top' ?>" id="logo">
           <b>ldaniel</b>.eu
           <svg version="1.1" id="logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -81,7 +82,7 @@ $bodyClass .= ($page->isHomePage()) ? ' header-full' : '';
           </svg>
         </a>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5 col-xs-6">
         <?php snippet('menu') ?>
       </div>
     </div>
