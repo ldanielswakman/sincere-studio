@@ -15,5 +15,7 @@
 
   </footer>
 
+  <?php snippet('ga_tracking') ?>
+
 </body>
 </html>
