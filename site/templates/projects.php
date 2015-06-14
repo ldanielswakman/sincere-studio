@@ -8,7 +8,7 @@
         <?php snippet('featured', array('page' => $page )); ?>
       </div>
 
-      <div class="row u-pv60">
+      <div class="row u-pv40">
         <div class="col-md-6">
 
           <p class="text"><?php echo $page->text()->kirbytext() ?></p>
@@ -70,7 +70,8 @@
           <a href="<?php echo $project->url() ?>" title="<?php echo $project->title()->html() ?>" class="u-inlineblock">
 
             <?php if ($img = $project->featuredimage()): ?>
-              <div class="project-teaser u-mb20" style="background-image: url('<?php echo $project->url() . '/' . $img ?>')"></div>
+              <?php $thumbUrl = thumb($project->image($img), array('width' => 600))->url() ?>
+              <div class="project-teaser u-mb20" style="background-image: url('<?php echo $thumbUrl; ?>')"></div>
             <?php endif; ?>
 
             <h4 class="project-title u-mb10"><?php echo $project->title()->html() ?></h4>

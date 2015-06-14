@@ -9,7 +9,9 @@ foreach ($featured as $project) :
 
 <div class="col-xs-4 u-fullheight">
   <?php
-  $style = ($project->hasImages()) ? ' style="background-image: url(\'' . $project->url() . '/' . $project->featuredimage() . '\');"' : '';
+  $featuredImage = $project->image($project->featuredimage());
+  $thumbUrl = thumb($featuredImage, array('width' => 600))->url();
+  $style = (strlen($thumbUrl) > 0) ? ' style="background-image: url(\'' . $thumbUrl . '\');"' : '';
   ?>
   <a href="<?php echo $project->url() ?>" class="featured-project"<?php echo $style ?>>
     <span class="text"><?php echo $project->title() ?></span>

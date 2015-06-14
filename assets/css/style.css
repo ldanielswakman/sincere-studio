@@ -121,6 +121,9 @@ p.meta a {
 p.meta a:hover, p.meta a:focus {
   border-bottom-color: #99a;
 }
+p big {
+  line-height: 1.6em;
+}
 
 
 
@@ -319,6 +322,10 @@ p.meta a:hover, p.meta a:focus {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.u-ph5 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 .u-ph10 {
   padding-left: 10px;
   padding-right: 10px;
@@ -409,6 +416,15 @@ p.meta a:hover, p.meta a:focus {
 .bg-grey7 {
   background-color: #333;
   color: #fff;
+}
+.bg-twitterblue {
+  background-color: #55acee;
+}
+.bg-linkedinblue {
+  background-color: #0077b5;
+}
+.bg-githubblue {
+  background-color: #4183c4;
 }
 .c-white {
   color: #fff;
@@ -680,7 +696,8 @@ body:not(.home) .menu a:focus {
 /* --- Twitter feed --- */
 #twitterfeed p {
   font-size: 1.2em;
-  font-family: Vollkorn;
+  line-height: 1.5em;
+  /*font-family: Vollkorn;*/
   color: #eee;
   overflow: hidden;
   white-space: normal;
@@ -746,7 +763,7 @@ body:not(.home) .menu a:focus {
   background-position: center center;
   background-color: rgba(0, 0, 0, .1);
   background-blend-mode: saturation;
-  -webkit-filter: blur(5px);
+  /*-webkit-filter: blur(5px);*/
   overflow: hidden;
   -webkit-transition: all 0.2s cubic-bezier(1,0,0,1);
   -moz-transition: all 0.2s cubic-bezier(1,0,0,1);
@@ -756,7 +773,7 @@ body:not(.home) .menu a:focus {
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   padding-top: 90px;
-  background-color: rgba(200, 200, 200, 0.75);
+  background-color: rgba(200, 200, 200, 0.6);
   text-align: center;
   color: transparent;
   font-weight: bold;
@@ -767,7 +784,7 @@ body:not(.home) .menu a:focus {
 }
 .featured-project:hover,
 .featured-project:focus {
-  -webkit-filter: blur(0);
+  /*-webkit-filter: blur(0);*/
 }
 .featured-project:hover .text,
 .featured-project:focus .text {
@@ -836,9 +853,66 @@ section.cta em {
 
 
 
+/* --- Page: About --- */
+.about-intro {
+  position: relative;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('../../content/2-about/daniel-working.jpg');
+}
+.about-intro:before {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: linear-gradient( #fff, #ccc );
+
+  background: linear-gradient(230deg, #34c2d8, #c5d264);
+  background-size: 400% 400%;
+
+  opacity: 0.75;
+
+  -webkit-animation: animategradient 10s ease infinite;
+  -moz-animation: animategradient 10s ease infinite;
+  animation: animategradient 10s ease infinite;
+
+}
+@-webkit-keyframes animategradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes animategradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes animategradient { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.link-oefenweb {
+  font-weight: bold;
+  color: #5899bf;
+}
+.link-parasut {
+  font-weight: bold;
+  color: #fd5348;
+}
+
+
+
 /* --- Footer --- */
 footer {
   padding: 50px 0;
   background-color: #666;
   color: #ccc;
+}
+footer a {
+  color: #333;
+}
+footer a:hover,
+footer a:focus {
+  color: #fff;
 }

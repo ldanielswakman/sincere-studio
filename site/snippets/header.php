@@ -17,7 +17,7 @@
     // Bootstrap
     echo css('//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css');
     // Google Webfonts
-    // echo css('http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700italic,700,300,300italic');
+    // echo css('http://fonts.googleapis.com/css?family=Fira+Sans:400,700,400italic,700italic');
     // Ionicons
     echo css('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
     // JQuery, SmoothScroll & Fastclick

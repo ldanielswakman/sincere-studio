@@ -2,19 +2,11 @@
 
   <main>
 
-    <section>
+      <?php echo $page->text()->kirbytext() ?>
 
-      <div class="row">
-        <div class="col-md-12">
-
-          <div class="text">
-            <?php echo $page->text()->kirbytext() ?>
-          </div>
-
-        </div>
-      </div>
-
-    </section>
+      <?php if($page->slug() == 'contact') : ?>
+        <?php snippet('twitterfeed'); ?>
+      <?php endif; ?>
 
   </main>
 
