@@ -70,7 +70,7 @@
           <a href="<?php echo $project->url() ?>" title="<?php echo $project->title()->html() ?>" class="u-inlineblock">
 
             <?php if ($img = $project->featuredimage()): ?>
-              <?php $thumbUrl = thumb($project->image($img), array('width' => 600))->url() ?>
+              <?php $thumbUrl = thumb($project->image($img), array('width' => 600, 'quality' => 70))->url() ?>
               <div class="project-teaser u-mb20" style="background-image: url('<?php echo $thumbUrl; ?>')"></div>
             <?php endif; ?>
 
