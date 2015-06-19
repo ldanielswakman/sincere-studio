@@ -6,7 +6,7 @@
 
     <?php 
     $bg = '';
-    if ($section['fullscreen'] == '1') : 
+    if (isset($section['fullscreen']) and $section['fullscreen'] == '1') : 
       // find url of (first) image and set as background image
       $imagecolumn = kirbytext($section['imagecolumn']);
       $needle = 'src="';
@@ -31,7 +31,7 @@
 
         <?php 
         // show right column normally if not fullscreen
-        if ($section['fullscreen'] != '1') : 
+        if (!isset($section['fullscreen']) or $section['fullscreen'] != '1') : 
         ?>
         <div class="col-md-8">
           <?php echo kirbytext($section['imagecolumn']) ?>

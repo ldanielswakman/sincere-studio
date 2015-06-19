@@ -73,13 +73,7 @@ $bodyClass .= ($page->isHomePage()) ? ' header-full' : '';
       </div>
       <div class="col-md-2 col-xs-6">
         <a href="<?php echo ($page->url() != $site->url) ? $site->url : '#top' ?>" id="logo">
-          <b>ldaniel</b>.eu
-          <svg version="1.1" id="logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
-            <path class="logo-svg-path" fill="none" stroke="#003355" stroke-width="1.7297" stroke-miterlimit="10" d="M130.363,84.294
-              c0,3.46,4.359,6.102,9.283,6.102c3.891,0,9.162-3.366,9.162-11.796v-3.53c0-40.76-33.16-73.921-73.921-73.921
-              c-40.76,0-73.921,33.162-73.921,73.921s33.161,73.921,73.921,73.921c32.726,0,60.554-21.378,70.251-50.9" />
-          </svg>
+          <?php snippet('logo') ?>
         </a>
       </div>
       <div class="col-md-5 col-xs-6">

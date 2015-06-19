@@ -10,7 +10,7 @@ foreach ($featured as $project) :
 <div class="col-xs-4 u-fullheight">
   <?php
   $featuredImage = $project->image($project->featuredimage());
-  $thumbUrl = thumb($featuredImage, array('width' => 600, 'quality' => 70))->url();
+  $thumbUrl = thumb($featuredImage, array('width' => 600, 'quality' => 80))->url();
   $style = (strlen($thumbUrl) > 0) ? ' style="background-image: url(\'' . $thumbUrl . '\');"' : '';
   ?>
   <a href="<?php echo $project->url() ?>" class="featured-project"<?php echo $style ?>>

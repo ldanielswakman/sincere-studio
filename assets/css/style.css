@@ -670,15 +670,24 @@ body:not(.home) .menu a:focus {
 #logo:focus .logo-svg-path {
   stroke: #34c2d8;
 }
+#logo:hover g path,
+#logo:focus g path {
+  fill: #34c2d8;
+}
 #logo.animated .logo-svg-path {
   -webkit-animation: dash 2s ease-in-out;
+  -moz-animation: dash 2s ease-in-out;
   animation: dash 2s ease-in-out;
 }
-@keyframes dash {
+@-webkit-keyframes dash {
   from { stroke-dashoffset: 500; }
     to { stroke-dashoffset:   0; }
 }
-@-webkit-keyframes dash {
+@-moz-keyframes dash {
+  from { stroke-dashoffset: 500; }
+    to { stroke-dashoffset:   0; }
+}
+@keyframes dash {
   from { stroke-dashoffset: 500; }
     to { stroke-dashoffset:   0; }
 }
