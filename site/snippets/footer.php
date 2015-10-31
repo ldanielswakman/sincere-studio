@@ -11,7 +11,9 @@
       <div class="col-md-4 u-aligncenter">
         <a href="mailto:hello@ldaniel.eu" target="_blank"><i class="ion ion-ios-email ion-2x u-inlineblock u-ph10"></i></a>
         <a href="https://www.twitter.com/ldanielswakman" target="_blank"><i class="ion ion-social-twitter ion-2x u-inlineblock u-ph10"></i></a>
+        <a href="https://github.com/ldanielswakman" target="_blank"><i class="ion ion-social-github ion-2x u-inlineblock u-ph10"></i></a>
         <a href="https://www.linkedin.com/in/ldanielswakman" target="_blank"><i class="ion ion-social-linkedin ion-2x u-inlineblock u-ph10"></i></a>
+        <a href="https://dribbble.com/ldanielswakman" target="_blank"><i class="ion ion-social-dribbble ion-2x u-inlineblock u-ph10"></i></a>
       </div>
 
     </div>

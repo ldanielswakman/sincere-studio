@@ -102,6 +102,7 @@ h5 {
   font-weight: 300;
 }
 p {
+  font-family: Meta, Georgia, serif;
   font-size: 1em;
   line-height: 1.8em;
 }
@@ -463,6 +464,14 @@ p big {
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
+.btn.btn-primary {
+  background-color: #035;
+  border-color: transparent;
+  color: #fff;
+}
+.btn.btn-primary:hover {
+  background-color: #34c2d8;
+}
 .btn.btn-outline {
   background-color: transparent;
   border: 1px solid #34c2d8;
@@ -492,6 +501,16 @@ p big {
   background-color: #fff;
   color: #888;
 }
+.btn.btn-greyoutline {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+.btn.btn-greyoutline:hover,
+.btn.btn-greyoutline:focus {
+  background-color: #ccc;
+  color: #fff;
+}
 
 
 
@@ -519,7 +538,17 @@ section {
 section.slide {
   min-height: 90vh;
 }
-
+section.featured-slide {
+  min-height: 400px;
+  min-height: 80vh;
+  color: #fff;
+}
+section.featured-slide a {
+  color: #fff;
+}
+section.featured-slide h3 {
+  line-height: 1.5em;
+}
 
 
 /* --- Grid system extension (BS) --- */

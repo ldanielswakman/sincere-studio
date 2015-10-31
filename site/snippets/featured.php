@@ -7,17 +7,38 @@ $featured[] = page($sourcepage->uri() . '/' . $sourcepage->featured3());
 foreach ($featured as $project) : 
 ?>
 
-<div class="col-xs-4 u-fullheight">
   <?php
   $featuredImage = $project->image($project->featuredimage());
-  $thumbUrl = thumb($featuredImage, array('width' => 600, 'quality' => 80))->url();
-  $style = (strlen($thumbUrl) > 0) ? ' style="background-image: url(\'' . $thumbUrl . '\');"' : '';
+  $thumbUrl = thumb($featuredImage, array('width' => 1400, 'quality' => 80))->url();
+  $style  = ' style="';
+  $style .= (strlen($thumbUrl) > 0) ? 'background-image: url(\'' . $thumbUrl . '\');' : '';
+  $style .= (strlen($project->featuredcolour()) > 0) ? ' background-color: #' . $project->featuredcolour() . ';' : '';
+  $style .= '"';
   ?>
+
+<!-- <div class="col-xs-4 u-fullheight">
   <a href="<?php echo $project->url() ?>" class="featured-project"<?php echo $style ?>>
     <span class="text"><?php echo $project->title() ?></span>
   </a>
-</div>
+</div> -->
 
-<?php 
+<section class="u-pv60 featured-slide"<?php echo $style ?>>
+
+  <div class="col-sm-7 col-sm-offset-1 u-mt60">
+    <h2><a href="<?php echo $project->url() ?>">
+      <span class="text"><?php echo $project->title() ?></span>
+    </a></h2>
+  </div>
+
+  <div class="col-sm-4 col-sm-offset-1 u-mt60">
+    <h3><em><?php echo $project->description() ?></em></h3>
+    <a href="<?php echo $project->url() ?>" class="btn btn-whiteoutline u-mt20">view project <i class="ion ion-ios-arrow-forward u-ml5"></i></a>
+  </div>
+
+</section>
+
+<?php
 endforeach;
 ?>
+
+

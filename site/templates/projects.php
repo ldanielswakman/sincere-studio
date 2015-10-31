@@ -2,18 +2,14 @@
 
   <main>
 
-    <section class="nopadding u-relative">
+    <section class="nopadding u-relative" style="border-bottom: 1px solid #ddd">
 
       <div class="row row-nopadding row-full u-abs-full">
-        <?php snippet('featured', array('page' => $page )); ?>
+        <?php // snippet('featured', array('page' => $page )); ?>
       </div>
 
-      <div class="row u-pv40">
-        <div class="col-md-6">
+        <p class="text"><?php echo $page->text()->kirbytext() ?></p>
 
-          <p class="text"><?php echo $page->text()->kirbytext() ?></p>
-
-        </div>
       </div>
 
     </section>
@@ -70,8 +66,13 @@
           <a href="<?php echo $project->url() ?>" title="<?php echo $project->title()->html() ?>" class="u-inlineblock">
 
             <?php if ($img = $project->featuredimage()): ?>
-              <?php $thumbUrl = thumb($project->image($img), array('width' => 600, 'quality' => 80))->url() ?>
-              <div class="project-teaser u-mb20" style="background-image: url('<?php echo $thumbUrl; ?>')"></div>
+              <?php
+              $style = 'background-image: url(\'';
+              $style .= thumb($project->image($img), array('width' => 600, 'quality' => 80))->url();
+              $style .= '\');';
+              $style .= (strlen($project->featuredcolour()) > 0) ? ' background-color: #' . $project->featuredcolour() . ';' : '';
+              ?>
+              <div class="project-teaser u-mb20" style="<?php echo $style ?>"></div>
             <?php endif; ?>
 
             <h4 class="project-title u-mb10"><?php echo $project->title()->html() ?></h4>

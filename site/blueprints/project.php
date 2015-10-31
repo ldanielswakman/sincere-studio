@@ -26,6 +26,11 @@ fields:
     label: Featured Image
     type: select
     options: images
+  featuredcolour:
+    label: >
+      Featured Color <i>(HEX)</i>
+    type: text
+    icon: magic
   sections:
     label: Sections
     type: structure
