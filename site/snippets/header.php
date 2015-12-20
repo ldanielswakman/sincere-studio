@@ -54,7 +54,7 @@ $bodyClass .= ($page->isHomePage()) ? ' header-full' : '';
 
   <header>
     <div class="row">
-      <div class="col-md-5 col-xs-hide">
+      <div class="col-sm-5 col-xs-hide">
         <h6>
           <?php 
           if ($page->template() == 'project') :
@@ -71,12 +71,12 @@ $bodyClass .= ($page->isHomePage()) ? ' header-full' : '';
           ?>
         </h6>
       </div>
-      <div class="col-md-2 col-xs-6">
+      <div class="col-sm-2 col-xs-6">
         <a href="<?php echo ($page->url() != $site->url) ? $site->url : '#top' ?>" id="logo">
           <?php snippet('logo') ?>
         </a>
       </div>
-      <div class="col-md-5 col-xs-6">
+      <div class="col-sm-5 col-xs-6">
         <?php snippet('menu') ?>
       </div>
     </div>
