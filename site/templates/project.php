@@ -11,7 +11,9 @@
       $imagecolumn = kirbytext($section['imagecolumn']);
       $needle = 'src="';
       $image_url = explode('" ',substr(strstr($imagecolumn, $needle), strlen($needle)))[0];
-      $bg = ' class="slide" style="background-image: url(' . $image_url . ');"';
+      $bg = ' class="slide" style="background-image: url(' . $image_url . ');';
+      $bg .= (strlen($page->featuredcolour()) > 0) ? ' background-color: #' . $page->featuredcolour() . ';' : '';
+      $bg .= '"';
     endif;
     ?>
 

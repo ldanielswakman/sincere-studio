@@ -107,7 +107,7 @@ p {
   line-height: 1.8em;
 }
 p.meta {
-  color: #99a;
+  color: rgba(66, 90, 120, 0.7);
 }
 p a {
   display: inline-block;
@@ -117,10 +117,10 @@ p a:hover, p a:focus {
   border-bottom: 1px solid currentColor;
 }
 p.meta a {
-  color: #99a;
+  color: rgba(66, 90, 120, 0.7);
 }
 p.meta a:hover, p.meta a:focus {
-  border-bottom-color: #99a;
+  border-bottom-color: rgba(66, 90, 120, 0.7);
 }
 p big {
   line-height: 1.6em;
@@ -780,7 +780,7 @@ body:not(.home) .menu a:focus {
   content: "\f201";
 }
 #twitterfeed .twitter_fav_icon:before {
-  content: "\f2fc";
+  content: "\f443";
 }
 
 
