@@ -16,37 +16,6 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 
 
 
-/* --- Webfont includes --- */
-@font-face {
-  font-family: 'Meta';
-  src: url('../fonts/metanormal-roman-webfont.woff') format('woff'),
-       url('../fonts/metanormal-roman-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Meta';
-  src: url('../fonts/metanormal-italic-webfont.woff') format('woff'),
-       url('../fonts/metanormal-italic-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Meta';
-  src: url('../fonts/metabold-roman-webfont.woff') format('woff'),
-       url('../fonts/metabold-roman-webfont.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Meta';
-  src: url('../fonts/metabold-italic-webfont.woff') format('woff'),
-       url('../fonts/metabold-italic-webfont.ttf') format('truetype');
-  font-weight: bold;
-  font-style: italic;
-}
-
-
 
 /* --- Global definitions --- */
 html {

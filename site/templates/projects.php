@@ -2,6 +2,8 @@
 
   <main>
 
+    <?php if (count($page->text()->kirbytext()) > 0) : ?>
+
     <section class="nopadding u-relative" style="border-bottom: 1px solid #ddd">
 
       <div class="row row-nopadding row-full u-abs-full">
@@ -13,6 +15,8 @@
       </div>
 
     </section>
+
+    <?php endif; ?>
 
     <section id="projects">
 
@@ -54,6 +58,8 @@
 
         </div>
       </div>
+
+      <?php echo js('https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js'); ?>
 
       <div class="row project-container">
         <?php 

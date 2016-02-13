@@ -18,16 +18,18 @@ $(document).ready(function() {
   $('a[href^="#"]').smoothScroll( { afterScroll: function() { location.hash = $(this).attr('href'); $(this).blur(); } });
 
   // initiating isotope
-  $('.project-container').isotope({
-    // options
-    itemSelector: '.project',
-    layoutMode: 'fitRows',
-    getSortData: {
-      name: '.project-title'
-    },
-    sortBy: 'asc',
-    sortAscending: true
-  });
+  if($('.project-container').length > 0) {
+    $('.project-container').isotope({
+      // options
+      itemSelector: '.project',
+      layoutMode: 'fitRows',
+      getSortData: {
+        name: '.project-title'
+      },
+      sortBy: 'asc',
+      sortAscending: true
+    });
+  }
 
   // initiating scrollactions
   scrollActions();
