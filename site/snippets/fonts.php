@@ -28,4 +28,7 @@
     font-weight: bold;
     font-style: italic;
   }
+  body {
+    font-family: 'Meta', Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
 </style>

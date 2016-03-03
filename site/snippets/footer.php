@@ -4,7 +4,7 @@
 
       <div class="col-md-4">
         <div class="copyright">
-          <?php echo $site->copyright()->kirbytext() ?>
+          &copy; ldaniel.eu &mdash; <?php echo date("Y") ?>
         </div>
       </div>
       
