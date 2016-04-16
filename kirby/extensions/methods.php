@@ -245,6 +245,17 @@ field::$methods['int'] = function($field, $default = 0) {
   return intval($val);
 }; 
 
+/**
+ * Get a float value for the Field
+ * @param Field $field The calling Kirby Field instance
+ * @param int $default Default value returned if field is empty
+ * @return float
+ */
+field::$methods['float'] = function($field, $default = 0) {
+  $val = $field->empty() ? $default : $field->value;
+  return floatval($val);
+};
+
 field::$methods['toStructure'] = field::$methods['structure'] = function($field) {
   return structure($field->yaml(), $field->page());
 };
@@ -262,4 +273,8 @@ field::$methods['link'] = function($field, $attr1 = array(), $attr2 = array()) {
 
   return $a;
 
+};
+
+field::$methods['toUrl'] = field::$methods['url'] = function($field) {
+  return url($field->value());
 };

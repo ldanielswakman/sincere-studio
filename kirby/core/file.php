@@ -154,14 +154,40 @@ abstract class FileAbstract extends Media {
   }
 
   /**
+   * Generates a new filename for a given name
+   * and makes sure to handle badly given extensions correctly
+   * 
+   * @param string $name
+   * @return string
+   */
+  public function createNewFilename($name, $safeName = true) {
+
+    $name = basename($safeName ? f::safeName($name) : $name);
+    $ext  = f::extension($name);
+
+    // remove possible extensions
+    if(in_array($ext, f::extensions())) {
+      $name = f::name($name);      
+    }
+
+    return trim($name . '.' . $this->extension(), '.');
+
+  }
+
+  /**
    * Renames the file and also its meta info txt
    *
    * @param string $filename
+   * @param boolean $safeName
    */
-  public function rename($name) {
+  public function rename($name, $safeName = true) {
 
-    $filename = f::safeName($name) . '.' . $this->extension();
+    $filename = $this->createNewFilename($name, $safeName);
     $root     = $this->dir() . DS . $filename;
+
+    if(empty($name)) {
+      throw new Exception('The filename is missing');
+    }
 
     if($root == $this->root()) return $filename;
 
@@ -179,7 +205,17 @@ abstract class FileAbstract extends Media {
       f::move($meta, $this->page->textfile($filename));
     }
 
+    // reset the page cache
+    $this->page->reset();
+
+    // reset the basics
+    $this->root     = $root;
+    $this->filename = $filename;
+    $this->name     = $name;
+    $this->cache    = array();
+
     cache::flush();
+
     return $filename;
 
   }
@@ -195,6 +231,12 @@ abstract class FileAbstract extends Media {
     if(!data::write($this->textfile(), $data, 'kd')) {
       throw new Exception('The file data could not be saved');
     }
+
+    // reset the page cache
+    $this->page->reset();
+
+    // reset the file cache
+    $this->cache = array();
 
     cache::flush();
     return true;
