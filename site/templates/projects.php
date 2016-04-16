@@ -23,7 +23,7 @@
       <div class="row">
         <div class="col-xs-12">
 
-          <h3 class="u-mb20">
+          <h3 class="u-mb20 u-ml10">
             projects
 
             <span class="filter-container">
@@ -68,7 +68,7 @@
           $projects = $projects->filterBy('tags', urldecode($tag), ',');
         }
         foreach($projects as $project): ?>
-        <div class="col-md-4 project u-pv40">
+        <div class="col-sm-6 col-md-4 project u-pv30">
           <a href="<?php echo $project->url() ?>" title="<?php echo $project->title()->html() ?>" class="u-inlineblock">
 
             <?php if ($img = $project->featuredimage()): ?>
@@ -78,18 +78,20 @@
               $style .= '\');';
               $style .= (strlen($project->featuredcolour()) > 0) ? ' background-color: #' . $project->featuredcolour() . ';' : '';
               ?>
-              <div class="project-teaser u-mb20" style="<?php echo $style ?>"></div>
+              <div class="project-teaser u-mb10" style="<?php echo $style ?>">
+                <object><p class="meta project__tags">
+                  <small>
+                    <?php snippet('project_tags', array('page' => $project) ); ?>
+                  </small>
+                </p></object>
+              </div>
+
             <?php endif; ?>
 
-            <h4 class="project-title u-mb10"><?php echo $project->title()->html() ?></h4>
-            <p class="meta"><?php echo $project->description() ?></p>
+            <h4 class="project__title u-mb10"><?php echo $project->title()->html() ?></h4>
+            <p class="project__description meta"><?php echo $project->description() ?></p>
 
           </a>
-          <p class="meta">
-            <small>
-              <?php snippet('project_tags', array('page' => $project) ); ?>
-            </small>
-          </p>
         </div>
         <?php endforeach; ?>
       </div>
@@ -97,17 +99,17 @@
     </section>
 
     <?php if($page->slug() == 'work'): ?>
-    <section class="bg-grey2">
+    <a href="<?php echo u('/architecture') ?>" class="u-block u-pv50 bg-white">
       <div class="row">
         <div class="col-md-6">
 
           <big><em>
-            <a href="<?php echo u('/architecture') ?>" class="">My background is in architecture and urban design. </a>
+            My background is in architecture and urban design. <i class="ion ion-chevron-right u-ml20"></i>
           </em></big>
           
         </div>
       </div>
-    </section>
+    </a>
     <?php endif; ?>
 
   </main>
