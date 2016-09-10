@@ -9,7 +9,7 @@ Text:
 <div class="col-md-7 col-md-offset-4">
 
 <p><big class="u-block u-pv40 c-white"><big><em>I'm a (graphic, web & front-end) designer, working on achieving great visual experiences in digital and analog context wherever the world takes me. Investigating designing with code. Currently that means:<br />
-1) designer at (link: http://www.parasut.com text: Paraşüt popup: yes), freelance projects as (link: http://www.ldaniel.eu text: ldaniel.eu popup:yes), and <br /> 3) founder at (link: http://hikaye.muhit.co/en text:Muhit popup:yes).</em></big></big></p>
+1) designer at (link: http://www.parasut.com text: Paraşüt popup: yes),<br>2)freelance projects as (link: http://www.ldaniel.eu text: ldaniel.eu popup:yes), and <br>3) founder at (link: http://hikaye.muhit.co/en text:Muhit popup:yes).</em></big></big></p>
 
 </div>
 </div>
