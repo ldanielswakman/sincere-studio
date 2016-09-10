@@ -1,0 +1,47 @@
+Title: About
+
+----
+
+Text: 
+
+<section class="about-intro">
+<div class="row u-mv60">
+<div class="col-md-7 col-md-offset-4">
+
+<p><big class="u-block u-pv40 c-white"><big><em>I'm a (graphic, web & front-end) designer, working on achieving great visual experiences in digital and analog context wherever the world takes me. Investigating designing with code. Currently that means:<br />
+1) designer at (link: http://www.parasut.com text: Paraşüt popup: yes), freelance projects as (link: http://www.ldaniel.eu text: ldaniel.eu popup:yes), and <br /> 3) founder at (link: http://hikaye.muhit.co/en text:Muhit popup:yes).</em></big></big></p>
+
+</div>
+</div>
+</section>
+
+<section class="row">
+<div class="col-md-4 col-md-offset-1 u-aligncenter">
+(image: parti.png)
+</div>
+<div class="col-md-6">
+<p>In architecture, a parti describes the central organising idea of a building’s design; expressed in a basic diagram.
+This represents the way I approach design: synthesising information into a clearly legible product that translates the message not only through its content, but even its initial appearance.</p>
+<br />
+<p>
+In essence, content and its representation are highly interwoven; good visual design celebrates his link.
+ldaniel.eu is a graphic and web design office, aimed at meaningful design of content and information. I have been working on a variety of projects for the past 5 years in the disciplines of graphic design, web design, branding & information visualisation.<br/><br />
+
+Currently I’m located in Istanbul, TR.
+</p>
+
+</div>
+</section>
+
+<div class="bg-grey5 u-pv60">
+<div class="row">
+<div class="col-md-4 col-md-offset-1 u-aligncenter">
+<i class="ion ion-chatboxes ion-4x u-mb20"></i>
+</div>
+<div class="col-md-6">
+<big><p><em>Curious about the way I work, interested in a potential collaboration or just want to drop me a line?</em><br />
+(link: contact text: Get in touch <i class="ion ion-ios-arrow-forward u-ml5"></i>)
+</p></big>
+</div>
+</div>
+</div>

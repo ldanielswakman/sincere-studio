@@ -1,0 +1,30 @@
+Title: Architecture
+
+----
+
+Text: 
+
+<div class="row">
+<div class="col-md-3">
+
+(link: work text: <i class="ion ion-arrow-left-c"></i> Back to graphic & web design work class: btn btn-greyoutline btn-sm u-mt10)
+
+</div>
+<div class="col-md-6">
+
+<big><em>This archive encompasses urban and architectural design projects from the period of 2007-2011.</em></big>
+
+</div>
+</div>
+
+----
+
+Featured1: pongo
+
+----
+
+Featured2: i-solemnly-pledge-to-public-space
+
+----
+
+Featured3: bies-safari

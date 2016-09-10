@@ -1,0 +1,53 @@
+Title: Holland Turkey Trade
+
+----
+
+Year: 2015
+
+----
+
+Description: 'Holland identity' for an extensive trade database
+
+----
+
+Tags: web design,ui,branding,front-end
+
+----
+
+Projecturl: http://hollandturkeytrade.com
+
+----
+
+Featuredimage: holland-turkey-trade-mockup.png
+
+----
+
+Featuredcolour: 7c8db5
+
+----
+
+Sections: 
+
+- 
+  textcolumn: ""
+  imagecolumn: '(image: holland-turkey-trade-mockup.png)'
+  fullscreen: "0"
+- 
+  textcolumn: |
+    Brief: come up with a fresh and contemporary new design for Holland Turkey Trade network's website, focused on visual promotion rather than paragraphs of text. One of the many institutions that facilitate trade relations between Netherlands and Turkey, it was important that the website's identity would relate to the general 'Holland branding', while keeping its own identity.
+    
+    
+    <span style="opacity: 0.5">
+    *left: old site*
+    *right: current redesigned website*
+    </span>
+  imagecolumn: '(image: before-after.png)'
+  fullscreen: "0"
+- 
+  textcolumn: '<span style="font-size: 1.5em;">**Responsive design system**</span>'
+  imagecolumn: '(image: design-system.jpg)'
+  fullscreen: "1"
+- 
+  textcolumn: ""
+  imagecolumn: '(link: http://www.hollandturkeytrade.com/ text: <i class="ion ion-forward u-mr10"></i> See <span style="opacity: 0.4">the result</span> for yourself class: btn btn-lg btn-outline popup: yes)'
+  fullscreen: "0"

@@ -1,0 +1,82 @@
+Title: Contact
+
+----
+
+Text: 
+
+<section class="bg-grey1">
+<div class="row">
+<div class="col-md-3 col-md-offset-1 u-aligncenter c-white">
+<i class="ion ion-email ion-2x u-mt40 c-greylight"></i>
+</div>
+<div class="col-md-7">
+<big><em>I happen to have accounts on all the fancy platforms out there — just pick one below. However, the best way to get in touch with me is to </em></big><br />
+(email: hello@ldaniel.eu text: Send me an email class:btn btn-primary u-mt20 popup:yes)
+</div>
+</div>
+</section>
+
+
+
+<section class="bg-twitterblue">
+<div class="row">
+<div class="col-md-3 col-md-offset-1 u-aligncenter c-white">
+<i class="ion ion-social-twitter ion-2x"></i>
+</div>
+<div class="col-md-7">
+
+<a href="https://twitter.com/intent/tweet?screen_name=ldanielswakman" class="twitter-mention-button" data-size="large" data-related="ldanielswakman" data-dnt="true">Tweet to @ldanielswakman</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+<a href="https://twitter.com/ldanielswakman" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @ldanielswakman</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+</div>
+</div>
+</section>
+
+
+
+<section class="bg-githubblue">
+<div class="row">
+<div class="col-md-3 col-md-offset-1 u-aligncenter c-white">
+<i class="ion ion-social-github ion-2x"></i>
+</div>
+<div class="col-md-7">
+
+<iframe src="https://ghbtns.com/github-btn.html?user=ldanielswakman&type=follow&count=false&size=large" frameborder="0" scrolling="0" width="235px" height="30px"></iframe>
+
+</div>
+</div>
+</section>
+
+
+
+<section class="bg-linkedinblue">
+<div class="row">
+<div class="col-md-3 col-md-offset-1 u-aligncenter c-white">
+<i class="ion ion-social-linkedin ion-2x"></i>
+</div>
+<div class="col-md-7">
+
+<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/ldanielswakman" data-format="inline" data-related="false"></script>
+
+</div>
+</div>
+</section>
+
+
+
+
+<section style="background-color: #035;">
+<div class="row">
+<div class="col-md-3 col-md-offset-1 u-aligncenter c-white">
+<i class="ion ion-social-dribbble ion-2x"></i>
+</div>
+<div class="col-md-7">
+(link: https://dribbble.com/ldanielswakman text: Dribbble shots class:btn btn-whiteoutline popup:yes)
+</div>
+</div>
+</section>

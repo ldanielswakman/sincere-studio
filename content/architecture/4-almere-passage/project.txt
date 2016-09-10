@@ -1,0 +1,30 @@
+Title: Almere Passage
+
+----
+
+Year: 2008
+
+----
+
+Description: Infrastructure & urban development scenario on the edge of Flevoland
+
+----
+
+Tags: urban design,urban planning,post-graduate
+
+----
+
+Projecturl: 
+
+----
+
+Featuredimage: almerepassage-aerial.jpg
+
+----
+
+Sections: 
+
+- 
+  textcolumn:
+  imagecolumn: '(image: almerepassage-aerial.jpg)'
+  fullscreen: on

@@ -1,0 +1,29 @@
+Title: Habita Coworking Space
+
+----
+
+Year: 2016
+
+----
+
+Description: modular and full-bleed website for Istanbul's latest coworking space
+
+----
+
+Tags: web design,graphic,front-end
+
+----
+
+Projecturl: http://www.habita.com.tr/en
+
+----
+
+Featuredimage: habita-mockup.png
+
+----
+
+Featuredcolour: ff5000
+
+----
+
+Sections: 

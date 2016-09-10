@@ -1,0 +1,34 @@
+Title: Yazane
+
+----
+
+Year: 2015
+
+----
+
+Tags: web design,front-end
+
+----
+
+Sections: 
+
+- 
+  textcolumn:
+  imagecolumn: '(image: yazane-homepage-mockup.jpg)'
+  fullscreen: true
+
+----
+
+Projecturl: http://yazane.com.tr/
+
+----
+
+Description: One-pager to take new visitors on a tour through the co-working space overlooking the Bosphorus
+
+----
+
+Featuredimage: yazane-homepage-mockup.png
+
+----
+
+Featuredcolour: 003355

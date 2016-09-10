@@ -1,0 +1,34 @@
+Title: Muhit
+
+----
+
+Year: 2015
+
+----
+
+Description: Building an online platform allowing citizens to collaboratively improve their living environment
+
+----
+
+Tags: web design,front-end,graphic,project management,logo,print
+
+----
+
+Projecturl: http://www.muhit.co/
+
+----
+
+Featuredimage: idea-list-mockup.png
+
+----
+
+Featuredcolour: 44a1e0
+
+----
+
+Sections: 
+
+- 
+  textcolumn:
+  imagecolumn: '(image: idea-list-mockup.png)'
+  fullscreen: true

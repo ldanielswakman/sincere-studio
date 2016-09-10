@@ -1,0 +1,34 @@
+Title: Home
+
+----
+
+Text: 
+
+<div class="col-md-7 col-md-offset-1 col-md-push-4">
+(image: tools.png)
+</div>
+<div class="col-md-4 u-pt20 col-md-pull-8">
+<big><strong>ldaniel.eu</strong> is a graphic and web design office aimed at creating clear visual solutions in a variety of projects.</big>
+<br />
+(link: work text: view my work <i class="ion ion-ios-arrow-forward u-ml5"></i> class: btn btn-lg btn-outline u-mt20 )
+</div>
+
+<div class="col-xs-12 u-pt60 u-pb30 u-aligncenter">
+<p class="c-grey"><em>Currently working on:</em></p>
+<p>
+<!-- <a href="oneplus/?q=swakman" style="color: red;" target="_blank">OnePlus Visualiser <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>, -->
+<a href="http://habita.com.tr/en" style="color: blue;" target="_blank">Habita <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>, 
+<a href="http://demgoodcoffee.com/" style="color: blue;" target="_blank">Dem Good Coffee <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>, 
+<a href="http://hikaye.muhit.co/en" style="color: blue;" target="_blank">Muhit <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>, 
+<!-- <a href="http://ldaniel.eu/moment-mosaic/" style="color: blue;" target="_blank">Moment Mosaic <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a> -->
+<a href="http://hipcontainers.nl/" style="color: blue;" target="_blank">Hip Containers <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a> and
+SuperCV.</p>
+</div>
+
+<!--<div class="col-xs-12 u-pt60 u-pb30 u-aligncenter">
+<p class="c-grey"><em>Recently finished: </em></p>
+<p>
+<a href="http://ldaniel.eu/moment-mosaic/" style="color: blue;" target="_blank">Moment Mosaic <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a> and
+<a href="http://ldaniel.eu/mau-manifesto/" style="color: blue;" target="_blank">Mau Manifesto <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>.
+</p>
+</div>-->

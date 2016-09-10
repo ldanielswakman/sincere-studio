@@ -1,0 +1,40 @@
+Title: De Wingerd
+
+----
+
+Year: 2013-2014
+
+----
+
+Tags: graphic,web design,front-end,logo
+
+----
+
+Projecturl: http://www.de-wingerd.com
+
+----
+
+Featuredimage: dewingerd-overview.jpg
+
+----
+
+Sections: 
+
+- 
+  textcolumn:
+  imagecolumn: '<div class="u-ph60">(image: dewingerd-scroll.gif)</div>'
+- 
+  textcolumn:
+  imagecolumn: '(image: dewingerd-overview.jpg)'
+  fullscreen: true
+- 
+  textcolumn:
+  imagecolumn: '(image: dewingerd-print-zoomin-top.jpg)'
+  fullscreen: true
+- 
+  textcolumn:
+  imagecolumn: '(image: dewingerd-mobile.png)'
+
+----
+
+Description: Explanatory website for an alternative healing practice

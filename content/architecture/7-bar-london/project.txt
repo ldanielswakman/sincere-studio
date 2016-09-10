@@ -1,0 +1,29 @@
+Title: bar.london
+
+----
+
+Year: 2008
+
+----
+
+Description: Interior design about seeing and being seen
+
+----
+
+Tags: architecture,interior design,post-graduate
+
+----
+
+Projecturl: 
+
+----
+
+Featuredimage: impression1.png
+
+----
+
+Sections: 
+
+- 
+  textcolumn:
+  imagecolumn: '(image: bar.png)'
