@@ -2,21 +2,22 @@
 
   <main>
 
-    <?php if (count($page->text()->kirbytext()) > 0) : ?>
+    <?php if (count($page->text()->kirbytext()) > 1) : ?>
 
-    <section class="nopadding u-relative" style="border-bottom: 1px solid #ddd">
+      <section class="nopadding u-relative" style="border-bottom: 1px solid #ddd">
 
-      <div class="row row-nopadding row-full u-abs-full">
-        <?php // snippet('featured', array('page' => $page )); ?>
-      </div>
+        <div class="row row-nopadding row-full u-abs-full">
+          <?php // snippet('featured', array('page' => $page )); ?>
+        </div>
 
-        <p class="text"><?php echo $page->text()->kirbytext() ?></p>
+          <?= count($page->text()->kirbytext()) ?>
+          <p class="text"><?php echo $page->text()->kirbytext() ?></p>
 
-      </div>
+        </div>
 
-    </section>
+      </section>
 
-    <?php endif; ?>
+    <?php endif ?>
 
     <section id="projects">
 
@@ -61,36 +62,40 @@
 
       <?php echo js('https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js'); ?>
 
-      <div class="row project-container">
+      <div class="row row-nopadding project-container">
         <?php 
         $projects = $page->children()->visible()->sortBy('year', 'desc');
         if($tag = param('tag')) {
           $projects = $projects->filterBy('tags', urldecode($tag), ',');
         }
         foreach($projects as $project): ?>
-        <div class="col-sm-6 col-md-4 project u-pv30">
+        <div class="col-xs-12 col-sm-6 project">
           <a href="<?php echo $project->url() ?>" title="<?php echo $project->title()->html() ?>" class="u-inlineblock">
 
-            <?php if ($img = $project->featuredimage()): ?>
-              <?php
-              $style = 'background-image: url(\'';
-              $style .= thumb($project->image($img), array('width' => 600, 'quality' => 80))->url();
-              $style .= '\');';
-              $style .= (strlen($project->featuredcolour()) > 0) ? ' background-color: #' . $project->featuredcolour() . ';' : '';
-              ?>
-              <div class="project-teaser u-mb10" style="<?php echo $style ?>">
-                <object><p class="meta project__tags">
-                  <small>
-                    <?php snippet('project_tags', array('page' => $project) ); ?>
-                  </small>
-                </p></object>
+            <div class="row row-internalpadding">
+              <div class="col-xs-5">
+                <?php if ($img = $project->featuredimage()): ?>
+                  <?php
+                  $style = 'background-image: url(\'';
+                  $style .= thumb($project->image($img), array('width' => 600, 'quality' => 80))->url();
+                  $style .= '\');';
+                  // $style .= (strlen($project->featuredcolour()) > 0) ? ' background-color: #' . $project->featuredcolour() . ';' : '';
+                  ?>
+                  <div class="project-teaser" style="<?php echo $style ?>"></div>
+                <?php endif ?>
               </div>
+              <div class="col-xs-7 u-pv10">
 
-            <?php endif; ?>
+                <h4 class="project__title u-mb10"><?php echo $project->title()->html() ?></h4>
+                <p class="project__description meta"><?php echo $project->description() ?></p>
 
-            <h4 class="project__title u-mb10"><?php echo $project->title()->html() ?></h4>
-            <p class="project__description meta"><?php echo $project->description() ?></p>
+                <object><p class="meta project__tags">
+                  <small><?php snippet('project_tags', array('page' => $project) ) ?></small>
+                </p></object>
 
+              </div>
+            </div>
+            <div class="btn btn-tertiary project__btn">view project</div>
           </a>
         </div>
         <?php endforeach; ?>

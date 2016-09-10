@@ -10,6 +10,12 @@
 
       </div>
 
+      <div class="row">
+        <div class="col-xs-12 u-aligncenter">
+          <?php // https://oneplus.net/xman/op3jury/list/?status=0&sort=1&order=0 ?>
+        </div>
+      </div>
+
     </section>
 
     <section>
