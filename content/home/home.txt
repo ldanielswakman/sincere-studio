@@ -16,13 +16,9 @@ Text:
 <div class="col-xs-12 u-pt60 u-pb30 u-aligncenter">
 <p class="c-grey"><em>Currently working on:</em></p>
 <p>
-<!-- <a href="oneplus/?q=swakman" style="color: red;" target="_blank">OnePlus Visualiser <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>, -->
-<a href="http://habita.com.tr/en" style="color: blue;" target="_blank">Habita <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>, 
-<a href="http://demgoodcoffee.com/" style="color: blue;" target="_blank">Dem Good Coffee <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>, 
-<a href="http://hikaye.muhit.co/en" style="color: blue;" target="_blank">Muhit <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>, 
-<!-- <a href="http://ldaniel.eu/moment-mosaic/" style="color: blue;" target="_blank">Moment Mosaic <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a> -->
-<a href="http://hipcontainers.nl/" style="color: blue;" target="_blank">Hip Containers <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a> and
-SuperCV.</p>
+<a href="http://wine-art.co/" style="color: blue;" target="_blank">wine•art <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>, 
+<a href="http://inflight-vr.com/" style="color: blue;" target="_blank">Inflight VR <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a> and
+<a href="http://muhit.co/?lang=en" style="color: blue;" target="_blank">Muhit  <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>.</p>
 </div>
 
 <!--<div class="col-xs-12 u-pt60 u-pb30 u-aligncenter">
