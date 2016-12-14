@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
-  <meta name="description" content="<?php echo $site->description()->html() ?>">
-  <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
-  <meta name="author" content="<?php echo $site->author()->html() ?>" />
+
+  <? snippet('header-metadata', array('page' => $page)) ?>
+
 
   <?php
   // checks if not on localhost, then serves assets from CDN

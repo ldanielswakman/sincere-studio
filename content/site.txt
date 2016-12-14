@@ -11,3 +11,7 @@ Description: ldaniel.eu is a graphic and web design office aimed at creating cle
 ----
 
 Keywords: graphic design,web design,design,freelance,digital,print,istanbul,amsterdam,visualisation,architecture,urbanism,urban design,front-end,responsive,flat
+
+----
+
+Meta-image: meta-image.jpg

@@ -15,3 +15,6 @@ fields:
   keywords:
     label: Keywords
     type:  tags
+  meta_image:
+    label: Meta image
+    type: image
