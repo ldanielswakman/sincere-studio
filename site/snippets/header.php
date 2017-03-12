@@ -18,6 +18,8 @@
     echo css('//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css');
     // Ionicons
     echo css('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+    // Google Fonts
+    echo css('https://fonts.googleapis.com/css?family=Overpass:400,400i,700,700i');
     // JQuery SmoothScroll
     echo js('http://code.jquery.com/jquery-1.11.1.min.js');
     echo js('http://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js');
@@ -34,8 +36,6 @@
   echo css('assets/css/style.css');
   echo js('assets/js/scripts.js');
   echo js('assets/js/twitterfetcher.min.js');
-
-  snippet('fonts');
 
   ?>
 

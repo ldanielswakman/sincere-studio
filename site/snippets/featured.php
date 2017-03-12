@@ -9,7 +9,7 @@ foreach ($featured as $project) :
 
   <?php
   $featuredImage = $project->image($project->featuredimage());
-  $thumbUrl = thumb($featuredImage, array('width' => 1400, 'quality' => 80))->url();
+  $thumbUrl = thumb($featuredImage, array('width' => 1500))->url();
   $style  = ' style="';
   $style .= (strlen($thumbUrl) > 0) ? 'background-image: url(\'' . $thumbUrl . '\');' : '';
   $style .= (strlen($project->featuredcolour()) > 0) ? ' background-color: #' . $project->featuredcolour() . ';' : '';

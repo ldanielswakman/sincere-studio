@@ -24,7 +24,7 @@
         <div class="col-md-4">
 
           <?php if ($key == 0) : ?>
-            <?php snippet('project_info', array('page' => $page )); ?>
+            <?php snippet('project_info', array('page' => $page, 'key' => $key )); ?>
           <?php endif; ?>
 
           <p><?php echo kirbytext($section['textcolumn']) ?></p>
@@ -50,7 +50,7 @@
     <section>
       <div class="row u-pv40">
         <div class="col-md-4">
-          <?php snippet('project_info', array('page' => $page )); ?>
+          <?php snippet('project_info', array('page' => $page, 'key' => $key )); ?>
         </div>
         <div class="col-md-8">
           <img src="<?php echo $page->url() . '/' . $page->featuredimage(); ?>" alt="" />
