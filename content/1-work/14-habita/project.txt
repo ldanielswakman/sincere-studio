@@ -18,7 +18,7 @@ Projecturl: http://www.habita.com.tr/en
 
 ----
 
-Featuredimage: habita-mockup.png
+Featuredimage: habita-promo-image.jpg
 
 ----
 
@@ -27,3 +27,28 @@ Featuredcolour: ff5000
 ----
 
 Sections: 
+
+- 
+  textcolumn: ""
+  imagecolumn: '(image: habita-mockup-frame.png)'
+  fullscreen: "0"
+- 
+  textcolumn: |
+    <br><br>
+    <span style="font-size: 1.25em;">**habita** is *"an open & transparent coworking hub for everyone"* in Istanbul, Turkey. As one of the most important acquisition channels for a coworking space, its website design should immediately show the qualities of the workspace, and the community that is growing inside it.</span>
+  imagecolumn: '(image: habita-title-opening.jpg)'
+  fullscreen: "1"
+- 
+  textcolumn: ""
+  imagecolumn: '(image: space-overview.jpg)'
+  fullscreen: "1"
+- 
+  textcolumn: |
+    <br><br>
+    <span style="font-size: 1.25em; color: white;">**habita** has just opened its doors, so the site should be able to grow as content (members, events, blog posts, new photos) grows. The site is built with (link: getkirby.com text: Kirby popup:yes) with an API system to dynamically load in extra content.</span>
+  imagecolumn: '(image: habita-phasing.jpg)'
+  fullscreen: "1"
+- 
+  textcolumn: 'The visual system is based on a rule of thirds: the the logo always sits on the intersection of coloured planes. The use of the theme colour orange is sparse, and is contrasted with a faded dark blue for text and secondary colour.'
+  imagecolumn: '(image: rule-of-thirds.png)'
+  fullscreen: "0"

@@ -18,7 +18,7 @@ Projecturl: http://hollandturkeytrade.com
 
 ----
 
-Featuredimage: holland-turkey-trade-mockup.png
+Featuredimage: featured-cover.jpg
 
 ----
 
