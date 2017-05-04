@@ -4,6 +4,7 @@
 /thumbs/*
 !/thumbs/index.html
 
+/site/cache
 /site/cache/*
 !/site/cache/index.html
 
@@ -13,6 +14,7 @@
 
 error_log
 email.log
+
 
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
@@ -25,11 +27,13 @@ email.log
 !/site/accounts/index.html
 /site/config/config.ldaniel.eu.php
 
+
 # Avatars
 # ---------------
 
 /assets/avatars/*
 !/assets/avatars/index.html
+
 
 # Dev files (local)
 # ------------
@@ -41,3 +45,6 @@ node_modules
 *.sublime-workspace
 
 
+# 'Other' folder (_)
+
+_
