@@ -10,14 +10,15 @@ Text:
 <div class="col-md-4 u-pt20 col-md-pull-8">
 <big><strong>ldaniel.eu</strong> is a graphic and web design office aimed at creating clear visual solutions in a variety of projects.</big>
 <br />
-(link: work text: view my work <i class="ion ion-ios-arrow-forward u-ml5"></i> class: btn btn-lg btn-outline u-mt20 )
+(link: work text: see the work <i class="ion ion-ios-arrow-forward u-ml5"></i> class: btn btn-lg btn-outline u-mt20 )
 </div>
 
 <div class="col-xs-12 u-pt60 u-pb30 u-aligncenter">
 <p class="c-grey"><em>Currently working on:</em></p>
 <p>
+<a href="http://onelook.com/" style="color: blue;" target="_blank">onelook <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>, 
 <a href="http://wine-art.co/" style="color: blue;" target="_blank">wine•art <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>, 
-<a href="http://inflight-vr.com/" style="color: blue;" target="_blank">Inflight VR <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a> and
+<a href="https://www.parasut.com/" style="color: blue;" target="_blank">Paraşüt <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>, 
 <a href="http://muhit.co/?lang=en" style="color: blue;" target="_blank">Muhit  <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>.</p>
 </div>
 
