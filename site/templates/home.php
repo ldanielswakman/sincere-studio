@@ -48,7 +48,7 @@
     </div>
   </section>
 
-  <section class="section--bg2" style="background-color: #ececec; background-image: url('images/well-what-did-you-expect.jpg'); min-height: 40vh;">
+  <section class="section--bg2" style="background-color: #ececec; background-image: url('<?= url('assets/images/well-what-did-you-expect.jpg'); ?>'); min-height: 40vh;">
 
     <div class="row">
       <div class="col-xs-12 col-md-5 col-md-offset-1" style="padding: 15vh 0;">
