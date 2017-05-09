@@ -25,7 +25,7 @@
     echo js('http://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js');
   // if localhost then load local assets
   else :
-    echo css('assets/css/bootstrap.min.css');
+    // echo css('assets/css/bootstrap.min.css');
     echo css('assets/css/ionicons.min.css');
     echo js('assets/js/jquery-1.11.1.min.js');
     echo js('assets/js/jquery.smooth-scroll.min.js');
@@ -52,32 +52,8 @@ $bodyClass .= ($page->isHomePage()) ? ' header-full' : '';
 ?>
 <body class="<?php echo $bodyClass ?>">
 
-  <header>
-    <div class="row">
-      <div class="col-sm-5 col-xs-hide">
-        <h6>
-          <?php 
-          if ($page->template() == 'project') :
-            echo '<a href="' . $page->parent()->url() . '">' .
-              '<i class="ion ion-ios-arrow-back u-mr5"></i>' .
-              $page->parent()->title() .
-              '</a>' . ' / ';
-            echo $page->title()->html();
-          elseif ($page->isHomePage()) :
-            echo 'Graphic & web design';
-          else:
-            echo $page->title()->html();
-          endif;
-          ?>
-        </h6>
-      </div>
-      <div class="col-sm-2 col-xs-6">
-        <a href="<?php echo ($page->url() != $site->url) ? $site->url : '#top' ?>" id="logo">
-          <?php snippet('logo') ?>
-        </a>
-      </div>
-      <div class="col-sm-5 col-xs-6">
-        <?php snippet('menu') ?>
-      </div>
-    </div>
-  </header>
+  <a href="<?php echo ($page->url() != $site->url()) ? $site->url() : '#top' ?>" class="logo">
+    <?php snippet('logo') ?>
+  </a>
+
+  <?php snippet('menu') ?>

@@ -1,6 +1,6 @@
 <?php
-// find featured projects on current page or fallback to 'work' page
-$sourcepage = (strlen($page->featured1()->html()) > 0) ? $page : page('work');
+// find featured projects on current page or fallback to 'projects' page
+$sourcepage = (strlen($page->featured1()->html()) > 0) ? $page : page('projects');
 $featured[] = page($sourcepage->uri() . '/' . $sourcepage->featured1());
 $featured[] = page($sourcepage->uri() . '/' . $sourcepage->featured2());
 $featured[] = page($sourcepage->uri() . '/' . $sourcepage->featured3());

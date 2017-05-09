@@ -1,11 +1,16 @@
-<nav class="u-alignright">
+<nav>
 
-  <ul class="menu clearfix">
-    <?php foreach($pages->visible() as $p): ?>
+  <ul>
+    <? foreach($pages->visible() as $p): ?>
     <li>
-      <a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo strtolower($p->title()->html()) ?></a>
+      <a <? e($p->isOpen(), ' class="active"') ?> href="<?= $p->url() ?>"><?= strtolower($p->title()->html()) ?></a>
     </li>
-    <?php endforeach ?>
+    <? endforeach ?>
+  </ul>
+
+  <ul class="menu-gray">
+    <li><a href="#">Say hi</a></li>
+    <li><a href="//twitter.com/ldanielswakman" target="_blank"><? snippet('twitter-icon-svg') ?></a></li>
   </ul>
 
 </nav>
