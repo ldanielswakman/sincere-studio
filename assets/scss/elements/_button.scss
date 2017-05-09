@@ -1,0 +1,45 @@
+// Button
+.button {
+  @include prefix(appearance, none);
+  display: inline-block;
+  padding: 0.375rem 1rem;
+  border: 1px solid transparent;
+  @include prefix(border-radius, 1.5rem);
+  line-height: 2rem;
+  font: inherit;
+  background-color: $blue;
+  color: $white;
+
+  &:hover {
+    background-color: darken($blue, 15%);
+    cursor: pointer;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    @include prefix(box-shadow, 0 0 1rem rgba($blue, 0.5));
+  }
+  &.button-dark {
+    background-color: $bluedark;
+  }
+  &.button-dark:hover {
+    background-color: darken($bluedark, 15%);
+  }
+  &.button-outline {
+    background: none;
+    border-color: blue;
+    color: $blue;
+  }
+  &.button-outline:hover {
+    background: $blue;
+    color: $white;
+  }
+  &.button-outline.button-dark {
+    border-color: $bluedark;
+    color: $bluedark;
+  }
+  &.button-outline.button-dark:hover {
+    background-color: $bluedark;
+    color: $white;
+  }
+}

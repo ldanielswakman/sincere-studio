@@ -18,7 +18,7 @@ Projecturl: http://www.muhit.co/
 
 ----
 
-Featuredimage: idea-list-mockup.png
+Featuredimage: muhit-cover-image.jpg
 
 ----
 
@@ -29,6 +29,6 @@ Featuredcolour: 44a1e0
 Sections: 
 
 - 
-  textcolumn:
+  textcolumn: ""
   imagecolumn: '(image: idea-list-mockup.png)'
   fullscreen: true
