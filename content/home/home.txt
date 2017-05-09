@@ -2,30 +2,29 @@ Title: Home
 
 ----
 
-Text: 
+Text: > **Hoi!**<br>ldaniel.eu is an independent design office, designing + building the web for today and tomorrow.
 
-<div class="col-md-7 col-md-offset-1 col-md-push-4">
-<!-- (image: tools.png) -->
-</div>
-<div class="col-md-4 u-pt20 col-md-pull-8">
-<big><strong>ldaniel.eu</strong> is a graphic and web design office aimed at creating clear visual solutions in a variety of projects.</big>
-<br />
-(link: work text: see the work <i class="ion ion-ios-arrow-forward u-ml5"></i> class: btn btn-lg btn-outline u-mt20 )
-</div>
+----
 
-<div class="col-xs-12 u-pt60 u-pb30 u-aligncenter">
-<p class="c-grey"><em>Currently working on:</em></p>
-<p>
-<a href="http://onelook.com/" style="color: blue;" target="_blank">onelook <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>, 
-<a href="http://wine-art.co/" style="color: blue;" target="_blank">wine•art <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>, 
-<a href="https://www.parasut.com/" style="color: blue;" target="_blank">Paraşüt <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>, 
-<a href="http://muhit.co/?lang=en" style="color: blue;" target="_blank">Muhit  <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>.</p>
-</div>
+Current: 
 
-<!--<div class="col-xs-12 u-pt60 u-pb30 u-aligncenter">
-<p class="c-grey"><em>Recently finished: </em></p>
-<p>
-<a href="http://ldaniel.eu/moment-mosaic/" style="color: blue;" target="_blank">Moment Mosaic <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a> and
-<a href="http://ldaniel.eu/mau-manifesto/" style="color: blue;" target="_blank">Mau Manifesto <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>.
-</p>
-</div>-->
+- 
+  text: wine—art
+  link: http://wine-art.co/
+- 
+  text: OneLook
+  link: http://www.onelook.com/thesaurus/
+- 
+  text: Paraşüt
+  link: https://www.parasut.com/
+- 
+  text: Muhit
+  link: http://www.muhit.co
+
+----
+
+Intro-bg-image: devices-subtle.jpg
+
+----
+
+Intro-bg-color: #f7f7f9

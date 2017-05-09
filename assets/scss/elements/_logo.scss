@@ -10,7 +10,7 @@
   @include prefix(border-radius, 50%);
   @include prefix(transition, all 1s ease-in-out);
   @include prefix(transform-origin, top left);
-  @include prefix(transition-delay, 2s);
+  @include prefix(transition-delay, 1s);
   @include prefix(transform, scale(8));
 
   svg {
@@ -31,6 +31,10 @@
   }
   &.animated .logo-svg-path {
     @include prefix(animation, dash 2s cubic-bezier(.25,0,.25,1));
+  }
+  &:hover {
+    @include prefix(transform, scale(5));
+    background-color: transparent;
   }
 }
 @-webkit-keyframes dash {
