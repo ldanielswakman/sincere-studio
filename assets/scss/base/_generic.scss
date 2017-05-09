@@ -1,0 +1,23 @@
+// General
+
+body, html {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+
+  background-color: $greylightest;
+  color: $bluedark;
+
+  font-family: $sans;
+  font-size: 112.5%; // 1rem = 18px (at 100% zoom)
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
+}

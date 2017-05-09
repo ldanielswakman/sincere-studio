@@ -1,0 +1,30 @@
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  @include prefix(display, flex);
+  @include prefix(justify-content, space-between);
+  width: 100%; // fallback
+  width: 100vw;
+  background: $white;
+  @include prefix(box-shadow, 0 0 1rem rgba($black, 0.1));
+
+  ul {
+    @include prefix(display, flex);
+    @include prefix(flex-grow, 0);
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+  }
+  li {
+    padding: 1rem 2rem;
+  }
+  .menu-gray {
+    a {
+      color: $gray;
+    }
+    svg path {
+      fill: $gray;
+    }
+  }
+}

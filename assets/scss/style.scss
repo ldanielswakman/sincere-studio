@@ -1,2 +1,15 @@
+// Base
+@import 'base/colours';
+@import 'base/variables';
+@import 'base/mixins';
 @import 'base/reset';
-@import '../css/style_old';
+@import 'base/generic';
+
+// Elements
+@import 'elements/logo';
+
+// Components
+@import 'components/nav';
+
+// Legacy
+// @import '../css/style_old';

@@ -6,11 +6,12 @@ $(document).ready(function() {
   var touchEvent = $touch ? 'touchstart' : 'click';
 
   //reading the start 'top' value of #logo
-  $logoTopInit = $('#logo').offset().top - $(window).scrollTop();
+  // $logoTopInit = $('#logo').offset().top - $(window).scrollTop();
   $logoTopInit = ($('body').hasClass('home')) ? 30 : -30;
 
   //adding animation to svg logo
-  $('#logo').addClass('animated');
+  $('body').addClass('isLoaded');
+  $('.logo').addClass('animated');
   //adding animation to svg logo
   setTimeout(function() { $('body').removeClass('header-full'); }, 1500);
 
