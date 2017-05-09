@@ -109,33 +109,6 @@
     </div>
   </section>
 
-  <section class="u-pv10vh" style="background-color: #1d2f3b; color: rgba(255, 255, 255, 0.9);">
-
-    <div class="row">
-      <div class="col-xs-12 col-md-10 col-md-offset-1 u-aligncenter">
-
-        <div class="line line--white"></div>
-
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-6 col-md-2"></div>
-      <div class="col-xs-6 col-md-4">
-
-        LINKLIST
-
-      </div>
-      <div class="col-xs-6 col-md-4">
-
-        LINKLIST
-
-      </div>
-    </div>
-
-  </section>
-
 </main>
 
-<div style="height: 78px;"></div>
-
-<?php // snippet('footer') ?>
+<?php snippet('footer') ?>
