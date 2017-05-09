@@ -1,4 +1,4 @@
-Title: Work
+Title: Projects
 
 ----
 
