@@ -12,9 +12,38 @@
   min-width: 12rem;
   margin-right: 1rem;
   vertical-align: top;
-  background-color: $greylightest;
+  background-color: $white;
   overflow: hidden;
   color: rgba($bluedark, 0.4);
+
+  &.card--words {
+    min-width: 15rem;
+    max-width: 20rem;
+    padding: 1.5rem 1.5rem 1rem;
+
+    .tweet {
+      padding-bottom: 1rem;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      color: $bluedark;
+    }
+    .timePosted, .interact {
+      display: inline-block;
+      font-size: 1rem;
+      line-height: 1rem;
+
+      a { color: rgba($bluedark, 0.4);
+        &:hover { 
+          color: $bluedark; 
+        }
+      }
+    }
+    .interact {
+      float: right;
+
+      a + a { margin-left: 0.5rem; }
+    }
+  }
 }
 
 

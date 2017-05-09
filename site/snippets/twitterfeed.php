@@ -1,21 +1,5 @@
-<section class="bg-grey5">
-
-  <div class="row u-pb10 u-mb30">
-    <div class="col-md-3 u-alignleft">
-      <a href="http://www.twitter.com/ldanielswakman" target="_blank"><i class="ion ion-social-twitter ion-15x u-pt10"></i></a>
-    </div>
-    <div class="col-md-6 u-aligncenter">
-      <h5 class="u-pv10">RECENT TWEETS</h5>
-    </div>
-    <div class="col-md-3 u-alignright">
-      <a href="http://www.twitter.com/ldanielswakman" target="_blank" class="btn btn-whiteoutline">view all tweets</a>
-    </div>
-  </div>
-
-  <div id="twitterfeed">
-  </div>
-
-</section>
+<div id="twitterfeed">
+</div>
 
 <script>
 
@@ -40,13 +24,20 @@
       var x = tweets.length;
       var n = 0;
       var element = document.getElementById('twitterfeed');
-      var html = '<div class="row">';
+      var html = '<div class="card-container owl-carousel">';
       while(n < x) {
-        html += '<div class="col-md-4 col-sm-6">' + tweets[n] + '</div>';
+        html += '<div class="card card--words">' + tweets[n] + '</div>';
         n++;
       }
       html += '</div>';
       element.innerHTML = html;
+
+      $('.owl-carousel').owlCarousel({
+        items: 1,
+        autoWidth: true,
+        nav: false,
+        dotsEach: 1
+      });
     }
     function momentDateFormatter(date) {
       var values = date.toDateString().split(" ");

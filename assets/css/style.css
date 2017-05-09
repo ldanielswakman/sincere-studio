@@ -1,6 +1,9 @@
 .bg-white {
   background-color: #fff; }
 
+.bg-bluedark {
+  background-color: #035; }
+
 /* --- Reset --- */
 html,
 body,
@@ -132,12 +135,22 @@ blockquote {
 .u-mt2 {
   margin-top: 2rem !important; }
 
+.u-mb1 {
+  margin-bottom: 1rem !important; }
+
+.u-mb2 {
+  margin-bottom: 2rem !important; }
+
 .u-mr1 {
   margin-right: 1rem !important; }
 
 .u-pv5vh {
   padding-top: 5vh !important;
   padding-bottom: 5vh !important; }
+
+.u-pv10vh {
+  padding-top: 10vh !important;
+  padding-bottom: 10vh !important; }
 
 .u-pt10vh {
   padding-top: 10vh !important; }
@@ -153,6 +166,9 @@ blockquote {
 
 .u-pb10vh {
   padding-bottom: 10vh !important; }
+
+.u-aligncenter {
+  text-align: center; }
 
 .button {
   -webkit-appearance: none;
@@ -179,7 +195,7 @@ blockquote {
   .button.button-dark {
     background-color: #035; }
   .button.button-dark:hover {
-    background-color: #000509; }
+    background-color: #00243c; }
   .button.button-outline {
     background: none;
     border-color: blue;
@@ -193,6 +209,14 @@ blockquote {
   .button.button-outline.button-dark:hover {
     background-color: #035;
     color: #fff; }
+
+.line {
+  display: inline-block;
+  height: 6rem;
+  margin: 0 3rem 1rem;
+  border-left: 1px solid #00f; }
+  .line.line--white {
+    border-left-color: #fff; }
 
 .logo {
   position: fixed;
@@ -277,9 +301,30 @@ blockquote {
   min-width: 12rem;
   margin-right: 1rem;
   vertical-align: top;
-  background-color: #f7f7f9;
+  background-color: #fff;
   overflow: hidden;
   color: rgba(0, 51, 85, 0.4); }
+  .card.card--words {
+    min-width: 15rem;
+    max-width: 20rem;
+    padding: 1.5rem 1.5rem 1rem; }
+    .card.card--words .tweet {
+      padding-bottom: 1rem;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      color: #035; }
+    .card.card--words .timePosted, .card.card--words .interact {
+      display: inline-block;
+      font-size: 1rem;
+      line-height: 1rem; }
+      .card.card--words .timePosted a, .card.card--words .interact a {
+        color: rgba(0, 51, 85, 0.4); }
+        .card.card--words .timePosted a:hover, .card.card--words .interact a:hover {
+          color: #035; }
+    .card.card--words .interact {
+      float: right; }
+      .card.card--words .interact a + a {
+        margin-left: 0.5rem; }
 
 .owl-dots {
   display: flex;

@@ -23,7 +23,7 @@
     background-color: $bluedark;
   }
   &.button-dark:hover {
-    background-color: darken($bluedark, 15%);
+    background-color: darken($bluedark, 5%);
   }
   &.button-outline {
     background: none;
