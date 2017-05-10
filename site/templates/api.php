@@ -4,7 +4,7 @@
 
 header('Content-type: application/json; charset=utf-8');
 
-$data = $pages->find('work')->children()->visible();
+$data = $pages->find('projects')->children()->visible();
 
 // build array basics
 $json = array();
@@ -29,6 +29,15 @@ foreach($data as $project) {
     'featuredcolour' => (string)$project->featuredcolour(),
     // 'image' => $image_data,
   );
+}
+
+// retrieve Blog content from Wordpress API
+$url = 'https://spreadsheet.glitch.me/?key=171Ur45EUbxpG3f6sujgo_UgElyFSF2RKcXFohvGIG_M';
+$json_data = file_get_contents($url);
+$data = json_decode($json_data, true);
+
+foreach($data as $item) {
+  $json['location'][] = $item;
 }
 
 echo json_encode($json);
