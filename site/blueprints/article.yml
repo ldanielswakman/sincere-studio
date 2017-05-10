@@ -1,0 +1,19 @@
+title: Article
+pages: false
+
+fields:
+  title:
+    label: Title
+    type: text
+  date:
+    label: Publish Date
+    type: date
+    width: 1/2
+  canonical:
+    label: >
+      Canonical URL <span style="font-weight: normal; color: #999;">(if any)</span>
+    type: url
+    width: 1/2
+  text:
+    label: Text
+    type: textarea

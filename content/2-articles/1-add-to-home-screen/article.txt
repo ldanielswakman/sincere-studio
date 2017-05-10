@@ -1,0 +1,17 @@
+Title: ‘Add to home screen’: Designing & prototyping a native app in HTML
+
+----
+
+Date: 2017-01-09
+
+----
+
+Canonical: https://medium.com/@ldanielswakman/add-to-homescreen-prototype-77ce0f050ac4
+
+----
+
+Text: 
+
+> TL;DR: at Paraşüt we built a prototype in HTML & CSS to be able to design, prototype and iteratively test our mobile app. Works great, you should try it.
+
+(image: devices-in-cloud.png)
