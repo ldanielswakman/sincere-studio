@@ -2,6 +2,18 @@
 
   <main>
 
+    <section class="bg-white" style="padding-top: 1.5rem;">
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-1">
+
+          <h1>projects</h1>
+
+          <p style="margin: 4rem 0 1rem; font-size: 2rem;">selected</p>
+
+        </div>
+      </div>
+    </section>
+
     <?php if (count($page->text()->kirbytext()) > 1) : ?>
 
       <section class="nopadding u-relative" style="border-bottom: 1px solid #ddd">
@@ -19,7 +31,34 @@
 
     <?php endif ?>
 
-    <section id="projects">
+
+    <section class="bg-bluedull u-pv10vh" style="color: rgba(255, 255, 255, 0.8);">
+
+      <? $projects = $page->children()->visible()->sortBy('year', 'desc'); ?>
+      <? foreach ($projects as $project) : ?>
+        <div class="row">
+          <div class="col-xs-3 col-sm-2 col-sm-offset-1">
+            <?
+            if(!isset($prev) || $prev->year()->value() !== $project->year()->value()) {
+              echo $project->year();
+            }
+            ?>
+          </div>
+          <div class="col-xs-7 col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-1">
+              <a href="<?= $project->url() ?>" class="u-block c-white" style="line-height: 1rem; margin-bottom: 0.75rem;">
+                <?= $project->title() ?><br>
+                <small style="color: rgba(255, 255, 255, 0.5);"><?= $project->description() ?></small>
+              </a>
+          </div>
+          <div class="col-xs-12 col-xs-offset-3 col-sm-10 col-sm-offset-1 col-md-3">
+              <small><? snippet('project_tags', array('page' => $project) ) ?></small>
+          </div>
+        </div>
+      <? $prev = $project; endforeach; ?>
+
+    </section>
+
+    <section id="projects" class="u-hide">
 
       <div class="row">
         <div class="col-xs-12">
@@ -103,14 +142,14 @@
 
     </section>
 
-    <?php if($page->slug() == 'work'): ?>
+    <?php if($page->slug() == 'projects'): ?>
     <a href="<?php echo u('/architecture') ?>" class="u-block u-pv50 bg-white">
       <div class="row">
         <div class="col-md-6">
 
-          <big><em>
+          <big>
             My background is in architecture and urban design. <i class="ion ion-chevron-right u-ml20"></i>
-          </em></big>
+          </big>
           
         </div>
       </div>

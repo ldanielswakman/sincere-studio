@@ -21,7 +21,7 @@
 
         <div>
           <? $items = $page->current()->toStructure() ?>
-          <? foreach($items as $key => $item): ?><a href="<?= $item->text()->url() ?>" target="_blank"><?= $item->text()->html() ?></a><? if($key < $items->count()-1) { ecco(($items->count()-2 == $key), ' &amp; ', ', '); } ?><? endforeach; ?>.
+          <? foreach($items as $key => $item): ?><a href="<?= $item->link() ?>" target="_blank"><?= $item->text()->html() ?></a><? if($key < $items->count()-1) { ecco(($items->count()-2 == $key), ' &amp; ', ', '); } ?><? endforeach; ?>.
         </div>
 
       </div>
@@ -57,6 +57,36 @@
 
         <blockquote>...<strong>L Daniel Swakman</strong> is the 'full stack' designer running it. He also likes working at startups that want to be design-driven.</blockquote>
 
+        <div id="ldaniel_location" class="u-mt1" style="line-height: 2rem;"><small><em>getting location...</em></small></div>
+
+        <script>
+          $(document).ready(function() {
+            $url = '<?= $site->url() . '/api'; ?>';
+
+            $.getJSON( $url, function(r) {
+
+              console.log(r['location']);
+
+              $.each(r['location'], function(i, item) {
+                if (item['year'] == '2017') {
+                  current = item['location_city'] + ' ' + item['location_flag'];
+                }
+              });
+
+              if(current) {
+                html = 'Currently in: <strong>';
+                html += current;
+                html += '</strong>';
+
+                $('#ldaniel_location').html(html);
+              } else {
+                'No location found for curent year';
+              }
+
+            });
+          });
+        </script>
+
         <div class="u-mv2">
           <a href="<?= $pages->find('articles')->url() ?>" class="button button-dark u-mr1 u-mb1">read more</a>
           <a href="<?= $pages->find('projects')->url() ?>" class="button button-dark button-outline u-mb1">cv</a>
@@ -90,7 +120,7 @@
     </div>
   </section>
 
-  <section class="section--bg2" style="background-color: #34495e; background-image: url('<?= url('assets/images/sitting-w-habita.jpg'); ?>'); background-size: cover; color: rgba(255, 255, 255, 0.9);">
+  <section class="section--bg2 bg-bluedull" style="background-image: url('<?= url('assets/images/sitting-w-habita.jpg'); ?>'); background-size: cover; color: rgba(255, 255, 255, 0.9);">
 
     <div class="row">
       <div class="col-xs-12 col-md-5 col-md-offset-1" style="padding: 15vh 0;">
