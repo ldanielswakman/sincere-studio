@@ -33,10 +33,23 @@ body, html {
 a {
   text-decoration: none;
   color: $blue;
+
+  &:active,
+  &:focus {
+    outline: none;
+    background-color: $blue;
+    color: $white;
+    // @include prefix(box-shadow, 0 0 1rem rgba($blue, 0.5));
+  }
 }
 
 
 // Headings
+h1 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: $blue;
+}
 h5 {
   text-transform: uppercase;
   font-size: 0.875rem;

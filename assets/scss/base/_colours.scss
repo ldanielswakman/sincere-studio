@@ -2,16 +2,35 @@
 
 // Theme colours
 $blue: #00f;
+$bluedull: #34495e;
 $bluedark: #035;
 
 // Greys
 $white: #fff;
 $greylightest: #f7f7f9;
+$greylight: #cccccc;
 $gray: #999;
 $black: #000;
 
+.c-blue {
+  color: $blue;
+}
+
+.c-white {
+  color: $white;
+}
+.c-greylightest {
+  color: $greylightest;
+}
+.c-greylight {
+  color: $greylight;
+}
+
 .bg-white {
   background-color: $white;
+}
+.bg-bluedull {
+  background-color: $bluedull;
 }
 .bg-bluedark {
   background-color: $bluedark;
