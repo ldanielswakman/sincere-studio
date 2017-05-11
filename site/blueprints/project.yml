@@ -1,16 +1,22 @@
-<?php if(!defined('KIRBY')) exit ?>
-
 title: Project
 pages: false
 files:
   sortable: true
+
 fields:
+
+  h_basics:
+    label: Basic
+    type: headline
   title:
     label: Title
     type:  text
+    width: 2/3
   year:
     label: Year
     type: text
+    icon: calendar-o
+    width: 1/3
   description:
     label: > 
       Description <em>(1 sentence)</em>
@@ -20,17 +26,40 @@ fields:
     label: Tags
     type:  tags
   projecturl:
-    label: URL
+    label: Project URL
     type:  url
+
+  h_featured:
+    label: Featured
+    type: headline
+    width: 2/3
+  featured:
+    label: >
+      <div style="margin-top: 2rem;"></div>
+    type: fieldtoggle
+    width: 1/3
+    options:
+      0: "No"
+      1: "Yes"
+    show:
+      1: featuredimage featuredcolour
+    hide:
+      0: featuredimage featuredcolour
   featuredimage:
     label: Featured Image
     type: select
     options: images
+    width: 1/2
   featuredcolour:
     label: >
       Featured Color <i>(HEX)</i>
     type: text
     icon: magic
+    width: 1/2
+
+  c_content:
+    label: Content
+    type: headline
   sections:
     label: Sections
     type: structure

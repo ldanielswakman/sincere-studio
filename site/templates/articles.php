@@ -12,21 +12,23 @@
     </div>
   </section>
 
-  <section>
+  <section class="">
     <div class="row">
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-7 col-md-offset-1 u-pt10vh">
-
-        <div class="line" style="margin-left: 2rem;"></div>
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-7 col-md-offset-1 u-pv10vh">
 
         <? foreach ($page->children()->visible() as $article) : ?>
+          <div class="line" style="margin-left: 2rem;"></div>
+
           <a href="<?= $article->url() ?>" class="list__article">
+
             <h3><?= $article->title()->html() ?></h3>
 
             <div class="meta"><date><?= $article->date('d M Y') ?></date> — 9 min read</div>
 
-            <p><?= $article->text()->kirbytext() ?></p>
+            <p><?= excerpt($article->text(), 200) ?></p>
 
-            <button class="button button-outline">read</button>
+            <button class="button button-outline u-mt1">read</button>
+
           </a>
         <? endforeach ?>
 

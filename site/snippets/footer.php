@@ -18,10 +18,16 @@
         <? endforeach ?>
 
       </div>
-      <div class="col-xs-6 col-md-4 u-aligncenter">
+      <div class="col-xs-6 col-md-4">
 
+        <h4 style="font-size: 1rem; letter-spacing: 0.1rem; opacity: 0.5; margin-bottom: 0.25rem;">LATEST PROJECTS</h4>
+        <? foreach($site->find('projects')->children()->visible()->sortBy('year', 'desc')->limit(3) as $p) : ?>
+          <a href="<?= $p->url() ?>"><?= $p->title() ?></a><br>
+        <? endforeach ?>
+        <br><br>
 
-        <? foreach($site->find('projects')->children()->visible()->sortBy('year', 'desc')->limit(10) as $p) : ?>
+        <h4 style="font-size: 1rem; letter-spacing: 0.1rem; opacity: 0.5; margin-bottom: 0.25rem;">LATEST ARTICLES</h4>
+        <? foreach($site->find('articles')->children()->visible()->sortBy('year', 'desc')->limit(3) as $p) : ?>
           <a href="<?= $p->url() ?>"><?= $p->title() ?></a><br>
         <? endforeach ?>
 

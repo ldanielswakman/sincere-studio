@@ -33,7 +33,8 @@ body, html {
 a {
   text-decoration: none;
   color: $blue;
-
+}
+p a {
   &:active,
   &:focus {
     outline: none;

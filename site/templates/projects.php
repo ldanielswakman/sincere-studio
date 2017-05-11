@@ -31,20 +31,51 @@
 
     <?php endif ?>
 
+    <?
+    $projects = $page->children()->visible()->sortBy('year', 'desc');
+    $pr_featured = $projects->filterBy('featured', '1');
+    ?>
+
+    <section class="u-pv5vh">
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+
+          <? foreach ($pr_featured as $project) : ?>
+            <a href="<?= $project->url() ?>" class="card" style="width: 25rem;">
+              <? if($image = $project->featuredimage()) : ?>
+                <figure>
+                  <img src="<?= thumb($project->image($image), ['width' => 800])->url() ?>" alt="">
+                </figure>
+              <? endif ?>
+              <div style="padding: 1rem;">
+                <h3 class="c-blue"><?= $project->title()->html() ?><sup class="c-greylight" style="font-weight: normal; margin-left: 0.5rem;"><small><?= $project->year() ?></small></sup></h3>
+                <p><?= $project->description()->html() ?></p>
+              </div>
+            </a>
+          <? endforeach ?>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-1">
+
+          <p style="margin: 4rem 0 1rem; font-size: 2rem;">chronology</p>
+
+        </div>
+      </div>
+    </section>
 
     <section class="bg-bluedull u-pv10vh" style="color: rgba(255, 255, 255, 0.8);">
 
-      <? $projects = $page->children()->visible()->sortBy('year', 'desc'); ?>
       <? foreach ($projects as $project) : ?>
         <div class="row">
-          <div class="col-xs-3 col-sm-2 col-sm-offset-1">
-            <?
-            if(!isset($prev) || $prev->year()->value() !== $project->year()->value()) {
-              echo $project->year();
-            }
-            ?>
+          <div class="col-xs-12 col-sm-2 col-sm-offset-1">
+            <?= ecco((!isset($prev) || $prev->year()->value() !== $project->year()->value()), '<big>' . $project->year() . '</big>') ?>
           </div>
-          <div class="col-xs-7 col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-1">
+          <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-1">
               <a href="<?= $project->url() ?>" class="u-block c-white" style="line-height: 1rem; margin-bottom: 0.75rem;">
                 <?= $project->title() ?><br>
                 <small style="color: rgba(255, 255, 255, 0.5);"><?= $project->description() ?></small>
@@ -55,6 +86,15 @@
           </div>
         </div>
       <? $prev = $project; endforeach; ?>
+
+
+      <div class="row u-mt2">
+        <div class="col-xs-12 col-sm-2 col-sm-offset-1">
+          <big>before that</big>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-1">
+          <a href="<?php echo u('/architecture') ?>" class="c-white">architecture and urban design &rarr;</a>
+      </div>
 
     </section>
 
@@ -141,20 +181,6 @@
       </div>
 
     </section>
-
-    <?php if($page->slug() == 'projects'): ?>
-    <a href="<?php echo u('/architecture') ?>" class="u-block u-pv50 bg-white">
-      <div class="row">
-        <div class="col-md-6">
-
-          <big>
-            My background is in architecture and urban design. <i class="ion ion-chevron-right u-ml20"></i>
-          </big>
-          
-        </div>
-      </div>
-    </a>
-    <?php endif; ?>
 
   </main>
 
