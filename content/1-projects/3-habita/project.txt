@@ -1,4 +1,4 @@
-Title: Habita Coworking Space
+Title: Habita
 
 ----
 
@@ -52,3 +52,7 @@ Sections:
   textcolumn: 'The visual system is based on a rule of thirds: the the logo always sits on the intersection of coloured planes. The use of the theme colour orange is sparse, and is contrasted with a faded dark blue for text and secondary colour.'
   imagecolumn: '(image: rule-of-thirds.png)'
   fullscreen: "0"
+
+----
+
+Featured: 1

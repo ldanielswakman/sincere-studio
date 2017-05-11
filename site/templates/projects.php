@@ -38,23 +38,23 @@
 
     <section class="u-pv5vh">
       <div class="row">
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
 
-          <? foreach ($pr_featured as $project) : ?>
-            <a href="<?= $project->url() ?>" class="card" style="width: 25rem;">
+        <? foreach ($pr_featured as $project) : ?>
+          <div class="col-xs-12 col-sm-6">
+            <a href="<?= $project->url() ?>" class="card u-mb2" style="width: 100%;">
               <? if($image = $project->featuredimage()) : ?>
                 <figure>
                   <img src="<?= thumb($project->image($image), ['width' => 800])->url() ?>" alt="">
                 </figure>
               <? endif ?>
               <div style="padding: 1rem;">
-                <h3 class="c-blue"><?= $project->title()->html() ?><sup class="c-greylight" style="font-weight: normal; margin-left: 0.5rem;"><small><?= $project->year() ?></small></sup></h3>
+                <h3 class="c-blue" style="margin-bottom: 0.25rem;"><?= $project->title()->html() ?><sup class="c-greylight" style="font-size: 0.875rem;font-weight: normal; margin-left: 0.5rem;"><small><?= $project->year() ?></small></sup></h3>
                 <p><?= $project->description()->html() ?></p>
               </div>
             </a>
-          <? endforeach ?>
+          </div>
+        <? endforeach ?>
 
-        </div>
       </div>
     </section>
 

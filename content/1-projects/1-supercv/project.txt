@@ -1,0 +1,45 @@
+H-basics: 
+
+----
+
+Title: SuperCV
+
+----
+
+Year: 2016
+
+----
+
+Description: fresh & confident — design system & identity
+
+----
+
+Tags: web design,branding
+
+----
+
+Projecturl: http://supercv.com/
+
+----
+
+H-featured: 
+
+----
+
+Featured: 1
+
+----
+
+Featuredimage: supercv.jpg
+
+----
+
+Featuredcolour: 1cf7d1
+
+----
+
+C-content: 
+
+----
+
+Sections: 

@@ -10,7 +10,7 @@ fields:
     type:  text
   text:
     label: Text
-    type:  textarea
+    type:  markdown
   featured1:
     label: Featured Project 1
     type: select
