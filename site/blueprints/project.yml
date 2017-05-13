@@ -57,7 +57,7 @@ fields:
     icon: magic
     width: 1/2
 
-  c_content:
+  h_content:
     label: Content
     type: headline
   sections:

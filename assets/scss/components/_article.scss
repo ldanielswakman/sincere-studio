@@ -24,5 +24,14 @@
   }
 }
 .article {
-
+  h1 {
+    font-family: $serif;
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: $blue;
+  }
+  figure {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 }

@@ -85,6 +85,40 @@ $(document).ready(function(){
 
 
 
+// Location via L Daniel API
+$(document).ready(function() {
+  if($('#ldaniel_location').length > 0 && $('#ldaniel_location').attr('data-url').length > 0) {
+
+    $url = $('#ldaniel_location').attr('data-url');
+
+    $.getJSON( $url, function(r) {
+
+      $.each(r['location'], function(i, item) {
+        if (item['year'] == '2017') {
+          current = item['location_city'] + ' ' + item['location_flag'];
+        }
+      });
+
+      if(current) {
+        html = 'Currently in: <strong>';
+        html += current;
+        html += '</strong>';
+
+        $('#ldaniel_location').html(html);
+      } else {
+        console.log('No location found for curent year');
+      }
+
+    });
+
+  }
+});
+
+
+
+
+
+
 
 $(window).scroll(function() { scrollActions(); });
 $(window).resize(function() { scrollActions(); });

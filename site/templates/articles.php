@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-1">
 
-        <h1>articles</h1>
+        <h1><?= strtolower($page->title()->html()) ?></h1>
 
       </div>
     </div>
@@ -16,14 +16,14 @@
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-7 col-md-offset-1 u-pv10vh">
 
-        <? foreach ($page->children()->visible() as $article) : ?>
+        <? foreach ($page->children()->visible()->flip() as $article) : ?>
           <div class="line" style="margin-left: 2rem;"></div>
 
           <a href="<?= $article->url() ?>" class="list__article">
 
             <h3><?= $article->title()->html() ?></h3>
 
-            <div class="meta"><date><?= $article->date('d M Y') ?></date> — 9 min read</div>
+            <div class="meta"><date><?= $article->date('d M Y') ?></date> — <? snippet('reading-time', ['text' => $article->text()]) ?></div>
 
             <p><?= excerpt($article->text(), 200) ?></p>
 

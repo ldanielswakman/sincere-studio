@@ -94,7 +94,7 @@ figure {
   margin: 0; }
 
 figure img {
-  width: 100%; }
+  max-width: 100%; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -149,6 +149,15 @@ h5 {
 blockquote {
   font-size: 1.5rem;
   line-height: 1.5em; }
+
+p + blockquote {
+  margin-top: 1rem; }
+
+p {
+  line-height: 1.6em; }
+
+blockquote + p, ul + p, ol + p, p + p {
+  margin-top: 1rem; }
 
 .u-mv2 {
   margin-top: 2rem !important;
@@ -335,6 +344,16 @@ blockquote {
     line-height: 1.8rem;
     opacity: 0.8; }
 
+.article h1 {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #00f; }
+
+.article figure {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
 .card-container {
   width: 100%;
   -webkit-display: flex;
@@ -432,9 +451,9 @@ nav {
         color: #00f; }
   nav li {
     padding: 1rem 2rem; }
-  nav .menu-gray a {
+  nav .menu-grey a {
     color: #999; }
-  nav .menu-gray svg path {
+  nav .menu-grey svg path {
     fill: #999; }
 
 section {

@@ -17,7 +17,7 @@ nav {
     list-style: none;
 
     &.hasActive a {
-      color: $gray;
+      color: $grey;
 
       &.isActive {
         color: $blue;
@@ -27,12 +27,12 @@ nav {
   li {
     padding: 1rem 2rem;
   }
-  .menu-gray {
+  .menu-grey {
     a {
-      color: $gray;
+      color: $grey;
     }
     svg path {
-      fill: $gray;
+      fill: $grey;
     }
   }
 }

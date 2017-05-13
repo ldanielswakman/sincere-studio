@@ -57,39 +57,11 @@
 
         <blockquote>...<strong>L Daniel Swakman</strong> is the 'full stack' designer running it. He also likes working at startups that want to be design-driven.</blockquote>
 
-        <div id="ldaniel_location" class="u-mt1" style="line-height: 2rem;"><small><em>getting location...</em></small></div>
-
-        <script>
-          $(document).ready(function() {
-            $url = '<?= $site->url() . '/api'; ?>';
-
-            $.getJSON( $url, function(r) {
-
-              console.log(r['location']);
-
-              $.each(r['location'], function(i, item) {
-                if (item['year'] == '2017') {
-                  current = item['location_city'] + ' ' + item['location_flag'];
-                }
-              });
-
-              if(current) {
-                html = 'Currently in: <strong>';
-                html += current;
-                html += '</strong>';
-
-                $('#ldaniel_location').html(html);
-              } else {
-                'No location found for curent year';
-              }
-
-            });
-          });
-        </script>
+        <div id="ldaniel_location" data-url="<?= $site->url() . '/api'; ?>" class="u-mt1" style="line-height: 2rem;"><small><em>get ting location...</em></small></div>
 
         <div class="u-mv2">
-          <a href="<?= $pages->find('articles')->url() ?>" class="button button-dark u-mr1 u-mb1">read more</a>
-          <a href="<?= $pages->find('projects')->url() ?>" class="button button-dark button-outline u-mb1">cv</a>
+          <a href="<?= $pages->find('about')->url() ?>" class="button button-dark u-mr1 u-mb1">read more</a>
+          <a href="<?= $pages->find('cv')->url() ?>" class="button button-dark button-outline u-mb1">cv</a>
         </div>
 
       </div>

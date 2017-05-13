@@ -14,8 +14,8 @@
     <? endforeach ?>
   </ul>
 
-  <ul class="menu-gray">
-    <li><a href="#">Say hi</a></li>
+  <ul class="menu-grey">
+    <li><a href="#">get in touch</a></li>
     <li><a href="//twitter.com/ldanielswakman" target="_blank"><? snippet('twitter-icon-svg') ?></a></li>
   </ul>
 

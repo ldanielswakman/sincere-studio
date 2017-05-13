@@ -6,7 +6,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-1">
 
-          <h1>projects</h1>
+          <h1><?= strtolower($page->title()->html()) ?></h1>
 
           <p style="margin: 4rem 0 1rem; font-size: 2rem;">selected</p>
 

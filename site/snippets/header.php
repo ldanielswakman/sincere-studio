@@ -62,4 +62,4 @@ $bodyClass .= ($page->isHomePage()) ? ' header-full' : '';
     <?php snippet('logo') ?>
   </a>
 
-  <?php snippet('menu') ?>
+  <?php snippet('nav') ?>
