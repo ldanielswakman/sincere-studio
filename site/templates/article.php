@@ -8,14 +8,15 @@
     </section>
   <? endif ?>
 
-  <section class="article">
+  <section class="article u-pv10vh">
     <div class="row">
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-2 col-md-offset-1 u-pt10vh">
 
-        <a href="<?= $page->parent()->url() ?>" ?>&larr; <?= strtoupper($page->parent()->title()->html()) ?></a>
+      <? snippet('article/col-side') ?>
+
+        <a href="<?= $page->parent()->url() ?>" ?><?= strtoupper($page->parent()->title()->html()) ?></a>
 
       </div>
-      <div class="col-xs-12 col-md-7 u-pv10vh">
+      <? snippet('article/col-main') ?>
 
         <h4 class="c-greylight u-mb1">CASE STUDY</h4>
         <h1 class="u-mb1 "><?= $page->title()->html() ?></h1>

@@ -1,9 +1,9 @@
 // Section
 section {
+  $sectionpadding: 1.5rem;
   position: relative;
-  padding: 0 1.5rem; // site-wide horizontal padding
+  padding: 0 $sectionpadding; // site-wide horizontal padding
   overflow: hidden;
-
 
   * {
     z-index: 1;
@@ -42,4 +42,9 @@ section {
       background-position: 60% top;
     }
   }
+}
+.section-undo-p {
+  width: calc(100% + $sectionpadding * 2);
+  margin-left: -$sectionpadding;
+  margin-right: -$sectionpadding;
 }

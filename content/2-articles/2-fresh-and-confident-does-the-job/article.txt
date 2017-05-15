@@ -20,21 +20,23 @@ I was invited by a new startup/startup-in-residence focusing on a job matching a
 
 > “The goal is to create an overall design identity for the SuperCV platform that highlights the unique technology to a global user group.“
 
-(image: supercv-notebooks.png)
+(new-section: bg-white)
 
-———
+(full-image: supercv-notebooks.png)
+
+(side-image: supercv-colors.png class: u-maxwidth75p)
 
 The initial proposal for the brand identity rooted in the search for a clear iconic expression that would signal the algorithm ‘machine’ and the behind-the-scenes matching that was being done — combined with a colour scheme that would invoke innovation and trust. 
 
-(image: supercv-colors.png)
-
 Those keywords were reflected in a basic colour palette of fluorescent cyan (being the fresh innovative side) contrasted with a marine blue (being the confident and trustworthy side.
 
-———
+(new-section: u-pt10vh)
 
 With a clear idea for this direction, combined with a reflection of this core palette into mockups for landing pages, a concept for the app UI, and promotional material, I set out with my slide deck to the design concept meeting.
 
-(image: supercv-presentation.jpg)
+(full-image: supercv-presentation.jpg)
+
+<br>
 
 > “In my personal opinion: I don’t like this colour—at all.”
 
