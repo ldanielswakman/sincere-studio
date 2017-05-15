@@ -55,7 +55,7 @@
 
   <div style="height: 78px;"></div>
 
-  <?php snippet('ga_tracking') ?>
+  <? ecco((c::get('env') !== 'DEV'), snippet('ga_tracking', [], true)) ?>
 
 </body>
 </html>

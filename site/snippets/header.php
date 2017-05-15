@@ -12,8 +12,7 @@
 
   <?php
   // checks if not on localhost, then serves assets from CDN
-  $local = strpos($_SERVER['SERVER_NAME'], 'localhost');
-  if($local === false) :
+  if(c::get('env') !== 'DEV') :
     // Bootstrap
     echo css('//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css');
     // Ionicons

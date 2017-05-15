@@ -14,3 +14,6 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 c::set('cache', false);
 c::set('debug', true);
+
+// Set environment (custom)
+c::set('env', 'DEV');
