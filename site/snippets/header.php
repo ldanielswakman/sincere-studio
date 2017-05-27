@@ -44,7 +44,7 @@
 
   ?>
 
-  <link rel="alternate" href="http://ldaniel.eu" hreflang="en-GB" />
+  <link rel="alternate" href="http://www.ldaniel.eu/" hreflang="en-gb" />
 
   <!--[if lt IE 9]>
   <script type="text/javascript" src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
