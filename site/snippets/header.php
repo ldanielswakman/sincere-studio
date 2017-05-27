@@ -9,6 +9,7 @@
 
   <? snippet('header-metadata', array('page' => $page)) ?>
 
+  <? ecco(strpos(kirby()->request()->url(),'_/new') !== false, '<meta name="robots" value="noindex" />') ?>
 
   <?php
   // checks if not on localhost, then serves assets from CDN
