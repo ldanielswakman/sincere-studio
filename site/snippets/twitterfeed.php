@@ -14,7 +14,7 @@
     var config = {
       "id": '437257042844073984',
       "domId": 'twitterfeed',
-      "maxTweets": 3,
+      "maxTweets": 5,
       "enableLinks": true,
       "showUser": false,
       "dateFunction": momentDateFormatter,
@@ -29,6 +29,7 @@
         html += '<div class="card card--words">' + tweets[n] + '</div>';
         n++;
       }
+      html += '<a href="https://www.twitter.com/ldanielswakman" target="_blank" class="card card--words" style="padding: 6rem 1.5rem; text-align: center; color: blue;">See all tweets &rarr;</div>';
       html += '</div>';
       element.innerHTML = html;
 

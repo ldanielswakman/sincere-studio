@@ -1,6 +1,7 @@
 // Section
+$sectionpadding: 1.5rem;
+
 section {
-  $sectionpadding: 1.5rem;
   position: relative;
   padding: 0 $sectionpadding; // site-wide horizontal padding
   overflow: hidden;

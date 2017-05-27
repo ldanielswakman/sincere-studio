@@ -8,6 +8,7 @@ $bluedark: #035;
 // Greys
 $white: #fff;
 $greylightest: #f7f7f9;
+$greylighter: #ebebed;
 $greylight: #cccccc;
 $grey: #999;
 $black: #000;
@@ -28,6 +29,12 @@ $black: #000;
 
 .bg-white {
   background-color: $white;
+}
+.bg-greylighter {
+  background-color: $greylighter;
+}
+.bg-greylight {
+  background-color: $greylight;
 }
 .bg-bluedull {
   background-color: $bluedull;
