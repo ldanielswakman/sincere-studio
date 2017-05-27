@@ -9,8 +9,8 @@ Text: > **Hoi!**<br>ldaniel.eu is an independent design office, designing + buil
 Current: 
 
 - 
-  text: wine—art
-  link: http://wine-art.co/
+  text: The Social Change Project
+  link: ""
 - 
   text: OneLook
   link: http://www.onelook.com/thesaurus/

@@ -29,5 +29,5 @@ fields:
         label: Text
         type: text
       link:
-        label: Text
+        label: Link
         type: url

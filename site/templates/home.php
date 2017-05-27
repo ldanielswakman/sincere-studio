@@ -20,8 +20,15 @@
         <h5 class="u-mt2">CURRENTLY WORKING ON</h5>
 
         <div>
-          <? $items = $page->current()->toStructure() ?>
-          <? foreach($items as $key => $item): ?><a href="<?= $item->link() ?>" target="_blank"><?= $item->text()->html() ?></a><? if($key < $items->count()-1) { ecco(($items->count()-2 == $key), ' &amp; ', ', '); } ?><? endforeach; ?>.
+          <?
+          $items = $page->current()->toStructure();
+          foreach($items as $key => $item):
+            ecco($item->link()->isNotEmpty(), '<a href="' . $item->link() . '" target="_blank">');
+            echo $item->text()->html();
+            ecco($item->link()->isNotEmpty(), '</a>');
+            if($key < $items->count()-1) { ecco(($items->count()-2 == $key), ' &amp; ', ', '); }
+          endforeach;
+          ?>.
         </div>
 
       </div>
@@ -86,7 +93,7 @@
 
         <h5 class="u-mb1">STREAM OF IMAGES</h5>
 
-        [instagram]
+        [dribbble]
 
       </div>
     </div>
