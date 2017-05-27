@@ -16,7 +16,7 @@ body, html {
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
 
-  &.isFixed {
+  &.dialogIsActive {
     overflow: hidden;
   }
 }
