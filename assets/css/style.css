@@ -526,6 +526,9 @@ dialog {
     -moz-justify-content: flex-end;
     justify-content: flex-end;
     overflow: scroll; }
+    dialog .conversation.isSending .field {
+      pointer-events: none;
+      background: transparent; }
   dialog .bubble-wrap {
     max-height: 0;
     padding: 0.25rem 2rem 0.25rem 1rem;
@@ -546,7 +549,7 @@ dialog {
     display: inline-block;
     min-width: 3rem;
     min-height: 2rem;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 1rem;
     background-color: #00f;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -555,7 +558,7 @@ dialog {
     -moz-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     color: #fff;
-    line-height: 1rem;
+    line-height: 1.5rem;
     -webkit-transform: translateY(3rem);
     -moz-transform: translateY(3rem);
     transform: translateY(3rem);

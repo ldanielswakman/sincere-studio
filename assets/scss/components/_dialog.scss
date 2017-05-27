@@ -24,6 +24,13 @@ dialog {
     @include prefix(flex-basis, 100%);
     @include prefix(justify-content, flex-end);
     overflow: scroll;
+
+    &.isSending {
+      .field {
+        pointer-events: none;
+        background: transparent;
+      }
+    }
   }
 
   .bubble-wrap {
@@ -53,12 +60,12 @@ dialog {
     display: inline-block;
     min-width: 3rem;
     min-height: 2rem;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 1rem;
     background-color: $blue;
     @include prefix(border-radius, 1rem);
     @include prefix(box-shadow, 0 0 1rem rgba($black, 0.1));
     color: $white;
-    line-height: 1rem;
+    line-height: 1.5rem;
 
     @include prefix(transform, translateY(3rem));
     @include prefix(transition, all 0.3s ease-in-out);

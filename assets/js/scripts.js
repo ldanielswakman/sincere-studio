@@ -95,19 +95,31 @@ $(document).ready(function() {
   // Dialog stuff
   setTimeout(function() { openContactForm() }, 500);
 
-  $('dialog .bubble button[data-action="continue"]').on('click touchstart', function () {
+  $('dialog [data-action="continue"]').on('click touchstart', function (e) {
+    e.preventDefault();
     bubbleRun($(this).closest('.bubble-wrap'));
   });
-
-  $('dialog [data-action="dialog-close"]').on('click touchstart', function () {
-    $('.bubble-wrap').removeClass('isLoaded');
-    $('body').removeClass('dialogIsActive');
+  $('dialog [data-action="dialog-close"]').on('click touchstart', function (e) {
+    closeContactForm();
   });
-  $('dialog .bubble').find('textarea, input').on('keypress', function(e) {
+  $(document).on('keydown', function(e) {
+    console.log(e.keyCode);
+    if(e.keyCode == 27) {
+      closeContactForm()
+    }
+  });
+  $('dialog .bubble').find('textarea, input').on('keypress keydown', function(e) {
     if(e.keyCode == 13 && e.shiftKey == true) {
       e.preventDefault();
       bubbleRun($(this).closest('.bubble-wrap'));
     }
+  });
+  $('dialog form [type="submit"]').on('click touchstart', function(e) {
+    e.preventDefault();
+    bubbleRun($(this).closest('.bubble-wrap'));
+    $form = $(this).closest('form');
+    $form.addClass('isSending');
+    console.log($data);
   });
 });
 
@@ -117,7 +129,11 @@ function openContactForm() {
     bubbleRun( $('dialog').find('.bubble-wrap#bubble1') );
   }, 500);
 }
-
+function closeContactForm() {
+  $('.bubble-wrap').removeClass('isLoaded');
+  $('form.conversation').removeClass('isSending');
+  $('body').removeClass('dialogIsActive');
+}
 function bubbleRun($obj, stophere) {
   nextTimeout = 0;
   if(!$obj.hasClass('isLoaded')) {
