@@ -26,6 +26,9 @@
 }
 
 
+.u-pa1 {
+  padding: 1rem !important;
+}
 .u-pv5vh {
   padding-top: 5vh !important;
   padding-bottom: 5vh !important;
@@ -68,6 +71,10 @@
   padding-right: 2rem !important;
 }
 
+.u-lh125 {
+  line-height: 1.25rem !important;
+}
+
 .u-maxwidth75p {
   max-width: 75%;
 }
@@ -86,11 +93,16 @@
   display: none !important;
 }
 
+.u-flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 .u-text-2x {
   font-size: 2rem !important;
 }
 
 body.isTouch .u-hide-for-touch {
-  display: none important;
+  display: none !important;
 }
 

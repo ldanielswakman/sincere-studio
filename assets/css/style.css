@@ -173,6 +173,10 @@ h1 {
   font-weight: normal;
   color: #00f; }
 
+h3 {
+  font-size: 1.25rem;
+  font-weight: normal; }
+
 h5 {
   text-transform: uppercase;
   font-size: 0.875rem;
@@ -221,6 +225,9 @@ blockquote + p, ul + p, ol + p, p + p {
 .u-mr1 {
   margin-right: 1rem !important; }
 
+.u-pa1 {
+  padding: 1rem !important; }
+
 .u-pv5vh {
   padding-top: 5vh !important;
   padding-bottom: 5vh !important; }
@@ -262,6 +269,9 @@ blockquote + p, ul + p, ol + p, p + p {
 .u-pr2 {
   padding-right: 2rem !important; }
 
+.u-lh125 {
+  line-height: 1.25rem !important; }
+
 .u-maxwidth75p {
   max-width: 75%; }
 
@@ -277,11 +287,15 @@ blockquote + p, ul + p, ol + p, p + p {
 .u-hide {
   display: none !important; }
 
+.u-flex-space-between {
+  display: flex;
+  justify-content: space-between; }
+
 .u-text-2x {
   font-size: 2rem !important; }
 
 body.isTouch .u-hide-for-touch {
-  display: none important; }
+  display: none !important; }
 
 .button {
   -webkit-appearance: none;
@@ -512,23 +526,40 @@ dialog {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
-  dialog .conversation {
-    width: 100%;
-    max-width: 40rem;
-    margin: 0 auto;
+  dialog .dialog__header {
     -webkit-display: flex;
     -moz-display: flex;
     display: flex;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-basis: 100%;
-    -moz-flex-basis: 100%;
-    flex-basis: 100%;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+    margin-bottom: 1rem; }
+    dialog .dialog__header h3 {
+      padding: 1rem;
+      line-height: 1.25rem;
+      color: #fff;
+      opacity: 0.3; }
+    dialog .dialog__header a {
+      display: inline-block;
+      padding: 1rem;
+      color: #fff;
+      font-size: 2rem;
+      line-height: 1.25rem; }
+  dialog .conversation {
+    max-width: 40rem;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 0;
+    -webkit-flex: 1 1 auto;
+    -moz-flex: 1 1 auto;
+    flex: 1 1 auto;
     -webkit-justify-content: flex-end;
     -moz-justify-content: flex-end;
     justify-content: flex-end;
-    overflow: scroll; }
+    overflow-y: auto; }
     dialog .conversation.isSending .field {
       pointer-events: none;
       background: transparent; }
@@ -552,7 +583,7 @@ dialog {
     display: inline-block;
     min-width: 3rem;
     min-height: 2rem;
-    padding: 0.25rem 1rem;
+    padding: 0 1rem;
     background-color: #00f;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -561,7 +592,7 @@ dialog {
     -moz-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     color: #fff;
-    line-height: 1.5rem;
+    line-height: 1rem;
     -webkit-transform: translateY(3rem);
     -moz-transform: translateY(3rem);
     transform: translateY(3rem);
@@ -592,6 +623,7 @@ dialog {
       opacity: 1;
       max-width: 5rem;
       max-height: 5rem;
+      padding: 0.5rem 0;
       -webkit-transition: all 0.5s ease-in-out;
       -moz-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out;
@@ -599,6 +631,7 @@ dialog {
       -moz-transition-delay: 0.5s;
       transition-delay: 0.5s; }
     dialog .bubble .bubble__content {
+      padding: 0.5rem 0;
       max-width: 0;
       max-height: 0;
       -webkit-transition: all 1s ease-in-out;

@@ -99,28 +99,29 @@ $(document).ready(function() {
     e.preventDefault();
     bubbleRun($(this).closest('.bubble-wrap'));
   });
-  $('dialog [data-action="dialog-close"]').on('click touchstart', function (e) {
-    closeContactForm();
-  });
-  $(document).on('keydown', function(e) {
-    console.log(e.keyCode);
-    if(e.keyCode == 27) {
-      closeContactForm()
-    }
-  });
   $('dialog .bubble').find('textarea, input').on('keypress keydown', function(e) {
     if(e.keyCode == 13 && e.shiftKey == true) {
       e.preventDefault();
       bubbleRun($(this).closest('.bubble-wrap'));
     }
   });
-  $('dialog form [type="submit"]').on('click touchstart', function(e) {
+  $('dialog form').on('submit', function(e) {
     e.preventDefault();
-    bubbleRun($(this).closest('.bubble-wrap'));
-    $form = $(this).closest('form');
+    $submit_btn = $(this).find('[type="submit"]');
+    bubbleRun($submit_btn.closest('.bubble-wrap'));
+    $form = $submit_btn.closest('form');
     $form.addClass('isSending');
-    console.log($data);
+    console.log($form.serialize());
+    setTimeout(function() { bubbleRun($('#bubble_success')) }, 2000);
+    setTimeout(function() { closeContactForm() }, 3000);
   });
+  $('dialog [data-action="dialog-close"]').on('click touchstart', function (e) {
+    closeContactForm();
+  });
+
+});
+$(document).on('keydown', function(e) {
+  if(e.keyCode == 27) { closeContactForm() }
 });
 
 function openContactForm() {
@@ -136,21 +137,24 @@ function closeContactForm() {
 }
 function bubbleRun($obj, stophere) {
   nextTimeout = 0;
+  $form = $obj.closest('form');
+
   if(!$obj.hasClass('isLoaded')) {
     $obj.addClass('isLoaded');
+    if($form[0]) {
+      $form.scrollTop($form[0].scrollHeight);
+    }
     $obj.find('textarea, input').first().focus();
     nextTimeout = 1500;
   }
 
   if(stophere !== true) {
-
     $next = $obj.next();
     if(!$next.hasClass('bubble-wrap--right')) {
       setTimeout( function() { bubbleRun($next); }, nextTimeout);
     } else {
       setTimeout( function() { bubbleRun($next, true); }, nextTimeout);
     }
-
   }
 }
 
