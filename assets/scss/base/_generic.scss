@@ -63,6 +63,11 @@ h5 {
 blockquote {
   font-size: 1.5rem;
   line-height: 1.5em;
+
+  @media screen and (max-width: ($vp_tablet - 1)) {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+  }
 }
 p + blockquote {
   margin-top: 1rem;

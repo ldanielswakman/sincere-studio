@@ -3,3 +3,35 @@
   -moz-#{$property}: $arguments;
   #{$property}: $arguments;
 }
+
+@mixin scrollShadows($bgcolor: $white, $shadowcolor: rgba($black, 0.25)) {
+  background:
+    /* Shadow covers */
+    linear-gradient(to right, $bgcolor 30%, rgba(255,255,255,0)),
+    linear-gradient(to right, rgba(255,255,255,0), $bgcolor 70%) 100% 100%,
+    
+    /* Shadows */
+    radial-gradient(farthest-side at 0 50%, $shadowcolor, rgba(0,0,0,0)),
+    radial-gradient(farthest-side at 100% 50%, $shadowcolor, rgba(0,0,0,0)) 100% 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size:  2.5rem 100%, 2.5rem 100%, 0.75rem 100%, 0.75rem 100%;
+  
+  /* Opera doesn't support this in the shorthand */
+  background-attachment: local, local, scroll, scroll;
+}
+//   background:
+//     // scroll shadow covers
+//     linear-gradient(to right, $bgcolor 30%, rgba($bgcolor,0)),
+//     linear-gradient(to right, rgba($bgcolor,0), $bgcolor 70%) 0 100%,
+//     // scroll shadows
+//     // radial-gradient(farthest-side at 50% 0, $shadowcolor, rgba($shadowcolor,0)),
+//     // radial-gradient(farthest-side at 50% 100%, $shadowcolor, rgba($shadowcolor,0)) 0 100%;
+//     linear-gradient(to right, $shadowcolor 0, rgba($shadowcolor,0)) 100% 0,
+//     linear-gradient(to right, rgba($shadowcolor,0) 0, $shadowcolor) 0 100%;
+
+//   background-repeat: no-repeat;
+//   background-color: $bgcolor;
+//   background-size: 100% 50px, 100% 50px, 100% 6px, 100% 6px;
+//   background-attachment: local, local, scroll, scroll;
+// }

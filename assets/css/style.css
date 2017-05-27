@@ -155,6 +155,10 @@ h5 {
 blockquote {
   font-size: 1.5rem;
   line-height: 1.5em; }
+  @media screen and (max-width: 767px) {
+    blockquote {
+      font-size: 1.25rem;
+      line-height: 1.25rem; } }
 
 p + blockquote {
   margin-top: 1rem; }
@@ -281,8 +285,8 @@ blockquote + p, ul + p, ol + p, p + p {
 
 .logo {
   position: fixed;
-  top: 2rem;
-  left: 2rem;
+  top: 1.5rem;
+  left: 1.5rem;
   z-index: 3;
   display: inline-block;
   width: 1rem;
@@ -303,6 +307,10 @@ blockquote + p, ul + p, ol + p, p + p {
   -webkit-transform: scale(8);
   -moz-transform: scale(8);
   transform: scale(8); }
+  @media screen and (min-width: 768px) {
+    .logo {
+      top: 2rem;
+      left: 2rem; } }
   .logo svg {
     position: absolute;
     left: 0;
@@ -452,11 +460,18 @@ nav {
   -moz-justify-content: space-between;
   justify-content: space-between;
   width: 100%;
-  width: 100vw;
+  max-width: 100vw;
   background: #fff;
   -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  overflow: scroll;
+  background: linear-gradient(to right, #fff 30%, rgba(255, 255, 255, 0)), linear-gradient(to right, rgba(255, 255, 255, 0), #fff 70%) 100% 100%, radial-gradient(farthest-side at 0 50%, rgba(0, 0, 0, 0.25), transparent), radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.25), transparent) 100% 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 2.5rem 100%, 2.5rem 100%, 0.75rem 100%, 0.75rem 100%;
+  /* Opera doesn't support this in the shorthand */
+  background-attachment: local, local, scroll, scroll; }
   nav ul {
     -webkit-display: flex;
     -moz-display: flex;
@@ -464,16 +479,20 @@ nav {
     -webkit-flex-grow: 0;
     -moz-flex-grow: 0;
     flex-grow: 0;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem;
     list-style: none; }
     nav ul.hasActive a {
       color: #999; }
       nav ul.hasActive a.isActive {
         color: #00f; }
   nav li {
-    padding: 1rem 2rem; }
+    padding: 1rem 1.25rem; }
+    @media screen and (min-width: 768px) {
+      nav li {
+        padding: 1rem 2rem; } }
   nav .menu-grey a {
-    color: #999; }
+    color: #999;
+    white-space: nowrap; }
   nav .menu-grey svg path {
     fill: #999; }
 
@@ -514,8 +533,19 @@ section {
       section .section__bg-homeintro {
         background-size: auto 400px;
         background-position: 60% top; } }
+  section.section--homeintro {
+    min-height: 100vh;
+    -webkit-transition: all 2s cubic-bezier(0.5, 0, 0.5, 1);
+    -moz-transition: all 2s cubic-bezier(0.5, 0, 0.5, 1);
+    transition: all 2s cubic-bezier(0.5, 0, 0.5, 1);
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    transition-delay: 1s; }
+
+.isLoaded section.section--homeintro {
+  min-height: 50vh; }
 
 .section-undo-p {
-  width: calc(100% + $sectionpadding * 2);
+  width: calc(100% + 3rem);
   margin-left: -1.5rem;
   margin-right: -1.5rem; }

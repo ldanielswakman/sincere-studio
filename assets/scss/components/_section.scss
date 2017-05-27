@@ -43,9 +43,18 @@ section {
       background-position: 60% top;
     }
   }
+
+  &.section--homeintro {
+    min-height: 100vh;
+    @include prefix(transition, all 2s cubic-bezier(0.5,0,0.5,1));
+    @include prefix(transition-delay, 1s);
+  }
+}
+.isLoaded section.section--homeintro {
+  min-height: 50vh;
 }
 .section-undo-p {
-  width: calc(100% + $sectionpadding * 2);
-  margin-left: -$sectionpadding;
-  margin-right: -$sectionpadding;
+  width: calc(100% + 3rem);
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
 }

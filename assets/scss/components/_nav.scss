@@ -5,15 +5,22 @@ nav {
   z-index: 3;
   @include prefix(display, flex);
   @include prefix(justify-content, space-between);
-  width: 100%; // fallback
-  width: 100vw;
+  width: 100%;
+  max-width: 100vw;
   background: $white;
   @include prefix(box-shadow, 0 0 1rem rgba($black, 0.1));
+  overflow: scroll;
+
+  @include scrollShadows();
+  // background: radial-gradient(at right 50%,blue,rgba(0, 0, 0, 0));
+  // background-size: 0.75rem 100%;
+  // background-repeat: no-repeat;
+  // background-position: top right;
 
   ul {
     @include prefix(display, flex);
     @include prefix(flex-grow, 0);
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem;
     list-style: none;
 
     &.hasActive a {
@@ -25,11 +32,16 @@ nav {
     }
   }
   li {
-    padding: 1rem 2rem;
+    padding: 1rem 1.25rem;
+
+    @media screen and (min-width: $vp_tablet) {
+      padding: 1rem 2rem;
+    }
   }
   .menu-grey {
     a {
       color: $grey;
+      white-space: nowrap;
     }
     svg path {
       fill: $grey;

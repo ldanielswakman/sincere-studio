@@ -8,9 +8,7 @@
 
   <ul<?= ecco($hasActive, ' class="hasActive"') ?>>
     <? foreach($pages->visible() as $p): ?>
-    <li>
-      <a <? e($p->isOpen(), ' class="isActive"') ?> href="<?= $p->url() ?>"><?= strtolower($p->title()->html()) ?></a>
-    </li>
+    <li><a <? e($p->isOpen(), ' class="isActive"') ?> href="<?= $p->url() ?>"><?= strtolower($p->title()->html()) ?></a></li>
     <? endforeach ?>
   </ul>
 

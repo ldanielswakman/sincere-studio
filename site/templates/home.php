@@ -2,7 +2,7 @@
 
 <main>
 
-  <section class="u-pt30vh u-pb10vh">
+  <section class="section--homeintro u-pt30vh u-pb10vh">
 
     <?
     $bg_style = 'background-color: ' . $page->intro_bg_color() . ';';
@@ -55,9 +55,9 @@
 
         <div class="line"></div>
 
-        <blockquote>...<strong>L Daniel Swakman</strong> is the 'full stack' designer running it. He also likes working at startups that want to be design-driven.</blockquote>
+        <blockquote><p>...<strong>L Daniel Swakman</strong> is the 'full stack' designer running it. He also likes working at startups that want to be design-driven.</p></blockquote>
 
-        <div id="ldaniel_location" data-url="<?= $site->url() . '/api'; ?>" class="u-mt1" style="line-height: 2rem;"><small><em>get ting location...</em></small></div>
+        <div id="ldaniel_location" data-url="<?= $site->url() . '/api'; ?>" class="u-mt1" style="line-height: 2rem;"><small><em>getting location...</em></small></div>
 
         <div class="u-mv2">
           <a href="<?= $pages->find('about')->url() ?>" class="button button-dark u-mr1 u-mb1">read more</a>
