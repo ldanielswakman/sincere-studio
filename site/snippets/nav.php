@@ -13,8 +13,8 @@
   </ul>
 
   <ul class="menu-grey">
-    <li><a href="javascript:openContactForm()">get in touch</a></li>
-    <li><a href="//twitter.com/ldanielswakman" target="_blank"><? snippet('twitter-icon-svg') ?></a></li>
+    <li><a href="javascript:openContactForm()" class="button button--outline">get in touch</a></li>
+    <li><a href="//twitter.com/ldanielswakman" target="_blank" class="a--twitter"><? snippet('twitter-icon-svg') ?></a></li>
   </ul>
 
 </nav>

@@ -104,7 +104,7 @@
         <p>I'm currently available for work (while stocks last); I'm always excited to hear new projects, and see how we can collaborate in them. Drop me a line:</p>
 
         <div class="u-mv2">
-          <a href="<?= $pages->find('projects')->url() ?>" class="button u-mb1">Say hello</a>
+          <a href="javascript:openContactForm()" class="button u-mb1">Say hello</a>
         </div>
 
       </div>
