@@ -10,3 +10,6 @@
 [submodule "site/fields/fieldtoggle"]
 	path = site/fields/fieldtoggle
 	url = https://github.com/medienbaecker/kirby-fieldtoggle.git
+[submodule "site/plugins/relatedpages"]
+	path = site/plugins/relatedpages
+	url = git@github.com:Adspectus/RelatedPages.git
