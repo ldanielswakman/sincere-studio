@@ -41,7 +41,7 @@
 
         <div class="u-mb2 u-mt1">
           <a href="<?= $pages->find('articles')->url() ?>" class="button u-mr1 u-mb1">case studies</a>
-          <a href="<?= $pages->find('projects')->url() ?>" class="button button-outline u-mb1">all projects</a>
+          <a href="<?= $pages->find('projects')->url() ?>" class="button button--outline u-mb1">all projects</a>
         </div>
 
       </div>
@@ -60,8 +60,8 @@
         <div id="ldaniel_location" data-url="<?= $site->url() . '/api'; ?>" class="u-mt1" style="line-height: 2rem;"><small><em>getting location...</em></small></div>
 
         <div class="u-mv2">
-          <a href="<?= $pages->find('about')->url() ?>" class="button button-dark u-mr1 u-mb1">read more</a>
-          <a href="<?= $pages->find('cv')->url() ?>" class="button button-dark button-outline u-mb1">cv</a>
+          <a href="<?= $pages->find('about')->url() ?>" class="button button--dark u-mr1 u-mb1">read more</a>
+          <a href="<?= $pages->find('cv')->url() ?>" class="button button--dark button--outline u-mb1">cv</a>
         </div>
 
       </div>

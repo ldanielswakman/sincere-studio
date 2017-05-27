@@ -1,7 +1,7 @@
 .logo {
   position: fixed;
-  top: 1.5rem;
-  left: 1.5rem;
+  top: 2rem;
+  left: 2rem;
   z-index: 3;
   display: inline-block;
   width: 1rem;
@@ -12,11 +12,7 @@
   @include prefix(transform-origin, top left);
   @include prefix(transition-delay, 1s);
   @include prefix(transform, scale(8));
-
-  @media screen and (min-width: $vp_tablet) {
-    top: 2rem;
-    left: 2rem;
-  }
+  
   svg {
     position: absolute;
     left: 0;

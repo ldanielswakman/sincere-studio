@@ -19,26 +19,31 @@
     outline: none;
     @include prefix(box-shadow, 0 0 1rem rgba($blue, 0.5));
   }
-  &.button-dark {
+  &.button--small {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+    @include prefix(border-radius, 1.25rem);
+  }
+  &.button--dark {
     background-color: $bluedark;
   }
-  &.button-dark:hover {
+  &.button--dark:hover {
     background-color: darken($bluedark, 5%);
   }
-  &.button-outline {
+  &.button--outline {
     background: none;
     border-color: blue;
     color: $blue;
   }
-  &.button-outline:hover {
+  &.button--outline:hover {
     background: $blue;
     color: $white;
   }
-  &.button-outline.button-dark {
+  &.button--outline.button-dark {
     border-color: $bluedark;
     color: $bluedark;
   }
-  &.button-outline.button-dark:hover {
+  &.button--outline.button-dark:hover {
     background-color: $bluedark;
     color: $white;
   }

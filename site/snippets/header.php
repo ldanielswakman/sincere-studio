@@ -5,13 +5,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
+  <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
 
   <? snippet('header-metadata', array('page' => $page)) ?>
 
   <? ecco(strpos(kirby()->request()->url(),'_/new') !== false, '<meta name="robots" value="noindex" />') ?>
 
-  <?php
+  <?
   // checks if not on localhost, then serves assets from CDN
   if(c::get('env') !== 'DEV') :
     // Bootstrap
@@ -20,8 +20,6 @@
     echo css('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
     // Owl Carousel
     echo css('assets/css/owl.carousel.min.css');
-    // Google Fonts
-    echo css('https://fonts.googleapis.com/css?family=Overpass:400,400i,700,700i');
     // jQuery
     echo js('http://code.jquery.com/jquery-1.11.1.min.js');
     // jQuery SmoothScroll
@@ -42,6 +40,7 @@
   echo css('assets/css/style.css');
   echo js('assets/js/scripts.js');
   echo js('assets/js/twitterfetcher.min.js');
+  echo js('assets/js/autosize.min.js');
 
   ?>
 
@@ -52,14 +51,16 @@
   <![endif]-->
 
 </head>
-<?php 
+<? 
 $bodyClass = $page->template();
 $bodyClass .= ($page->isHomePage()) ? ' header-full' : ''; 
 ?>
-<body class="<?php echo $bodyClass ?>">
+<body class="<?= $bodyClass ?>">
 
-  <a href="<?php echo ($page->url() != $site->url()) ? $site->url() : '#top' ?>" class="logo">
-    <?php snippet('logo') ?>
+  <a href="<?= ($page->url() != $site->url()) ? $site->url() : '#top' ?>" class="logo">
+    <? snippet('logo') ?>
   </a>
 
-  <?php snippet('nav') ?>
+  <? snippet('nav') ?>
+
+  <? snippet('contact') ?>

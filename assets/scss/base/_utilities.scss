@@ -3,11 +3,17 @@
   margin-top: 2rem !important;
   margin-bottom: 2rem !important;
 }
+.u-mt05 {
+  margin-top: 0.5rem !important;
+}
 .u-mt1 {
   margin-top: 1rem !important;
 }
 .u-mt2 {
   margin-top: 2rem !important;
+}
+.u-mb025 {
+  margin-bottom: 0.25rem !important;
 }
 .u-mb1 {
   margin-bottom: 1rem !important;
@@ -40,6 +46,9 @@
   padding-left: 2rem !important;
   padding-right: 2rem !important;
 }
+.u-pt1 {
+  padding-top: 1rem !important;
+}
 .u-pt10vh {
   padding-top: 10vh !important;
 }
@@ -55,6 +64,9 @@
 .u-pb10vh {
   padding-bottom: 10vh !important;
 }
+.u-pr2 {
+  padding-right: 2rem !important;
+}
 
 .u-maxwidth75p {
   max-width: 75%;
@@ -63,11 +75,18 @@
 .u-aligncenter {
   text-align: center;
 }
+.u-alignright {
+  text-align: right;
+}
 
 .u-block {
   display: block !important;
 }
 .u-hide {
   display: none !important;
+}
+
+.u-text-2x {
+  font-size: 2rem !important;
 }
 

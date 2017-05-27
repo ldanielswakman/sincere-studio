@@ -13,7 +13,7 @@
   </ul>
 
   <ul class="menu-grey">
-    <li><a href="#">get in touch</a></li>
+    <li><a href="javascript:openContactForm()">get in touch</a></li>
     <li><a href="//twitter.com/ldanielswakman" target="_blank"><? snippet('twitter-icon-svg') ?></a></li>
   </ul>
 

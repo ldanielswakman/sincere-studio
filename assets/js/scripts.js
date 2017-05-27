@@ -15,6 +15,10 @@ $(document).ready(function() {
   //adding animation to svg logo
   setTimeout(function() { $('body').removeClass('header-full'); }, 1500);
 
+
+  // add autosize to textareas
+  autosize($('textarea'));
+
   // initiating smooth scroll plugin
   $('a[href^="#"]').smoothScroll( { afterScroll: function() { location.hash = $(this).attr('href'); $(this).blur(); } });
 
@@ -78,6 +82,61 @@ $(document).ready(function(){
     dotsEach: 1
   });
 });
+
+
+
+
+
+
+// Contact Form Dialog
+
+
+$(document).ready(function() {
+  // Dialog stuff
+  setTimeout(function() { openContactForm() }, 500);
+
+  $('dialog .bubble button[data-action="continue"]').on('click touchstart', function () {
+    bubbleRun($(this).closest('.bubble-wrap'));
+  });
+
+  $('dialog [data-action="dialog-close"]').on('click touchstart', function () {
+    $('.bubble-wrap').removeClass('isLoaded');
+    $('body').removeClass('dialogIsActive');
+  });
+  $('dialog .bubble').find('textarea, input').on('keypress', function(e) {
+    if(e.keyCode == 13 && e.shiftKey == true) {
+      e.preventDefault();
+      bubbleRun($(this).closest('.bubble-wrap'));
+    }
+  });
+});
+
+function openContactForm() {
+  $('body').addClass('dialogIsActive');
+  setTimeout(function() {
+    bubbleRun( $('dialog').find('.bubble-wrap#bubble1') );
+  }, 500);
+}
+
+function bubbleRun($obj, stophere) {
+  nextTimeout = 0;
+  if(!$obj.hasClass('isLoaded')) {
+    $obj.addClass('isLoaded');
+    $obj.find('textarea, input').first().focus();
+    nextTimeout = 1500;
+  }
+
+  if(stophere !== true) {
+
+    $next = $obj.next();
+    if(!$next.hasClass('bubble-wrap--right')) {
+      setTimeout( function() { bubbleRun($next); }, nextTimeout);
+    } else {
+      setTimeout( function() { bubbleRun($next, true); }, nextTimeout);
+    }
+
+  }
+}
 
 
 
