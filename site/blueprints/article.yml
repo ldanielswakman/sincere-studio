@@ -14,6 +14,9 @@ fields:
       Canonical URL <span style="font-weight: normal; color: #999;">(if any)</span>
     type: url
     width: 1/2
+  tags:
+    label: Tags
+    type:  tags
   cover_image:
     label: Cover image
     type: image
