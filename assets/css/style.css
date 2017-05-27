@@ -280,6 +280,9 @@ blockquote + p, ul + p, ol + p, p + p {
 .u-text-2x {
   font-size: 2rem !important; }
 
+body.isTouch .u-hide-for-touch {
+  display: none important; }
+
 .button {
   -webkit-appearance: none;
   -moz-appearance: none;

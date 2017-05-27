@@ -24,7 +24,7 @@
         <!-- <input class="field" type="text" placeholder="Your email address"><br> -->
         <textarea resize="noresize" name="message" class="field" placeholder="Type your message here"></textarea>
         <div class="u-mb025">
-          <small class="c-greylight u-mr05"><small>Hit Shift + Enter or</small></small>
+          <small class="c-greylight u-mr05 u-hide-for-touch"><small>Hit Shift + Enter or</small></small>
           <a href="javascript:void(0)" data-action="continue" class="button button--small button--outline">Continue</a>
         </div>
       </div>

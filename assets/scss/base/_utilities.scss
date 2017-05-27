@@ -90,3 +90,7 @@
   font-size: 2rem !important;
 }
 
+body.isTouch .u-hide-for-touch {
+  display: none important;
+}
+
