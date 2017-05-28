@@ -35,12 +35,11 @@ nav {
   a {
     display: block;
     padding: 0.75rem 0.5rem;
-    font-size: 0.875rem;
     line-height: 1rem;
     vertical-align: top;
 
-    @media screen and (min-width: ($vp_smallest + 1)) {
-      font-size: 1rem;
+    @media screen and (max-width: $vp_smallest) {
+      font-size: 0.875rem;
     }
     @media screen and (min-width: $vp_tablet) {
       padding: 1rem 1.5rem;

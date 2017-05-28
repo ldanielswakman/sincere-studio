@@ -72,9 +72,17 @@ fields:
         label: >
           Image column <i>(large)</i>
         type: textarea
+      bg_colour:
+        label:  >
+          Section bg colour <i>(HEX)</i>
+        type: text
+        icon: magic
+        width: 1/2
       fullscreen:
+        label: Fullscreen?
         text: Fullscreen image?
         type: checkbox
+        width: 1/2
     entry: >
       <table>
         <tr>

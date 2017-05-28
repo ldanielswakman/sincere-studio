@@ -30,8 +30,9 @@ Sections:
 
 - 
   textcolumn: ""
-  imagecolumn: '(image: holland-turkey-trade-mockup.png)'
-  fullscreen: "0"
+  imagecolumn: '(image: featured-cover.jpg)'
+  fullscreen: "1"
+  bg_colour: ""
 - 
   textcolumn: |
     Brief: come up with a fresh and contemporary new design for Holland Turkey Trade network's website, focused on visual promotion rather than paragraphs of text. One of the many institutions that facilitate trade relations between Netherlands and Turkey, it was important that the website's identity would relate to the general 'Holland branding', while keeping its own identity.
@@ -51,3 +52,7 @@ Sections:
   textcolumn: ""
   imagecolumn: '(link: http://www.hollandturkeytrade.com/ text: <i class="ion ion-forward u-mr10"></i> See <span style="opacity: 0.4">the result</span> for yourself class: btn btn-lg btn-outline popup: yes)'
   fullscreen: "0"
+
+----
+
+Featured: 0

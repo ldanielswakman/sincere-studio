@@ -4,60 +4,95 @@
 
     <? foreach(yaml($page->sections()) as $key => $section): ?>
 
-    <? 
-    $bg = '';
-    if (isset($section['fullscreen']) and $section['fullscreen'] == '1') : 
-      // find url of (first) image and set as background image
-      $imagecolumn = kirbytext($section['imagecolumn']);
-      $needle = 'src="';
-      $image_url = explode('" ',substr(strstr($imagecolumn, $needle), strlen($needle)))[0];
-      $bg = ' class="slide" style="background-image: url(' . $image_url . ');';
-      $bg .= (strlen($page->featuredcolour()) > 0) ? ' background-color: #' . $page->featuredcolour() . ';' : '';
-      $bg .= '"';
-    endif;
-    ?>
+      <? 
+      $bg = '';
+      if (isset($section['fullscreen']) and $section['fullscreen'] == '1') : 
+        // find url of (first) image and set as background image
+        $imagecolumn = kirbytext($section['imagecolumn']);
+        $needle = 'src="';
+        $image_url = explode('" ',substr(strstr($imagecolumn, $needle), strlen($needle)))[0];
+        $bg = ' style="min-height: 60vh; background-image: url(' . $image_url . ');';
+        $bg .= ($page->featuredcolour()->isNotEmpty()) ? ' background-color: #' . $page->featuredcolour() . ';' : '';
+        $bg .= '"';
+      elseif (isset($section['bg_colour']) && strlen($section['bg_colour']) > 0) :
+        $bg .= ' style="background-color: #' . $section['bg_colour'] . ';"';
+      endif;
+      ?>
 
-    <section<?= ' id="part' . ($key+1) . '" ' . $bg ?>>
+      <section<?= ' id="part' . ($key+1) . '" ' . $bg ?> class="section-bg u-pv15vh">
 
-      <div class="row u-pv40">
+        <div class="row u-pv40">
 
-        <div class="col-md-4">
+          <div class="col-xs-12 col-sm-5 col-md-4 col-md-offset-1">
 
-          <? if ($key == 0) : ?>
-            <? snippet('project_info', array('page' => $page, 'key' => $key )); ?>
+            <? if ($key == 0) : ?>
+              <? // snippet('project_info', array('page' => $page, 'key' => $key )); ?>
+            <? endif; ?>
+
+            <p><?= kirbytext($section['textcolumn']) ?></p>
+
+          </div>
+
+          <? 
+          // show right column normally if not fullscreen
+          if (!isset($section['fullscreen']) or $section['fullscreen'] != '1') : 
+          ?>
+          <div class="col-xs-12 col-sm-7 col-md-5 col-md-offset-1">
+            <?= kirbytext($section['imagecolumn']) ?>
+          </div>
           <? endif; ?>
 
-          <p><?= kirbytext($section['textcolumn']) ?></p>
-
         </div>
 
-        <? 
-        // show right column normally if not fullscreen
-        if (!isset($section['fullscreen']) or $section['fullscreen'] != '1') : 
-        ?>
-        <div class="col-md-8">
-          <?= kirbytext($section['imagecolumn']) ?>
+      </section>
+
+      <? if ($key == 0) : ?>
+        <!-- NEW project info section -->
+        <section>
+          <div class="row u-pv3 u-ph05">
+            <div class="col-xs-12 col-sm-7 col-md-4 col-md-offset-1">
+              <h3 class="c-blue"><?= $page->title()->html() ?><sup class="c-grey" style="font-size: 0.875rem;font-weight: normal; margin-left: 0.5rem;"><small><?= $page->year() ?></small></sup></h3>
+              <blockquote style="margin-top: 0;"><p><?= $page->description() ?></p></blockquote>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-2 u-mt2">
+              <?php
+              foreach (explode(',', $page->tags()->html()) as $tag) :
+                echo '<div><a class="c-grey" href="' . $page->parent()->url() . '/tag:' . $tag . '#projects">' . $tag . '</a></div>';
+              endforeach;
+              ?>
+            </div>
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+              <? if($page->projecturl()->isNotEmpty()): ?>
+                <a href="<?= $page->projecturl() ?>" target="_blank" class="button button--outline u-mt2">
+                  see the project live
+                  <svg style="float: right; width: 0.75rem; margin: 0.4rem 0 0 0.5rem;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0{fill:currentColor;}
+                    </style>
+                    <polygon class="st0" points="0,0 0,1 10.3,1 0,11.3 0.7,12 11,1.7 11,12 12,12 12,0 "/>
+                  </svg>
+
+                </a>
+              <? endif ?>
+            </div>
+          </div>
+        </section>
+      <? endif ?>
+
+      <? if (count(yaml($page ->sections())) == 0) : ?>
+      <section>
+        <div class="row u-pv40">
+          <div class="col-md-4">
+            <? snippet('project_info', array('page' => $page, 'key' => 1 )); ?>
+          </div>
+          <div class="col-md-8">
+            <img src="<?= $page->url() . '/' . $page->featuredimage(); ?>" alt="" />
+          </div>
         </div>
-        <? endif; ?>
-
-      </div>
-
-    </section>
+      </section>
+      <? endif; ?>
 
     <? endforeach; ?>
-
-    <? if (count(yaml($page->sections())) == 0) : ?>
-    <section>
-      <div class="row u-pv40">
-        <div class="col-md-4">
-          <? snippet('project_info', array('page' => $page, 'key' => $key )); ?>
-        </div>
-        <div class="col-md-8">
-          <img src="<?= $page->url() . '/' . $page->featuredimage(); ?>" alt="" />
-        </div>
-      </div>
-    </section>
-    <? endif; ?>
 
     <?
     // if($next = $page->nextVisible()):
@@ -85,7 +120,7 @@
     </a>
     <? endif; ?>
 
-    <section class="bg-greylighter u-mt2 u-pv2">
+    <section class="bg-greylighter u-pv2">
       <div>
         <p style="margin: 4rem 0 1rem; font-size: 2rem;">related projects</p>
       </div>

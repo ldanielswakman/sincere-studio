@@ -32,7 +32,7 @@
     <?php endif ?>
 
     <?
-    $projects = $page->children()->visible()->sortBy('year', 'desc');
+    $projects = $page->children()->sortBy('year', 'desc');
     $pr_featured = $projects->filterBy('featured', '1');
     ?>
 
@@ -76,12 +76,12 @@
             <?= ecco((!isset($prev) || $prev->year()->value() !== $project->year()->value()), '<big>' . $project->year() . '</big>') ?>
           </div>
           <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-1">
-              <a href="<?= $project->url() ?>" class="u-block c-white" style="line-height: 1rem; margin-bottom: 0.75rem;">
+              <a href="<?= $project->url() ?>" class="u-block <? ecco($project->isVisible(), 'c-white', 'c-grey') ?>" style="line-height: 1rem; margin-bottom: 0.75rem;">
                 <?= $project->title() ?><br>
-                <small style="color: rgba(255, 255, 255, 0.5);"><?= $project->description() ?></small>
+                <small style="color: rgba(255, 255, 255, <? ecco($project->isVisible(), '0.5', '0.25') ?>);"><?= $project->description() ?></small>
               </a>
           </div>
-          <div class="col-xs-12 col-xs-offset-3 col-sm-10 col-sm-offset-1 col-md-3">
+          <div class="col-xs-12 col-xs-offset-3 col-sm-10 col-sm-offset-1 col-md-3 u-hide">
               <small><? snippet('project_tags', array('page' => $project) ) ?></small>
           </div>
         </div>

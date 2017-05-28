@@ -30,8 +30,9 @@ Sections:
 
 - 
   textcolumn: ""
-  imagecolumn: '(image: habita-mockup-frame.png)'
-  fullscreen: "0"
+  imagecolumn: '(image: habita-promo-image.jpg)'
+  fullscreen: "1"
+  bg_colour: ""
 - 
   textcolumn: |
     <br><br>
@@ -39,14 +40,15 @@ Sections:
   imagecolumn: '(image: habita-title-opening.jpg)'
   fullscreen: "1"
 - 
-  textcolumn: ""
-  imagecolumn: '(image: space-overview.jpg)'
-  fullscreen: "1"
-- 
   textcolumn: |
     <br><br>
     <span style="font-size: 1.25em; color: white;">**habita** has just opened its doors, so the site should be able to grow as content (members, events, blog posts, new photos) grows. The site is built with (link: getkirby.com text: Kirby popup:yes) with an API system to dynamically load in extra content.</span>
-  imagecolumn: '(image: habita-phasing.jpg)'
+  imagecolumn: '(image: habita-phasing-transparent.png)'
+  fullscreen: "0"
+  bg_colour: ff5000
+- 
+  textcolumn: ""
+  imagecolumn: '(image: space-overview.jpg)'
   fullscreen: "1"
 - 
   textcolumn: 'The visual system is based on a rule of thirds: the the logo always sits on the intersection of coloured planes. The use of the theme colour orange is sparse, and is contrasted with a faded dark blue for text and secondary colour.'

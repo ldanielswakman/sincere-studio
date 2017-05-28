@@ -21,23 +21,28 @@ Featuredimage: ankymager-identity.jpg
 Sections: 
 
 - 
-  textcolumn:
-  imagecolumn: '(image: ankymager-splash.jpg)'
-  fullscreen: true
-- 
-  textcolumn:
+  textcolumn: ""
   imagecolumn: '(image: ankymager-identity.jpg)'
-  fullscreen: true
+  fullscreen: "1"
+  bg_colour: ""
 - 
-  textcolumn: >
-    The description text will go here. It
-    will be quite an event.
+  textcolumn: ""
   imagecolumn: '(image: ankymager-cards.png)'
+  bg_colour: ""
+  fullscreen: "0"
 - 
-  textcolumn:
+  textcolumn: ""
   imagecolumn: '(image: ankymager-pages.jpg )'
-  fullscreen: on
+  fullscreen: true
 
 ----
 
 Description: All-blue identity for a freelance coach
+
+----
+
+Featured: 0
+
+----
+
+Featuredcolour: 
