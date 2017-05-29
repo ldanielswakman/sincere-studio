@@ -1,4 +1,4 @@
-Title: Home
+Title: Digital Designer
 
 ----
 
@@ -10,7 +10,7 @@ Current:
 
 - 
   text: The Social Change Project
-  link: ""
+  link: http://thesocialchangeproject.org/
 - 
   text: OneLook
   link: http://www.onelook.com/thesaurus/
