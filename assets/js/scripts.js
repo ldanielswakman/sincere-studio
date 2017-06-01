@@ -7,7 +7,7 @@ $(document).ready(function() {
 
   //reading the start 'top' value of #logo
   // $logoTopInit = $('#logo').offset().top - $(window).scrollTop();
-  $logoTopInit = ($('body').hasClass('home')) ? 30 : -30;
+  // $logoTopInit = ($('body').hasClass('home')) ? 30 : -30;
 
   //adding animation to svg logo
   $('body').addClass('isLoaded');
@@ -46,9 +46,9 @@ function scrollActions() {
   scroll = $(window).scrollTop();
 
   // top logo 'parallax'
-  if ($(window).width() > 767 ) {
-    $('#logo').css('top',($logoTopInit-(scroll/3))+'px');
-  }
+  // if ($(window).width() > 767 ) {
+  //   $('#logo').css('top',($logoTopInit-(scroll/3))+'px');
+  // }
 
   allowMobileScroll = true;
   if (allowMobileScroll) {
