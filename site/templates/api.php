@@ -50,7 +50,7 @@ if($loc !== null) {
 // get Dribbble shots
 $dribbble = (isset($_GET['dribbble'])) ? $_GET['dribbble'] : null;
 if($dribbble !== null) {
-  $token = '92024af1ed1c7f87d7fe417bcad6de02afe6cafe6a539bafbbc1b56dda6c6628';
+  $token = c::get('dribbble_token');
   $url = 'https://api.dribbble.com/v1/users/ldanielswakman/shots?per_page=3&access_token=' . $token;
 
   $ch = curl_init($url);
