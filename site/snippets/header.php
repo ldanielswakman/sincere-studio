@@ -37,7 +37,7 @@
   endif;
 
   // assets
-  echo css('assets/css/style.css');
+  echo css('assets/css/style.min.css');
   echo js('assets/js/scripts.js');
   echo js('assets/js/twitterfetcher.min.js');
   echo js('assets/js/autosize.min.js');

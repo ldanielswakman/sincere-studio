@@ -1,6 +1,10 @@
+// Gulpfile.js
+// Check required packages
 var gulp = require('gulp');
+var rename = require("gulp-rename");
+// CSS compiling
 var sass = require('gulp-sass');
-var cssmin = require('gulp-cssmin');
+var cleanCSS = require('gulp-clean-css');
 
 // Concatenate Sass task
 // gulp.src('assets/scss/**/*.scss')
@@ -13,7 +17,8 @@ gulp.task('sass', function() {
 // Clean & minify CSS (after Sass)
 gulp.task('clean_css', ['sass'], function() {
   gulp.src('assets/css/style.css')
-    .pipe(cssmin())
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./assets/css/'));
 });
 
