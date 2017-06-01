@@ -17,7 +17,7 @@
     // Bootstrap
     echo css('//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css');
     // Ionicons
-    echo css('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+    // echo css('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
     // Owl Carousel
     echo css('assets/css/owl.carousel.min.css');
     // jQuery
@@ -29,7 +29,7 @@
   // if localhost then load local assets
   else :
     echo css('assets/css/flexboxgrid.min.css');
-    echo css('assets/css/ionicons.min.css');
+    // echo css('assets/css/ionicons.min.css');
     echo css('assets/css/owl.carousel.min.css');
     echo js('assets/js/jquery-1.11.1.min.js');
     echo js('assets/js/jquery.smooth-scroll.min.js');

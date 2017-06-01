@@ -1,6 +1,7 @@
 // General
 
-body, html {
+html { }
+body {
   min-width: 100%;
   min-height: 100%;
   margin: 0;
@@ -10,7 +11,8 @@ body, html {
   color: $bluedark;
 
   font-family: $sans;
-  font-size: 112.5%; // 1rem = 18px (at 100% zoom)
+  // font-size: 112.5%; // 1rem = 18px (at 100% zoom)
+  font-size: 125%; // 1rem = 20px (at 100% zoom)
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
