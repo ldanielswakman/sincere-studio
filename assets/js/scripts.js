@@ -204,6 +204,49 @@ $(document).ready(function() {
 
 
 
+// Dribbble shots via API
+$(document).ready(function() {
+  $token = '92024af1ed1c7f87d7fe417bcad6de02afe6cafe6a539bafbbc1b56dda6c6628';
+  $base_url = 'https://api.dribbble.com/v1/users/ldanielswakman/shots?per_page=5';
+  // curl -i -H "Authorization: Bearer " 
+  $.getJSON( $base_url + '&access_token=' + $token , function(r) {
+
+    $container = $('#dribbblefeed');
+    $container.html();
+
+    $.each(r, function(i, item) {
+
+      html = '';
+      html += '<a href="' + item['html_url'] + '" class="card" target="_blank">';
+      html += '<figure>';
+      html += '<img src="' + item['images']['normal'] + '" alt="">';
+      html += '</figure>';
+      html += '</a>';
+
+      $container.append(html);
+    });
+
+    html = '<a href="https://www.dribbble.com/ldanielswakman" target="_blank" class="card card--words" style="padding: 6rem 1.5rem; text-align: center; color: blue;">See all shots &rarr;</div>';
+    $container.append(html);
+    
+    $container.closest('section').removeClass('section--collapsed');
+    $container.addClass('owl-carousel');
+
+    $container.owlCarousel({
+      items: 1,
+      autoWidth: true,
+      nav: false,
+      dotsEach: 1
+    });
+
+    // console.log('yay!');
+
+  });
+});
+
+
+
+
 
 
 

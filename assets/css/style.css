@@ -467,6 +467,9 @@ body.isTouch .u-hide-for-touch {
   flex-direction: row;
   overflow-x: auto; }
 
+.owl-stage-outer {
+  padding: 0.5rem 0; }
+
 .card {
   display: inline-block;
   width: 20rem;
@@ -475,6 +478,12 @@ body.isTouch .u-hide-for-touch {
   vertical-align: top;
   background-color: #fff;
   overflow: hidden;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  border-radius: 0.25rem;
   color: rgba(0, 51, 85, 0.4); }
   .card.card--words {
     min-width: 15rem;
@@ -764,7 +773,11 @@ nav {
 section {
   position: relative;
   padding: 0 1.5rem;
+  max-height: auto;
   overflow: hidden;
+  -webkit-transition: max-height 0.3s ease-in-out;
+  -moz-transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
   background-size: cover;
   background-position: center center; }
   section * {
@@ -808,6 +821,8 @@ section {
     -webkit-transition-delay: 1s;
     -moz-transition-delay: 1s;
     transition-delay: 1s; }
+  section.section--collapsed {
+    max-height: 0; }
 
 .isLoaded section.section--homeintro {
   min-height: 50vh; }

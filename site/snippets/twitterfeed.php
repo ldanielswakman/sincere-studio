@@ -33,6 +33,8 @@
       html += '</div>';
       element.innerHTML = html;
 
+      $('#twitterfeed').closest('section').removeClass('section--collapsed');
+
       $('.owl-carousel').owlCarousel({
         items: 1,
         autoWidth: true,

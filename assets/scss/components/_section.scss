@@ -4,7 +4,9 @@ $sectionpadding: 1.5rem;
 section {
   position: relative;
   padding: 0 $sectionpadding; // site-wide horizontal padding
+  max-height: auto;
   overflow: hidden;
+  @include prefix(transition, max-height 0.3s ease-in-out);
 
   background-size: cover;
   background-position: center center;
@@ -51,6 +53,9 @@ section {
     min-height: 100vh;
     @include prefix(transition, all 2s cubic-bezier(0.5,0,0.5,1));
     @include prefix(transition-delay, 1s);
+  }
+  &.section--collapsed {
+    max-height: 0;
   }
 }
 .isLoaded section.section--homeintro {

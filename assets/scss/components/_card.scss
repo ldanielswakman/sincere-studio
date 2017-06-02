@@ -5,6 +5,9 @@
   @include prefix(flex-direction, row);
   overflow-x: auto;
 }
+.owl-stage-outer {
+  padding: 0.5rem 0;
+}
 .card {
   display: inline-block;
   width: 20rem;
@@ -14,6 +17,8 @@
   vertical-align: top;
   background-color: $white;
   overflow: hidden;
+  @include prefix(box-shadow, 0 0 1rem rgba($black, 0.1));
+  @include prefix(border-radius, 0.25rem);
   color: rgba($bluedark, 0.4);
 
   &.card--words {

@@ -64,7 +64,7 @@
 
         <blockquote><p>...<strong>L Daniel Swakman</strong> is the 'full stack' designer running it. He also likes working at startups that want to be design-driven.</p></blockquote>
 
-        <div id="ldaniel_location" data-url="<?= $site->url() . '/api'; ?>" class="u-mt1" style="line-height: 2rem;"><small><em>getting location...</em></small></div>
+        <div id="ldaniel_location" data-url="<?= $site->url() . '/api?loc=1'; ?>" class="u-mt1" style="line-height: 2rem;"><small><em>getting location...</em></small></div>
 
         <div class="u-mv2">
           <a href="<?= $pages->find('about')->url() ?>" class="button button--dark u-mr1 u-mb1">read more</a>
@@ -75,7 +75,7 @@
     </div>
   </section>
 
-  <section class="u-pv5vh">
+  <section class="u-pv5vh section--collapsed">
     <div class="row">
       <div class="col-xs-12 col-sm-11 col-sm-offset-1">
 
@@ -87,13 +87,14 @@
     </div>
   </section>
 
-  <section class="bg-white u-pv5vh">
+  <section class="bg-white u-pv5vh section--collapsed">
     <div class="row">
       <div class="col-xs-12 col-sm-11 col-sm-offset-1">
 
-        <h5 class="u-mb1">STREAM OF IMAGES</h5>
+        <h5>STREAM OF IMAGES</h5>
 
-        [dribbble]
+        <div class="card-container u-mt1" id="dribbblefeed">
+        </div>
 
       </div>
     </div>
