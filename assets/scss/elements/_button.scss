@@ -26,25 +26,46 @@
   }
   &.button--dark {
     background-color: $bluedark;
-  }
-  &.button--dark:hover {
-    background-color: darken($bluedark, 5%);
+
+    &:hover {
+      background-color: darken($bluedark, 5%);
+    }
   }
   &.button--outline {
     background: none;
     border-color: blue;
     color: $blue;
-  }
-  &.button--outline:hover {
-    background: $blue;
-    color: $white;
-  }
-  &.button--outline.button-dark {
-    border-color: $bluedark;
-    color: $bluedark;
-  }
-  &.button--outline.button-dark:hover {
-    background-color: $bluedark;
-    color: $white;
+
+    &:hover {
+      background: $blue;
+      color: $white;
+    }
+    &.button--dark {
+      border-color: $bluedark;
+      color: $bluedark;
+
+      &:hover {
+        background-color: $bluedark;
+        color: $white;
+      }
+    }
+    &.button--white {
+      border-color: $white;
+      color: $white;
+      
+      &:hover {
+        background-color: $white;
+        color: $blue;
+      }
+      &.button--reveal {
+        border-color: transparent;
+      
+        &:hover {
+          background-color: transparent;
+          border-color: $white;
+          color: $white;
+        }
+      }
+    }
   }
 }

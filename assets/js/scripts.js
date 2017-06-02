@@ -207,28 +207,26 @@ $(document).ready(function() {
 // Dribbble shots via API
 $(document).ready(function() {
   $token = '92024af1ed1c7f87d7fe417bcad6de02afe6cafe6a539bafbbc1b56dda6c6628';
-  $base_url = 'https://api.dribbble.com/v1/users/ldanielswakman/shots?per_page=5';
+  $num_results = 4;
+  $base_url = 'https://api.dribbble.com/v1/users/ldanielswakman/shots?per_page=' + $num_results;
   // curl -i -H "Authorization: Bearer " 
   $.getJSON( $base_url + '&access_token=' + $token , function(r) {
 
     $container = $('#dribbblefeed');
     $container.html();
 
+    shuffle(r);
+    html = '';
     $.each(r, function(i, item) {
-
-      html = '';
-      html += '<a href="' + item['html_url'] + '" class="card" target="_blank">';
+      html += '<a href="' + item['html_url'] + '" class="card card--shadow" target="_blank">';
       html += '<figure>';
       html += '<img src="' + item['images']['normal'] + '" alt="">';
       html += '</figure>';
       html += '</a>';
-
-      $container.append(html);
     });
-
-    html = '<a href="https://www.dribbble.com/ldanielswakman" target="_blank" class="card card--words" style="padding: 6rem 1.5rem; text-align: center; color: blue;">See all shots &rarr;</div>';
+    html += '<a href="https://www.dribbble.com/ldanielswakman" target="_blank" class="card card--words card--shadow" style="padding: 6rem 1.5rem; text-align: center; color: blue;">See all shots &rarr;</div>';
     $container.append(html);
-    
+
     $container.closest('section').removeClass('section--collapsed');
     $container.addClass('owl-carousel');
 
@@ -246,6 +244,13 @@ $(document).ready(function() {
 
 
 
+
+// Shuffle function
+// From https://css-tricks.com/snippets/javascript/shuffle-array/
+function shuffle(o) {
+  for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+  return o;
+};
 
 
 

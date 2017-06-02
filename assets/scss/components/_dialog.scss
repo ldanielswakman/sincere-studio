@@ -37,6 +37,12 @@ dialog {
       line-height: 1.25rem;
     }
   }
+  .dialog__footer {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+  }
 
   .conversation {
     max-width: 40rem;

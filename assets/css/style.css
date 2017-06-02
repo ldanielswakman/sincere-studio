@@ -337,21 +337,33 @@ body.isTouch .u-hide-for-touch {
     border-radius: 1.25rem; }
   .button.button--dark {
     background-color: #035; }
-  .button.button--dark:hover {
-    background-color: #00243c; }
+    .button.button--dark:hover {
+      background-color: #00243c; }
   .button.button--outline {
     background: none;
     border-color: blue;
     color: #00f; }
-  .button.button--outline:hover {
-    background: #00f;
-    color: #fff; }
-  .button.button--outline.button-dark {
-    border-color: #035;
-    color: #035; }
-  .button.button--outline.button-dark:hover {
-    background-color: #035;
-    color: #fff; }
+    .button.button--outline:hover {
+      background: #00f;
+      color: #fff; }
+    .button.button--outline.button--dark {
+      border-color: #035;
+      color: #035; }
+      .button.button--outline.button--dark:hover {
+        background-color: #035;
+        color: #fff; }
+    .button.button--outline.button--white {
+      border-color: #fff;
+      color: #fff; }
+      .button.button--outline.button--white:hover {
+        background-color: #fff;
+        color: #00f; }
+      .button.button--outline.button--white.button--reveal {
+        border-color: transparent; }
+        .button.button--outline.button--white.button--reveal:hover {
+          background-color: transparent;
+          border-color: #fff;
+          color: #fff; }
 
 .line {
   display: inline-block;
@@ -474,26 +486,26 @@ body.isTouch .u-hide-for-touch {
   display: inline-block;
   width: 20rem;
   min-width: 12rem;
+  max-width: calc(100vw - 3rem);
   margin-right: 1rem;
   vertical-align: top;
   background-color: #fff;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-  -webkit-border-radius: 0.25rem;
-  -moz-border-radius: 0.25rem;
-  border-radius: 0.25rem;
   color: rgba(0, 51, 85, 0.4); }
   .card.card--words {
     min-width: 15rem;
     max-width: 20rem;
+    max-width: calc(100vw - 3rem);
     padding: 1.5rem 1.5rem 1rem; }
     .card.card--words .tweet {
       padding-bottom: 1rem;
       font-size: 1.25rem;
       line-height: 1.5rem;
       color: #035; }
+      @media screen and (max-width: 320px) {
+        .card.card--words .tweet {
+          font-size: 1rem;
+          line-height: 1.25rem; } }
     .card.card--words .timePosted, .card.card--words .interact {
       display: inline-block;
       font-size: 1rem;
@@ -506,6 +518,17 @@ body.isTouch .u-hide-for-touch {
       float: right; }
       .card.card--words .interact a + a {
         margin-left: 0.5rem; }
+  .card.card--shadow {
+    -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    border-radius: 0.25rem; }
+  .card p {
+    line-height: 1.25rem; }
+  .card figure img {
+    width: 100%; }
 
 .owl-dots {
   display: flex;
@@ -567,6 +590,11 @@ dialog {
       color: #fff;
       font-size: 2rem;
       line-height: 1.25rem; }
+  dialog .dialog__footer {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0 0.5rem; }
   dialog .conversation {
     max-width: 40rem;
     margin: 0 auto;
@@ -823,6 +851,9 @@ section {
     transition-delay: 1s; }
   section.section--collapsed {
     max-height: 0; }
+  section .owl-carousel.card-container {
+    margin-right: -1.5rem;
+    width: calc(100% + 1.5rem); }
 
 .isLoaded section.section--homeintro {
   min-height: 50vh; }

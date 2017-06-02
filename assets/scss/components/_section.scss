@@ -57,12 +57,16 @@ section {
   &.section--collapsed {
     max-height: 0;
   }
+  .owl-carousel.card-container {
+    margin-right: -#{$sectionpadding};
+    width: calc(100% + #{$sectionpadding});
+  }
 }
 .isLoaded section.section--homeintro {
   min-height: 50vh;
 }
 .section-undo-p {
-  width: calc(100% + 3rem);
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
+  width: calc(100% + #{$sectionpadding * 2});
+  margin-left: -#{$sectionpadding};
+  margin-right: -#{$sectionpadding};
 }

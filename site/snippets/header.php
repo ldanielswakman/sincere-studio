@@ -16,6 +16,7 @@
   if(c::get('env') !== 'DEV') :
     // Bootstrap
     echo css('//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css');
+    echo css('assets/css/style.min.css');
     // Ionicons
     // echo css('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
     // Owl Carousel
@@ -29,6 +30,7 @@
   // if localhost then load local assets
   else :
     echo css('assets/css/flexboxgrid.min.css');
+    echo css('assets/css/style.css');
     // echo css('assets/css/ionicons.min.css');
     echo css('assets/css/owl.carousel.min.css');
     echo js('assets/js/jquery-1.11.1.min.js');
@@ -37,7 +39,6 @@
   endif;
 
   // assets
-  echo css('assets/css/style.min.css');
   echo js('assets/js/scripts.js');
   echo js('assets/js/twitterfetcher.min.js');
   echo js('assets/js/autosize.min.js');
@@ -51,11 +52,8 @@
   <![endif]-->
 
 </head>
-<? 
-$bodyClass = $page->template();
-$bodyClass .= ($page->isHomePage()) ? ' header-full' : ''; 
-?>
-<body class="<?= $bodyClass ?>">
+
+<body class="<?= $page->template() ?>">
 
   <a href="<?= ($page->url() != $site->url()) ? $site->url() : '#top' ?>" class="logo">
     <? snippet('logo') ?>

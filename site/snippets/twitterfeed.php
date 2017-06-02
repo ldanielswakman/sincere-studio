@@ -14,7 +14,7 @@
     var config = {
       "id": '437257042844073984',
       "domId": 'twitterfeed',
-      "maxTweets": 5,
+      "maxTweets": 4,
       "enableLinks": true,
       "showUser": false,
       "dateFunction": momentDateFormatter,
@@ -26,7 +26,7 @@
       var element = document.getElementById('twitterfeed');
       var html = '<div class="card-container owl-carousel">';
       while(n < x) {
-        html += '<div class="card card--words">' + tweets[n] + '</div>';
+        html += '<div class="card card--words card--shadow">' + tweets[n] + '</div>';
         n++;
       }
       html += '<a href="https://www.twitter.com/ldanielswakman" target="_blank" class="card card--words" style="padding: 6rem 1.5rem; text-align: center; color: blue;">See all tweets &rarr;</div>';

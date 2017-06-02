@@ -11,19 +11,18 @@
 .card {
   display: inline-block;
   width: 20rem;
-  // max-width: 20rem;
   min-width: 12rem;
+  max-width: calc(100vw - 3rem);
   margin-right: 1rem;
   vertical-align: top;
   background-color: $white;
   overflow: hidden;
-  @include prefix(box-shadow, 0 0 1rem rgba($black, 0.1));
-  @include prefix(border-radius, 0.25rem);
   color: rgba($bluedark, 0.4);
 
   &.card--words {
     min-width: 15rem;
     max-width: 20rem;
+    max-width: calc(100vw - 3rem);
     padding: 1.5rem 1.5rem 1rem;
 
     .tweet {
@@ -31,6 +30,11 @@
       font-size: 1.25rem;
       line-height: 1.5rem;
       color: $bluedark;
+
+      @media screen and (max-width: $vp_smallest) {
+        font-size: 1rem;
+        line-height: 1.25rem;
+      }
     }
     .timePosted, .interact {
       display: inline-block;
@@ -48,6 +52,16 @@
 
       a + a { margin-left: 0.5rem; }
     }
+  }
+  &.card--shadow {
+    @include prefix(box-shadow, 0 0 1rem rgba($black, 0.1));
+    @include prefix(border-radius, 0.25rem);
+  }
+  p {
+    line-height: 1.25rem;
+  }
+  figure img {
+    width: 100%;
   }
 }
 
