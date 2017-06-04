@@ -63,31 +63,44 @@ fields:
   sections:
     label: Sections
     type: structure
+    modalsize: large
     fields:
-      textcolumn:
+      num_cols:
+        type: fieldtoggle
+        options:
+          1: "One column"
+          2: "Two columns"
+        show:
+          2: col_2
+        hide:
+          1: col_2
+      col_1:
         label: >
           Text column <i>(small)</i>
         type: textarea
-      imagecolumn:
+      col_2:
         label: >
           Image column <i>(large)</i>
         type: textarea
       bg_colour:
-        label:  >
+        label: >
           Section bg colour <i>(HEX)</i>
         type: text
         icon: magic
         width: 1/2
-      fullscreen:
-        label: Fullscreen?
-        text: Fullscreen image?
-        type: checkbox
+      bg_image:
+        label:   >
+          Section bg image <i>(Overrides colour)</i>
+        type: image
         width: 1/2
     entry: >
       <table>
         <tr>
-          <td width="60%" style="padding-right: 20px;">{{textcolumn}}</td>
-          <td width="40%">{{imagecolumn}}</td>
+          <td width="50%" style="padding-right: 20px;">{{col_1}}</td>
+          <td width="50%">{{col_2}}</td>
+        </tr>
+        <tr>
+          <td width="50%" style="padding-top: 10px; color: #999;">bg colour: {{bg_colour}}</td>
+          <td width="50%" style="padding-top: 10px; color: #999;">bg image: {{bg_image}}</td>
         <tr>
       </table>
-      <div style="margin-top: 10px; color: #999">Fullscreen: {{fullscreen}}</div>

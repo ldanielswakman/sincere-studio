@@ -103,7 +103,7 @@
   <section class="section--bg2 bg-bluedull" style="background-image: url('<?= url('assets/images/sitting-w-habita.jpg'); ?>'); background-size: cover; color: rgba(255, 255, 255, 0.9);">
 
     <div class="row">
-      <div class="col-xs-12 col-md-5 col-md-offset-1" style="padding: 15vh 0;">
+      <div class="col-xs-12 col-md-5 col-md-offset-1" style="padding: 10vh 0;">
 
         <div class="line"></div>
 

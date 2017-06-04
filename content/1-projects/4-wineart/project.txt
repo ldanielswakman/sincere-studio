@@ -29,16 +29,8 @@ Featuredcolour: e01b3d
 Sections: 
 
 - 
-  textcolumn: |
-    <!-- <br>
-    (more project images will follow)
-    -->
-  imagecolumn: '(image: wineart-promo-image.jpg)'
-  fullscreen: "1"
-- 
-  textcolumn: ""
-  imagecolumn: '<!-- (link: http://www.wine-art.co text: <i class="ion ion-forward u-mr10"></i> See <span style="opacity: 0.4">the result</span> for yourself class: btn btn-lg btn-outline popup: yes) -->'
-  fullscreen: "0"
+  col_1: ""
+  bg_image: wineart-promo-image.jpg
 
 ----
 

@@ -21,8 +21,8 @@ Featuredimage: blondetafel-laptop.png
 Sections: 
 
 - 
-  textcolumn:
-  imagecolumn: '(image: blondetafel-laptop.png)'
+  num_cols: "1"
+  col_1: '<div style="padding: 0 10vw; max-height: 40vh;">(image: blondetafel-laptop.png)</div>'
 
 ----
 

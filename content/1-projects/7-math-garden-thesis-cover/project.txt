@@ -13,42 +13,37 @@ Tags: graphic,print
 Sections: 
 
 - 
-  textcolumn: ""
-  imagecolumn: '(image: stack-of-4.jpg)'
-  fullscreen: "1"
-  section_bg: ""
+  col_1: ""
+  bg_image: stack-of-4.jpg
 - 
-  textcolumn: |
+  col_1: |
     <h3 class="u-mt60 u-mb20">identity</h3>
     As a result of a multi-year PhD research on a personalised learning tool, the cover needed to reflect the look of the (link: http://www.mathsgarden.com/ text: Math Garden popup:yes) application (a garden in which children play mathematical games), but have a distinct identity that would stand on its own.
-  imagecolumn: '(image: thesis-cover-on-eee.jpg)'
-  section_bg: '#fff'
-  fullscreen: "0"
+  col_2: '(image: thesis-cover-on-eee.jpg)'
+  bg_colour: '#fff'
+
   bg_colour: ffffff
 - 
-  textcolumn: ""
-  imagecolumn: '(image: side-by-side-zoom.jpg)'
-  fullscreen: true
+  col_1: ""
+  bg_image: side-by-side-zoom.jpg
 - 
-  textcolumn: |
+  col_1: |
     <h3 class="u-mv20">paper</h3>
     
     In order to achieve a unique tactual experience, 300g/m2 Kraftliner paper was used - a product more often used in the package industry than in scientific dissertation publishing.
-  imagecolumn: '(image: thesis-cover-author.jpg)'
+  col_2: '(image: thesis-cover-author.jpg)'
 - 
-  textcolumn: ""
-  imagecolumn: '(image: thesis-cover-zoomin.jpg)'
-  fullscreen: true
+  col_1: ""
+  bg_image: thesis-cover-zoomin.jpg
 - 
-  textcolumn: |
+  col_1: |
     <h3 class="u-mv20">graphic</h3>
     
     The garden graphic is abstracted by only using horizontal line patterns and a teal color accent. The line texture is repeated on the inside of the cover.
-  imagecolumn: '(image: thesis-cover-page-spread.jpg)'
+  col_2: '(image: thesis-cover-page-spread.jpg)'
 - 
-  textcolumn: ""
-  imagecolumn: '(image: side-by-side.jpg)'
-  fullscreen: true
+  col_1: ""
+  bg_image: side-by-side.jpg
 
 ----
 

@@ -21,19 +21,18 @@ Featuredimage: ankymager-identity.jpg
 Sections: 
 
 - 
-  textcolumn: ""
-  imagecolumn: '(image: ankymager-identity.jpg)'
-  fullscreen: "1"
+  col_1: ""
+  bg_image: ankymager-identity.jpg
   bg_colour: ""
 - 
-  textcolumn: ""
-  imagecolumn: '(image: ankymager-cards.png)'
+  num_cols: 1
+  col_1: ""
+  col_2: '(image: ankymager-cards.png)'
   bg_colour: ""
-  fullscreen: "0"
+
 - 
-  textcolumn: ""
-  imagecolumn: '(image: ankymager-pages.jpg )'
-  fullscreen: true
+  col_1: ""
+  bg_image: ankymager-pages.jpg
 
 ----
 

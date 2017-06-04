@@ -21,15 +21,13 @@ Featuredimage: visitekaartje-topdown.gif
 Sections: 
 
 - 
-  textcolumn:
-  imagecolumn: '(image: visitekaartje-all4.jpg)'
-  fullscreen: on
+  col_1:
+  bg_image: visitekaartje-all4.jpg
 - 
-  textcolumn:
-  imagecolumn: '(image: visitekaartje-topdown.gif)'
-  fullscreen: true
+  col_1:
+  bg_image: visitekaartje-topdown.gif
 - 
-  textcolumn: |
+  col_1: |
     **Philip Hoenderdaal Genet**
     *political scientist / education*
     <br /><br /><br />
@@ -47,14 +45,13 @@ Sections:
     **L Daniel Swakman**
     *graphic/web designer*
     (link: http://www.ldaniel.eu text: ldaniel.eu popup:yes)
-  imagecolumn: |
+  col_2: |
     (image: visitekaartje-philip.jpg)
     (image: visitekaartje-ldaniel-zoomin.jpg)
     (image: visitekaartje-veldwerk.jpg)
 - 
-  textcolumn:
-  imagecolumn: '(image: visitekaartje-mess.jpg)'
-  fullscreen: true
+  col_1:
+  bg_image: visitekaartje-mess.jpg
 
 ----
 

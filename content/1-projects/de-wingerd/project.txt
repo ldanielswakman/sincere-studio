@@ -21,19 +21,14 @@ Featuredimage: dewingerd-overview.jpg
 Sections: 
 
 - 
-  textcolumn:
-  imagecolumn: '<div class="u-ph60">(image: dewingerd-scroll.gif)</div>'
+  num_cols: "1"
+  col_1: '<div style="padding: 0 12vw; max-height: 45vh;">(image: dewingerd-scroll.gif)</div>'
 - 
-  textcolumn:
-  imagecolumn: '(image: dewingerd-overview.jpg)'
-  fullscreen: true
+  col_1:
+  bg_image: dewingerd-overview.jpg
 - 
-  textcolumn:
-  imagecolumn: '(image: dewingerd-print-zoomin-top.jpg)'
-  fullscreen: true
-- 
-  textcolumn:
-  imagecolumn: '(image: dewingerd-mobile.png)'
+  num_cols: "1"
+  col_1: '(image: dewingerd-mobile.png)'
 
 ----
 

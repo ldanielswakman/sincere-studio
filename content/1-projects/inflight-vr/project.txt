@@ -1,0 +1,51 @@
+H-basics: 
+
+----
+
+Title: Inflight VR
+
+----
+
+Year: 2017
+
+----
+
+Description: Experience & interface concept for inflight entertainment — in virtual reality
+
+----
+
+Tags: ui,concept development
+
+----
+
+Projecturl: 
+
+----
+
+H-featured: 
+
+----
+
+Featured: 1
+
+----
+
+Featuredimage: inflight-mockup.jpg
+
+----
+
+Featuredcolour: 0000ff
+
+----
+
+H-content: 
+
+----
+
+Sections: 
+
+- 
+  col_1: ""
+  col_2: '(image: inflight-banner.jpg)'
+  bg_colour: ""
+  fullscreen: "1"

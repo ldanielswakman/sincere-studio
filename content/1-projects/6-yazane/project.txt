@@ -13,9 +13,8 @@ Tags: web design,front-end
 Sections: 
 
 - 
-  textcolumn:
-  imagecolumn: '(image: yazane-homepage-mockup.jpg)'
-  fullscreen: true
+  col_1:
+  bg_image: yazane-homepage-mockup.jpg
 
 ----
 
