@@ -326,6 +326,90 @@ blockquote + p, ul + p, ol + p, p + p {
 body.isTouch .u-hide-for-touch {
   display: none !important; }
 
+.bubble {
+  position: relative;
+  display: inline-block;
+  min-width: 3rem;
+  min-height: 2rem;
+  padding: 0 1rem;
+  background-color: #00f;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  color: #fff;
+  line-height: 1rem;
+  -webkit-transform: translateY(3rem);
+  -moz-transform: translateY(3rem);
+  transform: translateY(3rem);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .bubble:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: calc(100% - 1rem);
+    border: 0.75rem solid transparent;
+    border-right-color: #00f;
+    border-bottom-color: #00f; }
+  .bubble.bubble--white {
+    padding: 1rem;
+    width: 100%;
+    background-color: #fff;
+    color: #035; }
+    .bubble.bubble--white:before {
+      right: auto;
+      left: calc(100% - 1rem);
+      border-right-color: transparent;
+      border-left-color: #fff;
+      border-bottom-color: #fff; }
+  .bubble .bubble__loader {
+    position: absolute;
+    opacity: 1;
+    max-width: 5rem;
+    max-height: 5rem;
+    padding: 0.5rem 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+    transition-delay: 0.5s; }
+  .bubble .bubble__content {
+    padding: 0.5rem 0;
+    max-width: 0;
+    max-height: 0;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+    overflow: hidden; }
+  .bubble textarea {
+    min-height: 4rem; }
+  .bubble .field {
+    width: 100%;
+    min-width: 12rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    background: #ebebed;
+    color: #035;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    border-radius: 0.25rem;
+    font: inherit;
+    resize: none; }
+  .bubble .field:hover {
+    border-bottom-color: rgba(0, 51, 85, 0.7); }
+  .bubble .field:focus {
+    outline: none;
+    border-bottom-color: #035; }
+
 .button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -494,6 +578,67 @@ body.isTouch .u-hide-for-touch {
 .article figure {
   margin-top: 2rem;
   margin-bottom: 2rem; }
+
+.dialog--contact .dialog__header {
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  margin-bottom: 1rem; }
+  .dialog--contact .dialog__header h3 {
+    padding: 1rem;
+    line-height: 1.25rem;
+    color: #fff;
+    opacity: 0.3; }
+  .dialog--contact .dialog__header a {
+    display: inline-block;
+    padding: 1rem;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1.25rem; }
+
+.dialog--contact .dialog__footer {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 0.5rem; }
+
+.dialog--contact .conversation {
+  max-width: 40rem;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 0;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  overflow-y: auto; }
+  .dialog--contact .conversation.isSending .field {
+    pointer-events: none;
+    background: transparent; }
+
+.dialog--contact .bubble-wrap {
+  max-height: 0;
+  padding: 0.25rem 2rem 0.25rem 1rem;
+  overflow: hidden; }
+  .dialog--contact .bubble-wrap.bubble-wrap--right {
+    padding-right: 1rem;
+    padding-left: 2rem;
+    text-align: right; }
+  .dialog--contact .bubble-wrap.isLoaded {
+    max-height: 40rem; }
+  @media screen and (min-width: 768px) {
+    .dialog--contact .bubble-wrap {
+      padding: 0.5rem 5rem 0.5rem 1rem; }
+      .dialog--contact .bubble-wrap.bubble-wrap--right {
+        padding: 0.5rem 1rem 0.5rem 5rem; } }
 
 .card-container {
   width: 100%;

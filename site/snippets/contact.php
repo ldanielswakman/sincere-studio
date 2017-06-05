@@ -1,4 +1,4 @@
-<dialog>
+<dialog class="dialog--contact">
   <div class="dialog__header">
     <h3>get in touch</h3>
     <a href="javascript:void(0)" data-action="dialog-close">&times;</a>

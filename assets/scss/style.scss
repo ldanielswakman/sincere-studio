@@ -8,12 +8,14 @@
 @import 'base/utilities';
 
 // Elements
+@import 'elements/bubble';
 @import 'elements/button';
 @import 'elements/line';
 @import 'elements/logo';
 
 // Components
 @import 'components/article';
+@import 'components/contact';
 @import 'components/card';
 @import 'components/dialog';
 @import 'components/footer';

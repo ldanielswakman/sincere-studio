@@ -1,0 +1,72 @@
+.dialog--contact {
+  .dialog__header {
+    @include prefix(display, flex);
+    @include prefix(justify-content, space-between);
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+
+    h3 {
+      padding: 1rem;
+      line-height: 1.25rem;
+      color: $white;
+      opacity: 0.3;
+    }
+    a {
+      display: inline-block;
+      padding: 1rem;
+      color: $white;
+      font-size: 2rem;
+      line-height: 1.25rem;
+    }
+  }
+  .dialog__footer {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+  }
+
+  .conversation {
+    max-width: 40rem;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 0;
+
+    // @include prefix(display, flex);
+    // @include prefix(flex-direction, column);
+    @include prefix(flex, 1 1 auto);
+    @include prefix(justify-content, flex-end);
+    overflow-y: auto;
+
+    &.isSending {
+      .field {
+        pointer-events: none;
+        background: transparent;
+      }
+    }
+  }
+
+  .bubble-wrap {
+    max-height: 0;
+    padding: 0.25rem 2rem 0.25rem 1rem;
+    overflow: hidden;
+
+    &.bubble-wrap--right {
+      padding-right: 1rem;
+      padding-left: 2rem;
+      text-align: right;
+    }
+    &.isLoaded {
+      max-height: 40rem;  
+    }
+    @media screen and (min-width: $vp_tablet) {
+      padding: 0.5rem 5rem 0.5rem 1rem;
+
+      &.bubble-wrap--right {
+        padding: 0.5rem 1rem 0.5rem 5rem;
+      }
+    }
+  }
+}
