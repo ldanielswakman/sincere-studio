@@ -16,3 +16,6 @@
 [submodule "site/plugins/version-widget"]
 	path = site/plugins/version-widget
 	url = https://github.com/omz13/kirby-cache-widgets
+[submodule "site/plugins/uniform"]
+	path = site/plugins/uniform
+	url = git@github.com:mzur/kirby-uniform.git
