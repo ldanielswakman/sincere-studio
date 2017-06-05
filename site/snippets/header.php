@@ -12,38 +12,34 @@
   <? ecco(strpos(kirby()->request()->url(),'_/new') !== false, '<meta name="robots" value="noindex" />') ?>
 
   <?
+  // sets css & js assets based on ENV
+  $css_assets = (c::get('env') !== 'DEV') ? array(
+    '//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css',
+    '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css',
+    // 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
+    'assets/css/style.min.css',
+  ) : array(
+    'assets/css/flexboxgrid.min.css',
+    'assets/css/style.css',
+    // 'assets/css/ionicons.min.css',
+    'assets/css/owl.carousel.min.css',
+  );
+
   // checks if not on localhost, then serves assets from CDN
-  if(c::get('env') !== 'DEV') :
-    // Bootstrap
-    echo css('//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css');
-    echo css('assets/css/style.min.css');
-    // Ionicons
-    // echo css('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
-    // Owl Carousel
-    echo css('assets/css/owl.carousel.min.css');
-    // jQuery
-    echo js('http://code.jquery.com/jquery-1.11.1.min.js');
-    // jQuery SmoothScroll
-    echo js('http://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js');
-    // Owl Carousel
-    echo js('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js');
-    echo js('assets/js/scripts.min.js');
-  // if localhost then load local assets
-  else :
-    echo css('assets/css/flexboxgrid.min.css');
-    echo css('assets/css/style.css');
-    // echo css('assets/css/ionicons.min.css');
-    echo css('assets/css/owl.carousel.min.css');
-    echo js('assets/js/vendor/jquery-1.11.1.min.js');
-    echo js('assets/js/vendor/jquery.smooth-scroll.min.js');
-    echo js('assets/js/vendor/owl.carousel.min.js');
-    echo js('assets/js/scripts.js');
-  endif;
+  $js_assets = (c::get('env') !== 'DEV') ? array(
+    'http://code.jquery.com/jquery-1.11.1.min.js',
+    'http://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js',
+    'assets/js/scripts.min.js',
+  ) : array(
+    'assets/js/vendor/jquery-1.11.1.min.js',
+    'assets/js/vendor/jquery.smooth-scroll.min.js',
+    'assets/js/vendor/owl.carousel.min.js',
+    'assets/js/scripts.js',
+  );
 
-  // assets
-  echo js('assets/js/vendor/twitterfetcher.min.js');
-  echo js('assets/js/vendor/autosize.min.js');
-
+  echo css($css_assets);
+  echo js($js_assets);
   ?>
 
   <link rel="alternate" href="http://www.ldaniel.eu/" hreflang="en-gb" />
