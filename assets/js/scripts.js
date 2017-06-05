@@ -71,32 +71,24 @@ handleTweets(arrayTweets);inProgress=false;if(queue.length>0){twitterFetcher.fet
 $(document).ready(function() {
 
   // Continue button
-  $('dialog [data-action="continue"]').on('click touchstart', function (e) {
+  $('.dialog--contact [data-action="continue"]').on('click touchstart', function (e) {
     e.preventDefault();
     bubbleRun($(this).closest('.bubble-wrap'));
   });
   // Continue key combination (Shift + Enter)
-  $('dialog .bubble').find('textarea, input').on('keypress keydown', function(e) {
+  $('.dialog--contact .bubble').find('textarea, input').on('keypress keydown', function(e) {
     if(e.keyCode == 13 && e.shiftKey == true) {
       e.preventDefault();
       bubbleRun($(this).closest('.bubble-wrap'));
     }
   });
   // Form submission handling
-  $('dialog form').on('submit', function(e) {
+  $('.dialog--contact form').on('submit', function(e) {
     e.preventDefault();
-    $submit_btn = $(this).find('[type="submit"]');
-    bubbleRun($submit_btn.closest('.bubble-wrap'));
-    $form = $submit_btn.closest('form');
-    $form.addClass('isSending');
-
-    // TEMPORARY: data doesn't get sent yet
-    console.log($form.serialize());
-    setTimeout(function() { bubbleRun($('#bubble_success')) }, 2000);
-    setTimeout(function() { closeContactForm() }, 3000);
+    postContactForm($(this));
   });
   // Dialog close button
-  $('dialog [data-action="dialog-close"]').on('click touchstart', function (e) {
+  $('.dialog--contact [data-action="dialog-close"]').on('click touchstart', function (e) {
     closeContactForm();
   });
 
@@ -110,7 +102,7 @@ $(document).on('keydown', function(e) {
 function openContactForm() {
   $('body').addClass('dialogIsActive');
   setTimeout(function() {
-    bubbleRun( $('dialog').find('.bubble-wrap#bubble1') );
+    bubbleRun( $('.dialog--contact').find('.bubble-wrap#bubble1') );
   }, 500);
 }
 
@@ -135,6 +127,10 @@ function bubbleRun($obj, stophere) {
     nextTimeout = 1500;
   }
 
+  if($obj.attr('data-autoplay') == 'false') {
+    stophere = true;
+  }
+
   if(stophere !== true) {
     $next = $obj.next();
     if(!$next.hasClass('bubble-wrap--right')) {
@@ -142,6 +138,49 @@ function bubbleRun($obj, stophere) {
     } else {
       setTimeout( function() { bubbleRun($next, true); }, nextTimeout);
     }
+  }
+}
+
+// post Contact Form
+function postContactForm($form) {
+  if($form) {
+    // Variables
+    url = $form.attr('action');
+    form_data = $form.serialize();
+    $response_div = $form.find('#bubble_formresponse');
+    $success_div = $form.find('#bubble_success');
+
+    // Set states
+    $form.addClass('isSending');
+    $form.find('.field').removeClass('hasError');
+    $response_div.find('.bubble__content').html('');
+    bubbleRun($form.find('[type="submit"]').closest('.bubble-wrap'), true);
+
+    // Make Ajax request
+    $.post(url, form_data, function(data) {
+
+      if(data['success'] == false) {
+
+        $form.removeClass('isSending');
+
+        error_msg = '';
+
+        $.each(data['errors'], function(i, item) {
+          // console.log(i + ': ' + item[0]);
+          $form.find('[name="' + i + '"]').addClass('hasError');
+          error_msg += item[0];
+        });
+        $response_div.find('.bubble__content').html(error_msg);
+        $response_div.addClass('isLoaded');
+
+      } else if (data['success'] === true) {
+
+        $form.find('#bubble_formsending, #bubble_formresponse').removeClass('isLoaded');
+        $form.removeClass('isSending').addClass('isSuccess');
+        bubbleRun($form.find('#bubble_success'));
+
+      }
+    });
   }
 }
 

@@ -395,20 +395,23 @@ body.isTouch .u-hide-for-touch {
     width: 100%;
     min-width: 12rem;
     margin-bottom: 0.5rem;
-    padding: 0.5rem;
-    border: none;
-    background: #ebebed;
+    padding: calc(0.5rem - 2px);
+    border: 2px solid transparent;
+    background: #f0f0f2;
     color: #035;
     -webkit-border-radius: 0.25rem;
     -moz-border-radius: 0.25rem;
     border-radius: 0.25rem;
     font: inherit;
     resize: none; }
-  .bubble .field:hover {
-    border-bottom-color: rgba(0, 51, 85, 0.7); }
-  .bubble .field:focus {
-    outline: none;
-    border-bottom-color: #035; }
+    .bubble .field:hover {
+      outline: none;
+      background: #ebebed; }
+    .bubble .field:focus {
+      outline: none;
+      background: #e3e3e6; }
+    .bubble .field.hasError {
+      border-color: #00f; }
 
 .button {
   -webkit-appearance: none;
@@ -620,9 +623,37 @@ body.isTouch .u-hide-for-touch {
   -moz-justify-content: flex-end;
   justify-content: flex-end;
   overflow-y: auto; }
+  .dialog--contact .conversation [type="submit"] {
+    max-width: 120px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
   .dialog--contact .conversation.isSending .field {
     pointer-events: none;
     background: transparent; }
+  .dialog--contact .conversation.isSending [type="submit"] {
+    position: relative;
+    max-width: 30px;
+    padding-left: 14px;
+    padding-right: 14px;
+    overflow: hidden;
+    font-size: 0;
+    background: none;
+    border-color: #cccccc; }
+    .dialog--contact .conversation.isSending [type="submit"]:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../images/spinner.gif");
+      background-size: 100%; }
+  .dialog--contact .conversation.isSuccess .field {
+    pointer-events: none;
+    background: transparent; }
+  .dialog--contact .conversation.isSuccess [type="submit"] {
+    display: none; }
 
 .dialog--contact .bubble-wrap {
   max-height: 0;
@@ -639,6 +670,10 @@ body.isTouch .u-hide-for-touch {
       padding: 0.5rem 5rem 0.5rem 1rem; }
       .dialog--contact .bubble-wrap.bubble-wrap--right {
         padding: 0.5rem 1rem 0.5rem 5rem; } }
+
+.dialog--contact .uniform__potty {
+  position: absolute;
+  left: -9999px; }
 
 .card-container {
   width: 100%;

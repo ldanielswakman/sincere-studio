@@ -1,10 +1,10 @@
-<dialog class="dialog--contact">
+<dialog class="dialog dialog--contact">
   <div class="dialog__header">
     <h3>get in touch</h3>
     <a href="javascript:void(0)" data-action="dialog-close">&times;</a>
   </div>
 
-  <form action="/" class="conversation">
+  <form class="conversation" action="<?= $site->url() . '/contactform_post' ?>" method="POST">
 
     <div class="bubble-wrap" id="bubble1">
       <div class="bubble">
@@ -48,19 +48,34 @@
       </div>
     </div>
 
-    <div class="bubble-wrap" id="bubble6">
+    <div class="bubble-wrap" id="bubble_formsending">
       <div class="bubble">
         <div class="bubble__loader">...</div>
         <div class="bubble__content">Sending your message...</div>
       </div>
     </div>
 
+    <div class="bubble-wrap" id="bubble_formresponse">
+      <div class="bubble">
+        <div class="bubble__loader">...</div>
+        <div class="bubble__content"></div>
+      </div>
+    </div>
+
     <div class="bubble-wrap" id="bubble_success">
       <div class="bubble">
         <div class="bubble__loader">...</div>
-        <div class="bubble__content">Thank you! I'll be in touch soon</div>
+        <div class="bubble__content">
+          Thank you! I'll be in touch soon.<br>
+          <a href="javascript:void(0)" data-action="dialog-close" class="button button--white u-mt1 u-mb1">Browse on!</a>
+        </div>
       </div>
     </div>
+
+    <input name="source" class="u-hide" type="text" value="<?= $page->title()->html() ?>">
+
+    <?= csrf_field() ?>
+    <?= honeypot_field() ?>
 
   </form>
   <div class="dialog__footer">

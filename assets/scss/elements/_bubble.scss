@@ -62,20 +62,24 @@
     width: 100%;
     min-width: 12rem;
     margin-bottom: 0.5rem;
-    padding: 0.5rem;
-    border: none;
+    padding: calc(0.5rem - 2px);
+    border: 2px solid transparent;
     // border-bottom: 0.125rem solid rgba($bluedark, 0.5);
-    background: $greylighter;
+    background: lighten($greylighter, 2%);
     color: $bluedark;
     @include prefix(border-radius, 0.25rem);
     font: inherit;
     resize: none;
-  }
-  .field:hover {
-    border-bottom-color: rgba($bluedark, 0.7);
-  }
-  .field:focus {
-    outline: none;
-    border-bottom-color: $bluedark;
+    &:hover {
+      outline: none;
+      background: $greylighter;
+    }
+    &:focus {
+      outline: none;
+      background: darken($greylighter, 3%);
+    }
+    &.hasError {
+      border-color: $blue;
+    }
   }
 }
