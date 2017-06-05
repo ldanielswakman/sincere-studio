@@ -129,29 +129,34 @@ Languages:
 
 - 
   period: ""
-  title: English
+  title: English 🇬🇧
   text: fluent
   url: ""
+  image: ""
 - 
   period: ""
-  title: Dutch
+  title: Dutch 🇳🇱
   text: fluent, native
   url: ""
+  image: ""
 - 
   period: ""
-  title: Turkish
+  title: Turkish 🇹🇷
   text: good
   url: ""
+  image: ""
 - 
   period: ""
-  title: German
+  title: German 🇩🇪
   text: good
   url: ""
+  image: ""
 - 
   period: ""
-  title: French
+  title: French 🇫🇷
   text: acceptable
   url: ""
+  image: ""
 
 ----
 

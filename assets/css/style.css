@@ -25,6 +25,9 @@
 .bg-greylight {
   background-color: #cccccc; }
 
+.bg-blue {
+  background-color: #00f; }
+
 .bg-bluedull {
   background-color: #34495e; }
 
@@ -348,6 +351,13 @@ body.isTouch .u-hide-for-touch {
     background-color: #035; }
     .button.button--dark:hover {
       background-color: #00243c; }
+  .button.button--white {
+    background-color: #fff;
+    border-color: #fff;
+    color: #00f; }
+    .button.button--white:hover {
+      background-color: #e6e6e6;
+      color: #00f; }
   .button.button--outline {
     background: none;
     border-color: blue;

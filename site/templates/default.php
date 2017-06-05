@@ -1,15 +1,17 @@
-<?php snippet('header') ?>
+<? snippet('header') ?>
 
   <main>
 
-      <? snippet('page-header', ['page' => $page, 'subtitle' => 'work experience']) ?>
+      <? snippet('page-header', ['page' => $page]) ?>
 
-      <?php echo $page->text()->kirbytext() ?>
-
-      <?php if($page->slug() == 'contact') : ?>
-        <?php snippet('twitterfeed'); ?>
-      <?php endif; ?>
+      <section>
+        <div class="row">
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-7 col-md-offset-3">
+            <?= $page->text()->kirbytext() ?>
+          </div>
+        </div>
+      </section>
 
   </main>
 
-<?php snippet('footer') ?>
+<? snippet('footer') ?>

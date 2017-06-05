@@ -1,0 +1,39 @@
+Title: About
+
+----
+
+Text: 
+
+(new-section: bg-white c-grey)
+
+I'm a 'full-stack' designer, believe in great visual experiences in digital and analog context wherever the world takes me. Been designing & building things as an independent designer, for clients and startups, for (since: 2009) years. My work involves these themes:
+
+(new-section: u-pv10vh)
+
+> <span style="font-size: 2rem;" class="c-blue">Digital design as a responsive, context-sensitive solution that suits user's needs.</span>
+
+The main passion in my work lies in the visual and graphic design; I deeply care about how aspects like layout, legibility, colours, typography and contrast work together to form a well designed environment, whether that’s in a virtual 3D environment, a voice operated interface, a web game on a 10” tablet or in print. The fluency with creative software as well as front-end programming languages (html, css, javascript) helps me to indeed realise this consistency of design.
+
+<br><br>
+
+> <span style="font-size: 2rem;" class="c-blue">Code is the grain and material of the web & app world.</span>
+
+I believe that working in digital design means an inherent link between visual/interaction design and the code that makes this happen — much like a carpenter's knowledge & control of wood type and behaviour. Design ⇄ code.
+
+<br><br>
+
+> <span style="font-size: 2rem;" class="c-blue">Orchestration of dynamic elements.</span>
+
+Designing for the web and mobile apps can no longer be seen as an exercise on a fixed canvas where one lays out objects. Instead, it is an orchestration of dynamic elements, that can have different states & behaviours. Responsive design is a key tool in this orchestration — I've never designed a project without it.
+
+<br><br>
+
+> <span style="font-size: 2rem;" class="c-blue">Shaping the world we experience & interact with.</span>
+
+I believe the values and considerations that are concerned with visual design are just as present in architecture: colour, proportions, materials, tactility, usability, and the continuous process of revision in search for true quality.
+
+(new-section: bg-blue c-white)
+
+Want to talk further? About a future or current project, about what drives you or just to say hello? I like people. We can talk.
+
+<a href="javascript:openContactForm()" class="button button--white">Say hello</a>

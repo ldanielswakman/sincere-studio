@@ -31,6 +31,16 @@
       background-color: darken($bluedark, 5%);
     }
   }
+  &.button--white {
+    background-color: $white;
+    border-color: $white;
+    color: $blue;
+    
+    &:hover {
+      background-color: darken($white, 10%);
+      color: $blue;
+    }
+  }
   &.button--outline {
     background: none;
     border-color: blue;
