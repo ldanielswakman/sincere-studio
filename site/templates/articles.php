@@ -2,15 +2,7 @@
 
 <main>
 
-  <section class="bg-white" style="padding-top: 1.5rem; padding-bottom: 1.5rem;">
-    <div class="row">
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-1">
-
-        <h1><?= strtolower($page->title()->html()) ?></h1>
-
-      </div>
-    </div>
-  </section>
+  <? snippet('page-header', ['page' => $page]) ?>
 
   <section class="">
     <div class="row">

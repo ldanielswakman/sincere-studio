@@ -2,6 +2,8 @@
 
   <main>
 
+      <? snippet('page-header', ['page' => $page, 'subtitle' => 'work experience']) ?>
+
       <?php echo $page->text()->kirbytext() ?>
 
       <?php if($page->slug() == 'contact') : ?>

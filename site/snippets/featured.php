@@ -21,10 +21,3 @@ $featured[] = page($sourcepage->uri() . '/' . $sourcepage->featured3());
   <? endforeach ?>
 
 </div>
-
-<div class="card-pagination" style="margin: 0;">
-  <a href="#" class="dot"></a>
-  <a href="#" class="dot dot--active"></a>
-  <a href="#" class="dot"></a>
-  <a href="#" class="dot"></a>
-</div>
