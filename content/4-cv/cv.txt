@@ -13,16 +13,19 @@ Work-xp:
   title: ldaniel.eu
   text: 'freelance graphic & web designer, branding & identity, front-end design, visualisations'
   url: http://ldaniel.eu/
+  img: ldaniel-logo.png
 - 
   title: Muhit (co-founder)
   text: 'non-profit platform for urban improvement, design, product & business development'
   url: projects/muhit
   period: 2015-current
+  img: muhit-logo-on-white.png
 - 
   title: Paraşüt
   text: 'Pre-accounting for SME’s web application; graphic & web designer, UI/ UX design, front-end (html/css)'
   url: http://www.parasut.com/
   period: 2014-current
+  img: parasut-logo.png
 - 
   period: 2012-2015
   title: Oefenweb.nl
@@ -32,6 +35,7 @@ Work-xp:
     UX design, front-end (html/css),
     gamification
   url: http://www.oefenweb.nl
+  img: oefenweb-logo.png
 - 
   period: 2011-2012
   title: Güller Güller architecture urbanism
@@ -132,31 +136,31 @@ Languages:
   title: English 🇬🇧
   text: fluent
   url: ""
-  image: ""
+  img: ""
 - 
   period: ""
   title: Dutch 🇳🇱
   text: fluent, native
   url: ""
-  image: ""
+  img: ""
 - 
   period: ""
   title: Turkish 🇹🇷
   text: good
   url: ""
-  image: ""
+  img: ""
 - 
   period: ""
   title: German 🇩🇪
   text: good
   url: ""
-  image: ""
+  img: ""
 - 
   period: ""
   title: French 🇫🇷
   text: acceptable
   url: ""
-  image: ""
+  img: ""
 
 ----
 

@@ -23,7 +23,7 @@
     min-width: 15rem;
     max-width: 20rem;
     max-width: calc(100vw - 3rem);
-    padding: 1.5rem 1.5rem 1rem;
+    padding: 1.5rem;
 
     .tweet {
       padding-bottom: 1rem;
@@ -49,6 +49,7 @@
     }
     .interact {
       float: right;
+      margin-bottom: -0.5rem;
 
       a + a { margin-left: 0.5rem; }
     }

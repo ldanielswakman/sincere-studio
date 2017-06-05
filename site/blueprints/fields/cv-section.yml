@@ -6,7 +6,7 @@ fields:
     label: Period
     type: text
     width: 1/2
-  image:
+  img:
     label: Image
     type:  image
     width: 1/2

@@ -667,7 +667,7 @@ body.isTouch .u-hide-for-touch {
     min-width: 15rem;
     max-width: 20rem;
     max-width: calc(100vw - 3rem);
-    padding: 1.5rem 1.5rem 1rem; }
+    padding: 1.5rem; }
     .card.card--words .tweet {
       padding-bottom: 1rem;
       font-size: 1.25rem;
@@ -686,7 +686,8 @@ body.isTouch .u-hide-for-touch {
         .card.card--words .timePosted a:hover, .card.card--words .interact a:hover {
           color: #035; }
     .card.card--words .interact {
-      float: right; }
+      float: right;
+      margin-bottom: -0.5rem; }
       .card.card--words .interact a + a {
         margin-left: 0.5rem; }
   .card.card--shadow {

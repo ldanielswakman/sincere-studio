@@ -6,6 +6,9 @@
 <div class="card-container owl-carousel u-mt1">
   <? foreach ($section->toStructure() as $item) : ?>
     <a href="<? ecco($item->url()->isNotEmpty(), $item->url(), 'javascript:void(0)') ?>" class="card card--words" style="padding-top: 1rem;"<? ecco(strpos($item->url()->value(), 'http') !== false, ' target="_blank"','') ?>>
+      <? if($item->img()->isNotEmpty()) : ?>
+      <img src="<?= thumb($page->image($item->img()), ['height' => 40])->url() ?>" alt="<?= $item->title() ?>" style="width: auto; margin: 0.25rem 0.25rem;" />
+      <? endif ?>
       <p style="font-size: 1rem;"><?= $item->period() ?></p>
       <p style="margin: 0.25rem 0 0.5rem;" class="c-bluedull"><?= $item->title() ?></p>
       <p style="margin-top: 0.25rem; font-size: 1rem;" class="c-bluedull u-op"><?= $item->text() ?></p>
