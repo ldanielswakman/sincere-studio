@@ -5,6 +5,9 @@ var rename = require("gulp-rename");
 // CSS compiling
 var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
+// JS compiling
+var concat = require('gulp-concat');
+var minify = require('gulp-minify');
 
 // Concatenate Sass task
 // gulp.src('assets/scss/**/*.scss')
@@ -25,7 +28,20 @@ gulp.task('clean_css', ['sass'], function() {
 // Combine style tasks
 gulp.task('styles', ['sass', 'clean_css']);
 
+// Concatenate & minify JS
+gulp.task('scripts', function() {
+  return gulp.src('./assets/js/components/*.js')
+    .pipe(concat('scripts.js'))
+    .pipe(minify({ ext:{
+            src:'.js',
+            min:'.min.js'
+        },
+    }))
+    .pipe(gulp.dest('./assets/js/'));
+});
+
 // Watch task
 gulp.task('default',function() {
     gulp.watch('assets/scss/**/*.scss',['styles']);
+    gulp.watch('assets/js/components/**/*.js',['scripts']);
 });

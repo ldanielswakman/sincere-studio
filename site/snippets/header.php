@@ -27,21 +27,22 @@
     echo js('http://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js');
     // Owl Carousel
     echo js('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js');
+    echo js('assets/js/scripts.min.js');
   // if localhost then load local assets
   else :
     echo css('assets/css/flexboxgrid.min.css');
     echo css('assets/css/style.css');
     // echo css('assets/css/ionicons.min.css');
     echo css('assets/css/owl.carousel.min.css');
-    echo js('assets/js/jquery-1.11.1.min.js');
-    echo js('assets/js/jquery.smooth-scroll.min.js');
-    echo js('assets/js/owl.carousel.min.js');
+    echo js('assets/js/vendor/jquery-1.11.1.min.js');
+    echo js('assets/js/vendor/jquery.smooth-scroll.min.js');
+    echo js('assets/js/vendor/owl.carousel.min.js');
+    echo js('assets/js/scripts.js');
   endif;
 
   // assets
-  echo js('assets/js/scripts.js');
-  echo js('assets/js/twitterfetcher.min.js');
-  echo js('assets/js/autosize.min.js');
+  echo js('assets/js/vendor/twitterfetcher.min.js');
+  echo js('assets/js/vendor/autosize.min.js');
 
   ?>
 
