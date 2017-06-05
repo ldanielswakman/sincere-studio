@@ -46,6 +46,14 @@ Sections:
 
 - 
   col_1: ""
-  col_2: '(image: inflight-banner.jpg)'
+  col_2: ""
   bg_colour: ""
   fullscreen: "1"
+  num_cols: "1"
+  bg_image: inflight-banner.jpg
+- 
+  num_cols: "1"
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image: inflight-bubble-sketches.jpg
