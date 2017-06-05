@@ -19,7 +19,7 @@
 
         <h5 class="u-mt2">CURRENTLY WORKING ON</h5>
 
-        <div>
+        <p>
           <?
           $items = $page->current()->toStructure();
           foreach($items as $key => $item):
@@ -29,7 +29,7 @@
             if($key < $items->count()-1) { ecco(($items->count()-2 == $key), ' &amp; ', ', '); }
           endforeach;
           ?>.
-        </div>
+        </p>
 
       </div>
     </div>

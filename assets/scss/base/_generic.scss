@@ -48,6 +48,9 @@ p a {
     color: $white;
     // @include prefix(box-shadow, 0 0 1rem rgba($blue, 0.5));
   }
+  &:not(.button):hover {
+    border-bottom: 1px solid currentColor;
+  }
 }
 
 
