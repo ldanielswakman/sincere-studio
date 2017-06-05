@@ -1,6 +1,9 @@
 .c-blue {
   color: #00f; }
 
+.c-bluedull {
+  color: #34495e; }
+
 .c-white {
   color: #fff; }
 
@@ -221,6 +224,9 @@ blockquote + p, ul + p, ol + p, p + p {
 .u-mb1 {
   margin-bottom: 1rem !important; }
 
+.u-mb15 {
+  margin-bottom: 1.5rem !important; }
+
 .u-mb2 {
   margin-bottom: 2rem !important; }
 
@@ -275,6 +281,9 @@ blockquote + p, ul + p, ol + p, p + p {
 
 .u-pb10vh {
   padding-bottom: 10vh !important; }
+
+.u-pb2 {
+  padding-bottom: 2rem !important; }
 
 .u-pr2 {
   padding-right: 2rem !important; }

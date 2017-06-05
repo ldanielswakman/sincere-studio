@@ -1,0 +1,274 @@
+Title: CV
+
+----
+
+Text: 
+
+----
+
+Work-xp: 
+
+- 
+  period: 2008-current
+  title: ldaniel.eu
+  text: 'freelance graphic & web designer, branding & identity, front-end design, visualisations'
+  url: http://ldaniel.eu/
+- 
+  title: Muhit (co-founder)
+  text: 'non-profit platform for urban improvement, design, product & business development'
+  url: projects/muhit
+  period: 2015-current
+- 
+  title: Paraşüt
+  text: 'Pre-accounting for SME’s web application; graphic & web designer, UI/ UX design, front-end (html/css)'
+  url: http://www.parasut.com/
+  period: 2014-current
+- 
+  period: 2012-2015
+  title: Oefenweb.nl
+  text: |
+    e-learning gaming applications;
+    lead graphic & web designer, UI/
+    UX design, front-end (html/css),
+    gamification
+  url: http://www.oefenweb.nl
+- 
+  period: 2011-2012
+  title: Güller Güller architecture urbanism
+  text: 'architecture & urban design'
+  url: http://www.ggau.net
+- 
+  period: 2007-2011
+  title: Delft University of Technology
+  text: 'student assistant education, tutoring & book research'
+  url: ""
+- 
+  period: "2007"
+  title: Paul de Ruiter Architects
+  text: architectural design internship
+  url: http://www.paulderuiter.nl/
+
+----
+
+Education: 
+
+- 
+  period: "2015"
+  title: Graphic Design Summer School
+  text: >
+    Central Saint Martin’s –University
+    of the Arts London
+  url: ""
+- 
+  period: "2014"
+  title: Gamification Certificate
+  text: >
+    Online course by University of
+    Pennsylvania
+  url: ""
+- 
+  period: 2007-2011
+  title: >
+    Dual Master’s Degree in Architecture
+    and Urbanism
+  text: >
+    Faculty of Architecture, TU Delft
+    graduation project ‘I solemnly pledge
+    to public space’
+  url: >
+    architecture/i-solemnly-pledge-to-public-space
+- 
+  period: "2008"
+  title: 'Study Abroad - Architecture'
+  text: South Bank University, London, UK
+  url: ""
+- 
+  period: 2004-2007
+  title: Bachelor’s Degree
+  text: Faculty of Architecture, TU Delft
+  url: ""
+- 
+  period: 1998-2004
+  title: VWO diploma (gymnasium)
+  text: Vossius Gymnasium, Amsterdam
+  url: ""
+
+----
+
+Personal: 
+
+- 
+  period: name
+  title: L Daniel Swakman
+  text: ""
+  url: ""
+- 
+  period: date of birth
+  title: 6 October 1986
+  text: ""
+  url: ""
+- 
+  period: place of birth
+  title: Amsterdam, NL
+  text: ""
+  url: ""
+- 
+  period: location
+  title: Berlin, DE
+  text: ""
+  url: ""
+- 
+  period: nationality
+  title: Dutch
+  text: ""
+  url: ""
+
+----
+
+Languages: 
+
+- 
+  period: ""
+  title: English
+  text: fluent
+  url: ""
+- 
+  period: ""
+  title: Dutch
+  text: fluent, native
+  url: ""
+- 
+  period: ""
+  title: Turkish
+  text: good
+  url: ""
+- 
+  period: ""
+  title: German
+  text: good
+  url: ""
+- 
+  period: ""
+  title: French
+  text: acceptable
+  url: ""
+
+----
+
+Skills: 
+
+- 
+  period: visual
+  title: ""
+  text: >
+    Sketch, Adobe Illustrator, Photoshop,
+    Indesign, Premiere, Fireworks, Invision,
+    Framer.js
+  url: ""
+- 
+  period: code
+  title: ""
+  text: >
+    HTML(5), CSS(3), LESS/SASS, Javascript/
+    jQuery, gulp, PHP, Flash/Actionscript,
+    Git
+  url: ""
+- 
+  period: product
+  title: ""
+  text: >
+    design thinking, brainstorming, brand
+    strategy, product management
+  url: ""
+- 
+  period: 3D
+  title: ""
+  text: >
+    Rhino, Maya, 3Ds Max, Sketchup,
+    Pepakura, Vray, mental ray
+  url: ""
+- 
+  period: CAD
+  title: ""
+  text: >
+    AutoCAD, Autodesk Revit (basic),
+    Vectorworks (basic)
+  url: ""
+
+----
+
+Interests: 
+
+- 
+  period: design
+  title: "Digital design as a responsive, context-sensitive solution that suits user's needs."
+  text: >
+    The main passion in my work lies in the
+    visual and graphic design; I deeply care
+    about how aspects like layout,
+    legibility, colours, typography and
+    contrast work together to form a well
+    designed environment, whether that’s
+    in a virtual 3D environment, a voice
+    operated interface, a web game on a
+    10” tablet or in print. The fluency
+    with creative software as well as
+    front-end programming languages (html,
+    css, javascript) helps me to indeed
+    realise this consistency of design.
+  url: ""
+- 
+  period: visual vs code
+  title: 'Code is the grain and material of the web & app world'
+  text: "I believe that working in digital design means an inherent link between visual/interaction design and the code that makes this happen — much like a carpenter's knowledge & control of wood type and behaviour. Design < > code"
+  url: ""
+- 
+  period: responsive
+  title: Orchestration of dynamic elements
+  text: "Designing for the web and mobile apps can no longer be seen as an exercise on a fixed canvas where one lays out objects. Instead, it is an orchestration of dynamic elements, that can have different states & behaviours. Responsive design is a key tool in this orchestration — I've never designed a project without it."
+  url: ""
+- 
+  period: architectural vs graphic
+  title: 'Shaping the world we experience & interact with'
+  text: 'I believe the values and considerations that are concerned with visual design are just as present in architecture: colour, proportions, materials, tactility, usability, and the continuous process of revision in search for true quality.'
+  url: ""
+- 
+  period: other
+  title: Keep exploring
+  text: 'Outside of this design spectrum I occupy myself with social innovation, infographics & visualisation, travelling, coffee and making music.'
+  url: ""
+
+----
+
+Preferences: 
+
+- 
+  period: coffee
+  title: Double espresso
+  text: ""
+  url: ""
+- 
+  period: code editor
+  title: Sublime Text 3
+  text: ""
+  url: ""
+- 
+  period: workspace
+  title: remote / coworking spaces
+  text: ""
+  url: ""
+- 
+  period: design tool
+  title: 'pencil > sketch > css'
+  text: ""
+  url: ""
+- 
+  period: backpack
+  title: Minaal
+  text: ""
+  url: ""
+- 
+  period: Typeface combination
+  title: HK Grotesk / Merriweather
+  text: (for now, at least)
+  url: ""

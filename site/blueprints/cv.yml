@@ -1,0 +1,39 @@
+title: CV
+pages: false
+files: true
+fields:
+  title:
+    label: Title
+    type:  text
+
+  work_xp:
+    extends: cv-section
+    label: Work Experience
+
+  education:
+    extends: cv-section
+    label: Education
+
+  personal:
+    extends: cv-section
+    label: Personal
+
+  languages:
+    extends: cv-section
+    label: Languages
+
+  skills:
+    extends: cv-section
+    label: Skills
+
+  interests:
+    extends: cv-section
+    label: Interests
+
+  preferences:
+    extends: cv-section
+    label: Preferences
+
+  text:
+    label: Text
+    type:  textarea
