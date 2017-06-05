@@ -12,7 +12,6 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
 
-c::set('cache.driver', 'file');
 c::set('cache.ignore', array('panel', 'contactform_post'));
 
 /*
