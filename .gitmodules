@@ -12,10 +12,10 @@
 	url = https://github.com/medienbaecker/kirby-fieldtoggle.git
 [submodule "site/plugins/relatedpages"]
 	path = site/plugins/relatedpages
-	url = git@github.com:Adspectus/RelatedPages.git
+	url = https://github.com/Adspectus/RelatedPages.git
 [submodule "site/plugins/version-widget"]
 	path = site/plugins/version-widget
-	url = https://github.com/omz13/kirby-cache-widgets
+	url = https://github.com/omz13/kirby-cache-widgets.git
 [submodule "site/plugins/uniform"]
 	path = site/plugins/uniform
-	url = git@github.com:mzur/kirby-uniform.git
+	url = https://github.com/mzur/kirby-uniform.git
