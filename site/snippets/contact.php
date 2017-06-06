@@ -74,8 +74,8 @@
 
     <input name="source" class="u-hide" type="text" value="<?= $page->title()->html() ?>">
 
-    <?= csrf_field() ?>
-    <?= honeypot_field() ?>
+    <?//= csrf_field() ?>
+    <?//= honeypot_field() ?>
 
   </form>
   <div class="dialog__footer">
