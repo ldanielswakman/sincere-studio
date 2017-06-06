@@ -58,4 +58,4 @@
 
   <? snippet('nav') ?>
 
-  <? snippet('contact', ['page' => $page]) ?>
+  <? // snippet('contact', ['page' => $page]) ?>
