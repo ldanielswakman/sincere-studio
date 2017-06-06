@@ -36,13 +36,18 @@ email.log
 
 
 # Dev files (local)
-# ------------
+# ---------------
 
 Icon
 .DS_Store
 node_modules
 *.sublime-project
 *.sublime-workspace
+
+
+# TMP: Uniform plugin
+# ---------------
+site/plugins/uniform
 
 
 # 'Other' folder (_)
