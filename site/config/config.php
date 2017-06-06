@@ -12,16 +12,9 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
 
-
-
-// TEMP OPTIONS (DEBUGGING)
-c::set('google_sheet_key', '171Ur45EUbxpG3f6sujgo_UgElyFSF2RKcXFohvGIG_M');
-c::set('dribbble_token', '92024af1ed1c7f87d7fe417bcad6de02afe6cafe6a539bafbbc1b56dda6c6628');
+// revert these when moving to production
 c::set('cache', false);
 c::set('debug', true);
-c::set('env', 'DEV');
-
-
 
 /*
 

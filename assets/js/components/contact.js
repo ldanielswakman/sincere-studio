@@ -87,8 +87,12 @@ function postContactForm($form) {
     $response_div.find('.bubble__content').html('');
     bubbleRun($form.find('[type="submit"]').closest('.bubble-wrap'), true);
 
+    console.log('submitting form...');
+
     // Make Ajax request
     $.post(url, form_data, function(data) {
+
+      console.log('response! success = ' + data['success']);
 
       if(data['success'] == false) {
 
