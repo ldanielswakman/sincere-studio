@@ -170,7 +170,6 @@ function postContactForm($form) {
         error_msg = '';
 
         $.each(data['errors'], function(i, item) {
-          // console.log(i + ': ' + item[0]);
           $form.find('[name="' + i + '"]').addClass('hasError');
           error_msg += item[0];
         });

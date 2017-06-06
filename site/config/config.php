@@ -15,7 +15,6 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 // revert these when moving to production
 c::set('cache', false);
 c::set('debug', true);
-c::set('uniform.language', 'en');
 
 /*
 
