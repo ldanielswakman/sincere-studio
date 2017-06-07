@@ -45,11 +45,6 @@ node_modules
 *.sublime-workspace
 
 
-# TMP: Uniform plugin
-# ---------------
-site/plugins/uniform
-
-
 # 'Other' folder (_)
 
 _
