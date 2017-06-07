@@ -72,7 +72,12 @@
       </div>
     </div>
 
-    <input name="source" class="u-hide" type="text" value="<?= $page->title()->html() ?>">
+    <?
+    $source = '';
+    if($page->parents()->count() > 0) { $source .= $page->parent()->title()->html() . ' > '; }
+    $source .= ($page->isHomePage()) ? 'Home' : $page->title()->html();
+    ?>
+    <input name="source" class="u-hide" type="text" value="<?= $source ?>">
 
     <?= csrf_field() ?>
     <?= honeypot_field() ?>
