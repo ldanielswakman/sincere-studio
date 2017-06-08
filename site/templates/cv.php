@@ -2,7 +2,14 @@
 
   <main>
 
-    <? snippet('page-header', ['page' => $page, 'subtitle' => 'work experience']) ?>
+    <?
+    $header_options = ['page' => $page, 'subtitle' => 'work experience'];
+    if ($page->hasDocuments()) :
+      $header_options['link_url'] = $page->documents()->filterBy('extension', 'pdf')->first()->url();
+      $header_options['link_text'] = 'pdf';
+    endif;
+    snippet('page-header', $header_options);
+    ?>
 
     <section>
       <div class="row">

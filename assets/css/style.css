@@ -184,6 +184,11 @@ h1 {
   color: #00f; }
 
 h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #00f; }
+
+h4 {
   font-size: 1.25rem;
   font-weight: normal; }
 
@@ -209,7 +214,7 @@ p + blockquote {
 p {
   line-height: 1.6em; }
 
-blockquote + p, ul + p, ol + p, p + p {
+blockquote + p, ul + p, ol + p, p + p, h3 + p, h4 + p {
   margin-top: 1rem; }
 
 .u-mv2 {
@@ -315,6 +320,10 @@ blockquote + p, ul + p, ol + p, p + p {
 
 .u-hide {
   display: none !important; }
+
+.u-floatright {
+  display: inline-block;
+  float: right; }
 
 .u-flex-space-between {
   display: flex;

@@ -75,5 +75,18 @@ c::set('routes', [
       // Return code 200 on success.
       return response::json(['success' => $form->success(), 'errors' => $form->errors(), 'code' => $code]);
     }
+  ],
+  // Routing for Legacy SEO
+  [
+    'pattern' => 'work',
+    'action'  => function() {
+      return page('projects');
+    }
+  ],
+  [
+    'pattern' => 'work/(:any)',
+    'action'  => function($uid) {
+      return page('projects/' . $uid);
+    }
   ]
 ]);

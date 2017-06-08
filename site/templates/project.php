@@ -4,20 +4,22 @@
 
     <? foreach($page->sections()->toStructure() as $key => $section): ?>
 
-      <? 
-      $bg = '';
+      <?
+      $bg = 'style="';
       if ($section->bg_image()->isNotEmpty()) :
         $image = $page->image($section->bg_image());
         $image_url = $image->url();
-        // $ratio = $image->dimensions()->height() / $image->dimensions()->width() * 100;
-        //  min-height: 40vh; padding: 0 !important; padding-bottom:' .  $ratio . '% !important;
-        $bg .= ' style="min-height: 60vh; background-image: url(' . $image_url . ');';
+        $ratio = $image->dimensions()->height() / $image->dimensions()->width() * 100;
+        $bg .= 'min-height: ';
+        $bg .= ($key < 1) ? '60vh;' : '40vh; padding-top: 0 !important; padding-bottom:' .  $ratio . '% !important;';
+        $bg .= ' background-image: url(' . $image_url . '); background-repeat: no-repeat;';
         $bg .= ($page->featuredcolour()->isNotEmpty()) ? ' background-color: #' . $page->featuredcolour() . ';' : '';
-        $bg .= '"';
-      elseif ($section->bg_colour()->isNotEmpty()) :
-        $colour = (strpos($section->bg_colour()->value(), '#') !== false) ? $section->bg_colour() : '#' . $section->bg_colour();
-        $bg .= ' style="background-color: ' . $colour . ';"';
       endif;
+      if ($section->bg_colour()->isNotEmpty()) :
+        $colour = (strpos($section->bg_colour()->value(), '#') !== false) ? $section->bg_colour() : '#' . $section->bg_colour();
+        $bg .= 'background-color: ' . $colour . ';"';
+      endif;
+      $bg .= '"';
       ?>
 
       <section<?= ' id="part' . ($key+1) . '" ' . $bg ?> class="section-bg u-pv15vh">
@@ -30,10 +32,10 @@
               <?= $section->col_2()->kirbytext() ?>
             </div>
           <? else : ?>  
-            <div class="col-xs-12 col-sm-5 col-md-4 col-md-offset-1">
+            <div class="col-xs-12 col-sm-5 col-md-5 col-md-offset-1">
               <?= $section->col_1()->kirbytext() ?>
             </div>
-            <div class="col-xs-12 col-sm-7 col-md-5 col-md-offset-1">
+            <div class="col-xs-12 col-sm-7 col-md-5">
               <?= $section->col_2()->kirbytext() ?>
             </div>
           <? endif ?>
@@ -47,7 +49,7 @@
         <section>
           <div class="row u-pv3 u-ph05">
             <div class="col-xs-12 col-sm-7 col-md-5 col-md-offset-1">
-              <h3 class="c-blue"><?= $page->title()->html() ?><sup class="c-grey" style="font-size: 0.875rem;font-weight: normal; margin-left: 0.5rem;"><small><?= $page->year() ?></small></sup></h3>
+              <h1><?= $page->title()->html() ?><sup class="c-grey" style="font-size: 0.875rem;font-weight: normal; margin-left: 0.5rem;"><small><?= $page->year() ?></small></sup></h1>
               <blockquote style="margin-top: 0;"><p><?= $page->description() ?></p></blockquote>
             </div>
             <div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1 u-mt2">

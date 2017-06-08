@@ -38,7 +38,7 @@
                 </figure>
               <? endif ?>
               <div style="padding: 1rem;">
-                <h3 class="c-blue" style="margin-bottom: 0.25rem;"><?= $project->title()->html() ?><sup class="c-greylight" style="font-size: 0.875rem;font-weight: normal; margin-left: 0.5rem;"><small><?= $project->year() ?></small></sup></h3>
+                <h3 style="margin-bottom: 0.25rem;"><?= $project->title()->html() ?><sup class="c-greylight" style="font-size: 0.875rem;font-weight: normal; margin-left: 0.5rem;"><small><?= $project->year() ?></small></sup></h3>
                 <p><?= $project->description()->html() ?></p>
               </div>
             </a>

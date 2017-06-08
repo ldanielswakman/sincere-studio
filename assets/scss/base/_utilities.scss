@@ -110,6 +110,11 @@
   display: none !important;
 }
 
+.u-floatright {
+  display: inline-block;
+  float: right;
+}
+
 .u-flex-space-between {
   display: flex;
   justify-content: space-between;

@@ -61,6 +61,11 @@ h1 {
   color: $blue;
 }
 h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: $blue;
+}
+h4 {
   font-size: 1.25rem;
   font-weight: normal;
 }
@@ -95,7 +100,7 @@ p + blockquote {
 p {
   line-height: 1.6em;
 }
-blockquote, ul, ol, p {
+blockquote, ul, ol, p, h3, h4 {
   & + p {
     margin-top: 1rem;
   }
