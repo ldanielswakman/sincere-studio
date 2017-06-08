@@ -6,7 +6,7 @@ Text:
 
 (new-section: bg-white c-grey)
 
-I'm a 'full-stack' designer, believe in great visual experiences in digital and analog context wherever the world takes me. Been designing & building things as an independent designer, for clients and startups, for (since: 2009) years. My work involves these themes:
+I'm a 'full-stack' designer, believe in great visual experiences in digital and analog context wherever the world takes me. Been designing & building things as an independent designer, for clients and startups, for the last (since: 2009) years. My work involves these themes:
 
 (new-section: u-pv10vh)
 
@@ -38,4 +38,4 @@ Want to talk further? About a future or current project, about what drives you o
 
 <a href="javascript:openContactForm()" class="button button--white">Say hello</a>
 
-Or reach me on (link: https://twitter.com/ldanielswakman popup:yes text: Twitter), (link: https://www.linkedin.com/in/ldanielswakman/ popup:yes text: Linkedin), (link: https://github.com/ldanielswakman popup:yes text: Github), or (link:https://www.instagram.com/dswakman/ popup:yes text:Instagram).
+Or reach me on (link: https://twitter.com/ldanielswakman popup:yes text: Twitter), (link: https://www.linkedin.com/in/ldanielswakman/ popup:yes text: Linkedin), (link: https://github.com/ldanielswakman popup:yes text: Github), (link: https://dribbble.com/ldanielswakman popup:yes text: Dribbble) & (link:https://www.instagram.com/dswakman/ popup:yes text:Instagram).
