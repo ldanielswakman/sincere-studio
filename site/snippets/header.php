@@ -59,3 +59,6 @@
   <? snippet('nav') ?>
 
   <? snippet('contact', ['page' => $page]) ?>
+  <? if(isset($contact_active) && $contact_active == true) : ?>
+    <script>openContactForm()</script>
+  <? endif ?>

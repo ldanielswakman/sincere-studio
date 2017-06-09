@@ -88,5 +88,11 @@ c::set('routes', [
     'action'  => function($uid) {
       return page('projects/' . $uid);
     }
-  ]
+  ],
+  [
+    'pattern' => 'contact',
+    'action'  => function() {
+      return ['home', ['contact_active' => true]];
+    }
+  ],
 ]);

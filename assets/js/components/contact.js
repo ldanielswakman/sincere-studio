@@ -4,7 +4,13 @@ $(document).ready(function() {
   // Continue button
   $('.dialog--contact [data-action="continue"]').on('click touchstart', function (e) {
     e.preventDefault();
-    bubbleRun($(this).closest('.bubble-wrap'));
+    if ($(this).closest('.bubble-wrap.isLoaded').nextAll().length > 0) {
+      $next = $(this).closest('.bubble-wrap');
+      $(this).closest('.bubble-wrap').nextAll().removeClass('isLoaded');
+      setTimeout(function() { bubbleRun($next) }, 500);
+    } else {
+      bubbleRun($(this).closest('.bubble-wrap'));
+    }
   });
   // Continue key combination (Shift + Enter)
   $('.dialog--contact .bubble').find('textarea, input').on('keypress keydown', function(e) {
@@ -95,6 +101,8 @@ function postContactForm($form) {
       console.log('response! success = ' + data['success']);
 
       if(data['success'] == false) {
+
+        console.log(data);
 
         $form.removeClass('isSending');
 
