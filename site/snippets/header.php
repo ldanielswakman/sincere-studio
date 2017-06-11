@@ -16,7 +16,7 @@
   $css_assets = (c::get('env') !== 'DEV') ? array(
     '//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css',
     '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css',
-    // 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
+    // '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
     'assets/css/style.min.css',
   ) : array(
     'assets/css/flexboxgrid.min.css',
@@ -27,9 +27,9 @@
 
   // checks if not on localhost, then serves assets from CDN
   $js_assets = (c::get('env') !== 'DEV') ? array(
-    'http://code.jquery.com/jquery-1.11.1.min.js',
-    'http://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js',
-    'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js',
+    '//code.jquery.com/jquery-1.11.1.min.js',
+    '//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js',
+    '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js',
     'assets/js/scripts.min.js',
   ) : array(
     'assets/js/vendor/jquery-1.11.1.min.js',
