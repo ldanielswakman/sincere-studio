@@ -48,10 +48,10 @@ nav {
   .menu-grey {
     @include prefix(justify-content, flex-end);
     a {
-      color: $grey;
       white-space: nowrap;
 
       &.a--twitter {
+        color: $grey;
         display: none;
 
         @media screen and (min-width: $vp_phone) {
