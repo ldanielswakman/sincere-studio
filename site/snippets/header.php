@@ -17,12 +17,12 @@
     // Bootstrap
     echo css('//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css');
     // Ionicons
-    echo css('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+    echo css('//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
     // Google Fonts
-    echo css('https://fonts.googleapis.com/css?family=Overpass:400,400i,700,700i');
+    echo css('//fonts.googleapis.com/css?family=Overpass:400,400i,700,700i');
     // JQuery SmoothScroll
-    echo js('http://code.jquery.com/jquery-1.11.1.min.js');
-    echo js('http://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js');
+    echo js('//code.jquery.com/jquery-1.11.1.min.js');
+    echo js('//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js');
   // if localhost then load local assets
   else :
     echo css('assets/css/bootstrap.min.css');
@@ -39,10 +39,10 @@
 
   ?>
 
-  <link rel="alternate" href="http://ldaniel.eu" hreflang="en-GB" />
+  <link rel="alternate" href="https://ldaniel.eu" hreflang="en-GB" />
 
   <!--[if lt IE 9]>
-  <script type="text/javascript" src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+  <script type="text/javascript" src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
   <![endif]-->
 
 </head>
