@@ -3,7 +3,7 @@
   "name": "ldaniel.eu",
   "icons": [
     {
-      "src": "assets/images/favicon.png",
+      "src": "/assets/images/favicon.png",
       "sizes": "192x192",
       "type": "image/png"
     }
