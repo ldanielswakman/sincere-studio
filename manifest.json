@@ -1,6 +1,7 @@
 {
   "short_name": "ldaniel.eu",
   "name": "ldaniel.eu",
+  "description": "ldaniel.eu is a digital design office designing and building the web of tomorrow.",
   "icons": [
     {
       "src": "assets/images/favicon.png",
@@ -9,5 +10,6 @@
     }
   ],
   "start_url": "./?homescreen=1",
-  "display": "standalone"
+  "display": "standalone",
+  "background_color": "#f7f7f9",
 }
