@@ -153,8 +153,6 @@ $(document).ready(function() {
       dotsEach: 1
     });
 
-    // console.log('yay!');
-
   });
 });
 

@@ -3,11 +3,11 @@
   "name": "ldaniel.eu",
   "icons": [
     {
-      "src": "images/favicon.png",
+      "src": "assets/images/favicon.png",
       "sizes": "192x192",
       "type": "image/png"
     }
   ],
-  "start_url": "../?homescreen=1",
+  "start_url": "./?homescreen=1",
   "display": "standalone"
 }

@@ -44,7 +44,7 @@
 
   <link rel="alternate" href="http://www.ldaniel.eu/" hreflang="en-gb" />
 
-  <link rel="manifest" href="<?= url('assets/manifest.json') ?>">
+  <link rel="manifest" href="<?= url('manifest.json') ?>">
   <link id="favicon" rel="shortcut icon" href="<?= url('assets/images/favicon.png') ?>">
 
   <!--[if lt IE 9]>

@@ -350,8 +350,6 @@ $(document).ready(function() {
       dotsEach: 1
     });
 
-    // console.log('yay!');
-
   });
 });
 
@@ -375,7 +373,7 @@ $(document).bind("scrollstop", function() { scrollActions(); });
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('assets/js/sw.js').then(function(registration) {
+    navigator.serviceWorker.register('sw.js').then(function(registration) {
       // Registration was successful
       console.log('ServiceWorker registration successful with scope: ', registration.scope);
     }, function(err) {
