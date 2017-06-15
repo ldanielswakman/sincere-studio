@@ -13,18 +13,14 @@
       <div class="col-xs-6 col-md-2"></div>
       <div class="col-xs-6 col-md-2">
 
-        <? foreach($site->pages() as $p) : ?>
-          <a href="<?= $p->url() ?>"><?= $p->title() ?></a><br>
-        <? endforeach ?>
-
-      </div>
-      <div class="col-xs-6 col-md-4">
 
         <h4 style="font-size: 1rem; letter-spacing: 0.1rem; opacity: 0.5; margin-bottom: 0.25rem;">LATEST PROJECTS</h4>
         <? foreach($site->find('projects')->children()->visible()->sortBy('year', 'desc')->limit(3) as $p) : ?>
           <a href="<?= $p->url() ?>"><?= $p->title() ?></a><br>
         <? endforeach ?>
-        <br><br>
+
+      </div>
+      <div class="col-xs-6 col-md-4 u-pr2">
 
         <h4 style="font-size: 1rem; letter-spacing: 0.1rem; opacity: 0.5; margin-bottom: 0.25rem;">LATEST ARTICLES</h4>
         <? foreach($site->find('articles')->children()->visible()->sortBy('year', 'desc')->limit(3) as $p) : ?>
@@ -34,9 +30,16 @@
       </div>
       <div class="col-xs-6 col-md-3">
 
-        &copy; <a href="http://ldaniel.eu">ldaniel.eu</a> &mdash; <?php echo date("Y") ?>
+        <h4 style="font-size: 1rem; letter-spacing: 0.1rem; opacity: 0.5; margin-bottom: 0.25rem;">EXPLORE</h4>
+        <? foreach($site->pages()->find('projects', 'articles', 'about', 'CV', 'architecture', 'api') as $p) : ?>
+          <a href="<?= $p->url() ?>"><?= $p->title() ?></a><br>
+        <? endforeach ?>
 
       </div>
+    </div>
+
+    <div class="u-aligncenter u-mt2" style="opacity: 0.3;">
+        &copy; <a href="http://ldaniel.eu">ldaniel.eu</a> &mdash; <?php echo date("Y") ?>
     </div>
 
     <div class="row">
