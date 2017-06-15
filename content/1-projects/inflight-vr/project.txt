@@ -14,7 +14,7 @@ Description: Experience & interface concept for inflight entertainment — in v
 
 ----
 
-Tags: ui,concept development
+Tags: user experience,interface design,concept development,VR
 
 ----
 
@@ -53,7 +53,58 @@ Sections:
   bg_image: inflight-banner.jpg
 - 
   num_cols: "1"
+  classes: bg-white
+  col_1: |
+    <span class="c-grey">
+    Inflight VR is a startup doing what it says on the box, albeit futuristic and ambitious: coming up with an immersive VR entertainment experience in passenger airplane flights. They approached me at the start of 2017 to bring a user experience design angle to the table for the first iterations of the platform.
+    </span>
+  col_2: ""
+  bg_colour: ""
+  bg_image: ""
+- 
+  num_cols: "1"
+  classes: bg-white u-pt0
+  col_1: '(image: airplane-vr.jpg)'
+  col_2: ""
+  bg_colour: ""
+  bg_image: ""
+- 
+  num_cols: "1"
+  classes: ""
+  col_1: |
+    <span class="c-grey">
+    A key part of the project at this stage was to explore and define the *constraints and opportunities* of working with VR — the fact that it is such a new medium blows the field of options wide open. I came up with a few categories to frame my research, applying both to the physical context of being in an airplane, as well as being fully immersed in a digital world: **Viewing & Angles**, **Input**, **Menu/interface**, and **Experience**.
+    </span>
+  col_2: ""
+  bg_colour: ""
+  bg_image: ""
+- 
+  num_cols: "1"
   col_1: ""
   col_2: ""
   bg_colour: ""
   bg_image: inflight-bubble-sketches.jpg
+- 
+  num_cols: "2"
+  classes: bg-white
+  col_1: 'We came up with an interface concept that emphasises the spatial character of the interface, while still preserving a sense of familiarity for the user. We drew inspiration from the multidirectional way of scrolling as seen on the (link: https://www.apple.com/watch/ text: Apple Watch popup:yes), coming up with a dynamic layout that encourages exploration. To be able to provide consistency throughout the interface and between different apps, a bottom system menu was introduced that is always reachable.'
+  col_2: '(image: ref-apple-watch.gif)'
+  bg_colour: ""
+  bg_image: ""
+- 
+  num_cols: "1"
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image: inflight-mockup.jpg
+- 
+  num_cols: "1"
+  classes: ""
+  col_1: |
+    <span class="c-grey">
+    _NB. this project is ongoing so information will be added along the way._
+    </span>
+  col_2: ""
+  bg_colour: ""
+  bg_image: ""

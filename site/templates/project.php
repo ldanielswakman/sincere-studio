@@ -11,7 +11,7 @@
         $image_url = $image->url();
         $ratio = $image->dimensions()->height() / $image->dimensions()->width() * 100;
         $bg .= 'min-height: ';
-        $bg .= ($key < 1) ? '60vh;' : '40vh; padding-top: 0 !important; padding-bottom:' .  $ratio . '% !important;';
+        $bg .= ($key < 1 || $section->col_1()->isNotEmpty() ) ? '60vh;' : '40vh; padding-top: 0 !important; padding-bottom:' .  $ratio . '% !important;';
         $bg .= ' background-image: url(' . $image_url . '); background-repeat: no-repeat;';
         $bg .= ($page->featuredcolour()->isNotEmpty()) ? ' background-color: #' . $page->featuredcolour() . ';' : '';
       endif;
@@ -32,10 +32,10 @@
               <?= $section->col_2()->kirbytext() ?>
             </div>
           <? else : ?>  
-            <div class="col-xs-12 col-sm-5 col-md-5 col-md-offset-1">
+            <div class="col-xs-12 col-sm-5 col-md-4 col-md-offset-1">
               <?= $section->col_1()->kirbytext() ?>
             </div>
-            <div class="col-xs-12 col-sm-7 col-md-5">
+            <div class="col-xs-12 col-sm-7 col-md-5 col-md-offset-1">
               <?= $section->col_2()->kirbytext() ?>
             </div>
           <? endif ?>

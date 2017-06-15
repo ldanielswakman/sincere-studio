@@ -35,9 +35,13 @@ Sections:
 - 
   col_1: |
     <br>
-    <span style="font-size: 1.25em;">**habita** is *"an open & transparent coworking hub for everyone"* in Istanbul, Turkey. As one of the most important acquisition channels for a coworking space, its website design should immediately show the qualities of the workspace, and the community that is growing inside it.</span>
+    <span style="font-size: 1em;">**habita** is *"an open & transparent coworking hub for everyone"* in Istanbul, Turkey. As one of the most important acquisition channels for a coworking space, its website design should immediately show the qualities of the workspace, and the community that is growing inside it.</span>
     <br>
   bg_image: habita-title-opening.jpg
+  num_cols: "2"
+  classes: ""
+  col_2: ""
+  bg_colour: ""
 - 
   col_1: |
     <br><br>
