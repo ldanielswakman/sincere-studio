@@ -5,7 +5,7 @@
     <? foreach($page->sections()->toStructure() as $key => $section): ?>
 
       <?
-      $bg = 'style="';
+      $bg = 'style="padding-top: 15vh; padding-bottom: 15vh; ';
       if ($section->bg_image()->isNotEmpty()) :
         $image = $page->image($section->bg_image());
         $image_url = $image->url();
@@ -22,7 +22,7 @@
       $bg .= '"';
       ?>
 
-      <section<?= ' id="part' . ($key+1) . '" ' . $bg ?> class="section-bg u-pv15vh">
+      <section<?= ' id="part' . ($key+1) . '" ' . $bg ?> class="section-bg <?= $section->classes() ?>">
 
         <div class="row u-pv40">
 

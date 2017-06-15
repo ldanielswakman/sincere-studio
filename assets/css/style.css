@@ -218,6 +218,9 @@ p {
 blockquote + p, ul + p, ol + p, p + p, h3 + p, h4 + p {
   margin-top: 1rem; }
 
+figure img {
+  display: inline-block; }
+
 .u-mv2 {
   margin-top: 2rem !important;
   margin-bottom: 2rem !important; }
@@ -279,6 +282,9 @@ blockquote + p, ul + p, ol + p, p + p, h3 + p, h4 + p {
 .u-ph2 {
   padding-left: 2rem !important;
   padding-right: 2rem !important; }
+
+.u-pt0 {
+  padding-top: 0 !important; }
 
 .u-pt1 {
   padding-top: 1rem !important; }

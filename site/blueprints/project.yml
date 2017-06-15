@@ -67,13 +67,18 @@ fields:
     fields:
       num_cols:
         type: fieldtoggle
+        width: 1/2
         options:
-          1: "One column"
-          2: "Two columns"
+          1: "1 column"
+          2: "2 columns"
         show:
           2: col_2
         hide:
           1: col_2
+      classes:
+        type: text
+        width: 1/2
+        placeholder: Classes
       col_1:
         label: >
           Text column <i>(small)</i>
