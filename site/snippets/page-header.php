@@ -9,7 +9,7 @@
       <? endif ?>
 
       <? if (isset($subtitle) && strlen($subtitle) > 0) : ?>
-      <h3 class="u-mt3 u-mb1 u-text-2x"><?= strtolower($subtitle) ?></h3>
+      <h3 class="u-mt3 u-mb1 u-text-2x c-bluedull"><?= strtolower($subtitle) ?></h3>
       <? endif ?>
 
     </div>
