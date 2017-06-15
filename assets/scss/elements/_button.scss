@@ -34,13 +34,26 @@
   &.button--white {
     background-color: $white;
     border-color: $white;
+    @include prefix(box-shadow, 0 0 1rem rgba($black, 0.05));
     color: $blue;
     
     &:hover {
       background-color: darken($white, 10%);
+      border-color: transparent;
       color: $blue;
     }
   }
+  &.button--subtle {
+    background-color: rgba($bluedark, 0.05);
+    border-color: transparent;
+    color: $blue;
+    
+    &:hover {
+      background-color: rgba($bluedark, 0.1);
+      color: $blue;
+    }
+  }
+
   &.button--outline {
     background: none;
     border-color: blue;

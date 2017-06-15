@@ -14,21 +14,6 @@ section {
   * {
     z-index: 1;
   }
-  &.section--bg {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  &.section--bg2 {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right top;
-
-    @media screen and (max-width: $vp_tablet - 1) {
-      background-size: auto 400px;
-      background-position: left bottom;
-    }
-  }
   .section__bg-image {
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
@@ -39,7 +24,7 @@ section {
     background-repeat: no-repeat;
     background-position: center;
   }
-  .section__bg-homeintro {
+  &.section--homeintro .section__bg-image {
     background-size: cover;
     background-position: right center;
 
@@ -48,7 +33,25 @@ section {
       background-position: 60% top;
     }
   }
+  &.section--bg .section__bg-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
 
+    @media screen and (max-width: $vp_tablet - 1) {
+      background-size: auto 400px;
+      background-position: -20% bottom;
+    }
+  }
+  &.section--bg2 .section__bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top;
+
+    @media screen and (max-width: $vp_tablet - 1) {
+      background-position: 60%;
+    }
+  }
   &.section--homeintro {
     min-height: 100vh;
     @include prefix(transition, all 2s cubic-bezier(0.5,0,0.5,1));

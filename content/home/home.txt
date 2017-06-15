@@ -2,10 +2,6 @@ Title: Digital Designer
 
 ----
 
-Text: > **Hoi!**<br>ldaniel.eu is an independent design office, designing + building the web for today and tomorrow.
-
-----
-
 Current: 
 
 - 
@@ -28,3 +24,68 @@ Intro-bg-image: devices-subtle.jpg
 ----
 
 Intro-bg-color: #f7f7f9
+
+----
+
+Sections: 
+
+- 
+  type: text
+  bg_image: devices-subtle.jpg
+  bg_color: ""
+  text: '> **Hoi!**<br>ldaniel.eu is an independent design office, designing + building the web for today and tomorrow.'
+  classes: section--homeintro u-pt25vh u-pb10vh
+  section_type: text
+  number_of_slides: ""
+  title: ""
+- 
+  type: recent_work
+  classes: bg-white u-pv5vh
+  bg_image: ""
+  bg_color: ""
+  text: ""
+  number_of_slides: "5"
+- 
+  type: text
+  classes: section--bg u-minheight40vh u-pv15vh
+  bg_image: well-what-did-you-expect.jpg
+  bg_color: '#ececec'
+  text: |
+    <div class="line"></div>
+    
+    > ...**L Daniel Swakman** is the 'full stack' designer running it. He also likes working at startups that want to be design-driven.
+    
+    <div id="ldaniel_location" data-url="api?loc=1" class="u-mt1" style="line-height: 2rem;"><small><em>getting location...</em></small></div>
+  number_of_slides: ""
+  title: read-on
+- 
+  type: stream_of_words
+  classes: u-pv5vh section--collapsed
+  bg_image: ""
+  bg_color: ""
+  text: ""
+  number_of_slides: "5"
+- 
+  type: stream_of_images
+  classes: bg-white u-pv5vh section--collapsed
+  bg_image: ""
+  bg_color: ""
+  text: ""
+  number_of_slides: "5"
+- 
+  type: text
+  classes: section--bg2 bg-bluedull u-pv10vh
+  bg_image: sitting-w-habita.jpg
+  bg_color: ""
+  text: |
+    <div class="line"></div>
+    
+    > Collaborate?
+    
+    I'm currently available for work (while stocks last); I'm always excited to hear new projects, and see how we can collaborate in them. Drop me a line:
+    
+    <div class="u-mv2">
+    <a href="javascript:openContactForm()" class="button u-mb1">Say hello</a>
+    </div>
+  number_of_slides: ""
+  title: ""

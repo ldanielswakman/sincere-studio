@@ -52,7 +52,7 @@ function scrollActions() {
 
   allowMobileScroll = true;
   if (allowMobileScroll) {
-    $('section').each(function() {
+    $('.section--homeintro').each(function() {
 
       thisTop = $(this).offset().top;
       scrollValue = (scroll - thisTop) / 1.5;
