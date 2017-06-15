@@ -286,6 +286,9 @@ blockquote + p, ul + p, ol + p, p + p, h3 + p, h4 + p {
 .u-pt10vh {
   padding-top: 10vh !important; }
 
+.u-pt15vh {
+  padding-top: 15vh !important; }
+
 .u-pt20vh {
   padding-top: 20vh !important; }
 

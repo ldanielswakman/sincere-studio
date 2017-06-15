@@ -17,7 +17,7 @@
     '//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css',
     '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css',
     // '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
-    'assets/css/style.min.css',
+    'assets/css/style.css',
   ) : array(
     'assets/css/flexboxgrid.min.css',
     'assets/css/style.css',
