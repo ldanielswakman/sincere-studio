@@ -30,7 +30,7 @@ Featured: 1
 
 ----
 
-Featuredimage: inflight-mockup.jpg
+Featuredimage: inflight-mockup-narrow.jpg
 
 ----
 
