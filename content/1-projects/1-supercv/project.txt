@@ -43,3 +43,14 @@ C-content:
 ----
 
 Sections: 
+
+- 
+  num_cols: "1"
+  classes: u-aligncenter bg-white
+  col_1: |
+    <span style="font-size: 2rem;">
+    (link: ../../articles/fresh-and-confident-does-the-job text: See case study here &rarr;)
+    </span>
+  col_2: ""
+  bg_colour: ""
+  bg_image: ""
