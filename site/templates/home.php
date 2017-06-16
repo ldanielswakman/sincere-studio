@@ -65,7 +65,12 @@
             <div class="row">
               <div class="col-xs-12 col-sm-11 col-sm-offset-1">
 
-                <h5 class="u-mb1">STREAM OF WORDS</h5>
+                <h5 class="u-mb15">
+                  <a href="//twitter.com/ldanielswakman" target="_blank" class="a--icon a--twitter u-floatright u-op70">
+                    <? snippet('svg/twitter-icon') ?>
+                  </a>
+                  STREAM OF WORDS
+                </h5>
 
                 <? snippet('twitterfeed'); ?>
 
@@ -77,7 +82,12 @@
             <div class="row">
               <div class="col-xs-12 col-sm-11 col-sm-offset-1">
 
-                <h5>STREAM OF IMAGES</h5>
+                <h5 class="u-mb15">
+                  <a href="//dribbble.com/ldanielswakman" target="_blank" class="a--icon-lg a--twitter u-floatright" style="margin-top: -0.25rem;">
+                    <? snippet('svg/dribbble-icon') ?>
+                  </a>
+                  STREAM OF IMAGES
+                </h5>
 
                 <div class="card-container u-mt1" id="dribbblefeed">
                 </div>

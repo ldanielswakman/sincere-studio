@@ -118,6 +118,9 @@
 .u-block {
   display: block !important;
 }
+.u-inlineblock {
+  display: inline-block !important;
+}
 .u-hide {
   display: none !important;
 }
@@ -135,6 +138,11 @@
 .u-text-2x {
   font-size: 2rem !important;
 }
+
+
+.u-op30 { opacity: 0.3; }
+.u-op50 { opacity: 0.5; }
+.u-op70 { opacity: 0.7; }
 
 body.isTouch .u-hide-for-touch {
   display: none !important;

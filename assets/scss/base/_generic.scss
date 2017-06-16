@@ -39,6 +39,17 @@ body {
 a {
   text-decoration: none;
   color: $blue;
+
+  &.a--twitter {
+    color: $grey;
+
+    svg path {
+      fill: $grey;
+    }
+  }
+  &.a--icon-sm svg { width: 1rem; }
+  &.a--icon    svg { width: 1.5rem; }
+  &.a--icon-lg svg { width: 2rem; }
 }
 p a {
   &:active,

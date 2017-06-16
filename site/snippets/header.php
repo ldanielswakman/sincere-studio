@@ -56,7 +56,7 @@
 <body class="<?= $page->template() ?>">
 
   <a href="<?= ($page->url() != $site->url()) ? $site->url() : '#top' ?>" class="logo">
-    <? snippet('logo') ?>
+    <? snippet('svg/logo') ?>
   </a>
 
   <? snippet('nav') ?>

@@ -9,8 +9,8 @@ $bluedark: #035;
 $white: #fff;
 $greylightest: #f7f7f9;
 $greylighter: #ebebed;
-$greylight: #cccccc;
-$grey: #999;
+$greylight: #ccccd4;
+$grey: #9999aa;
 $black: #000;
 
 .c-blue {
@@ -57,4 +57,7 @@ $black: #000;
 }
 .bg-bluedark {
   background-color: $bluedark;
+}
+.bg-blackfaded10 {
+  background-color: rgba($black, 0.1);
 }

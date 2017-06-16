@@ -14,7 +14,7 @@
 
   <ul class="menu-grey">
     <li><a href="javascript:openContactForm()" class="button button--outline">get in touch</a></li>
-    <li><a href="//twitter.com/ldanielswakman" target="_blank" class="a--twitter"><? snippet('twitter-icon-svg') ?></a></li>
+    <li><a href="//twitter.com/ldanielswakman" target="_blank" class="a--twitter"><? snippet('svg/twitter-icon') ?></a></li>
   </ul>
 
 </nav>

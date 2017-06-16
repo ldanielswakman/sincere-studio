@@ -51,16 +51,12 @@ nav {
       white-space: nowrap;
 
       &.a--twitter {
-        color: $grey;
         display: none;
 
         @media screen and (min-width: $vp_phone) {
           display: block;
         }
       }
-    }
-    svg path {
-      fill: $grey;
     }
   }
 }
