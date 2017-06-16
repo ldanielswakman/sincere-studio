@@ -23,7 +23,7 @@ fields:
     modalsize: large
     entry: >
       <div style="background-color: {{bg_color}}; background-image: url('../../../home/{{bg_image}}'); background-size: cover; background-position: center center; margin: -1rem -1.5rem; padding: 1rem 1.5rem;">
-        <span style="color: #999;">{{type}} section</span><br>
+        <strong>{{title}}</strong> <span style="opacity: 0.5;">({{type}} section)</span><br>
         <div style="margin: 1rem 0;">
           {{text}}
           {{number_of_slides}}

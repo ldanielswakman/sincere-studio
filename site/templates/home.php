@@ -48,7 +48,7 @@
             <div class="row">
               <div class="col-xs-12 col-sm-11 col-sm-offset-1">
 
-                <h5>RECENT WORK</h5>
+                <h5><?= $section->title()->html() ?></h5>
 
                 <? snippet('featured'); ?>
 
@@ -69,7 +69,7 @@
                   <a href="//twitter.com/ldanielswakman" target="_blank" class="a--icon a--twitter u-floatright u-op70">
                     <? snippet('svg/twitter-icon') ?>
                   </a>
-                  STREAM OF WORDS
+                  <?= $section->title()->html() ?>
                 </h5>
 
                 <? snippet('twitterfeed'); ?>
@@ -86,7 +86,7 @@
                   <a href="//dribbble.com/ldanielswakman" target="_blank" class="a--icon-lg a--twitter u-floatright" style="margin-top: -0.25rem;">
                     <? snippet('svg/dribbble-icon') ?>
                   </a>
-                  STREAM OF IMAGES
+                  <?= $section->title()->html() ?>
                 </h5>
 
                 <div class="card-container u-mt1" id="dribbblefeed">

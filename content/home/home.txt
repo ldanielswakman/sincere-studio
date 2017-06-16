@@ -45,6 +45,7 @@ Sections:
   bg_color: ""
   text: ""
   number_of_slides: "5"
+  title: Recent work
 - 
   type: text
   classes: section--bg u-minheight40vh u-pv15vh
@@ -57,7 +58,7 @@ Sections:
     
     <div id="ldaniel_location" data-url="api?loc=1" class="u-mt1" style="line-height: 2rem;"><small><em>getting location...</em></small></div>
   number_of_slides: ""
-  title: read-on
+  title: Read on
 - 
   type: stream_of_words
   classes: u-pv5vh section--collapsed
@@ -65,6 +66,7 @@ Sections:
   bg_color: ""
   text: ""
   number_of_slides: "5"
+  title: Stream of words
 - 
   type: stream_of_images
   classes: bg-white u-pv5vh section--collapsed
@@ -72,6 +74,7 @@ Sections:
   bg_color: ""
   text: ""
   number_of_slides: "5"
+  title: Stream of images
 - 
   type: text
   classes: section--bg2 bg-bluedull u-pv10vh
@@ -88,4 +91,4 @@ Sections:
     <a href="javascript:openContactForm()" class="button u-mb1">Say hello</a>
     </div>
   number_of_slides: ""
-  title: ""
+  title: Collaborate
