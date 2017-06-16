@@ -173,9 +173,9 @@ body {
 a {
   text-decoration: none;
   color: #00f; }
-  a.a--twitter {
+  a.a--icon, a.a--icon-sm, a.a--icon-lg, a.a--twitter {
     color: #9999aa; }
-    a.a--twitter svg path {
+    a.a--icon svg path, a.a--icon-sm svg path, a.a--icon-lg svg path, a.a--twitter svg path {
       fill: #9999aa; }
   a.a--icon-sm svg {
     width: 1rem; }
@@ -265,6 +265,9 @@ figure img {
 .u-mr1 {
   margin-right: 1rem !important; }
 
+.u-ml1 {
+  margin-left: 1rem !important; }
+
 .u-pa1 {
   padding: 1rem !important; }
 
@@ -352,6 +355,10 @@ figure img {
 
 .u-hide {
   display: none !important; }
+
+.u-floatleft {
+  display: inline-block;
+  float: left; }
 
 .u-floatright {
   display: inline-block;
