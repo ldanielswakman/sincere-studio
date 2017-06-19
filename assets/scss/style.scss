@@ -1,4 +1,8 @@
 // Base
+@import '../css/vendor/flexboxgrid.min.css';
+@import '../css/vendor/owl.carousel.min.css';
+
+// Base
 @import 'base/colours';
 @import 'base/variables';
 @import 'base/mixins';
@@ -21,6 +25,3 @@
 @import 'components/footer';
 @import 'components/nav';
 @import 'components/section';
-
-// Legacy
-// @import '../css/style_old';

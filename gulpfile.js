@@ -30,7 +30,14 @@ gulp.task('styles', ['sass', 'clean_css']);
 
 // Concatenate & minify JS
 gulp.task('scripts', function() {
-  return gulp.src(['./assets/js/vendor/twitterfetcher.min.js', './assets/js/vendor/autosize.min.js', './assets/js/components/*.js'])
+  return gulp.src([
+    './assets/js/vendor/jquery-1.11.1.min.js',
+    './assets/js/vendor/jquery.smooth-scroll.min.js',
+    './assets/js/vendor/owl.carousel.min.js',
+    './assets/js/vendor/twitterfetcher.min.js',
+    './assets/js/vendor/autosize.min.js',
+    './assets/js/components/*.js'
+    ])
     .pipe(concat('scripts.js'))
     .pipe(minify({ ext:{
             src:'.js',
