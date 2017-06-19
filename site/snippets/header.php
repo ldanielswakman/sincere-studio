@@ -14,15 +14,13 @@
   <?
   // sets css & js assets based on ENV
   $css_assets = (c::get('env') !== 'DEV') ? array(
-    '//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css',
-    '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css',
-    // '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
+    // '//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css',
+    // '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css',
     'assets/css/style.css',
   ) : array(
-    'assets/css/flexboxgrid.min.css',
+    // 'assets/css/flexboxgrid.min.css',
+    // 'assets/css/owl.carousel.min.css',
     'assets/css/style.css',
-    // 'assets/css/ionicons.min.css',
-    'assets/css/owl.carousel.min.css',
   );
 
   // checks if not on localhost, then serves assets from CDN
