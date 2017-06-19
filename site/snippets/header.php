@@ -25,12 +25,12 @@
 
   // checks if not on localhost, then serves assets from CDN
   $js_assets = (c::get('env') !== 'DEV') ? array(
-    // '//code.jquery.com/jquery-1.11.1.min.js',
+    '//code.jquery.com/jquery-1.11.1.min.js',
     // '//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js',
     // '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js',
     'assets/js/scripts.js',
   ) : array(
-    // 'assets/js/vendor/jquery-1.11.1.min.js',
+    'assets/js/vendor/jquery-1.11.1.min.js',
     // 'assets/js/vendor/jquery.smooth-scroll.min.js',
     // 'assets/js/vendor/owl.carousel.min.js',
     'assets/js/scripts.js',
