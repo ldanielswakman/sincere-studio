@@ -57,10 +57,11 @@ c::set('routes', [
 
       } else {
 
+        $from = (strlen($form->data('name')) > 0) ? $form->data('name') : $form->data('email');
         // If validation and guards passed, execute the action.
         $form->emailAction([
           'to' => 'hello@ldaniel.eu',
-          'from' => 'contactform@ldaniel.eu',
+          'from' => $from . ' (via ldaniel.eu) <contactform@ldaniel.eu>',
           'replyTo' => $form->data('email'),
           'subject' => '[ldaniel.eu] New message Received',
         ])
