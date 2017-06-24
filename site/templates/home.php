@@ -22,6 +22,11 @@
 
             <? if ($key == 0) : ?>
 
+              <div class="u-mt2">
+                <a href="javascript:openContactForm()" class="button button--white u-mr1">say hi!</a>
+                <a href="#read-on" class="button button--outline button--white u-op70">go on...</a>
+              </div>
+
               <h5 class="u-mt2">CURRENTLY WORKING ON</h5>
 
               <p>
@@ -35,11 +40,6 @@
                 endforeach;
                 ?>.
               </p>
-
-              <div class="u-mt2">
-                <a href="javascript:openContactForm()" class="button button--white u-mr1">Say hi!</a>
-                <a href="#read-on" class="button button--subtle">Go on...</a>
-              </div>
 
             <? endif ?>
 
@@ -72,7 +72,7 @@
                   <?= $section->title()->html() ?>
                 </h5>
 
-                <? snippet('twitterfeed'); ?>
+                <div id="twitterfeed"></div>
 
               </div>
             </div>
