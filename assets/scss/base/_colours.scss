@@ -42,8 +42,7 @@ $black: #000;
 .bg-greylight {
   background-color: $greylight;
 }
-.bg-blue {
-  background-color: $blue;
+.bg-blue, .bg-bluedull, .bg-bluedark {
   color: $white;
 
   a {
@@ -51,9 +50,11 @@ $black: #000;
     font-weight: 600;
   }
 }
+.bg-blue {
+  background-color: $blue;
+}
 .bg-bluedull {
   background-color: $bluedull;
-  color: $white;
 }
 .bg-bluedark {
   background-color: $bluedark;

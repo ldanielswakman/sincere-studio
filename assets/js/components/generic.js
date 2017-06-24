@@ -20,7 +20,7 @@ $(document).ready(function() {
   autosize($('textarea'));
 
   // initiating smooth scroll plugin
-  $('a[href^="#"]').smoothScroll( { afterScroll: function() { location.hash = $(this).attr('href'); $(this).blur(); } });
+  $('a[href^="#"]').smoothScroll( { speed: 1500, afterScroll: function() { location.hash = $(this).attr('href'); $(this).blur(); } });
 
   // initiating isotope
   if($('.project-container').length > 0) {
@@ -52,10 +52,10 @@ function scrollActions() {
 
   allowMobileScroll = true;
   if (allowMobileScroll) {
-    $('.section--homeintro').each(function() {
+    $('.section--homeintro, #read-on, #collaborate').each(function() {
 
       thisTop = $(this).offset().top;
-      scrollValue = (scroll - thisTop) / 1.5;
+      scrollValue = (scroll - thisTop) / 3;
 
       $(this).find('.section__bg-image')
         .css('-webkit-transform','translateY(' + scrollValue + 'px)')
@@ -115,45 +115,6 @@ $(document).ready(function() {
     });
 
   }
-});
-
-
-
-
-// Dribbble shots via API
-$(document).ready(function() {
-  $token = '92024af1ed1c7f87d7fe417bcad6de02afe6cafe6a539bafbbc1b56dda6c6628';
-  $num_results = 4;
-  $base_url = 'https://api.dribbble.com/v1/users/ldanielswakman/shots?per_page=' + $num_results;
-  // curl -i -H "Authorization: Bearer " 
-  $.getJSON( $base_url + '&access_token=' + $token , function(r) {
-
-    $container = $('#dribbblefeed');
-    $container.html();
-
-    shuffle(r);
-    html = '';
-    $.each(r, function(i, item) {
-      html += '<a href="' + item['html_url'] + '" class="card card--shadow" target="_blank">';
-      html += '<figure>';
-      html += '<img src="' + item['images']['normal'] + '" alt="">';
-      html += '</figure>';
-      html += '</a>';
-    });
-    html += '<a href="https://www.dribbble.com/ldanielswakman" target="_blank" class="card card--words card--shadow" style="padding: 6rem 1.5rem; text-align: center; color: blue;">See all shots &rarr;</div>';
-    $container.append(html);
-
-    $container.closest('section').removeClass('section--collapsed');
-    $container.addClass('owl-carousel');
-
-    $container.owlCarousel({
-      items: 1,
-      autoWidth: true,
-      nav: false,
-      dotsEach: 1
-    });
-
-  });
 });
 
 

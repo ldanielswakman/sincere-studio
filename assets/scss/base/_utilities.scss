@@ -143,8 +143,13 @@
 }
 
 .u-flex-space-between {
-  display: flex;
-  justify-content: space-between;
+  @include prefix(display, flex);
+  @include prefix(justify-content, space-between);
+}
+.u-flex-center {
+  @include prefix(display, flex);
+  @include prefix(justify-content, center);
+  @include prefix(align-items, center);
 }
 
 .u-text-2x {

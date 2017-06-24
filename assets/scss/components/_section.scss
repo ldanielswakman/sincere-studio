@@ -26,11 +26,11 @@ section {
   }
   &.section--homeintro .section__bg-image {
     background-size: cover;
-    background-position: right center;
+    background-position: right top;
 
     @media screen and (max-width: $vp_tablet - 1) {
-      background-size: auto 400px;
-      background-position: 60% top;
+      // background-size: auto 400px;
+      background-position: 40% top;
     }
   }
   &.section--bg .section__bg-image {
@@ -57,8 +57,12 @@ section {
     @include prefix(transition, all 2s cubic-bezier(0.5,0,0.5,1));
     @include prefix(transition-delay, 1s);
   }
+  &.section--stream_of_words,
+  &.section--stream_of_images {
+    max-height: 100vh;
+  }
   &.section--collapsed {
-    max-height: 0;
+    max-height: 8.5rem;
   }
   .owl-carousel.card-container {
     margin-right: -#{$sectionpadding};
