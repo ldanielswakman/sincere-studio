@@ -12,3 +12,11 @@
   background: linear-gradient(to bottom, $start 0%, $end 100%); // W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start', endColorstr='$end',GradientType=0 ); // IE6-9
 }
+
+// Keyframes
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} { @content; }
+  @-moz-keyframes #{$animationName} { @content; }
+  @-o-keyframes #{$animationName} { @content; }
+  @keyframes #{$animationName} { @content; }
+}

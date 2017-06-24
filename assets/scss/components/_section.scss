@@ -6,7 +6,7 @@ section {
   padding: 0 $sectionpadding; // site-wide horizontal padding
   max-height: auto;
   overflow: hidden;
-  @include prefix(transition, max-height 0.3s ease-in-out);
+  @include prefix(transition, max-height 0.5s ease-in-out);
 
   background-size: cover;
   background-position: center center;

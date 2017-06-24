@@ -263,7 +263,8 @@ $(document).ready(function() {
 
   //adding animation to svg logo
   $('body').addClass('isLoaded');
-  $('.logo').addClass('animated');
+  $('.logo').addClass('logo--animated');
+  setTimeout(function() { $('.logo').removeClass('logo--init'); }, 250);
   //adding animation to svg logo
   setTimeout(function() { $('body').removeClass('header-full'); }, 1500);
 
@@ -294,36 +295,6 @@ $(document).ready(function() {
 });
 
 
-function scrollActions() {
-  scroll = $(window).scrollTop();
-
-  // top logo 'parallax'
-  // if ($(window).width() > 767 ) {
-  //   $('#logo').css('top',($logoTopInit-(scroll/3))+'px');
-  // }
-
-  allowMobileScroll = true;
-  if (allowMobileScroll) {
-    $('.section--homeintro, #read-on, #collaborate').each(function() {
-
-      thisTop = $(this).offset().top;
-      scrollValue = (scroll - thisTop) / 3;
-
-      $(this).find('.section__bg-image')
-        .css('-webkit-transform','translateY(' + scrollValue + 'px)')
-        .css('-moz-transform','translateY(' + scrollValue + 'px)')
-        .css('transform','translateY(' + scrollValue + 'px)');
-
-    });
-  }
-
-}
-
-
-
-
-
-
 
 // Owl Carousel
 $(document).ready(function(){
@@ -334,9 +305,6 @@ $(document).ready(function(){
     dotsEach: 1
   });
 });
-
-
-
 
 
 
@@ -380,8 +348,30 @@ function shuffle(o) {
 };
 
 
+function scrollActions() {
+  scroll = $(window).scrollTop();
 
+  // top logo 'parallax'
+  // if ($(window).width() > 767 ) {
+  //   $('#logo').css('top',($logoTopInit-(scroll/3))+'px');
+  // }
 
+  allowMobileScroll = true;
+  if (allowMobileScroll) {
+    $('.section--homeintro, #read-on, #collaborate').each(function() {
+
+      thisTop = $(this).offset().top;
+      scrollValue = (scroll - thisTop) / 3;
+
+      $(this).find('.section__bg-image')
+        .css('-webkit-transform','translateY(' + scrollValue + 'px)')
+        .css('-moz-transform','translateY(' + scrollValue + 'px)')
+        .css('transform','translateY(' + scrollValue + 'px)');
+
+    });
+  }
+
+}
 $(window).scroll(function() { scrollActions(); });
 $(window).resize(function() { scrollActions(); });
 $(document).bind("scrollstart", function() { scrollActions(); });

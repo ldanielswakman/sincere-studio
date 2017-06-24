@@ -53,7 +53,7 @@
 
 <body class="<?= $page->template() ?>">
 
-  <a href="<?= ($page->url() != $site->url()) ? $site->url() : '#top' ?>" class="logo">
+  <a href="<?= ($page->url() != $site->url()) ? $site->url() : '#top' ?>" class="logo logo--init">
     <? snippet('svg/logo') ?>
   </a>
 
