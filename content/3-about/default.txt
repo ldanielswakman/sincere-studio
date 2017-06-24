@@ -36,7 +36,7 @@ Designing for the web and mobile apps can no longer be seen as an exercise on a 
 In architecture, a parti describes the central organising idea of a building’s design; expressed in a basic diagram.
 This represents the way I approach design: synthesising information into a clearly legible product that translates the message not only through its content, but even its initial appearance. I believe the values and considerations that are concerned with visual design are just as present in architecture: colour, proportions, materials, tactility, usability, and the continuous process of revision in search for true quality.
 
-(new-section: bg-blue c-white)
+(new-section: bg-blue c-white u-pv10vh)
 
 Want to talk further? About a future or current project, about what drives you or just to say hello? I like people. We can talk.
 

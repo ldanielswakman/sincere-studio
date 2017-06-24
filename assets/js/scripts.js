@@ -264,7 +264,7 @@ $(document).ready(function() {
   //adding animation to svg logo
   $('body').addClass('isLoaded');
   $('.logo').addClass('logo--animated');
-  setTimeout(function() { $('.logo').removeClass('logo--init'); }, 250);
+  setTimeout(function() { $('.logo').removeClass('logo--init'); }, 2500);
   //adding animation to svg logo
   setTimeout(function() { $('body').removeClass('header-full'); }, 1500);
 
