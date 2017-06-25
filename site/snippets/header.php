@@ -10,7 +10,7 @@
   <? snippet('header-metadata', array('page' => $page)) ?>
 
   <? ecco(strpos(kirby()->request()->url(),'_/new') !== false, '<meta name="robots" value="noindex" />') ?>
-
+  
   <?
   // sets css & js assets based on ENV
   $css_assets = (c::get('env') !== 'DEV') ? array(
@@ -46,7 +46,7 @@
   <link id="favicon" rel="shortcut icon" href="<?= url('assets/images/favicon.png') ?>">
 
   <!--[if lt IE 9]>
-  <script type="text/javascript" src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+  <script type="text/javascript" src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
   <![endif]-->
 
 </head>
