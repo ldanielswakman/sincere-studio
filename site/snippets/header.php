@@ -8,8 +8,6 @@
   <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
 
   <? snippet('header-metadata', array('page' => $page)) ?>
-
-  <? ecco(strpos(kirby()->request()->url(),'_/new') !== false, '<meta name="robots" value="noindex" />') ?>
   
   <?
   // sets css & js assets based on ENV
