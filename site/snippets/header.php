@@ -8,15 +8,13 @@
   <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
 
   <? snippet('header-metadata', array('page' => $page)) ?>
-
-  <? ecco(strpos(kirby()->request()->url(),'_/new') !== false, '<meta name="robots" value="noindex" />') ?>
   
   <?
   // sets css & js assets based on ENV
   $css_assets = (c::get('env') !== 'DEV') ? array(
     // '//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css',
     // '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css',
-    'assets/css/style.css',
+    'assets/css/style.min.css',
   ) : array(
     // 'assets/css/flexboxgrid.min.css',
     // 'assets/css/owl.carousel.min.css',
@@ -28,7 +26,7 @@
     '//code.jquery.com/jquery-1.11.1.min.js',
     // '//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js',
     // '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js',
-    'assets/js/scripts.js',
+    'assets/js/scripts.min.js',
   ) : array(
     'assets/js/vendor/jquery-1.11.1.min.js',
     // 'assets/js/vendor/jquery.smooth-scroll.min.js',
