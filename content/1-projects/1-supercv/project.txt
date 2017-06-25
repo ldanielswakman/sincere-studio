@@ -1,0 +1,56 @@
+H-basics: 
+
+----
+
+Title: SuperCV
+
+----
+
+Year: 2016
+
+----
+
+Description: fresh & confident — design system & identity
+
+----
+
+Tags: web design,branding
+
+----
+
+Projecturl: http://supercv.com/
+
+----
+
+H-featured: 
+
+----
+
+Featured: 1
+
+----
+
+Featuredimage: supercv.jpg
+
+----
+
+Featuredcolour: 1cf7d1
+
+----
+
+C-content: 
+
+----
+
+Sections: 
+
+- 
+  num_cols: "1"
+  classes: u-aligncenter bg-white
+  col_1: |
+    <span style="font-size: 2rem;">
+    (link: ../../articles/fresh-and-confident-does-the-job text: See case study here &rarr;)
+    </span>
+  col_2: ""
+  bg_colour: ""
+  bg_image: ""

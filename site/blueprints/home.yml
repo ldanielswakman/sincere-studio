@@ -1,0 +1,86 @@
+title: Home
+pages: false
+fields:
+
+  title:
+    label: Title
+    type:  text
+
+  current:
+    label: Current
+    type: structure
+    style: table
+    fields:
+      text:
+        label: Text
+        type: text
+      link:
+        label: Link
+        type: url
+
+  sections:
+    type: structure
+    modalsize: large
+    entry: >
+      <div style="background-color: {{bg_color}}; background-image: url('../../../home/{{bg_image}}'); background-size: cover; background-position: center center; margin: -1rem -1.5rem; padding: 1rem 1.5rem;">
+        <strong>{{title}}</strong> <span style="opacity: 0.5;">({{type}} section)</span><br>
+        <div style="margin: 1rem 0;">
+          {{text}}
+          {{number_of_slides}}
+        </div>
+      </div>
+    fields:
+
+      type:
+        type: fieldtoggle
+        default: text
+        options:
+          text: "Text section"
+          recent_work: "Recent work"
+          stream_of_words: "Stream of words"
+          stream_of_images: "Stream of images"
+        show:
+          text: text
+          recent_work: number_of_slides
+          stream_of_words: number_of_slides
+          stream_of_images: number_of_slides
+        hide:
+          text: number_of_slides
+          recent_work: text
+          stream_of_words: text
+          stream_of_images: text
+
+      title:
+        label: >
+          Title <span style="color: #999;">(only used for ID)</span>
+        type: text
+        width: 1/2
+        required: false
+
+      classes:
+        label: Classes
+        type: text
+        width: 1/2
+
+      bg_image:
+        label: BG Image
+        type: image
+        width: 1/2
+
+      bg_color:
+        label: >
+          BG Colour <small style="font-weight: normal; color: #999;">(with #)</small>
+        type: text
+        icon: eyedropper
+        width: 1/2
+
+      text:
+        label: Text
+        type:  textarea
+        size:  large
+
+      number_of_slides:
+        label: Number of slides
+        type: number
+        min: 1
+        max: 10

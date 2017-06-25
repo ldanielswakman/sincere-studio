@@ -1,0 +1,58 @@
+Title: FEY Clinic
+
+----
+
+Year: 2014-2015
+
+----
+
+Tags: web design,front-end,graphic
+
+----
+
+Projecturl: http://feyclinic.nl
+
+----
+
+Sections: 
+
+- 
+  col_1: '<div style="padding: 0 10vw; max-height: 50vh;">(image: feyclinic-pages.png)</div>'
+  col_2: ""
+  num_cols: "1"
+  bg_colour: '#fff'
+  bg_image: ""
+- 
+  col_1: ""
+  col_2: ""
+  fullscreen: true
+  num_cols: "1"
+  bg_colour: ""
+  bg_image: feyclinic-pages.jpg
+- 
+  col_1: |
+    <span class="c-white">
+    An important part of the project was to transform the largely text based content into a legible organisational structure, and a visual format that would convey the right atmosphere.
+    <br /><br />
+    By laying out and grouping the pieces of content in an organisational diagram, ...</span>
+  col_2: ""
+  fullscreen: true
+  num_cols: "2"
+  bg_colour: ""
+  bg_image: feyclinic-information-scheme.jpg
+
+----
+
+Featuredimage: feyclinic-home-ipad.jpg
+
+----
+
+Description: Smooth transitions and a soft palette for a local beauty clinic
+
+----
+
+Featured: 0
+
+----
+
+Featuredcolour: 

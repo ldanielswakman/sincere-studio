@@ -1,0 +1,23 @@
+label: CV Section
+type: structure
+style: table
+fields:
+  period:
+    label: Period
+    type: text
+    width: 1/2
+  img:
+    label: Image
+    type:  image
+    width: 1/2
+  title:
+    label: Title
+    type:  text
+    required: false
+  text:
+    label: Text
+    type:  textarea
+  url:
+    label: URL (if any)
+    type: text
+    icon: link

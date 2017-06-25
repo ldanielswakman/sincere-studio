@@ -1,0 +1,58 @@
+Title: het visitekaartje
+
+----
+
+Year: 2014
+
+----
+
+Tags: graphic,print
+
+----
+
+Projecturl: 
+
+----
+
+Featuredimage: visitekaartje-topdown.gif
+
+----
+
+Sections: 
+
+- 
+  col_1:
+  bg_image: visitekaartje-all4.jpg
+- 
+  col_1:
+  bg_image: visitekaartje-topdown.gif
+- 
+  col_1: |
+    **Philip Hoenderdaal Genet**
+    *political scientist / education*
+    <br /><br /><br />
+    
+    **Marius Grootveld & Jantje Engels**
+    *architects*
+    (link: http://www.veldwerk.co text: veldwerk.co popup:yes)
+    <br /><br /><br />
+    
+    **Pieter Kuiper**
+    *homeopathic doctor*
+    (link: http://www.de-wingerd.com text: de-wingerd.com popup:yes)
+    <br /><br /><br />
+    
+    **L Daniel Swakman**
+    *graphic/web designer*
+    (link: http://www.ldaniel.eu text: ldaniel.eu popup:yes)
+  col_2: |
+    (image: visitekaartje-philip.jpg)
+    (image: visitekaartje-ldaniel-zoomin.jpg)
+    (image: visitekaartje-veldwerk.jpg)
+- 
+  col_1:
+  bg_image: visitekaartje-mess.jpg
+
+----
+
+Description: Letterpress printed business cards for 4 different clients, printed with the same colour set

@@ -1,0 +1,59 @@
+.logo {
+  position: fixed;
+  top: -1.25rem;
+  left: -1rem;
+  z-index: 3;
+  display: inline-block;
+  width: 8rem;
+  height: 8rem;
+  background-color: transparent;
+  @include prefix(border-radius, 50%);
+  @include prefix(transition, all 0.3s cubic-bezier(0.5,0,0.5,1));
+  @include prefix(transform, scale3d(1, 1, 1));
+  
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .logo-svg-path {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 0;
+  }
+
+  &.logo--init {
+    @include prefix(transform, scale3d(0.5, 0.5, 1));
+    @include prefix(transition-delay, 1s);
+    // @include prefix(transition, all 1s cubic-bezier(0.5,0,0.5,1));
+  }
+  &.logo--animated,
+  &.logo--init.logo--animated {
+    @include prefix(transform, scale3d(0.125, 0.125, 0.125));
+    background-color: $blue;
+  }
+  &.logo--animated .logo-svg-path {
+    @include prefix(animation, dash 1.5s cubic-bezier(.25,0,.25,1));
+  }
+  &:hover {
+    @include prefix(transform, scale3d(0.5, 0.5, 1));
+    background-color: transparent;
+  }
+}
+body.home .logo {
+
+  &.logo--init {
+    top: 2rem;
+    left: 2rem;
+    @include prefix(transition, all 1s cubic-bezier(0.5,0,0.5,1));
+    @include prefix(transform, scale3d(1, 1, 1));
+    background-color: transparent;
+    @include prefix(transition-delay, 0);
+  }
+}
+@include keyframes(dash) {
+  from { stroke-dashoffset: 500; }
+    to { stroke-dashoffset:   0; }
+
+}

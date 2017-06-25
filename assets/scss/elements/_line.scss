@@ -1,0 +1,11 @@
+// Line
+.line {
+  display: inline-block;
+  height: 6rem;
+  margin: 0 3rem 1rem;
+  border-left: 1px solid $blue;
+
+  &.line--white {
+    border-left-color: $white;
+  }
+}

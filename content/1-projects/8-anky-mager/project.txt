@@ -1,0 +1,73 @@
+Title: Anky Mager
+
+----
+
+Year: 2009-2010
+
+----
+
+Tags: logo,graphic,web design,front-end
+
+----
+
+Projecturl: http://ankymager.info
+
+----
+
+Featuredimage: ankymager-identity.jpg
+
+----
+
+Sections: 
+
+- 
+  col_1: ""
+  bg_image: ankymager-identity.jpg
+  bg_colour: ""
+- 
+  num_cols: "2"
+  col_1: |
+    ### logo as stamp
+    One of the earlier projects I did, where we were trying to come up with a clean identity for an independent trainer/couch. We came up with a simple pattern of two tiles, one inverted, slightly reminiscent of a classic character stamp. This motif and colour contrast became the leading principle for the visual identity, and was taken through to the website.
+  col_2: '(image: ankymager-cards.png class: u-ph2)'
+  bg_colour: '#fff'
+  bg_image: ""
+- 
+  num_cols: "1"
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image: am-sketch-book.jpg
+- 
+  num_cols: "2"
+  col_1: |
+    ### clothes on a drying line
+    
+    Given the clearly segmented and compact text content, we adopted the visual principle of a clothing line: a horizontally panning thread where each text section would be pinned to. This provided both a clear visual organisation, as well as a intuitive interaction for visitors.
+  col_2: '(image: am-reference.jpg class: u-ph2)'
+  bg_colour: ""
+  bg_image: ""
+- 
+  col_1: ""
+  bg_image: am-pages.jpg
+  num_cols: "1"
+  col_2: ""
+  bg_colour: ""
+- 
+  num_cols: "1"
+  col_1: ""
+  col_2: ""
+  bg_colour: 3d464d
+  bg_image: am-mockup.jpg
+
+----
+
+Description: All-blue identity for a freelance coach
+
+----
+
+Featured: 0
+
+----
+
+Featuredcolour: 

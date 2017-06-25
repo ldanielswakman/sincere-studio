@@ -1,31 +1,98 @@
-Title: Home
+Title: Digital Designer
 
 ----
 
-Text: 
+Current: 
 
-<div class="col-md-7 col-md-offset-1 col-md-push-4">
-(image: tools.png)
-</div>
-<div class="col-md-4 u-pt20 col-md-pull-8">
-<big><strong>ldaniel.eu</strong> is a graphic and web design office aimed at creating clear visual solutions in a variety of projects.</big>
-<br />
-(link: work text: see the work <i class="ion ion-ios-arrow-forward u-ml5"></i> class: btn btn-lg btn-outline u-mt20 )
-</div>
+- 
+  text: The Social Change Project
+  link: http://thesocialchangeproject.org/
+- 
+  text: OneLook
+  link: http://www.onelook.com/thesaurus/
+- 
+  text: Paraşüt
+  link: https://www.parasut.com/
+- 
+  text: Muhit
+  link: http://hikaye.muhit.co/en
 
-<div class="col-xs-12 u-pt60 u-pb30 u-aligncenter">
-<p class="c-grey"><em>Currently working on:</em></p>
-<p>
-<a href="http://onelook.com/" style="color: blue;" target="_blank">onelook <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>, 
-<a href="http://wine-art.co/" style="color: blue;" target="_blank">wine•art <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>, 
-<a href="https://www.parasut.com/" style="color: blue;" target="_blank">Paraşüt <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>, 
-<a href="http://muhit.co/?lang=en" style="color: blue;" target="_blank">Muhit  <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>.</p>
-</div>
+----
 
-<!--<div class="col-xs-12 u-pt60 u-pb30 u-aligncenter">
-<p class="c-grey"><em>Recently finished: </em></p>
-<p>
-<a href="http://ldaniel.eu/moment-mosaic/" style="color: blue;" target="_blank">Moment Mosaic <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a> and
-<a href="http://ldaniel.eu/mau-manifesto/" style="color: blue;" target="_blank">Mau Manifesto <i class="ion ion-android-open u-mr5" style="opacity: 0.5;"></i></a>.
-</p>
-</div>-->
+Intro-bg-image: devices-subtle.jpg
+
+----
+
+Intro-bg-color: #f7f7f9
+
+----
+
+Sections: 
+
+- 
+  type: text
+  bg_image: galaxy.svg
+  bg_color: ""
+  text: '> **Hoi!**<br>ldaniel.eu is an independent design studio, designing + building the web for today and tomorrow.'
+  classes: >
+    section--homeintro u-pt25vh u-pb10vh
+    bg-bluedark
+  section_type: text
+  number_of_slides: ""
+  title: ""
+- 
+  type: recent_work
+  classes: bg-white u-pv5vh
+  bg_image: ""
+  bg_color: ""
+  text: ""
+  number_of_slides: "5"
+  title: Recent work
+- 
+  type: text
+  classes: section--bg u-minheight40vh u-pv15vh
+  bg_image: well-what-did-you-expect.jpg
+  bg_color: '#ececec'
+  text: |
+    <div class="line"></div>
+    
+    > ...**L Daniel Swakman** is the 'full stack' designer running it. He also likes working at startups that want to be design-driven.
+    
+    <div id="ldaniel_location" data-url="api?loc=1" class="u-mt1" style="line-height: 2rem;"><small><em>getting location...</em></small></div>
+    
+    <div class="u-mt2"> (link: about class: button button--dark u-mr1 text: read more) (link: cv class: button button--dark button--outline text: cv) </div>
+  number_of_slides: ""
+  title: Read on
+- 
+  type: stream_of_words
+  classes: u-pv5vh section--collapsed
+  bg_image: ""
+  bg_color: ""
+  text: ""
+  number_of_slides: "5"
+  title: Stream of words
+- 
+  type: stream_of_images
+  classes: bg-white u-pv5vh section--collapsed
+  bg_image: ""
+  bg_color: ""
+  text: ""
+  number_of_slides: "5"
+  title: Stream of images
+- 
+  type: text
+  classes: section--bg2 bg-bluedull u-pv10vh
+  bg_image: sitting-w-habita.jpg
+  bg_color: ""
+  text: |
+    <div class="line"></div>
+    
+    > Collaborate?
+    
+    I'm currently available for work (while stocks last); I'm always excited to hear new projects, and see how we can collaborate in them. Drop me a line:
+    
+    <div class="u-mv2">
+    <a href="javascript:openContactForm()" class="button u-mb1">Say hello</a>
+    </div>
+  number_of_slides: ""
+  title: Collaborate

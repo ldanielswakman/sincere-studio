@@ -1,0 +1,77 @@
+Title: wine—art
+
+----
+
+Year: 2017
+
+----
+
+Description: minimal & playful experience for a wine consultancy
+
+----
+
+Tags: web design,graphic,branding,front-end
+
+----
+
+Projecturl: http://www.wine-art.co
+
+----
+
+Featuredimage: wine-art.jpg
+
+----
+
+Featuredcolour: e01b3d
+
+----
+
+Sections: 
+
+- 
+  col_1: ""
+  bg_image: wineart-promo-image.jpg
+- 
+  num_cols: "1"
+  col_1: '(image: wineart-home-browser.png)'
+  col_2: ""
+  bg_colour: '#313a42'
+  bg_image: ""
+  classes: u-pt10vh
+- 
+  num_cols: "1"
+  classes: ""
+  col_1: |
+    > <span style="color: #e01b3d; font-size: 2rem;">Taste for tasting</span>
+    
+    <span class="c-grey">
+    "Create a very minimal an elegant identity and website for a newly founded wine brand, in Zürich, CH." — The design of the page naturally floated to a collection of white and grey tones with a splash of wine-accented colours. Only after the visual design of the website took its final shape, we pulled these visual cues back to the logo.
+    </span>
+  col_2: ""
+  bg_colour: ""
+  bg_image: ""
+- 
+  num_cols: "1"
+  classes: u-aligncenter
+  col_1: '(image: wineart-logo-story.gif)'
+  col_2: ""
+  bg_colour: '#fafbfc'
+  bg_image: ""
+- 
+  num_cols: "1"
+  col_1: '(image: wineart-services-browser.png)'
+  col_2: ""
+  bg_colour: '#313a42'
+  bg_image: ""
+  classes: u-pt10vh
+- 
+  num_cols: "1"
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image: wineart-business-card.jpg
+
+----
+
+Featured: 1

@@ -1,0 +1,75 @@
+Title: Fresh and confident does(n't do) the job
+
+----
+
+Date: 2017-05-13
+
+----
+
+Canonical: 
+
+----
+
+Cover-image: supercv-cover.jpg
+
+----
+
+Text: 
+
+I was invited by a new startup/startup-in-residence focusing on a job matching algorithm, to come up with a strong platform identity for their platform. Not beating around the bush, we got to work and formed the brief around the core sentence:
+
+> “The goal is to create an overall design identity for the SuperCV platform that highlights the unique technology to a global user group.“
+
+(new-section: bg-white)
+
+(full-image: supercv-notebooks.png)
+
+(side-image: supercv-colors.png class: u-maxwidth75p)
+
+The initial proposal for the brand identity rooted in the search for a clear iconic expression that would signal the algorithm ‘machine’ and the behind-the-scenes matching that was being done — combined with a colour scheme that would invoke innovation and trust. 
+
+Those keywords were reflected in a basic colour palette of fluorescent cyan (being the fresh innovative side) contrasted with a marine blue (being the confident and trustworthy side.
+
+(new-section: u-pt10vh)
+
+With a clear idea for this direction, combined with a reflection of this core palette into mockups for landing pages, a concept for the app UI, and promotional material, I set out with my slide deck to the design concept meeting.
+
+(full-image: supercv-presentation.jpg)
+
+<br>
+
+> “In my personal opinion: I don’t like this colour—at all.”
+
+It was one of the more interesting meetings I have been to in my experience of dealing with clients; the 6 or 7 people attending obviously were interested in my approach, really liked the general direction, but were not sure about such a bold colour palette and identity. The doubt was palpable.
+
+The initial feedback moment with the product manager was “we are going to look for another designer”. As the client, this was their privilege, of course. But a few days later, they asked if I would be open to revising the colour palette, and moving on with the UI for the project. Progress!
+
+But the colour had to change.
+
+(full-image: supercv-colortest.jpg)
+
+(side-image: supercv-palette.png class: u-maxwidth75p)
+
+Trying out many different colour schemes and palettes, while still keeping the principle of a lively primary colour that talks to a calmer darker one. Not an easy process, since it had become clear we had different perspectives of what would be suitable for the platform.
+
+Then emerged a proposal we could both get on board with: the combination of ‘adventurous lime’ with a ‘calm blue’. When the lime is used sparsely, mostly as an accent in a white or light grey context, a clear kind of identity started to emerge. The mockup of the homepage seemed to support this — we were out of the woods.
+
+(new-section: bg-white u-pt10vh)
+
+> ‘full stack’ design strategy — product design to HTML/CSS UI kit
+
+This also meant that we had a go-ahead to work out the product interface of the platform; I had laid out an implementation strategy where I would work out a ‘full stack’ design: from main product interface, UX and visual design to a html/css mockup and into a documented UI kit.
+
+(new-section: )
+
+(full-image: supercv-home.png)
+
+The visual design directions as set out in the concept presentation were well received: an overall minimal and functional interface where the dominant background colours would be white and shades of grey. The main menu would sit on the left of the page, and would collapse into a row of icons on smaller devices.
+
+(image: supercv-search.jpg)
+
+Since much of the usage of the platform would be about users browsing for jobs, or managing their posted jobs, a special focus was put on displaying sets of job results. A switch between cards (left) and a list (right), and using a prominent visual for both, ensured a rich experience for browsing content.
+
+----
+
+Tags: web design,case study,identity,strategy,ui

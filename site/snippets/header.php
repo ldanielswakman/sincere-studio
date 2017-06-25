@@ -5,79 +5,61 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
+  <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
 
   <? snippet('header-metadata', array('page' => $page)) ?>
 
+  <? ecco(strpos(kirby()->request()->url(),'_/new') !== false, '<meta name="robots" value="noindex" />') ?>
+  
+  <?
+  // sets css & js assets based on ENV
+  $css_assets = (c::get('env') !== 'DEV') ? array(
+    // '//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css',
+    // '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css',
+    'assets/css/style.css',
+  ) : array(
+    // 'assets/css/flexboxgrid.min.css',
+    // 'assets/css/owl.carousel.min.css',
+    'assets/css/style.css',
+  );
 
-  <?php
   // checks if not on localhost, then serves assets from CDN
-  $local = strpos($_SERVER['SERVER_NAME'], 'localhost');
-  if($local === false) :
-    // Bootstrap
-    echo css('//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css');
-    // Ionicons
-    echo css('//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
-    // Google Fonts
-    echo css('//fonts.googleapis.com/css?family=Overpass:400,400i,700,700i');
-    // JQuery SmoothScroll
-    echo js('//code.jquery.com/jquery-1.11.1.min.js');
-    echo js('//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js');
-  // if localhost then load local assets
-  else :
-    echo css('assets/css/bootstrap.min.css');
-    echo css('assets/css/ionicons.min.css');
-    echo js('assets/js/jquery-1.11.1.min.js');
-    echo js('assets/js/jquery.smooth-scroll.min.js');
-    // echo js('assets/js/fastclick.min.js');
-  endif;
+  $js_assets = (c::get('env') !== 'DEV') ? array(
+    '//code.jquery.com/jquery-1.11.1.min.js',
+    // '//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js',
+    // '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js',
+    'assets/js/scripts.js',
+  ) : array(
+    'assets/js/vendor/jquery-1.11.1.min.js',
+    // 'assets/js/vendor/jquery.smooth-scroll.min.js',
+    // 'assets/js/vendor/owl.carousel.min.js',
+    'assets/js/scripts.js',
+  );
 
-  // assets
-  echo css('assets/css/style.css');
-  echo js('assets/js/scripts.js');
-  echo js('assets/js/twitterfetcher.min.js');
-
+  echo css($css_assets);
+  echo js($js_assets);
   ?>
 
-  <link rel="alternate" href="https://ldaniel.eu" hreflang="en-GB" />
+  <link rel="alternate" href="http://www.ldaniel.eu/" hreflang="en-gb" />
+
+  <link rel="manifest" href="<?= url('manifest.json') ?>">
+  <link id="favicon" rel="shortcut icon" href="<?= url('assets/images/favicon.png') ?>">
 
   <!--[if lt IE 9]>
   <script type="text/javascript" src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
   <![endif]-->
 
 </head>
-<?php 
-$bodyClass = $page->template();
-$bodyClass .= ($page->isHomePage()) ? ' header-full' : ''; 
-?>
-<body class="<?php echo $bodyClass ?>">
 
-  <header>
-    <div class="row">
-      <div class="col-sm-5 col-xs-hide">
-        <h6>
-          <?php 
-          if ($page->template() == 'project') :
-            echo '<a href="' . $page->parent()->url() . '">' .
-              '<i class="ion ion-ios-arrow-back u-mr5"></i>' .
-              $page->parent()->title() .
-              '</a>' . ' / ';
-            echo $page->title()->html();
-          elseif ($page->isHomePage()) :
-            echo 'Graphic & web design';
-          else:
-            echo $page->title()->html();
-          endif;
-          ?>
-        </h6>
-      </div>
-      <div class="col-sm-2 col-xs-6">
-        <a href="<?php echo ($page->url() != $site->url) ? $site->url : '#top' ?>" id="logo">
-          <?php snippet('logo') ?>
-        </a>
-      </div>
-      <div class="col-sm-5 col-xs-6">
-        <?php snippet('menu') ?>
-      </div>
-    </div>
-  </header>
+<body class="<?= $page->template() ?>">
+
+  <a href="<?= ($page->url() != $site->url()) ? $site->url() : '#top' ?>" class="logo logo--init">
+    <? snippet('svg/logo') ?>
+  </a>
+
+  <? snippet('nav') ?>
+
+  <? snippet('contact', ['page' => $page]) ?>
+  <? if(isset($contact_active) && $contact_active == true) : ?>
+    <script>openContactForm()</script>
+  <? endif ?>

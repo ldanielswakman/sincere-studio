@@ -1,0 +1,60 @@
+Title: Muhit
+
+----
+
+Year: 2015
+
+----
+
+Description: Building an online platform allowing citizens to collaboratively improve their living environment
+
+----
+
+Tags: web design,front-end,graphic,project management,logo,print
+
+----
+
+Projecturl: http://www.muhit.co/
+
+----
+
+Featured: 1
+
+----
+
+Featuredimage: muhit-cover-image.jpg
+
+----
+
+Featuredcolour: 44a1e0
+
+----
+
+Sections: 
+
+- 
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image: hero-banner.jpg
+- 
+  num_columns: "2"
+  col_1: '<big class="u-block u-mb1">How can we bring citizens and their ideas for improvement of their neighbourhood and city closer together with the people tasked with managing it?</big> In the start of 2015, a (link: http://yourthings.org/en/project/muhit popup:yes text: hackathon weekend) brought the idea for creating a web & app platform around this idea to life.'
+  col_2: |
+    The design of this platform was intended to be a simple to use interface that promoted people's engagement to add ideas and browse further. In that first weekend, we came up with the core design principle for the interface of the app — a clean <span style="color: #44a1e0;">blue top header</span> above a simple white list with ideas and their tags/photos  — which turned out to survived to the current day.
+  bg_colour: '#fff'
+  bg_image: ""
+- 
+  num_cols: "1"
+  col_1: |
+    (image: muhit-system-diagram.png)
+    <div class="u-aligncenter c-greylight u-mt1"><i>Muhit's model: citizens provide ideas, most voted ideas get selected, discussed with local government & solved.</i></div>
+  col_2: ""
+  bg_colour: ""
+  bg_image: ""
+- 
+  col_1: ""
+  col_2: ""
+  bg_image: muhit-workshop.jpg
+  num_columns: "1"
+  bg_colour: ""

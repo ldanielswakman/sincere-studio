@@ -1,0 +1,129 @@
+// General
+
+html { }
+body {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+
+  background-color: $greylightest;
+  color: $bluedark;
+
+  font-family: $sans;
+  // font-size: 112.5%; // 1rem = 18px (at 100% zoom)
+  font-size: 125%; // 1rem = 20px (at 100% zoom)
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+
+  &.dialogIsActive {
+    overflow: hidden;
+  }
+}
+
+
+// Selection
+::selection {
+  background-color: $blue;
+  color: $white;
+}
+::-moz-selection {
+  background-color: $blue;
+  color: $white;
+}
+
+
+// Anchor
+a {
+  text-decoration: none;
+  color: $blue;
+
+  &.a--icon,
+  &.a--icon-sm,
+  &.a--icon-lg,
+  &.a--twitter {
+    color: $grey;
+
+    svg path {
+      fill: $grey;
+    }
+  }
+  &.a--icon-sm svg { width: 1rem; }
+  &.a--icon    svg { width: 1.5rem; }
+  &.a--icon-lg svg { width: 2rem; }
+}
+p a {
+  &:active,
+  &:focus {
+    outline: none;
+    background-color: $blue;
+    color: $white;
+    // @include prefix(box-shadow, 0 0 1rem rgba($blue, 0.5));
+  }
+  &:not(.button):hover {
+    border-bottom: 1px solid currentColor;
+  }
+}
+
+
+// Headings
+h1 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: $blue;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: $blue;
+}
+h4 {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+h5 {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.125rem;
+  opacity: 0.25;
+}
+
+
+// Blockquote
+blockquote {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+
+  @media screen and (max-width: ($vp_tablet - 1)) {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+  }
+
+  p {
+    line-height: 1.5em;
+  }
+}
+p + blockquote {
+  margin-top: 1rem;
+}
+
+
+// Paragraph
+p {
+  line-height: 1.6em;
+}
+blockquote, ul, ol, p, h3, h4 {
+  & + p {
+    margin-top: 1rem;
+  }
+}
+
+
+//
+figure {
+  img {
+    display: inline-block;
+  }
+}

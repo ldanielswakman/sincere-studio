@@ -36,7 +36,7 @@ email.log
 
 
 # Dev files (local)
-# ------------
+# ---------------
 
 Icon
 .DS_Store
@@ -48,3 +48,4 @@ node_modules
 # 'Other' folder (_)
 
 _
+site/config/config.localhost.php

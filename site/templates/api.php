@@ -4,7 +4,7 @@
 
 header('Content-type: application/json; charset=utf-8');
 
-$data = $pages->find('work')->children()->visible();
+$data = $pages->find('projects')->children()->visible();
 
 // build array basics
 $json = array();
@@ -30,5 +30,22 @@ foreach($data as $project) {
     // 'image' => $image_data,
   );
 }
+
+
+
+// retrieve Location data from Spreadsheet API
+$loc = (isset($_GET['loc'])) ? $_GET['loc'] : null;
+if($loc !== null) {
+  $key = c::get('google_sheet_key');
+  $url = 'https://spreadsheet.glitch.me/?key=' . $key;
+  $json_data = file_get_contents($url);
+  $data = json_decode($json_data, true);
+
+  foreach($data as $item) {
+    $json['location'][] = $item;
+  }
+}
+
+
 
 echo json_encode($json);

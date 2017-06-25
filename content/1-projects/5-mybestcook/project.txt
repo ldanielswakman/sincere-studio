@@ -1,0 +1,72 @@
+Title: mybestcook
+
+----
+
+Year: 2015
+
+----
+
+Description: Two columns and a set of building blocks build up this website for a  culinary community
+
+----
+
+Tags: web design,graphic,logo,branding,ui
+
+----
+
+Projecturl: http://www.mybestcook.com/
+
+----
+
+Featuredimage: mybestcook-homepage-mockup.png
+
+----
+
+Featuredcolour: b8bfc9
+
+----
+
+Sections: 
+
+- 
+  col_1: ""
+  bg_image: mybestcook-homepage-mockup.png
+- 
+  col_1: |
+    <!-- ### **drawing not just a chef's hat**
+    <br />
+    As a new platform bringing together people that have a passion for food with the chefs that make it, the iconography of a chef’s hat was written all over it. While loosely jotting down associations to the brief that had been set, three values started surfacing:
+    <br />
+    - wine tasting events
+    - signature: a chef ‘signing’ his work
+    - clear iconography -->
+  bg_image: brainstorm-sketch.jpg
+  bg_colour: ""
+- 
+  col_1: ""
+  col_2: >
+    Upon meeting Can – the founder of the
+    project – at Brew Lab around
+    Galatasaray, it quickly became clear he
+    had something going. In the past months,
+    he had built up a community around
+    organising culinary evenings, where
+    talented chefs provide food and
+    explanation to interested people.
+- 
+  col_1: |
+    <div class="u-aligncenter u-mb20"><small>logo options</small></div>
+    (image: logo-options.png)
+  col_2: |
+    <div class="u-aligncenter u-mb20"><small>final logo</small></div>
+    (image: logo.png)
+- 
+  col_1: ""
+  bg_image: moodboard.gif
+- 
+  col_1: ""
+  col_2: '(image: homepage.jpg)'
+
+----
+
+Featured: 0

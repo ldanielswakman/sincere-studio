@@ -1,0 +1,58 @@
+Title: Sound Framework
+
+----
+
+Year: 2013
+
+----
+
+Tags: app design,interaction design,visual design,ux,web design
+
+----
+
+Projecturl: 
+
+----
+
+Featuredimage: rhos-devices.png
+
+----
+
+Sections: 
+
+- 
+  num_cols: "1"
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image: rhos-banner.jpg
+- 
+  num_cols: "1"
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image: rhos-wireframes.jpg
+- 
+  num_cols: "1"
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image: rhos-app-ui-design.jpg
+- 
+  num_cols: "1"
+  col_1: '(image: rhos-devices.png)'
+  col_2: ""
+  bg_colour: ""
+  bg_image: ""
+
+----
+
+Description: Multi-faceted and ambitious music platform
+
+----
+
+Featured: 0
+
+----
+
+Featuredcolour: 

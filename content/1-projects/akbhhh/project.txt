@@ -1,0 +1,40 @@
+Title: AKBHHH
+
+----
+
+Year: 2014
+
+----
+
+Tags: graphic,web design,front-end
+
+----
+
+Projecturl: http://www.akbhhh.nl
+
+----
+
+Featuredimage: akbhhh-devices.png
+
+----
+
+Sections: 
+
+- 
+  num_cols: "1"
+  col_1: '<div style="max-height: 50vh;">(image: akbhhh-devices.png)</div>'
+  col_2: ""
+  bg_colour: ""
+  bg_image: ""
+
+----
+
+Description: A foundation website highlighting their projects rather than themselves
+
+----
+
+Featured: 0
+
+----
+
+Featuredcolour: 

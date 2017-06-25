@@ -1,0 +1,29 @@
+Title: De Blonde Tafel
+
+----
+
+Year: 2013
+
+----
+
+Tags: logo,graphic,web design,front-end
+
+----
+
+Projecturl: http://deblondetafelamsterdam.nl
+
+----
+
+Featuredimage: blondetafel-laptop.png
+
+----
+
+Sections: 
+
+- 
+  num_cols: "1"
+  col_1: '<div style="padding: 0 10vw; max-height: 40vh;">(image: blondetafel-laptop.png)</div>'
+
+----
+
+Description: Bold identity and one-pager introduction website for a network of female professionals
