@@ -18,7 +18,7 @@
   ) : array(
     // 'assets/css/flexboxgrid.min.css',
     // 'assets/css/owl.carousel.min.css',
-    'assets/css/style.css',
+    'assets/css/style.min.css',
   );
 
   // checks if not on localhost, then serves assets from CDN
@@ -31,7 +31,7 @@
     'assets/js/vendor/jquery-1.11.1.min.js',
     // 'assets/js/vendor/jquery.smooth-scroll.min.js',
     // 'assets/js/vendor/owl.carousel.min.js',
-    'assets/js/scripts.js',
+    'assets/js/scripts.min.js',
   );
 
   echo css($css_assets);
