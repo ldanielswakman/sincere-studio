@@ -62,10 +62,10 @@
 
       <? foreach ($projects as $project) : ?>
         <div class="row">
-          <div class="col-xs-12 col-sm-2 col-sm-offset-1">
+          <div class="col-xs-3 col-sm-2 col-sm-offset-1 u-mb05 u-op70">
             <?= ecco((!isset($prev) || $prev->year()->value() !== $project->year()->value()), '<big>' . $project->year() . '</big>') ?>
           </div>
-          <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-1">
+          <div class="col-xs-9 col-sm-8 col-md-offset-1 u-mb05">
               <a href="<?= $project->url() ?>" class="u-block <? ecco($project->isVisible(), 'c-white', 'c-grey') ?>" style="line-height: 1rem; margin-bottom: 0.75rem;">
                 <?= $project->title() ?><br>
                 <small style="color: rgba(255, 255, 255, <? ecco($project->isVisible(), '0.5', '0.25') ?>);"><?= $project->description() ?></small>
@@ -77,14 +77,15 @@
         </div>
       <? $prev = $project; endforeach; ?>
 
-
-      <div class="row u-mt2">
-        <div class="col-xs-12 col-sm-2 col-sm-offset-1">
-          <big>before that</big>
+      <? if($page->slug() !== 'architecture') : ?>
+        <div class="row u-mt2">
+          <div class="col-xs-12 col-sm-2 col-sm-offset-1">
+            <big>before that</big>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-1">
+            <a href="<?= u('/architecture') ?>" class="c-white">architecture and urban design &rarr;</a>
         </div>
-        <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-1">
-          <a href="<?= u('/architecture') ?>" class="c-white">architecture and urban design &rarr;</a>
-      </div>
+      <? endif ?>
 
     </section>
 

@@ -858,6 +858,9 @@
 .c-bluedull {
   color: #34495e; }
 
+.c-bluedark {
+  color: #035; }
+
 .c-white {
   color: #fff; }
 
@@ -1112,6 +1115,9 @@ figure img {
 .u-mb025 {
   margin-bottom: 0.25rem !important; }
 
+.u-mb05 {
+  margin-bottom: 0.5rem !important; }
+
 .u-mb1 {
   margin-bottom: 1rem !important; }
 
@@ -1141,6 +1147,10 @@ figure img {
 .u-pv15vh {
   padding-top: 15vh !important;
   padding-bottom: 15vh !important; }
+
+.u-pv05 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important; }
 
 .u-pv1 {
   padding-top: 1rem !important;
