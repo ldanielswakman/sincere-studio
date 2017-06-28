@@ -59,14 +59,13 @@ c::set('routes', [
 
         $from = (strlen($form->data('name')) > 0) ? $form->data('name') : $form->data('email');
         // If validation and guards passed, execute the action.
-        $form->emailAction([
+        $form->logAction([
+          'file' => kirby()->roots()->site() . '/email.log',
+        ])->emailAction([
           'to' => 'hello@ldaniel.eu',
           'from' => $from . ' (via ldaniel.eu) <contactform@ldaniel.eu>',
           'replyTo' => $form->data('email'),
           'subject' => '[ldaniel.eu] New message Received',
-        ])
-        ->logAction([
-          'file' => kirby()->roots()->site() . '/email.log',
         ]);
 
         if (!$form->success()) { $code = 500; }

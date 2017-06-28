@@ -190,6 +190,9 @@ function postContactForm($form) {
         $form.removeClass('isSending');
 
         error_msg = '';
+        if(data['code'] == 400) {
+          error_msg = 'A problem occurred... Try again?';
+        }
 
         $.each(data['errors'], function(i, item) {
           $form.find('[name="' + i + '"]').addClass('hasError');
