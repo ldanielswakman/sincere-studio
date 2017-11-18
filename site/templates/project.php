@@ -55,7 +55,7 @@
             <div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1 u-mt2">
               <?php
               foreach (explode(',', $page->tags()->html()) as $tag) :
-                echo '<div><a class="c-grey" href="' . $page->parent()->url() . '/tag:' . $tag . '#projects">' . $tag . '</a></div>';
+                echo '<div><a class="c-grey" href="' . $page->parent()->url() . '/tag:' . $tag . '">' . $tag . '</a></div>';
               endforeach;
               ?>
             </div>

@@ -1,0 +1,77 @@
+H-basics: 
+
+----
+
+Title: Paraşüt Mobile
+
+----
+
+Year: 2016-
+
+----
+
+Description: Mobile app for invoicing SaaS startup that handles quick jobs on the go
+
+----
+
+Tags: app design,prototyping,ui,ux
+
+----
+
+Projecturl: https://www.parasut.com/
+
+----
+
+H-featured: 
+
+----
+
+Featured: 1
+
+----
+
+Featuredimage: dashboard-promo-2.jpg
+
+----
+
+Featuredcolour: #f15e4f
+
+----
+
+H-content: 
+
+----
+
+Sections: 
+
+- 
+  num_cols: "1"
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image: app-promo-banner.jpg
+- 
+  num_cols: "1"
+  classes: u-pt0
+  col_1: |
+    <div class="u-aligncenter"><div class="u-inlineblock" style="max-width: 600px;">
+    (image: app-devices-mockup.png)
+    </div></div>
+  col_2: ""
+  bg_colour: ""
+  bg_image: ""
+- 
+  num_cols: "1"
+  classes: u-minheight40vh
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image: app-micro-moments-board.jpg
+- 
+  num_cols: "1"
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image: app-akbank-mockup.jpg

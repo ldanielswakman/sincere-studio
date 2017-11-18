@@ -2,7 +2,18 @@
 
   <main>
 
-    <? snippet('page-header', ['page' => $page, 'subtitle' => 'selected']) ?>
+    <?
+    $projects = $page->children()->sortBy('year', 'desc');
+    $pr_featured = $projects->filterBy('featured', '1');
+    $subtitle = 'selected';
+
+    if(param('tag')) {
+      $pr_featured = $projects->filterBy('tags', param('tag'), ',');
+      $subtitle = '<a href="' . $page->url() . '" class="u-floatright c-greylight">&times;</a><span class="u-op30">tag:</span> ' . param('tag') . '';
+    }
+    ?>
+
+    <? snippet('page-header', ['page' => $page, 'subtitle' => $subtitle]) ?>
 
     <? if (count($page->text()->kirbytext()) > 1) : ?>
 
@@ -21,16 +32,11 @@
 
     <? endif ?>
 
-    <?
-    $projects = $page->children()->sortBy('year', 'desc');
-    $pr_featured = $projects->filterBy('featured', '1');
-    ?>
-
     <section class="u-pv5vh">
       <div class="row">
 
         <? foreach ($pr_featured as $project) : ?>
-          <div class="col-xs-12 col-sm-6">
+          <div class="col-xs-12 col-sm-6 col-lg-4">
             <a href="<?= $project->url() ?>" class="card u-mb2" style="width: 100%;">
               <? if($image = $project->featuredimage()) : ?>
                 <figure>
@@ -38,7 +44,7 @@
                 </figure>
               <? endif ?>
               <div style="padding: 1rem;">
-                <h3 style="margin-bottom: 0.25rem;"><?= $project->title()->html() ?><sup class="c-greylight" style="font-size: 0.875rem;font-weight: normal; margin-left: 0.5rem;"><small><?= $project->year() ?></small></sup></h3>
+                <h3 class="card__title"><?= $project->title()->html() ?><sup><?= $project->year() ?></sup></h3>
                 <p><?= $project->description()->html() ?></p>
               </div>
             </a>
