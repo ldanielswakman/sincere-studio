@@ -6,12 +6,12 @@ Text:
 
 ----
 
-Featured1: wineart
+Featured1: onelook
 
 ----
 
-Featured2: habita
+Featured2: wineart
 
 ----
 
-Featured3: muhit
+Featured3: parasut-mobile

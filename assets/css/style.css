@@ -1198,6 +1198,9 @@ figure img {
 .u-pb2 {
   padding-bottom: 2rem !important; }
 
+.u-pb0 {
+  padding-bottom: 0 !important; }
+
 .u-pr2 {
   padding-right: 2rem !important; }
 
@@ -1254,6 +1257,11 @@ figure img {
 
 .u-text-2x {
   font-size: 2rem !important; }
+
+.u-boxshadow {
+  -webkit-box-shadow: 0 0 5rem rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.15); }
 
 .u-op30 {
   opacity: 0.3; }
@@ -1705,6 +1713,14 @@ body.home .logo.logo--init {
     -webkit-border-radius: 0.25rem;
     -moz-border-radius: 0.25rem;
     border-radius: 0.25rem; }
+  .card .card__title {
+    color: #00f;
+    margin-bottom: 0.25rem; }
+    .card .card__title sup {
+      margin-left: 0.5rem;
+      color: #ccccd4;
+      font-size: 0.75rem;
+      font-weight: normal; }
   .card p {
     line-height: 1.25rem; }
   .card figure img {

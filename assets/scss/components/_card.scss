@@ -58,6 +58,17 @@
     @include prefix(box-shadow, 0 0 1rem rgba($black, 0.1));
     @include prefix(border-radius, 0.25rem);
   }
+  .card__title {
+    color: $blue;
+    margin-bottom: 0.25rem;
+
+    sup {
+      margin-left: 0.5rem;
+      color: $greylight;
+      font-size: 0.75rem;
+      font-weight: normal;
+    }
+  }
   p {
     line-height: 1.25rem;
   }
