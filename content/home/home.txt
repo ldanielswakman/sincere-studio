@@ -5,14 +5,14 @@ Title: Digital Designer
 Current: 
 
 - 
-  text: Inflight VR
-  link: http://inflight-vr.com/
+  text: Moody
+  link: ""
+- 
+  text: Poltio
+  link: https://www.poltio.com/
 - 
   text: Paraşüt
   link: https://www.parasut.com/
-- 
-  text: OneLook
-  link: http://www.onelook.com/thesaurus/
 - 
   text: Muhit
   link: http://hikaye.muhit.co/en

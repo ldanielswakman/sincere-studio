@@ -6,7 +6,7 @@ Text:
 
 ----
 
-Featured1: wineart
+Featured1: supercv
 
 ----
 
@@ -14,4 +14,4 @@ Featured2: habita
 
 ----
 
-Featured3: muhit
+Featured3: wineart
