@@ -117,7 +117,7 @@ Sections:
 - 
   num_cols: "1"
   classes: u-aligncenter
-  col_1: '(link: www.onelook.com/thesaurus/beta text: Try the result out for yourself class: button button button--white popup: yes)'
+  col_1: '(link: http://www.onelook.com/thesaurus/beta text: Try the result out for yourself class: button button button--white popup: yes)'
   col_2: ""
   bg_colour: ""
   bg_image: ""

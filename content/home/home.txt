@@ -5,11 +5,14 @@ Title: Digital Designer
 Current: 
 
 - 
-  text: Moody
+  text: FJ
   link: ""
 - 
   text: Poltio
   link: https://www.poltio.com/
+- 
+  text: Coworking İstanbul
+  link: http://coworkingistanbul.com/
 - 
   text: Paraşüt
   link: https://www.parasut.com/
