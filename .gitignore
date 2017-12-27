@@ -16,6 +16,11 @@ error_log
 email.log
 
 
+# Google Search Console verification (server)
+# ------------
+googleaa37408530a000c3.html
+
+
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
 # -------------SECURITY-------------
