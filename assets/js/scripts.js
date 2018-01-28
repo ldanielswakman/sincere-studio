@@ -216,9 +216,9 @@ function postContactForm($form) {
 $(document).ready(function() {
 
   // variables
-  $token = '92024af1ed1c7f87d7fe417bcad6de02afe6cafe6a539bafbbc1b56dda6c6628';
+  $token = 'fa8118bb14c985ffece64d9835699a93ffeec489b7a28af37e047185531de66c'; // NB This is a user-specific token, authorised for 'ldanielswakman'
   $num_results = 4;
-  $base_url = 'https://api.dribbble.com/v2/users/ldanielswakman/shots?per_page=' + $num_results;
+  $base_url = 'https://api.dribbble.com/v2/user/shots?per_page=' + $num_results;
 
   // set loading content
   $container = $('#dribbblefeed');
