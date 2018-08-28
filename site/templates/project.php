@@ -5,8 +5,13 @@
     <? foreach($page->sections()->toStructure() as $key => $section): ?>
 
       <?
+      $bgLocation = 'full';
+      if($section->bg_image_pos()->isNotEmpty() && $section->bg_image_pos() == 'left') { $bgLocation = 'left'; }
+      if($section->bg_image_pos()->isNotEmpty() && $section->bg_image_pos() == 'right') { $bgLocation = 'right'; }
+
       $bg = 'style="padding-top: 15vh; padding-bottom: 15vh; ';
-      if ($section->bg_image()->isNotEmpty()) :
+
+      if ($section->bg_image()->isNotEmpty() && $bgLocation == 'full') :
         $image = $page->image($section->bg_image());
         $image_url = $image->url();
         $ratio = $image->dimensions()->height() / $image->dimensions()->width() * 100;
@@ -15,27 +20,29 @@
         $bg .= ' background-image: url(' . $image_url . '); background-repeat: no-repeat;';
         $bg .= ($page->featuredcolour()->isNotEmpty()) ? ' background-color: #' . $page->featuredcolour() . ';' : '';
       endif;
+
       if ($section->bg_colour()->isNotEmpty()) :
         $colour = (strpos($section->bg_colour()->value(), '#') !== false) ? $section->bg_colour() : '#' . $section->bg_colour();
         $bg .= 'background-color: ' . $colour . ';"';
       endif;
+
       $bg .= '"';
       ?>
 
-      <section<?= ' id="part' . ($key+1) . '" ' . $bg ?> class="section-bg <?= $section->classes() ?>">
+      <section <?= 'id="part' . ($key+1) . '"' . $bg ?> class="section-bg <?= $section->classes() ?>">
 
-        <div class="row u-pv40">
+        <div class="row">
 
           <? if($section->num_cols()->isNotEmpty() && $section->num_cols() == '1') : ?>  
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 u-pv40">
               <?= $section->col_1()->kirbytext() ?>
               <?= $section->col_2()->kirbytext() ?>
             </div>
           <? else : ?>  
-            <div class="col-xs-12 col-sm-5 col-md-4 col-md-offset-1">
+            <div class="col-xs-12 col-sm-5 col-md-4 col-md-offset-1 u-pv40" <?= ($bgLocation === 'left') ? $bg : '' ?>>
               <?= $section->col_1()->kirbytext() ?>
             </div>
-            <div class="col-xs-12 col-sm-7 col-md-5 col-md-offset-1">
+            <div class="col-xs-12 col-sm-7 col-md-5 col-md-offset-1 u-pv40" <?= ($bgLocation === 'right') ? $bg : '' ?>>
               <?= $section->col_2()->kirbytext() ?>
             </div>
           <? endif ?>
