@@ -10,7 +10,7 @@ Description: Building an online platform allowing citizens to collaboratively im
 
 ----
 
-Tags: web design,front-end,graphic,project management,logo,print
+Tags: web design,front-end,graphic,project management,logo,co-founder
 
 ----
 
@@ -18,7 +18,7 @@ Projecturl: http://www.muhit.co/
 
 ----
 
-Featured: 1
+Featured: 0
 
 ----
 
@@ -39,11 +39,25 @@ Sections:
   bg_image: hero-banner.jpg
 - 
   num_columns: "2"
-  col_1: '<big class="u-block u-mb1">How can we bring citizens and their ideas for improvement of their neighbourhood and city closer together with the people tasked with managing it?</big> In the start of 2015, a (link: http://yourthings.org/en/project/muhit popup:yes text: hackathon weekend) brought the idea for creating a web & app platform around this idea to life.'
-  col_2: |
-    The design of this platform was intended to be a simple to use interface that promoted people's engagement to add ideas and browse further. In that first weekend, we came up with the core design principle for the interface of the app — a clean <span style="color: #44a1e0;">blue top header</span> above a simple white list with ideas and their tags/photos  — which turned out to survived to the current day.
+  col_1: |
+    <big class="u-block u-mb1">How can we give citizens more opportunity to be involved with the improvement of their city? How can we bring their ideas and knowledge closer to the people tasked with managing it?</big>
+    
+    In the start of 2015, a (link: http://yourthings.org/en/project/muhit popup:yes text: hackathon weekend) was the stage for this theme. Together with a team of developers and urban planners, we brought the idea for creating a web & app platform around this idea to life.
+  col_2: ""
   bg_colour: '#fff'
+  bg_image: muhit-street.jpg
+  num_cols: "1"
+  classes: ""
+  bg_image_pos: right
+- 
+  num_cols: "2"
+  classes: ""
+  col_1: |
+    The design of this platform was intended to be a simple to use interface that promoted people's engagement to add ideas and browse further. In that first weekend, we came up with the core design principle for the interface of the app — a clean <span style="color: #44a1e0;">blue top header</span> above a simple white list with ideas and their tags/photos  — which turned out to survived to the current day.
+  col_2: '(image: first-designs.png)'
+  bg_colour: ""
   bg_image: ""
+  bg_image_pos: full
 - 
   num_cols: "1"
   col_1: |
