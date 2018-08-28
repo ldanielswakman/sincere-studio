@@ -6,7 +6,7 @@ Text:
 
 ----
 
-Featured1: onelook
+Featured1: harvest
 
 ----
 
@@ -15,4 +15,3 @@ Featured2: wineart
 ----
 
 Featured3: parasut-mobile
-

@@ -5,20 +5,23 @@ Title: Digital Designer
 Current: 
 
 - 
-  text: FJ
+  text: Pheme
+  link: https://pheme.app/
+- 
+  text: Berlin by Food
+  link: https://berlinbyfood.eu
+- 
+  text: LuxFox
+  link: https://www.lux-fox.com/
+- 
+  text: Diagnose Berlin
   link: ""
 - 
-  text: Poltio
-  link: https://www.poltio.com/
-- 
-  text: Coworking İstanbul
-  link: http://coworkingistanbul.com/
+  text: Helikon
+  link: ""
 - 
   text: Paraşüt
   link: https://www.parasut.com/
-- 
-  text: Muhit
-  link: http://hikaye.muhit.co/en
 
 ----
 

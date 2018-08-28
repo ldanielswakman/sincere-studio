@@ -9,11 +9,15 @@ Text:
 Work-xp: 
 
 - 
-  period: 2008-current
+  period: 2017-current
+  img: logo.png
   title: ldaniel.eu
-  text: 'freelance graphic & web designer, branding & identity, front-end design, visualisations'
-  url: http://ldaniel.eu/
-  img: ldaniel-logo.png
+  text: >
+    Independent ‘full stack’ designer
+    — UX, UI, visual, interaction,
+    frontend; working w startups/private
+    clients/agencies
+  url: https://ldaniel.eu/
 - 
   title: Muhit (co-founder)
   text: 'non-profit platform for urban improvement, design, product & business development'
@@ -36,6 +40,12 @@ Work-xp:
     gamification
   url: http://www.oefenweb.nl
   img: oefenweb-logo.png
+- 
+  period: 2008-2016
+  title: ldaniel.eu
+  text: 'freelance graphic & web designer, branding & identity, front-end design, visualisations'
+  url: http://ldaniel.eu/
+  img: ldaniel-logo.png
 - 
   period: 2011-2012
   title: Güller Güller architecture urbanism
