@@ -18,6 +18,8 @@ if($page->description()->isNotEmpty()) {
 $image_url = r($site->meta_image()->isNotEmpty(), $site->image($site->meta_image())->url());
 if($page->featuredimage()->isNotEmpty()) {
 	$image_url = $page->image($page->featuredimage())->url();
+} else if($page->cover_image()->isNotEmpty()) {
+	$image_url = $page->image($page->cover_image())->url();
 }
 ?>
 
