@@ -53,8 +53,10 @@
                 <? snippet('featured'); ?>
 
                 <div class="u-mb2 u-mt1">
-                  <a href="<?= $pages->find('articles')->url() ?>" class="button u-mr1 u-mb1">case studies</a>
-                  <a href="<?= $pages->find('projects')->url() ?>" class="button button--outline u-mb1">all projects</a>
+                  <!-- See -->
+                  <a href="<?= $pages->find('projects')->url() ?>" class="button u-mb1 u-mr1">all projects</a>
+                  <!-- or read  -->
+                  <a href="<?= $pages->find('articles')->url() ?>" class="button button--outline u-mb1">case studies</a>
                 </div>
 
               </div>
