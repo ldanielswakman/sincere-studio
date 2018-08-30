@@ -1,0 +1,34 @@
+{
+  "name": "ldaniel.eu",
+  "author": "L Daniel Swkaman <hello@ldaniel.eu>",
+  "homepage": "https://ldaniel.eu",
+  "description": "ldaniel.eu is an independent design studio, designing + building the web for today and tomorrow.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ldanielswakman/ldaniel-site"
+  },
+  "bugs": {
+    "url": "https://github.com/ldanielswakman/ldaniel-site/issues"
+  },
+  "keywords": [
+    "kirby",
+    "cms",
+    "php",
+    "file-based",
+    "webinterface",
+    "admin",
+    "panel"
+  ],
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-clean-css": "*",
+    "gulp-concat": "*",
+    "gulp-minify": "*"
+  },
+  "private": true,
+  "dependencies": {
+    "npm": "^6.4.1"
+  }
+}
