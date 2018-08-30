@@ -21,11 +21,11 @@
   ],
   "devDependencies": {
     "gulp": "*",
-    "gulp-rename": "*",
-    "gulp-sass": "*",
     "gulp-clean-css": "*",
     "gulp-concat": "*",
-    "gulp-minify": "*"
+    "gulp-minify": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "^4.0.1"
   },
   "private": true,
   "dependencies": {

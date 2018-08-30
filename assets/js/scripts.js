@@ -399,9 +399,6 @@ if ('serviceWorker' in navigator) {
 // https://github.com/jasonmayes/Twitter-Post-Fetcher
 $(document).ready(function() {
 
-  loadingHTML = '<div class="row"><div class="col-xs-12 c-greylight"><small><em>loading tweets...</em></small></div></div>';
-  $('#twitterfeed').html(loadingHTML);
-
   var config = {
     "id": '437257042844073984',
     "domId": 'twitterfeed',
@@ -459,5 +456,12 @@ $(document).ready(function() {
       return shortdate;
     }
   }
-  twitterFetcher.fetch(config);
+
+  if($('#twitterfeed').length > 0) {
+    loadingHTML = '<div class="row"><div class="col-xs-12 c-greylight"><small><em>loading tweets...</em></small></div></div>';
+    $('#twitterfeed').html(loadingHTML);
+
+    twitterFetcher.fetch(config);
+  }
+  
 });
