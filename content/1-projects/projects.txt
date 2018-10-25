@@ -6,11 +6,11 @@ Text:
 
 ----
 
-Featured1: harvest
+Featured1: berlin-by-food
 
 ----
 
-Featured2: wineart
+Featured2: harvest
 
 ----
 

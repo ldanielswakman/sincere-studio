@@ -1,0 +1,81 @@
+H-basics: 
+
+----
+
+Title: Portfolio Poster
+
+----
+
+Year: 2011
+
+----
+
+Description: Who needs a huge booklet to give an indication of project work?
+
+----
+
+Tags: print design,architecture,urban design
+
+----
+
+Projecturl: 
+
+----
+
+H-featured: 
+
+----
+
+Featured: 0
+
+----
+
+Featuredimage: img_7420.jpg
+
+----
+
+Featuredcolour: 
+
+----
+
+H-content: 
+
+----
+
+Sections: 
+
+- 
+  num_cols: "1"
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image: img_7420.jpg
+  bg_image_pos: full
+- 
+  num_cols: "1"
+  classes: ""
+  col_1: |
+    <div class="u-aligncenter" markdown="1">
+    (image: img_7911_small.gif)
+    </div>
+  col_2: ""
+  bg_colour: ""
+  bg_image: ""
+  bg_image_pos: full
+- 
+  num_cols: "1"
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image: img_7415_small.jpg
+  bg_image_pos: full
+- 
+  num_cols: "1"
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image: img_7408.jpg
+  bg_image_pos: full

@@ -1,0 +1,70 @@
+H-basics: 
+
+----
+
+Title: Berlin by Food
+
+----
+
+Year: 2018
+
+----
+
+Description: Who said Berlin was all about Currywurst?
+
+----
+
+Tags: web design,branding,visual design,front-end
+
+----
+
+Projecturl: https://berlinbyfood.eu/
+
+----
+
+H-featured: 
+
+----
+
+Featured: 1
+
+----
+
+Featuredimage: mobile-mockup-adjusted.jpg
+
+----
+
+Featuredcolour: 1B153E
+
+----
+
+H-content: 
+
+----
+
+Sections: 
+
+- 
+  num_cols: "1"
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image: mobile-mockup-adjusted.jpg
+  bg_image_pos: full
+- 
+  num_cols: "1"
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image: logo-and-fruits.jpg
+  bg_image_pos: full
+- 
+  num_cols: "1"
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image: imac-mockup.jpg
+  bg_image_pos: full

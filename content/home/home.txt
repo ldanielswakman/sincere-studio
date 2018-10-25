@@ -8,17 +8,14 @@ Current:
   text: Pheme
   link: https://pheme.app/
 - 
-  text: Berlin by Food
-  link: https://berlinbyfood.eu
-- 
-  text: LuxFox
-  link: https://www.lux-fox.com/
-- 
   text: Diagnose Berlin
   link: ""
 - 
   text: Helikon
-  link: ""
+  link: http://helikon.media/
+- 
+  text: LuxFox
+  link: https://www.lux-fox.com/
 - 
   text: Paraşüt
   link: https://www.parasut.com/
