@@ -5,14 +5,14 @@ Title: Digital Designer
 Current: 
 
 - 
+  text: Sharpist
+  link: https://www.sharpist.org/
+- 
   text: Pheme
   link: https://pheme.app/
 - 
   text: Diagnose Berlin
-  link: ""
-- 
-  text: Helikon
-  link: http://helikon.media/
+  link: http://www.diagnose-berlin.de/
 - 
   text: LuxFox
   link: https://www.lux-fox.com/
