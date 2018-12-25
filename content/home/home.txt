@@ -8,17 +8,17 @@ Current:
   text: Sharpist
   link: https://www.sharpist.org/
 - 
-  text: Pheme
-  link: https://pheme.app/
-- 
-  text: Diagnose Berlin
-  link: http://www.diagnose-berlin.de/
-- 
   text: LuxFox
   link: https://www.lux-fox.com/
 - 
   text: Paraşüt
   link: https://www.parasut.com/
+- 
+  text: Pheme
+  link: https://pheme.app/
+- 
+  text: radi.cards
+  link: https://radi.cards/
 
 ----
 
@@ -92,7 +92,7 @@ Sections:
     
     > Collaborate?
     
-    I'm currently available for work (while stocks last); I'm always excited to hear new projects, and see how we can collaborate in them. Drop me a line:
+    I'm currently not available for work, until February 2019. But I'm always excited to hear new projects, and see how we can collaborate in them. So feel free to drop me a line anyway — who knows:
     
     <div class="u-mv2">
     <a href="javascript:openContactForm()" class="button u-mb1">Say hello</a>
