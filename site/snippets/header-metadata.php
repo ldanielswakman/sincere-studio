@@ -42,3 +42,5 @@ if($page->featuredimage()->isNotEmpty()) {
 <meta name="twitter:description" content="<?= $descr ?>">
 <meta name="twitter:image" content="<?= $image_url ?>">
 
+<!-- Pinterest Verify Meta Tag -->
+<meta name="p:domain_verify" content="95b773d9940de5e8c8768dbbfaf2ac7f"/>
