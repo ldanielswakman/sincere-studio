@@ -44,7 +44,7 @@
               <a href="<?= $project->url() ?>" class="card u-mb2" style="width: 100%;">
                 <? if($image = $project->featuredimage()) : ?>
                   <figure>
-                    <img src="<?= thumb($project->image($image), ['width' => 1200])->url() ?>" alt="">
+                    <img src="<?= $project->image($image)->thumb(['width' => 1200])->url() ?>" alt="">
                   </figure>
                 <? endif ?>
                 <div style="padding: 1rem;">
@@ -74,21 +74,21 @@
       <? foreach ($projects as $project) : ?>
         <div class="row">
           <div class="col-xs-12 col-sm-2 col-sm-offset-1 u-mb05 u-op70">
-            <?= ecco((!isset($prev) || $prev->year()->value() !== $project->year()->value()), '<big>' . $project->year() . '</big>') ?>
+            <?= e((!isset($prev) || $prev->year()->value() !== $project->year()->value()), '<big>' . $project->year() . '</big>') ?>
           </div>
           <div class="col-xs-4 col-sm-1 u-mb05 u-op70">
             <a href="<?= $project->url() ?>" class="u-block" style="line-height: 1rem; margin-bottom: 0.75rem;">
               <? if($image = $project->featuredimage()) : ?>
                 <figure>
-                  <img src="<?= thumb($project->image($image), ['width' => 1200])->url() ?>" alt="">
+                  <img src="<?= $project->image($image)->thumb(['width' => 1200])->url() ?>" alt="">
                 </figure>
               <? endif ?>
             </a>
           </div>
           <div class="col-xs-8 col-sm-7 u-mb05">
-              <a href="<?= $project->url() ?>" class="u-block <? ecco($project->isVisible(), 'c-white', 'c-grey') ?>" style="line-height: 1rem; margin-bottom: 0.75rem;">
+              <a href="<?= $project->url() ?>" class="u-block <? e($project->isVisible(), 'c-white', 'c-grey') ?>" style="line-height: 1rem; margin-bottom: 0.75rem;">
                 <?= $project->title() ?><br>
-                <small style="color: rgba(255, 255, 255, <? ecco($project->isVisible(), '0.5', '0.25') ?>);"><?= $project->description() ?></small>
+                <small style="color: rgba(255, 255, 255, <? e($project->isVisible(), '0.5', '0.25') ?>);"><?= $project->description() ?></small>
               </a>
           </div>
         </div>
@@ -164,7 +164,7 @@
                 <? if ($img = $project->featuredimage()): ?>
                   <?
                   $style = 'background-image: url(\'';
-                  $style .= thumb($project->image($img), array('width' => 600, 'quality' => 80))->url();
+                  $style .= $project->image($img)->thumb(['width' => 600, 'quality' => 80])->url();
                   $style .= '\');';
                   // $style .= (strlen($project->featuredcolour()) > 0) ? ' background-color: #' . $project->featuredcolour() . ';' : '';
                   ?>

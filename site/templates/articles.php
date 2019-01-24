@@ -17,7 +17,7 @@
 
             <div class="meta"><date><?= $article->date('d M Y') ?></date> — <? snippet('reading-time', ['text' => $article->text()]) ?></div>
 
-            <p><?= excerpt($article->text(), 200) ?></p>
+            <p><?= $article->text()->excerpt(200) ?></p>
 
             <button class="button button-outline u-mt1">read</button>
 

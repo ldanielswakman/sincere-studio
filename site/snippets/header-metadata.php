@@ -7,11 +7,11 @@ $site_title = $site->title()->html();
 // Set description
 $descr = $site->description()->html();
 if($page->description()->isNotEmpty()) {
-	$descr = excerpt($page->description(), 30, 'words');
+	$descr = $page->description()->excerpt(30, 'words');
 } else if($page->text()->isNotEmpty()) {
-	$descr = excerpt($page->text(), 30, 'words');
+	$descr = $page->text()->excerpt(30, 'words');
 } else if($page->intro()->isNotEmpty()) {
-	$descr = excerpt($page->intro(), 30, 'words');
+	$descr = $page->intro()->excerpt(30, 'words');
 }
 
 // Set image

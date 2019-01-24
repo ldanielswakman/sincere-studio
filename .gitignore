@@ -1,56 +1,52 @@
+## System files
+# ------------
+
+Icon
+.DS_Store
+
 # Temporary files
 # ---------------
 
-/thumbs/*
-!/thumbs/index.html
-
-site/cache
-/site/cache/*
-!/site/cache/index.html
-
-
-# Error logs (server)
-# ------------
-
-error_log
-email.log
-
-
-# Google Search Console verification (server)
-# ------------
-googleaa37408530a000c3.html
-
+/media/*
+!/media/index.html
 
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
 # -------------SECURITY-------------
 
-# Kirby accounts
+# Cache Files
+# ---------------
+
+/site/cache/*
+!/site/cache/index.html
+
+# Accounts
 # ---------------
 
 /site/accounts/*
 !/site/accounts/index.html
-/site/config/config.ldaniel.eu.php
 
-
-# Avatars
+# Sessions
 # ---------------
 
-/assets/avatars/*
-!/assets/avatars/index.html
+/site/sessions/*
+!/site/sessions/index.html
+
+# License
+# ---------------
+/site/config/.license
 
 
-# Dev files (local)
+# Other local files
 # ---------------
 
-Icon
-.DS_Store
 node_modules
 *.sublime-project
 *.sublime-workspace
+site/config/config.localhost.php
 
 
 # 'Other' folder (_)
+# ---------------
 
 _
-site/config/config.localhost.php

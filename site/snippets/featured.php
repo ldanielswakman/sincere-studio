@@ -13,7 +13,7 @@ $featured[] = page($sourcepage->uri() . '/' . $sourcepage->featured3());
     <a href="<?php echo $project->url() ?>" class="card">
       <? if($image = $project->featuredimage()) : ?>
         <figure>
-          <img src="<?= thumb($project->image($image), ['width' => 800])->url() ?>" alt="">
+          <img src="<?= $project->image($image)->thumb(['width' => 800])->url() ?>" alt="">
         </figure>
       <? endif ?>
     </a>
