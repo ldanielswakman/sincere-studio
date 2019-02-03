@@ -4,15 +4,17 @@ preset: page
 pages:
   template: project
 files: false
-fields:
-  title:
-    label: Title
-    type:  text
-  text:
-    label: Text
-    type:  textarea
 
 sections:
+  text:
+    type: fields
+    fields:
+      title:
+        label: Title
+        type:  text
+      text:
+        label: Text
+        type:  textarea
   featured:
     headline: Featured projects
     type: pages
