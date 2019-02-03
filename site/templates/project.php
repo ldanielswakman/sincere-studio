@@ -84,7 +84,7 @@
         </section>
       <? endif ?>
 
-      <? if (count(yaml($page ->sections())) == 0) : ?>
+      <? if ($page->sections()->toStructure()->count() == 0) : ?>
       <section>
         <div class="row u-pv40">
           <div class="col-md-4">
@@ -125,19 +125,23 @@
     </a>
     <? endif; ?>
 
+    <? if(true) : ?>
     <section class="bg-greylighter u-pv2">
       <div>
         <p style="margin: 4rem 0 1rem; font-size: 2rem;">related projects</p>
       </div>
+
+      <?
+      $related = $site->find('projects')->children()->shuffle()->limit(3);
+      ?>
       <!-- Project Cards -->
       <div class="card-container owl-carousel u-mt1">
-        <? $options = array('minHits' => 3, 'startURI', '/' . $page->parent()->slug()) ?>
-        <? foreach (relatedpages($options)->shuffle()->limit(3) as $project) : ?>
+        <? foreach ($related as $project) : ?>
 
           <a href="<?php echo $project->url() ?>" class="card">
-            <? if($image = $project->featuredimage()) : ?>
+            <? if($image = $project->featuredimage()->toFile()) : ?>
               <figure>
-                <img src="<?= thumb($project->image($image), ['width' => 800])->url() ?>" alt="">
+                <img src="<?= $image->thumb(['width' => 800])->url() ?>" alt="">
               </figure>
             <? endif ?>
           </a>
@@ -159,6 +163,7 @@
       </a>
 
     </section>
+    <? endif ?>
 
   </main>
 

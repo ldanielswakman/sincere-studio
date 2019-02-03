@@ -11,9 +11,9 @@ $featured[] = page($sourcepage->uri() . '/' . $sourcepage->featured3());
   <? foreach ($featured as $project) : ?>
 
     <a href="<?php echo $project->url() ?>" class="card">
-      <? if($image = $project->featuredimage()) : ?>
+      <? if($image = $project->featuredimage()->toFile()) : ?>
         <figure>
-          <img src="<?= $project->image($image)->thumb(['width' => 800])->url() ?>" alt="">
+          <img src="<?= $image->thumb(['width' => 800])->url() ?>" alt="">
         </figure>
       <? endif ?>
     </a>
