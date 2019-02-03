@@ -1,2 +1,13 @@
 title: Site
-preset: pages
+
+sections:
+  listed:
+    headline: Menu Pages
+    type: pages
+    layout: list
+    status: listed
+  unlisted:
+    headline: Other Pages
+    type: pages
+    layout: list
+    status: unlisted

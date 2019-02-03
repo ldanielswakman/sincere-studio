@@ -1,4 +1,6 @@
 title: Projects
+preset: page
+
 pages:
   template: project
 files: false
@@ -8,16 +10,18 @@ fields:
     type:  text
   text:
     label: Text
-    type:  markdown
-  featured1:
-    label: Featured Project 1
-    type: select
-    options: children
-  featured2:
-    label: Featured Project 2
-    type: select
-    options: children
-  featured3:
-    label: Featured Project 3
-    type: select
-    options: children
+    type:  textarea
+
+sections:
+  featured:
+    headline: Featured projects
+    type: pages
+    layout: cards
+    status: listed
+    empty: No featured projects
+
+  other:
+    headline: Other projects
+    type: pages
+    layout: cards
+    status: unlisted
