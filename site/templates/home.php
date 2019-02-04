@@ -1,7 +1,5 @@
 <?php snippet('header') ?>
 
-<? phpinfo() ?>
-
 <main>
 
   <? foreach ($page->sections()->toStructure() as $key => $section): ?>
