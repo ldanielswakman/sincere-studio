@@ -76,7 +76,7 @@ Sections:
   classes: u-aligncenter c-white
   col_1: |
     <br><br>
-    > Qualitative & quantitative UX research by **(link: twitter.com/esinishi text: Esin Işık popup: yes class: c-white)**
+    > Qualitative & quantitative UX research by **(link: https://twitter.com/esinishi text: Esin Işık target: _blank class: c-white)**
   col_2: ""
   bg_colour: ""
   bg_image: onelook-post-its.jpg
@@ -117,7 +117,7 @@ Sections:
 - 
   num_cols: "1"
   classes: u-aligncenter
-  col_1: '(link: http://www.onelook.com/thesaurus/beta text: Try the result out for yourself class: button button button--white popup: yes)'
+  col_1: '(link: http://www.onelook.com/thesaurus/beta text: Try the result out for yourself class: button button button--white target: _blank)'
   col_2: ""
   bg_colour: ""
   bg_image: ""
