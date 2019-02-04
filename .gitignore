@@ -44,6 +44,7 @@ node_modules
 *.sublime-project
 *.sublime-workspace
 site/config/config.localhost.php
+site/email.log
 
 
 # 'Other' folder (_)

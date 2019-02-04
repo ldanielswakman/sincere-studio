@@ -20,6 +20,12 @@ c::set('thumbs.presets', [
   'default' => ['quality' => 100]
 ]);
 
+return [
+  'panel' =>[
+    'install' => true
+  ]
+];
+
 /*
 ---------------------------------------
 Routes
@@ -66,7 +72,7 @@ c::set('routes', [
           'file' => kirby()->roots()->site() . '/email.log',
         ])->emailAction([
           'to' => 'hello@ldaniel.eu',
-          'from' => $from . ' (via ldaniel.eu) <contactform@ldaniel.eu>',
+          'from' => 'contactform@ldaniel.eu',
           'replyTo' => $form->data('email'),
           'subject' => '[ldaniel.eu] New message Received',
         ]);
