@@ -20,12 +20,6 @@ c::set('thumbs.presets', [
   'default' => ['quality' => 100]
 ]);
 
-return [
-  'panel' =>[
-    'install' => true
-  ]
-];
-
 /*
 ---------------------------------------
 Routes
@@ -105,3 +99,9 @@ c::set('routes', [
     }
   ],
 ]);
+
+return [
+  'panel' =>[
+    'install' => true
+  ]
+];
