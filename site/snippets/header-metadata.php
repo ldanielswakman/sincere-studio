@@ -17,9 +17,9 @@ if($page->description()->isNotEmpty()) {
 // Set image
 $image_url = r($site->meta_image()->isNotEmpty(), $site->image($site->meta_image())->url());
 if($page->featuredimage()->isNotEmpty()) {
-	$image_url = $page->image($page->featuredimage())->url();
+	$image_url = $page->featuredimage()->toFile()->url();
 } else if($page->cover_image()->isNotEmpty()) {
-	$image_url = $page->image($page->cover_image())->url();
+	$image_url = $page->cover_image()->toFile()->url();
 }
 ?>
 

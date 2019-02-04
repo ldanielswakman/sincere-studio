@@ -75,6 +75,20 @@
   figure img {
     width: 100%;
   }
+  &--related {
+    figure {
+      position: relative;
+      padding-bottom: percentage(2/3);
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
 }
 
 
@@ -97,5 +111,8 @@
   }
   &.active span {
     background-color: $blue;
+  }
+  &.active:only-child {
+    display: none;
   }
 }
