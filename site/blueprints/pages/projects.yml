@@ -1,0 +1,29 @@
+title: Projects
+preset: page
+
+pages:
+  template: project
+files: false
+
+sections:
+  text:
+    type: fields
+    fields:
+      title:
+        label: Title
+        type:  text
+      text:
+        label: Text
+        type:  textarea
+  featured:
+    headline: Featured projects
+    type: pages
+    layout: cards
+    status: listed
+    empty: No featured projects
+
+  other:
+    headline: Other projects
+    type: pages
+    layout: cards
+    status: unlisted

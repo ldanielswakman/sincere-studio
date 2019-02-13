@@ -66,7 +66,7 @@ c::set('routes', [
           'file' => kirby()->roots()->site() . '/email.log',
         ])->emailAction([
           'to' => 'hello@ldaniel.eu',
-          'from' => $from . ' (via ldaniel.eu) <contactform@ldaniel.eu>',
+          'from' => 'contactform@ldaniel.eu',
           'replyTo' => $form->data('email'),
           'subject' => '[ldaniel.eu] New message Received',
         ]);
@@ -99,3 +99,9 @@ c::set('routes', [
     }
   ],
 ]);
+
+return [
+  'panel' =>[
+    'install' => true
+  ]
+];

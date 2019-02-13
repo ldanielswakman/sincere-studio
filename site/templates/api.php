@@ -21,7 +21,7 @@ foreach($data as $project) {
   $json['projects'][] = array(
     'url'   => (string)$project->url(),
     'slug' => (string)$project->slug(),
-    'description'  => (string)excerpt($project->description(), 1000),
+    'description'  => (string)$project->description()->excerpt(1000),
     'year' => (string)$project->year(),
     'project_url' => (string)$project->projecturl(),
     'tags'  => (string)$project->tags(),

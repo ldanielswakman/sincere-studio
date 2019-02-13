@@ -1,18 +1,13 @@
 title: Site
-pages: default
-fields:
-  title:
-    label: Title
-    type:  text
-  author:
-    label: Author
-    type:  text
-  description:
-    label: Description
-    type:  textarea
-  keywords:
-    label: Keywords
-    type:  tags
-  meta_image:
-    label: Meta image
-    type: image
+
+sections:
+  listed:
+    headline: Menu Pages
+    type: pages
+    layout: list
+    status: listed
+  unlisted:
+    headline: Other Pages
+    type: pages
+    layout: list
+    status: unlisted

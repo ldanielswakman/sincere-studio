@@ -7,19 +7,19 @@ $site_title = $site->title()->html();
 // Set description
 $descr = $site->description()->html();
 if($page->description()->isNotEmpty()) {
-	$descr = excerpt($page->description(), 30, 'words');
+	$descr = $page->description()->excerpt(30, 'words');
 } else if($page->text()->isNotEmpty()) {
-	$descr = excerpt($page->text(), 30, 'words');
+	$descr = $page->text()->excerpt(30, 'words');
 } else if($page->intro()->isNotEmpty()) {
-	$descr = excerpt($page->intro(), 30, 'words');
+	$descr = $page->intro()->excerpt(30, 'words');
 }
 
 // Set image
 $image_url = r($site->meta_image()->isNotEmpty(), $site->image($site->meta_image())->url());
 if($page->featuredimage()->isNotEmpty()) {
-	$image_url = $page->image($page->featuredimage())->url();
+	$image_url = $page->featuredimage()->toFile()->url();
 } else if($page->cover_image()->isNotEmpty()) {
-	$image_url = $page->image($page->cover_image())->url();
+	$image_url = $page->cover_image()->toFile()->url();
 }
 ?>
 

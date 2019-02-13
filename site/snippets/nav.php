@@ -6,7 +6,7 @@
   foreach($pages->visible() as $p) { if($p->isOpen()) { $hasActive = true; break; } }
   ?>
 
-  <ul<?= ecco($hasActive, ' class="hasActive"') ?>>
+  <ul<?= e($hasActive, ' class="hasActive"') ?>>
     <? foreach($pages->visible() as $p): ?>
     <li><a <? e($p->isOpen(), ' class="isActive"') ?> href="<?= $p->url() ?>"><?= strtolower($p->title()->html()) ?></a></li>
     <? endforeach ?>

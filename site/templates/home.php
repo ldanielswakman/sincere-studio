@@ -33,10 +33,10 @@
                 <?
                 $items = $page->current()->toStructure();
                 foreach($items as $key => $item):
-                  ecco($item->link()->isNotEmpty(), '<a href="' . $item->link() . '" target="_blank">');
+                  e($item->link()->isNotEmpty(), '<a href="' . $item->link() . '" target="_blank">');
                   echo $item->text()->html();
-                  ecco($item->link()->isNotEmpty(), '</a>');
-                  if($key < $items->count()-1) { ecco(($items->count()-2 == $key), ' &amp; ', ', '); }
+                  e($item->link()->isNotEmpty(), '</a>');
+                  if($key < $items->count()-1) { e(($items->count()-2 == $key), ' &amp; ', ', '); }
                 endforeach;
                 ?>.
               </p>

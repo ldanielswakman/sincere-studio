@@ -20,7 +20,6 @@ fields:
 
   sections:
     type: structure
-    modalsize: large
     entry: >
       <div style="background-color: {{bg_color}}; background-image: url('../../../home/{{bg_image}}'); background-size: cover; background-position: center center; margin: -1rem -1.5rem; padding: 1rem 1.5rem;">
         <strong>{{title}}</strong> <span style="opacity: 0.5;">({{type}} section)</span><br>
@@ -32,7 +31,7 @@ fields:
     fields:
 
       type:
-        type: fieldtoggle
+        type: toggle
         default: text
         options:
           text: "Text section"

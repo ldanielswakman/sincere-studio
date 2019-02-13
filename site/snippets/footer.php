@@ -60,7 +60,7 @@
 
   <div style="height: 64px;"></div>
 
-  <? ecco((c::get('env') !== 'DEV'), snippet('ga_tracking', [], true)) ?>
+  <? e((c::get('env') !== 'DEV'), snippet('ga_tracking', [], true)) ?>
 
 </body>
 </html>
