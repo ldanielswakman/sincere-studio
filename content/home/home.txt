@@ -92,7 +92,7 @@ Sections:
     
     > Collaborate?
     
-    I'm currently not available for work, until February 2019. But I'm always excited to hear new projects, and see how we can collaborate in them. So feel free to drop me a line anyway — who knows:
+    I'm currently not available for work, until March 2019. But I'm always excited to hear new projects, and see how we can collaborate in them. So feel free to drop me a line anyway — who knows:
     
     <div class="u-mv2">
     <a href="javascript:openContactForm()" class="button u-mb1">Say hello</a>

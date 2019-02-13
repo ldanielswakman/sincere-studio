@@ -76,6 +76,8 @@
     width: 100%;
   }
   &--related {
+    box-shadow: 0 0.125rem 0.25rem rgba($black, 0.1);
+    
     figure {
       position: relative;
       padding-bottom: percentage(2/3);
