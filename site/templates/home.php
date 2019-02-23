@@ -45,22 +45,7 @@
 
           <? elseif($section->type() == 'recent_work') : ?>
 
-            <div class="row">
-              <div class="col-xs-12 col-sm-11 col-sm-offset-1">
-
-                <h5><?= $section->title()->html() ?></h5>
-
-                <? snippet('featured'); ?>
-
-                <div class="u-mb2 u-mt1">
-                  <!-- See -->
-                  <a href="<?= $pages->find('projects')->url() ?>" class="button u-mb1 u-mr1">all projects</a>
-                  <!-- or read  -->
-                  <a href="<?= $pages->find('articles')->url() ?>" class="button button--outline u-mb1">case studies</a>
-                </div>
-
-              </div>
-            </div>
+            <? snippet('featured', ['title' => $section->title()->html()]); ?>
 
           <? elseif($section->type() == 'stream_of_words') : ?>
 

@@ -9,7 +9,6 @@ fields:
   current:
     label: Current
     type: structure
-    style: table
     fields:
       text:
         label: Text
@@ -17,6 +16,14 @@ fields:
       link:
         label: Link
         type: url
+
+  recent:
+    label: Recent work
+    type: pages
+    query: site.find('projects').children.visible
+    layout: cards
+    max: 3
+    size: tiny
 
   sections:
     type: structure

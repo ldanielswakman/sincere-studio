@@ -22,6 +22,14 @@ Current:
 
 ----
 
+Recent: 
+
+- projects/luxfox
+- projects/berlin-by-food
+- projects/harvest
+
+----
+
 Sections: 
 
 - 
