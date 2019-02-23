@@ -55,7 +55,7 @@
     }
   }
   &.card--shadow {
-    @include prefix(box-shadow, 0 0 1rem rgba($black, 0.1));
+    @include prefix(box-shadow, 0 0.25rem 1rem rgba($bluedark, 0.1));
     @include prefix(border-radius, 0.25rem);
   }
   .card__title {
@@ -76,7 +76,7 @@
     width: 100%;
   }
   &--related {
-    box-shadow: 0 0.125rem 0.25rem rgba($black, 0.1);
+    // box-shadow: 0 0.125rem 0.25rem rgba($black, 0.1);
     
     figure {
       position: relative;

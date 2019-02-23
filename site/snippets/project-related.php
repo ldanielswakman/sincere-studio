@@ -9,7 +9,7 @@
   <div class="card-container owl-carousel u-mt1">
     <? foreach ($related_pages as $project) : ?>
 
-      <a href="<?php echo $project->url() ?>" class="card card--related">
+      <a href="<?php echo $project->url() ?>" class="card card--shadow card--related">
         <? if($image = $project->featuredimage()->toFile()) : ?>
           <figure>
             <img src="<?= $image->thumb(['width' => 800])->url() ?>" alt="">
