@@ -12,7 +12,7 @@
       $bg = 'style="padding-top: 15vh; padding-bottom: 15vh; ';
 
       if ($section->bg_image()->isNotEmpty() && $bgLocation == 'full') :
-        $image = $page->image($section->bg_image());
+        $image = $section->bg_image()->toFile();
         $image_url = $image->url();
         $ratio = $image->dimensions()->height() / $image->dimensions()->width() * 100;
         $bg .= 'min-height: ';
@@ -33,7 +33,7 @@
 
         <div class="row">
 
-          <? if($section->num_cols()->isNotEmpty() && $section->num_cols() == '1') : ?>  
+          <? if($section->num_cols() == '1' || $section->num_cols() == 'false') : ?>  
             <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 u-pv40">
               <?= $section->col_1()->kirbytext() ?>
               <?= $section->col_2()->kirbytext() ?>

@@ -1,0 +1,109 @@
+Title: LuxFox
+
+----
+
+Sections: 
+
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: '#B22346'
+  bg_image:
+    - sign-mockup.jpg
+  bg_image_pos: full
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - app-montage.jpg
+  bg_image_pos: full
+- 
+  num_cols: 'false'
+  classes: u-pb0
+  col_1: ""
+  col_2: '(image: luxfox-logo.png width: 480 class: u-aligncenter)'
+  bg_colour: '#fff'
+  bg_image: [ ]
+  bg_image_pos: full
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: |
+    LuxFox is a new Berlin-based brand that aims to radically change the way people can use beauty and wellness services in their daily life.
+    
+    The idea is that anyone can order a private treatment at home, with verified experts visiting the clients.
+  col_2: "I was approached to design the brand as well as a multi-platform service experience. This meant a multi-phase project where we first created the brand's visual design based on the company values and target market, then set out to design the website, which then gave way to designing the mobile apps for both iOS and Android."
+  bg_colour: '#ffffff'
+  bg_image: [ ]
+  bg_image_pos: full
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ffffff
+  bg_image:
+    - website-homepage.png
+  bg_image_pos: full
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - device-mockup-mobile.jpg
+  bg_image_pos: full
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - device-mockup-imac.jpg
+  bg_image_pos: full
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - stamp-mockup.jpg
+  bg_image_pos: full
+
+----
+
+Year: 2018-
+
+----
+
+Description: Comfortable elegance for a new beauty service brand
+
+----
+
+Tags: branding, web-design, ux, ui
+
+----
+
+Projecturl: https://www.lux-fox.com/
+
+----
+
+Featured: true
+
+----
+
+Featuredimage: 
+
+- app-montage-cropped.jpg
+
+----
+
+Featuredcolour: 

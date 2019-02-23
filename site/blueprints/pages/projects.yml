@@ -6,15 +6,15 @@ pages:
 files: false
 
 sections:
-  text:
-    type: fields
-    fields:
-      title:
-        label: Title
-        type:  text
-      text:
-        label: Text
-        type:  textarea
+
+  draft:
+    headline: Draft projects
+    type: pages
+    layout: cards
+    status: draft
+    create: project
+    template: project
+
   featured:
     headline: Featured projects
     type: pages
@@ -27,3 +27,13 @@ sections:
     type: pages
     layout: cards
     status: unlisted
+
+  text:
+    type: fields
+    fields:
+      title:
+        label: Title
+        type:  text
+      text:
+        label: Text
+        type:  textarea

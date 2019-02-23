@@ -4,7 +4,7 @@
 
     <?
     $projects = $page->children()->sortBy('year', 'desc');
-    $pr_featured = $projects->filterBy('featured', '1');
+    $pr_featured = $projects->filterBy('featured', 'in', ['1', 'true']);
     $subtitle = 'selected';
 
     if($page->slug() == 'architecture') {

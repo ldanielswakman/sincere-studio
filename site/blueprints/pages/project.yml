@@ -18,11 +18,12 @@ columns:
               bg_image:
             fields:
               num_cols:
+                label: Columns
                 type: toggle
                 width: 1/2
-                options:
-                  1: "1 column"
-                  2: "2 columns"
+                text:
+                  - "1 column"
+                  - "2 columns"
                 show:
                   2: col_2
                 hide:
@@ -73,7 +74,12 @@ columns:
             icon: font
           tags:
             label: Tags
-            type:  tags
+            type: tags
+            options: query
+            query: 
+              fetch: site.find('projects').children.pluck("tags", ",", true)
+              text: "{{ arrayItem.value }}"
+              value: "{{ arrayItem.value.slug }}"
           projecturl:
             label: Project URL
             type:  url
@@ -88,10 +94,6 @@ columns:
             options:
               0: "No"
               1: "Yes"
-            show:
-              1: featuredcolour
-            hide:
-              0: featuredcolour
           featuredimage:
             label: Featured Image
             type: files
@@ -102,3 +104,7 @@ columns:
             type: text
             icon: magic
             width: 1/2
+
+      files:
+        label: Files
+        type: files

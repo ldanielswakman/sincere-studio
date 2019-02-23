@@ -1,13 +1,26 @@
 title: Site
 
-sections:
-  listed:
-    headline: Menu Pages
-    type: pages
-    layout: list
-    status: listed
-  unlisted:
-    headline: Other Pages
-    type: pages
-    layout: list
-    status: unlisted
+columns:
+	- width: 1/1
+		sections:
+			projects:
+				headline: Projects
+				type: pages
+				layout: cards
+				parent: site.find('projects')
+				template: project
+
+	- width: 1/2
+		sections:
+			listed:
+				headline: Menu Pages
+				type: pages
+				layout: list
+				status: listed
+	- width: 1/2
+		sections:
+			unlisted:
+				headline: Other Pages
+				type: pages
+				layout: list
+				status: unlisted
