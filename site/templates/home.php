@@ -7,8 +7,8 @@
 
       <?
       $bg_style = 'background-color: ' . $section->bg_color() . ';';
-      if($section->bg_image()->isNotEmpty()) { 
-        $bg_style .= " background-image: url('" . $page->image($section->bg_image())->url() . "');"; 
+      if($image = $section->bg_image()->toFile()) { 
+        $bg_style .= " background-image: url('" . $image->url() . "');"; 
       }
       ?>
       <div class="section__bg-image" style="<?= $bg_style ?>"></div>

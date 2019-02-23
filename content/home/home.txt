@@ -5,9 +5,6 @@ Title: Digital Designer
 Current: 
 
 - 
-  text: Sharpist
-  link: https://www.sharpist.org/
-- 
   text: LuxFox
   link: https://www.lux-fox.com/
 - 
@@ -17,44 +14,42 @@ Current:
   text: Pheme
   link: https://pheme.app/
 - 
-  text: radi.cards
-  link: https://radi.cards/
-
-----
-
-Intro-bg-image: devices-subtle.jpg
-
-----
-
-Intro-bg-color: #f7f7f9
+  text: GPD
+  link: http://germanpressdays.de/
+- 
+  text: Maschinenraum
+  link: https://maschinenraum.io/
 
 ----
 
 Sections: 
 
 - 
+  title: Top
   type: text
-  bg_image: galaxy.svg
-  bg_color: ""
-  text: '> **Hoi!**<br>ldaniel.eu is an independent design studio, designing + building the web for today and tomorrow.'
   classes: >
     section--homeintro u-pt25vh u-pb10vh
     bg-bluedark
+  bg_image:
+    - galaxy.svg
+  bg_color: ""
+  text: '> **Hoi!**<br>ldaniel.eu is an independent design studio, designing + building the web for today and tomorrow.'
+  number_of_slides: null
   section_type: text
-  number_of_slides: ""
-  title: ""
 - 
+  title: Recent work
   type: recent_work
   classes: bg-white u-pv5vh
-  bg_image: ""
+  bg_image: [ ]
   bg_color: ""
   text: ""
-  number_of_slides: "5"
-  title: Recent work
+  number_of_slides: 5
 - 
+  title: Read on
   type: text
   classes: section--bg u-minheight40vh u-pv15vh
-  bg_image: well-what-did-you-expect.jpg
+  bg_image:
+    - well-what-did-you-expect.jpg
   bg_color: '#ececec'
   text: |
     <div class="line"></div>
@@ -64,28 +59,29 @@ Sections:
     <div id="ldaniel_location" data-url="api?loc=1" class="u-mt1" style="line-height: 2rem;"><small><em>getting location...</em></small></div>
     
     <div class="u-mt2"> (link: about class: button button--dark u-mr1 text: read more) (link: cv class: button button--dark button--outline text: cv) </div>
-  number_of_slides: ""
-  title: Read on
+  number_of_slides: null
 - 
+  title: Stream of words
   type: stream_of_words
   classes: u-pv5vh section--collapsed
-  bg_image: ""
+  bg_image: [ ]
   bg_color: ""
   text: ""
-  number_of_slides: "5"
-  title: Stream of words
+  number_of_slides: 5
 - 
+  title: Stream of images
   type: stream_of_images
   classes: bg-white u-pv5vh section--collapsed
-  bg_image: ""
+  bg_image: [ ]
   bg_color: ""
   text: ""
-  number_of_slides: "5"
-  title: Stream of images
+  number_of_slides: 5
 - 
+  title: Collaborate
   type: text
   classes: section--bg2 bg-bluedull u-pv10vh
-  bg_image: sitting-w-habita.jpg
+  bg_image:
+    - sitting-w-habita.jpg
   bg_color: ""
   text: |
     <div class="line"></div>
@@ -97,5 +93,12 @@ Sections:
     <div class="u-mv2">
     <a href="javascript:openContactForm()" class="button u-mb1">Say hello</a>
     </div>
-  number_of_slides: ""
-  title: Collaborate
+  number_of_slides: null
+
+----
+
+Intro-bg-image: devices-subtle.jpg
+
+----
+
+Intro-bg-color: #f7f7f9

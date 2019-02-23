@@ -20,18 +20,25 @@ fields:
 
   sections:
     type: structure
-    entry: >
-      <div style="background-color: {{bg_color}}; background-image: url('../../../home/{{bg_image}}'); background-size: cover; background-position: center center; margin: -1rem -1.5rem; padding: 1rem 1.5rem;">
-        <strong>{{title}}</strong> <span style="opacity: 0.5;">({{type}} section)</span><br>
-        <div style="margin: 1rem 0;">
-          {{text}}
-          {{number_of_slides}}
-        </div>
-      </div>
+    columns:
+      bg_image:
+        width: 1/4
+      title:
+        width: 1/4
+      text:
+        width: 1/2
     fields:
 
+      title:
+        label: >
+          Title (only used for ID)
+        type: text
+        width: 1/2
+        required: false
+
       type:
-        type: toggle
+        type: select
+        width: 1/4
         default: text
         options:
           text: "Text section"
@@ -49,26 +56,20 @@ fields:
           stream_of_words: text
           stream_of_images: text
 
-      title:
-        label: >
-          Title <span style="color: #999;">(only used for ID)</span>
-        type: text
-        width: 1/2
-        required: false
-
       classes:
         label: Classes
         type: text
-        width: 1/2
+        width: 1/4
 
       bg_image:
         label: BG Image
-        type: image
+        type: files
+        multiple: false
         width: 1/2
 
       bg_color:
         label: >
-          BG Colour <small style="font-weight: normal; color: #999;">(with #)</small>
+          BG Colour (with #)
         type: text
         icon: eyedropper
         width: 1/2
