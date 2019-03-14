@@ -13,10 +13,7 @@ $json['projects'] = array();
 // build array result data
 foreach($data as $project) {
 
-  $featuredimage = '';
-  if($image = $project->featuredimage()) {
-    $featuredimage = $project->image($image)->url();
-  }
+  $featuredimage = ($image = $project->featuredimage()->toFile()) ? $image->url() : '';
 
   $json['projects'][] = array(
     'url'   => (string)$project->url(),
