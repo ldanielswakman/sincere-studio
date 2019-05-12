@@ -1,0 +1,43 @@
+Title: Side Projects
+
+----
+
+Text: 
+
+(new-section: bg-white c-grey)
+
+<br />
+(image: pheme-product-banner.jpg)
+
+## Pheme
+<span class="u-op50">2018-ongoing &nbsp;&nbsp;|&nbsp;&nbsp; role in 3: cofounder & designer</span>
+Pheme is a decentralised publishing platform, built on blockchain and peer-to-peer web technologies. No central authority. No data collecting. No targeted ads. Yes freedom of expression.
+<a href="https://pheme.app/" target="_blank">See the project live &#8599;</a>
+<br/><br/>
+
+(image: coworking-project-banner.jpg)
+
+## Cowork Berlin/Coworking Istanbul
+<span class="u-op50">2017-ongoing &nbsp;&nbsp;|&nbsp;&nbsp; role: initiator, designer, developer</span>
+Cowork Berlin/Coworking Istanbul is the fastest way to finding quality coworking spaces around you.
+<a href="https://coworkberlin.com/" target="_blank">See the project live &#8599;</a>
+<br/><br/>
+
+(image: muhit-product-banner.jpg)
+
+## Muhit
+<span class="u-op50">2015-2018 &nbsp;&nbsp;|&nbsp;&nbsp; role (team of 8): cofounder, product lead & designer</span>
+Muhit is an online platform allowing citizens and municipalities to collaboratively improve their living environment. Operating in Turkey, Muhit facilitated collaborative mapping to surface problems and opportunities in urban neighbourhoods, and actively engaging municipalities in taking action. Currently not actively maintained.
+<a href="https://muhit.co/" target="_blank">See the project live &#8599;</a>
+
+(new-section: bg-greylighter u-pv10vh)
+
+### Creative outlet
+One of the best opportunities we have when working on digital projects, is that the road from imagination to realisation can be wonderfully short. This means that any good idea can be mocked up, prototyped and launched to a wider audience with minimum effort. My side projects focus on making this world a more transparent, liveable and equal place.
+<br /><br />
+
+### Support?
+The projects below are some of these projects that I initiated, co-initiated, or spent time on over the past years. If you want to support any of the projects, or support the developoment of new projects in the future, you can do so by buying me a coffee:
+<style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#000000 !important;background-color:#FFDD00 !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0.5rem auto 0 !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#000000 !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/ldanielswakman"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>
+
+<br /><br />

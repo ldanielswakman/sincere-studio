@@ -14,11 +14,8 @@ Current:
   text: Pheme
   link: https://pheme.app/
 - 
-  text: GPD
-  link: http://germanpressdays.de/
-- 
-  text: Maschinenraum
-  link: https://maschinenraum.io/
+  text: the new Poltio
+  link: https://poltio.com
 
 ----
 
