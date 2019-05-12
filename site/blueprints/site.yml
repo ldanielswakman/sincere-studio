@@ -24,3 +24,13 @@ columns:
 				type: pages
 				layout: list
 				status: unlisted
+			draft:
+				headline: Draft Pages
+				type: pages
+				layout: list
+				status: draft
+				create: 
+					- default
+					- projects
+					- cv
+					- articles
