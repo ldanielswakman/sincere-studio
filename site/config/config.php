@@ -20,6 +20,8 @@ c::set('thumbs.presets', [
   'default' => ['quality' => 100]
 ]);
 
+c::set('cache.ignore', ['cors']);
+
 /*
 ---------------------------------------
 Routes
@@ -96,6 +98,33 @@ c::set('routes', [
     'pattern' => 'contact',
     'action'  => function() {
       return ['home', ['contact_active' => true]];
+    }
+  ],
+  [
+    'pattern' => 'cors',
+    'action' => function () {
+      // provide server-side CORS request path
+
+      $url = get('url');
+
+      if(strlen($url) > 0) {
+
+        // Set Access Control Header
+        // header("Access-Control-Allow-Origin: *");
+
+        // Make request
+        $json = file_get_contents($url);
+        $data = json_decode($json, true);
+
+        // Return response
+        $json = ['status' => ['code' => 200, 'message' => 'OK'], 'response' => $data];
+        
+      } else {
+        $json = ['status' => ['code' => 400, 'message' => 'No URL parameter found']];
+      }
+
+      return response::json($json);
+
     }
   ],
 ]);
