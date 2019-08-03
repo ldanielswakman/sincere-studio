@@ -5,6 +5,15 @@ Title: Digital Designer
 Current: 
 
 - 
+  text: Fractal
+  link: https://trustfractal.com
+- 
+  text: the new Poltio
+  link: https://poltio.com
+- 
+  text: license.rocks
+  link: https://license.rocks
+- 
   text: LuxFox
   link: https://www.lux-fox.com/
 - 
@@ -13,9 +22,6 @@ Current:
 - 
   text: Pheme
   link: https://pheme.app/
-- 
-  text: the new Poltio
-  link: https://poltio.com
 
 ----
 
