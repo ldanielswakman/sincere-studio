@@ -1865,6 +1865,10 @@ nav {
         @media screen and (min-width: 480px) {
           nav .menu-grey a.a--twitter {
             display: block; } }
+        nav .menu-grey a.a--twitter svg path {
+          fill: #ccccd4; }
+        nav .menu-grey a.a--twitter:hover svg path {
+          fill: #00f; }
 
 section {
   position: relative;

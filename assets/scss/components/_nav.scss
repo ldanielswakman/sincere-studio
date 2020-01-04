@@ -56,6 +56,11 @@ nav {
         @media screen and (min-width: $vp_phone) {
           display: block;
         }
+
+        svg path {
+          fill: $greylight;
+        }
+        &:hover svg path { fill: $blue; }
       }
     }
   }

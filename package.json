@@ -29,6 +29,7 @@
   },
   "private": true,
   "dependencies": {
+    "browser-sync": "^2.26.7",
     "npm": "^6.4.1"
   }
 }

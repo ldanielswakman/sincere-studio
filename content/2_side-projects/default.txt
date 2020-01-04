@@ -7,6 +7,14 @@ Text:
 (new-section: bg-white c-grey)
 
 <br />
+(image: designers-circle.jpg)
+
+## Designers Circle
+<span class="u-op50">2017-ongoing &nbsp;&nbsp;|&nbsp;&nbsp; role: cofounder, organiser</span>
+Together with other community members, I set up a weekly designers meetup, aimed at continuous exchange, advice and collaboration; there are multiple hundreds of designers in the channel. Aside from organising the weekly meetup, this involves projects like events, and a yearly zine publication. This initiative is part of (link: https://factoryberlin.com/ text:Factory Berlin target:blank), a community hub aimed at bringing together freelancers, startups and corporate businesses.
+<a href="https://www.instagram.com/designerscircleberlin/" target="_blank">Designers Circle on Instagram &#8599;</a>
+<br/><br/>
+
 (image: pheme-product-banner.jpg)
 
 ## Pheme
