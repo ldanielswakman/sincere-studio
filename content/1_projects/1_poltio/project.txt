@@ -1,0 +1,74 @@
+Title: Poltio
+
+----
+
+Sections: 
+
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - project-logo-image.jpg
+  bg_image_pos: full
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - project-homepage.jpg
+  bg_image_pos: full
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: |
+    <video autoplay loop playsinline muted style="max-width: 100%;">
+    <source src="https://ldaniel.eu/media/pages/projects/poltio/1244963251-1570636867/02-vote-user-angled.mp4" type="video/mp4" />
+    </video>
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - 02-vote-user-angled.mp4
+  bg_image_pos: right
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: '<div class="u-aligncenter" markdown="1">(Project recently finished; more detailed case study follows soon)</div>'
+  col_2: ""
+  bg_colour: ""
+  bg_image: [ ]
+  bg_image_pos: full
+
+----
+
+Year: 2019
+
+----
+
+Description: re-imagined visual language for an audience engagement tool
+
+----
+
+Tags: branding, visual-design, ux, ui, front-end
+
+----
+
+Projecturl: https://www.poltio.com
+
+----
+
+Featured: true
+
+----
+
+Featuredimage: 
+
+- project-cover-image.jpg
+
+----
+
+Featuredcolour: 009EEC

@@ -5,31 +5,28 @@ Title: Digital Designer
 Current: 
 
 - 
-  text: Fractal
-  link: https://trustfractal.com
+  text: Pitchtape
+  link: https://www.pitchtape.com/
 - 
-  text: the new Poltio
-  link: https://poltio.com
+  text: Inflight VR
+  link: https://inflight-vr.com
+- 
+  text: Diagnose Berlin
+  link: https://www.diagnose-berlin.de/
 - 
   text: license.rocks
   link: https://license.rocks
 - 
   text: LuxFox
   link: https://www.lux-fox.com/
-- 
-  text: Paraşüt
-  link: https://www.parasut.com/
-- 
-  text: Pheme
-  link: https://pheme.app/
 
 ----
 
 Recent: 
 
+- projects/poltio
 - projects/luxfox
 - projects/berlin-by-food
-- projects/harvest
 
 ----
 
@@ -99,7 +96,7 @@ Sections:
     
     > Collaborate?
     
-    I'm currently not available for work, until March 2019. But I'm always excited to hear new projects, and see how we can collaborate in them. So feel free to drop me a line anyway — who knows:
+    I currently have limited availability for new projects until the end of 2019. But I'm always excited to hear new projects, and see how we can collaborate in them. So feel free to drop me a line:
     
     <div class="u-mv2">
     <a href="javascript:openContactForm()" class="button u-mb1">Say hello</a>
