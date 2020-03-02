@@ -1938,3 +1938,11 @@ section {
   width: calc(100% + 3rem);
   margin-left: -1.5rem;
   margin-right: -1.5rem; }
+
+.section--bg-bottom-right {
+  background-size: 80vw;
+  background-position: bottom right; }
+  @media screen and (min-width: 768px) {
+    .section--bg-bottom-right {
+      background-size: 80vw;
+      background-position: bottom right; } }
