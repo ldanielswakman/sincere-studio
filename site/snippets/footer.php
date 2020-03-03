@@ -15,7 +15,7 @@
 
 
           <h4 class="u-mb025 u-op50">Latest Projects</h4>
-          <? foreach($site->find('projects')->children()->visible()->sortBy('year', 'desc')->limit(3) as $p) : ?>
+          <? foreach($site->find('projects')->children()->listed()->sortBy('year', 'desc')->limit(3) as $p) : ?>
             <a href="<?= $p->url() ?>"><?= $p->title() ?></a><br>
           <? endforeach ?>
 
@@ -23,7 +23,7 @@
         <div class="col-xs-6 col-md-4 u-pr2">
 
           <h4 class="u-mb025 u-op50">Latest articles</h4>
-          <? foreach($site->find('articles')->children()->visible()->sortBy('year', 'desc')->limit(3) as $p) : ?>
+          <? foreach($site->find('articles')->children()->listed()->sortBy('year', 'desc')->limit(3) as $p) : ?>
             <a href="<?= $p->url() ?>"><?= $p->title() ?></a><br>
           <? endforeach ?>
 

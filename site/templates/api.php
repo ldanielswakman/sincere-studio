@@ -4,7 +4,7 @@
 
 header('Content-type: application/json; charset=utf-8');
 
-$data = $pages->find('projects')->children()->visible();
+$data = $pages->find('projects')->children()->listed();
 
 // build array basics
 $json = array();

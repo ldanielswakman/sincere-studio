@@ -2,7 +2,7 @@
 
 return function ($site, $pages, $page) {
 
-  $other_projects = $site->find('projects')->children()->not($page)->not($page->nextVisible());
+  $other_projects = $site->find('projects')->children()->not($page)->not($page->nextListed());
   $project_tags = $page->tags()->split(',');
 
   // Rank pages by amount of matching tags

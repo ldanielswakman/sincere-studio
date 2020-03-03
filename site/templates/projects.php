@@ -86,9 +86,9 @@
             <? endif ?>
           </div>
           <div class="col-xs-8 col-sm-7 u-mb05">
-              <a href="<?= $project->url() ?>" class="u-block <? e($project->isVisible(), 'c-white', 'c-grey') ?>" style="line-height: 1rem; margin-bottom: 0.75rem;">
+              <a href="<?= $project->url() ?>" class="u-block <? e($project->isListed(), 'c-white', 'c-grey') ?>" style="line-height: 1rem; margin-bottom: 0.75rem;">
                 <?= $project->title() ?><br>
-                <small style="color: rgba(255, 255, 255, <? e($project->isVisible(), '0.5', '0.25') ?>);"><?= $project->description() ?></small>
+                <small style="color: rgba(255, 255, 255, <? e($project->isListed(), '0.5', '0.25') ?>);"><?= $project->description() ?></small>
               </a>
           </div>
         </div>

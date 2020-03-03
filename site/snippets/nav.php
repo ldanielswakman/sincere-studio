@@ -3,11 +3,11 @@
   <?
   // check if one of menu pages is active
   $hasActive = false;
-  foreach($pages->visible() as $p) { if($p->isOpen()) { $hasActive = true; break; } }
+  foreach($pages->listed() as $p) { if($p->isOpen()) { $hasActive = true; break; } }
   ?>
 
   <ul<?= e($hasActive, ' class="hasActive"') ?>>
-    <? foreach($pages->visible() as $p): ?>
+    <? foreach($pages->listed() as $p): ?>
     <li><a <? e($p->isOpen(), ' class="isActive"') ?> href="<?= $p->url() ?>"><?= strtolower($p->title()->html()) ?></a></li>
     <? endforeach ?>
   </ul>

@@ -1,4 +1,4 @@
-<? $related_pages = (isset($related_pages) && $related_pages->count() > 1) ? $related_pages : $site->find('projects')->children()->not($page)->not($page->nextVisible())->shuffle()->limit(3) ?>
+<? $related_pages = (isset($related_pages) && $related_pages->count() > 1) ? $related_pages : $site->find('projects')->children()->not($page)->not($page->nextListed())->shuffle()->limit(3) ?>
 
 <section class="bg-greylighter u-pv2">
   <div>
@@ -26,7 +26,7 @@
           <div class="col-md-4">
             <i class="ion ion-ios-arrow-thin-left ion-2x u-floatleft u-mr10"></i>
             <span class="u-inlineblock u-floatleft u-pt5">
-              <? if($next = $page->nextVisible()) { echo 'or, '; } ?>
+              <? if($next = $page->nextListed()) { echo 'or, '; } ?>
               get back to work
             </span>
           </div>

@@ -101,7 +101,7 @@
 
 
     <?
-    if($next = $page->nextVisible()):
+    if($next = $page->nextListed()):
     ?>
     <a href="<?= $next->url() ?>">
       <section class="bg-blue u-pv2">

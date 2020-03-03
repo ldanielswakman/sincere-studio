@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-7 col-md-offset-1 u-pv10vh">
 
-        <? foreach ($page->children()->visible()->flip() as $article) : ?>
+        <? foreach ($page->children()->listed()->flip() as $article) : ?>
           <div class="line" style="margin-left: 2rem;"></div>
 
           <a href="<?= $article->url() ?>" class="list__article">
