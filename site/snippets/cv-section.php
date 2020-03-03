@@ -9,8 +9,8 @@
 
     <a href="<? e($item->url()->isNotEmpty(), $item->url(), 'javascript:void(0)') ?>" class="card card--words" style="padding-top: 1rem;"<? e(strpos($item->url()->value(), 'http') !== false, ' target="_blank"','') ?>>
 
-      <? if($image = $page->image($item->img())): ?>
-        <img src="<?= $image->thumb(['height'  => 40])->url() ?>" alt="<?= $item->title() ?>" style="width: auto; margin: 0.25rem 0.25rem;" />
+      <? if($image = $item->img()->toFile()): ?>
+        <img src="<?= $image->resize(null, 40)->url() ?>" alt="<?= $item->title() ?>" style="width: auto; margin: 0.25rem 0.25rem;" />
       <? endif ?>
 
       <p style="font-size: 1rem;"><?= $item->period() ?></p>

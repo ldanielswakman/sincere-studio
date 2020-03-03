@@ -1,39 +1,59 @@
 title: CV
 pages: false
 files: true
-fields:
-  title:
-    label: Title
-    type:  text
 
-  work_xp:
-    extends: cv-section
-    label: Work Experience
+tabs:
+  general:
+    label: Content
+    icon: page
+    fields:
 
-  education:
-    extends: cv-section
-    label: Education
+      work_xp:
+        extends: fields/cv-section
+        label: Work Experience
 
-  personal:
-    extends: cv-section
-    label: Personal
+      cv_graph:
+        label: CV cv_graph
+        type: files
+        multiple: false
+        layout: cards
+        image:
+          ratio: 10/1
+          back: white
 
-  languages:
-    extends: cv-section
-    label: Languages
+      education:
+        extends: fields/cv-section
+        label: Education
 
-  skills:
-    extends: cv-section
-    label: Skills
+      personal:
+        extends: fields/cv-section
+        label: Personal
 
-  interests:
-    extends: cv-section
-    label: Interests
+      languages:
+        extends: fields/cv-section
+        label: Languages
 
-  preferences:
-    extends: cv-section
-    label: Preferences
+      skills:
+        extends: fields/cv-section
+        label: Skills
 
-  text:
-    label: Text
-    type:  textarea
+      interests:
+        extends: fields/cv-section
+        label: Interests
+
+      preferences:
+        extends: fields/cv-section
+        label: Preferences
+
+      text:
+        label: Text
+        type:  textarea
+        width: 1/2
+
+      pdf_file:
+        label: PDF File
+        type:  files
+        multiple: false
+        width: 1/2
+  
+  files: tabs/files

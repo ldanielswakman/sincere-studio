@@ -1,0 +1,10 @@
+label: Files
+icon: image
+sections:
+  uploaded_files:
+    headline: Files uploaded to this page
+    type: files
+    layout: cards
+    size: tiny
+    info: >
+      <small>{{ file.dimensions }} ({{ file.niceSize }})</small>

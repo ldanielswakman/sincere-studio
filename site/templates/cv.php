@@ -4,8 +4,8 @@
 
     <?
     $header_options = ['page' => $page, 'subtitle' => 'work experience'];
-    if ($page->hasDocuments()) :
-      $header_options['link_url'] = $page->documents()->filterBy('extension', 'pdf')->first()->url();
+    if ($pdf = $page->pdf_file()->toFile()) :
+      $header_options['link_url'] = $pdf->url();
       $header_options['link_text'] = 'pdf';
     endif;
     snippet('page-header', $header_options);
@@ -17,9 +17,11 @@
 
           <? snippet('cv-section', ['section' => $page->work_xp()]) ?>
 
-          <figure class="u-mt2">
-            <img src="<?= url('assets/images/cv-graph.png') ?>" alt="" />
-          </figure>
+          <? if($graph = $page->cv_graph()->toFile()): ?>
+            <figure class="u-mt2">
+              <img src="<?= $graph->url() ?>" alt="<?= $page->title() ?>" />
+            </figure>
+          <? endif ?>
 
           <? snippet('cv-section', ['title' => 'education', 'section' => $page->education()]) ?>
 

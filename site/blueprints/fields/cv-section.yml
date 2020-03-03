@@ -3,13 +3,14 @@ type: structure
 style: table
 fields:
   period:
-    label: Period
+    label: Pre-title
     type: text
     width: 1/2
   img:
     label: Image
-    type:  image
+    type:  files
     width: 1/2
+    multiple: false
   title:
     label: Title
     type:  text
@@ -21,3 +22,13 @@ fields:
     label: URL (if any)
     type: text
     icon: link
+
+columns:
+  img:
+    width: 1/16
+  period:
+    width: 2/16
+  title:
+    width: 5/16
+  text:
+    width: 8/16
