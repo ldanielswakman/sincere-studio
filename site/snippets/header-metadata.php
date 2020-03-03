@@ -38,7 +38,7 @@ if($page->featuredimage()->isNotEmpty()) {
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@ldanielswakman">
-<meta name="twitter:title" content="L Daniel Swakman">
+<meta name="twitter:title" content="<?= $title ?>">
 <meta name="twitter:description" content="<?= $descr ?>">
 <meta name="twitter:image" content="<?= $image_url ?>">
 
