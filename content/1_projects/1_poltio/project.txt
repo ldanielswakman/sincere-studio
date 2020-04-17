@@ -2,7 +2,7 @@ Title: Poltio
 
 ----
 
-Sections: 
+Sections:
 
 - 
   num_cols: 'false'
@@ -27,12 +27,15 @@ Sections:
   classes: ""
   col_1: |
     <video autoplay loop playsinline muted style="max-width: 100%;">
-    <source src="https://ldaniel.eu/media/pages/projects/poltio/1244963251-1570636867/02-vote-user-angled.mp4" type="video/mp4" />
+    <source src="https://ldaniel.eu/media/pages/projects/poltio/3955006866-1583406325/create-content-animation.mp4" type="video/mp4" />
+    </video>
+    
+    <video autoplay loop playsinline muted style="max-width: 100%;">
+    <source src="https://ldaniel.eu/media/pages/projects/poltio/350905899-1583406336/vote-user-animation.mp4" type="video/mp4" />
     </video>
   col_2: ""
-  bg_colour: ""
-  bg_image:
-    - 02-vote-user-angled.mp4
+  bg_colour: fff
+  bg_image: [ ]
   bg_image_pos: right
 - 
   num_cols: 'false'
@@ -65,7 +68,7 @@ Featured: true
 
 ----
 
-Featuredimage: 
+Featuredimage:
 
 - project-cover-image.jpg
 

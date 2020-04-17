@@ -2,15 +2,12 @@ Title: CV
 
 ----
 
-Text: 
-
-----
-
-Work-xp: 
+Work-xp:
 
 - 
   period: 2017-current
-  img: logo.png
+  img:
+    - logo.png
   title: ldaniel.eu
   text: >
     Independent ‘full stack’ designer
@@ -19,19 +16,23 @@ Work-xp:
     clients/agencies
   url: https://ldaniel.eu/
 - 
+  period: 2015-current
+  img:
+    - muhit-logo-on-white.png
   title: Muhit (co-founder)
   text: 'non-profit platform for urban improvement, design, product & business development'
   url: projects/muhit
-  period: 2015-current
-  img: muhit-logo-on-white.png
 - 
+  period: 2014-current
+  img:
+    - parasut-logo.png
   title: Paraşüt
   text: 'Pre-accounting for SME’s web application; graphic & web designer, UI/ UX design, front-end (html/css)'
   url: http://www.parasut.com/
-  period: 2014-current
-  img: parasut-logo.png
 - 
   period: 2012-2015
+  img:
+    - oefenweb-logo.png
   title: Oefenweb.nl
   text: |
     e-learning gaming applications;
@@ -39,35 +40,45 @@ Work-xp:
     UX design, front-end (html/css),
     gamification
   url: http://www.oefenweb.nl
-  img: oefenweb-logo.png
 - 
   period: 2008-2016
+  img:
+    - ldaniel-logo.png
   title: ldaniel.eu
   text: 'freelance graphic & web designer, branding & identity, front-end design, visualisations'
   url: http://ldaniel.eu/
-  img: ldaniel-logo.png
 - 
   period: 2011-2012
+  img: [ ]
   title: Güller Güller architecture urbanism
   text: 'architecture & urban design'
   url: http://www.ggau.net
 - 
   period: 2007-2011
+  img: [ ]
   title: Delft University of Technology
   text: 'student assistant education, tutoring & book research'
   url: ""
 - 
   period: "2007"
+  img: [ ]
   title: Paul de Ruiter Architects
   text: architectural design internship
   url: http://www.paulderuiter.nl/
 
 ----
 
-Education: 
+Cv-graph:
+
+- cv-graph.png
+
+----
+
+Education:
 
 - 
   period: "2015"
+  img: [ ]
   title: Graphic Design Summer School
   text: >
     Central Saint Martin’s –University
@@ -75,6 +86,7 @@ Education:
   url: ""
 - 
   period: "2014"
+  img: [ ]
   title: Gamification Certificate
   text: >
     Online course by University of
@@ -82,6 +94,7 @@ Education:
   url: ""
 - 
   period: 2007-2011
+  img: [ ]
   title: >
     Dual Master’s Degree in Architecture
     and Urbanism
@@ -93,91 +106,100 @@ Education:
     architecture/i-solemnly-pledge-to-public-space
 - 
   period: "2008"
+  img: [ ]
   title: 'Study Abroad - Architecture'
   text: South Bank University, London, UK
   url: ""
 - 
   period: 2004-2007
+  img: [ ]
   title: Bachelor’s Degree
   text: Faculty of Architecture, TU Delft
   url: ""
 - 
   period: 1998-2004
+  img: [ ]
   title: VWO diploma (gymnasium)
   text: Vossius Gymnasium, Amsterdam
   url: ""
 
 ----
 
-Personal: 
+Personal:
 
 - 
   period: name
+  img: [ ]
   title: L Daniel Swakman
   text: ""
   url: ""
 - 
   period: date of birth
+  img: [ ]
   title: 6 October 1986
   text: ""
   url: ""
 - 
   period: place of birth
+  img: [ ]
   title: Amsterdam, NL
   text: ""
   url: ""
 - 
   period: location
+  img: [ ]
   title: Berlin, DE
   text: ""
   url: ""
 - 
   period: nationality
+  img: [ ]
   title: Dutch
   text: ""
   url: ""
 
 ----
 
-Languages: 
+Languages:
 
 - 
   period: ""
+  img: [ ]
   title: English 🇬🇧
   text: fluent
   url: ""
-  img: ""
 - 
   period: ""
+  img: [ ]
   title: Dutch 🇳🇱
   text: fluent, native
   url: ""
-  img: ""
 - 
   period: ""
+  img: [ ]
   title: Turkish 🇹🇷
   text: good
   url: ""
-  img: ""
 - 
   period: ""
+  img: [ ]
   title: German 🇩🇪
   text: good
   url: ""
-  img: ""
 - 
   period: ""
+  img: [ ]
   title: French 🇫🇷
   text: acceptable
   url: ""
-  img: ""
 
 ----
 
-Skills: 
+Skills:
 
 - 
   period: visual
+  img: [ ]
   title: ""
   text: >
     Sketch, Adobe Illustrator, Photoshop,
@@ -186,6 +208,7 @@ Skills:
   url: ""
 - 
   period: code
+  img: [ ]
   title: ""
   text: >
     HTML(5), CSS(3), LESS/SASS, Javascript/
@@ -194,6 +217,7 @@ Skills:
   url: ""
 - 
   period: product
+  img: [ ]
   title: ""
   text: >
     design thinking, brainstorming, brand
@@ -201,6 +225,7 @@ Skills:
   url: ""
 - 
   period: 3D
+  img: [ ]
   title: ""
   text: >
     Rhino, Maya, 3Ds Max, Sketchup,
@@ -208,6 +233,7 @@ Skills:
   url: ""
 - 
   period: CAD
+  img: [ ]
   title: ""
   text: >
     AutoCAD, Autodesk Revit (basic),
@@ -216,10 +242,11 @@ Skills:
 
 ----
 
-Interests: 
+Interests:
 
 - 
   period: design
+  img: [ ]
   title: "Digital design as a responsive, context-sensitive solution that suits user's needs."
   text: >
     The main passion in my work lies in the
@@ -238,56 +265,76 @@ Interests:
   url: ""
 - 
   period: visual vs code
+  img: [ ]
   title: 'Code is the grain and material of the web & app world'
   text: "I believe that working in digital design means an inherent link between visual/interaction design and the code that makes this happen — much like a carpenter's knowledge & control of wood type and behaviour. Design < > code"
   url: ""
 - 
   period: responsive
+  img: [ ]
   title: Orchestration of dynamic elements
   text: "Designing for the web and mobile apps can no longer be seen as an exercise on a fixed canvas where one lays out objects. Instead, it is an orchestration of dynamic elements, that can have different states & behaviours. Responsive design is a key tool in this orchestration — I've never designed a project without it."
   url: ""
 - 
   period: architectural vs graphic
+  img: [ ]
   title: 'Shaping the world we experience & interact with'
   text: 'I believe the values and considerations that are concerned with visual design are just as present in architecture: colour, proportions, materials, tactility, usability, and the continuous process of revision in search for true quality.'
   url: ""
 - 
   period: other
+  img: [ ]
   title: Keep exploring
   text: 'Outside of this design spectrum I occupy myself with social innovation, infographics & visualisation, travelling, coffee and making music.'
   url: ""
 
 ----
 
-Preferences: 
+Preferences:
 
 - 
   period: coffee
+  img: [ ]
   title: Double espresso
   text: ""
   url: ""
 - 
   period: code editor
+  img: [ ]
   title: Sublime Text 3
   text: ""
   url: ""
 - 
   period: workspace
+  img: [ ]
   title: remote / coworking spaces
   text: ""
   url: ""
 - 
   period: design tool
+  img: [ ]
   title: 'pencil > sketch > css'
   text: ""
   url: ""
 - 
   period: backpack
+  img: [ ]
   title: Minaal
   text: ""
   url: ""
 - 
   period: Typeface combination
+  img: [ ]
   title: HK Grotesk / Merriweather
   text: (for now, at least)
   url: ""
+
+----
+
+Text: 
+
+----
+
+Pdf-file:
+
+- ldanielswakman-cv.pdf

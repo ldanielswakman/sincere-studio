@@ -2,7 +2,115 @@ Title: Muhit
 
 ----
 
-Year: 2015
+Sections: 
+
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - hero-banner.jpg
+  bg_image_pos: ""
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: |
+    <div style="width: 90%; max-width: 32rem; margin: 0 auto 3rem;">(image: muhit-street.jpg)</div>
+    
+    <big class="u-block u-mb1">How can we give citizens more opportunity to be involved with the improvement of their city? How can we bring their ideas and knowledge closer to the people tasked with managing it?</big>
+    
+    In the start of 2015, a hackathon weekend was the stage for this theme. Together with a team of developers and urban planners, we brought the idea for creating a web & app platform around this idea to life.
+  col_2: ""
+  bg_colour: '#fff'
+  bg_image: [ ]
+  bg_image_pos: right
+  num_columns: "2"
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: |
+    (image: muhit-system-diagram.png)
+    <div class="u-aligncenter c-greylight u-mt1" style="max-width: 40rem; margin: 0 auto;"><i>Muhit's model: citizens provide ideas, most voted ideas get selected, discussed with local government & solved.</i></div>
+  col_2: ""
+  bg_colour: ""
+  bg_image: [ ]
+  bg_image_pos: ""
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - brand-banner.jpg
+  bg_image_pos: full
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: |
+    ### Come and have a tea
+    
+    In order to evoke the image of participation and interaction, we chose the analogy of what many conversations are centred around in Turkey: having a cup of tea. In our case, specifically sitting down for a cup of tea with your neighbourhood representative to talk about what needs to be improved.
+    
+    The iconic shape of the Turkish tea glass became a central carrying image of the brand, drawing a parallel between the traditional culture of conversation and the contemporary environment of apps.
+    
+    <div class="u-aligncenter u-mt3">(image: preloader.gif)</div>
+  col_2: ""
+  bg_colour: ""
+  bg_image: [ ]
+  bg_image_pos: full
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: |
+    ### Interface design
+    
+    The design of this platform was intended to be a simple to use interface that promoted people's engagement to add ideas and browse further. In that first weekend, we came up with the core design principle for the interface of the app — a clean <span style="color: #44a1e0;">blue top header</span> above a simple white list with ideas and their tags/photos  — which turned out to survived to the current day.
+  col_2: '(image: first-designs.png)'
+  bg_colour: '#fff'
+  bg_image: [ ]
+  bg_image_pos: full
+- 
+  num_cols: 'true'
+  classes: section--bg-bottom-right u-pt0
+  col_1: |
+    ### Website
+    
+    In the period between 2015 and 2018, the website grew into a fully capable mapping platform, indexing over a 1000 ideas and 5000 users, allowing for adding of new ideas, voting on best ones, and discussion and reporting features.
+    
+    <div style="min-height: 25vw"></div>
+  col_2: ""
+  bg_colour: '#fff'
+  bg_image:
+    - website-panels.jpg
+  bg_image_pos: full
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: |
+    ### Reports
+    
+    As a way of creating a public leverage tools, the platform would generate monthly reports on the most important issues raised in each district; this would be communicated to the district's municipality office.
+  col_2: '(image: kadikoy-idea-report.png)'
+  bg_colour: ""
+  bg_image: [ ]
+  bg_image_pos: full
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - muhit-workshop.jpg
+  bg_image_pos: ""
+  num_columns: "1"
+
+----
+
+Year: 2015-2018
 
 ----
 
@@ -10,7 +118,7 @@ Description: Building an online platform allowing citizens to collaboratively im
 
 ----
 
-Tags: web design,front-end,graphic,project management,logo,co-founder
+Tags: web design, front-end, graphic, project management, logo, co-founder
 
 ----
 
@@ -18,57 +126,14 @@ Projecturl: http://www.muhit.co/
 
 ----
 
-Featured: 0
+Featured: false
 
 ----
 
-Featuredimage: muhit-cover-image.jpg
+Featuredimage: 
+
+- muhit-cover-image.jpg
 
 ----
 
 Featuredcolour: 44a1e0
-
-----
-
-Sections: 
-
-- 
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image: hero-banner.jpg
-- 
-  num_columns: "2"
-  col_1: |
-    <big class="u-block u-mb1">How can we give citizens more opportunity to be involved with the improvement of their city? How can we bring their ideas and knowledge closer to the people tasked with managing it?</big>
-    
-    In the start of 2015, a (link: http://yourthings.org/en/project/muhit popup:yes text: hackathon weekend) was the stage for this theme. Together with a team of developers and urban planners, we brought the idea for creating a web & app platform around this idea to life.
-  col_2: ""
-  bg_colour: '#fff'
-  bg_image: muhit-street.jpg
-  num_cols: "1"
-  classes: ""
-  bg_image_pos: right
-- 
-  num_cols: "2"
-  classes: ""
-  col_1: |
-    The design of this platform was intended to be a simple to use interface that promoted people's engagement to add ideas and browse further. In that first weekend, we came up with the core design principle for the interface of the app — a clean <span style="color: #44a1e0;">blue top header</span> above a simple white list with ideas and their tags/photos  — which turned out to survived to the current day.
-  col_2: '(image: first-designs.png)'
-  bg_colour: ""
-  bg_image: ""
-  bg_image_pos: full
-- 
-  num_cols: "1"
-  col_1: |
-    (image: muhit-system-diagram.png)
-    <div class="u-aligncenter c-greylight u-mt1"><i>Muhit's model: citizens provide ideas, most voted ideas get selected, discussed with local government & solved.</i></div>
-  col_2: ""
-  bg_colour: ""
-  bg_image: ""
-- 
-  col_1: ""
-  col_2: ""
-  bg_image: muhit-workshop.jpg
-  num_columns: "1"
-  bg_colour: ""

@@ -7,7 +7,7 @@ Text:
 (new-section: bg-white c-grey)
 
 <br />
-(image: designers-circle.jpg)
+(image: designers-circle-zine-by-cheriebirkner-11.jpg alt: Photo by Cherie Birkner)
 
 ## Designers Circle
 <span class="u-op50">2017-ongoing &nbsp;&nbsp;|&nbsp;&nbsp; role: cofounder, organiser</span>
@@ -18,17 +18,17 @@ Together with other community members, I set up a weekly designers meetup, aimed
 (image: pheme-product-banner.jpg)
 
 ## Pheme
-<span class="u-op50">2018-ongoing &nbsp;&nbsp;|&nbsp;&nbsp; role in 3: cofounder & designer</span>
+<span class="u-op50">2018-2019 &nbsp;&nbsp;|&nbsp;&nbsp; role in 3: cofounder & designer</span>
 Pheme is a decentralised publishing platform, built on blockchain and peer-to-peer web technologies. No central authority. No data collecting. No targeted ads. Yes freedom of expression.
 <a href="https://pheme.app/" target="_blank">See the project live &#8599;</a>
 <br/><br/>
 
 (image: coworking-project-banner.jpg)
 
-## Cowork Berlin/Coworking Istanbul
+## The Coworking Project
 <span class="u-op50">2017-ongoing &nbsp;&nbsp;|&nbsp;&nbsp; role: initiator, designer, developer</span>
-Cowork Berlin/Coworking Istanbul is the fastest way to finding quality coworking spaces around you.
-<a href="https://coworkberlin.com/" target="_blank">See the project live &#8599;</a>
+The Coworking Project is an initiative to give an easy overview of quality coworking spaces in the city. Started as a personal project, then expanded into a publicly available index for those that want to engage in flexible working. Built with VuePress & Netlify CMS.
+<a href="https://coworkberlin.com/" target="_blank">See Cowork Berlin live &#8599;</a>  |  <a href="https://coworkingistanbul.com/" target="_blank">See Coworking Istanbul live &#8599;</a>
 <br/><br/>
 
 (image: muhit-product-banner.jpg)
@@ -36,7 +36,7 @@ Cowork Berlin/Coworking Istanbul is the fastest way to finding quality coworking
 ## Muhit
 <span class="u-op50">2015-2018 &nbsp;&nbsp;|&nbsp;&nbsp; role (team of 8): cofounder, product lead & designer</span>
 Muhit is an online platform allowing citizens and municipalities to collaboratively improve their living environment. Operating in Turkey, Muhit facilitated collaborative mapping to surface problems and opportunities in urban neighbourhoods, and actively engaging municipalities in taking action. Currently not actively maintained.
-<a href="https://muhit.co/" target="_blank">See the project live &#8599;</a>
+<a href="/projects/muhit">Read case study &rarr;</a> | <a href="https://muhit.co/" target="_blank">See the project live &#8599;</a>
 
 (new-section: bg-greylighter u-pv10vh)
 

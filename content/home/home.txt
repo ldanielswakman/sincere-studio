@@ -2,27 +2,24 @@ Title: Digital Designer
 
 ----
 
-Current: 
+Current:
 
 - 
-  text: Pitchtape
-  link: https://www.pitchtape.com/
+  text: Humanitec
+  link: https://humanitec.com/
 - 
-  text: Inflight VR
-  link: https://inflight-vr.com
-- 
-  text: Diagnose Berlin
-  link: https://www.diagnose-berlin.de/
-- 
-  text: license.rocks
-  link: https://license.rocks
+  text: Gamer One
+  link: https://gamerone.gg
 - 
   text: LuxFox
   link: https://www.lux-fox.com/
+- 
+  text: license.rocks
+  link: https://license.rocks
 
 ----
 
-Recent: 
+Recent:
 
 - projects/poltio
 - projects/luxfox
@@ -30,7 +27,7 @@ Recent:
 
 ----
 
-Sections: 
+Sections:
 
 - 
   title: Top
