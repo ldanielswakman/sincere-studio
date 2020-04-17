@@ -34,17 +34,17 @@ Sections:
     
     **Marius Grootveld & Jantje Engels**
     *architects*
-    (link: http://www.veldwerk.co text: veldwerk.co popup:yes)
+    (link: http://www.veldwerk.co text: veldwerk.co target:_blank)
     <br /><br /><br />
     
     **Pieter Kuiper**
     *homeopathic doctor*
-    (link: http://www.de-wingerd.com text: de-wingerd.com popup:yes)
+    (link: http://www.de-wingerd.com text: de-wingerd.com target:_blank)
     <br /><br /><br />
     
     **L Daniel Swakman**
     *graphic/web designer*
-    (link: http://www.ldaniel.eu text: ldaniel.eu popup:yes)
+    (link: http://www.ldaniel.eu text: ldaniel.eu target:_blank)
   col_2: |
     (image: visitekaartje-philip.jpg)
     (image: visitekaartje-ldaniel-zoomin.jpg)

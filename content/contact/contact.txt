@@ -11,7 +11,7 @@ Text:
 </div>
 <div class="col-md-7">
 <big><em>I happen to have accounts on all the fancy platforms out there — just pick one below. However, the best way to get in touch with me is to </em></big><br />
-(email: hello@ldaniel.eu text: Send me an email class:btn btn-primary u-mt20 popup:yes)
+(email: hello@ldaniel.eu text: Send me an email class:btn btn-primary u-mt20 target:_blank)
 </div>
 </div>
 </section>
@@ -76,7 +76,7 @@ Text:
 <i class="ion ion-social-dribbble ion-2x"></i>
 </div>
 <div class="col-md-7">
-(link: https://dribbble.com/ldanielswakman text: Dribbble shots class:btn btn-whiteoutline popup:yes)
+(link: https://dribbble.com/ldanielswakman text: Dribbble shots class:btn btn-whiteoutline target:_blank)
 </div>
 </div>
 </section>

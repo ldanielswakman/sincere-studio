@@ -45,7 +45,7 @@ Sections:
 - 
   col_1: |
     <br><br>
-    <span style="font-size: 1.25em; color: white;">**habita** has just opened its doors, so the site should be able to grow as content (members, events, blog posts, new photos) grows. The site is built with (link: getkirby.com text: Kirby popup:yes) with an API system to dynamically load in extra content.</span>
+    <span style="font-size: 1.25em; color: white;">**habita** has just opened its doors, so the site should be able to grow as content (members, events, blog posts, new photos) grows. The site is built with (link: getkirby.com text: Kirby target:_blank) with an API system to dynamically load in extra content.</span>
   col_2: '(image: habita-phasing-transparent.png)'
   bg_colour: ff5000
 - 

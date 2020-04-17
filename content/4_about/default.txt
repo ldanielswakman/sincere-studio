@@ -20,13 +20,13 @@ The main passion in my work lies in the visual and graphic design; I deeply care
 
 > <span style="font-size: 2rem;" class="c-blue">Code is the grain and material of the web & app world.</span>
 
-I believe that working in digital design means an inherent link between visual/interaction design and the code that makes this happen — much like a (link: https://youtu.be/21DFmwZtVlQ popup:yes text: carpenter)'s knowledge & control of wood type and behaviour. Design ⇄ code.
+I believe that working in digital design means an inherent link between visual/interaction design and the code that makes this happen — much like a (link: https://youtu.be/21DFmwZtVlQ target:_blank text: carpenter)'s knowledge & control of wood type and behaviour. Design ⇄ code.
 
 (side-image: dynamicelements.svg class: u-maxwidth75p u-mhauto row-class: u-pv5vh)
 
 > <span style="font-size: 2rem;" class="c-blue">Orchestration of dynamic elements.</span>
 
-Designing for the web and mobile apps can no longer be seen as an exercise on a fixed canvas where one lays out objects. Instead, it is an orchestration of dynamic elements, that can have different states & behaviours. (link: http://blog.froont.com/9-basic-principles-of-responsive-web-design/ popup:yes text:Responsive design) is a key tool in this orchestration — I've never designed a project without it.
+Designing for the web and mobile apps can no longer be seen as an exercise on a fixed canvas where one lays out objects. Instead, it is an orchestration of dynamic elements, that can have different states & behaviours. (link: http://blog.froont.com/9-basic-principles-of-responsive-web-design/ target:_blank text:Responsive design) is a key tool in this orchestration — I've never designed a project without it.
 
 (side-image: parti.svg class: u-maxwidth75p u-mhauto row-class: u-pv5vh)
 
@@ -42,4 +42,4 @@ Want to talk further? About a future or current project, about what drives you o
 
 <a href="javascript:openContactForm()" class="button button--white">Say hello</a>
 
-Or reach me on (link: https://twitter.com/ldanielswakman popup:yes text: Twitter), (link: https://www.linkedin.com/in/ldanielswakman/ popup:yes text: Linkedin), (link: https://github.com/ldanielswakman popup:yes text: Github), (link: https://dribbble.com/ldanielswakman popup:yes text: Dribbble) & (link:https://www.instagram.com/dswakman/ popup:yes text:Instagram).
+Or reach me on (link: https://twitter.com/ldanielswakman target:_blank text: Twitter), (link: https://www.linkedin.com/in/ldanielswakman/ target:_blank text: Linkedin), (link: https://github.com/ldanielswakman target:_blank text: Github), (link: https://dribbble.com/ldanielswakman target:_blank text: Dribbble) & (link:https://www.instagram.com/dswakman/ target:_blank text:Instagram).

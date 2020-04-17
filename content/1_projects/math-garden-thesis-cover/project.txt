@@ -18,7 +18,7 @@ Sections:
 - 
   col_1: |
     <h3 class="u-mt60 u-mb20">identity</h3>
-    As a result of a multi-year PhD research on a personalised learning tool, the cover needed to reflect the look of the (link: http://www.mathsgarden.com/ text: Math Garden popup:yes) application (a garden in which children play mathematical games), but have a distinct identity that would stand on its own.
+    As a result of a multi-year PhD research on a personalised learning tool, the cover needed to reflect the look of the (link: http://www.mathsgarden.com/ text: Math Garden target:_blank) application (a garden in which children play mathematical games), but have a distinct identity that would stand on its own.
   col_2: '(image: thesis-cover-on-eee.jpg)'
   bg_colour: '#fff'
 

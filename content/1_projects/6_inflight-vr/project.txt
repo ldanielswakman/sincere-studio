@@ -87,7 +87,7 @@ Sections:
 - 
   num_cols: "2"
   classes: bg-white
-  col_1: 'We came up with an interface concept that emphasises the spatial character of the interface, while still preserving a sense of familiarity for the user. We drew inspiration from the multidirectional way of scrolling as seen on the (link: https://www.apple.com/watch/ text: Apple Watch popup:yes), coming up with a dynamic layout that encourages exploration. To be able to provide consistency throughout the interface and between different apps, a bottom system menu was introduced that is always reachable.'
+  col_1: 'We came up with an interface concept that emphasises the spatial character of the interface, while still preserving a sense of familiarity for the user. We drew inspiration from the multidirectional way of scrolling as seen on the (link: https://www.apple.com/watch/ text: Apple Watch target:_blank), coming up with a dynamic layout that encourages exploration. To be able to provide consistency throughout the interface and between different apps, a bottom system menu was introduced that is always reachable.'
   col_2: '(image: ref-apple-watch.gif)'
   bg_colour: ""
   bg_image: ""
