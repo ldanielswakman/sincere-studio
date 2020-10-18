@@ -1,4 +1,4 @@
-<?
+<?php
 Kirby::plugin('section/tags', [
 	'tags' => [
 		'since' => [

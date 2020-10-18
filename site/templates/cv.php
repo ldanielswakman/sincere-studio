@@ -2,7 +2,7 @@
 
   <main>
 
-    <?
+    <?php
     $header_options = ['page' => $page, 'subtitle' => 'work experience'];
     if ($pdf = $page->pdf_file()->toFile()) :
       $header_options['link_url'] = $pdf->url();
@@ -15,25 +15,25 @@
       <div class="row">
         <div class="col-xs-12 col-sm-11 col-sm-offset-1 u-pb2">
 
-          <? snippet('cv-section', ['section' => $page->work_xp()]) ?>
+          <?php snippet('cv-section', ['section' => $page->work_xp()]) ?>
 
-          <? if($graph = $page->cv_graph()->toFile()): ?>
+          <?php if($graph = $page->cv_graph()->toFile()): ?>
             <figure class="u-mt2">
               <img src="<?= $graph->url() ?>" alt="<?= $page->title() ?>" />
             </figure>
-          <? endif ?>
+          <?php endif ?>
 
-          <? snippet('cv-section', ['title' => 'education', 'section' => $page->education()]) ?>
+          <?php snippet('cv-section', ['title' => 'education', 'section' => $page->education()]) ?>
 
-          <? snippet('cv-section', ['title' => 'personal', 'section' => $page->personal()]) ?>
+          <?php snippet('cv-section', ['title' => 'personal', 'section' => $page->personal()]) ?>
 
-          <? snippet('cv-section', ['title' => 'languages', 'section' => $page->languages()]) ?>
+          <?php snippet('cv-section', ['title' => 'languages', 'section' => $page->languages()]) ?>
 
-          <? snippet('cv-section', ['title' => 'skills', 'section' => $page->skills()]) ?>
+          <?php snippet('cv-section', ['title' => 'skills', 'section' => $page->skills()]) ?>
 
-          <? snippet('cv-section', ['title' => 'interests', 'section' => $page->interests()]) ?>
+          <?php snippet('cv-section', ['title' => 'interests', 'section' => $page->interests()]) ?>
 
-          <? snippet('cv-section', ['title' => 'preferences', 'section' => $page->preferences()]) ?>
+          <?php snippet('cv-section', ['title' => 'preferences', 'section' => $page->preferences()]) ?>
 
         </div>
       </div>

@@ -20,7 +20,7 @@ fields:
   recent:
     label: Recent work
     type: pages
-    query: site.find('projects').children.visible
+    query: site.find('projects').children.listed
     layout: cards
     max: 3
     size: tiny

@@ -1,10 +1,10 @@
-<? snippet('header') ?>
+<?php snippet('header') ?>
 
   <main>
 
-    <? foreach($page->sections()->toStructure() as $key => $section): ?>
+    <?php foreach($page->sections()->toStructure() as $key => $section): ?>
 
-      <?
+      <?php
       $bgLocation = 'full';
       if($section->bg_image_pos()->isNotEmpty() && $section->bg_image_pos() == 'left') { $bgLocation = 'left'; }
       if($section->bg_image_pos()->isNotEmpty() && $section->bg_image_pos() == 'right') { $bgLocation = 'right'; }
@@ -33,25 +33,25 @@
 
         <div class="row">
 
-          <? if($section->num_cols() == '1' || $section->num_cols() == 'false') : ?>  
+          <?php if($section->num_cols() == '1' || $section->num_cols() == 'false') : ?>  
             <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 u-pv40">
               <?= $section->col_1()->kirbytext() ?>
               <?= $section->col_2()->kirbytext() ?>
             </div>
-          <? else : ?>  
+          <?php else : ?>  
             <div class="col-xs-12 col-sm-5 col-md-4 col-md-offset-1 u-pv40" <?= ($bgLocation === 'left') ? $bg : '' ?>>
               <?= $section->col_1()->kirbytext() ?>
             </div>
             <div class="col-xs-12 col-sm-7 col-md-5 col-md-offset-1 u-pv40" <?= ($bgLocation === 'right') ? $bg : '' ?>>
               <?= $section->col_2()->kirbytext() ?>
             </div>
-          <? endif ?>
+          <?php endif ?>
 
         </div>
 
       </section>
 
-      <? if ($key == 0) : ?>
+      <?php if ($key == 0) : ?>
         <!-- NEW project info section -->
         <section>
           <div class="row u-pv3 u-ph05">
@@ -67,7 +67,7 @@
               ?>
             </div>
             <div class="col-xs-12 col-md-10 col-md-offset-1">
-              <? if($page->projecturl()->isNotEmpty()): ?>
+              <?php if($page->projecturl()->isNotEmpty()): ?>
                 <a href="<?= $page->projecturl() ?>" target="_blank" class="button button--outline u-mt2">
                   see the project live
                   <svg style="float: right; width: 0.75rem; margin: 0.5rem 0 0 0.5rem;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
@@ -78,29 +78,29 @@
                   </svg>
 
                 </a>
-              <? endif ?>
+              <?php endif ?>
             </div>
           </div>
         </section>
-      <? endif ?>
+      <?php endif ?>
 
-      <? if ($page->sections()->toStructure()->count() == 0) : ?>
+      <?php if ($page->sections()->toStructure()->count() == 0) : ?>
       <section>
         <div class="row u-pv40">
           <div class="col-md-4">
-            <? snippet('project_info', array('page' => $page, 'key' => 1 )); ?>
+            <?php snippet('project_info', array('page' => $page, 'key' => 1 )); ?>
           </div>
           <div class="col-md-8">
             <img src="<?= $page->url() . '/' . $page->featuredimage(); ?>" alt="" />
           </div>
         </div>
       </section>
-      <? endif ?>
+      <?php endif ?>
 
-    <? endforeach ?>
+    <?php endforeach ?>
 
 
-    <?
+    <?php
     if($next = $page->nextListed()):
     ?>
     <a href="<?= $next->url() ?>">
@@ -111,11 +111,11 @@
 
         <div class="row" style="align-items: center;">
           <div class="col-xs-6 col-md-2">
-            <? if($image = $next->featuredimage()->toFile(0)): ?>
+            <?php if($image = $next->featuredimage()->toFile(0)): ?>
               <figure>
                 <img src="<?= $image->thumb(['width' => 800])->url() ?>" alt="<?= $next->title() ?>" />
               </figure>
-            <? endif; ?>
+            <?php endif; ?>
           </div>
           <div class="col-xs-6 col-md-2 last-md u-alignright" style="font-size: 3rem;">
             &rarr;
@@ -128,10 +128,10 @@
         </div>
       </section>
     </a>
-    <? endif; ?>
+    <?php endif; ?>
 
-    <? snippet('project-related') ?>
+    <?php snippet('project-related') ?>
 
   </main>
 
-<? snippet('footer') ?>
+<?php snippet('footer') ?>

@@ -5,17 +5,17 @@
 
     <!-- Project Cards -->
 		<div class="card-container owl-carousel u-mt1">
-		  <? foreach ($page->recent()->toPages() as $project) : ?>
+		  <?php foreach ($page->recent()->toPages() as $project) : ?>
 
 		    <a href="<?php echo $project->url() ?>" class="card">
-		      <? if($image = $project->featuredimage()->toFile()) : ?>
+		      <?php if($image = $project->featuredimage()->toFile()) : ?>
 		        <figure>
 		          <img src="<?= $image->thumb(['width' => 800])->url() ?>" alt="">
 		        </figure>
-		      <? endif ?>
+		      <?php endif ?>
 		    </a>
 
-		  <? endforeach ?>
+		  <?php endforeach ?>
 		</div>
 
     <div class="u-mb2 u-mt1">

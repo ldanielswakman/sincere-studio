@@ -1,8 +1,8 @@
-<? snippet('header') ?>
+<?php snippet('header') ?>
 
   <main>
 
-      <? snippet('page-header', ['page' => $page]) ?>
+      <?php snippet('page-header', ['page' => $page]) ?>
 
       <section style="min-height: 70vh;">
         <div id="twittering"></div>
@@ -44,4 +44,4 @@
 
   </main>
 
-<? snippet('footer') ?>
+<?php snippet('footer') ?>

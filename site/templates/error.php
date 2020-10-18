@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<? snippet('head') ?>
+	<?php snippet('head') ?>
 
 	<body class="u-flex-center" style="min-height: 90vh; background: #1F1F26;">
 
 	  <main class="u-aligncenter u-ph2">
 
 	  	<a href="<?= ($page->url() != $site->url()) ? $site->url() : '#top' ?>">
-		    <? snippet('svg/logo', ['colour' => '#fff']) ?>
+		    <?php snippet('svg/logo', ['colour' => '#fff']) ?>
 		    <style>#logo-svg { width: 5rem; }</style>
 		  </a>
 

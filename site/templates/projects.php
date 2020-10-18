@@ -1,8 +1,8 @@
-<? snippet('header') ?>
+<?php snippet('header') ?>
 
   <main>
 
-    <?
+    <?php
     $projects = $page->children()->sortBy('year', 'desc');
     $pr_featured = $projects->filterBy('featured', 'in', ['1', 'true']);
     $subtitle = 'selected';
@@ -17,14 +17,14 @@
     }
     ?>
 
-    <? snippet('page-header', ['page' => $page, 'subtitle' => $subtitle]) ?>
+    <?php snippet('page-header', ['page' => $page, 'subtitle' => $subtitle]) ?>
 
-    <? if ($page->text()->isNotEmpty() && strlen($page->text()->kirbytext()) > 1) : ?>
+    <?php if ($page->text()->isNotEmpty() && strlen($page->text()->kirbytext()) > 1) : ?>
 
       <section class="nopadding u-relative" style="border-bottom: 1px solid #ddd">
 
         <div class="row row-nopadding row-full u-abs-full">
-          <? // snippet('featured', array('page' => $page )); ?>
+          <?php // snippet('featured', array('page' => $page )); ?>
         </div>
 
           <p class="text"><?= $page->text()->kirbytext() ?></p>
@@ -33,31 +33,31 @@
 
       </section>
 
-    <? endif ?>
+    <?php endif ?>
 
-    <? if ($pr_featured->count() > 0) : ?>
+    <?php if ($pr_featured->count() > 0) : ?>
       <section class="u-pv5vh">
         <div class="row">
 
-          <? foreach ($pr_featured as $project) : ?>
+          <?php foreach ($pr_featured as $project) : ?>
             <div class="col-xs-12 col-sm-6 col-lg-4">
               <a href="<?= $project->url() ?>" class="card u-mb2" style="width: 100%;">
-                <? if($image = $project->featuredimage()->toFile()) : ?>
+                <?php if($image = $project->featuredimage()->toFile()) : ?>
                   <figure>
                     <img src="<?= $image->thumb(['width' => 1200])->url() ?>" alt="">
                   </figure>
-                <? endif ?>
+                <?php endif ?>
                 <div style="padding: 1rem;">
                   <h3 class="card__title"><?= $project->title()->html() ?><sup><?= $project->year() ?></sup></h3>
                   <p><?= $project->description()->html() ?></p>
                 </div>
               </a>
             </div>
-          <? endforeach ?>
+          <?php endforeach ?>
 
         </div>
       </section>
-    <? endif ?>
+    <?php endif ?>
 
     <section>
       <div class="row">
@@ -71,30 +71,30 @@
 
     <section class="bg-bluedull u-pv10vh" style="color: rgba(255, 255, 255, 0.8);">
 
-      <? foreach ($projects as $project) : ?>
+      <?php foreach ($projects as $project) : ?>
         <div class="row">
           <div class="col-xs-12 col-sm-2 col-sm-offset-1 u-mb05 u-op70">
             <?= e((!isset($prev) || $prev->year()->value() !== $project->year()->value()), '<big>' . $project->year() . '</big>') ?>
           </div>
           <div class="col-xs-4 col-sm-1 u-mb05 u-op70">
-            <? if($image = $project->featuredimage()->toFile()) : ?>
+            <?php if($image = $project->featuredimage()->toFile()) : ?>
               <a href="<?= $project->url() ?>" class="u-block" style="line-height: 1rem; margin-bottom: 0.75rem;">
                 <figure>
                   <img src="<?= $image->thumb(['width' => 400])->url() ?>" alt="">
                 </figure>
               </a>
-            <? endif ?>
+            <?php endif ?>
           </div>
           <div class="col-xs-8 col-sm-7 u-mb05">
-              <a href="<?= $project->url() ?>" class="u-block <? e($project->isListed(), 'c-white', 'c-grey') ?>" style="line-height: 1rem; margin-bottom: 0.75rem;">
+              <a href="<?= $project->url() ?>" class="u-block <?php e($project->isListed(), 'c-white', 'c-grey') ?>" style="line-height: 1rem; margin-bottom: 0.75rem;">
                 <?= $project->title() ?><br>
-                <small style="color: rgba(255, 255, 255, <? e($project->isListed(), '0.5', '0.25') ?>);"><?= $project->description() ?></small>
+                <small style="color: rgba(255, 255, 255, <?php e($project->isListed(), '0.5', '0.25') ?>);"><?= $project->description() ?></small>
               </a>
           </div>
         </div>
-      <? $prev = $project; endforeach; ?>
+      <?php $prev = $project; endforeach; ?>
 
-      <? if($page->slug() !== 'architecture') : ?>
+      <?php if($page->slug() !== 'architecture') : ?>
         <div class="row u-mt2">
           <div class="col-xs-12 col-sm-2 col-sm-offset-1">
             <big>before that</big>
@@ -102,10 +102,10 @@
           <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-1">
             <a href="<?= u('/architecture') ?>" class="c-white">architecture and urban design &rarr;</a>
         </div>
-      <? endif ?>
+      <?php endif ?>
 
     </section>
 
   </main>
 
-<? snippet('footer') ?>
+<?php snippet('footer') ?>

@@ -2,10 +2,10 @@
 
 <main>
 
-  <? foreach ($page->sections()->toStructure() as $key => $section): ?>
+  <?php foreach ($page->sections()->toStructure() as $key => $section): ?>
     <section id="<?= str::slug($section->title()); ?>" class="section--<?= $section->type()->html() ?> <?= $section->classes()->html() ?>">
 
-      <?
+      <?php
       $bg_style = 'background-color: ' . $section->bg_color() . ';';
       if($image = $section->bg_image()->toFile()) { 
         $bg_style .= " background-image: url('" . $image->url() . "');"; 
@@ -13,14 +13,14 @@
       ?>
       <div class="section__bg-image" style="<?= $bg_style ?>"></div>
 
-      <? if($section->type() == 'text') : ?>
+      <?php if($section->type() == 'text') : ?>
 
         <div class="row">
           <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1">
 
             <?= $section->text()->kirbytext() ?>
 
-            <? if ($key == 0) : ?>
+            <?php if ($key == 0) : ?>
 
               <div class="u-mt2">
                 <a href="javascript:openContactForm()" class="button button--white u-mr1">say hi!</a>
@@ -30,7 +30,7 @@
               <h5 class="u-mt2">CURRENTLY WORKING ON</h5>
 
               <p>
-                <?
+                <?php
                 $items = $page->current()->toStructure();
                 foreach($items as $key => $item):
                   e($item->link()->isNotEmpty(), '<a href="' . $item->link() . '" target="_blank">');
@@ -41,20 +41,20 @@
                 ?>.
               </p>
 
-            <? endif ?>
+            <?php endif ?>
 
-          <? elseif($section->type() == 'recent_work') : ?>
+          <?php elseif($section->type() == 'recent_work') : ?>
 
-            <? snippet('featured', ['title' => $section->title()->html()]); ?>
+            <?php snippet('featured', ['title' => $section->title()->html()]); ?>
 
-          <? elseif($section->type() == 'stream_of_words') : ?>
+          <?php elseif($section->type() == 'stream_of_words') : ?>
 
             <div class="row">
               <div class="col-xs-12 col-sm-11 col-sm-offset-1">
 
                 <h5 class="u-mb15">
                   <a href="//twitter.com/ldanielswakman" target="_blank" class="a--icon a--twitter u-floatright u-op70">
-                    <? snippet('svg/twitter-icon') ?>
+                    <?php snippet('svg/twitter-icon') ?>
                   </a>
                   <?= $section->title()->html() ?>
                 </h5>
@@ -64,14 +64,14 @@
               </div>
             </div>
 
-          <? elseif($section->type() == 'stream_of_images') : ?>
+          <?php elseif($section->type() == 'stream_of_images') : ?>
 
             <div class="row">
               <div class="col-xs-12 col-sm-11 col-sm-offset-1">
 
                 <h5 class="u-mb15">
                   <a href="//dribbble.com/ldanielswakman" target="_blank" class="a--icon-lg a--twitter u-floatright" style="margin-top: -0.25rem;">
-                    <? snippet('svg/dribbble-icon') ?>
+                    <?php snippet('svg/dribbble-icon') ?>
                   </a>
                   <?= $section->title()->html() ?>
                 </h5>
@@ -82,13 +82,13 @@
               </div>
             </div>
 
-          <? endif ?>
+          <?php endif ?>
 
         </div>
       </div>
 
     </section>
-  <? endforeach ?>
+  <?php endforeach ?>
 
 </main>
 

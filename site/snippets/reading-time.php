@@ -1,9 +1,9 @@
-<? 
+<?php 
 // Return a span with reading time of a given $text parameter 
 $text = (isset($text)) ? $text : '';
 ?>
 <span>
-  <?
+  <?php
   // reading time = word count / average reading speed (words per minute)
   $reading_time = round(str_word_count( $text ) / 200) + 1;
   // override if infographic

@@ -1,4 +1,4 @@
-<? $related_pages = (isset($related_pages) && $related_pages->count() > 1) ? $related_pages : $site->find('projects')->children()->not($page)->not($page->nextListed())->shuffle()->limit(3) ?>
+<?php $related_pages = (isset($related_pages) && $related_pages->count() > 1) ? $related_pages : $site->find('projects')->children()->not($page)->not($page->nextListed())->shuffle()->limit(3) ?>
 
 <section class="bg-greylighter u-pv2">
   <div>
@@ -7,17 +7,17 @@
   
   <!-- Project Cards -->
   <div class="card-container owl-carousel u-mt1">
-    <? foreach ($related_pages as $project) : ?>
+    <?php foreach ($related_pages as $project) : ?>
 
       <a href="<?php echo $project->url() ?>" class="card card--shadow card--related">
-        <? if($image = $project->featuredimage()->toFile()) : ?>
+        <?php if($image = $project->featuredimage()->toFile()) : ?>
           <figure>
             <img src="<?= $image->thumb(['width' => 800])->url() ?>" alt="">
           </figure>
-        <? endif ?>
+        <?php endif ?>
       </a>
 
-    <? endforeach ?>
+    <?php endforeach ?>
 
   </div>
 
@@ -26,7 +26,7 @@
           <div class="col-md-4">
             <i class="ion ion-ios-arrow-thin-left ion-2x u-floatleft u-mr10"></i>
             <span class="u-inlineblock u-floatleft u-pt5">
-              <? if($next = $page->nextListed()) { echo 'or, '; } ?>
+              <?php if($next = $page->nextListed()) { echo 'or, '; } ?>
               get back to work
             </span>
           </div>

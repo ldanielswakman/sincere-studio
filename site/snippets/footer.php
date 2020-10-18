@@ -15,25 +15,25 @@
 
 
           <h4 class="u-mb025 u-op50">Latest Projects</h4>
-          <? foreach($site->find('projects')->children()->listed()->sortBy('year', 'desc')->limit(3) as $p) : ?>
+          <?php foreach($site->find('projects')->children()->listed()->sortBy('year', 'desc')->limit(3) as $p) : ?>
             <a href="<?= $p->url() ?>"><?= $p->title() ?></a><br>
-          <? endforeach ?>
+          <?php endforeach ?>
 
         </div>
         <div class="col-xs-6 col-md-4 u-pr2">
 
           <h4 class="u-mb025 u-op50">Latest articles</h4>
-          <? foreach($site->find('articles')->children()->listed()->sortBy('year', 'desc')->limit(3) as $p) : ?>
+          <?php foreach($site->find('articles')->children()->listed()->sortBy('year', 'desc')->limit(3) as $p) : ?>
             <a href="<?= $p->url() ?>"><?= $p->title() ?></a><br>
-          <? endforeach ?>
+          <?php endforeach ?>
 
         </div>
         <div class="col-xs-6 col-md-3">
 
           <h4 class="u-mb025 u-op50">Explore</h4>
-          <? foreach($site->pages()->find('projects', 'articles', 'about', 'CV', 'architecture', 'api') as $p) : ?>
+          <?php foreach($site->pages()->find('projects', 'articles', 'about', 'CV', 'architecture', 'api') as $p) : ?>
             <a href="<?= $p->url() ?>"><?= $p->title() ?></a><br>
-          <? endforeach ?>
+          <?php endforeach ?>
 
         </div>
       </div>
@@ -47,11 +47,11 @@
       &mdash;
       
       <div class="u-inlineblock u-op50" style="vertical-align: middle;">
-        <a href="mailto:hello@ldaniel.eu" target="_blank" class="u-floatleft u-ml1 a--icon"><? snippet('svg/email-icon') ?></a>
-        <a href="https://www.twitter.com/ldanielswakman" target="_blank" class="u-floatleft u-ml1 a--icon"><? snippet('svg/twitter-icon') ?></a>
-        <a href="https://github.com/ldanielswakman" target="_blank" class="u-floatleft u-ml1 a--icon"><? snippet('svg/github-icon') ?></a>
-        <a href="https://dribbble.com/ldanielswakman" target="_blank" class="u-floatleft u-ml1 a--icon"><? snippet('svg/dribbble-icon') ?></a>
-        <a href="https://www.linkedin.com/in/ldanielswakman" target="_blank" class="u-floatleft u-ml1 a--icon"><? snippet('svg/linkedin-icon') ?></i></a>
+        <a href="mailto:hello@ldaniel.eu" target="_blank" class="u-floatleft u-ml1 a--icon"><?php snippet('svg/email-icon') ?></a>
+        <a href="https://www.twitter.com/ldanielswakman" target="_blank" class="u-floatleft u-ml1 a--icon"><?php snippet('svg/twitter-icon') ?></a>
+        <a href="https://github.com/ldanielswakman" target="_blank" class="u-floatleft u-ml1 a--icon"><?php snippet('svg/github-icon') ?></a>
+        <a href="https://dribbble.com/ldanielswakman" target="_blank" class="u-floatleft u-ml1 a--icon"><?php snippet('svg/dribbble-icon') ?></a>
+        <a href="https://www.linkedin.com/in/ldanielswakman" target="_blank" class="u-floatleft u-ml1 a--icon"><?php snippet('svg/linkedin-icon') ?></i></a>
       </div>
 
     </div>
@@ -60,7 +60,7 @@
 
   <div style="height: 64px;"></div>
 
-  <? e((c::get('env') !== 'DEV'), snippet('ga_tracking', [], true)) ?>
+  <?php e((c::get('env') !== 'DEV'), snippet('ga_tracking', [], true)) ?>
 
 </body>
 </html>

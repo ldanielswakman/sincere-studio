@@ -1,4 +1,4 @@
-<?
+<?php
 
 // Set title
 $title = r($page->isHomePage(), $site->title()->html(), $page->title()->html() . ' — ' . $site->title()->html());

@@ -4,13 +4,13 @@
 
       <h1 class="u-mb15"><?= strtolower($page->title()->html()) ?></h1>
 
-      <? if (isset($link_url) && isset($link_text)) : ?>
+      <?php if (isset($link_url) && isset($link_text)) : ?>
       <p class="u-floatright u-mt2"><a href="<?= $link_url ?>" target="_blank" class="c-grey"><?= $link_text ?></a></p>
-      <? endif ?>
+      <?php endif ?>
 
-      <? if (isset($subtitle) && strlen($subtitle) > 0) : ?>
+      <?php if (isset($subtitle) && strlen($subtitle) > 0) : ?>
       <h3 class="u-mt3 u-mb1 u-text-2x c-bluedull"><?= strtolower($subtitle) ?></h3>
-      <? endif ?>
+      <?php endif ?>
 
     </div>
   </div>

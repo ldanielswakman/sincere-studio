@@ -1,4 +1,4 @@
-<? $colour = isset($colour) ? $colour : '#0000ff'; ?>
+<?php $colour = isset($colour) ? $colour : '#0000ff'; ?>
 <svg version="1.1" id="logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
 <path class="logo-svg-path" fill="none" stroke="<?= $colour ?>" stroke-width="2" stroke-miterlimit="10" d="M130.422,84.609c0,2.225,2.703,5.787,9.225,5.787

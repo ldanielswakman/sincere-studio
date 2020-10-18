@@ -2,9 +2,9 @@
 
   <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
 
-  <? snippet('header-metadata', array('page' => $page)) ?>
+  <?php snippet('header-metadata', array('page' => $page)) ?>
   
-  <?
+  <?php
   // sets css & js assets based on ENV
   $css_assets = (c::get('env') !== 'DEV') ? array(
     // '//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css',

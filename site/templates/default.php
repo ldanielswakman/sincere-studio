@@ -1,8 +1,8 @@
-<? snippet('header') ?>
+<?php snippet('header') ?>
 
   <main>
 
-      <? snippet('page-header', ['page' => $page]) ?>
+      <?php snippet('page-header', ['page' => $page]) ?>
 
       <section>
         <div class="row">
@@ -14,4 +14,4 @@
 
   </main>
 
-<? snippet('footer') ?>
+<?php snippet('footer') ?>

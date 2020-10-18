@@ -72,7 +72,7 @@
       </div>
     </div>
 
-    <?
+    <?php
     $source = '';
     if($page->parents()->count() > 0) { $source .= $page->parent()->title()->html() . ' > '; }
     $source .= ($page->isHomePage()) ? 'Home' : $page->title()->html();
