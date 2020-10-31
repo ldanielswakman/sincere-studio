@@ -1,0 +1,130 @@
+Title: Gamer One
+
+----
+
+Sections:
+
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: 5B3DF2
+  bg_image:
+    - key-visual-arena-montage.jpg
+  bg_image_pos: full
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: |
+    The gaming landscape is a patchwork of platforms, from streaming to game launchers to social networks where the conversation takes place. But for serious gamers, finding an all-in-one place to aggregate your team’s information is not easy.
+    
+    That’s where Gamer One comes in — a clear social platform with a customisable interface, where gamers can feel at home.
+    
+    <small style="opacity: 0.3;">Animations copyright (link: https://rob-barrett.com text: Rob Barrett popup: yes)</small>
+  col_2: '(image: g1-full_logo-light.png)'
+  bg_colour: fff
+  bg_image: [ ]
+  bg_image_pos: full
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: |
+    <video autoplay loop playsinline muted style="max-width: 100%;">
+    <source src="https://ldaniel.eu/media/pages/projects/gamer-one/1927856488-1603060027/animation-a-v03-2-compressed.mp4" type="video/mp4" />
+    </video>
+  col_2: ""
+  bg_colour: 242C48
+  bg_image: [ ]
+  bg_image_pos: full
+- 
+  num_cols: 'true'
+  classes: c-white
+  col_1: |
+    <h3 class="c-white"><b>Brand</b></h3>
+    
+    Based on the primary brand value of **Convenience**, Gamer One has a clear visual representation that finds its origin in the geometric language of the UI design: a diverse collection of boxes with smooth rounding.
+    
+    The secondary aspects of **Fun**, **Professional** and **Customisable** are reflected in the composition of theme-coloured boxes that feel like they can be dragged around to fit one's needs.
+    
+    From the logo to brand graphics, this is consistently applied. The colour scheme also reflects this: a confident blue that has been 'pulled' into a vibrant and lively direction.
+    
+    (image: share-card-7a.jpg)
+  col_2: '(image: share-card-2.jpg) (image: share-card-8.jpg) (image: share-card-3.jpg)'
+  bg_colour: "202840"
+  bg_image: [ ]
+  bg_image_pos: full
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: |
+    <video autoplay loop playsinline muted style="max-width: 100%;">
+    <source src="https://ldaniel.eu/media/pages/projects/gamer-one/1649989850-1603060029/animation-b-v03-1-compressed.mp4" type="video/mp4" />
+    </video>
+  col_2: ""
+  bg_colour: 242C48
+  bg_image: [ ]
+  bg_image_pos: full
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - share-card-4.jpg
+  bg_image_pos: full
+- 
+  num_cols: 'true'
+  classes: c-white
+  col_1: |
+    <h3 class="c-white"><b>Interface</b></h3>
+    
+    With a brand that is so firmly rooted in its users spending time on the platform itself, it came naturally to place this interface at the centre of the design. An adaptive interface that fits the user's need: dark or light mode, customisable theme colours, and personalisation through avatar and cover image.
+    
+    For the initial iteration of the platform, the experience of browsing a user's profile page is key. This is where the content needs to shine.  We came up with a masonry layout where the individual tiles can be rearranged and resized at will. Together with the tab-based navigation on the page, this makes the profile page feel like a website homepage.
+  col_2: '(image: share-card-6.jpg) <br /><br /> (image: ui-depth-diagram.jpg)'
+  bg_colour: "202840"
+  bg_image: [ ]
+  bg_image_pos: full
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: |
+    <video autoplay loop playsinline muted style="max-width: 100%;">
+    <source src="https://ldaniel.eu/media/pages/projects/gamer-one/2290697327-1603060032/animation-c-v03-6-compressed.mp4" type="video/mp4" />
+    </video>
+  col_2: ""
+  bg_colour: "202840"
+  bg_image: [ ]
+  bg_image_pos: full
+
+----
+
+Year: 2020
+
+----
+
+Description: Creating a customisable home for pro gamers
+
+----
+
+Tags: branding, graphic, ui, ux, web-design
+
+----
+
+Projecturl: https://g1.gg/
+
+----
+
+Featured: true
+
+----
+
+Featuredimage:
+
+- share-card-6.jpg
+
+----
+
+Featuredcolour: 5B3DF2
