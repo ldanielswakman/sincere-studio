@@ -52,3 +52,4 @@ site/email.log
 # ---------------
 
 _
+package-lock.json
