@@ -1,0 +1,67 @@
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  @include prefix(display, flex);
+  @include prefix(flex-direction, row);
+  @include prefix(justify-content, space-between);
+  width: 100%;
+  max-width: 100vw;
+
+  background: $white;
+  @include prefix(box-shadow, 0 0 1rem rgba($black, 0.1));
+  overflow: scroll;
+
+  ul {
+    @include prefix(display, flex);
+    width: 100%;
+    padding: 0.5rem;
+    list-style: none;
+    overflow: scroll;
+
+    &.hasActive a {
+      color: $grey;
+
+      &.isActive {
+        color: $blue;
+      }
+    }
+  }
+  li {
+    @include prefix(display, flex);
+    @include prefix(align-items, center);
+  }
+  a {
+    display: block;
+    padding: 0.75rem 0.5rem;
+    line-height: 1rem;
+    vertical-align: top;
+
+    @media screen and (max-width: $vp_smallest) {
+      font-size: 0.875rem;
+    }
+    @media screen and (min-width: $vp_tablet) {
+      padding: 1rem 1.5rem;
+    }
+  }
+  .menu-grey {
+    @include prefix(justify-content, flex-end);
+    a {
+      white-space: nowrap;
+
+      &.a--twitter {
+        display: none;
+
+        @media screen and (min-width: $vp_phone) {
+          display: block;
+        }
+
+        svg path {
+          fill: $greylight;
+        }
+        &:hover svg path { fill: $blue; }
+      }
+    }
+  }
+}

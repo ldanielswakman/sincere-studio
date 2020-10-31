@@ -1,0 +1,67 @@
+// Colours
+
+// Theme colours
+$blue: #00f;
+$bluedull: #34495e; //485b66
+$bluedark: #035;
+
+// Greys
+$white: #fff;
+$greylightest: #f7f7f9;
+$greylighter: #ebebed;
+$greylight: #ccccd4;
+$grey: #9999aa;
+$black: #000;
+
+.c-blue {
+  color: $blue;
+}
+.c-bluedull {
+  color: $bluedull;
+}
+.c-bluedark {
+  color: $bluedark;
+}
+
+.c-white {
+  color: $white;
+}
+.c-greylightest {
+  color: $greylightest;
+}
+.c-greylight {
+  color: $greylight;
+}
+.c-grey {
+  color: $grey;
+}
+
+.bg-white {
+  background-color: $white;
+}
+.bg-greylighter {
+  background-color: $greylighter;
+}
+.bg-greylight {
+  background-color: $greylight;
+}
+.bg-blue, .bg-bluedull, .bg-bluedark {
+  color: $white;
+
+  a {
+    color: inherit;
+    font-weight: 600;
+  }
+}
+.bg-blue {
+  background-color: $blue;
+}
+.bg-bluedull {
+  background-color: $bluedull;
+}
+.bg-bluedark {
+  background-color: $bluedark;
+}
+.bg-blackfaded10 {
+  background-color: rgba($black, 0.1);
+}
