@@ -5,6 +5,12 @@
 
 <body class="<?= $page->template() ?>">
 
+  <?php if($site->theme() == 'ldaniel') : ?>
+    <a href="<?= ($page->url() != $site->url()) ? $site->url() : '#top' ?>" class="logo logo--init">
+      <?php snippet('svg/logo') ?>
+    </a>
+  <?php endif ?>
+
   <?php snippet('nav') ?>
 
   <?php snippet('contact', ['page' => $page]) ?>

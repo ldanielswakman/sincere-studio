@@ -7,7 +7,7 @@ Text:
 <div class="row">
 <div class="col-xs-12 col-sm-10 col-sm-offset-1" markdown="1">
 <br>
-(link: work text: <i class="ion ion-arrow-left-c"></i> <em>Back to graphic & web design work</em> class: btn btn-greyoutline btn-sm u-mt10)
+(link: work text: Back to digital projects class: btn btn-greyoutline btn-sm u-mt10)
 <br><br>
 This archive encompasses urban and architectural design projects from the period of 2007-2011.
 <br><br>
