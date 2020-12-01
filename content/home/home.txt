@@ -2,73 +2,61 @@ Title: Sincere — Digital Design Studio
 
 ----
 
-Current:
-
-- 
-  text: Nebenan
-  link: https://nebenan.de
-- 
-  text: Gamer One
-  link: https://gamerone.gg
-- 
-  text: Humanitec
-  link: https://humanitec.com/
-- 
-  text: Collato
-  link: https://collato.com/
-
-----
-
-Recent:
-
-- projects/gamer-one
-- projects/luxfox
-- projects/inflight-vr
-
-----
-
 Sections:
 
 - 
+  text: '<span style="font-size: 2rem; font-weight: 500;">Sincere—Studio helps startups design and build the web of tomorrow</span>'
+  current:
+    - 
+      text: Nebenan
+      link: https://nebenan.de
+    - 
+      text: Gamer One
+      link: https://gamerone.gg
+    - 
+      text: Collato
+      link: https://collato.com/
   title: Top
-  type: text
   classes: section--homeintro u-pt25vh u-pb10vh
   bg_image:
     - sincere-landing.svg
   bg_color: ""
-  text: '<span style="font-size: 2rem; font-weight: 500;">Sincere—Studio helps designing and building the web of tomorrow</span>'
   number_of_slides: null
-  section_type: text
+  section_type: ""
+  _key: hero
+  _uid: hero_1606841656800_96
 - 
+  recent:
+    - projects/gamer-one
+    - projects/luxfox
+    - projects/inflight-vr
   title: Recent work
-  type: recent_work
   classes: bg-white u-pv5vh
   bg_image: [ ]
   bg_color: ""
   text: ""
   number_of_slides: 5
+  _key: recent_work
+  _uid: recent_work_1606841684725_84
 - 
+  number_of_slides: 5
   title: Stream of words
-  type: stream_of_words
   classes: u-pv5vh section--collapsed
   bg_image: [ ]
   bg_color: ""
   text: ""
-  number_of_slides: 5
+  _key: stream_of_words
+  _uid: stream_of_words_1606841686807_84
 - 
+  number_of_slides: 5
   title: Stream of images
-  type: stream_of_images
   classes: bg-white u-pv5vh section--collapsed
   bg_image: [ ]
   bg_color: ""
   text: ""
-  number_of_slides: 5
+  _key: stream_of_images
+  _uid: stream_of_images_1606841688144_84
 - 
-  title: Collaborate
-  type: text
-  classes: section--bg2 bg-bluedull u-pv10vh
-  bg_image: [ ]
-  bg_color: ""
   text: |
     <div class="line"></div>
     
@@ -79,12 +67,10 @@ Sections:
     <div class="u-mv2">
     <a href="javascript:openContactForm()" class="button u-mb1">Say hello</a>
     </div>
+  title: Collaborate
+  classes: section--bg2 bg-bluedull u-pv10vh
+  bg_image: [ ]
+  bg_color: ""
   number_of_slides: null
-
-----
-
-Intro-bg-image: devices-subtle.jpg
-
-----
-
-Intro-bg-color: #f7f7f9
+  _key: text
+  _uid: text_1606841689320_84
