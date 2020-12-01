@@ -4,19 +4,19 @@
     <h5>Recent work</h5>
 
     <!-- Project Cards -->
-		<div class="card-container owl-carousel u-mt1">
-		  <?php foreach ($recent->toPages() as $project) : ?>
+	<div class="card-container owl-carousel u-mt1">
+		<?php foreach ($recent->toPages() as $project) : ?>
 
-		    <a href="<?php echo $project->url() ?>" class="card">
-		      <?php if($image = $project->featuredimage()->toFile()) : ?>
-		        <figure>
-		          <img src="<?= $image->thumb(['width' => 800])->url() ?>" alt="">
-		        </figure>
-		      <?php endif ?>
-		    </a>
+			<a href="<?php echo $project->url() ?>" class="card">
+				<?php if($image = $project->featuredimage()->toFile()) : ?>
+				<figure>
+					<img src="<?= $image->thumb(['width' => 800])->url() ?>" alt="">
+				</figure>
+				<?php endif ?>
+			</a>
 
-		  <?php endforeach ?>
-		</div>
+		<?php endforeach ?>
+	</div>
 
     <div class="u-mb2 u-mt1">
       <!-- See -->

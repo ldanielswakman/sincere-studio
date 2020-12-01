@@ -21,7 +21,7 @@ Sections:
     
     That’s where Gamer One comes in — a clear social platform with a customisable interface, where gamers can feel at home.
     
-    <small style="opacity: 0.3;">Animations copyright (link: https://rob-barrett.com text: Rob Barrett popup: yes)</small>
+    <small style="opacity: 0.3;">Animations copyright (link: https://rob-barrett.com text: Rob Barrett target: blank)</small>
   col_2: '(image: g1-full_logo-light.png)'
   bg_colour: fff
   bg_image: [ ]
