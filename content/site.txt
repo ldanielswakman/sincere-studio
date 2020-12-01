@@ -2,6 +2,10 @@ Title: ldaniel.eu
 
 ----
 
+Theme: sincere
+
+----
+
 Author: L Daniel Swakman
 
 ----

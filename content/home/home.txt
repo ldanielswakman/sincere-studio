@@ -1,4 +1,4 @@
-Title: Digital Designer
+Title: Sincere — Digital Design Studio
 
 ----
 
@@ -32,13 +32,11 @@ Sections:
 - 
   title: Top
   type: text
-  classes: >
-    section--homeintro u-pt25vh u-pb10vh
-    bg-bluedark
+  classes: section--homeintro u-pt25vh u-pb10vh
   bg_image:
-    - galaxy.svg
+    - sincere-landing.svg
   bg_color: ""
-  text: '> **Hoi!**<br>ldaniel.eu is an independent design studio, designing + building the web for today and tomorrow.'
+  text: '<span style="font-size: 2rem; font-weight: 500;">Sincere—Studio helps designing and building the web of tomorrow</span>'
   number_of_slides: null
   section_type: text
 - 
@@ -49,22 +47,6 @@ Sections:
   bg_color: ""
   text: ""
   number_of_slides: 5
-- 
-  title: Read on
-  type: text
-  classes: section--bg u-minheight40vh u-pv15vh
-  bg_image:
-    - well-what-did-you-expect.jpg
-  bg_color: '#ececec'
-  text: |
-    <div class="line"></div>
-    
-    > ...**L Daniel Swakman** is the 'full stack' designer running it. He also likes working at startups that want to be design-driven.
-    
-    <div id="ldaniel_location" data-url="api?loc=1" class="u-mt1" style="line-height: 2rem;"><small><em>getting location...</em></small></div>
-    
-    <div class="u-mt2"> (link: about class: button button--dark u-mr1 text: read more) (link: cv class: button button--dark button--outline text: cv) </div>
-  number_of_slides: null
 - 
   title: Stream of words
   type: stream_of_words
@@ -85,15 +67,14 @@ Sections:
   title: Collaborate
   type: text
   classes: section--bg2 bg-bluedull u-pv10vh
-  bg_image:
-    - sitting-w-habita.jpg
+  bg_image: [ ]
   bg_color: ""
   text: |
     <div class="line"></div>
     
     > Collaborate?
     
-    I currently have **no** availability for new projects at least until July 2020. But I'm always excited to hear new projects, and see how we can collaborate in them. So feel free to drop me a line:
+    I currently have **limited** availability for new projects from January 2021. But I'm always excited to hear new projects, and see how we can collaborate in them. So feel free to drop me a line:
     
     <div class="u-mv2">
     <a href="javascript:openContactForm()" class="button u-mb1">Say hello</a>
