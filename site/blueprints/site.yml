@@ -1,7 +1,7 @@
 title: Site
 
 columns:
-	- width: 1/1
+	- width: 1/2
 		sections:
 			projects:
 				headline: Projects
@@ -9,7 +9,6 @@ columns:
 				layout: cards
 				parent: site.find('projects')
 				template: project
-
 	- width: 1/2
 		sections:
 			listed:
@@ -17,8 +16,6 @@ columns:
 				type: pages
 				layout: list
 				status: listed
-	- width: 1/2
-		sections:
 			unlisted:
 				headline: Other Pages
 				type: pages
@@ -34,3 +31,13 @@ columns:
 					- projects
 					- cv
 					- articles
+			options:
+				type: fields
+				fields:
+					theme:
+						label: Site theme
+						type: radio
+						default: ldaniel
+						options:
+							ldaniel: ldaniel.eu
+							sincere: Sincere—Studio
