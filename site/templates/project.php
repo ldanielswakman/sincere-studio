@@ -104,9 +104,9 @@
     if($next = $page->nextListed()):
     ?>
     <a href="<?= $next->url() ?>">
-      <section class="bg-blue u-pv2">
-        <div>
-          <p style="margin-bottom: 1rem; font-size: 2rem; opacity: 0.3;">next up</p>
+      <section class="section--next-project">
+        <div class="section__header">
+          <h4>next up</h4>
         </div>
 
         <div class="row" style="align-items: center;">

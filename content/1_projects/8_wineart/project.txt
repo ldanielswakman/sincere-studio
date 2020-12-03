@@ -2,44 +2,27 @@ Title: wine—art
 
 ----
 
-Year: 2017
-
-----
-
-Description: minimal & playful experience for a wine consultancy
-
-----
-
-Tags: web design,graphic,branding,front-end
-
-----
-
-Projecturl: http://www.wine-art.co
-
-----
-
-Featuredimage: wine-art.jpg
-
-----
-
-Featuredcolour: e01b3d
-
-----
-
-Sections: 
+Sections:
 
 - 
+  num_cols: 'false'
+  classes: ""
   col_1: ""
-  bg_image: wineart-promo-image.jpg
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - wineart-promo-image.jpg
+  bg_image_pos: ""
 - 
-  num_cols: "1"
+  num_cols: 'true'
+  classes: u-pt10vh
   col_1: '(image: wineart-home-browser.png)'
   col_2: ""
   bg_colour: '#313a42'
-  bg_image: ""
-  classes: u-pt10vh
+  bg_image: [ ]
+  bg_image_pos: ""
 - 
-  num_cols: "1"
+  num_cols: 'true'
   classes: ""
   col_1: |
     > <span style="color: #e01b3d; font-size: 2rem;">Taste for tasting</span>
@@ -49,29 +32,60 @@ Sections:
     </span>
   col_2: ""
   bg_colour: ""
-  bg_image: ""
+  bg_image: [ ]
+  bg_image_pos: ""
 - 
-  num_cols: "1"
+  num_cols: 'true'
   classes: u-aligncenter
   col_1: '(image: wineart-logo-story.gif)'
   col_2: ""
   bg_colour: '#fafbfc'
-  bg_image: ""
+  bg_image: [ ]
+  bg_image_pos: ""
 - 
-  num_cols: "1"
+  num_cols: 'true'
+  classes: u-pt10vh
   col_1: '(image: wineart-services-browser.png)'
   col_2: ""
   bg_colour: '#313a42'
-  bg_image: ""
-  classes: u-pt10vh
+  bg_image: [ ]
+  bg_image_pos: ""
 - 
-  num_cols: "1"
+  num_cols: 'true'
   classes: ""
   col_1: ""
   col_2: ""
   bg_colour: ""
-  bg_image: wineart-business-card.jpg
+  bg_image:
+    - wineart-business-card.jpg
+  bg_image_pos: ""
 
 ----
 
-Featured: 1
+Year: 2017
+
+----
+
+Description: minimal & playful experience for a wine consultancy
+
+----
+
+Tags: web design, graphic, branding, front-end
+
+----
+
+Projecturl: http://www.wine-art.co
+
+----
+
+Featured: false
+
+----
+
+Featuredimage:
+
+- wine-art.jpg
+
+----
+
+Featuredcolour: e01b3d

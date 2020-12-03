@@ -1,8 +1,76 @@
-H-basics: 
+Title: Harvest
 
 ----
 
-Title: Harvest
+Sections:
+
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - banner.jpg
+  bg_image_pos: ""
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - web-mockup.jpg
+  bg_image_pos: ""
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: |
+    For a freshly starting ambitious performance marketing agency, we were asked to develop a brand identity and a one-pager website — in a very short timespan.
+    
+    The brand workshop we organised was an essential tool to bring to the surface what kind of agency they wanted to be: New York, advertising, suit and tie + tongue in cheek — in other words, Mad Men (without the sexism). We came up with a minimal brand identity of sleek black with a golden touch and a strong and simple logo.
+    
+    In collaboration with (link: http://www.maffindesign.com/ text: Narta Dalladaku).
+  col_2: ""
+  bg_colour: '#e0e3e8'
+  bg_image: [ ]
+  bg_image_pos: ""
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - logo.jpg
+  bg_image_pos: ""
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - business-cards.jpg
+  bg_image_pos: ""
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - services-visual.jpg
+  bg_image_pos: ""
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - get-in-touch.jpg
+  bg_image_pos: ""
 
 ----
 
@@ -14,7 +82,7 @@ Description: Sleek and minimal identity and one-pager for new kid on the block
 
 ----
 
-Tags: branding,graphic,visual design,web design,front-end
+Tags: branding, graphic, visual design, web design, front-end
 
 ----
 
@@ -22,15 +90,13 @@ Projecturl: http://harvest-mobile.com/
 
 ----
 
-H-featured: 
+Featured: false
 
 ----
 
-Featured: 1
+Featuredimage:
 
-----
-
-Featuredimage: cover.jpg
+- cover.jpg
 
 ----
 
@@ -38,63 +104,8 @@ Featuredcolour:
 
 ----
 
-H-content: 
+H-basics: 
 
 ----
 
-Sections: 
-
-- 
-  num_cols: "1"
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image: banner.jpg
-- 
-  num_cols: "1"
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image: web-mockup.jpg
-- 
-  num_cols: "1"
-  classes: ""
-  col_1: |
-    For a freshly starting ambitious performance marketing agency, we were asked to develop a brand identity and a one-pager website — in a very short timespan.
-    
-    The brand workshop we organised was an essential tool to bring to the surface what kind of agency they wanted to be: New York, advertising, suit and tie + tongue in cheek — in other words, Mad Men (without the sexism). We came up with a minimal brand identity of sleek black with a golden touch and a strong and simple logo.
-    
-    In collaboration with (link: http://www.maffindesign.com/ text: Narta Dalladaku).
-  col_2: ""
-  bg_colour: '#e0e3e8'
-  bg_image: ""
-- 
-  num_cols: "1"
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image: logo.jpg
-- 
-  num_cols: "1"
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image: business-cards.jpg
-- 
-  num_cols: "1"
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image: services-visual.jpg
-- 
-  num_cols: "1"
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image: get-in-touch.jpg
+H-content: 

@@ -1,0 +1,71 @@
+Title: Diagnose Berlin
+
+----
+
+Sections:
+
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - diagnose-berlin-cover-image.jpg
+  bg_image_pos: full
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - desktop-mobile-mockup.jpg
+  bg_image_pos: full
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: '(image: diagnose-berlin-shot-4.jpg)'
+  col_2: ""
+  bg_colour: ffffff
+  bg_image: [ ]
+  bg_image_pos: right
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - diagnose-berlin-shot-1.jpg
+  bg_image_pos: full
+
+----
+
+Year: 2018
+
+----
+
+Description: Opening a digital-first channel for expertise in sports & training
+
+----
+
+Tags: web-design, visual-design, ux, front-end
+
+----
+
+Projecturl: https://diagnose-berlin.de/
+
+----
+
+Featured: true
+
+----
+
+Featuredimage:
+
+- diagnose-berlin-cover-image.jpg
+
+----
+
+Featuredcolour: 

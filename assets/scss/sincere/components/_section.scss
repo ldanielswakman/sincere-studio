@@ -1,15 +1,19 @@
 // Section
-$sectionpadding: 1.5rem;
+$sectionpadding: 2rem;
 
 section {
   position: relative;
-  padding: 0 $sectionpadding; // site-wide horizontal padding
+  padding: 0 $sectionpadding/2; // site-wide horizontal padding
   max-height: auto;
   overflow: hidden;
   @include prefix(transition, max-height 0.5s ease-in-out);
 
   background-size: cover;
   background-position: center center;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 $sectionpadding; // site-wide horizontal padding
+  }
 
   * {
     z-index: 1;
@@ -82,8 +86,38 @@ section {
   background-size: 80vw;
   background-position: bottom right;
 
-  @media screen and (min-width: 768px)  {
+  @media screen and (min-width: 768px) {
     background-size: 80vw;
     background-position: bottom right;
+  }
+}
+
+.section--projects {
+  padding-top: $sectionpadding/2;
+  padding-bottom: $sectionpadding/2;
+
+  @media screen and (min-width: 768px) {
+    padding-top: $sectionpadding;
+    padding-bottom: $sectionpadding;
+  }
+}
+
+.section--next-project {
+  background: $blue;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: $white;
+
+  .section__header * {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    opacity: 0.3;
+  }
+
+  figure {
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    img { display: block; }
   }
 }

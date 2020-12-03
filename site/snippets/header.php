@@ -5,11 +5,13 @@
 
 <body class="<?= $page->template() ?>">
 
-  <?php if($site->theme() == 'ldaniel') : ?>
-    <a href="<?= ($page->url() != $site->url()) ? $site->url() : '#top' ?>" class="logo logo--init">
+  <a href="<?= ($page->url() != $site->url()) ? $site->url() : '#top' ?>" class="logo logo--init">
+    <?php if($site->theme() == 'ldaniel') : ?>
       <?php snippet('svg/logo') ?>
-    </a>
-  <?php endif ?>
+    <?php elseif($site->theme() == 'sincere') : ?>
+      <?php snippet('svg/logo-sincere') ?>
+    <?php endif ?>
+  </a>
 
   <?php snippet('nav') ?>
 

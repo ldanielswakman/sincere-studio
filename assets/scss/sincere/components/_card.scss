@@ -12,8 +12,7 @@
   display: inline-block;
   width: 20rem;
   min-width: 12rem;
-  max-width: calc(100vw - 3rem);
-  margin-right: 1rem;
+  max-width: 100%;
   vertical-align: top;
   background-color: $white;
   overflow: hidden;
@@ -56,7 +55,7 @@
   }
   &.card--shadow {
     @include prefix(box-shadow, 0 0.25rem 1rem rgba($bluedark, 0.1));
-    @include prefix(border-radius, 0.25rem);
+    @include prefix(border-radius, 0.5rem);
   }
   .card__title {
     color: $blue;
@@ -70,7 +69,14 @@
     }
   }
   p {
-    line-height: 1.25rem;
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.25rem;
+      line-height: 1.625rem;
+    }
   }
   figure img {
     width: 100%;

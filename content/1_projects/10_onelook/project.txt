@@ -1,8 +1,100 @@
-H-basics: 
+Title: OneLook Thesaurus
 
 ----
 
-Title: OneLook Thesaurus
+Sections:
+
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - thinkin-bg.png
+  bg_image_pos: ""
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - onelook-phones.png
+  bg_image_pos: ""
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: |
+    > <span style="color: #035; font-size: 2rem;">Where is the filter button?</span>
+    
+    <span class="c-grey">
+    Redesign for a long-running thesaurus website. Focusing on the main search interaction and browsing the results, this little animation gives an indication of the new experience. With this redesign, the website went transformed from a technical website with hidden functionality to a comfortably usable tool.</span>
+    
+    (image: onelook-animation.gif  class: u-mt3 imgclass: u-boxshadow)
+  col_2: ""
+  bg_colour: ""
+  bg_image: [ ]
+  bg_image_pos: ""
+- 
+  num_cols: 'true'
+  classes: u-aligncenter c-white
+  col_1: |
+    <br><br>
+    > Qualitative & quantitative UX research by **(link: https://twitter.com/esinishi text: Esin Işık target: _blank class: c-white)**
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - onelook-post-its.jpg
+  bg_image_pos: ""
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: |
+    <!--
+    > <span style="color: #035; font-size: 2rem;">From research to realisation</span>
+    <span class="c-grey">Text</span>
+    -->
+    
+    (image: onelook-research-principles.jpg)
+  col_2: ""
+  bg_colour: '#ffffff'
+  bg_image: [ ]
+  bg_image_pos: ""
+- 
+  num_cols: 'true'
+  classes: u-pb0
+  col_1: '<blockquote><p class="u-aligncenter c-white u-mb2" style="line-height: 2rem; max-width: 36rem; margin: 0 auto;">Moving an interface dating from the early days of the web to a future-proof experience</p></blockquote>'
+  col_2: ""
+  bg_colour: '#34495e'
+  bg_image: [ ]
+  bg_image_pos: ""
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: '#34495e'
+  bg_image:
+    - onelook-old-to-new.png
+  bg_image_pos: ""
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - onelook-device-mockup.jpg
+  bg_image_pos: ""
+- 
+  num_cols: 'true'
+  classes: u-aligncenter
+  col_1: '(link: http://www.onelook.com/thesaurus/beta text: Try the result out for yourself class: button button button--white target: _blank)'
+  col_2: ""
+  bg_colour: ""
+  bg_image: [ ]
+  bg_image_pos: ""
 
 ----
 
@@ -14,7 +106,7 @@ Description: Re-imagining a classic thesaurus interface into a modern web experi
 
 ----
 
-Tags: interaction design,visual design,ui,ux,front-end
+Tags: interaction design, visual design, ui, ux, front-end
 
 ----
 
@@ -22,15 +114,13 @@ Projecturl: http://www.onelook.com/thesaurus/beta/
 
 ----
 
-H-featured: 
+Featured: false
 
 ----
 
-Featured: 1
+Featuredimage:
 
-----
-
-Featuredimage: cover-image.jpg
+- cover-image.jpg
 
 ----
 
@@ -38,86 +128,8 @@ Featuredcolour: #fcf188
 
 ----
 
-H-content: 
+H-basics: 
 
 ----
 
-Sections: 
-
-- 
-  num_cols: "1"
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image: thinkin-bg.png
-- 
-  num_cols: "1"
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image: onelook-phones.png
-- 
-  num_cols: "1"
-  classes: ""
-  col_1: |
-    > <span style="color: #035; font-size: 2rem;">Where is the filter button?</span>
-    
-    <span class="c-grey">
-    Redesign for a long-running thesaurus website. Focusing on the main search interaction and browsing the results, this little animation gives an indication of the new experience. With this redesign, the website went transformed from a technical website with hidden functionality to a comfortably usable tool.</span>
-    
-    (image: onelook-animation.gif  class: u-mt3 imgclass: u-boxshadow)
-  col_2: ""
-  bg_colour: ""
-  bg_image: ""
-- 
-  num_cols: "1"
-  classes: u-aligncenter c-white
-  col_1: |
-    <br><br>
-    > Qualitative & quantitative UX research by **(link: https://twitter.com/esinishi text: Esin Işık target: _blank class: c-white)**
-  col_2: ""
-  bg_colour: ""
-  bg_image: onelook-post-its.jpg
-- 
-  num_cols: "1"
-  classes: ""
-  col_1: |
-    <!--
-    > <span style="color: #035; font-size: 2rem;">From research to realisation</span>
-    <span class="c-grey">Text</span>
-    -->
-    
-    (image: onelook-research-principles.jpg)
-  col_2: ""
-  bg_colour: '#ffffff'
-  bg_image: ""
-- 
-  num_cols: "1"
-  classes: u-pb0
-  col_1: '<blockquote><p class="u-aligncenter c-white u-mb2" style="line-height: 2rem; max-width: 36rem; margin: 0 auto;">Moving an interface dating from the early days of the web to a future-proof experience</p></blockquote>'
-  col_2: ""
-  bg_colour: '#34495e'
-  bg_image: ""
-- 
-  num_cols: "1"
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: '#34495e'
-  bg_image: onelook-old-to-new.png
-- 
-  num_cols: "1"
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image: onelook-device-mockup.jpg
-- 
-  num_cols: "1"
-  classes: u-aligncenter
-  col_1: '(link: http://www.onelook.com/thesaurus/beta text: Try the result out for yourself class: button button button--white target: _blank)'
-  col_2: ""
-  bg_colour: ""
-  bg_image: ""
+H-content: 

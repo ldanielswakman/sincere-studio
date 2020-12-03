@@ -5,7 +5,7 @@ Title: Sincere — Digital Design Studio
 Sections:
 
 - 
-  text: '<span style="font-size: 2rem; font-weight: 500;">Sincere—Studio helps startups design and build the web of tomorrow</span>'
+  text: '<span style="font-size: 2rem; line-height: 2.5rem; font-weight: 500;">Sincere—Studio helps startups design and build the web of tomorrow</span>'
   current:
     - 
       text: Nebenan
@@ -28,8 +28,6 @@ Sections:
 - 
   recent:
     - projects/gamer-one
-    - projects/luxfox
-    - projects/inflight-vr
   title: Recent work
   classes: bg-white u-pv5vh
   bg_image: [ ]

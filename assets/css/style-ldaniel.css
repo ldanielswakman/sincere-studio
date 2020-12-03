@@ -1710,9 +1710,9 @@ body.home .logo.logo--init {
     -webkit-box-shadow: 0 0.25rem 1rem rgba(0, 51, 85, 0.1);
     -moz-box-shadow: 0 0.25rem 1rem rgba(0, 51, 85, 0.1);
     box-shadow: 0 0.25rem 1rem rgba(0, 51, 85, 0.1);
-    -webkit-border-radius: 0.25rem;
-    -moz-border-radius: 0.25rem;
-    border-radius: 0.25rem; }
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem; }
   .card .card__title {
     color: #00f;
     margin-bottom: 0.25rem; }
@@ -1946,3 +1946,13 @@ section {
     .section--bg-bottom-right {
       background-size: 80vw;
       background-position: bottom right; } }
+
+.section--next-project {
+  background: #00f;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #fff; }
+  .section--next-project .section__header * {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    opacity: 0.3; }

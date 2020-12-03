@@ -2,7 +2,7 @@ Title: SuperCV
 
 ----
 
-Sections: 
+Sections:
 
 - 
   num_cols: 'true'
@@ -34,11 +34,11 @@ Projecturl: http://supercv.com/
 
 ----
 
-Featured: true
+Featured: false
 
 ----
 
-Featuredimage: 
+Featuredimage:
 
 - supercv.jpg
 

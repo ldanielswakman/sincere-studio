@@ -87,3 +87,16 @@ section {
     background-position: bottom right;
   }
 }
+
+.section--next-project {
+  background: $blue;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: $white;
+
+  .section__header * {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    opacity: 0.3;
+  }
+}
