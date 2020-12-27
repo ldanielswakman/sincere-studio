@@ -1051,7 +1051,7 @@ p a:not(.button):hover {
 
 h1 {
   font-size: 1.5rem;
-  font-weight: normal;
+  font-weight: 500;
   color: #6547FE; }
 
 h3 {

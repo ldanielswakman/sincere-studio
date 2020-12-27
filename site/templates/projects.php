@@ -19,6 +19,18 @@
 
     <?php snippet('page-header', ['page' => $page, 'subtitle' => $subtitle]) ?>
 
+    <?php
+    // Listing all tags
+    if(false):
+    foreach($projects->pluck('tags', ', ', true) as $tag) :
+      $count = $projects->filterBy('tags', $tag, ',')->count();
+      if($count > 0):
+        echo '<a href="' . $page->url() . '/tag:' . $tag . '">' . $tag . ' (' . $count . ')</a><br />';
+      endif;  
+    endforeach;
+    endif;
+    ?>
+
     <?php if ($page->text()->isNotEmpty() && strlen($page->text()->kirbytext()) > 1) : ?>
 
       <section class="nopadding u-relative" style="border-bottom: 1px solid #ddd">

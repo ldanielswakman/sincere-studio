@@ -117,6 +117,12 @@ Projecturl: https://g1.gg/
 
 ----
 
+Keyvisual:
+
+- key-visual-arena-montage.jpg
+
+----
+
 Featured: true
 
 ----

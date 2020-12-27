@@ -2,6 +2,38 @@
 
   <main>
 
+    <?php // Basic info section ?>
+    <section style="padding-top: 3.5rem; padding-bottom: 4.5rem; background: #F7FAFC">
+      <div class="row">
+        <div class="col-xs-12 col-sm-7 col-md-5 col-md-offset-2">
+          <h1>
+            <?= $page->title()->html() ?>
+            <sup class="c-grey" style="font-size: 0.875rem;font-weight: normal; margin-left: 0.5rem;">
+              <small><?= $page->year() ?></small>
+            </sup>
+          </h1>
+          <blockquote style="margin-top: 0;"><p><?= $page->description()->kt() ?></p></blockquote>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-3 col-md-offset-1">
+          <?php
+          foreach(explode(',', $page->tags()->html()) as $tag) :
+            echo '<div><a class="c-grey" href="' . $page->parent()->url() . '/tag:' . $tag . '">' . $tag . '</a></div>';
+          endforeach;
+          ?>
+        </div>
+    </section>
+
+    <?php // Key visual ?>
+    <?php if ($keyvisual = $page->keyvisual()->toFile()): ?>
+
+      <section id="key_visual" style="padding: 0;">
+        <figure>
+          <img src="<?= $keyvisual->url() ?>" alt="" />
+        </figure>
+      </section>
+
+    <?php endif ?>
+
     <?php foreach($page->sections()->toStructure() as $key => $section): ?>
 
       <?php
@@ -52,7 +84,6 @@
       </section>
 
       <?php if ($key == 0) : ?>
-        <!-- NEW project info section -->
         <section>
           <div class="row u-pv3 u-ph05">
             <div class="col-xs-12 col-sm-7 col-md-5 col-md-offset-1">
