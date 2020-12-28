@@ -1056,8 +1056,7 @@ h1 {
 
 h3 {
   font-size: 1.5rem;
-  font-weight: normal;
-  color: #6547FE; }
+  font-weight: 500; }
 
 h4 {
   font-size: 1.25rem;
@@ -1447,8 +1446,8 @@ body.isTouch .u-hide-for-touch {
 
 .logo {
   position: fixed;
-  top: 1.5rem;
-  left: 1.5rem;
+  top: 2.25rem;
+  left: 2.5rem;
   z-index: 3;
   display: inline-block;
   width: 2.5rem;
@@ -1813,7 +1812,6 @@ section {
   position: relative;
   padding: 0 1rem;
   max-height: auto;
-  overflow: hidden;
   -webkit-transition: max-height 0.5s ease-in-out;
   -moz-transition: max-height 0.5s ease-in-out;
   transition: max-height 0.5s ease-in-out;
@@ -1911,3 +1909,111 @@ section {
     overflow: hidden; }
     .section--next-project figure img {
       display: block; }
+
+.block {
+  padding: 3rem 1.25rem; }
+  @media screen and (min-width: 768px) {
+    .block {
+      padding: 4rem 2rem; } }
+  @media screen and (min-width: 1024px) {
+    .block {
+      padding: 6rem 2rem; } }
+  .block--info {
+    padding: 1.25rem;
+    border: 1.25rem solid #fff;
+    background: #F7FAFC; }
+    @media screen and (min-width: 768px) {
+      .block--info {
+        padding: 6rem 2rem;
+        border-width: 2rem; } }
+    .block--info h1 {
+      margin-left: 2rem;
+      margin-bottom: 1.25rem;
+      color: inherit; }
+      @media screen and (min-width: 768px) {
+        .block--info h1 {
+          margin-left: 0; } }
+    .block--info blockquote {
+      margin-top: 0;
+      font-size: 1.25rem; }
+    .block--info .actions {
+      display: flex;
+      margin: 0.75rem 0; }
+    .block--info .actions a {
+      padding: 0.5rem 1.25rem 0.5rem 0;
+      color: #8D9DA6; }
+      .block--info .actions a:hover {
+        color: #000; }
+  .block--keyvisual figure, .block--full_image figure {
+    width: 100%; }
+    .block--keyvisual figure img, .block--full_image figure img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: calc(100vw - 2.5rem);
+      max-height: calc(100vh - 8.5rem);
+      object-fit: cover;
+      object-position: center; }
+      @media screen and (min-width: 768px) {
+        .block--keyvisual figure img, .block--full_image figure img {
+          min-height: auto; } }
+  .block--keyvisual {
+    padding: 0; }
+    .block--keyvisual figure img {
+      min-height: 100vw; }
+      @media screen and (min-width: 768px) {
+        .block--keyvisual figure img {
+          min-height: auto; } }
+  .block--full_image {
+    padding: 1.25rem; }
+    @media screen and (min-width: 768px) {
+      .block--full_image {
+        padding: 2rem; } }
+  @media screen and (min-width: 768px) {
+    .block--text_image .block__text, .block--text_image .block__image {
+      -webkit-position: sticky;
+      position: sticky;
+      top: 3.5rem;
+      align-self: flex-start; } }
+  @media screen and (max-width: 767px) {
+    .block--text_image .block__text + .block__image, .block--text_image .block__image + .block__image {
+      margin-top: 2rem; } }
+  .block--text_image figure {
+    width: 100%; }
+    .block--text_image figure + figure {
+      margin-top: 1.25rem; }
+    .block--text_image figure img {
+      display: block;
+      width: 100%; }
+
+.project-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #8D9DA6; }
+  @media screen and (min-width: 768px) {
+    .project-info {
+      flex-direction: column; } }
+  .project-info a {
+    color: inherit; }
+    .project-info a:hover, .project-info a:focus {
+      color: #000; }
+  .project-info .year,
+  .project-info .disciplines,
+  .project-info .team {
+    flex-basis: 50%;
+    flex-grow: 1;
+    margin-bottom: 1.25rem; }
+  .project-info .team .note {
+    margin-left: 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #B8C5CC; }
+  .project-info .year {
+    text-align: right; }
+    @media screen and (min-width: 768px) {
+      .project-info .year {
+        text-align: left;
+        order: -1; } }

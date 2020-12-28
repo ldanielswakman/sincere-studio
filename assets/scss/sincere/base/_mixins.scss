@@ -20,3 +20,30 @@
   @-o-keyframes #{$animationName} { @content; }
   @keyframes #{$animationName} { @content; }
 }
+
+// Mixin: Responsive
+@mixin tabletAndUp {
+  @media screen and (min-width: 768px) {
+      @content;
+  }
+}
+@mixin tabletAndDown {
+  @media screen and (max-width: 767px) {
+      @content;
+  }
+}
+@mixin tabletWideAndUp {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+@mixin desktopAndUp {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+@mixin tabletWideAndDown {
+    @media screen and (max-width: 1023px) {
+        @content;
+    }
+}

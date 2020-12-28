@@ -5,7 +5,7 @@ section {
   position: relative;
   padding: 0 $sectionpadding/2; // site-wide horizontal padding
   max-height: auto;
-  overflow: hidden;
+  // overflow: hidden;
   @include prefix(transition, max-height 0.5s ease-in-out);
 
   background-size: cover;
@@ -102,6 +102,11 @@ section {
   }
 }
 
+
+
+// PROJECT PAGE
+
+// Project page: next project
 .section--next-project {
   background: $blue;
   padding-top: 2rem;
@@ -119,5 +124,163 @@ section {
     overflow: hidden;
 
     img { display: block; }
+  }
+}
+
+// Project: info section
+.block {
+  padding: 3rem 1.25rem;
+  
+  @include tabletAndUp {
+    padding: 4rem 2rem;
+  }
+  @include tabletWideAndUp {
+    padding: 6rem 2rem;
+  }
+
+  &--info {
+    padding: 1.25rem;
+    border: 1.25rem solid #fff;
+    background: #F7FAFC;
+
+    @include tabletAndUp {
+      padding: 6rem 2rem;
+      border-width: 2rem;
+    }
+
+    h1 {
+      margin-left: 2rem;
+      margin-bottom: 1.25rem;
+      color: inherit;
+
+      @include tabletAndUp {
+        margin-left: 0;
+      }
+    }
+    blockquote {
+      margin-top: 0;
+      font-size: 1.25rem;
+    }
+    .actions {
+      display: flex;
+      margin: 0.75rem 0;
+    }
+    .actions a {
+      padding: 0.5rem 1.25rem 0.5rem 0;
+      color: #8D9DA6;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+  &--keyvisual,
+  &--full_image {
+    figure {
+      width: 100%;
+  
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        min-height: calc(100vw - 2.5rem);
+        max-height: calc(100vh - 8.5rem);
+        object-fit: cover;
+        object-position: center;
+
+        @include tabletAndUp {
+          min-height: auto;
+        }
+      }
+    }
+  }
+
+  &--keyvisual {
+    padding: 0;
+
+    figure img {
+      min-height: 100vw;
+
+      @include tabletAndUp {
+        min-height: auto;
+      }
+    }
+  }
+
+  &--full_image {
+    padding: 1.25rem;
+  
+    @include tabletAndUp {
+      padding: 2rem;
+    }
+  }
+
+  &--text_image {
+    .block__text, .block__image {
+      @include tabletAndUp {
+        -webkit-position: sticky;
+        position: sticky;
+        top: 3.5rem;
+        align-self: flex-start;
+      }
+
+      @include tabletAndDown {
+        & + .block__image {
+          margin-top: 2rem;
+        }
+      }
+    }
+    figure {
+      width: 100%;
+
+      & + figure { margin-top: 1.25rem; }
+  
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+.project-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #8D9DA6;
+
+  @include tabletAndUp {
+    flex-direction: column;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover, &:focus {
+      color: #000;
+    }
+  }
+
+  .year,
+  .disciplines,
+  .team {
+    flex-basis: 50%;
+    flex-grow: 1;
+    margin-bottom: 1.25rem;
+  }
+  .team .note {
+    margin-left: 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #B8C5CC;
+  }
+  .year {
+    text-align: right;
+
+    @include tabletAndUp {
+      text-align: left;
+      order: -1;
+    }
   }
 }
