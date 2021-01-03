@@ -6,7 +6,11 @@
 <body class="<?= $page->template() ?>">
 
   <a href="<?= ($page->url() != $site->url()) ? $site->url() : '#top' ?>" class="logo logo--init">
-    <?php snippet('svg/logo') ?>
+    <?php if($site->theme() == 'ldaniel') : ?>
+      <?php snippet('svg/logo') ?>
+    <?php elseif($site->theme() == 'sincere') : ?>
+      <?php snippet('svg/logo-sincere') ?>
+    <?php endif ?>
   </a>
 
   <?php snippet('nav') ?>

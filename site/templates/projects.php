@@ -19,6 +19,18 @@
 
     <?php snippet('page-header', ['page' => $page, 'subtitle' => $subtitle]) ?>
 
+    <?php
+    // Listing all tags
+    if(false):
+    foreach($projects->pluck('tags', ', ', true) as $tag) :
+      $count = $projects->filterBy('tags', $tag, ',')->count();
+      if($count > 0):
+        echo '<a href="' . $page->url() . '/tag:' . $tag . '">' . $tag . ' (' . $count . ')</a><br />';
+      endif;  
+    endforeach;
+    endif;
+    ?>
+
     <?php if ($page->text()->isNotEmpty() && strlen($page->text()->kirbytext()) > 1) : ?>
 
       <section class="nopadding u-relative" style="border-bottom: 1px solid #ddd">
@@ -36,11 +48,11 @@
     <?php endif ?>
 
     <?php if ($pr_featured->count() > 0) : ?>
-      <section class="u-pv5vh">
+      <section class="section--projects">
         <div class="row">
 
           <?php foreach ($pr_featured as $project) : ?>
-            <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="col-xs-12 col-sm-6">
               <a href="<?= $project->url() ?>" class="card u-mb2" style="width: 100%;">
                 <?php if($image = $project->featuredimage()->toFile()) : ?>
                   <figure>

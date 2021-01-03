@@ -2,92 +2,200 @@ title: Home
 pages: false
 fields:
 
-  title:
-    label: Title
-    type:  text
-
-  current:
-    label: Current
-    type: structure
-    fields:
-      text:
-        label: Text
-        type: text
-      link:
-        label: Link
-        type: url
-
-  recent:
-    label: Recent work
-    type: pages
-    query: site.find('projects').children.listed
-    layout: cards
-    max: 3
-    size: tiny
-
   sections:
-    type: structure
-    columns:
-      bg_image:
-        width: 1/4
-      title:
-        width: 1/4
-      text:
-        width: 1/2
-    fields:
+    type: builder
+    label: Sections
+    fieldsets:
 
-      title:
-        label: >
-          Title (only used for ID)
-        type: text
-        width: 1/2
-        required: false
+      hero:
+        name: Hero
+        label: Hero
+        fields:
 
-      type:
-        type: select
-        width: 1/4
-        default: text
-        options:
-          text: "Text section"
-          recent_work: "Recent work"
-          stream_of_words: "Stream of words"
-          stream_of_images: "Stream of images"
-        show:
-          text: text
-          recent_work: number_of_slides
-          stream_of_words: number_of_slides
-          stream_of_images: number_of_slides
-        hide:
-          text: number_of_slides
-          recent_work: text
-          stream_of_words: text
-          stream_of_images: text
+          text:
+            label: Text
+            type:  textarea
+            size:  small
 
-      classes:
-        label: Classes
-        type: text
-        width: 1/4
+          current:
+            label: Current
+            type: structure
+            fields:
+              text:
+                label: Text
+                type: text
+              link:
+                label: Link
+                type: url
 
-      bg_image:
-        label: BG Image
-        type: files
-        multiple: false
-        width: 1/2
+          title:
+            label: >
+              Title (only used for ID)
+            type: text
+            width: 1/4
+            required: false
 
-      bg_color:
-        label: >
-          BG Colour (with #)
-        type: text
-        icon: eyedropper
-        width: 1/2
+          classes:
+            label: Classes
+            type: text
+            width: 1/4
+
+          bg_image:
+            label: BG Image
+            type: files
+            multiple: false
+            width: 1/4
+
+          bg_color:
+            label: >
+              BG Colour (with #)
+            type: text
+            icon: eyedropper
+            width: 1/4
 
       text:
-        label: Text
-        type:  textarea
-        size:  large
+        name: Section
+        label: Section
+        fields:
 
-      number_of_slides:
-        label: Number of slides
-        type: number
-        min: 1
-        max: 10
+          text:
+            label: Text
+            type:  textarea
+            size:  small
+
+          title:
+            label: >
+              Title (only used for ID)
+            type: text
+            width: 1/4
+            required: false
+
+          classes:
+            label: Classes
+            type: text
+            width: 1/4
+
+          bg_image:
+            label: BG Image
+            type: files
+            multiple: false
+            width: 1/4
+
+          bg_color:
+            label: >
+              BG Colour (with #)
+            type: text
+            icon: eyedropper
+            width: 1/4
+
+      recent_work:
+        name: Recent work
+        label: Recent work
+        fields:
+
+          recent:
+            label: Recent work
+            type: pages
+            query: site.find('projects').children.listed
+            layout: cards
+            image:
+              back: white
+            max: 5
+            size: tiny
+
+          title:
+            label: >
+              Title (only used for ID)
+            type: text
+            required: false
+            width: 1/4
+
+          classes:
+            label: Classes
+            type: text
+            width: 1/4
+
+          bg_image:
+            label: BG Image
+            type: files
+            multiple: false
+            width: 1/4
+
+          bg_color:
+            label: >
+              BG Colour (with #)
+            type: text
+            icon: eyedropper
+            width: 1/4
+
+      stream_of_words:
+        name: Stream of Words
+        label: Stream of Words
+        fields:
+
+          number_of_slides:
+            type: number
+            label: Number of Slides
+            min: 0
+            max: 20
+
+          title:
+            label: >
+              Title (only used for ID)
+            type: text
+            required: false
+            width: 1/4
+
+          classes:
+            label: Classes
+            type: text
+            width: 1/4
+
+          bg_image:
+            label: BG Image
+            type: files
+            multiple: false
+            width: 1/4
+
+          bg_color:
+            label: >
+              BG Colour (with #)
+            type: text
+            icon: eyedropper
+            width: 1/4
+
+      stream_of_images:
+        name: Stream of Images
+        label: Stream of Images
+        fields:
+
+          number_of_slides:
+            type: number
+            label: Number of Slides
+            min: 0
+            max: 20
+
+          title:
+            label: >
+              Title (only used for ID)
+            type: text
+            required: false
+            width: 1/4
+
+          classes:
+            label: Classes
+            type: text
+            width: 1/4
+
+          bg_image:
+            label: BG Image
+            type: files
+            multiple: false
+            width: 1/4
+
+          bg_color:
+            label: >
+              BG Colour (with #)
+            type: text
+            icon: eyedropper
+            width: 1/4

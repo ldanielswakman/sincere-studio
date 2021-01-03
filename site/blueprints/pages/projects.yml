@@ -7,26 +7,14 @@ files: false
 
 sections:
 
-  draft:
-    headline: Draft projects
+  projects:
+    headline: Projects
     type: pages
     layout: cards
-    status: draft
     create: project
     template: project
-
-  featured:
-    headline: Featured projects
-    type: pages
-    layout: cards
-    status: listed
-    empty: No featured projects
-
-  other:
-    headline: Other projects
-    type: pages
-    layout: cards
-    status: unlisted
+    image:
+      back: white
 
   text:
     type: fields
