@@ -25,7 +25,9 @@
   ?>
 
   <link rel="manifest" href="<?= url('manifest.json') ?>">
-  <link id="favicon" rel="shortcut icon" href="<?= url('assets/images/favicon.png') ?>">
+  <link rel="icon" href="<?= url('assets/images/favicon.png') ?>">
+  <link rel="shortcut icon" href="<?= url('assets/images/favicon.png') ?>">
+  <link rel="apple-touch-icon" href="<?= url('assets/images/app-icon.png') ?>">
 
   <!--[if lt IE 9]>
   <script type="text/javascript" src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
