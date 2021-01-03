@@ -28,6 +28,10 @@ Sections:
 - 
   recent:
     - projects/gamer-one
+    - projects/inflight-vr-website
+    - projects/poltio
+    - projects/diagnose-berlin
+    - projects/luxfox
   title: Recent work
   classes: bg-white u-pv5vh
   bg_image: [ ]
@@ -66,7 +70,7 @@ Sections:
     <a href="javascript:openContactForm()" class="button u-mb1">Say hello</a>
     </div>
   title: Collaborate
-  classes: section--bg2 bg-bluedull u-pv10vh
+  classes: u-pv10vh
   bg_image: [ ]
   bg_color: ""
   number_of_slides: null

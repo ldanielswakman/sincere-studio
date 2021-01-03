@@ -1,8 +1,12 @@
-Title: ldaniel.eu
+Title: Sincere—Studio
 
 ----
 
 Theme: sincere
+
+----
+
+Title-prefix: §
 
 ----
 

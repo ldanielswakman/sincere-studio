@@ -1,8 +1,6 @@
 <head>
 
-  <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
-
-  <?php snippet('header-metadata', array('page' => $page)) ?>
+  <?php snippet('head-metadata', array('page' => $page)) ?>
   
   <?php
   $theme = $site->theme();

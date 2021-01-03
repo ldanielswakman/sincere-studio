@@ -1,8 +1,8 @@
 <?php
 
 // Set title
+$short_title = r($page->isHomePage(), $site->title()->html(), '§ — ' . $page->title()->html());
 $title = r($page->isHomePage(), $site->title()->html(), $page->title()->html() . ' — ' . $site->title()->html());
-$site_title = $site->title()->html();
 
 // Set description
 $descr = $site->description()->html();
@@ -22,6 +22,8 @@ if($page->featuredimage()->isNotEmpty()) {
 	$image_url = $page->cover_image()->toFile()->url();
 }
 ?>
+
+<title><?= $short_title ?></title>
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">

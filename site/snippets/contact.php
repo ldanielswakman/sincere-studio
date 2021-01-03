@@ -84,7 +84,7 @@
 
   </form>
   <div class="dialog__footer">
-    <a href="mailto:hello@ldaniel.eu?subject=[ldaniel.eu] Hello" class="button button--small button--outline button--white button--reveal" target="_blank">I prefer email</a>
+    <a href="mailto:hi@sincere.studio?subject=[§] Hello" class="button button--small button--outline button--white button--reveal" target="_blank">I prefer email</a>
   </div>
 
 </dialog>

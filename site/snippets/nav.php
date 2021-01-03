@@ -6,15 +6,20 @@
   foreach($pages->listed() as $p) { if($p->isOpen()) { $hasActive = true; break; } }
   ?>
 
-  <ul<?= e($hasActive, ' class="hasActive"') ?>>
-    <?php foreach($pages->listed() as $p): ?>
-    <li><a <?php e($p->isOpen(), ' class="isActive"') ?> href="<?= $p->url() ?>"><?= strtolower($p->title()->html()) ?></a></li>
-    <?php endforeach ?>
-  </ul>
+  <div class="row">
+    <div class="col-xs-12 col-sm-11 col-sm-offset-1 nav__inner">
 
-  <ul class="menu-grey">
-    <li><a href="javascript:openContactForm()" class="button button--outline">get in touch</a></li>
-    <li><a href="//twitter.com/ldanielswakman" target="_blank" class="a--twitter"><?php snippet('svg/twitter-icon') ?></a></li>
-  </ul>
+      <ul<?= e($hasActive, ' class="hasActive"') ?>>
+        <?php foreach($pages->listed() as $p): ?>
+        <li><a <?php e($p->isOpen(), ' class="isActive"') ?> href="<?= $p->url() ?>"><?= strtolower($p->title()->html()) ?></a></li>
+        <?php endforeach ?>
+        <li><a href="javascript:openContactForm()" class="button button--outline button--subtle">get in touch</a></li>
+      </ul>
+
+      <ul class="menu-grey">
+        <li><a href="//twitter.com/intent/follow?screen_name=ldanielswakman" target="_blank" class="a--twitter"><?php snippet('svg/twitter-icon') ?></a></li>
+      </ul>
+
+    </div>
 
 </nav>

@@ -41,3 +41,9 @@ columns:
 						options:
 							ldaniel: ldaniel.eu
 							sincere: Sincere—Studio
+
+					title_prefix:
+						label: Page title prefix
+						type: text
+						default: §
+						help: Appears as the page title

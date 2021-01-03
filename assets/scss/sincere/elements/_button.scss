@@ -2,11 +2,11 @@
 .button {
   @include prefix(appearance, none);
   display: inline-block;
-  padding: 0.25rem 1rem 0.5rem;
+  padding: 11px 1rem;
   border: 1px solid transparent;
-  @include prefix(border-radius, 1.5rem);
-  line-height: 2rem;
+  border-radius: 1.5rem;
   font: inherit;
+  line-height: 1rem;
   background-color: $blue;
   color: $white;
 
@@ -62,6 +62,16 @@
     &:hover {
       background: $blue;
       color: $white;
+    }
+
+    &.button--subtle {
+      border-color: $greylighter;
+      color: inherit;
+
+      &:hover {
+        background-color: $greylighter;
+        color: $black;
+      }
     }
     &.button--dark {
       border-color: $bluedark;
