@@ -1,22 +1,22 @@
 <div class="row">
   <div class="col-xs-12 col-sm-11 col-sm-offset-1">
 
-    <h5><?= isset($title) ? $title : 'Recent work' ?></h5>
+    <h5>Recent work</h5>
 
     <!-- Project Cards -->
-		<div class="card-container owl-carousel u-mt1">
-		  <?php foreach ($page->recent()->toPages() as $project) : ?>
+	<div class="card-container owl-carousel u-mt1">
+		<?php foreach ($recent->toPages() as $project) : ?>
 
-		    <a href="<?php echo $project->url() ?>" class="card">
-		      <?php if($image = $project->featuredimage()->toFile()) : ?>
-		        <figure>
-		          <img src="<?= $image->thumb(['width' => 800])->url() ?>" alt="">
-		        </figure>
-		      <?php endif ?>
-		    </a>
+			<a href="<?php echo $project->url() ?>" class="card">
+				<?php if($image = $project->featuredimage()->toFile()) : ?>
+				<figure>
+					<img src="<?= $image->thumb(['width' => 800])->url() ?>" alt="">
+				</figure>
+				<?php endif ?>
+			</a>
 
-		  <?php endforeach ?>
-		</div>
+		<?php endforeach ?>
+	</div>
 
     <div class="u-mb2 u-mt1">
       <!-- See -->

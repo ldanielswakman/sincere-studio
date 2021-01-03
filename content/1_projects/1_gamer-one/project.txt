@@ -2,102 +2,75 @@ Title: Gamer One
 
 ----
 
-Sections:
+Builder:
 
 - 
-  num_cols: 'false'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: 5B3DF2
-  bg_image:
-    - key-visual-arena-montage.jpg
-  bg_image_pos: full
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: |
+  text: |
+    ### Challenge
     The gaming landscape is a patchwork of platforms, from streaming to game launchers to social networks where the conversation takes place. But for serious gamers, finding an all-in-one place to aggregate your team’s information is not easy.
     
     That’s where Gamer One comes in — a clear social platform with a customisable interface, where gamers can feel at home.
-    
-    <small style="opacity: 0.3;">Animations copyright (link: https://rob-barrett.com text: Rob Barrett popup: yes)</small>
-  col_2: '(image: g1-full_logo-light.png)'
-  bg_colour: fff
-  bg_image: [ ]
-  bg_image_pos: full
+  image:
+    - quote-ui-mockup.png
+  _key: text_image
+  _uid: text_image_1609105814043_275
 - 
-  num_cols: 'false'
-  classes: ""
-  col_1: |
-    <video autoplay loop playsinline muted style="max-width: 100%;">
-    <source src="https://ldaniel.eu/media/pages/projects/gamer-one/1927856488-1603060027/animation-a-v03-2-compressed.mp4" type="video/mp4" />
-    </video>
-  col_2: ""
-  bg_colour: 242C48
-  bg_image: [ ]
-  bg_image_pos: full
+  text: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/473945699?autoplay=1&loop=1&color=000&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>'
+  full: 'true'
+  _key: text
+  _uid: text_1609106723619_275
 - 
-  num_cols: 'true'
-  classes: c-white
-  col_1: |
-    <h3 class="c-white"><b>Brand</b></h3>
+  text: |
+    ### Brand
     
     Based on the primary brand value of **Convenience**, Gamer One has a clear visual representation that finds its origin in the geometric language of the UI design: a diverse collection of boxes with smooth rounding.
     
     The secondary aspects of **Fun**, **Professional** and **Customisable** are reflected in the composition of theme-coloured boxes that feel like they can be dragged around to fit one's needs.
     
     From the logo to brand graphics, this is consistently applied. The colour scheme also reflects this: a confident blue that has been 'pulled' into a vibrant and lively direction.
-    
-    (image: share-card-7a.jpg)
-  col_2: '(image: share-card-2.jpg) (image: share-card-8.jpg) (image: share-card-3.jpg)'
-  bg_colour: "202840"
-  bg_image: [ ]
-  bg_image_pos: full
+  image:
+    - share-card-7a.jpg
+    - share-card-2.jpg
+    - share-card-3.jpg
+  _key: text_image
+  uniquekey: 0
+  showpreviewinitially: false
+  expandedinitially: false
+  activefieldsetinitially: content
+  _uid: text_image_1609170905339_847
 - 
-  num_cols: 'false'
-  classes: ""
-  col_1: |
+  text: |
     <video autoplay loop playsinline muted style="max-width: 100%;">
     <source src="https://ldaniel.eu/media/pages/projects/gamer-one/1649989850-1603060029/animation-b-v03-1-compressed.mp4" type="video/mp4" />
     </video>
-  col_2: ""
-  bg_colour: 242C48
-  bg_image: [ ]
-  bg_image_pos: full
+  full: 'true'
+  _key: text
+  _uid: text_1609172811558_327
 - 
-  num_cols: 'false'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
+  image:
     - share-card-4.jpg
-  bg_image_pos: full
+  _key: full_image
+  _uid: full_image_1609106079758_275
 - 
-  num_cols: 'true'
-  classes: c-white
-  col_1: |
-    <h3 class="c-white"><b>Interface</b></h3>
+  text: |
+    ### Interface
     
     With a brand that is so firmly rooted in its users spending time on the platform itself, it came naturally to place this interface at the centre of the design. An adaptive interface that fits the user's need: dark or light mode, customisable theme colours, and personalisation through avatar and cover image.
     
     For the initial iteration of the platform, the experience of browsing a user's profile page is key. This is where the content needs to shine.  We came up with a masonry layout where the individual tiles can be rearranged and resized at will. Together with the tab-based navigation on the page, this makes the profile page feel like a website homepage.
-  col_2: '(image: share-card-6.jpg) <br /><br /> (image: ui-depth-diagram.jpg)'
-  bg_colour: "202840"
-  bg_image: [ ]
-  bg_image_pos: full
+  image:
+    - share-card-6.jpg
+    - ui-depth-diagram.jpg
+  _key: text_image
+  _uid: text_image_1609172850875_327
 - 
-  num_cols: 'false'
-  classes: ""
-  col_1: |
+  text: |
     <video autoplay loop playsinline muted style="max-width: 100%;">
     <source src="https://ldaniel.eu/media/pages/projects/gamer-one/2290697327-1603060032/animation-c-v03-6-compressed.mp4" type="video/mp4" />
     </video>
-  col_2: ""
-  bg_colour: "202840"
-  bg_image: [ ]
-  bg_image_pos: full
+  full: 'true'
+  _key: text
+  _uid: text_1609172897077_327
 
 ----
 
@@ -109,11 +82,38 @@ Description: Creating a customisable home for pro gamers
 
 ----
 
-Tags: branding, graphic, ui, ux, web-design
+Intro: A fresh community platform dedicated to pro gamers, allowing them to manage their online gaming career and connect with the industry. They approached us for a complete brand and product design from the ground up.
+
+----
+
+Tags: Brand Design, Visual Identity, Product Design, Front-end
+
+----
+
+Team:
+
+- 
+  name: Narta Dalladaku
+  note: Brand
+  link: https://www.nartadalladaku.com/
+- 
+  name: Evgeny Onutchin
+  note: UX/UI
+  link: https://www.uxdox.com/ux-designer-berlin
+- 
+  name: Rob Barrett
+  note: Animations
+  link: https://rob-barrett.com/
 
 ----
 
 Projecturl: https://g1.gg/
+
+----
+
+Keyvisual:
+
+- key-visual-arena-montage.jpg
 
 ----
 

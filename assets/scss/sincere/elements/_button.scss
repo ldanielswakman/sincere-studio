@@ -1,0 +1,104 @@
+// Button
+.button {
+  @include prefix(appearance, none);
+  display: inline-block;
+  padding: 11px 1rem;
+  border: 1px solid transparent;
+  border-radius: 1.5rem;
+  font: inherit;
+  line-height: 1rem;
+  background-color: $blue;
+  color: $white;
+
+  &:hover {
+    background-color: darken($blue, 15%);
+    cursor: pointer;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    @include prefix(box-shadow, 0 0 1rem rgba($blue, 0.5));
+  }
+  &.button--small {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+    @include prefix(border-radius, 1.25rem);
+  }
+  &.button--dark {
+    background-color: $bluedark;
+
+    &:hover {
+      background-color: darken($bluedark, 5%);
+    }
+  }
+  &.button--white {
+    background-color: $white;
+    border-color: $white;
+    @include prefix(box-shadow, 0 0 1rem rgba($black, 0.05));
+    color: $blue;
+    
+    &:hover {
+      background-color: darken($white, 10%);
+      border-color: transparent;
+      color: $blue;
+    }
+  }
+  &.button--subtle {
+    background-color: rgba($bluedark, 0.05);
+    border-color: transparent;
+    color: $blue;
+    
+    &:hover {
+      background-color: rgba($bluedark, 0.1);
+      color: $blue;
+    }
+  }
+
+  &.button--outline {
+    background: none;
+    border-color: blue;
+    color: $blue;
+
+    &:hover {
+      background: $blue;
+      color: $white;
+    }
+
+    &.button--subtle {
+      border-color: $greylighter;
+      color: inherit;
+
+      &:hover {
+        background-color: $greylighter;
+        color: $black;
+      }
+    }
+    &.button--dark {
+      border-color: $bluedark;
+      color: $bluedark;
+
+      &:hover {
+        background-color: $bluedark;
+        color: $white;
+      }
+    }
+    &.button--white {
+      border-color: $white;
+      color: $white;
+      
+      &:hover {
+        background-color: $white;
+        color: $blue;
+      }
+      &.button--reveal {
+        border-color: transparent;
+      
+        &:hover {
+          background-color: transparent;
+          border-color: $white;
+          color: $white;
+        }
+      }
+    }
+  }
+}

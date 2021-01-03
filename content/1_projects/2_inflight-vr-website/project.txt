@@ -1,0 +1,54 @@
+Title: Inflight VR website
+
+----
+
+Sections:
+
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - inflight-vr-cover-image.jpg
+  bg_image_pos: full
+- 
+  num_cols: 'false'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - inflight-vr-website-mockup-light.jpg
+  bg_image_pos: full
+
+----
+
+Year: 2019
+
+----
+
+Description: Telling an immersive story for a VR startup disrupting the transport industry
+
+----
+
+Tags: web-design, front-end, interaction-design
+
+----
+
+Projecturl: https://inflight-vr.com/
+
+----
+
+Featured: true
+
+----
+
+Featuredimage:
+
+- inflight-vr-cover-image.jpg
+
+----
+
+Featuredcolour: 

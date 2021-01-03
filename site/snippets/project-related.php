@@ -1,6 +1,6 @@
 <?php $related_pages = (isset($related_pages) && $related_pages->count() > 1) ? $related_pages : $site->find('projects')->children()->not($page)->not($page->nextListed())->shuffle()->limit(3) ?>
 
-<section class="bg-greylighter u-pv2">
+<section class="bg-greylighter u-pv2" style="overflow: hidden;">
   <div>
     <p style="margin: 4rem 0 1rem; font-size: 2rem;">related projects</p>
   </div>

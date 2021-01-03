@@ -4,3 +4,6 @@
 [submodule "site/plugins/uniform"]
 	path = site/plugins/uniform
 	url = https://github.com/mzur/kirby-uniform
+[submodule "site/plugins/kirby-builder"]
+	path = site/plugins/kirby-builder
+	url = https://github.com/TimOetting/kirby-builder

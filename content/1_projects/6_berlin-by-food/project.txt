@@ -1,0 +1,71 @@
+Title: Berlin by Food
+
+----
+
+Sections:
+
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - mobile-mockup-adjusted.jpg
+  bg_image_pos: full
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - logo-and-fruits.jpg
+  bg_image_pos: full
+- 
+  num_cols: 'true'
+  classes: ""
+  col_1: ""
+  col_2: ""
+  bg_colour: ""
+  bg_image:
+    - imac-mockup.jpg
+  bg_image_pos: full
+
+----
+
+Year: 2018
+
+----
+
+Description: Who said Berlin was all about Currywurst?
+
+----
+
+Tags: web design, branding, visual design, front-end
+
+----
+
+Projecturl: https://berlinbyfood.eu/
+
+----
+
+Featured: false
+
+----
+
+Featuredimage:
+
+- mobile-mockup-adjusted.jpg
+
+----
+
+Featuredcolour: 1B153E
+
+----
+
+H-basics: 
+
+----
+
+H-content: 
