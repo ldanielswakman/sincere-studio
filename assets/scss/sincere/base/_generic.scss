@@ -71,12 +71,12 @@ p a {
 // Headings
 h1 {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
   color: $blue;
 }
 h3 {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 h4 {
   font-size: 1.25rem;
@@ -131,7 +131,7 @@ figure {
 // Row
 .row {
   @include tabletWideAndUp {
-    max-width: 75rem;
+    max-width: 80rem;
     margin: 0 auto;
   }
 }

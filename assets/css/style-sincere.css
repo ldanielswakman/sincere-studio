@@ -1051,12 +1051,12 @@ p a:not(.button):hover {
 
 h1 {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #6547FE; }
 
 h3 {
   font-size: 1.5rem;
-  font-weight: 500; }
+  font-weight: 600; }
 
 h4 {
   font-size: 1.25rem;
@@ -1092,7 +1092,7 @@ figure img {
 
 @media screen and (min-width: 1024px) {
   .row {
-    max-width: 75rem;
+    max-width: 80rem;
     margin: 0 auto; } }
 
 .u-mv2 {
@@ -1759,9 +1759,9 @@ nav {
   max-width: 100vw;
   padding: 0 1rem;
   background: rgba(255, 255, 255, 0.8);
-  -webkit-backdrop-filter: blur(2px);
-  -moz-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(4px);
+  -moz-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   border-top: 1px solid #ebebed; }
   @media screen and (min-width: 768px) {
     nav {
@@ -1955,7 +1955,7 @@ section {
     background: #F7FAFC; }
     @media screen and (min-width: 768px) {
       .block--info {
-        padding: 6rem 2rem;
+        padding: 5rem 2rem;
         border-width: 2rem; } }
     .block--info h1 {
       margin-left: 2rem;
@@ -1971,7 +1971,9 @@ section {
       display: flex;
       margin: 0.75rem 0; }
     .block--info .actions a {
-      padding: 0.5rem 1.25rem 0.5rem 0;
+      margin-right: 1.25rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #ccccd4;
       color: #8D9DA6; }
       .block--info .actions a:hover {
         color: #000; }
@@ -2017,7 +2019,21 @@ section {
       display: block;
       width: 100%; }
 
-.project-info {
+.project-info-main > * {
+  transition: all cubic-bezier(0.5, 0, 0, 0.5) 1s;
+  transform: translateY(3rem);
+  opacity: 0; }
+  .project-info-main > *:nth-child(1) {
+    transition-delay: 0; }
+  .project-info-main > *:nth-child(2) {
+    transition-delay: 0.3s; }
+  .project-info-main > *:nth-child(3) {
+    transition-delay: 1s; }
+  .isLoaded .project-info-main > * {
+    transform: translateY(0);
+    opacity: 1; }
+
+.project-info-side {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
@@ -2025,26 +2041,46 @@ section {
   line-height: 1.5rem;
   color: #8D9DA6; }
   @media screen and (min-width: 768px) {
-    .project-info {
+    .project-info-side {
       flex-direction: column; } }
-  .project-info a {
+  .project-info-side > * {
+    transition: all cubic-bezier(0.5, 0, 0, 0.5) 1s;
+    transform: translateY(3rem);
+    opacity: 0; }
+    .project-info-side > *:nth-child(2) {
+      transition-delay: 1s; }
+    .project-info-side > *:nth-child(1) {
+      transition-delay: 1.3s; }
+    .project-info-side > *:nth-child(3) {
+      transition-delay: 1.6s; }
+    .isLoaded .project-info-side > * {
+      transform: translateY(0);
+      opacity: 1; }
+  .project-info-side a {
     color: inherit; }
-    .project-info a:hover, .project-info a:focus {
+    .project-info-side a:hover, .project-info-side a:focus {
       color: #000; }
-  .project-info .year,
-  .project-info .disciplines,
-  .project-info .team {
+  .project-info-side h4 {
+    line-height: 1.5rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ccccd4; }
+  .project-info-side .year,
+  .project-info-side .disciplines,
+  .project-info-side .team {
     flex-basis: 50%;
     flex-grow: 1;
-    margin-bottom: 1.25rem; }
-  .project-info .team .note {
+    margin-bottom: 1.5rem; }
+  .project-info-side .team .note {
     margin-left: 0.75rem;
     font-size: 0.75rem;
     font-weight: 500;
     color: #B8C5CC; }
-  .project-info .year {
+  .project-info-side .year {
+    margin-top: 0.25rem;
     text-align: right; }
     @media screen and (min-width: 768px) {
-      .project-info .year {
+      .project-info-side .year {
         text-align: left;
         order: -1; } }

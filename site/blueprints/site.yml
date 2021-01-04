@@ -9,6 +9,8 @@ columns:
 				layout: cards
 				parent: site.find('projects')
 				template: project
+				image:
+					back: white
 	- width: 1/2
 		sections:
 			listed:

@@ -2,26 +2,23 @@ Title: Inflight VR website
 
 ----
 
-Sections:
+Builder:
 
 - 
-  num_cols: 'false'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - inflight-vr-cover-image.jpg
-  bg_image_pos: full
+  text: '## Storytelling for VR'
+  image:
+    - first-wireframe-mockup.png
+  _key: text_image
+  _uid: text_image_1609791863007_1025
 - 
-  num_cols: 'false'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - inflight-vr-website-mockup-light.jpg
-  bg_image_pos: full
+  image:
+    - mockup-desktop-light-dark.gif
+  _key: full_image
+  _uid: full_image_1609791157989_163
+
+----
+
+Sections: 
 
 ----
 
@@ -33,11 +30,30 @@ Description: Telling an immersive story for a VR startup disrupting the transpor
 
 ----
 
-Tags: web-design, front-end, interaction-design
+Intro: As a startup that has proven its worth as an innovator in the airline industry, they needed a website that tells the story as immersively as the inflight service they offer. We came up with a complete web experience built around a simple main story on the homepage, which trails off into details on secondary pages.
+
+----
+
+Tags: Web Design, Front-end, CMS Development
+
+----
+
+Team:
+
+- 
+  name: Sam Nabi
+  note: Development
+  link: http://samnabi.com/
 
 ----
 
 Projecturl: https://inflight-vr.com/
+
+----
+
+Keyvisual:
+
+- inflight-vr-cover-image.jpg
 
 ----
 

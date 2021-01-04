@@ -7,7 +7,7 @@ nav {
   max-width: 100vw;
   padding: 0 1rem;
   background: rgba($white, 0.8);
-  @include prefix(backdrop-filter, blur(2px));
+  @include prefix(backdrop-filter, blur(4px));
   border-top: 1px solid $greylighter;
 
   @include tabletAndUp {
