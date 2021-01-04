@@ -5,10 +5,14 @@ nav {
   z-index: 3;
   width: 100%;
   max-width: 100vw;
-
+  padding: 0 1rem;
   background: rgba($white, 0.8);
   @include prefix(backdrop-filter, blur(2px));
   border-top: 1px solid $greylighter;
+
+  @include tabletAndUp {
+    padding: 0 2rem;
+  }
 
   .nav__inner {
     display: flex;
@@ -19,9 +23,13 @@ nav {
   ul {
     @include prefix(display, flex);
     width: 100%;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     list-style: none;
     color: $bluedull;
+
+    @include tabletAndUp {
+      margin-left: -1rem;
+    }
 
     &.hasActive {
       color: $grey;

@@ -16,7 +16,7 @@
       <?php if($section->_key() == 'text') : ?>
 
         <div class="row">
-          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1">
+          <div class="col-xs-12 col-sm-10 col-md-6">
             <?= $section->text()->kirbytext() ?>
           </div>
         </div>
@@ -24,12 +24,12 @@
       <?php elseif($section->_key() == 'hero') : ?>
 
         <div class="row">
-          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1">
+          <div class="col-xs-12 col-sm-10 col-md-6">
             <?= $section->text()->kirbytext() ?>
 
             <div class="u-mt2">
-                <a href="javascript:openContactForm()" class="button u-mr1">see how</a>
-                <a href="#read-on" class="button button--outline u-op70">go on...</a>
+                <a href="<?= $pages->find('projects')->url() ?>" class="button u-mr1">see projects</a>
+                <a href="javascript:openContactForm()" class="button button--outline u-op70">say hi</a>
               </div>
 
               <h5 class="u-mt2">CURRENTLY WORKING ON</h5>
@@ -57,7 +57,7 @@
       <?php elseif($section->_key() == 'stream_of_words') : ?>
 
         <div class="row">
-          <div class="col-xs-12 col-sm-11 col-sm-offset-1">
+          <div class="col-xs-12">
 
             <h5 class="u-mb15">
               <a href="//twitter.com/ldanielswakman" target="_blank" class="a--icon a--twitter u-floatright u-op70">
@@ -74,7 +74,7 @@
       <?php elseif($section->_key() == 'stream_of_images') : ?>
 
             <div class="row">
-              <div class="col-xs-12 col-sm-11 col-sm-offset-1">
+              <div class="col-xs-12">
 
                 <h5 class="u-mb15">
                   <a href="//dribbble.com/ldanielswakman" target="_blank" class="a--icon-lg a--twitter u-floatright" style="margin-top: -0.25rem;">

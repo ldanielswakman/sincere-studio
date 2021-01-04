@@ -7,7 +7,7 @@
   ?>
 
   <div class="row">
-    <div class="col-xs-12 col-sm-11 col-sm-offset-1 nav__inner">
+    <div class="col-xs-12 nav__inner">
 
       <ul<?= e($hasActive, ' class="hasActive"') ?>>
         <?php foreach($pages->listed() as $p): ?>

@@ -126,3 +126,12 @@ figure {
     display: inline-block;
   }
 }
+
+
+// Row
+.row {
+  @include tabletWideAndUp {
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+}
