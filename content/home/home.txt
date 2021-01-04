@@ -1,4 +1,4 @@
-Title: Sincere — Digital Design Studio
+Title: Home
 
 ----
 
@@ -27,8 +27,8 @@ Sections:
   _uid: hero_1606841656800_96
 - 
   recent:
-    - projects/gamer-one
     - projects/inflight-vr-website
+    - projects/gamer-one
     - projects/poltio
     - projects/diagnose-berlin
     - projects/luxfox
