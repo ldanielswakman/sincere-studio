@@ -15,10 +15,7 @@ for more information: http://getkirby.com/license
 
 */
 
-c::set('license', 'K2-PERSONAL-fb5cc3c093e2dfc8951c5d4ba51a74d1');
-
 c::set('google_sheet_key', '171Ur45EUbxpG3f6sujgo_UgElyFSF2RKcXFohvGIG_M');
-
 c::set('dribbble_token', '92024af1ed1c7f87d7fe417bcad6de02afe6cafe6a539bafbbc1b56dda6c6628');
 
 /*
