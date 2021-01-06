@@ -24,7 +24,8 @@
       </section>
     <?php endforeach ?>
 
-    
+
+    <?php // Legacy Structured Sections ?>
     <?php foreach($page->sections()->toStructure() as $key => $section): ?>
 
       <?php
@@ -113,3 +114,25 @@
   </main>
 
 <?php snippet('footer') ?>
+
+<script>
+$.fn.isInViewport = function() {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+$(window).on('load ready resize scroll', function() {
+  $('.block').each(function() {
+    if ($(this).isInViewport()) {
+      $(this).addClass('is-visible');
+    // } else {
+    //   $(this).removeClass('is-visible');
+    }
+  });
+});
+</script>

@@ -75,7 +75,7 @@ section {
 }
 
 .section--featured {
-  &__col {
+  [class^="col-"] {
     padding: 2rem;
 
     &:nth-child(2n) {
@@ -160,13 +160,23 @@ section {
 
 // Project: info section
 .block {
+  position: relative;
   padding: 3rem 1.25rem;
+
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  opacity: 0;
+  transform: translateY(5rem);
   
   @include tabletAndUp {
     padding: 4rem 2rem;
   }
   @include tabletWideAndUp {
     padding: 6rem 2rem;
+  }
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   &--info {
@@ -217,7 +227,7 @@ section {
         width: 100%;
         height: 100%;
         min-height: calc(100vw - 2.5rem);
-        max-height: calc(100vh - 8.5rem);
+        // max-height: calc(100vh - 8.5rem);
         object-fit: cover;
         object-position: center;
 

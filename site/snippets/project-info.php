@@ -1,4 +1,4 @@
-<section class="block block--info">
+<section class="block block--info is-visible">
   <div class="row">
     <div class="col-xs-12 col-sm-7 col-md-5 col-md-offset-2 project-info-main">
 

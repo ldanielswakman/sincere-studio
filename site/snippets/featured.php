@@ -1,13 +1,13 @@
 <section id="featured" class="section section--featured">
-	<div class="row">
+	<div class="row row--comfy">
 		
 		<?php foreach ($recent->toPages() as $project): ?>
 			<?php if($image = $project->featuredimage()->toFile()) : ?>
 
 				<?php if($recent->toPages()->indexOf($project) === $recent->toPages()->count() - 1): ?>
-					<div class="col-xs-12 col-sm-6 section--featured__col"></div>
+					<div class="col-xs-12 col-sm-6"></div>
 				<?php endif ?>
-				<div class="col-xs-12 col-sm-6 section--featured__col">
+				<div class="col-xs-12 col-sm-6">
 					<a href="<?= $project->url() ?>" class="item">
 						<figure>
 							<img src="<?= $image->thumb(['width' => 1200])->url() ?>" alt="">
