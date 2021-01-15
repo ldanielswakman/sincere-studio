@@ -42,13 +42,13 @@
 
     <div class="bg-blackfaded10 u-pv2 u-aligncenter">
 
-      &copy; <a href="http://ldaniel.eu">ldaniel.eu</a><sup class="u-op70"><small><?php echo date("Y") ?></small></sup>
+      &copy; <a href="https://sincere.studio">Sincere—Studio</a><sup class="u-op70"><small><?php echo date("Y") ?></small></sup>
 
       &mdash;
       
       <div class="u-inlineblock u-op50" style="vertical-align: middle;">
-        <a href="mailto:hello@ldaniel.eu" target="_blank" class="u-floatleft u-ml1 a--icon"><?php snippet('svg/email-icon') ?></a>
-        <a href="https://www.twitter.com/ldanielswakman" target="_blank" class="u-floatleft u-ml1 a--icon"><?php snippet('svg/twitter-icon') ?></a>
+        <a href="mailto:hi@sincere.studio" target="_blank" class="u-floatleft u-ml1 a--icon"><?php snippet('svg/email-icon') ?></a>
+        <a href="//twitter.com/intent/follow?screen_name=ldanielswakman" target="_blank" class="u-floatleft u-ml1 a--icon"><?php snippet('svg/twitter-icon') ?></a>
         <a href="https://github.com/ldanielswakman" target="_blank" class="u-floatleft u-ml1 a--icon"><?php snippet('svg/github-icon') ?></a>
         <a href="https://dribbble.com/ldanielswakman" target="_blank" class="u-floatleft u-ml1 a--icon"><?php snippet('svg/dribbble-icon') ?></a>
         <a href="https://www.linkedin.com/in/ldanielswakman" target="_blank" class="u-floatleft u-ml1 a--icon"><?php snippet('svg/linkedin-icon') ?></i></a>
