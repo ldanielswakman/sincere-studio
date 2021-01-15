@@ -1,51 +1,87 @@
 title: Site
 
-columns:
-	- width: 1/2
-		sections:
-			projects:
-				headline: Projects
-				type: pages
-				layout: cards
-				parent: site.find('projects')
-				template: project
-				image:
-					back: white
-	- width: 1/2
-		sections:
-			listed:
-				headline: Menu Pages
-				type: pages
-				layout: list
-				status: listed
-			unlisted:
-				headline: Other Pages
-				type: pages
-				layout: list
-				status: unlisted
-			draft:
-				headline: Draft Pages
-				type: pages
-				layout: list
-				status: draft
-				create: 
-					- default
-					- projects
-					- cv
-					- articles
-			options:
-				type: fields
-				fields:
-					theme:
-						label: Site theme
-						type: radio
-						default: ldaniel
-						options:
-							ldaniel: ldaniel.eu
-							sincere: Sincere—Studio
+tabs:
+	# Main tab
+	main:
+		label: Pages & Menus
+		columns:
 
-					title_prefix:
-						label: Page title prefix
-						type: text
-						default: §
-						help: Appears as the page title
+			projects:
+				width: 1/2
+				sections:
+					projects:
+						headline: Projects
+						type: pages
+						layout: cards
+						parent: site.find('projects')
+						template: project
+						image:
+							back: white
+
+			pages:
+				width: 1/2
+				sections:
+					listed:
+						headline: Menu Pages
+						type: pages
+						layout: list
+						status: listed
+					unlisted:
+						headline: Other Pages
+						type: pages
+						layout: list
+						status: unlisted
+					draft:
+						headline: Draft Pages
+						type: pages
+						layout: list
+						status: draft
+						create: 
+							- default
+							- projects
+							- cv
+							- articles
+
+	options:
+		label: Site options
+		type: tab
+		fields:
+						
+			theme:
+				label: Site theme
+				type: radio
+				default: ldaniel
+				options:
+					ldaniel: ldaniel.eu
+					sincere: Sincere—Studio
+
+			title_prefix:
+				label: Page title prefix
+				type: text
+				default: §
+				help: Appears as the page title
+				
+			description:
+				type: textarea
+				label: Description
+				buttons: false
+				
+			meta_image:
+				type: files
+				label: Meta Image
+				multiple: false
+
+			author:
+				type: text
+				label: Author
+
+			keywords:
+				type: tags
+				label: Keywords
+				
+	files:
+		label: Files
+		sections:
+			uploaded_files:
+				type: files
+				label: Files uploaded to this page

@@ -10,16 +10,18 @@ Title-prefix: §
 
 ----
 
+Description: Sincere—Studio helps startups design and build the web of tomorrow
+
+----
+
+Meta-image:
+
+- meta-image.jpg
+
+----
+
 Author: L Daniel Swakman
 
 ----
 
-Description: ldaniel.eu is an independent design studio, designing + building the web for today and tomorrow.
-
-----
-
-Keywords: graphic design,web design,design,freelance,digital,print,istanbul,amsterdam,visualisation,architecture,urbanism,urban design,front-end,responsive,flat
-
-----
-
-Meta-image: meta-image.jpg
+Keywords: graphic design, web design, design, freelance, digital, print, istanbul, amsterdam, visualisation, architecture, urbanism, urban design, front-end, responsive, flat
