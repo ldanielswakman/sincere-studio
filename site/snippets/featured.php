@@ -1,19 +1,21 @@
 <section id="featured" class="section section--featured">
-	<div class="row row--comfy">
+	<div class="featured-grid">
 		
 		<?php foreach ($recent->toPages() as $project): ?>
 			<?php if($image = $project->featuredimage()->toFile()) : ?>
 
 				<?php if($recent->toPages()->indexOf($project) === $recent->toPages()->count() - 1): ?>
-					<div class="col-xs-12 col-sm-6"></div>
+					<div class="item-container"></div>
 				<?php endif ?>
-				<div class="col-xs-12 col-sm-6">
+
+				<div class="item-container">
 					<a href="<?= $project->url() ?>" class="item">
 						<figure>
 							<img src="<?= $image->thumb(['width' => 1200])->url() ?>" alt="">
 						</figure>
 					</a>
 				</div>
+
 			<?php endif ?>
 		<?php endforeach ?>
 
