@@ -1,7 +1,3 @@
-# ldaniel.eu
+# § Sincere—Studio
 
-Repository for office website ldaniel.eu
-
-## Kirby
-
-Built with Kirby
+Repository for Sincere Studio portfolio website. Work by Daniel Swakman
