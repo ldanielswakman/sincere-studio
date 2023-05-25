@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 // Card
 .card-container {
   width: 100%;
@@ -90,7 +92,7 @@
     
     figure {
       position: relative;
-      padding-bottom: percentage(2/3);
+      padding-bottom: math.div(2,3);
 
       img {
         position: absolute;

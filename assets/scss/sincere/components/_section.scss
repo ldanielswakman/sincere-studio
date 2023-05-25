@@ -1,9 +1,11 @@
+@use 'sass:math';
+
 // Section
 $sectionpadding: 2rem;
 
 section {
   position: relative;
-  padding: 0 $sectionpadding/2; // site-wide horizontal padding
+  padding: 0 math.div($sectionpadding,2); // site-wide horizontal padding
   max-height: auto;
   // overflow: hidden;
   @include prefix(transition, max-height 0.5s ease-in-out);
@@ -151,8 +153,8 @@ section {
 }
 
 .section--projects {
-  padding-top: $sectionpadding/2;
-  padding-bottom: $sectionpadding/2;
+  padding-top: math.div($sectionpadding, 2);
+  padding-bottom: math.div($sectionpadding, 2);
 
   @media screen and (min-width: 768px) {
     padding-top: $sectionpadding;
