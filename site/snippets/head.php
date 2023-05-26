@@ -5,11 +5,7 @@
   <?php
   $theme = $site->theme();
   // sets css & js assets based on ENV
-  $css_assets = (c::get('env') !== 'DEV') ? array(
-    'assets/css/style-' . $theme . '.min.css',
-  ) : array(
-    'assets/css/style-' . $theme . '.css',
-  );
+  $css_assets = array('assets/css/style-' . $theme . '.css');
 
   // checks if not on localhost, then serves assets from CDN
   $js_assets = (c::get('env') !== 'DEV') ? array(
