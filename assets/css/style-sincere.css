@@ -2509,13 +2509,19 @@ section.section--collapsed {
 }
 .block--info {
   padding: 1.25rem;
-  border: 1.25rem solid #fff;
-  background: #f7fafc;
+  background: #fffefc;
+  border: 1.25rem solid #ebebed;
 }
 @media screen and (min-width: 768px) {
   .block--info {
     padding: 5rem 2rem;
     border-width: 2rem;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .block--info {
+    background: #110F1A;
+    border: 1.25rem solid #110F1A;
   }
 }
 .block--info h1 {

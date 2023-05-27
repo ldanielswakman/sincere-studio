@@ -213,12 +213,18 @@ section {
 
   &--info {
     padding: 1.25rem;
-    border: 1.25rem solid #fff;
-    background: #f7fafc;
+    background: $bg-day;
+    border: 1.25rem solid $greylighter;
 
     @include tabletAndUp {
       padding: 5rem 2rem;
       border-width: 2rem;
+    }
+
+    @include darkMode {
+      background: $bg-night;
+      border: 1.25rem solid $bg-night;
+
     }
 
     h1 {
