@@ -79,9 +79,12 @@ section {
   &.section--collapsed {
     max-height: 8.5rem;
   }
-  .owl-carousel.card-container {
-    margin-right: -#{$sectionpadding};
-    width: calc(100% + #{$sectionpadding});
+
+  @include tabletAndUp {
+    .owl-carousel.card-container {
+      margin-right: -#{$sectionpadding};
+      width: calc(100% + #{$sectionpadding});
+    }
   }
 }
 

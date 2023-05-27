@@ -86,6 +86,11 @@
 
 .section--experience {
     padding-top: 6rem;
+    text-align: center;
+
+    .page-nav-wrapper {
+        text-align: center;
+    }
 
     .page-nav {
         position: sticky;
@@ -136,6 +141,9 @@
         border-radius: 1rem;
         border: 1px solid $grey-subtle-day;
         cursor: pointer;
+        text-align: left;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
 
         @include darkMode {
             border-color: $grey-subtle-night;
@@ -146,6 +154,13 @@
     
             @include darkMode {
                 border-color: $grey-night;
+            }
+        }
+        &:active {
+            background: rgba($text-day, 0.03);
+
+            @include darkMode {
+                background: rgba($text-night, 0.03);
             }
         }
 
@@ -166,7 +181,13 @@
 
         .title {
             flex: 0 1 100%;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+
+            @include tabletAndUp {
+                font-size: 1.5rem;
+                line-height: 1.75rem;
+            }
         }
         .title span {
             color: $grey-night;

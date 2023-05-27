@@ -20,9 +20,12 @@
   min-width: 12rem;
   max-width: 100%;
   vertical-align: top;
-  background-color: $white;
   overflow: hidden;
-  color: rgba($bluedark, 0.4);
+  color: $text-day;
+
+  @include darkMode {
+    color: $text-night;
+  }
 
   &.card--words {
     min-width: 15rem;
@@ -84,8 +87,14 @@
       line-height: 1.625rem;
     }
   }
-  figure img {
-    width: 100%;
+  figure {
+    border-radius: 0.75rem;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+    }
   }
   &--related {
     // box-shadow: 0 0.125rem 0.25rem rgba($black, 0.1);
@@ -102,6 +111,10 @@
         object-position: center;
       }
     }
+  }
+
+  &__info {
+    padding: 1rem 0;
   }
 }
 

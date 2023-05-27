@@ -59,7 +59,7 @@
                     <img src="<?= $image->thumb(['width' => 1200])->url() ?>" alt="">
                   </figure>
                 <?php endif ?>
-                <div style="padding: 1rem;">
+                <div class="card__info">
                   <h3 class="card__title"><?= $project->title()->html() ?><sup><?= $project->year() ?></sup></h3>
                   <p><?= $project->description()->html() ?></p>
                 </div>

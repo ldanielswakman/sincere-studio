@@ -51,7 +51,11 @@ $black: #000;
 }
 
 .bg-white {
-  background-color: $white;
+  background-color: $bg-day;
+
+  @include darkMode {
+    background-color: $bg-night;
+  }
 }
 .bg-greylighter {
   background-color: $greylighter;

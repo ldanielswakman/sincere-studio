@@ -1,7 +1,7 @@
 .logo {
   position: fixed;
-  top: 1rem;
-  left: 1.5rem;
+  top: 0.5rem;
+  left: 0.5rem;
   z-index: 3;
   display: flex;
   justify-content: center;
@@ -11,6 +11,11 @@
   background-color: transparent;
   @include prefix(border-radius, 50%);
   font-size: 2rem;
+
+  @include tabletAndUp {
+    top: 1rem;
+    left: 1.5rem;
+  }
   
   svg path {
     fill: $text-day;

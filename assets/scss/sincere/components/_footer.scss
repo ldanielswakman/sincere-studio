@@ -1,6 +1,6 @@
 footer {
-  background-color: #1d2f3b;
-  color: rgba($white, 0.5);
+  // background-color: #1d2f3b;
+  // color: rgba($white, 0.5);
   overflow: hidden;
 
   h4 {
@@ -10,5 +10,17 @@ footer {
   }
   a {
     color: inherit;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    @include tabletAndUp {
+      flex-direction: row;
+    }
   }
 }

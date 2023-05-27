@@ -65,8 +65,12 @@
     }
 
     &.button--subtle {
-      border-color: $greylighter;
+      border-color: $grey-subtle-day;
       color: inherit;
+
+      @include darkMode {
+        border-color: $grey-subtle-night;
+      }
 
       &:hover {
         background-color: $greylighter;
