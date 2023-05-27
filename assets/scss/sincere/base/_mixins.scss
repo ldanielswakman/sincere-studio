@@ -47,3 +47,9 @@
         @content;
     }
 }
+
+@mixin darkMode {
+  @media(prefers-color-scheme: dark) {
+    @content;
+  }
+}

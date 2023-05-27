@@ -1,15 +1,73 @@
-<?php snippet('header') ?>
+<?php snippet('header', ['nav' => false]) ?>
 
   <main>
 
-    <?php
-    $header_options = ['page' => $page, 'subtitle' => 'work experience'];
-    if ($pdf = $page->pdf_file()->toFile()) :
-      $header_options['link_url'] = $pdf->url();
-      $header_options['link_text'] = 'pdf';
-    endif;
-    snippet('page-header', $header_options);
-    ?>
+    <section class="section--cv-intro">
+      <div class="container">
+
+        <div class="hero">
+          <figure><img src="<?= url('assets/images/avatar-daniel.png') ?>" /></figure>
+          <div>
+            <h1>Daniel Swakman</h1>
+            <h2>Digital Designer  •  Berlin, Germany</h2>
+          </div>
+        </div>
+
+        <p class="tagline">I’m a designer with 10+ years of experience, working with startups and small businesses that want to innovate and create positive impact. I focus on:</p>
+
+        <div class="usps">
+          <div class="usp">
+            <img src="<?= url('assets/images/icon-intersect.svg') ?>" />
+            <div>
+              <h4>Design</h4>
+              <p>Meticulous craftsmanship, integrated brand thinking, and an eye for detail drive my design approach.</p>
+            </div>
+          </div>
+          <div class="usp">
+            <img src="<?= url('assets/images/icon-command.svg') ?>" />
+            <div>
+              <h4>Tech</h4>
+              <p>Tech-savvy and skilled at collaborating with development teams, I bridge the gap between design and code.</p>
+            </div>
+          </div>
+          <div class="usp">
+            <img src="<?= url('assets/images/icon-users.svg') ?>" />
+            <div>
+              <h4>Leadership</h4>
+              <p>With leadership experience, I grow teams and spearhead design change within organizations.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section--experience">
+      <div class="container">
+
+        <div class="page-nav" role="navigation">
+          <div class="page-nav-item isActive">Experience</div>
+          <div class="page-nav-item">Projects</div>
+          <div class="page-nav-item">Timeline</div>
+        </div>
+
+        <?php foreach ($page->work_xp()->toStructure() as $item) : ?>
+
+          <div class="experience-item">
+
+            <?php if($image = $item->img()->toFile() && false): ?>
+              <figure class="xp-image"><img src="<?= $image->resize(null, 120)->url() ?>" alt="<?= $item->title() ?>" /></figure>
+            <?php endif ?>
+
+            <p class="title"><?= $item->title() ?> <span><?= $item->period() ?></span></p>
+
+            <img class="icon" src="<?= url('assets/images/icon-chevron-down.svg') ?>" />
+          </div>
+
+        <?php endforeach ?>
+
+      </div>
+    </section>
 
     <section>
       <div class="row">

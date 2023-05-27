@@ -7,8 +7,8 @@ body {
   margin: 0;
   padding: 0;
 
-  background-color: $greylightest;
-  color: $bluedark;
+  background-color: #FFFEFC;
+  color: #0D0533;
 
   font-family: $sans;
   // font-size: 112.5%; // 1rem = 18px (at 100% zoom)
@@ -18,8 +18,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
 
+  // font-variant-alternates: stylistic(user-defined-ident);
+  // font-feature-settings: "salt" 1, "ss01" 1, "ss02" 1, "ss03" 1;
+  font-feature-settings: "ss01" 1, "onum" 1;
+
+
   &.dialogIsActive {
     overflow: hidden;
+  }
+
+  @include darkMode {
+    background: $bg-night;
+    color: $text-night;
   }
 }
 

@@ -1,16 +1,26 @@
 // Colours
 
+// New Colour Set
+$bg-day: #fffefc;
+$grey-subtle-day: #D3DFE5;
+$grey-day: #868197;
+$text-day: #0D0533;
+$bg-night: #110F1A;
+$grey-subtle-night: #4D4B53;
+$grey-night: #B8C5CC;
+$text-night: #fffefc;
+
 // Theme colours
 $blue: #6547FE;
 $bluedull: #34495e; //485b66
-$bluedark: #000;
+$bluedark: $text-day;
 
 // Greys
 $white: #fff;
-$greylightest: #f7f7f9;
+$greylightest: $bg-day;
 $greylighter: #ebebed;
 $greylight: #ccccd4;
-$grey: #9999aa;
+$grey: $grey-day;
 $black: #000;
 
 .c-blue {
@@ -20,7 +30,11 @@ $black: #000;
   color: $bluedull;
 }
 .c-bluedark {
-  color: $bluedark;
+  color: $text-day;
+
+  @include darkMode {
+    color: $text-night;
+  }
 }
 
 .c-white {

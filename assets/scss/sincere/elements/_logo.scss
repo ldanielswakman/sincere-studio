@@ -1,21 +1,24 @@
 .logo {
   position: fixed;
-  top: 2.25rem;
-  left: 2.5rem;
+  top: 1rem;
+  left: 1.5rem;
   z-index: 3;
-  display: inline-block;
-  width: 2.5rem;
-  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
   background-color: transparent;
   @include prefix(border-radius, 50%);
   font-size: 2rem;
   
-  @media screen and (min-width: 768px) {
-    top: 3rem;
-    left: 3rem;
-  }
+  svg path {
+    fill: $text-day;
   
-  svg path { fill: $black; }
+    @include darkMode {
+      fill: $text-night;
+    }
+  }
   &:hover svg path {
     fill: url(#paint0_linear);
   }

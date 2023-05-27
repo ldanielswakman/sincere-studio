@@ -8,51 +8,51 @@ Work-xp:
   period: 2020-current
   img:
     - monogram.png
-  title: nebenan.de
+  title: 3 years as Head of Design at nebenan.de
+  employer: nebenan.de
   text: |
     Social neighbourhood platform with 2M+ users in 4 countries
     Lead Designer, responsible for both product and communications design
   url: https://nebenan.de
 - 
-  period: 2020-current
+  period: 2017-2020
   img:
     - sincere-monogram.png
-  title: Sincere—Studio
+  title: >
+    3 years independent designer at Sincere
+    Studio
+  employer: Sincere Studio
   text: >
     Helping startups design and build the
     web of tomorrow — design strategy,
     product design, communications design
   url: https://sincere.studio/
 - 
-  period: 2017-2020
-  img:
-    - logo.png
-  title: ldaniel.eu
-  text: >
-    Independent ‘full stack’ designer
-    — UX, UI, visual, interaction,
-    frontend; working w startups/private
-    clients/agencies
-  url: https://ldaniel.eu/
-- 
-  period: 2015-current
+  period: 2015-2018
   img:
     - muhit-logo-on-white.png
-  title: Muhit (co-founder)
+  title: '3 years aso co-founder & designer at Muhit'
+  employer: Muhit
   text: 'non-profit platform for urban improvement, design, product & business development'
   url: projects/muhit
 - 
-  period: 2014-current
+  period: 2015-2018
   img:
     - parasut-logo.png
-  title: Paraşüt
+  title: >
+    3 years Senior Designer at accounting
+    startup in Istanbul
+  employer: Paraşüt
   text: 'Pre-accounting for SME’s web application; graphic & web designer, UI/ UX design, front-end (html/css)'
   url: http://www.parasut.com/
 - 
   period: 2012-2015
   img:
     - oefenweb-logo.png
-  title: Oefenweb.nl
+  title: >
+    3 years as Lead Designer at eLearning
+    startup in Amsterdam
+  employer: Oefenweb.nl
   text: |
     e-learning gaming applications;
     lead graphic & web designer, UI/
@@ -60,30 +60,13 @@ Work-xp:
     gamification
   url: http://www.oefenweb.nl
 - 
-  period: 2008-2016
+  period: 2008-2023
   img:
     - ldaniel-logo.png
-  title: ldaniel.eu
+  title: + side projects and freelance
+  employer: ldaniel.eu
   text: 'freelance graphic & web designer, branding & identity, front-end design, visualisations'
   url: http://ldaniel.eu/
-- 
-  period: 2011-2012
-  img: [ ]
-  title: Güller Güller architecture urbanism
-  text: 'architecture & urban design'
-  url: http://www.ggau.net
-- 
-  period: 2007-2011
-  img: [ ]
-  title: Delft University of Technology
-  text: 'student assistant education, tutoring & book research'
-  url: ""
-- 
-  period: "2007"
-  img: [ ]
-  title: Paul de Ruiter Architects
-  text: architectural design internship
-  url: http://www.paulderuiter.nl/
 
 ----
 
@@ -99,6 +82,7 @@ Education:
   period: "2015"
   img: [ ]
   title: Graphic Design Summer School
+  employer: ""
   text: >
     Central Saint Martin’s –University
     of the Arts London
@@ -107,6 +91,7 @@ Education:
   period: "2014"
   img: [ ]
   title: Gamification Certificate
+  employer: ""
   text: >
     Online course by University of
     Pennsylvania
@@ -117,6 +102,7 @@ Education:
   title: >
     Dual Master’s Degree in Architecture
     and Urbanism
+  employer: ""
   text: >
     Faculty of Architecture, TU Delft
     graduation project ‘I solemnly pledge
@@ -127,18 +113,21 @@ Education:
   period: "2008"
   img: [ ]
   title: 'Study Abroad - Architecture'
+  employer: ""
   text: South Bank University, London, UK
   url: ""
 - 
   period: 2004-2007
   img: [ ]
   title: Bachelor’s Degree
+  employer: ""
   text: Faculty of Architecture, TU Delft
   url: ""
 - 
   period: 1998-2004
   img: [ ]
   title: VWO diploma (gymnasium)
+  employer: ""
   text: Vossius Gymnasium, Amsterdam
   url: ""
 
@@ -150,30 +139,35 @@ Personal:
   period: name
   img: [ ]
   title: L Daniel Swakman
+  employer: ""
   text: ""
   url: ""
 - 
   period: date of birth
   img: [ ]
   title: 6 October 1986
+  employer: ""
   text: ""
   url: ""
 - 
   period: place of birth
   img: [ ]
   title: Amsterdam, NL
+  employer: ""
   text: ""
   url: ""
 - 
   period: location
   img: [ ]
   title: Berlin, DE
+  employer: ""
   text: ""
   url: ""
 - 
   period: nationality
   img: [ ]
   title: Dutch
+  employer: ""
   text: ""
   url: ""
 
@@ -185,30 +179,35 @@ Languages:
   period: ""
   img: [ ]
   title: English 🇬🇧
+  employer: ""
   text: fluent
   url: ""
 - 
   period: ""
   img: [ ]
   title: Dutch 🇳🇱
+  employer: ""
   text: fluent, native
   url: ""
 - 
   period: ""
   img: [ ]
   title: Turkish 🇹🇷
+  employer: ""
   text: good
   url: ""
 - 
   period: ""
   img: [ ]
   title: German 🇩🇪
+  employer: ""
   text: good
   url: ""
 - 
   period: ""
   img: [ ]
   title: French 🇫🇷
+  employer: ""
   text: acceptable
   url: ""
 
@@ -220,6 +219,7 @@ Skills:
   period: visual
   img: [ ]
   title: ""
+  employer: ""
   text: >
     Sketch, Adobe Illustrator, Photoshop,
     Indesign, Premiere, Fireworks, Invision,
@@ -229,6 +229,7 @@ Skills:
   period: code
   img: [ ]
   title: ""
+  employer: ""
   text: >
     HTML(5), CSS(3), LESS/SASS, Javascript/
     jQuery, gulp, PHP, Flash/Actionscript,
@@ -238,6 +239,7 @@ Skills:
   period: product
   img: [ ]
   title: ""
+  employer: ""
   text: >
     design thinking, brainstorming, brand
     strategy, product management
@@ -246,6 +248,7 @@ Skills:
   period: 3D
   img: [ ]
   title: ""
+  employer: ""
   text: >
     Rhino, Maya, 3Ds Max, Sketchup,
     Pepakura, Vray, mental ray
@@ -254,6 +257,7 @@ Skills:
   period: CAD
   img: [ ]
   title: ""
+  employer: ""
   text: >
     AutoCAD, Autodesk Revit (basic),
     Vectorworks (basic)
@@ -267,6 +271,7 @@ Interests:
   period: design
   img: [ ]
   title: "Digital design as a responsive, context-sensitive solution that suits user's needs."
+  employer: ""
   text: >
     The main passion in my work lies in the
     visual and graphic design; I deeply care
@@ -286,24 +291,28 @@ Interests:
   period: visual vs code
   img: [ ]
   title: 'Code is the grain and material of the web & app world'
+  employer: ""
   text: "I believe that working in digital design means an inherent link between visual/interaction design and the code that makes this happen — much like a carpenter's knowledge & control of wood type and behaviour. Design < > code"
   url: ""
 - 
   period: responsive
   img: [ ]
   title: Orchestration of dynamic elements
+  employer: ""
   text: "Designing for the web and mobile apps can no longer be seen as an exercise on a fixed canvas where one lays out objects. Instead, it is an orchestration of dynamic elements, that can have different states & behaviours. Responsive design is a key tool in this orchestration — I've never designed a project without it."
   url: ""
 - 
   period: architectural vs graphic
   img: [ ]
   title: 'Shaping the world we experience & interact with'
+  employer: ""
   text: 'I believe the values and considerations that are concerned with visual design are just as present in architecture: colour, proportions, materials, tactility, usability, and the continuous process of revision in search for true quality.'
   url: ""
 - 
   period: other
   img: [ ]
   title: Keep exploring
+  employer: ""
   text: 'Outside of this design spectrum I occupy myself with social innovation, infographics & visualisation, travelling, coffee and making music.'
   url: ""
 
@@ -315,36 +324,42 @@ Preferences:
   period: coffee
   img: [ ]
   title: Double espresso
+  employer: ""
   text: ""
   url: ""
 - 
   period: code editor
   img: [ ]
   title: Visual Studio Code
+  employer: ""
   text: ""
   url: ""
 - 
   period: workspace
   img: [ ]
   title: coworking spaces
+  employer: ""
   text: ""
   url: ""
 - 
   period: design tool
   img: [ ]
   title: Figma
+  employer: ""
   text: ""
   url: ""
 - 
   period: backpack
   img: [ ]
   title: Wandrd Prvke
+  employer: ""
   text: ""
   url: ""
 - 
   period: Typeface
   img: [ ]
   title: TT Commons
+  employer: ""
   text: (for now)
   url: ""
 

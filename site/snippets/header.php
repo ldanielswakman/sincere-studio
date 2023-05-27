@@ -12,8 +12,8 @@
       <?php snippet('svg/logo-sincere') ?>
     <?php endif ?>
   </a>
-
-  <?php snippet('nav') ?>
+  
+  <?php if(!isset($nav) || $nav !== false) : snippet('nav'); endif; ?>
 
   <?php snippet('contact', ['page' => $page]) ?>
   <?php if(isset($contact_active) && $contact_active == true) : ?>
