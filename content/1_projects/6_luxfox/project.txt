@@ -2,7 +2,11 @@ Title: LuxFox
 
 ----
 
-Sections: 
+Builder: 
+
+----
+
+Sections:
 
 - 
   num_cols: 'true'
@@ -80,7 +84,7 @@ Sections:
 
 ----
 
-Year: 2018-
+Year: 2018-2020
 
 ----
 
@@ -88,7 +92,24 @@ Description: Comfortable elegance for a new beauty service brand
 
 ----
 
+Intro: 
+
+----
+
 Tags: branding, web-design, ux, ui
+
+----
+
+Team:
+
+- 
+  name: Katrin Lichter
+  note: Graphic Design
+  link: https://studiokil.de/
+- 
+  name: Güney Can Gökoğlu
+  note: Development
+  link: https://gcg.me/
 
 ----
 
@@ -96,13 +117,17 @@ Projecturl: https://www.lux-fox.com/
 
 ----
 
+Keyvisual: 
+
+----
+
 Featured: true
 
 ----
 
-Featuredimage: 
+Featuredimage:
 
-- app-montage-cropped.jpg
+- luxfox.jpg
 
 ----
 

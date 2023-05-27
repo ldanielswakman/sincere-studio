@@ -1,0 +1,53 @@
+Title: Nebenan.de
+
+----
+
+Builder: 
+
+----
+
+Sections: 
+
+----
+
+Year: 2020-
+
+----
+
+Description: Connecting neighbours with their neighbourhood
+
+----
+
+Intro: Head of Design position, employed
+
+----
+
+Tags: 
+
+----
+
+Team: 
+
+----
+
+Projecturl: https://nebenan.de/
+
+----
+
+Keyvisual:
+
+- slide-brand.jpg
+
+----
+
+Featured: true
+
+----
+
+Featuredimage:
+
+- slide-brand.jpg
+
+----
+
+Featuredcolour: 
