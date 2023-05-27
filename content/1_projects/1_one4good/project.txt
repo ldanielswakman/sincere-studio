@@ -1,0 +1,95 @@
+Title: one4good
+
+----
+
+Builder:
+
+- 
+  text: 'In 2021, I got approach by one4good to help shape a new digital-first donation platform, which a very simple concept: a curated selection of social good projects for positive impact, where users can subscribe to for a fixed monthly amount. They needed help to shape the initial brand, then landing page, and ultimately the product design of the actual platform.'
+  full: 'false'
+  _key: text
+  _uid: text_1684494517542_601
+- 
+  image:
+    - lp.jpg
+  _key: full_image
+  _uid: full_image_1684494697247_601
+- 
+  text: ""
+  full: 'false'
+  _key: text
+  _uid: text_1684495044158_601
+- 
+  text: 'Together, we shaped a multi-phase project, where we took the simple and clearly design logo and colour palette (by (link: https://franromero.es/ text: Fran Romero)), and figured out the full visual language that will help bring it to life. This resulted in a successful (link: https://www.startnext.com/one4good text: crowdfunding campaign) and a functional (link: https://www.one4good.com/en text: web platform) (also mobile-optimised and progressive web app).'
+  image:
+    - one4good-instagram-1.jpg
+    - one4good-instagram-2.jpg
+    - one4good-instagram-3.jpg
+  _key: text_image
+  _uid: text_image_1684495063025_601
+- 
+  text: '(link: https://www.one4good.com/ target:blank text: See the platform live)'
+  full: 'false'
+  _key: text
+  _uid: text_1684495090627_601
+
+----
+
+Sections: 
+
+----
+
+Year: 2021-2023
+
+----
+
+Description: Bold shapes for a subscription platform for doing good
+
+----
+
+Intro: Bold shapes for a subscription platform for doing good
+
+----
+
+Tags: visual-identity, web-design, product-design, Graphic Design, front-end
+
+----
+
+Team:
+
+- 
+  name: Storm Farrell
+  note: frontend development
+  link: https://stormfarrell.com/
+- 
+  name: Fran Romero
+  note: brand concept
+  link: https://franromero.es/
+- 
+  name: Güney Can Gökoğlu
+  note: backend development
+  link: https://gcg.me/
+
+----
+
+Projecturl: https://www.one4good.com/
+
+----
+
+Keyvisual:
+
+- one4good.jpg
+
+----
+
+Featured: true
+
+----
+
+Featuredimage:
+
+- one4good.jpg
+
+----
+
+Featuredcolour: 

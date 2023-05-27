@@ -5,7 +5,26 @@ Title: CV
 Work-xp:
 
 - 
-  period: 2017-current
+  period: 2020-current
+  img:
+    - monogram.png
+  title: nebenan.de
+  text: |
+    Social neighbourhood platform with 2M+ users in 4 countries
+    Lead Designer, responsible for both product and communications design
+  url: https://nebenan.de
+- 
+  period: 2020-current
+  img:
+    - sincere-monogram.png
+  title: Sincere—Studio
+  text: >
+    Helping startups design and build the
+    web of tomorrow — design strategy,
+    product design, communications design
+  url: https://sincere.studio/
+- 
+  period: 2017-2020
   img:
     - logo.png
   title: ldaniel.eu
@@ -301,32 +320,32 @@ Preferences:
 - 
   period: code editor
   img: [ ]
-  title: Sublime Text 3
+  title: Visual Studio Code
   text: ""
   url: ""
 - 
   period: workspace
   img: [ ]
-  title: remote / coworking spaces
+  title: coworking spaces
   text: ""
   url: ""
 - 
   period: design tool
   img: [ ]
-  title: 'pencil > sketch > css'
+  title: Figma
   text: ""
   url: ""
 - 
   period: backpack
   img: [ ]
-  title: Minaal
+  title: Wandrd Prvke
   text: ""
   url: ""
 - 
-  period: Typeface combination
+  period: Typeface
   img: [ ]
-  title: HK Grotesk / Merriweather
-  text: (for now, at least)
+  title: TT Commons
+  text: (for now)
   url: ""
 
 ----

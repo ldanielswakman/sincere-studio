@@ -2,7 +2,7 @@ Title: Side Projects
 
 ----
 
-Text: 
+Text:
 
 (new-section: bg-white c-grey)
 
@@ -15,6 +15,8 @@ Together with other community members, I set up a weekly designers meetup, aimed
 <a href="https://www.instagram.com/designerscircleberlin/" target="_blank">Designers Circle on Instagram &#8599;</a>
 <br/><br/>
 
+<div id="pheme"></div>
+
 (image: pheme-product-banner.jpg)
 
 ## Pheme
@@ -23,13 +25,18 @@ Pheme is a decentralised publishing platform, built on blockchain and peer-to-pe
 <a href="https://pheme.app/" target="_blank">See the project live &#8599;</a>
 <br/><br/>
 
+<div id="coworking"></div>
+
 (image: coworking-project-banner.jpg)
 
 ## The Coworking Project
+
 <span class="u-op50">2017-ongoing &nbsp;&nbsp;|&nbsp;&nbsp; role: initiator, designer, developer</span>
 The Coworking Project is an initiative to give an easy overview of quality coworking spaces in the city. Started as a personal project, then expanded into a publicly available index for those that want to engage in flexible working. Built with VuePress & Netlify CMS.
 <a href="https://coworkberlin.com/" target="_blank">See Cowork Berlin live &#8599;</a>  |  <a href="https://coworkingistanbul.com/" target="_blank">See Coworking Istanbul live &#8599;</a>
 <br/><br/>
+
+<div id="muhit"></div>
 
 (image: muhit-product-banner.jpg)
 
