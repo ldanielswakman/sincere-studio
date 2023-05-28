@@ -2726,6 +2726,7 @@ section.section--collapsed {
   color: #0D0533;
   font-size: 2rem;
   line-height: 100%;
+  font-weight: normal;
 }
 @media screen and (min-width: 768px) {
   .section--cv-intro h1 {
@@ -2838,12 +2839,20 @@ section.section--collapsed {
     color: #fffefc;
   }
 }
+.section--experience .experience-list {
+  margin: 0 -1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .section--experience .experience-list {
+    margin: 0;
+  }
+}
 .section--experience .experience-item {
   display: flex;
-  margin-bottom: 1rem;
-  padding: 1rem 1.5rem;
-  border-radius: 1rem;
-  border: 1px solid #D3DFE5;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1.25rem 0;
+  border-bottom: 1px solid #D3DFE5;
   cursor: pointer;
   text-align: left;
   user-select: none;
@@ -2854,21 +2863,36 @@ section.section--collapsed {
     border-color: #4D4B53;
   }
 }
-.section--experience .experience-item:hover {
-  border: 1px solid #868197;
+@media screen and (min-width: 768px) {
+  .section--experience .experience-item {
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem 0;
+    border-radius: 1rem;
+    border: 1px solid #D3DFE5;
+  }
 }
-@media (prefers-color-scheme: dark) {
+@media screen and (min-width: 768px) and (prefers-color-scheme: dark) {
+  .section--experience .experience-item {
+    border-color: #4D4B53;
+  }
+}
+@media (hover: hover) {
   .section--experience .experience-item:hover {
-    border-color: #B8C5CC;
+    border-color: #868197;
   }
 }
 .section--experience .experience-item:active {
   background: rgba(13, 5, 51, 0.03);
+  background: rgba(101, 71, 254, 0.03);
+  border-color: #6547FE;
 }
 @media (prefers-color-scheme: dark) {
   .section--experience .experience-item:active {
     background: rgba(255, 254, 252, 0.03);
   }
+}
+.section--experience .experience-item .header {
+  display: flex;
 }
 .section--experience .experience-item .xp-image {
   display: flex;
@@ -2894,14 +2918,82 @@ section.section--collapsed {
     line-height: 1.75rem;
   }
 }
-.section--experience .experience-item .title span {
+.section--experience .experience-item .title a {
+  color: inherit;
+  border-bottom: 1px solid currentColor;
+}
+.section--experience .experience-item .title a:hover {
+  color: #6547FE;
+}
+.section--experience .experience-item .period {
   color: #B8C5CC;
+}
+@media (prefers-color-scheme: dark) {
+  .section--experience .experience-item .period {
+    color: #868197;
+  }
 }
 .section--experience .experience-item .icon {
   opacity: 0.5;
+  transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.section--experience .experience-item.isActive .icon {
+  transform: rotate(180deg);
 }
 .section--experience .experience-item:hover .icon {
   opacity: 1;
+}
+.section--experience .experience-item .content {
+  transition: max-height 0.7s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 0;
+  max-height: 0;
+}
+.section--experience .experience-item.isActive .content {
+  opacity: 1;
+  max-height: 100vh;
+}
+.section--experience .experience-item .content p {
+  color: #868197;
+  line-height: 125%;
+}
+@media (prefers-color-scheme: dark) {
+  .section--experience .experience-item .content p {
+    color: #B8C5CC;
+  }
+}
+.section--experience .experience-item .content .project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(12rem, 1fr);
+  gap: 1.25rem;
+  margin: 0.5rem -1.25rem 1rem;
+  padding: 1.25rem;
+  color: #868197;
+  overflow-x: scroll;
+}
+@media (prefers-color-scheme: dark) {
+  .section--experience .experience-item .content .project-list {
+    color: #B8C5CC;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section--experience .experience-item .content .project-list {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: initial;
+    grid-auto-columns: initial;
+    gap: 1.5rem;
+    margin: 1.5rem 0 1rem;
+    padding: 0;
+  }
+}
+.section--experience .experience-item .content .project-list .project-image {
+  margin-top: 0.5rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+.section--experience .experience-item .content .project-list .project-image img {
+  display: block;
 }
 
 /*# sourceMappingURL=style-sincere.css.map */

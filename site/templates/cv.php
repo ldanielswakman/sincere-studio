@@ -51,20 +51,52 @@
           <div class="page-nav-item">Timeline</div>
         </div>
 
+        <div class="experience-list">
         <?php foreach ($page->work_xp()->toStructure() as $item) : ?>
 
           <div class="experience-item">
 
-            <?php if($image = $item->img()->toFile() && false): ?>
-              <figure class="xp-image"><img src="<?= $image->resize(null, 120)->url() ?>" alt="<?= $item->title() ?>" /></figure>
-            <?php endif ?>
+            <div class="header">
+              <?php if($image = $item->img()->toFile() && false): ?>
+                <figure class="xp-image"><img src="<?= $image->resize(null, 120)->url() ?>" alt="<?= $item->title() ?>" /></figure>
+              <?php endif ?>
 
-            <p class="title"><?= $item->title() ?> <span><?= $item->period() ?></span></p>
+              <div class="title"><?= $item->title()->kirbytextinline() ?> <span class="period"><?= $item->period() ?></span></div>
 
-            <img class="icon" src="<?= url('assets/images/icon-chevron-down.svg') ?>" />
+              <img class="icon" src="<?= url('assets/images/icon-chevron-down.svg') ?>" />
+            </div>
+
+            <div class="content">
+              <p><?= $item->text() ?></p>
+
+              <div class="project-list">
+                <?php foreach ($item->projects()->toStructure() as $project) : ?>
+                <div class="project-item">
+                  <h4><?= $project->title() ?></h4>
+                  <?php if($image = $project->image()->toFile()): ?>
+                    <figure class="project-image"><img src="<?= $image->url() ?>" alt="<?= $project->title() ?>" /></figure>
+                  <?php endif ?>
+                </div>
+                <?php endforeach ?>
+              </div>
+            </div>
+
           </div>
 
         <?php endforeach ?>
+        </div>
+
+        <script>
+          $(document).ready(() => {
+            $('.experience-item').click(function() {
+              $isActive = $(this).hasClass('isActive');
+              $(this).parent().find('.experience-item').removeClass('isActive');
+              if(!$isActive) {
+                $(this).addClass('isActive');
+              }
+            });
+          });
+        </script>
 
       </div>
     </section>

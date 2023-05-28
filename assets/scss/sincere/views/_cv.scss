@@ -25,6 +25,7 @@
         color: $text-day;
         font-size: 2rem;
         line-height: 100%;
+        font-weight: normal;
 
         @include tabletAndUp {
             font-size: 6rem;
@@ -134,12 +135,20 @@
         }
     }
 
+    .experience-list {
+        margin: 0 -1.25rem;
+
+        @include tabletAndUp {
+            margin: 0;
+        }
+    }
+
     .experience-item {
         display: flex;
-        margin-bottom: 1rem;
-        padding: 1rem 1.5rem;
-        border-radius: 1rem;
-        border: 1px solid $grey-subtle-day;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 1.25rem 0;
+        border-bottom: 1px solid $grey-subtle-day;
         cursor: pointer;
         text-align: left;
         user-select: none;
@@ -149,19 +158,34 @@
             border-color: $grey-subtle-night;
         }
 
-        &:hover {
-            border: 1px solid $grey-day;
-    
+        @include tabletAndUp {
+            margin-bottom: 1rem;
+            padding: 1rem 1.5rem 0;
+            border-radius: 1rem;
+            border: 1px solid $grey-subtle-day;
+
             @include darkMode {
-                border-color: $grey-night;
+                border-color: $grey-subtle-night;
+            }
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                border-color: $grey;
             }
         }
         &:active {
             background: rgba($text-day, 0.03);
+            background: rgba($blue, 0.03);
+            border-color: $blue;
 
             @include darkMode {
                 background: rgba($text-night, 0.03);
             }
+        }
+
+        .header {
+            display: flex;
         }
 
         .xp-image {
@@ -188,15 +212,84 @@
                 font-size: 1.5rem;
                 line-height: 1.75rem;
             }
+            a {
+                color: inherit;
+                border-bottom: 1px solid currentColor;
+
+                &:hover {
+                    color: $blue;
+                }
+            }
         }
-        .title span {
+        .period {
             color: $grey-night;
+
+            @include darkMode {
+                color: $grey-day;
+            }
         }
         .icon {
             opacity: 0.5;
+            transition: transform 0.7s cubic-bezier(0.23, 1, 0.320, 1);
+        }
+        &.isActive .icon {
+            transform: rotate(180deg);
         }
         &:hover .icon {
             opacity: 1;
+        }
+
+        .content {
+            // display: none;
+            transition: max-height 0.7s cubic-bezier(0.23, 1, 0.320, 1), opacity 0.7s cubic-bezier(0.23, 1, 0.320, 1);;
+            opacity: 0;
+            max-height: 0;
+        }
+        &.isActive .content {
+            // display: block;
+            opacity: 1;
+            max-height: 100vh;
+        }
+        .content p {
+            color: $grey-day;
+            line-height: 125%;
+
+            @include darkMode {
+                color: $grey-night;
+            }
+        }
+
+        .content .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(12rem,1fr));
+            grid-auto-flow: column;
+            grid-auto-columns: minmax(12rem,1fr);
+            gap: 1.25rem;
+            margin: 0.5rem -1.25rem 1rem;
+            padding: 1.25rem;
+            color: $grey-day;
+            overflow-x: scroll;
+
+            @include darkMode {
+                color: $grey-night;
+            }
+
+            @include tabletAndUp {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-auto-flow: initial;
+                grid-auto-columns: initial;
+                gap: 1.5rem;
+                margin: 1.5rem 0 1rem;
+                padding: 0;
+            }
+
+            .project-image {
+                margin-top: 0.5rem;
+                border-radius: 0.75rem;
+                overflow: hidden;
+
+                img { display: block; }
+            }
         }
     }
 }

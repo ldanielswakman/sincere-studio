@@ -28,6 +28,17 @@ fields:
     label: URL (if any)
     type: text
     icon: link
+  projects:
+    label: Projects
+    type: structure
+    fields:
+      title:
+        label: Title
+        type: text
+      image:
+        label: Image
+        type: files
+        multiple: false
 
 columns:
   img:

@@ -8,12 +8,31 @@ Work-xp:
   period: 2020-current
   img:
     - monogram.png
-  title: 3 years as Head of Design at nebenan.de
+  title: '3 years as Head of Design at (link: https://nebenan.de text: nebenan.de target: blank)'
   employer: nebenan.de
-  text: |
-    Social neighbourhood platform with 2M+ users in 4 countries
-    Lead Designer, responsible for both product and communications design
-  url: https://nebenan.de
+  text: 'Growing and leading a team of 7 designers, establishing consistency in design language, initiated and led a comprehensive brand & product redesign, implemented Figma design system & migrated organisation'
+  url: ""
+  projects:
+    - 
+      title: Product Redesign
+      image:
+        - nebenan-product.jpg
+    - 
+      title: Brand Redesign
+      image:
+        - nebenan-brand.jpg
+    - 
+      title: Landing Page System
+      image:
+        - nebenan-lp.jpg
+    - 
+      title: Brand Guide
+      image:
+        - nebenan-brand-guide.jpg
+    - 
+      title: Design System
+      image:
+        - nebenan-design-system.jpg
 - 
   period: 2017-2020
   img:
@@ -23,18 +42,32 @@ Work-xp:
     Studio
   employer: Sincere Studio
   text: >
-    Helping startups design and build the
-    web of tomorrow — design strategy,
-    product design, communications design
+    Independent design studio, working with
+    startups and small businesses on
+    impactful digital design. Collaborations
+    with other freelancers as collective
   url: https://sincere.studio/
-- 
-  period: 2015-2018
-  img:
-    - muhit-logo-on-white.png
-  title: '3 years aso co-founder & designer at Muhit'
-  employer: Muhit
-  text: 'non-profit platform for urban improvement, design, product & business development'
-  url: projects/muhit
+  projects:
+    - 
+      title: one4good
+      image:
+        - one4good-small.jpg
+    - 
+      title: Gamer One
+      image:
+        - gamerone.jpg
+    - 
+      title: Poltio
+      image:
+        - poltio.jpg
+    - 
+      title: Inflight VR
+      image:
+        - inflight-vr.jpg
+    - 
+      title: LuxFox
+      image:
+        - luxfox.jpg
 - 
   period: 2015-2018
   img:
@@ -45,6 +78,16 @@ Work-xp:
   employer: Paraşüt
   text: 'Pre-accounting for SME’s web application; graphic & web designer, UI/ UX design, front-end (html/css)'
   url: http://www.parasut.com/
+  projects: [ ]
+- 
+  period: 2015-2018
+  img:
+    - muhit-logo-on-white.png
+  title: '3 years aso co-founder & designer at Muhit'
+  employer: Muhit
+  text: 'non-profit platform for urban improvement, design, product & business development'
+  url: projects/muhit
+  projects: [ ]
 - 
   period: 2012-2015
   img:
@@ -59,6 +102,7 @@ Work-xp:
     UX design, front-end (html/css),
     gamification
   url: http://www.oefenweb.nl
+  projects: [ ]
 - 
   period: 2008-2023
   img:
@@ -67,6 +111,7 @@ Work-xp:
   employer: ldaniel.eu
   text: 'freelance graphic & web designer, branding & identity, front-end design, visualisations'
   url: http://ldaniel.eu/
+  projects: [ ]
 
 ----
 
@@ -87,6 +132,7 @@ Education:
     Central Saint Martin’s –University
     of the Arts London
   url: ""
+  projects: [ ]
 - 
   period: "2014"
   img: [ ]
@@ -96,6 +142,7 @@ Education:
     Online course by University of
     Pennsylvania
   url: ""
+  projects: [ ]
 - 
   period: 2007-2011
   img: [ ]
@@ -109,6 +156,7 @@ Education:
     to public space’
   url: >
     architecture/i-solemnly-pledge-to-public-space
+  projects: [ ]
 - 
   period: "2008"
   img: [ ]
@@ -116,6 +164,7 @@ Education:
   employer: ""
   text: South Bank University, London, UK
   url: ""
+  projects: [ ]
 - 
   period: 2004-2007
   img: [ ]
@@ -123,6 +172,7 @@ Education:
   employer: ""
   text: Faculty of Architecture, TU Delft
   url: ""
+  projects: [ ]
 - 
   period: 1998-2004
   img: [ ]
@@ -130,6 +180,7 @@ Education:
   employer: ""
   text: Vossius Gymnasium, Amsterdam
   url: ""
+  projects: [ ]
 
 ----
 
@@ -142,6 +193,7 @@ Personal:
   employer: ""
   text: ""
   url: ""
+  projects: [ ]
 - 
   period: date of birth
   img: [ ]
@@ -149,6 +201,7 @@ Personal:
   employer: ""
   text: ""
   url: ""
+  projects: [ ]
 - 
   period: place of birth
   img: [ ]
@@ -156,6 +209,7 @@ Personal:
   employer: ""
   text: ""
   url: ""
+  projects: [ ]
 - 
   period: location
   img: [ ]
@@ -163,6 +217,7 @@ Personal:
   employer: ""
   text: ""
   url: ""
+  projects: [ ]
 - 
   period: nationality
   img: [ ]
@@ -170,6 +225,7 @@ Personal:
   employer: ""
   text: ""
   url: ""
+  projects: [ ]
 
 ----
 
@@ -182,6 +238,7 @@ Languages:
   employer: ""
   text: fluent
   url: ""
+  projects: [ ]
 - 
   period: ""
   img: [ ]
@@ -189,6 +246,7 @@ Languages:
   employer: ""
   text: fluent, native
   url: ""
+  projects: [ ]
 - 
   period: ""
   img: [ ]
@@ -196,6 +254,7 @@ Languages:
   employer: ""
   text: good
   url: ""
+  projects: [ ]
 - 
   period: ""
   img: [ ]
@@ -203,6 +262,7 @@ Languages:
   employer: ""
   text: good
   url: ""
+  projects: [ ]
 - 
   period: ""
   img: [ ]
@@ -210,6 +270,7 @@ Languages:
   employer: ""
   text: acceptable
   url: ""
+  projects: [ ]
 
 ----
 
@@ -225,6 +286,7 @@ Skills:
     Indesign, Premiere, Fireworks, Invision,
     Framer.js
   url: ""
+  projects: [ ]
 - 
   period: code
   img: [ ]
@@ -235,6 +297,7 @@ Skills:
     jQuery, gulp, PHP, Flash/Actionscript,
     Git
   url: ""
+  projects: [ ]
 - 
   period: product
   img: [ ]
@@ -244,6 +307,7 @@ Skills:
     design thinking, brainstorming, brand
     strategy, product management
   url: ""
+  projects: [ ]
 - 
   period: 3D
   img: [ ]
@@ -253,6 +317,7 @@ Skills:
     Rhino, Maya, 3Ds Max, Sketchup,
     Pepakura, Vray, mental ray
   url: ""
+  projects: [ ]
 - 
   period: CAD
   img: [ ]
@@ -262,6 +327,7 @@ Skills:
     AutoCAD, Autodesk Revit (basic),
     Vectorworks (basic)
   url: ""
+  projects: [ ]
 
 ----
 
@@ -287,6 +353,7 @@ Interests:
     css, javascript) helps me to indeed
     realise this consistency of design.
   url: ""
+  projects: [ ]
 - 
   period: visual vs code
   img: [ ]
@@ -294,6 +361,7 @@ Interests:
   employer: ""
   text: "I believe that working in digital design means an inherent link between visual/interaction design and the code that makes this happen — much like a carpenter's knowledge & control of wood type and behaviour. Design < > code"
   url: ""
+  projects: [ ]
 - 
   period: responsive
   img: [ ]
@@ -301,6 +369,7 @@ Interests:
   employer: ""
   text: "Designing for the web and mobile apps can no longer be seen as an exercise on a fixed canvas where one lays out objects. Instead, it is an orchestration of dynamic elements, that can have different states & behaviours. Responsive design is a key tool in this orchestration — I've never designed a project without it."
   url: ""
+  projects: [ ]
 - 
   period: architectural vs graphic
   img: [ ]
@@ -308,6 +377,7 @@ Interests:
   employer: ""
   text: 'I believe the values and considerations that are concerned with visual design are just as present in architecture: colour, proportions, materials, tactility, usability, and the continuous process of revision in search for true quality.'
   url: ""
+  projects: [ ]
 - 
   period: other
   img: [ ]
@@ -315,6 +385,7 @@ Interests:
   employer: ""
   text: 'Outside of this design spectrum I occupy myself with social innovation, infographics & visualisation, travelling, coffee and making music.'
   url: ""
+  projects: [ ]
 
 ----
 
@@ -327,6 +398,7 @@ Preferences:
   employer: ""
   text: ""
   url: ""
+  projects: [ ]
 - 
   period: code editor
   img: [ ]
@@ -334,6 +406,7 @@ Preferences:
   employer: ""
   text: ""
   url: ""
+  projects: [ ]
 - 
   period: workspace
   img: [ ]
@@ -341,6 +414,7 @@ Preferences:
   employer: ""
   text: ""
   url: ""
+  projects: [ ]
 - 
   period: design tool
   img: [ ]
@@ -348,6 +422,7 @@ Preferences:
   employer: ""
   text: ""
   url: ""
+  projects: [ ]
 - 
   period: backpack
   img: [ ]
@@ -355,6 +430,7 @@ Preferences:
   employer: ""
   text: ""
   url: ""
+  projects: [ ]
 - 
   period: Typeface
   img: [ ]
@@ -362,6 +438,7 @@ Preferences:
   employer: ""
   text: (for now)
   url: ""
+  projects: [ ]
 
 ----
 
