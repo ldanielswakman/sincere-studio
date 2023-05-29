@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-xs-12 col-md-10 col-md-offset-1 u-aligncenter">
 
-          <div class="line line--white"></div>
+          <div class="line line--light"></div>
 
         </div>
       </div>

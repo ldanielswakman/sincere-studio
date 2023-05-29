@@ -1814,6 +1814,19 @@ body.isTouch .u-hide-for-touch {
 .line.line--white {
   border-left-color: #fff;
 }
+.line.line--light {
+  border-left-color: #D3DFE5;
+}
+@media (prefers-color-scheme: dark) {
+  .line.line--light {
+    border-left-color: #4D4B53;
+  }
+}
+
+.line-wrapper {
+  text-align: center;
+  padding: 3rem 0 0;
+}
 
 .logo {
   position: fixed;
@@ -2983,7 +2996,7 @@ section.section--collapsed {
     grid-auto-flow: initial;
     grid-auto-columns: initial;
     gap: 1.5rem;
-    margin: 1.5rem 0 1rem;
+    margin: 1.5rem 0;
     padding: 0;
   }
 }
@@ -2994,6 +3007,25 @@ section.section--collapsed {
 }
 .section--experience .experience-item .content .project-list .project-image img {
   display: block;
+}
+
+.section--education p, .section--education h4 {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .section--education p, .section--education h4 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+}
+.section--education p .period, .section--education h4 .period {
+  color: #B8C5CC;
+}
+@media (prefers-color-scheme: dark) {
+  .section--education p .period, .section--education h4 .period {
+    color: #868197;
+  }
 }
 
 /*# sourceMappingURL=style-sincere.css.map */

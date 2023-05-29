@@ -39,6 +39,10 @@
           </div>
         </div>
 
+        <div class="line-wrapper">
+          <div class="line"></div>
+        </div>
+
       </div>
     </section>
 
@@ -101,39 +105,22 @@
       </div>
     </section>
 
-    <section>
-      <div class="row">
-        <div class="col-xs-12 col-sm-11 col-sm-offset-1 u-pb2">
 
-          <?php snippet('cv-section', ['section' => $page->work_xp()]) ?>
+    <div class="line-wrapper">
+      <div class="line"></div>
+    </div>
 
-          <?php if($graph = $page->cv_graph()->toFile()): ?>
-            <figure class="u-mt2">
-              <img src="<?= $graph->url() ?>" alt="<?= $page->title() ?>" />
-            </figure>
-          <?php endif ?>
-
-          <?php snippet('cv-section', ['title' => 'education', 'section' => $page->education()]) ?>
-
-          <?php snippet('cv-section', ['title' => 'personal', 'section' => $page->personal()]) ?>
-
-          <?php snippet('cv-section', ['title' => 'languages', 'section' => $page->languages()]) ?>
-
-          <?php snippet('cv-section', ['title' => 'skills', 'section' => $page->skills()]) ?>
-
-          <?php snippet('cv-section', ['title' => 'interests', 'section' => $page->interests()]) ?>
-
-          <?php snippet('cv-section', ['title' => 'preferences', 'section' => $page->preferences()]) ?>
-
-        </div>
+    <section class="section--education">
+      <div class="container">
+        <h4>Education</h4>
+        <p>Graphic Design Summer School - Central Saint Martin’s  <span class="period">2015</span><br />
+  Gamification Certificate - University of Pennsylvania  <span class="period">2014</span><br />
+  Dual Master’s Degree in Architecture and Urbanism - TU Delft  <span class="period">2007-2011</span><br />
+  Study Abroad Architecture - South Bank University London  <span class="period">2008</span><br />
+  Bachelor’s Degree - Architecture TU Delft  <span class="period">2004-2007</span><br />
+  Gymnasium Diploma - Vossius Gymnasium Amsterdam  <span class="period">1998-2004</span></p>
       </div>
     </section>
-
-      <?php echo $page->text()->kirbytext() ?>
-
-      <?php if($page->slug() == 'contact') : ?>
-        <?php snippet('twitterfeed'); ?>
-      <?php endif; ?>
 
   </main>
 

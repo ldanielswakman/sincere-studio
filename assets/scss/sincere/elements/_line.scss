@@ -8,4 +8,16 @@
   &.line--white {
     border-left-color: $white;
   }
+  &.line--light {
+    border-left-color: $grey-subtle-day;
+
+    @include darkMode {
+      border-left-color: $grey-subtle-night;
+    }
+  }
+}
+
+.line-wrapper {
+  text-align: center;
+  padding: 3rem 0 0;
 }
