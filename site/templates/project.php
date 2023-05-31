@@ -106,10 +106,7 @@
         </div>
       </section>
     </a>
-    <?php endif; ?>
-
-    <?php // Related project section ?>
-    <?php snippet('project-related') ?>
+    <?php endif ?>
 
   </main>
 

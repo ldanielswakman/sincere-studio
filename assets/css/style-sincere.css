@@ -1362,7 +1362,7 @@ figure img {
 
 @media screen and (min-width: 1024px) {
   .row {
-    max-width: 80rem;
+    max-width: 90rem;
     margin: 0 auto;
   }
 }
@@ -2557,12 +2557,19 @@ section.section--collapsed {
 }
 .block--info .actions a {
   margin-right: 1.25rem;
-  padding: 0.5rem 0;
+  padding: 0.25rem 0;
   border-bottom: 1px solid #ccccd4;
   color: #8d9da6;
 }
-.block--info .actions a:hover {
-  color: #000;
+@media (hover: hover) {
+  .block--info .actions a:hover {
+    color: #0D0533;
+  }
+}
+@media (hover: hover) and (prefers-color-scheme: dark) {
+  .block--info .actions a:hover {
+    color: #fffefc;
+  }
 }
 .block--keyvisual figure, .block--full_image figure {
   width: 100%;
@@ -2650,7 +2657,7 @@ section.section--collapsed {
   flex-grow: 1;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: #8d9da6;
+  color: #B8C5CC;
 }
 @media screen and (min-width: 768px) {
   .project-info-side {
@@ -2678,8 +2685,18 @@ section.section--collapsed {
 .project-info-side a {
   color: inherit;
 }
-.project-info-side a:hover, .project-info-side a:focus {
-  color: #000;
+@media (hover: hover) {
+  .project-info-side a:hover {
+    color: #0D0533;
+  }
+}
+@media (hover: hover) and (prefers-color-scheme: dark) {
+  .project-info-side a:hover {
+    color: #fffefc;
+  }
+}
+.project-info-side a:focus {
+  color: #6547FE;
 }
 .project-info-side h4 {
   line-height: 1.5rem;
@@ -2699,7 +2716,13 @@ section.section--collapsed {
   margin-left: 0.75rem;
   font-size: 0.75rem;
   font-weight: 500;
-  color: #b8c5cc;
+  letter-spacing: 0.05rem;
+  color: #D3DFE5;
+}
+@media (prefers-color-scheme: dark) {
+  .project-info-side .team .note {
+    color: #4D4B53;
+  }
 }
 .project-info-side .year {
   margin-top: 0.25rem;
@@ -2866,10 +2889,7 @@ section.section--collapsed {
   gap: 1rem;
   padding: 1rem 1.25rem 0;
   border-bottom: 1px solid #D3DFE5;
-  cursor: pointer;
   text-align: left;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
 }
 @media (prefers-color-scheme: dark) {
   .section--experience .experience-item {
@@ -2890,22 +2910,26 @@ section.section--collapsed {
   }
 }
 @media (hover: hover) {
-  .section--experience .experience-item:hover {
+  .section--experience .experience-item:not(.isActive):hover {
     border-color: #868197;
   }
 }
-.section--experience .experience-item:active {
+.section--experience .experience-item:not(.isActive):active {
   background: rgba(13, 5, 51, 0.03);
   background: rgba(101, 71, 254, 0.03);
   border-color: #6547FE;
 }
 @media (prefers-color-scheme: dark) {
-  .section--experience .experience-item:active {
+  .section--experience .experience-item:not(.isActive):active {
     background: rgba(255, 254, 252, 0.03);
   }
 }
 .section--experience .experience-item .header {
   display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .section--experience .experience-item .xp-image {
   display: flex;
@@ -2947,7 +2971,8 @@ section.section--collapsed {
   }
 }
 .section--experience .experience-item .icon {
-  opacity: 0.5;
+  display: flex;
+  opacity: 0.25;
   transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .section--experience .experience-item.isActive .icon {
@@ -2999,6 +3024,27 @@ section.section--collapsed {
     margin: 1.5rem 0;
     padding: 0;
   }
+}
+.section--experience .experience-item .content .project-list .project-item--linked {
+  color: #0D0533;
+}
+@media (prefers-color-scheme: dark) {
+  .section--experience .experience-item .content .project-list .project-item--linked {
+    color: #fffefc;
+  }
+}
+.section--experience .experience-item .content .project-list .project-item--linked:hover {
+  color: #6547FE;
+}
+.section--experience .experience-item .content .project-list .project-item--linked h4 {
+  font-weight: 600;
+}
+.section--experience .experience-item .content .project-list h4 {
+  display: flex;
+  justify-content: space-between;
+}
+.section--experience .experience-item .content .project-list h4 svg {
+  transform: rotate(-90deg);
 }
 .section--experience .experience-item .content .project-list .project-image {
   margin-top: 0.5rem;

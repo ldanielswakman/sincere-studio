@@ -35,6 +35,13 @@ fields:
       title:
         label: Title
         type: text
+        width: 1/2
+      linked_project:
+        label: Linked project (if any)
+        type: pages
+        query: site.find('projects').children.listed
+        max: 1
+        width: 1/2
       image:
         label: Image
         type: files

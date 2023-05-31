@@ -149,10 +149,7 @@
         gap: 1rem;
         padding: 1rem 1.25rem 0;
         border-bottom: 1px solid $grey-subtle-day;
-        cursor: pointer;
         text-align: left;
-        user-select: none;
-        -webkit-tap-highlight-color: transparent;
 
         @include darkMode {
             border-color: $grey-subtle-night;
@@ -170,11 +167,11 @@
         }
 
         @media (hover: hover) {
-            &:hover {
+            &:not(.isActive):hover {
                 border-color: $grey;
             }
         }
-        &:active {
+        &:not(.isActive):active {
             background: rgba($text-day, 0.03);
             background: rgba($blue, 0.03);
             border-color: $blue;
@@ -186,6 +183,10 @@
 
         .header {
             display: flex;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
         }
 
         .xp-image {
@@ -229,7 +230,8 @@
             }
         }
         .icon {
-            opacity: 0.5;
+            display: flex;
+            opacity: 0.25;
             transition: transform 0.7s cubic-bezier(0.23, 1, 0.320, 1);
         }
         &.isActive .icon {
@@ -281,6 +283,29 @@
                 gap: 1.5rem;
                 margin: 1.5rem 0;
                 padding: 0;
+            }
+
+            .project-item--linked {
+                color: $text-day;
+
+                @include darkMode {
+                    color: $text-night;
+                }
+
+                &:hover {
+                    color: $blue;
+                }
+            }
+            .project-item--linked h4 {
+                font-weight: 600;
+            }
+            h4 {
+                display: flex;
+                justify-content: space-between;
+
+                svg {
+                    transform: rotate(-90deg);
+                }
             }
 
             .project-image {
