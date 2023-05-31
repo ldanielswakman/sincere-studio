@@ -2,6 +2,10 @@ Title: Poltio
 
 ----
 
+Builder: 
+
+----
+
 Sections:
 
 - 
@@ -48,7 +52,7 @@ Sections:
 
 ----
 
-Year: 2019
+Year: 2019-current
 
 ----
 
@@ -56,11 +60,23 @@ Description: re-imagined visual language for an audience engagement tool
 
 ----
 
+Intro: 
+
+----
+
 Tags: branding, visual-design, ux, ui, front-end
 
 ----
 
+Team: 
+
+----
+
 Projecturl: https://www.poltio.com
+
+----
+
+Keyvisual: 
 
 ----
 

@@ -32,6 +32,8 @@ Builder:
     - share-card-7a.jpg
     - share-card-2.jpg
     - share-card-3.jpg
+    - share-card-5.jpg
+    - share-card-8.jpg
   _key: text_image
   uniquekey: 0
   showpreviewinitially: false
@@ -47,11 +49,6 @@ Builder:
   _key: text
   _uid: text_1609172811558_327
 - 
-  image:
-    - share-card-4.jpg
-  _key: full_image
-  _uid: full_image_1609106079758_275
-- 
   text: |
     ### Interface
     
@@ -61,8 +58,15 @@ Builder:
   image:
     - share-card-6.jpg
     - ui-depth-diagram.jpg
+    - gamerone-profile-mockup.jpg
+    - gamerone-product-mockup-2.jpg
   _key: text_image
   _uid: text_image_1609172850875_327
+- 
+  image:
+    - gamerone-phone.jpg
+  _key: full_image
+  _uid: full_image_1685565489728_949
 - 
   text: |
     <video autoplay loop playsinline muted style="max-width: 100%;">
@@ -71,6 +75,10 @@ Builder:
   full: 'true'
   _key: text
   _uid: text_1609172897077_327
+
+----
+
+Sections: 
 
 ----
 
@@ -86,7 +94,7 @@ Intro: A fresh community platform dedicated to pro gamers, allowing them to mana
 
 ----
 
-Tags: Brand Design,Visual Identity,Product Design,Front-end
+Tags: Brand Design, Visual Identity, Product Design, Front-end
 
 ----
 

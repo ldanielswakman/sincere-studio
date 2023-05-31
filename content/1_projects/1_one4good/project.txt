@@ -5,20 +5,17 @@ Title: one4good
 Builder:
 
 - 
-  text: 'In 2021, I got approach by one4good to help shape a new digital-first donation platform, which a very simple concept: a curated selection of social good projects for positive impact, where users can subscribe to for a fixed monthly amount. They needed help to shape the initial brand, then landing page, and ultimately the product design of the actual platform.'
+  text: |
+    ### Challenge
+    In 2021, I got approached by one4good to help shape a new digital-first donation platform, which a very simple concept: a curated selection of social good projects for positive impact, where users can subscribe to for a fixed monthly amount. They needed help to shape the initial brand, then landing page, and ultimately the product design of the actual platform.
   full: 'false'
   _key: text
   _uid: text_1684494517542_601
 - 
   image:
-    - lp.jpg
+    - lp-menu.jpg
   _key: full_image
   _uid: full_image_1684494697247_601
-- 
-  text: ""
-  full: 'false'
-  _key: text
-  _uid: text_1684495044158_601
 - 
   text: 'Together, we shaped a multi-phase project, where we took the simple and clearly design logo and colour palette (by (link: https://franromero.es/ text: Fran Romero)), and figured out the full visual language that will help bring it to life. This resulted in a successful (link: https://www.startnext.com/one4good text: crowdfunding campaign) and a functional (link: https://www.one4good.com/en text: web platform) (also mobile-optimised and progressive web app).'
   image:
@@ -27,6 +24,16 @@ Builder:
     - one4good-instagram-3.jpg
   _key: text_image
   _uid: text_image_1684495063025_601
+- 
+  image:
+    - graphic-2.jpg
+  _key: full_image
+  _uid: full_image_1685569653772_7220
+- 
+  image:
+    - graphic-1.jpg
+  _key: full_image
+  _uid: full_image_1685569638624_7220
 - 
   text: '(link: https://www.one4good.com/ target:blank text: See the platform live)'
   full: 'false'
@@ -47,7 +54,7 @@ Description: Bold shapes for a subscription platform for doing good
 
 ----
 
-Intro: Bold shapes for a subscription platform for doing good
+Intro: one4good is a subscription-based service that supports social and sustainable projects worldwide by enabling users to donate a monthly amount, with 70% going directly to selected projects and the remaining 30% used to maximize their impact and gain more supporters. For one4good, we envisioned the complete visual language for the brand, as well as landing pages and platform UX/UI design.
 
 ----
 

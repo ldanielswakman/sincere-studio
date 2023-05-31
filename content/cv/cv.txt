@@ -15,22 +15,27 @@ Work-xp:
   projects:
     - 
       title: Product Redesign
+      linked_project: [ ]
       image:
         - nebenan-product.jpg
     - 
       title: Brand Redesign
+      linked_project: [ ]
       image:
         - nebenan-brand.jpg
     - 
       title: Landing Page System
+      linked_project: [ ]
       image:
         - nebenan-lp.jpg
     - 
       title: Brand Guide
+      linked_project: [ ]
       image:
         - nebenan-brand-guide.jpg
     - 
       title: Design System
+      linked_project: [ ]
       image:
         - nebenan-design-system.jpg
 - 
@@ -50,22 +55,29 @@ Work-xp:
   projects:
     - 
       title: one4good
+      linked_project:
+        - projects/one4good
       image:
         - one4good-small.jpg
     - 
       title: Gamer One
+      linked_project:
+        - projects/gamer-one
       image:
         - gamerone.jpg
     - 
       title: Poltio
+      linked_project: [ ]
       image:
         - poltio.jpg
     - 
       title: Inflight VR
+      linked_project: [ ]
       image:
         - inflight-vr.jpg
     - 
       title: LuxFox
+      linked_project: [ ]
       image:
         - luxfox.jpg
 - 
