@@ -49,12 +49,12 @@
     <section class="section--experience">
 
       <div class="page-nav" role="navigation">
-        <div class="page-nav-item isActive">Experience</div>
-        <div class="page-nav-item">Projects</div>
-        <div class="page-nav-item">Timeline</div>
+        <div data-target="experience-list" class="page-nav-item isActive">Experience</div>
+        <div data-target="project-list" class="page-nav-item">Projects</div>
+        <div data-target="timeline" class="page-nav-item">Timeline</div>
       </div>
 
-      <div class="experience-list">
+      <div class="nav-content experience-list isActive">
         <div class="container">
           <?php foreach ($page->work_xp()->toStructure() as $item) : ?>
 
@@ -103,7 +103,7 @@
         </div>
       </div>
 
-      <div class="project-list">
+      <div class="nav-content project-list">
         <?php foreach($page->work_projects()->toPages() as $project): ?>
           <a href="<?= $project->url() ?>" class="project-item project-item--linked">
             <?php if($image = $project->featuredimage()->toFile()): ?>
@@ -113,22 +113,39 @@
             <p class="description"><?= $project->description() ?></p>
           </a>
         <?php endforeach ?>
+        <div style="grid-column: -1 / 1;"><a href="<?= $pages->find('projects')->url() ?>" class="button button--outline">see all projects</a></div>
+      </div>
+
+      <div class="nav-content timeline">
+        <?php if($image = $page->cv_graph()->toFile()): ?>
+          <figure class="project-image"><img src="<?= $image->url() ?>" alt="CV Graph (outdated)" /></figure>
+        <?php endif ?>
       </div>
 
     </section>
 
     <script>
-          $(document).ready(() => {
-            $('.experience-item .header').click(function() {
-              console.log('clicked');
-              $isActive = $(this).parent().hasClass('isActive');
-              $(this).parent().parent().find('.experience-item').removeClass('isActive');
-              if(!$isActive) {
-                $(this).parent().addClass('isActive');
-              }
-            });
-          });
-        </script>
+      $(document).ready(() => {
+
+        $('.experience-item .header').click(function() {
+          $isActive = $(this).parent().hasClass('isActive');
+          $(this).parent().parent().find('.experience-item').removeClass('isActive');
+          if(!$isActive) {
+            $(this).parent().addClass('isActive');
+          }
+        });
+
+        $('.page-nav .page-nav-item').click(function() {
+          if($(this).attr('data-target') && $('.' + $(this).attr('data-target')).length) {
+            $('.page-nav-item').removeClass('isActive');
+            $(this).addClass('isActive');
+            $('.nav-content').removeClass('isActive');
+            $('.' + $(this).attr('data-target')).addClass('isActive');
+          }
+        });
+
+      });
+    </script>
 
 
     <div class="line-wrapper">

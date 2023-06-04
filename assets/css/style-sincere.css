@@ -1760,7 +1760,7 @@ body.isTouch .u-hide-for-touch {
 }
 .button.button--outline {
   background: none;
-  border-color: blue;
+  border-color: #6547FE;
   color: #6547FE;
 }
 .button.button--outline:hover {
@@ -3091,6 +3091,15 @@ section.section--collapsed {
 .section--experience .project-item .project-image img {
   display: block;
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.section--experience .nav-content {
+  display: none;
+}
+.section--experience .nav-content.isActive {
+  display: block;
+}
+.section--experience .nav-content.isActive.project-list {
+  display: grid;
 }
 
 .section--education p, .section--education h4 {

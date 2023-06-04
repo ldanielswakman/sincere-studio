@@ -365,6 +365,19 @@
             }
         }
     }
+
+
+    .nav-content {
+        display: none;
+
+        &.isActive {
+            display: block;
+
+            &.project-list {
+                display: grid;
+            }
+        }
+    }
 }
 
 .section--education {
