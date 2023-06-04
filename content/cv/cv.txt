@@ -90,7 +90,18 @@ Work-xp:
   employer: Paraşüt
   text: 'Pre-accounting for SME’s web application; graphic & web designer, UI/ UX design, front-end (html/css)'
   url: http://www.parasut.com/
-  projects: [ ]
+  projects:
+    - 
+      title: Paraşüt Mobile App
+      linked_project:
+        - projects/parasut-mobile
+      image:
+        - parasut-app-mockup.jpg
+    - 
+      title: Paraşüt Web Interface
+      linked_project: [ ]
+      image:
+        - parasut-web-mockup.jpg
 - 
   period: 2015-2018
   img:
