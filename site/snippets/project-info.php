@@ -15,13 +15,14 @@
       </div>
 
     </div>
-    <div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-3 col-md-offset-1">
+    <div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1">
 
       <div class="project-info-side">
+        
+        <div class="year"><?= $page->year() ?></div>
 
         <div class="disciplines">
-          <!-- <h4>DISCIPLINES</h4> -->
-          <?php foreach(explode(',', $page->tags()->html()) as $tag) : ?>
+          <?php foreach($page->tags()->split() as $tag) : ?>
             <div class="discipline">
               <a href="<?= $page->parent()->url() . '/tag:' . $tag ?>">
                 <?= $tag ?>
@@ -30,10 +31,7 @@
           <?php endforeach ?>
         </div>
 
-        <div class="year"><?= $page->year() ?></div>
-
         <div class="team">
-          <!-- <h4>TEAM</h4> -->
           <?php foreach($page->team()->toStructure() as $member) : ?>
             <div class="member">
               <a href="<?= $member->link() ?>" target="_blank">

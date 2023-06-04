@@ -2521,24 +2521,16 @@ section.section--collapsed {
   transform: translateY(0);
 }
 .block--info {
-  padding: 1.25rem;
   background: #fffefc;
-  border: 1.25rem solid #ebebed;
-}
-@media screen and (min-width: 768px) {
-  .block--info {
-    padding: 5rem 2rem;
-    border-width: 2rem;
-  }
 }
 @media (prefers-color-scheme: dark) {
   .block--info {
     background: #110F1A;
-    border: 1.25rem solid #110F1A;
   }
 }
 .block--info h1 {
-  margin-left: 2rem;
+  margin-left: 3rem;
+  margin-top: 0.5rem;
   margin-bottom: 1.25rem;
   color: inherit;
 }
@@ -2553,7 +2545,7 @@ section.section--collapsed {
 }
 .block--info .actions {
   display: flex;
-  margin: 0.75rem 0;
+  margin: 0.75rem 0 1.5rem;
 }
 .block--info .actions a {
   margin-right: 1.25rem;
@@ -2655,13 +2647,16 @@ section.section--collapsed {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
+  margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.5rem;
   color: #B8C5CC;
+  gap: 1rem;
 }
 @media screen and (min-width: 768px) {
   .project-info-side {
     flex-direction: column;
+    gap: 1.5rem;
   }
 }
 .project-info-side > * {
@@ -2710,7 +2705,6 @@ section.section--collapsed {
 .project-info-side .team {
   flex-basis: 50%;
   flex-grow: 1;
-  margin-bottom: 1.5rem;
 }
 .project-info-side .team .note {
   margin-left: 0.75rem;
@@ -2726,11 +2720,9 @@ section.section--collapsed {
 }
 .project-info-side .year {
   margin-top: 0.25rem;
-  text-align: right;
 }
 @media screen and (min-width: 768px) {
   .project-info-side .year {
-    text-align: left;
     order: -1;
   }
 }
@@ -2841,6 +2833,8 @@ section.section--collapsed {
   gap: 0.25rem;
   border-radius: 1.5rem;
   background: rgba(13, 5, 51, 0.03);
+  -webkit-backdrop-filter: blur(0.5rem);
+  -moz-backdrop-filter: blur(0.5rem);
   backdrop-filter: blur(0.5rem);
 }
 @media (prefers-color-scheme: dark) {
@@ -2890,6 +2884,7 @@ section.section--collapsed {
   padding: 1rem 1.25rem 0;
   border-bottom: 1px solid #D3DFE5;
   text-align: left;
+  overflow: hidden;
 }
 @media (prefers-color-scheme: dark) {
   .section--experience .experience-item {
@@ -2927,6 +2922,8 @@ section.section--collapsed {
 .section--experience .experience-item .header {
   display: flex;
   align-items: center;
+  margin: -1rem -1.5rem;
+  padding: 1rem 1.5rem;
   cursor: pointer;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -3036,6 +3033,12 @@ section.section--collapsed {
 .section--experience .experience-item .content .project-list .project-item--linked:hover {
   color: #6547FE;
 }
+.section--experience .experience-item .content .project-list .project-item--linked:hover svg {
+  opacity: 1;
+}
+.section--experience .experience-item .content .project-list .project-item--linked:hover .project-image img {
+  transform: scale(1.05);
+}
 .section--experience .experience-item .content .project-list .project-item--linked h4 {
   font-weight: 600;
 }
@@ -3045,6 +3048,8 @@ section.section--collapsed {
 }
 .section--experience .experience-item .content .project-list h4 svg {
   transform: rotate(-90deg);
+  opacity: 0.25;
+  width: 1rem;
 }
 .section--experience .experience-item .content .project-list .project-image {
   margin-top: 0.5rem;
@@ -3053,6 +3058,7 @@ section.section--collapsed {
 }
 .section--experience .experience-item .content .project-list .project-image img {
   display: block;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .section--education p, .section--education h4 {

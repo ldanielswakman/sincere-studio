@@ -36,16 +36,34 @@ fields:
         label: Title
         type: text
         width: 1/2
+      image:
+        label: Image
+        type: files
+        multiple: false
+        width: 1/2
+      linked:
+        label: Linked?
+        type: select
+        options:
+          - Project
+          - URL
+          - none
+        width: 1/2
+        default: Project
       linked_project:
         label: Linked project (if any)
         type: pages
         query: site.find('projects').children.listed
         max: 1
         width: 1/2
-      image:
-        label: Image
-        type: files
-        multiple: false
+        when:
+          linked: Project
+      linked_url:
+        type: url
+        label: Linked URL
+        width: 1/2
+        when:
+          linked: URL
 
 columns:
   img:

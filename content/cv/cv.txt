@@ -15,29 +15,39 @@ Work-xp:
   projects:
     - 
       title: Product Redesign
-      linked_project: [ ]
       image:
         - nebenan-product.jpg
+      linked: Project
+      linked_project: [ ]
+      linked_url: ""
     - 
       title: Brand Redesign
-      linked_project: [ ]
       image:
         - nebenan-brand.jpg
+      linked: Project
+      linked_project: [ ]
+      linked_url: ""
     - 
       title: Landing Page System
-      linked_project: [ ]
       image:
         - nebenan-lp.jpg
+      linked: Project
+      linked_project: [ ]
+      linked_url: ""
     - 
       title: Brand Guide
-      linked_project: [ ]
       image:
         - nebenan-brand-guide.jpg
+      linked: URL
+      linked_project: [ ]
+      linked_url: https://brand-guide.nebenan.de/
     - 
       title: Design System
-      linked_project: [ ]
       image:
         - nebenan-design-system.jpg
+      linked: none
+      linked_project: [ ]
+      linked_url: https://brand-guide.nebenan.de/
 - 
   period: 2017-2020
   img:
@@ -55,53 +65,65 @@ Work-xp:
   projects:
     - 
       title: one4good
-      linked_project:
-        - projects/one4good
       image:
         - one4good-small.jpg
+      linked: Project
+      linked_project:
+        - projects/one4good
+      linked_url: ""
     - 
       title: Gamer One
-      linked_project:
-        - projects/gamer-one
       image:
         - gamerone.jpg
+      linked: Project
+      linked_project:
+        - projects/gamer-one
+      linked_url: ""
     - 
       title: Poltio
-      linked_project: [ ]
       image:
         - poltio.jpg
+      linked: Project
+      linked_project: [ ]
+      linked_url: ""
     - 
       title: Inflight VR
-      linked_project: [ ]
       image:
         - inflight-vr.jpg
+      linked: Project
+      linked_project: [ ]
+      linked_url: ""
     - 
       title: LuxFox
-      linked_project: [ ]
       image:
         - luxfox.jpg
+      linked: Project
+      linked_project: [ ]
+      linked_url: ""
 - 
   period: 2015-2018
   img:
     - parasut-logo.png
-  title: >
-    3 years Senior Designer at accounting
-    startup in Istanbul
+  title: 3 years Senior Designer at Paraşüt
   employer: Paraşüt
-  text: 'Pre-accounting for SME’s web application; graphic & web designer, UI/ UX design, front-end (html/css)'
+  text: 'Lead Mobile App Designer in growing team for accounting startup in Istanbul: joined startup at 10 employees, grew to 70 upon acquisition. In the team, I initiated and led the design and iterations of both iOS and Android apps. I also was responsible for the UX/UI design for countless features for the web application, as well as a modular marketing site/landing page solution'
   url: http://www.parasut.com/
   projects:
     - 
       title: Paraşüt Mobile App
-      linked_project:
-        - projects/parasut-mobile
       image:
         - parasut-app-mockup.jpg
+      linked: Project
+      linked_project:
+        - projects/parasut-mobile
+      linked_url: ""
     - 
-      title: Paraşüt Web Interface
-      linked_project: [ ]
+      title: Paraşüt Web
       image:
         - parasut-web-mockup.jpg
+      linked: none
+      linked_project: [ ]
+      linked_url: ""
 - 
   period: 2015-2018
   img:
@@ -110,7 +132,14 @@ Work-xp:
   employer: Muhit
   text: 'non-profit platform for urban improvement, design, product & business development'
   url: projects/muhit
-  projects: [ ]
+  projects:
+    - 
+      title: Muhit Platform
+      image:
+        - muhit-cover-image.jpg
+      linked: Project
+      linked_project: [ ]
+      linked_url: ""
 - 
   period: 2012-2015
   img:

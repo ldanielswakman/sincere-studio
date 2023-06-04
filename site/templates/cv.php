@@ -76,21 +76,22 @@
               <div class="project-list">
                 <?php foreach ($item->projects()->toStructure() as $project) : ?>
 
-                  <?php if($project->linked_project()->isNotEmpty()): ?>
-                    <a href="<?= $project->linked_project()->toPage()->url() ?>" class="project-item project-item--linked">
-                      <h4><?= $project->title() ?> <?php snippet('svg/chevron-down') ?></h4>
-                      <?php if($image = $project->image()->toFile()): ?>
-                        <figure class="project-image"><img src="<?= $image->url() ?>" alt="<?= $project->title() ?>" /></figure>
-                      <?php endif ?>
-                    </a>
-                  <?php else : ?>
-                    <div class="project-item">
-                      <h4><?= $project->title() ?></h4>
-                      <?php if($image = $project->image()->toFile()): ?>
-                        <figure class="project-image"><img src="<?= $image->url() ?>" alt="<?= $project->title() ?>" /></figure>
-                      <?php endif ?>
-                    </div>
-                  <?php endif ?>
+                  <?php  
+                  $results = $site->find('projects')->search($project->title(), 'title');
+                  $url = '';
+                  if($project->linked()->value() !== 'none' && $project->linked_project()->isNotEmpty()) {
+                    $url = $project->linked_project()->toPage()->url();
+                  } elseif($project->linked()->value() !== 'none' && $project->linked_url()->isNotEmpty()) {
+                    $url = $project->linked_url();
+                  } elseif($project->linked()->value() !== 'none' && $results->count() > 0 && $results->first()->isNotEmpty()) {
+                    $url = $results->first()->url();
+                  }
+
+                  snippet('cv-project-block', [
+                    'project' => $project,
+                    'url' => $url,
+                  ]);
+                  ?>
                   
                 <?php endforeach ?>
               </div>
@@ -104,6 +105,7 @@
         <script>
           $(document).ready(() => {
             $('.experience-item .header').click(function() {
+              console.log('clicked');
               $isActive = $(this).parent().hasClass('isActive');
               $(this).parent().parent().find('.experience-item').removeClass('isActive');
               if(!$isActive) {

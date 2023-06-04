@@ -103,7 +103,7 @@
         gap: 0.25rem;
         border-radius: 1.5rem;
         background: rgba($text-day, 0.03);
-        backdrop-filter: blur(0.5rem);
+        @include prefix(backdrop-filter, blur(0.5rem));
 
         @include darkMode {
             background: rgba($text-night, 0.03);
@@ -150,6 +150,7 @@
         padding: 1rem 1.25rem 0;
         border-bottom: 1px solid $grey-subtle-day;
         text-align: left;
+        overflow: hidden;
 
         @include darkMode {
             border-color: $grey-subtle-night;
@@ -184,6 +185,8 @@
         .header {
             display: flex;
             align-items: center;
+            margin: -1rem -1.5rem;
+            padding: 1rem 1.5rem;
             cursor: pointer;
             user-select: none;
             -webkit-tap-highlight-color: transparent;
@@ -294,6 +297,11 @@
 
                 &:hover {
                     color: $blue;
+
+                    svg { opacity: 1; }
+                }
+                &:hover .project-image img {
+                    transform: scale(1.05);
                 }
             }
             .project-item--linked h4 {
@@ -305,6 +313,8 @@
 
                 svg {
                     transform: rotate(-90deg);
+                    opacity: 0.25;
+                    width: 1rem;
                 }
             }
 
@@ -313,7 +323,10 @@
                 border-radius: 0.75rem;
                 overflow: hidden;
 
-                img { display: block; }
+                img {
+                    display: block;
+                    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                }
             }
         }
     }

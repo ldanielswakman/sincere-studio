@@ -212,23 +212,20 @@ section {
   }
 
   &--info {
-    padding: 1.25rem;
+    // padding: 1.25rem;
     background: $bg-day;
-    border: 1.25rem solid $greylighter;
 
-    @include tabletAndUp {
-      padding: 5rem 2rem;
-      border-width: 2rem;
-    }
+    // @include tabletAndUp {
+    //   padding: 5rem 2rem;
+    // }
 
     @include darkMode {
       background: $bg-night;
-      border: 1.25rem solid $bg-night;
-
     }
 
     h1 {
-      margin-left: 2rem;
+      margin-left: 3rem;
+      margin-top: 0.5rem;
       margin-bottom: 1.25rem;
       color: inherit;
 
@@ -242,7 +239,7 @@ section {
     }
     .actions {
       display: flex;
-      margin: 0.75rem 0;
+      margin: 0.75rem 0 1.5rem;
     }
     .actions a {
       margin-right: 1.25rem;
@@ -358,12 +355,15 @@ section {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
+  margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.5rem;
   color: $grey-night;
+  gap: 1rem;
 
   @include tabletAndUp {
     flex-direction: column;
+    gap: 1.5rem;
   }
 
   & > * {
@@ -417,7 +417,6 @@ section {
   .team {
     flex-basis: 50%;
     flex-grow: 1;
-    margin-bottom: 1.5rem;
   }
   .team .note {
     margin-left: 0.75rem;
@@ -432,10 +431,8 @@ section {
   }
   .year {
     margin-top: 0.25rem;
-    text-align: right;
 
     @include tabletAndUp {
-      text-align: left;
       order: -1;
     }
   }
