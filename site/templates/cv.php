@@ -47,62 +47,77 @@
     </section>
 
     <section class="section--experience">
-      <div class="container">
 
-        <div class="page-nav" role="navigation">
-          <div class="page-nav-item isActive">Experience</div>
-          <div class="page-nav-item">Projects</div>
-          <div class="page-nav-item">Timeline</div>
-        </div>
+      <div class="page-nav" role="navigation">
+        <div class="page-nav-item isActive">Experience</div>
+        <div class="page-nav-item">Projects</div>
+        <div class="page-nav-item">Timeline</div>
+      </div>
 
-        <div class="experience-list">
-        <?php foreach ($page->work_xp()->toStructure() as $item) : ?>
+      <div class="experience-list">
+        <div class="container">
+          <?php foreach ($page->work_xp()->toStructure() as $item) : ?>
 
-          <div class="experience-item">
+            <div class="experience-item">
 
-            <div class="header">
-              <?php if($image = $item->img()->toFile() && false): ?>
-                <figure class="xp-image"><img src="<?= $image->resize(null, 120)->url() ?>" alt="<?= $item->title() ?>" /></figure>
-              <?php endif ?>
+              <div class="header">
+                <?php if($image = $item->img()->toFile() && false): ?>
+                  <figure class="xp-image"><img src="<?= $image->resize(null, 120)->url() ?>" alt="<?= $item->title() ?>" /></figure>
+                <?php endif ?>
 
-              <div class="title"><?= $item->title()->kirbytextinline() ?> <span class="period"><?= $item->period() ?></span></div>
+                <div class="title"><?= $item->title()->kirbytextinline() ?> <span class="period"><?= $item->period() ?></span></div>
 
-              <div class="icon"><?php snippet('svg/chevron-down') ?></div>
-            </div>
-
-            <div class="content">
-              <p><?= $item->text() ?></p>
-
-              <div class="project-list">
-                <?php foreach ($item->projects()->toStructure() as $project) : ?>
-
-                  <?php  
-                  $results = $site->find('projects')->search($project->title(), 'title');
-                  $url = '';
-                  if($project->linked()->value() !== 'none' && $project->linked_project()->isNotEmpty()) {
-                    $url = $project->linked_project()->toPage()->url();
-                  } elseif($project->linked()->value() !== 'none' && $project->linked_url()->isNotEmpty()) {
-                    $url = $project->linked_url();
-                  } elseif($project->linked()->value() !== 'none' && $results->count() > 0 && $results->first()->isNotEmpty()) {
-                    $url = $results->first()->url();
-                  }
-
-                  snippet('cv-project-block', [
-                    'project' => $project,
-                    'url' => $url,
-                  ]);
-                  ?>
-                  
-                <?php endforeach ?>
+                <div class="icon"><?php snippet('svg/chevron-down') ?></div>
               </div>
+
+              <div class="content">
+                <p><?= $item->text() ?></p>
+
+                <div class="project-list">
+                  <?php foreach ($item->projects()->toStructure() as $project) : ?>
+
+                    <?php  
+                    $results = $site->find('projects')->search($project->title(), 'title');
+                    $url = '';
+                    if($project->linked()->value() !== 'none' && $project->linked_project()->isNotEmpty()) {
+                      $url = $project->linked_project()->toPage()->url();
+                    } elseif($project->linked()->value() !== 'none' && $project->linked_url()->isNotEmpty()) {
+                      $url = $project->linked_url();
+                    } elseif($project->linked()->value() !== 'none' && $results->count() > 0 && $results->first()->isNotEmpty()) {
+                      $url = $results->first()->url();
+                    }
+
+                    snippet('cv-project-block', [
+                      'project' => $project,
+                      'url' => $url,
+                    ]);
+                    ?>
+                    
+                  <?php endforeach ?>
+                </div>
+              </div>
+
             </div>
 
-          </div>
-
-        <?php endforeach ?>
+          <?php endforeach ?>
         </div>
+      </div>
 
-        <script>
+      <div class="project-list">
+        <?php foreach($page->work_projects()->toPages() as $project): ?>
+          <a href="<?= $project->url() ?>" class="project-item project-item--linked">
+            <?php if($image = $project->featuredimage()->toFile()): ?>
+              <figure class="project-image"><img src="<?= $image->url() ?>" alt="<?= $project->title() ?>" /></figure>
+            <?php endif ?>
+            <h4><?= $project->title() ?></h4>
+            <p class="description"><?= $project->description() ?></p>
+          </a>
+        <?php endforeach ?>
+      </div>
+
+    </section>
+
+    <script>
           $(document).ready(() => {
             $('.experience-item .header').click(function() {
               console.log('clicked');
@@ -114,9 +129,6 @@
             });
           });
         </script>
-
-      </div>
-    </section>
 
 
     <div class="line-wrapper">

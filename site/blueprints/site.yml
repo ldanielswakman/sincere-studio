@@ -16,6 +16,7 @@ tabs:
 						parent: site.find('projects')
 						template: project
 						image:
+							query: page.featuredimage.toFile
 							back: white
 
 			pages:

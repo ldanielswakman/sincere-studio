@@ -4,7 +4,8 @@ files:
   sortable: true
 
 columns:
-  - width: 2/3        
+  - width: 2/3
+    sticky: true    
     sections:
       meta:
         type: fields
@@ -107,6 +108,7 @@ columns:
                   full: "Full (as bg)"
 
   - width: 1/3
+    sticky: true
     sections:
       content:
         type: fields

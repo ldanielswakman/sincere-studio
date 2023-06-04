@@ -278,7 +278,6 @@
             @include darkMode {
                 color: $grey-night;
             }
-
             @include tabletAndUp {
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-auto-flow: initial;
@@ -287,46 +286,82 @@
                 margin: 1.5rem 0;
                 padding: 0;
             }
+        }
+    }
 
-            .project-item--linked {
-                color: $text-day;
+    .project-list {
+        display: grid;
+        gap: 2rem;
 
-                @include darkMode {
-                    color: $text-night;
-                }
+        @include tabletAndUp {
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
 
-                &:hover {
-                    color: $blue;
-
-                    svg { opacity: 1; }
-                }
-                &:hover .project-image img {
-                    transform: scale(1.05);
-                }
-            }
-            .project-item--linked h4 {
-                font-weight: 600;
-            }
-            h4 {
-                display: flex;
-                justify-content: space-between;
-
-                svg {
-                    transform: rotate(-90deg);
-                    opacity: 0.25;
-                    width: 1rem;
-                }
-            }
+        .project-item {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
 
             .project-image {
-                margin-top: 0.5rem;
-                border-radius: 0.75rem;
-                overflow: hidden;
+                margin-bottom: 1rem;
+            }
 
-                img {
-                    display: block;
-                    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            h4 {
+                color: $grey;
+                font-weight: 500;
+            }
+            p.description {
+                margin: 0;
+                font-size: 1.25rem;
+                line-height: 120%;
+
+                @include tabletAndUp {
+                    font-size: 1.5rem;
                 }
+            }
+        }
+    }
+
+    .project-item {
+        &--linked {
+            color: $text-day;
+
+            @include darkMode {
+                color: $text-night;
+            }
+
+            &:hover {
+                color: $blue;
+
+                svg { opacity: 1; }
+            }
+            &:hover .project-image img {
+                transform: scale(1.05);
+            }
+            h4 {
+                font-weight: 600;
+            }
+        }
+        h4 {
+            display: flex;
+            justify-content: space-between;
+
+            svg {
+                transform: rotate(-90deg);
+                opacity: 0.25;
+                width: 1rem;
+            }
+        }
+
+        .project-image {
+            margin-top: 0.5rem;
+            border-radius: 0.75rem;
+            overflow: hidden;
+
+            img {
+                display: block;
+                transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             }
         }
     }

@@ -3022,41 +3022,73 @@ section.section--collapsed {
     padding: 0;
   }
 }
-.section--experience .experience-item .content .project-list .project-item--linked {
+.section--experience .project-list {
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .section--experience .project-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+.section--experience .project-list .project-item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.section--experience .project-list .project-item .project-image {
+  margin-bottom: 1rem;
+}
+.section--experience .project-list .project-item h4 {
+  color: #868197;
+  font-weight: 500;
+}
+.section--experience .project-list .project-item p.description {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 120%;
+}
+@media screen and (min-width: 768px) {
+  .section--experience .project-list .project-item p.description {
+    font-size: 1.5rem;
+  }
+}
+.section--experience .project-item--linked {
   color: #0D0533;
 }
 @media (prefers-color-scheme: dark) {
-  .section--experience .experience-item .content .project-list .project-item--linked {
+  .section--experience .project-item--linked {
     color: #fffefc;
   }
 }
-.section--experience .experience-item .content .project-list .project-item--linked:hover {
+.section--experience .project-item--linked:hover {
   color: #6547FE;
 }
-.section--experience .experience-item .content .project-list .project-item--linked:hover svg {
+.section--experience .project-item--linked:hover svg {
   opacity: 1;
 }
-.section--experience .experience-item .content .project-list .project-item--linked:hover .project-image img {
+.section--experience .project-item--linked:hover .project-image img {
   transform: scale(1.05);
 }
-.section--experience .experience-item .content .project-list .project-item--linked h4 {
+.section--experience .project-item--linked h4 {
   font-weight: 600;
 }
-.section--experience .experience-item .content .project-list h4 {
+.section--experience .project-item h4 {
   display: flex;
   justify-content: space-between;
 }
-.section--experience .experience-item .content .project-list h4 svg {
+.section--experience .project-item h4 svg {
   transform: rotate(-90deg);
   opacity: 0.25;
   width: 1rem;
 }
-.section--experience .experience-item .content .project-list .project-image {
+.section--experience .project-item .project-image {
   margin-top: 0.5rem;
   border-radius: 0.75rem;
   overflow: hidden;
 }
-.section--experience .experience-item .content .project-list .project-image img {
+.section--experience .project-item .project-image img {
   display: block;
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }

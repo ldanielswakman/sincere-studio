@@ -12,11 +12,17 @@ tabs:
         extends: fields/cv-section
         label: Work Experience
 
+      work_projects:
+        label: Projects
+        type: pages
+        query: site.find('projects').children.listed
+
       cv_graph:
-        label: CV cv_graph
+        label: CV
         type: files
         multiple: false
         layout: cards
+        size: huge
         image:
           ratio: 10/1
           back: white
