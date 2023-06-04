@@ -63,7 +63,7 @@ Featured: true
 
 Featuredimage:
 
-- inflight-vr-cover-image.jpg
+- inflight-vr-website-mockup-light.jpg
 
 ----
 

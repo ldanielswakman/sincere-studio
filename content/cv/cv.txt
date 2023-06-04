@@ -167,6 +167,17 @@ Work-xp:
 
 ----
 
+Work-projects:
+
+- projects/one4good
+- projects/gamer-one
+- projects/poltio
+- projects/inflight-vr-website
+- projects/muhit
+- projects/parasut-mobile
+
+----
+
 Cv-graph:
 
 - cv-graph.png

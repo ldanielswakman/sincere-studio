@@ -2,85 +2,43 @@ Title: LuxFox
 
 ----
 
-Builder: 
+Builder:
+
+- 
+  image:
+    - luxfox-shot-1.jpg
+  _key: full_image
+  _uid: full_image_1685917502473_310
+- 
+  text: '(image: luxfox-logo.png width: 480 class: u-aligncenter)'
+  full: 'false'
+  _key: text
+  _uid: text_1685917910560_310
+- 
+  image:
+    - luxfox-shot-4.jpg
+  _key: full_image
+  _uid: full_image_1685917569308_310
+- 
+  text: |
+    ### Mobile app
+    
+    After defining the brand language, logo and visual identity, we proceeded to design the mobile app experience, using a simple and light interface with soft tones and bright accent colours, in line with the overall brand.
+  image:
+    - luxfox-shot-2.jpg
+    - luxfox-shot-5.jpg
+    - luxfox-shot-6.jpg
+  _key: text_image
+  _uid: text_image_1685917530440_310
+- 
+  image:
+    - luxfox-shot-3.jpg
+  _key: full_image
+  _uid: full_image_1685917934024_310
 
 ----
 
-Sections:
-
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: '#B22346'
-  bg_image:
-    - sign-mockup.jpg
-  bg_image_pos: full
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - app-montage.jpg
-  bg_image_pos: full
-- 
-  num_cols: 'false'
-  classes: u-pb0
-  col_1: ""
-  col_2: '(image: luxfox-logo.png width: 480 class: u-aligncenter)'
-  bg_colour: '#fff'
-  bg_image: [ ]
-  bg_image_pos: full
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: |
-    LuxFox is a new Berlin-based brand that aims to radically change the way people can use beauty and wellness services in their daily life.
-    
-    The idea is that anyone can order a private treatment at home, with verified experts visiting the clients.
-  col_2: "I was approached to design the brand as well as a multi-platform service experience. This meant a multi-phase project where we first created the brand's visual design based on the company values and target market, then set out to design the website, which then gave way to designing the mobile apps for both iOS and Android."
-  bg_colour: '#ffffff'
-  bg_image: [ ]
-  bg_image_pos: full
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ffffff
-  bg_image:
-    - website-homepage.png
-  bg_image_pos: full
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - device-mockup-mobile.jpg
-  bg_image_pos: full
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - device-mockup-imac.jpg
-  bg_image_pos: full
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - stamp-mockup.jpg
-  bg_image_pos: full
+Sections: 
 
 ----
 
@@ -92,7 +50,11 @@ Description: Comfortable elegance for a new beauty service brand
 
 ----
 
-Intro: 
+Intro:
+
+LuxFox is a new Berlin-based brand that aims to radically change the way people can use beauty and wellness services in their daily life. by booking private treatments at home with verified experts.
+
+I was approached to design the brand as well as a multi-platform service experience. This meant a multi-phase project where we first created the brand's visual design based on the company values and target market, then set out to design the website, which then gave way to designing the mobile apps for both iOS and Android.
 
 ----
 
