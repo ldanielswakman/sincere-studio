@@ -15,7 +15,7 @@ tabs:
       work_projects:
         label: Projects
         type: pages
-        query: site.find('projects').children.listed
+        query: site.find('projects').children
 
       cv_graph:
         label: CV
