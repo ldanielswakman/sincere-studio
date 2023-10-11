@@ -8,6 +8,44 @@ tabs:
     icon: page
     fields:
 
+      heading1:
+        label: Hero
+        type: headline
+      
+      hero_title:
+        label: Hero title
+        type: text
+        width: 1/2
+
+      hero_subtitle:
+        label: Hero subtitle
+        type: text
+        width: 1/2
+
+      hero_description:
+        label: Hero description
+        type: textarea
+        size: tiny
+        buttons: false
+
+      hero_usps:
+        label: Hero USPs
+        type: structure
+        fields:
+          image:
+            label: Image
+            type: files
+            multiple: false
+            width: 1/6
+          title:
+            label: Title
+            type: text
+            width: 2/6
+          description:
+            label: Description
+            type: text
+            width: 3/6
+
       work_xp:
         extends: fields/cv-section
         label: Work Experience

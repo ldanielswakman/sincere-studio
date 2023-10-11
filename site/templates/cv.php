@@ -8,35 +8,25 @@
         <div class="hero">
           <figure><img src="<?= url('assets/images/avatar-daniel.png') ?>" /></figure>
           <div>
-            <h1>Daniel Swakman</h1>
-            <h2>Digital Designer  •  Berlin, Germany</h2>
+            <h1><?= $page->hero_title()->ktinline() ?></h1>
+            <h2><?= $page->hero_subtitle()->ktinline() ?></h2>
           </div>
         </div>
 
-        <p class="tagline">I’m a designer with 10+ years of experience, working with startups and small businesses that want to innovate and create positive impact. I focus on:</p>
+        <p class="tagline"><?= $page->hero_description()->ktinline() ?></p>
 
         <div class="usps">
-          <div class="usp">
-            <img src="<?= url('assets/images/icon-intersect.svg') ?>" />
-            <div>
-              <h4>Design</h4>
-              <p>Meticulous craftsmanship, integrated brand thinking, and an eye for detail drive my design approach.</p>
+          <?php foreach($page->hero_usps()->toStructure() as $item) : ?>
+            <div class="usp">
+              <?php if($img = $item->image()->toFile()) : ?>
+                  <img src="<?= $img->url() ?>" />
+              <?php endif ?>
+              <div>
+                <h4><?= $item->title()->ktinline() ?></h4>
+                <p><?= $item->description()->ktinline() ?></p>
+              </div>
             </div>
-          </div>
-          <div class="usp">
-            <img src="<?= url('assets/images/icon-command.svg') ?>" />
-            <div>
-              <h4>Tech</h4>
-              <p>Tech-savvy and skilled at collaborating with development teams, I bridge the gap between design and code.</p>
-            </div>
-          </div>
-          <div class="usp">
-            <img src="<?= url('assets/images/icon-users.svg') ?>" />
-            <div>
-              <h4>Leadership</h4>
-              <p>With leadership experience, I grow teams and spearhead design change within organizations.</p>
-            </div>
-          </div>
+          <?php endforeach ?>
         </div>
 
         <div class="line-wrapper">

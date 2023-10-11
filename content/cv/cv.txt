@@ -2,6 +2,47 @@ Title: CV
 
 ----
 
+Hero-title: Daniel Swakman
+
+----
+
+Hero-subtitle: Digital Design Leader  •  Berlin, Germany
+
+----
+
+Hero-description: I’m a designer with 10+ years of experience, working with startups and small businesses that want to innovate and create positive impact. I focus on:
+
+----
+
+Hero-usps:
+
+- 
+  image:
+    - icon-intersect.svg
+  title: Design
+  description: >
+    Meticulous craftsmanship, integrated
+    brand thinking, and an eye for detail
+    drive my design approach.
+- 
+  image:
+    - icon-command.svg
+  title: Tech
+  description: >
+    Tech-savvy and skilled at collaborating
+    with development teams, I bridge the gap
+    between design and code.
+- 
+  image:
+    - icon-users.svg
+  title: Leadership
+  description: >
+    With leadership experience, I grow teams
+    and spearhead design change within
+    organisations.
+
+----
+
 Work-xp:
 
 - 
