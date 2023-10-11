@@ -53,7 +53,7 @@ fields:
       linked_project:
         label: Linked project (if any)
         type: pages
-        query: site.find('projects').children.listed
+        query: site.find('projects').children
         max: 1
         width: 1/2
         when:
