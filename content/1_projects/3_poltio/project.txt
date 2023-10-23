@@ -2,7 +2,13 @@ Title: Poltio
 
 ----
 
-Builder: 
+Builder:
+
+- 
+  image:
+    - project-homepage.jpg
+  _key: full_image
+  _uid: full_image_1690919791560_781
 
 ----
 
@@ -56,7 +62,7 @@ Year: 2019-current
 
 ----
 
-Description: re-imagined visual language for an audience engagement tool
+Description: Re-imagined visual language for an audience engagement tool
 
 ----
 

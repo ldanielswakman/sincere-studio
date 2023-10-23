@@ -115,7 +115,7 @@ Team:
 
 ----
 
-Projecturl: https://g1.gg/
+Projecturl: 
 
 ----
 

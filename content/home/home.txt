@@ -11,15 +11,11 @@ Sections:
       text: Nebenan
       link: https://nebenan.de
     - 
-      text: Harvest
-      link: https://harvest-mobile.com/
-    - 
       text: Poltio
       link: https://poltio.com/
   title: Top
   classes: section--homeintro u-pt25vh u-pb10vh
-  bg_image:
-    - sincere-landing.svg
+  bg_image: [ ]
   bg_color: ""
   number_of_slides: null
   section_type: ""

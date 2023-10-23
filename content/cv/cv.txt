@@ -1,4 +1,4 @@
-Title: CV
+Title: Daniel Swakman
 
 ----
 
@@ -86,9 +86,10 @@ Work-xp:
       title: Design System
       image:
         - nebenan-design-system.jpg
-      linked: none
+      linked: Project
       linked_project: [ ]
-      linked_url: https://brand-guide.nebenan.de/
+      linked_url: >
+        https://sincere.studio/projects/nebenan-design-system
 - 
   period: 2017-2020
   img:
@@ -210,18 +211,16 @@ Work-xp:
 
 Work-projects:
 
+- projects/nebenan-design-system
 - projects/one4good
 - projects/gamer-one
 - projects/poltio
-- projects/inflight-vr-website
 - projects/muhit
 - projects/parasut-mobile
 
 ----
 
-Cv-graph:
-
-- cv-graph.png
+Cv-graph: 
 
 ----
 

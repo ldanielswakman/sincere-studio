@@ -1,0 +1,112 @@
+Title: Nebenan Design System
+
+----
+
+Builder:
+
+- 
+  text: |
+    ## The Brand Dial
+    
+    Part of a comprehensive Brand + Product Redesign project, a key requirement for the design system is to be intentional about brand expressiveness.
+  full: 'false'
+  _key: text
+  _uid: text_1690923884095_603
+- 
+  image:
+    - the-brand-dial.jpg
+  _key: full_image
+  _uid: full_image_1690923916851_603
+- 
+  text: |
+    ## Consistency
+    
+    The design system ensures a consistent cross-platform brand experience
+  image: [ ]
+  _key: text_image
+  _uid: text_image_1690926252985_603
+- 
+  image:
+    - ui-examples.jpg
+  _key: full_image
+  _uid: full_image_1690926245896_603
+- 
+  text: |
+    ## Documentation
+    
+    Through comprehensive guidelines, components, patterns, and best practices, the Design System actually comes to life and can be used. For every atom and component, an anatomy breakdown has been created, as well as usage guidelines and possible variants and properties.
+  image:
+    - design-system.jpg
+  _key: text_image
+  _uid: text_image_1690923961173_603
+- 
+  image:
+    - figma-file.jpg
+  _key: full_image
+  _uid: full_image_1690925750871_603
+- 
+  image:
+    - feed-mockup.jpg
+  _key: full_image
+  _uid: full_image_1690923926945_603
+
+----
+
+Sections: 
+
+----
+
+Year: 2021-
+
+----
+
+Description: Reusable & usable patterns for neighbourhood platform
+
+----
+
+Intro: At nebenan.de, I initiated, led and coordinated the multi-platform design system efforts that moved the company from 3 different Sketch-based UI languages to a unified, consistent and accessible cross-platform product design experience anchored in a modular set of Figma components and a clearly documented pattern library.
+
+----
+
+Tags: product-design, Design System
+
+----
+
+Team:
+
+- 
+  name: David Swales
+  note: UI Designer
+  link: ""
+- 
+  name: Florie Salnot
+  note: Product Designer
+  link: ""
+- 
+  name: Leticia Bialoskorski
+  note: Product Designer
+  link: ""
+
+----
+
+Projecturl: 
+
+----
+
+Keyvisual:
+
+- redesign-cover.jpg
+
+----
+
+Featured: false
+
+----
+
+Featuredimage:
+
+- redesign-cover.jpg
+
+----
+
+Featuredcolour: 

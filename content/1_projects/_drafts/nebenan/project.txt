@@ -36,7 +36,8 @@ Projecturl: https://nebenan.de/
 
 Keyvisual:
 
-- slide-brand.jpg
+- >
+  189_billboard_urban_poster_mockup-copy-1.jpg
 
 ----
 
@@ -46,7 +47,7 @@ Featured: true
 
 Featuredimage:
 
-- slide-brand.jpg
+- design-system-cover.jpg
 
 ----
 
