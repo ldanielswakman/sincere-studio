@@ -40,6 +40,6 @@ This represents the way I approach design: synthesising information into a clear
 
 Want to talk further? About a future or current project, about what drives you or just to say hello? I like people. We can talk.
 
-<a href="javascript:openContactForm()" class="button button--white">Say hello</a>
+<a href="mailto:hi@sincere.studio" target="_blank" class="button button--white">Say hello</a>
 
 Or reach me on (link: https://twitter.com/ldanielswakman target:_blank text: Twitter), (link: https://www.linkedin.com/in/ldanielswakman/ target:_blank text: Linkedin), (link: https://github.com/ldanielswakman target:_blank text: Github), (link: https://dribbble.com/ldanielswakman target:_blank text: Dribbble) & (link:https://www.instagram.com/dswakman/ target:_blank text:Instagram).

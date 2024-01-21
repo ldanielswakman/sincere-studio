@@ -63,7 +63,7 @@ Sections:
     I currently have **very limited** availability for new projects, from August 2023 onwards. But I'm always excited to hear new projects, and see how we can collaborate in them. So feel free to drop me a line:
     
     <div class="u-mv2">
-    <a href="javascript:openContactForm()" class="button u-mb1">Say hello</a>
+    <a href="mailto:hi@sincere.studio" target="_blank" class="button u-mb1">Say hello</a>
     </div>
   title: Collaborate
   classes: u-pv10vh

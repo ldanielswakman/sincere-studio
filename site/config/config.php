@@ -95,12 +95,6 @@ c::set('routes', [
     }
   ],
   [
-    'pattern' => 'contact',
-    'action'  => function() {
-      return ['home', ['contact_active' => true]];
-    }
-  ],
-  [
     'pattern' => 'cors',
     'action' => function () {
       // provide server-side CORS request path

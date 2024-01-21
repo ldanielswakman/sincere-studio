@@ -29,7 +29,7 @@
 
             <div class="u-mt2">
                 <a href="<?= $pages->find('projects')->url() ?>" class="button u-mr1">see projects</a>
-                <a href="javascript:openContactForm()" class="button button--outline u-op70">say hi</a>
+                <a href="mailto:hi@sincere.studio" target="_blank" class="button button--outline u-op70">say hi</a>
               </div>
 
               <h5 class="u-mt2">CURRENTLY WORKING ON</h5>

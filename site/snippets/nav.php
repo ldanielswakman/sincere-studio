@@ -13,7 +13,7 @@
         <?php foreach($pages->listed() as $p): ?>
         <li><a <?php e($p->isOpen(), ' class="isActive"') ?> href="<?= $p->url() ?>"><?= strtolower($p->title()->html()) ?></a></li>
         <?php endforeach ?>
-        <li><a href="javascript:openContactForm()" class="button button--outline button--subtle">get in touch</a></li>
+        <li><a href="mailto:hi@sincere.studio" target="_blank" class="button button--outline button--subtle">get in touch</a></li>
       </ul>
 
       <ul class="menu-grey">
