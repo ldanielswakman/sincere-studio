@@ -67,10 +67,10 @@ c::set('routes', [
         $form->logAction([
           'file' => kirby()->roots()->site() . '/email.log',
         ])->emailAction([
-          'to' => 'hello@ldaniel.eu',
+          'to' => 'hi@sincere.studio',
           'from' => 'contactform@ldaniel.eu',
           'replyTo' => $form->data('email'),
-          'subject' => '[ldaniel.eu] New message Received',
+          'subject' => '[Sincere—Studio] New message Received',
         ]);
 
         if (!$form->success()) { $code = 500; }
