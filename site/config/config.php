@@ -66,11 +66,11 @@ c::set('routes', [
         // If validation and guards passed, execute the action.
         $form->logAction([
           'file' => kirby()->roots()->site() . '/email.log',
-        ])->emailAction([
-          'to' => 'hi@sincere.studio',
-          'from' => 'contactform@ldaniel.eu',
-          'replyTo' => $form->data('email'),
-          'subject' => '[Sincere—Studio] New message Received',
+        // ])->emailAction([
+        //   'to' => 'hi@sincere.studio',
+        //   'from' => 'contactform@ldaniel.eu',
+        //   'replyTo' => $form->data('email'),
+        //   'subject' => '[Sincere—Studio] New Message Received',
         ]);
 
         if (!$form->success()) { $code = 500; }
