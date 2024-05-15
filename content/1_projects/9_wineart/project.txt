@@ -70,7 +70,7 @@ Description: minimal & playful experience for a wine consultancy
 
 ----
 
-Tags: web design, graphic, branding, front-end
+Tags: web design, graphic, identity, branding, front-end
 
 ----
 

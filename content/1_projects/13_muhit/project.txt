@@ -118,7 +118,7 @@ Description: Building an online platform allowing citizens to collaboratively im
 
 ----
 
-Tags: web design, front-end, graphic, project management, logo, co-founder
+Tags: web design, front-end, graphic, product design, logo, co-founder
 
 ----
 

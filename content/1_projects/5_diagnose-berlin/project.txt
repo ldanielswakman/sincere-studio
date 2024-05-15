@@ -50,7 +50,7 @@ Description: Opening a digital-first channel for expertise in sports & training
 
 ----
 
-Tags: web-design, visual-design, ux, front-end
+Tags: web design, visual design, ux, front-end
 
 ----
 

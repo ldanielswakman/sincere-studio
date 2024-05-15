@@ -34,7 +34,7 @@ Intro: As a startup that has proven its worth as an innovator in the airline ind
 
 ----
 
-Tags: Web Design, Front-end, CMS Development
+Tags: web design, front-end, cms development
 
 ----
 

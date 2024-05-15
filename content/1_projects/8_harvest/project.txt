@@ -2,6 +2,10 @@ Title: Harvest
 
 ----
 
+Builder: 
+
+----
+
 Sections:
 
 - 
@@ -23,7 +27,7 @@ Sections:
     - web-mockup.jpg
   bg_image_pos: ""
 - 
-  num_cols: 'true'
+  num_cols: 'false'
   classes: ""
   col_1: |
     For a freshly starting ambitious performance marketing agency, we were asked to develop a brand identity and a one-pager website — in a very short timespan.
@@ -32,7 +36,7 @@ Sections:
     
     In collaboration with (link: http://www.maffindesign.com/ text: Narta Dalladaku).
   col_2: ""
-  bg_colour: '#e0e3e8'
+  bg_colour: ""
   bg_image: [ ]
   bg_image_pos: ""
 - 
@@ -82,11 +86,23 @@ Description: Sleek and minimal identity and one-pager for new kid on the block
 
 ----
 
+Intro: 
+
+----
+
 Tags: branding, graphic, visual design, web design, front-end
 
 ----
 
+Team: 
+
+----
+
 Projecturl: http://harvest-mobile.com/
+
+----
+
+Keyvisual: 
 
 ----
 

@@ -1,6 +1,6 @@
-<section class="bg-white" style="padding-top: 3rem;">
+<section class="bg-white" style="padding-top: 2.5rem;">
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+    <div class="col-xs-12">
 
       <h1 class="u-mb15"><?= strtolower($page->title()->html()) ?></h1>
 

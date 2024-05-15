@@ -19,6 +19,9 @@
 .u-mt3 {
   margin-top: 3rem !important;
 }
+.u-mt4 {
+  margin-top: 4rem !important;
+}
 .u-mb025 {
   margin-bottom: 0.25rem !important;
 }
@@ -141,6 +144,11 @@
 .u-hide {
   display: none !important;
 }
+@media only screen and (max-width:48em) {
+  .u-hide-on-mobile {
+    display: none !important;
+  }
+}
 
 
 .u-floatleft {
@@ -162,6 +170,12 @@
   @include prefix(align-items, center);
 }
 
+.u-text-075x {
+  font-size: 0.75rem !important;
+}
+.u-text-1x {
+  font-size: 1rem !important;
+}
 .u-text-2x {
   font-size: 2rem !important;
 }

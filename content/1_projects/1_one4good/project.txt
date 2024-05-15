@@ -58,7 +58,7 @@ Intro: one4good is a subscription-based service that supports social and sustain
 
 ----
 
-Tags: visual-identity, web-design, product-design, Graphic Design, front-end
+Tags: identity, web design, product design, graphic, front-end, design system
 
 ----
 
