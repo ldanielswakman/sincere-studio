@@ -36,15 +36,15 @@
       </div>
     </section>
 
-    <section class="section--experience">
+    <section class="section--details">
 
       <div class="page-nav" role="navigation">
-        <div data-target="experience-list" class="page-nav-item isActive">Experience</div>
-        <div data-target="project-list" class="page-nav-item">Projects</div>
-        <div data-target="timeline" class="page-nav-item">Timeline</div>
+        <a href="#experience" class="page-nav-item isActive">Experience</a>
+        <a href="#projects" class="page-nav-item">Projects</a>
+        <a href="#timeline" class="page-nav-item">Timeline</a>
       </div>
 
-      <div class="nav-content experience-list isActive">
+      <div class="nav-content isActive" id="experience">
         <div class="container">
           <?php foreach ($page->work_xp()->toStructure() as $item) : ?>
 
@@ -93,7 +93,11 @@
         </div>
       </div>
 
-      <div class="nav-content project-list">
+      <div class="line-wrapper">
+        <div class="line"></div>
+      </div>
+
+      <div class="nav-content" id="projects">
         <?php foreach($page->work_projects()->toPages() as $project): ?>
           <a href="<?= $project->url() ?>" class="project-item project-item--linked">
             <?php if($image = $project->featuredimage()->toFile()): ?>
@@ -103,10 +107,14 @@
             <p class="description"><?= $project->description() ?></p>
           </a>
         <?php endforeach ?>
-        <div style="grid-column: -1 / 1;"><a href="<?= $pages->find('projects')->url() ?>" class="button button--outline">see all projects</a></div>
+        <div style="grid-column: -1 / 1;"><a href="<?= $pages->find('projects')->url() . '#all' ?>" class="button button--outline">see all projects</a></div>
       </div>
 
-      <div class="nav-content timeline">
+      <div class="line-wrapper">
+        <div class="line"></div>
+      </div>
+
+      <div class="nav-content" id="timeline">
         <?php if($image = $page->cv_graph()->toFile()): ?>
           <figure class="project-image"><img src="<?= $image->url() ?>" alt="CV Graph (outdated)" /></figure>
         <?php endif ?>
@@ -117,7 +125,31 @@
     <script>
       $(document).ready(() => {
 
-        $('.experience-item .header').click(function() {
+        // Check for URL hash on page load
+        var hash = window.location.hash;
+        if(hash){
+          // Check if a .nav-content section exists with the hash
+          var targetSection = $('.nav-content').filter(function() {
+            return $(this).attr('id') === hash.substr(1);
+          });
+          
+          // If the section exists, scroll to it
+          if(targetSection.length) {
+            $('.page-nav-item').removeClass('isActive');
+            $('.page-nav-item[href="'+hash+'"]').addClass('isActive');
+            $('.nav-content').removeClass('isActive');
+            targetSection.addClass('isActive');
+            var scrollOffset = 96;
+            
+            setTimeout(function() {
+              $('html, body').animate({
+                scrollTop: targetSection.offset().top - scrollOffset
+              }, 700);
+            }, 1000);
+          }
+        }
+
+        $('.experience-item .header').click(function(e) {
           $isActive = $(this).parent().hasClass('isActive');
           $(this).parent().parent().find('.experience-item').removeClass('isActive');
           if(!$isActive) {
@@ -125,16 +157,40 @@
           }
         });
 
-        $('.page-nav .page-nav-item').click(function() {
-          if($(this).attr('data-target') && $('.' + $(this).attr('data-target')).length) {
+        $('.page-nav .page-nav-item').click(function(e) {
+          e.preventDefault();
+          if($(this).attr('href') && $('.nav-content' + $(this).attr('href')).length) {
             $('.page-nav-item').removeClass('isActive');
             $(this).addClass('isActive');
             $('.nav-content').removeClass('isActive');
-            $('.' + $(this).attr('data-target')).addClass('isActive');
+            $($(this).attr('href')).addClass('isActive');
           }
         });
 
+        // Function to update active page nav item on scroll
+        function updateActiveNavItem() {
+          var scrollOffset = 96;
+          $('.nav-content').each(function() {
+            var sectionId = $(this).attr('id');
+            var scrollPos = $(window).scrollTop();
+            var sectionOffset = $('#' + sectionId).offset().top - scrollOffset;
+            if (scrollPos >= sectionOffset) {
+              $('.page-nav-item').removeClass('isActive');
+              $('.page-nav-item[href="#' + sectionId + '"]').addClass('isActive');
+            }
+          });
+        }
+
+        // Bind scroll event to window and call the function to update active nav item
+        $(window).on('scroll', function() {
+          updateActiveNavItem();
+        });
+
+        // Call the function on page load as well
+        updateActiveNavItem();
+
       });
+      
     </script>
 
 

@@ -5,7 +5,6 @@
     <?php
     $projects = $page->children()->sortBy('year', 'desc');
     $filteredProjects = $projects;
-    $featuredProjects = $projects->filterBy('featured', 'in', ['1', 'true']);
     $subtitle = 'selected';
     $list_title = 'all projects';
 
@@ -22,7 +21,10 @@
 
     <?php snippet('page-header', ['page' => $page, 'subtitle' => $subtitle]) ?>
 
-    <?php if (!param('tag') && $featuredProjects->count() > 0) : ?>
+    <?php
+    $featuredProjects = $projects->filterBy('featured', 'in', ['1', 'true']);
+    if (!param('tag') && $featuredProjects->count() > 0) :
+    ?>
       <!-- Selected projects -->
       <section class="section--projects">
         <div class="row">
@@ -47,24 +49,13 @@
       </section>
     <?php endif ?>
 
-    <?php if(true): // Listing all tags ?>
-    <section>
-      <div class="row">
-        <div class="col-xs-12">
-        </div>
-      </div>
-    </section>
-    <?php endif ?>
-
-    <section style="border-top: 1px solid #34495e;">
+    <section id="all" style="border-top: 1px solid #34495e;">
       <div class="row">
         <div class="col-xs-12 u-mt3">
 
         <?php
-        // Create an empty associative array to store tags and their counts
-        $tagCounts = [];
-
         // Iterate over projects to collect tag counts
+        $tagCounts = [];
         foreach($projects->pluck('tags', ', ', true) as $tag) {
             $decodedTag = urldecode($tag);
             $count = $projects->filterBy('tags', $tag, ',')->count();
@@ -73,20 +64,16 @@
                 $tagCounts[$decodedTag] = $count;
             }
         }
-
-        // Sort the tag counts array by count in descending order
         arsort($tagCounts);
 
         // Iterate over the sorted tag counts array to output tags
-        foreach ($tagCounts as $tag => $count) {
+        foreach ($tagCounts as $tag => $count) :
             $isActive = (urldecode($tag) === urldecode(param('tag')));
         ?>
             <a href="<?= url($page->url(), ['params' => ['tag' => urlencode($tag)]]) ?>" class="<?= $isActive ? 'c-blue' : 'c-grey' ?>" style="margin-right: 0.5rem; white-space: nowrap;">
                 <?= $tag ?><sup class="u-op30"><?= $count ?></sup>
             </a>
-        <?php
-        }
-        ?>
+        <?php endforeach?>
 
           
           <p class="u-mt3 u-text-2x c-blue"><?= $list_title ?></p>

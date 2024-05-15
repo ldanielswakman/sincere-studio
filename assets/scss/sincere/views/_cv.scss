@@ -85,7 +85,7 @@
     }
 }
 
-.section--experience {
+.section--details {
     padding-top: 6rem;
     text-align: center;
 
@@ -112,7 +112,7 @@
     .page-nav-item {
         display: flex;
         font-size: 1.25rem;
-        padding: 0.5rem 1rem;
+        padding: 10px 1rem 6px;
         border-radius: 1.25rem;
         cursor: pointer;
         color: $grey;
@@ -289,7 +289,7 @@
         }
     }
 
-    .project-list {
+    #projects {
         display: grid;
         gap: 2rem;
 
@@ -368,15 +368,15 @@
 
 
     .nav-content {
-        display: none;
+        // display: none;
 
-        &.isActive {
-            display: block;
+        // &.isActive {
+        //     display: block;
 
-            &.project-list {
-                display: grid;
-            }
-        }
+        //     &#projects {
+        //         display: grid;
+        //     }
+        // }
     }
 }
 

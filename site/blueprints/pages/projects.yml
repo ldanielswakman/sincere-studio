@@ -15,6 +15,7 @@ sections:
     template: project
     image:
       back: white
+      query: page.featuredimage.toFile
 
   text:
     type: fields

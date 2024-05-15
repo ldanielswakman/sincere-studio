@@ -1393,6 +1393,10 @@ figure img {
   margin-top: 3rem !important;
 }
 
+.u-mt4 {
+  margin-top: 4rem !important;
+}
+
 .u-mb025 {
   margin-bottom: 0.25rem !important;
 }
@@ -1545,6 +1549,11 @@ figure img {
   display: none !important;
 }
 
+@media only screen and (max-width: 48em) {
+  .u-hide-on-mobile {
+    display: none !important;
+  }
+}
 .u-floatleft {
   display: inline-block;
   float: left;
@@ -1574,6 +1583,14 @@ figure img {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center;
+}
+
+.u-text-075x {
+  font-size: 0.75rem !important;
+}
+
+.u-text-1x {
+  font-size: 1rem !important;
 }
 
 .u-text-2x {
@@ -2816,14 +2833,14 @@ section.section--collapsed {
   color: #868197;
 }
 
-.section--experience {
+.section--details {
   padding-top: 6rem;
   text-align: center;
 }
-.section--experience .page-nav-wrapper {
+.section--details .page-nav-wrapper {
   text-align: center;
 }
-.section--experience .page-nav {
+.section--details .page-nav {
   position: sticky;
   top: 1.5rem;
   z-index: 2;
@@ -2838,46 +2855,46 @@ section.section--collapsed {
   backdrop-filter: blur(0.5rem);
 }
 @media (prefers-color-scheme: dark) {
-  .section--experience .page-nav {
+  .section--details .page-nav {
     background: rgba(255, 254, 252, 0.03);
   }
 }
-.section--experience .page-nav-item {
+.section--details .page-nav-item {
   display: flex;
   font-size: 1.25rem;
-  padding: 0.5rem 1rem;
+  padding: 10px 1rem 6px;
   border-radius: 1.25rem;
   cursor: pointer;
   color: #868197;
 }
-.section--experience .page-nav-item:hover {
+.section--details .page-nav-item:hover {
   color: #0D0533;
 }
 @media (prefers-color-scheme: dark) {
-  .section--experience .page-nav-item:hover {
+  .section--details .page-nav-item:hover {
     color: #fffefc;
   }
 }
-.section--experience .page-nav-item.isActive {
+.section--details .page-nav-item.isActive {
   background: #fffefc;
   color: #0D0533;
   font-weight: 600;
 }
 @media (prefers-color-scheme: dark) {
-  .section--experience .page-nav-item.isActive {
+  .section--details .page-nav-item.isActive {
     background: #110F1A;
     color: #fffefc;
   }
 }
-.section--experience .experience-list {
+.section--details .experience-list {
   margin: 0 -1.25rem;
 }
 @media screen and (min-width: 768px) {
-  .section--experience .experience-list {
+  .section--details .experience-list {
     margin: 0;
   }
 }
-.section--experience .experience-item {
+.section--details .experience-item {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -2887,12 +2904,12 @@ section.section--collapsed {
   overflow: hidden;
 }
 @media (prefers-color-scheme: dark) {
-  .section--experience .experience-item {
+  .section--details .experience-item {
     border-color: #4D4B53;
   }
 }
 @media screen and (min-width: 768px) {
-  .section--experience .experience-item {
+  .section--details .experience-item {
     margin-bottom: 1rem;
     padding: 1rem 1.5rem 0;
     border-radius: 1rem;
@@ -2900,26 +2917,26 @@ section.section--collapsed {
   }
 }
 @media screen and (min-width: 768px) and (prefers-color-scheme: dark) {
-  .section--experience .experience-item {
+  .section--details .experience-item {
     border-color: #4D4B53;
   }
 }
 @media (hover: hover) {
-  .section--experience .experience-item:not(.isActive):hover {
+  .section--details .experience-item:not(.isActive):hover {
     border-color: #868197;
   }
 }
-.section--experience .experience-item:not(.isActive):active {
+.section--details .experience-item:not(.isActive):active {
   background: rgba(13, 5, 51, 0.03);
   background: rgba(101, 71, 254, 0.03);
   border-color: #6547FE;
 }
 @media (prefers-color-scheme: dark) {
-  .section--experience .experience-item:not(.isActive):active {
+  .section--details .experience-item:not(.isActive):active {
     background: rgba(255, 254, 252, 0.03);
   }
 }
-.section--experience .experience-item .header {
+.section--details .experience-item .header {
   display: flex;
   align-items: center;
   margin: -1rem -1.5rem;
@@ -2928,7 +2945,7 @@ section.section--collapsed {
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
-.section--experience .experience-item .xp-image {
+.section--details .experience-item .xp-image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2937,66 +2954,66 @@ section.section--collapsed {
   height: auto;
   margin-right: 0.5rem;
 }
-.section--experience .experience-item .xp-image img {
+.section--details .experience-item .xp-image img {
   max-width: 100%;
   max-height: 100%;
 }
-.section--experience .experience-item .title {
+.section--details .experience-item .title {
   flex: 0 1 100%;
   font-size: 1.25rem;
   line-height: 1.5rem;
 }
 @media screen and (min-width: 768px) {
-  .section--experience .experience-item .title {
+  .section--details .experience-item .title {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
-.section--experience .experience-item .title a {
+.section--details .experience-item .title a {
   color: inherit;
   border-bottom: 1px solid currentColor;
 }
-.section--experience .experience-item .title a:hover {
+.section--details .experience-item .title a:hover {
   color: #6547FE;
 }
-.section--experience .experience-item .period {
+.section--details .experience-item .period {
   color: #B8C5CC;
 }
 @media (prefers-color-scheme: dark) {
-  .section--experience .experience-item .period {
+  .section--details .experience-item .period {
     color: #868197;
   }
 }
-.section--experience .experience-item .icon {
+.section--details .experience-item .icon {
   display: flex;
   opacity: 0.25;
   transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
 }
-.section--experience .experience-item.isActive .icon {
+.section--details .experience-item.isActive .icon {
   transform: rotate(180deg);
 }
-.section--experience .experience-item:hover .icon {
+.section--details .experience-item:hover .icon {
   opacity: 1;
 }
-.section--experience .experience-item .content {
+.section--details .experience-item .content {
   transition: max-height 0.7s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1);
   opacity: 0;
   max-height: 0;
 }
-.section--experience .experience-item.isActive .content {
+.section--details .experience-item.isActive .content {
   opacity: 1;
   max-height: 100vh;
 }
-.section--experience .experience-item .content p {
+.section--details .experience-item .content p {
   color: #868197;
   line-height: 125%;
 }
 @media (prefers-color-scheme: dark) {
-  .section--experience .experience-item .content p {
+  .section--details .experience-item .content p {
     color: #B8C5CC;
   }
 }
-.section--experience .experience-item .content .project-list {
+.section--details .experience-item .content .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
   grid-auto-flow: column;
@@ -3008,12 +3025,12 @@ section.section--collapsed {
   overflow-x: scroll;
 }
 @media (prefers-color-scheme: dark) {
-  .section--experience .experience-item .content .project-list {
+  .section--details .experience-item .content .project-list {
     color: #B8C5CC;
   }
 }
 @media screen and (min-width: 768px) {
-  .section--experience .experience-item .content .project-list {
+  .section--details .experience-item .content .project-list {
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: initial;
     grid-auto-columns: initial;
@@ -3022,86 +3039,76 @@ section.section--collapsed {
     padding: 0;
   }
 }
-.section--experience .project-list {
+.section--details #projects {
   display: grid;
   gap: 2rem;
 }
 @media screen and (min-width: 768px) {
-  .section--experience .project-list {
+  .section--details #projects {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
   }
 }
-.section--experience .project-list .project-item {
+.section--details #projects .project-item {
   display: flex;
   flex-direction: column;
   text-align: left;
 }
-.section--experience .project-list .project-item .project-image {
+.section--details #projects .project-item .project-image {
   margin-bottom: 1rem;
 }
-.section--experience .project-list .project-item h4 {
+.section--details #projects .project-item h4 {
   color: #868197;
   font-weight: 500;
 }
-.section--experience .project-list .project-item p.description {
+.section--details #projects .project-item p.description {
   margin: 0;
   font-size: 1.25rem;
   line-height: 120%;
 }
 @media screen and (min-width: 768px) {
-  .section--experience .project-list .project-item p.description {
+  .section--details #projects .project-item p.description {
     font-size: 1.5rem;
   }
 }
-.section--experience .project-item--linked {
+.section--details .project-item--linked {
   color: #0D0533;
 }
 @media (prefers-color-scheme: dark) {
-  .section--experience .project-item--linked {
+  .section--details .project-item--linked {
     color: #fffefc;
   }
 }
-.section--experience .project-item--linked:hover {
+.section--details .project-item--linked:hover {
   color: #6547FE;
 }
-.section--experience .project-item--linked:hover svg {
+.section--details .project-item--linked:hover svg {
   opacity: 1;
 }
-.section--experience .project-item--linked:hover .project-image img {
+.section--details .project-item--linked:hover .project-image img {
   transform: scale(1.05);
 }
-.section--experience .project-item--linked h4 {
+.section--details .project-item--linked h4 {
   font-weight: 600;
 }
-.section--experience .project-item h4 {
+.section--details .project-item h4 {
   display: flex;
   justify-content: space-between;
 }
-.section--experience .project-item h4 svg {
+.section--details .project-item h4 svg {
   transform: rotate(-90deg);
   opacity: 0.25;
   width: 1rem;
 }
-.section--experience .project-item .project-image {
+.section--details .project-item .project-image {
   margin-top: 0.5rem;
   border-radius: 0.75rem;
   overflow: hidden;
 }
-.section--experience .project-item .project-image img {
+.section--details .project-item .project-image img {
   display: block;
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-.section--experience .nav-content {
-  display: none;
-}
-.section--experience .nav-content.isActive {
-  display: block;
-}
-.section--experience .nav-content.isActive.project-list {
-  display: grid;
-}
-
 .section--education p, .section--education h4 {
   font-size: 1.25rem;
   line-height: 2.5rem;
