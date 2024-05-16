@@ -30,15 +30,27 @@ Builder:
   _key: full_image
   _uid: full_image_1685569653772_7220
 - 
+  text: |
+    ### Design System
+    In order to set the foundations for a product language that could be iterated on and evolve, a flexible technology setup of a responsive web application was chosen (PWA). For this application, we designed a simple and effective design system, relying on a small set of essential patterns throughout the app: a tile-based overview, a versatile list view, and a media-rich detail page.
+  full: 'false'
+  _key: text
+  _uid: text_1684495090627_601
+- 
+  image:
+    - one4good-design-system.jpg
+  _key: full_image
+  _uid: full_image_1715816876588_947
+- 
+  image:
+    - one4good-mobile-views.jpg
+  _key: full_image
+  _uid: full_image_1715817443247_947
+- 
   image:
     - graphic-1.jpg
   _key: full_image
   _uid: full_image_1685569638624_7220
-- 
-  text: '(link: https://www.one4good.com/ target:blank text: See the platform live)'
-  full: 'false'
-  _key: text
-  _uid: text_1684495090627_601
 
 ----
 
