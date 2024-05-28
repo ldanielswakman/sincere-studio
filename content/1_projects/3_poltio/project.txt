@@ -50,7 +50,7 @@ Sections:
 - 
   num_cols: 'false'
   classes: ""
-  col_1: '<div class="u-aligncenter" markdown="1">(Project recently finished; more detailed case study follows soon)</div>'
+  col_1: '<div class="u-aligncenter" markdown="1">(Project recently finished; more detailed case study upon request)</div>'
   col_2: ""
   bg_colour: ""
   bg_image: [ ]

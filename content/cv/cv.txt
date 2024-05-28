@@ -51,7 +51,7 @@ Work-xp:
     - monogram.png
   title: '3 years as Head of Design at (link: https://nebenan.de text: nebenan.de target: blank)'
   employer: nebenan.de
-  text: 'Growing and leading a team of 7 designers, establishing consistency in design language, initiated and led a comprehensive brand & product redesign, implemented Figma design system & migrated organisation'
+  text: 'Growing and leading a team of 8 designers, establishing consistency in design language, initiated and led a comprehensive brand & product redesign, implemented Figma design system & migrated organisation'
   url: ""
   projects:
     - 
@@ -190,11 +190,7 @@ Work-xp:
     3 years as Lead Designer at eLearning
     startup in Amsterdam
   employer: Oefenweb.nl
-  text: |
-    e-learning gaming applications;
-    lead graphic & web designer, UI/
-    UX design, front-end (html/css),
-    gamification
+  text: 'Lead Designer for e-learning gaming applications (team of 3). Translating user needs for elementary school children (~300k daily users). Led comprehensive interface overhaul of game UI, brand streamlining & marketing website'
   url: http://www.oefenweb.nl
   projects: [ ]
 - 

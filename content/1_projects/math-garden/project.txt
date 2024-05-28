@@ -1,0 +1,108 @@
+Title: Math Garden, Language Sea, Words&Birds
+
+----
+
+Builder:
+
+- 
+  text: |
+    ### Shaping a learning ecosystem
+    The challenge was to unify an intensely used interface, specifically for kids. The old game screens were inconsistent, visually unstructured and lacked clear usability cues. On top of that, given the young age of the target audience, the interface could not rely heavily on text — in many cases, it was a child's first real interaction with a digital product.
+  image:
+    - oefenweb-products.jpg
+    - rekention-old-screens.png
+  _key: text_image
+  _uid: text_image_1716889843991_8870
+- 
+  text: |
+    ### Research
+    Users: The main advantage in the early discovery process was the close connection to the schools that would use the product daily; this allowed us to observe many daily struggles. For instance, children would struggle to find the same function in the same place in the UI, would have trouble learning the input mechanics in a new game, while a timer was running. This hampered especially the first usage. Also different input methods (mouse, touch) were not providing the right feedback.
+    
+    System: when the initial minigame library grew from 5-6 minigames to 20, issues of maintaining such an interface at scale became apparent. The need from the developers for a design system approach with reusable components grew.
+  image:
+    - users.jpg
+  _key: text_image
+  _uid: text_image_1716890315350_8870
+- 
+  image:
+    - new-interface.jpg
+  _key: full_image
+  _uid: full_image_1716891930333_8870
+- 
+  text: |
+    ### Game UI Design System
+    The key concept for the Game UI was formed around 3 main areas: the main game UI where question + answer controls were positioned, the immersive background illustration, and the peripheral UI, with overarching controls. The positioning of the main game UI was kept somewhat flexible, to accommodate for varying input options as well as background alignment.
+    
+    The background graphics were reworked from the ground up, in collaboration with an illustrator who created bespoke scenes; the alignment of the main story was always on the left, so as not to interfere with the gameplay itself.
+  image:
+    - game-ui-concept.png
+  _key: text_image
+  _uid: text_image_1716892119210_8870
+- 
+  image:
+    - new-game-ui-1.png
+  _key: full_image
+  _uid: full_image_1716892115789_8870
+- 
+  image:
+    - new-game-ui-2.png
+  _key: full_image
+  _uid: full_image_1716892661951_8870
+- 
+  image:
+    - new-game-ui-3.png
+  _key: full_image
+  _uid: full_image_1716892668043_8870
+- 
+  text: '<span markdown="1" style="display: block; text-align: center;">*All material developed and shown was made while being part of Oefenweb.nl BV, now (link: https://www.prowise.com/product/prowise-learn/ text: Prowise BV)*</span>'
+  full: 'false'
+  _key: text
+  _uid: text_1716892757755_8870
+
+----
+
+Sections: 
+
+----
+
+Year: 2013-2015
+
+----
+
+Description: Highly useable game interface system for e-learning applications
+
+----
+
+Intro:
+
+Upon joining Oefenweb.nl as Lead Designer, there was a growing user base of elementary school children (~300k daily users), using innovative e-learning games as a method of adaptive learning of math, language and logic skills. I initiated and led a comprehensive interface overhaul of the game interface, building a consistent interaction language that transformed usability throughout the platform.
+
+In parallel, I also was responsible for brand streamlining, communications materials & marketing website.
+
+----
+
+Tags: product-design, design-system, ux, ui, interaction-design
+
+----
+
+Team: 
+
+----
+
+Projecturl: https://www.prowise.com/en/product/prowise-learn/
+
+----
+
+Keyvisual: - oefenweb.jpg
+
+----
+
+Featured: false
+
+----
+
+Featuredimage: - oefenweb.jpg
+
+----
+
+Featuredcolour: 
