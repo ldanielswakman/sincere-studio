@@ -1051,6 +1051,15 @@
   }
 }
 
+.c-text-subtle {
+  color: #D3DFE5;
+}
+@media (prefers-color-scheme: dark) {
+  .c-text-subtle {
+    color: #4D4B53;
+  }
+}
+
 .c-white {
   color: #fff;
 }
@@ -1106,6 +1115,15 @@
 
 .bg-blackfaded10 {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.border-bluelight {
+  border-color: #D3DFE5;
+}
+@media (prefers-color-scheme: dark) {
+  .border-bluelight {
+    border-color: #4D4B53;
+  }
 }
 
 /**
@@ -1591,6 +1609,10 @@ figure img {
 
 .u-text-1x {
   font-size: 1rem !important;
+}
+
+.u-text-15x {
+  font-size: 1.5rem !important;
 }
 
 .u-text-2x {

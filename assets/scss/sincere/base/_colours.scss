@@ -36,6 +36,13 @@ $black: #000;
     color: $text-night;
   }
 }
+.c-text-subtle {
+  color: $grey-subtle-day;
+
+  @include darkMode {
+    color: $grey-subtle-night;
+  }
+}
 
 .c-white {
   color: $white;
@@ -82,4 +89,12 @@ $black: #000;
 }
 .bg-blackfaded10 {
   background-color: rgba($black, 0.1);
+}
+
+.border-bluelight {
+  border-color: $grey-subtle-day;
+
+  @include darkMode {
+    border-color: $grey-subtle-night;
+  }
 }

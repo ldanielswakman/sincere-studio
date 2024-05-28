@@ -49,7 +49,7 @@
       </section>
     <?php endif ?>
 
-    <section id="all" style="border-top: 1px solid #34495e;">
+    <section id="all" style="border-top-width: 1px; border-top-style: solid;" class="border-bluelight">
       <div class="row">
         <div class="col-xs-12 u-mt3">
 
@@ -82,7 +82,7 @@
       </div>
     </section>
 
-    <section class="u-pv3" style="color: rgba(255, 255, 255, 0.8);">
+    <section class="u-pv3 c-text-subtle">
 
       <?php foreach ($filteredProjects as $project) : ?>
         <div class="row">
@@ -99,7 +99,7 @@
             <?php endif ?>
           </div>
           <div class="col-xs-8 col-sm-5 col-md-6 u-mb05">
-              <a href="<?= $project->url() ?>" class="u-block <?php e($project->isListed(), 'c-white', 'c-grey') ?>" style="line-height: 1rem; margin-bottom: 0.75rem;">
+              <a href="<?= $project->url() ?>" class="u-block <?php e($project->isListed(), 'c-bluedark', 'c-grey') ?>" style="line-height: 1rem; margin-bottom: 0.75rem;">
                 <h4 class="u-mt05"><?= $project->title() ?></h4>
                 <small class="u-block u-mt05" style="color: rgba(255, 255, 255, <?php e($project->isListed(), '0.5', '0.25') ?>);"><?= $project->description() ?></small>
               </a>
@@ -112,18 +112,19 @@
           </div>
         </div>
       <?php $prev = $project; endforeach; ?>
-
-      <?php if($page->slug() !== 'architecture') : ?>
-        <div class="row u-mt2">
-          <div class="col-xs-12 col-sm-2 col-sm-offset-1">
-            <big>before that</big>
-          </div>
-          <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-1">
-            <a href="<?= u('/architecture') ?>" class="c-white">architecture and urban design &rarr;</a>
-        </div>
-      <?php endif ?>
-
     </section>
+
+    <?php if($page->slug() !== 'architecture') : ?>
+    <section style="border-top-width: 1px; border-top-style: solid;" class="border-bluelight">
+        <div class="row u-mt2">
+          <div class="col-xs-12 col-sm-2">
+            <h3 class="u-text-15x c-text-subtle">before that</h3>
+          </div>
+          <div class="col-xs-12 u-mv2">
+            <a class="button button--outline" href="<?= u('/architecture') ?>" class="c-bluedark">architecture and urban design &rarr;</a>
+        </div>
+    </section>
+    <?php endif ?>
 
   </main>
 

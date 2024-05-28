@@ -24,7 +24,7 @@
         <div class="disciplines">
           <?php foreach($page->tags()->split() as $tag) : ?>
             <div class="discipline">
-              <a href="<?= $page->parent()->url() . '/tag:' . $tag ?>">
+              <a href="<?= url($page->parent()->url(), ['params' => ['tag' => urlencode($tag)]]) ?>">
                 <?= $tag ?>
               </a>
             </div>
