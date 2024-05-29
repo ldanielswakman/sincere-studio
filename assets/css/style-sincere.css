@@ -2585,6 +2585,11 @@ section.section--collapsed {
   padding-top: 1.75rem;
   background: #fffefc;
 }
+@media screen and (min-width: 768px) {
+  .block--info {
+    padding-top: 6rem;
+  }
+}
 @media (prefers-color-scheme: dark) {
   .block--info {
     background: #110F1A;
