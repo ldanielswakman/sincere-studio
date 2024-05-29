@@ -1,4 +1,4 @@
-Title: Nebenan Design System
+Title: nebenan.de Design System
 
 ----
 
@@ -93,9 +93,7 @@ Projecturl:
 
 ----
 
-Keyvisual:
-
-- redesign-cover.jpg
+Keyvisual: - redesign-cover.jpg
 
 ----
 
@@ -103,10 +101,12 @@ Featured: false
 
 ----
 
-Featuredimage:
-
-- redesign-cover.jpg
+Featuredimage: - redesign-cover.jpg
 
 ----
 
 Featuredcolour: 
+
+----
+
+Uuid: LDROCazS4e8VMEgo

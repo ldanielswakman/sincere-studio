@@ -1,4 +1,4 @@
-Title: Side Projects
+Title: Side
 
 ----
 
@@ -6,43 +6,47 @@ Text:
 
 (new-section: bg-white c-grey)
 
-<br />
-(image: designers-circle-zine-by-cheriebirkner-11.jpg alt: Photo by Cherie Birkner)
+# Side Projects
+A brief overview of side projects, either initiated or driven by me.
 
-## Designers Circle
-<span class="u-op50">2017-ongoing &nbsp;&nbsp;|&nbsp;&nbsp; role: cofounder, organiser</span>
-Together with other community members, I set up a weekly designers meetup, aimed at continuous exchange, advice and collaboration; there are multiple hundreds of designers in the channel. Aside from organising the weekly meetup, this involves projects like events, and a yearly zine publication. This initiative is part of (link: https://factoryberlin.com/ text:Factory Berlin target:blank), a community hub aimed at bringing together freelancers, startups and corporate businesses.
+<br />
+(image: designers-circle-zine-by-cheriebirkner-11.jpg alt: Photo by Cherie Birkner title: Photo by Cherie Birkner)
+
+<h2 class="c-bluedark">Designers Circle Berlin</h2>
+<span class="u-op50">2017-2021 &nbsp;&nbsp;|&nbsp;&nbsp; role: cofounder, organiser</span>
+<p class="u-mt1 u-mb1">Together with other community members, I set up a weekly designers meetup, aimed at continuous exchange, advice and collaboration; there are multiple hundreds of designers in the channel. Aside from organising the weekly meetup, this involves projects like events, and a yearly zine publication. This initiative is part of (link: https://factoryberlin.com/ text:Factory Berlin target:blank), a community hub aimed at bringing together freelancers, startups and corporate businesses.</p>
 <a href="https://www.instagram.com/designerscircleberlin/" target="_blank">Designers Circle on Instagram &#8599;</a>
-<br/><br/>
+<br/><br/><br /><br />
 
 <div id="pheme"></div>
 
 (image: pheme-product-banner.jpg)
 
-## Pheme
+<h2 class="c-bluedark">Pheme</h2>
 <span class="u-op50">2018-2019 &nbsp;&nbsp;|&nbsp;&nbsp; role in 3: cofounder & designer</span>
-Pheme is a decentralised publishing platform, built on blockchain and peer-to-peer web technologies. No central authority. No data collecting. No targeted ads. Yes freedom of expression.
+<p class="u-mt1 u-mb1">Pheme is a decentralised publishing platform, built on blockchain and peer-to-peer web technologies. No central authority. No data collecting. No targeted ads. Yes freedom of expression.</p>
+<p class="u-mb1">(Not actively maintained)</p>
 <a href="https://pheme.app/" target="_blank">See the project live &#8599;</a>
-<br/><br/>
+<br/><br/><br /><br />
 
 <div id="coworking"></div>
 
 (image: coworking-project-banner.jpg)
 
-## The Coworking Project
-
+<h2 class="c-bluedark">The Coworking Project</h2>
 <span class="u-op50">2017-ongoing &nbsp;&nbsp;|&nbsp;&nbsp; role: initiator, designer, developer</span>
-The Coworking Project is an initiative to give an easy overview of quality coworking spaces in the city. Started as a personal project, then expanded into a publicly available index for those that want to engage in flexible working. Built with VuePress & Netlify CMS.
+<p class="u-mt1 u-mb1">The Coworking Project is an initiative to give an easy overview of quality coworking spaces in the city. Started as a personal project, then expanded into a publicly available index for those who want to engage in flexible working. Built with NextJS, Tina.io & Vercel.</p>
 <a href="https://coworkberlin.com/" target="_blank">See Cowork Berlin live &#8599;</a>  |  <a href="https://coworkingistanbul.com/" target="_blank">See Coworking Istanbul live &#8599;</a>
-<br/><br/>
+<br /><br /><br /><br />
 
 <div id="muhit"></div>
 
 (image: muhit-product-banner.jpg)
 
-## Muhit
+<h2 class="c-bluedark">Muhit</h2>
 <span class="u-op50">2015-2018 &nbsp;&nbsp;|&nbsp;&nbsp; role (team of 8): cofounder, product lead & designer</span>
-Muhit is an online platform allowing citizens and municipalities to collaboratively improve their living environment. Operating in Turkey, Muhit facilitated collaborative mapping to surface problems and opportunities in urban neighbourhoods, and actively engaging municipalities in taking action. Currently not actively maintained.
+<p class="u-mt1 u-mb1">Muhit is an online platform allowing citizens and municipalities to collaboratively improve their living environment. Operating in Turkey, Muhit facilitated collaborative mapping to surface problems and opportunities in urban neighbourhoods, and actively engaging municipalities in taking action.</p>
+<p class="u-mb1">(Not actively maintained)</p>
 <a href="/projects/muhit">Read case study &rarr;</a> | <a href="https://muhit.co/" target="_blank">See the project live &#8599;</a>
 
 (new-section: bg-greylighter u-pv10vh)

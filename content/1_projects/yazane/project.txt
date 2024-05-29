@@ -10,7 +10,7 @@ Tags: web design,front-end
 
 ----
 
-Sections: 
+Sections:
 
 - 
   col_1:
@@ -31,3 +31,7 @@ Featuredimage: yazane-homepage-mockup.png
 ----
 
 Featuredcolour: 003355
+
+----
+
+Uuid: 5wfQ0iYAQf6JON6V

@@ -1,4 +1,4 @@
-Title: Nebenan.de
+Title: nebenan.de
 
 ----
 
@@ -45,10 +45,12 @@ Featured: true
 
 ----
 
-Featuredimage:
-
-- design-system-cover.jpg
+Featuredimage: - design-system-cover.jpg
 
 ----
 
 Featuredcolour: 
+
+----
+
+Uuid: 2ZYtPh5VnXsSoDAp
