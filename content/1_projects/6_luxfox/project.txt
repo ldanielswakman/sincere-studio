@@ -87,10 +87,12 @@ Featured: true
 
 ----
 
-Featuredimage:
-
-- luxfox.jpg
+Featuredimage: - luxfox.jpg
 
 ----
 
 Featuredcolour: 
+
+----
+
+Uuid: pEapAKQPHBK0M2rA

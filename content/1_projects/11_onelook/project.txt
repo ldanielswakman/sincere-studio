@@ -118,9 +118,7 @@ Featured: false
 
 ----
 
-Featuredimage:
-
-- cover-image.jpg
+Featuredimage: - cover-image.jpg
 
 ----
 
@@ -133,3 +131,7 @@ H-basics:
 ----
 
 H-content: 
+
+----
+
+Uuid: hGfs5MpELshW8BPx

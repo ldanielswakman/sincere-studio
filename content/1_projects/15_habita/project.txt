@@ -75,10 +75,12 @@ Featured: false
 
 ----
 
-Featuredimage:
-
-- habita.jpg
+Featuredimage: - habita.jpg
 
 ----
 
 Featuredcolour: ff5000
+
+----
+
+Uuid: kkqgOPaKWrr0CYlR

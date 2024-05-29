@@ -13,20 +13,20 @@ Builder:
   _uid: text_1684494517542_601
 - 
   image:
-    - lp-menu.jpg
+    - file://hriCYQNqYZaJhNwQ
   _key: full_image
   _uid: full_image_1684494697247_601
 - 
   text: 'Together, we shaped a multi-phase project, where we took the simple and clearly design logo and colour palette (by (link: https://franromero.es/ text: Fran Romero)), and figured out the full visual language that will help bring it to life. This resulted in a successful (link: https://www.startnext.com/one4good text: crowdfunding campaign) and a functional (link: https://www.one4good.com/en text: web platform) (also mobile-optimised and progressive web app).'
   image:
-    - one4good-instagram-1.jpg
-    - one4good-instagram-2.jpg
-    - one4good-instagram-3.jpg
+    - file://wYak5AgTUZcU5rgF
+    - file://GomQ3lUcR27Hr88E
+    - file://u8cNxihGqf2L4ezV
   _key: text_image
   _uid: text_image_1684495063025_601
 - 
   image:
-    - graphic-2.jpg
+    - file://Itchixk87Uwsr5OO
   _key: full_image
   _uid: full_image_1685569653772_7220
 - 
@@ -38,17 +38,17 @@ Builder:
   _uid: text_1684495090627_601
 - 
   image:
-    - one4good-design-system.jpg
+    - file://ZpvGv2tGEwcg8QEX
   _key: full_image
   _uid: full_image_1715816876588_947
 - 
   image:
-    - one4good-mobile-views.jpg
+    - file://D9D6ysQPtaAjFvRr
   _key: full_image
   _uid: full_image_1715817443247_947
 - 
   image:
-    - graphic-1.jpg
+    - file://BEksnyWY0KPAFrYk
   _key: full_image
   _uid: full_image_1685569638624_7220
 
@@ -95,9 +95,7 @@ Projecturl: https://www.one4good.com/
 
 ----
 
-Keyvisual:
-
-- one4good.jpg
+Keyvisual: - file://C7I1uT3FNHTnv3P8
 
 ----
 
@@ -105,10 +103,12 @@ Featured: true
 
 ----
 
-Featuredimage:
-
-- one4good.jpg
+Featuredimage: - file://C7I1uT3FNHTnv3P8
 
 ----
 
 Featuredcolour: 
+
+----
+
+Uuid: BkOhu0IQ3lZZlVPO

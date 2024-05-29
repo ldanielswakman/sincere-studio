@@ -1,4 +1,4 @@
-<section class="bg-white" style="padding-top: 2.5rem;">
+<section class="section--page-header">
   <div class="row">
     <div class="col-xs-12">
 

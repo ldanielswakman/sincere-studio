@@ -155,6 +155,22 @@ section {
   }
 }
 
+.section--page-header {
+  padding-top: 1.75rem;
+
+  @include tabletAndUp {
+    padding-top: 2.5rem;
+  }
+
+  h1 {
+    margin-left: 3.5rem;
+
+    @include tabletAndUp {
+      margin-left: 0;
+    }
+  }
+}
+
 .section--projects {
   padding-top: math.div($sectionpadding, 2);
   padding-bottom: math.div($sectionpadding, 2);
@@ -212,6 +228,7 @@ section {
   }
 
   &--info {
+    padding-top: 1.75rem;
     // padding: 1.25rem;
     background: $bg-day;
 
@@ -224,9 +241,8 @@ section {
     }
 
     h1 {
-      margin-left: 3rem;
-      margin-top: 0.5rem;
-      margin-bottom: 1.25rem;
+      margin-left: 3.5rem;
+      margin-bottom: 2.25rem;
       color: inherit;
 
       @include tabletAndUp {

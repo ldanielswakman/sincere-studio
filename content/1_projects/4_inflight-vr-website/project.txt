@@ -51,9 +51,7 @@ Projecturl: https://inflight-vr.com/
 
 ----
 
-Keyvisual:
-
-- inflight-vr-cover-image.jpg
+Keyvisual: - inflight-vr-cover-image.jpg
 
 ----
 
@@ -61,10 +59,12 @@ Featured: true
 
 ----
 
-Featuredimage:
-
-- inflight-vr-website-mockup-light.jpg
+Featuredimage: - inflight-vr-website-mockup-light.jpg
 
 ----
 
 Featuredcolour: 
+
+----
+
+Uuid: MwnKGWZ86hcuCqpf

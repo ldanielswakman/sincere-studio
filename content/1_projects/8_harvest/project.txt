@@ -110,9 +110,7 @@ Featured: false
 
 ----
 
-Featuredimage:
-
-- cover.jpg
+Featuredimage: - cover.jpg
 
 ----
 
@@ -125,3 +123,7 @@ H-basics:
 ----
 
 H-content: 
+
+----
+
+Uuid: dV6uuqD1Z21leqav

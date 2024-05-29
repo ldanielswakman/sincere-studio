@@ -1088,6 +1088,11 @@
 .bg-greylighter {
   background-color: #ebebed;
 }
+@media (prefers-color-scheme: dark) {
+  .bg-greylighter {
+    background-color: #0D0533;
+  }
+}
 
 .bg-greylight {
   background-color: #ccccd4;
@@ -2508,6 +2513,23 @@ section.section--collapsed {
   }
 }
 
+.section--page-header {
+  padding-top: 1.75rem;
+}
+@media screen and (min-width: 768px) {
+  .section--page-header {
+    padding-top: 2.5rem;
+  }
+}
+.section--page-header h1 {
+  margin-left: 3.5rem;
+}
+@media screen and (min-width: 768px) {
+  .section--page-header h1 {
+    margin-left: 0;
+  }
+}
+
 .section--projects {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -2560,6 +2582,7 @@ section.section--collapsed {
   transform: translateY(0);
 }
 .block--info {
+  padding-top: 1.75rem;
   background: #fffefc;
 }
 @media (prefers-color-scheme: dark) {
@@ -2568,9 +2591,8 @@ section.section--collapsed {
   }
 }
 .block--info h1 {
-  margin-left: 3rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1.25rem;
+  margin-left: 3.5rem;
+  margin-bottom: 2.25rem;
   color: inherit;
 }
 @media screen and (min-width: 768px) {

@@ -54,9 +54,7 @@ Featured: false
 
 ----
 
-Featuredimage:
-
-- mobile-mockup-adjusted.jpg
+Featuredimage: - mobile-mockup-adjusted.jpg
 
 ----
 
@@ -69,3 +67,7 @@ H-basics:
 ----
 
 H-content: 
+
+----
+
+Uuid: c9WiXpYUX4FA2m2z

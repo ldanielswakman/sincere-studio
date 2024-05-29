@@ -66,6 +66,10 @@ $black: #000;
 }
 .bg-greylighter {
   background-color: $greylighter;
+  
+  @include darkMode {
+    background-color: $text-day;
+  }
 }
 .bg-greylight {
   background-color: $greylight;

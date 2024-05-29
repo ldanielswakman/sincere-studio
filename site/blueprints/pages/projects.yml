@@ -10,12 +10,16 @@ sections:
   projects:
     headline: Projects
     type: pages
-    layout: cards
+    layout: cardlets
     create: project
     template: project
+    limit: 1000
+    text: "{{page.title}}"
+    info: "{{page.year}}"
     image:
       back: white
       query: page.featuredimage.toFile
+      cover: true
 
   text:
     type: fields
