@@ -192,7 +192,29 @@ Work-xp:
   employer: Oefenweb.nl
   text: 'Lead Designer for e-learning gaming applications (team of 3). Translating user needs for elementary school children (~300k daily users). Led comprehensive interface overhaul of game UI, brand streamlining & marketing website'
   url: http://www.oefenweb.nl
-  projects: [ ]
+  projects:
+    - 
+      title: Game UI Design System
+      image:
+        - game-ui-cover.jpg
+      linked: Project
+      linked_project:
+        - projects/math-garden
+      linked_url: ""
+    - 
+      title: 'Words & Birds'
+      image:
+        - slide-wordsbirds.jpg
+      linked: none
+      linked_project: [ ]
+      linked_url: ""
+    - 
+      title: Marketing Websites
+      image:
+        - rekentuin-websites.jpg
+      linked: Project
+      linked_project: [ ]
+      linked_url: ""
 - 
   period: 2008-2023
   img:

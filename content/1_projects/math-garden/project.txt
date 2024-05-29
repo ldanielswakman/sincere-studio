@@ -81,7 +81,7 @@ In parallel, I also was responsible for brand streamlining, communications mater
 
 ----
 
-Tags: product-design, design-system, ux, ui, interaction-design
+Tags: product-design, ux, ui, interaction-design, design-system
 
 ----
 
@@ -93,7 +93,9 @@ Projecturl: https://www.prowise.com/en/product/prowise-learn/
 
 ----
 
-Keyvisual: - oefenweb.jpg
+Keyvisual:
+
+- oefenweb.jpg
 
 ----
 
@@ -101,7 +103,9 @@ Featured: false
 
 ----
 
-Featuredimage: - oefenweb.jpg
+Featuredimage:
+
+- oefenweb.jpg
 
 ----
 
