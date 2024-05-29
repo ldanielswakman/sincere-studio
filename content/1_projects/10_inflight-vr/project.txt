@@ -94,9 +94,7 @@ Featured: false
 
 ----
 
-Featuredimage:
-
-- inflight-mockup-narrow.jpg
+Featuredimage: - inflight-mockup-narrow.jpg
 
 ----
 
@@ -109,3 +107,7 @@ H-basics:
 ----
 
 H-content: 
+
+----
+
+Uuid: 62geb0y6SEEI32lD

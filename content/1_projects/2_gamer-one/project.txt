@@ -119,9 +119,7 @@ Projecturl:
 
 ----
 
-Keyvisual:
-
-- key-visual-arena-montage.jpg
+Keyvisual: - key-visual-arena-montage.jpg
 
 ----
 
@@ -129,10 +127,12 @@ Featured: true
 
 ----
 
-Featuredimage:
-
-- share-card-6.jpg
+Featuredimage: - share-card-6.jpg
 
 ----
 
 Featuredcolour: 5B3DF2
+
+----
+
+Uuid: cH97do6VThp0qptx

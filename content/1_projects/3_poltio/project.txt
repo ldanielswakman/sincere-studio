@@ -90,10 +90,12 @@ Featured: true
 
 ----
 
-Featuredimage:
-
-- project-cover-image.jpg
+Featuredimage: - project-cover-image.jpg
 
 ----
 
 Featuredcolour: 009EEC
+
+----
+
+Uuid: n0XN9d4BfziKpHXl

@@ -216,9 +216,7 @@ Work-projects:
 
 ----
 
-Cv-graph:
-
-- timeline.png
+Cv-graph: - timeline.png
 
 ----
 
@@ -547,6 +545,8 @@ Text:
 
 ----
 
-Pdf-file:
+Pdf-file: - ldanielswakman-cv.pdf
 
-- ldanielswakman-cv.pdf
+----
+
+Uuid: 7gLZ2lPbf37qyV3x

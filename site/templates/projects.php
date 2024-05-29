@@ -68,7 +68,8 @@
 
         // Iterate over the sorted tag counts array to output tags
         foreach ($tagCounts as $tag => $count) :
-            $isActive = (urldecode($tag) === urldecode(param('tag')));
+            $decodedTag = urldecode($tag ?? '');
+            $isActive = ($decodedTag === urldecode(param('tag') ?? ''));
         ?>
             <a href="<?= url($page->url(), ['params' => ['tag' => urlencode($tag)]]) ?>" class="<?= $isActive ? 'c-blue' : 'c-grey' ?>" style="margin-right: 0.5rem; white-space: nowrap;">
                 <?= $tag ?><sup class="u-op30"><?= $count ?></sup>

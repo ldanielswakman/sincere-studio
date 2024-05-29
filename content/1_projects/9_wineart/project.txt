@@ -82,10 +82,12 @@ Featured: false
 
 ----
 
-Featuredimage:
-
-- wine-art.jpg
+Featuredimage: - wine-art.jpg
 
 ----
 
 Featuredcolour: e01b3d
+
+----
+
+Uuid: 9ZMfe8HEkTjEnZcn
