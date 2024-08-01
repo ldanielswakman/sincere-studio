@@ -2,6 +2,10 @@ Title: Diagnose Berlin
 
 ----
 
+Builder: 
+
+----
+
 Sections:
 
 - 
@@ -11,7 +15,7 @@ Sections:
   col_2: ""
   bg_colour: ""
   bg_image:
-    - diagnose-berlin-cover-image.jpg
+    - file://yYet9O450MLaoWMN
   bg_image_pos: full
 - 
   num_cols: 'false'
@@ -20,7 +24,7 @@ Sections:
   col_2: ""
   bg_colour: ""
   bg_image:
-    - desktop-mobile-mockup.jpg
+    - file://rC8YR4YhU70OnhgG
   bg_image_pos: full
 - 
   num_cols: 'false'
@@ -37,7 +41,7 @@ Sections:
   col_2: ""
   bg_colour: ""
   bg_image:
-    - diagnose-berlin-shot-1.jpg
+    - file://p18QzeHapGGnjNad
   bg_image_pos: full
 
 ----
@@ -46,11 +50,19 @@ Year: 2018
 
 ----
 
-Description: Opening a digital-first channel for expertise in sports & training
+Description: Digital acquisition experience for experts in sports performance
 
 ----
 
-Tags: web design, visual design, ux, front-end
+Intro: Diagnose Berlin specialises in sport performance optimisation, offering bike fitting and performance diagnostics services mostly through their digital channels. They asked us to design and build a clear information structure and a new super-low threshold booking experience on their website to book appointments.
+
+----
+
+Tags: web design, visual design, ux, front-end, interaction-design
+
+----
+
+Team: 
 
 ----
 
@@ -58,11 +70,15 @@ Projecturl: https://diagnose-berlin.de/
 
 ----
 
+Keyvisual: 
+
+----
+
 Featured: true
 
 ----
 
-Featuredimage: - diagnose-berlin-cover-image.jpg
+Featuredimage: - file://yYet9O450MLaoWMN
 
 ----
 

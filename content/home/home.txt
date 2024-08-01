@@ -13,6 +13,9 @@ Sections:
     - 
       text: Poltio
       link: https://poltio.com/
+    - 
+      text: Eluvium
+      link: https://eluvium.ai/
   title: Top
   classes: section--homeintro u-pt25vh u-pb10vh
   bg_image: [ ]
@@ -23,11 +26,11 @@ Sections:
   _uid: hero_1606841656800_96
 - 
   recent:
-    - projects/gamer-one
-    - projects/one4good
-    - projects/poltio
-    - projects/inflight-vr-website
-    - projects/luxfox
+    - page://cH97do6VThp0qptx
+    - page://BkOhu0IQ3lZZlVPO
+    - page://n0XN9d4BfziKpHXl
+    - page://MwnKGWZ86hcuCqpf
+    - page://pEapAKQPHBK0M2rA
   title: Recent work
   classes: bg-white u-pv5vh
   bg_image: [ ]
