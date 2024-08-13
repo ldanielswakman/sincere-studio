@@ -18,10 +18,11 @@
 
 
     <?php // Builder ?>
-    <?php foreach ($page->builder()->toBuilderBlocks() as $index => $block): ?>
-      <section id="block_<?= $index+1 ?>" class="block block--<?= $block->_key() ?>">
-        <?php snippet('blocks/' . $block->_key(), ['block' => $block]) ?>
+    <?php $i=1; foreach ($page->builder()->toBlocks() as $index => $block): ?>
+      <section id="block_<?= $i ?>" class="block block--<?= $block->type() ?>">
+        <?php snippet('blocks/' . $block->type(), ['block' => $block]) ?>
       </section>
+      <?php $i++ ?>
     <?php endforeach ?>
 
 

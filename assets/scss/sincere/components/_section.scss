@@ -229,12 +229,7 @@ section {
 
   &--info {
     padding-top: 1.75rem;
-    // padding: 1.25rem;
     background: $bg-day;
-
-    // @include tabletAndUp {
-    //   padding: 5rem 2rem;
-    // }
 
     @include darkMode {
       background: $bg-night;
@@ -315,7 +310,7 @@ section {
     }
   }
 
-  &--text_image {
+  &--gallery {
     .block__text,
     .block__image {
       @include tabletAndUp {

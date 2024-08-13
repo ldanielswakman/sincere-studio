@@ -7,17 +7,20 @@ columns:
   - width: 2/3
     sticky: true    
     sections:
-      meta:
+      content:
         type: fields
         fields:
 
           builder:
             label: Blocks
-            type: builder
+            type: blocks
             fieldsets:
             
-              text:
+              - type: text
                 name: Text
+                wysiwyg: true
+                preview: fields
+                icon: paragraph
                 fields:
                   text:
                     label: Text
@@ -30,8 +33,11 @@ columns:
                       - "Default width"
                       - "Fullscreen"
             
-              text_image:
-                name: Text + Image
+              - type: gallery
+                name: Text + Image(s)
+                wysiwyg: true
+                preview: fields
+                icon: dashboard
                 fields:
                   text:
                     label: Text
@@ -46,7 +52,11 @@ columns:
                     image:
                       back: white
             
-              full_image:
+              - type: image
+                name: Full-width Image
+                wysiwyg: true
+                preview: fields
+                icon: image
                 name: Full-width Image
                 fields:
                   image:
@@ -110,7 +120,7 @@ columns:
   - width: 1/3
     sticky: true
     sections:
-      content:
+      meta:
         type: fields
         fields:
 
