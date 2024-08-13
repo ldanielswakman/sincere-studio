@@ -2,59 +2,11 @@ Title: Poltio
 
 ----
 
-Builder:
-
-- 
-  image:
-    - project-homepage.jpg
-  _key: full_image
-  _uid: full_image_1690919791560_781
+Builder: [{"content":{"image":["file://zuU6s7TSw2gIWIPT"]},"id":"51d37b26-3025-4293-874e-0fa415e61e2c","isHidden":false,"type":"image"},{"content":{"image":["file://oH9y1fu2d5Hua6Bj"]},"id":"786d5ce5-52cd-459e-980d-3bdfbe6e004b","isHidden":false,"type":"image"},{"content":{"text":"<video autoplay loop playsinline muted style=\"max-width: 100%;\">\n<source src=\"https://ldaniel.eu/media/pages/projects/poltio/3955006866-1583406325/create-content-animation.mp4\" type=\"video/mp4\" />\n</video>\n\n<video autoplay loop playsinline muted style=\"max-width: 100%;\">\n<source src=\"https://ldaniel.eu/media/pages/projects/poltio/3955006866-1583406325/create-content-animation.mp4\" type=\"video/mp4\" />\n</video>\n\n(video: create-content-animation.mp4 muted: true controls: false autoplay: true loop: true playsinline: true style: \"max-width: 100%\")\n\n(video: vote-user-animation.mp4 muted: true controls: false autoplay: true loop: true playsinline: true style: \"max-width: 100%\")","full":"false"},"id":"6534fc6e-bad4-43e4-bcae-16d9cff52cb7","isHidden":false,"type":"text"},{"content":{"text":"<div class=\"u-aligncenter\" markdown=\"1\">(Project recently finished; more detailed case study upon request)</div>","full":"false"},"id":"b04b964c-3688-4bff-af94-e9b4722eb6c3","isHidden":false,"type":"text"}]
 
 ----
 
-Sections:
-
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - project-logo-image.jpg
-  bg_image_pos: full
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - project-homepage.jpg
-  bg_image_pos: full
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: |
-    <video autoplay loop playsinline muted style="max-width: 100%;">
-    <source src="https://ldaniel.eu/media/pages/projects/poltio/3955006866-1583406325/create-content-animation.mp4" type="video/mp4" />
-    </video>
-    
-    <video autoplay loop playsinline muted style="max-width: 100%;">
-    <source src="https://ldaniel.eu/media/pages/projects/poltio/3955006866-1583406325/create-content-animation.mp4" type="video/mp4" />
-    </video>
-  col_2: ""
-  bg_colour: fff
-  bg_image: [ ]
-  bg_image_pos: right
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: '<div class="u-aligncenter" markdown="1">(Project recently finished; more detailed case study upon request)</div>'
-  col_2: ""
-  bg_colour: ""
-  bg_image: [ ]
-  bg_image_pos: full
+Sections: 
 
 ----
 
@@ -82,7 +34,7 @@ Projecturl: https://www.poltio.com
 
 ----
 
-Keyvisual: 
+Keyvisual: - file://Si6bpsDdPW2Ia5rK
 
 ----
 
@@ -90,7 +42,7 @@ Featured: true
 
 ----
 
-Featuredimage: - project-cover-image.jpg
+Featuredimage: - file://Si6bpsDdPW2Ia5rK
 
 ----
 

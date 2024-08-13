@@ -169,6 +169,7 @@ columns:
             type:  url
           keyvisual:
             label: Key visual
+            help: Shown on project detail page just below opening info section
             type: files
             multiple: false
 

@@ -2,79 +2,7 @@ Title: Gamer One
 
 ----
 
-Builder:
-
-- 
-  text: |
-    ### Challenge
-    The gaming landscape is a patchwork of platforms, from streaming to game launchers to social networks where the conversation takes place. But for serious gamers, finding an all-in-one place to aggregate your team’s information is not easy.
-    
-    That’s where Gamer One comes in — a clear social platform with a customisable interface, where gamers can feel at home.
-  image:
-    - quote-ui-mockup.png
-  _key: text_image
-  _uid: text_image_1609105814043_275
-- 
-  text: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/473945699?autoplay=1&loop=1&color=000&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>'
-  full: 'true'
-  _key: text
-  _uid: text_1609106723619_275
-- 
-  text: |
-    ### Brand
-    
-    Based on the primary brand value of **Convenience**, Gamer One has a clear visual representation that finds its origin in the geometric language of the UI design: a diverse collection of boxes with smooth rounding.
-    
-    The secondary aspects of **Fun**, **Professional** and **Customisable** are reflected in the composition of theme-coloured boxes that feel like they can be dragged around to fit one's needs.
-    
-    From the logo to brand graphics, this is consistently applied. The colour scheme also reflects this: a confident blue that has been 'pulled' into a vibrant and lively direction.
-  image:
-    - share-card-7a.jpg
-    - share-card-2.jpg
-    - share-card-3.jpg
-    - share-card-5.jpg
-    - share-card-8.jpg
-  _key: text_image
-  uniquekey: 0
-  showpreviewinitially: false
-  expandedinitially: false
-  activefieldsetinitially: content
-  _uid: text_image_1609170905339_847
-- 
-  text: |
-    <video autoplay loop playsinline muted style="max-width: 100%;">
-    <source src="https://ldaniel.eu/media/pages/projects/gamer-one/1649989850-1603060029/animation-b-v03-1-compressed.mp4" type="video/mp4" />
-    </video>
-  full: 'true'
-  _key: text
-  _uid: text_1609172811558_327
-- 
-  text: |
-    ### Interface
-    
-    With a brand that is so firmly rooted in its users spending time on the platform itself, it came naturally to place this interface at the centre of the design. An adaptive interface that fits the user's need: dark or light mode, customisable theme colours, and personalisation through avatar and cover image.
-    
-    For the initial iteration of the platform, the experience of browsing a user's profile page is key. This is where the content needs to shine.  We came up with a masonry layout where the individual tiles can be rearranged and resized at will. Together with the tab-based navigation on the page, this makes the profile page feel like a website homepage.
-  image:
-    - share-card-6.jpg
-    - ui-depth-diagram.jpg
-    - gamerone-profile-mockup.jpg
-    - gamerone-product-mockup-2.jpg
-  _key: text_image
-  _uid: text_image_1609172850875_327
-- 
-  image:
-    - gamerone-phone.jpg
-  _key: full_image
-  _uid: full_image_1685565489728_949
-- 
-  text: |
-    <video autoplay loop playsinline muted style="max-width: 100%;">
-    <source src="https://ldaniel.eu/media/pages/projects/gamer-one/2290697327-1603060032/animation-c-v03-6-compressed.mp4" type="video/mp4" />
-    </video>
-  full: 'true'
-  _key: text
-  _uid: text_1609172897077_327
+Builder: [{"content":{"text":"### Challenge\nThe gaming landscape is a patchwork of platforms, from streaming to game launchers to social networks where the conversation takes place. But for serious gamers, finding an all-in-one place to aggregate your team’s information is not easy.\n\nThat’s where Gamer One comes in — a clear social platform with a customisable interface, where gamers can feel at home.","image":["file://mJQYEeK4L7OTv2J9"]},"id":"53bb0229-4598-4227-a018-f00274302a5e","isHidden":false,"type":"gallery"},{"content":{"text":"(video: animation-a-v03-2-compressed.mp4 muted: true controls: false autoplay: true loop: true playsinline: true style: \"max-width: 100%\")","full":"true"},"id":"6dc11d66-eddf-49bf-945f-495148e83948","isHidden":false,"type":"text"},{"content":{"text":"### Brand\n\nBased on the primary brand value of **Convenience**, Gamer One has a clear visual representation that finds its origin in the geometric language of the UI design: a diverse collection of boxes with smooth rounding.\n\nThe secondary aspects of **Fun**, **Professional** and **Customisable** are reflected in the composition of theme-coloured boxes that feel like they can be dragged around to fit one's needs.\n\nFrom the logo to brand graphics, this is consistently applied. The colour scheme also reflects this: a confident blue that has been 'pulled' into a vibrant and lively direction.","image":["file://TN27jf3XzbDjid0v","file://lROmRHoUKF290GyQ","file://EvS8pSasUwMnYlEc","file://ij8y8j6G83zgIz30","file://QQRC14twJDYjeB8f"]},"id":"e0061107-cd45-4895-848c-f70e942a60d1","isHidden":false,"type":"gallery"},{"content":{"text":"(video: animation-b-v03-1-compressed.mp4 muted: true controls: false autoplay: true loop: true playsinline: true style: \"max-width: 100%\")","full":"true"},"id":"5b342a0b-1bb0-428e-a588-f2b13651617c","isHidden":false,"type":"text"},{"content":{"text":"### Interface\n\nWith a brand that is so firmly rooted in its users spending time on the platform itself, it came naturally to place this interface at the centre of the design. An adaptive interface that fits the user's need: dark or light mode, customisable theme colours, and personalisation through avatar and cover image.\n\nFor the initial iteration of the platform, the experience of browsing a user's profile page is key. This is where the content needs to shine.  We came up with a masonry layout where the individual tiles can be rearranged and resized at will. Together with the tab-based navigation on the page, this makes the profile page feel like a website homepage.","image":["file://wI4DcvQt2UP115OL","file://BcwO86GWywrGTfIC","file://fC3RyfkqmONW96dH","file://TH3IoG1sbvw227Jg"]},"id":"4430f19d-0fc2-496b-b807-98b40e65fbbf","isHidden":false,"type":"gallery"},{"content":{"image":["file://Cq5sPuv3NfydVC7c"]},"id":"530a9ea3-381c-4599-850e-bd9bab529c62","isHidden":false,"type":"image"},{"content":{"text":"(video: animation-c-v03-6-compressed.mp4 muted: true controls: false autoplay: true loop: true playsinline: true style: \"max-width: 100%\")","full":"true"},"id":"b158f9b6-cb09-4945-acdf-71e76d8ddb7b","isHidden":false,"type":"text"}]
 
 ----
 
@@ -119,7 +47,7 @@ Projecturl:
 
 ----
 
-Keyvisual: - key-visual-arena-montage.jpg
+Keyvisual: - file://aYYA0npIaSgAd5vB
 
 ----
 
@@ -127,7 +55,7 @@ Featured: true
 
 ----
 
-Featuredimage: - share-card-6.jpg
+Featuredimage: - file://wI4DcvQt2UP115OL
 
 ----
 
