@@ -10,9 +10,19 @@
     <?php // Key visual section ?>
     <?php if ($keyvisual = $page->keyvisual()->toFile()): ?>
       <section id="key_visual" class="block block--keyvisual">
-        <figure>
-          <img src="<?= $keyvisual->url() ?>" alt="" />
-        </figure>
+        <?php if ($keyvisual->type() == 'video') : ?>
+
+            <video autoplay loop muted playsinline style="max-width: 100%">
+                <source src="<?= $keyvisual->url() ?>" type="video/mp4">
+            </video>
+
+        <?php else : ?>
+
+            <figure>
+                <img src="<?= $keyvisual->url() ?>" alt="" />
+            </figure>
+
+        <?php endif ?>
       </section>
     <?php endif ?>
 

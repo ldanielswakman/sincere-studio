@@ -206,7 +206,7 @@ section {
   }
 }
 
-// Project: info section
+// Project page blocks
 .block {
   position: relative;
   padding: 3rem 1.25rem;
@@ -227,6 +227,7 @@ section {
     transform: translateY(0);
   }
 
+  // Project: info section
   &--info {
     padding-top: 1.75rem;
     background: $bg-day;
@@ -340,6 +341,9 @@ section {
     }
   }
 }
+
+
+// Project info main
 .project-info-main {
   & > * {
     transition: all cubic-bezier(0.5, 0, 0, 0.5) 1s;

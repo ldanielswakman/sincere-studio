@@ -10,6 +10,12 @@ columns:
       content:
         type: fields
         fields:
+        
+          keyvisual:
+            label: Key visual
+            help: Shown on project detail page just below opening info section
+            type: files
+            multiple: false
 
           builder:
             label: Blocks
@@ -167,11 +173,6 @@ columns:
           projecturl:
             label: Project URL
             type:  url
-          keyvisual:
-            label: Key visual
-            help: Shown on project detail page just below opening info section
-            type: files
-            multiple: false
 
           h_featured:
             label: Featured

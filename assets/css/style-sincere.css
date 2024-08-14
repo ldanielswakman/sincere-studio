@@ -1379,6 +1379,15 @@ blockquote + p, ul + p, ol + p, p + p, h3 + p, h4 + p {
   margin-top: 1rem;
 }
 
+.block ul, .block ol {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1.25rem;
+}
+.block ul li, .block ol li {
+  margin-bottom: 0.5rem;
+}
+
 figure img {
   display: inline-block;
 }

@@ -6,9 +6,21 @@
 
         <?php if ($images = $block->image()->toFiles()): ?>
             <?php foreach($images as $image): ?>
-                <figure>
-                    <img src="<?= $image->url() ?>" alt="" />
-                </figure>
+
+                <?php if ($image->type() == 'video') : ?>
+
+                    <video autoplay loop muted playsinline style="max-width: 100%">
+                        <source src="<?= $image->url() ?>" type="video/mp4">
+                    </video>
+
+                <?php else : ?>
+
+                    <figure>
+                        <img src="<?= $image->url() ?>" alt="" />
+                    </figure>
+
+                <?php endif ?>
+
             <?php endforeach ?>
         <?php endif ?>
     </div>
