@@ -70,11 +70,11 @@
                     $results = $site->find('projects')->search($project->title(), 'title');
                     $url = '';
                     if($project->linked()->value() !== 'none' && $project->linked_project()->isNotEmpty()) {
-                      $url = $project->linked_project()->toPage()->url();
+                      $url = $project->linked_project()->toPage()->url() . '?src=cv';
                     } elseif($project->linked()->value() !== 'none' && $project->linked_url()->isNotEmpty()) {
-                      $url = $project->linked_url();
+                      $url = $project->linked_url() . '?src=cv';
                     } elseif($project->linked()->value() !== 'none' && $results->count() > 0 && $results->first()->isNotEmpty()) {
-                      $url = $results->first()->url();
+                      $url = $results->first()->url() . '?src=cv';
                     }
 
                     snippet('cv-project-block', [
@@ -99,7 +99,7 @@
 
       <div class="nav-content" id="projects">
         <?php foreach($page->work_projects()->toPages() as $project): ?>
-          <a href="<?= $project->url() ?>" class="project-item project-item--linked">
+          <a href="<?= $project->url() . '?src=cv' ?>" class="project-item project-item--linked">
             <?php if($image = $project->featuredimage()->toFile()): ?>
               <figure class="project-image"><img src="<?= $image->url() ?>" alt="<?= $project->title() ?>" /></figure>
             <?php endif ?>

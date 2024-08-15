@@ -5,7 +5,15 @@
 
 <body class="<?= $page->template() ?>">
 
-  <a href="<?= ($page->url() != $site->url()) ? $site->url() : '#top' ?>" class="logo logo--init">
+  <?php
+  $logoTarget = "#top";
+  if (get('src') == 'cv') {
+    $logoTarget = page('cv')->url();
+  } else if ($page->url() != $site->url()) {
+    $logoTarget = $site->url();
+  }
+  ?>
+  <a href="<?= $logoTarget ?>" class="logo logo--init">
     <?php if($site->theme() == 'ldaniel') : ?>
       <?php snippet('svg/logo') ?>
     <?php elseif($site->theme() == 'sincere') : ?>

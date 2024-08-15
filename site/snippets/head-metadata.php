@@ -1,7 +1,7 @@
 <?php
 
 // Set title
-$short_title = r($page->isHomePage(), $site->title()->html(), '§ — ' . $page->title()->html());
+$short_title = r($page->isHomePage(), $site->title()->html(), $page->title()->html() . ' — §');
 $title = r($page->isHomePage(), $site->title()->html(), $page->title()->html() . ' — ' . $site->title()->html());
 
 // Set description
