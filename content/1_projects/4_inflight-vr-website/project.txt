@@ -2,19 +2,11 @@ Title: Inflight VR website
 
 ----
 
-Builder:
+Keyvisual: - file://RmSQY3IK3XSTmz7g
 
-- 
-  text: '## Storytelling for VR'
-  image:
-    - first-wireframe-mockup.png
-  _key: text_image
-  _uid: text_image_1609791863007_1025
-- 
-  image:
-    - mockup-desktop-light-dark.gif
-  _key: full_image
-  _uid: full_image_1609791157989_163
+----
+
+Builder: [{"content":{"text":"## Storytelling for VR\n\nIn the redesign of Inflight VR’s website, the focus was on crafting an immersive digital experience that echoes the limitless possibilities of virtual reality. The homepage was transformed into a vivid narrative adventure, where bold visuals and compelling content pull visitors into the story from the moment they arrive. Each side page spins off like an exciting new episode, diving deeper into the tech, partnerships, and success stories that define the brand.","image":["file://SPCu4z8lowggCHvr"]},"id":"3665c05a-5004-42b8-bcab-df1df96dd2bb","isHidden":false,"type":"gallery"},{"content":{"image":["file://xzMtJRQGY8VvT9Ky"]},"id":"cca1c2ca-3adc-44da-b7b0-29f5b6d6b8f9","isHidden":false,"type":"image"},{"content":{"text":"## Immersive mode\n\nThe website's colour palette has been dynamically designed to feature an \"Immersive mode\"; a vibrant take on a dark mode experience, letting the colourful gradient-based brand shine in both light and dark versions.","full":"false"},"id":"02d16536-5866-41cc-a746-562af60fdf69","isHidden":false,"type":"text"},{"content":{"image":["file://zqSr2oukq5sl510E"]},"id":"9bec6a5f-c967-4c0b-8dd3-2674182803f7","isHidden":false,"type":"image"}]
 
 ----
 
@@ -51,15 +43,11 @@ Projecturl: https://inflight-vr.com/
 
 ----
 
-Keyvisual: - inflight-vr-cover-image.jpg
-
-----
-
 Featured: true
 
 ----
 
-Featuredimage: - inflight-vr-website-mockup-light.jpg
+Featuredimage: - file://aJR91iq2vSD0EVsW
 
 ----
 
