@@ -12,12 +12,17 @@ tabs:
 					projects:
 						headline: Projects
 						type: pages
-						layout: cards
+						
+						layout: cardlets
+						text: "{{page.title}}"
+						info: "{{page.year}}"
+
 						parent: site.find('projects')
 						template: project
 						image:
 							query: page.featuredimage.toFile
 							back: white
+							cover: true
 
 			pages:
 				width: 1/2

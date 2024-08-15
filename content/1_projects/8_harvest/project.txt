@@ -2,79 +2,15 @@ Title: Harvest
 
 ----
 
-Builder: 
+Keyvisual: 
 
 ----
 
-Sections:
+Builder: [{"content":{"image":["file://mkA5GQzFySknIbSy"]},"id":"0381e3e4-103f-4afd-8e4c-1a5681ec823a","isHidden":false,"type":"image"},{"content":{"image":["file://khYISLjbdo5E9b7w"]},"id":"dd668dbe-5f78-49b2-80fc-f3d97745d765","isHidden":false,"type":"image"},{"content":{"text":"For a freshly starting ambitious performance marketing agency, we were asked to develop a brand identity and a one-pager website — in a very short timespan.\n\nThe brand workshop we organised was an essential tool to bring to the surface what kind of agency they wanted to be: New York, advertising, suit and tie + tongue in cheek — in other words, Mad Men (without the sexism). We came up with a minimal brand identity of sleek black with a golden touch and a strong and simple logo.\n\nIn collaboration with (link: https://nartadalladaku.com/ target:blank text: Narta Dalladaku).","full":"false"},"id":"e38ab251-b4dd-4046-a636-cfb951c0ed97","isHidden":false,"type":"text"},{"content":{"image":["file://a2PdsbaOBL2gFwIB"]},"id":"e0a9dbc0-33f7-4ff9-9c96-a05f53537f62","isHidden":false,"type":"image"},{"content":{"image":["file://mAYCPe6WNIS1ZfUc"]},"id":"2e67907c-1fe7-4172-95cd-9c860f3c425f","isHidden":false,"type":"image"},{"content":{"image":["file://F6L58JDmPZwslyzu"]},"id":"9d3267d7-53da-48ea-9c41-b21e057bac65","isHidden":false,"type":"image"},{"content":{"image":["file://Lg06QMDFXVdecryA"]},"id":"68d6ca4a-746f-4fb8-b4aa-be46311109d6","isHidden":false,"type":"image"}]
 
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - banner.jpg
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - web-mockup.jpg
-  bg_image_pos: ""
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: |
-    For a freshly starting ambitious performance marketing agency, we were asked to develop a brand identity and a one-pager website — in a very short timespan.
-    
-    The brand workshop we organised was an essential tool to bring to the surface what kind of agency they wanted to be: New York, advertising, suit and tie + tongue in cheek — in other words, Mad Men (without the sexism). We came up with a minimal brand identity of sleek black with a golden touch and a strong and simple logo.
-    
-    In collaboration with (link: http://www.maffindesign.com/ text: Narta Dalladaku).
-  col_2: ""
-  bg_colour: ""
-  bg_image: [ ]
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - logo.jpg
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - business-cards.jpg
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - services-visual.jpg
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - get-in-touch.jpg
-  bg_image_pos: ""
+----
+
+Sections: 
 
 ----
 
@@ -94,7 +30,12 @@ Tags: branding, graphic, visual design, web design, front-end
 
 ----
 
-Team: 
+Team:
+
+- 
+  name: Narta Dalladaku
+  note: Branding
+  link: https://nartadalladaku.com/
 
 ----
 
@@ -102,15 +43,11 @@ Projecturl: http://harvest-mobile.com/
 
 ----
 
-Keyvisual: 
-
-----
-
 Featured: false
 
 ----
 
-Featuredimage: - cover.jpg
+Featuredimage: - file://a3PSf3ackYd8U1eV
 
 ----
 

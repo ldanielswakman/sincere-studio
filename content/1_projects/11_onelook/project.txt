@@ -2,99 +2,15 @@ Title: OneLook Thesaurus
 
 ----
 
-Sections:
+Keyvisual: - file://9bSk2hVphsWVQNcZ
 
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - thinkin-bg.png
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - onelook-phones.png
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: |
-    > <span style="color: #035; font-size: 2rem;">Where is the filter button?</span>
-    
-    <span class="c-grey">
-    Redesign for a long-running thesaurus website. Focusing on the main search interaction and browsing the results, this little animation gives an indication of the new experience. With this redesign, the website went transformed from a technical website with hidden functionality to a comfortably usable tool.</span>
-    
-    (image: onelook-animation.gif  class: u-mt3 imgclass: u-boxshadow)
-  col_2: ""
-  bg_colour: ""
-  bg_image: [ ]
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: u-aligncenter c-white
-  col_1: |
-    <br><br>
-    > Qualitative & quantitative UX research by **(link: https://twitter.com/esinishi text: Esin Işık target: _blank class: c-white)**
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - onelook-post-its.jpg
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: |
-    <!--
-    > <span style="color: #035; font-size: 2rem;">From research to realisation</span>
-    <span class="c-grey">Text</span>
-    -->
-    
-    (image: onelook-research-principles.jpg)
-  col_2: ""
-  bg_colour: '#ffffff'
-  bg_image: [ ]
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: u-pb0
-  col_1: '<blockquote><p class="u-aligncenter c-white u-mb2" style="line-height: 2rem; max-width: 36rem; margin: 0 auto;">Moving an interface dating from the early days of the web to a future-proof experience</p></blockquote>'
-  col_2: ""
-  bg_colour: '#34495e'
-  bg_image: [ ]
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: '#34495e'
-  bg_image:
-    - onelook-old-to-new.png
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - onelook-device-mockup.jpg
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: u-aligncenter
-  col_1: '(link: http://www.onelook.com/thesaurus/beta text: Try the result out for yourself class: button button button--white target: _blank)'
-  col_2: ""
-  bg_colour: ""
-  bg_image: [ ]
-  bg_image_pos: ""
+----
+
+Builder: [{"content":{"image":["file://FqeWjzhLsIovdQh7"]},"id":"d24c0113-e74a-4006-9383-5e99941e50c6","isHidden":false,"type":"image"},{"content":{"text":"## Where is the filter button?\n\nRedesign for a long-running thesaurus website. Focusing on the central user journey of exploring search terms for alternatives, and jumping from branch to branch, the new redesign transformed the website from a technical database website with hidden functionality to a comfortably usable tool.\n\n(image: onelook-animation.gif  class: u-mt3 imgclass: u-boxshadow)","full":"false"},"id":"1278af9f-b1c6-46c8-a8f0-6266b5426263","isHidden":false,"type":"text"},{"content":{"image":["file://BhKqQ80wE34dfv3S"]},"id":"2a8928ba-c0ca-47d9-ada7-f896af4716c5","isHidden":false,"type":"image"},{"content":{"text":"<blockquote style=\"margin-bottom: -6rem\"><p class=\"u-aligncenter c-white u-mb2\" style=\"line-height: 2rem; max-width: 36rem; margin: 0 auto;\">Moving an interface dating from the early days of the web to a future-proof experience</p></blockquote>","full":"false"},"id":"c176f03a-9784-4643-a782-269814ef076d","isHidden":false,"type":"text"},{"content":{"image":["file://BXaIBBrKprwYgmJl"]},"id":"736b2de8-88e6-4652-8a41-5d9327278755","isHidden":false,"type":"image"},{"content":{"image":["file://EWEZla4oKlYT5Npz"]},"id":"a59f9639-2676-47c6-976a-43bd68493eb4","isHidden":false,"type":"image"}]
+
+----
+
+Sections:
 
 ----
 
@@ -106,7 +22,20 @@ Description: Re-imagining a classic thesaurus interface into a modern web experi
 
 ----
 
+Intro: 
+
+----
+
 Tags: interaction design, visual design, ui, ux, front-end
+
+----
+
+Team:
+
+- 
+  name: Esin Isik
+  note: UX Research
+  link: https://twitter.com/esinishi
 
 ----
 
@@ -118,7 +47,7 @@ Featured: false
 
 ----
 
-Featuredimage: - cover-image.jpg
+Featuredimage: - file://Zc04sbmnLNUVKLya
 
 ----
 

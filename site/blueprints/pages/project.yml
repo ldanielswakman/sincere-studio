@@ -75,7 +75,7 @@ columns:
                       back: white
 
           sections:
-            label: Sections (will be deprecated)
+            label: Sections (DO NOT USE)
             type: structure
             columns:
               col_1:

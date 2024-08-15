@@ -1,4 +1,4 @@
-Title: CV
+Title: Daniel Swakman
 
 ----
 
@@ -18,7 +18,7 @@ Hero-usps:
 
 - 
   image:
-    - icon-intersect.svg
+    - file://8uIHvTUstDrFdK6l
   title: Design
   description: >
     Meticulous craftsmanship, integrated
@@ -26,7 +26,7 @@ Hero-usps:
     drive my design approach.
 - 
   image:
-    - icon-command.svg
+    - file://nqRMLu0GxvWly9IG
   title: Tech
   description: >
     Tech-savvy and skilled at collaborating
@@ -34,7 +34,7 @@ Hero-usps:
     between design and code.
 - 
   image:
-    - icon-users.svg
+    - file://rvbasIfp9W97XGbV
   title: Leadership
   description: >
     With leadership experience, I grow teams
@@ -48,7 +48,7 @@ Work-xp:
 - 
   period: 2020-current
   img:
-    - monogram.png
+    - file://BHeu9nu6qxwwwqug
   title: '3 years as Head of Design at (link: https://nebenan.de text: nebenan.de target: blank)'
   employer: nebenan.de
   text: 'Growing and leading a team of 8 designers, establishing consistency in design language, initiated and led a comprehensive brand & product redesign, implemented Figma design system & migrated organisation'
@@ -57,35 +57,35 @@ Work-xp:
     - 
       title: Product Redesign
       image:
-        - nebenan-product.jpg
+        - file://1vxEOJW9NupNFe9d
       linked: Project
       linked_project: [ ]
       linked_url: ""
     - 
       title: Brand Redesign
       image:
-        - nebenan-brand.jpg
+        - file://Ru3qhDENNP8HQZi9
       linked: Project
       linked_project: [ ]
       linked_url: ""
     - 
       title: Landing Page System
       image:
-        - nebenan-lp.jpg
+        - file://g5TD0XXPFMNxXXTB
       linked: Project
       linked_project: [ ]
       linked_url: ""
     - 
       title: Brand Guide
       image:
-        - nebenan-brand-guide.jpg
+        - file://hFh016EBkeMU9mrH
       linked: URL
       linked_project: [ ]
       linked_url: https://brand-guide.nebenan.de/
     - 
       title: Design System
       image:
-        - nebenan-design-system.jpg
+        - file://BwODBcYKzwK8RzjT
       linked: Project
       linked_project: [ ]
       linked_url: >
@@ -93,7 +93,7 @@ Work-xp:
 - 
   period: 2017-2020
   img:
-    - sincere-monogram.png
+    - file://G51GdVpoA22Pykgk
   title: >
     3 years independent designer at Sincere
     Studio
@@ -108,44 +108,44 @@ Work-xp:
     - 
       title: one4good
       image:
-        - one4good-small.jpg
+        - file://e42RKKITqwTt0Ef9
       linked: Project
       linked_project:
-        - projects/one4good
+        - page://BkOhu0IQ3lZZlVPO
       linked_url: ""
     - 
       title: Gamer One
       image:
-        - gamerone.jpg
+        - file://rVZa1ONVBUvxTz7N
       linked: Project
       linked_project:
-        - projects/gamer-one
+        - page://cH97do6VThp0qptx
       linked_url: ""
     - 
       title: Poltio
       image:
-        - poltio.jpg
+        - file://eFBAaCBM4Bu2CGlE
       linked: Project
       linked_project: [ ]
       linked_url: ""
     - 
       title: Inflight VR
       image:
-        - inflight-vr.jpg
+        - file://UR17hh8onkxtjmCu
       linked: Project
       linked_project: [ ]
       linked_url: ""
     - 
       title: LuxFox
       image:
-        - luxfox.jpg
+        - file://2rG0oYMGVrOsXpTU
       linked: Project
       linked_project: [ ]
       linked_url: ""
 - 
   period: 2015-2018
   img:
-    - parasut-logo.png
+    - file://XoooBlOZxTn1XMBt
   title: 3 years Senior Designer at Paraşüt
   employer: Paraşüt
   text: 'Lead Mobile App Designer in growing team for accounting startup in Istanbul: joined startup at 10 employees, grew to 70 upon acquisition. In the team, I initiated and led the design and iterations of both iOS and Android apps. I also was responsible for the UX/UI design for countless features for the web application, as well as a modular marketing site/landing page solution'
@@ -154,22 +154,22 @@ Work-xp:
     - 
       title: Paraşüt Mobile App
       image:
-        - parasut-app-mockup.jpg
+        - file://qP0I9rJm7zV5Wbgc
       linked: Project
       linked_project:
-        - projects/parasut-mobile
+        - page://8lHk4kvhyR3rbLl6
       linked_url: ""
     - 
       title: Paraşüt Web
       image:
-        - parasut-web-mockup.jpg
+        - file://7ULtSEil98Nrt2Jv
       linked: none
       linked_project: [ ]
       linked_url: ""
 - 
   period: 2015-2018
   img:
-    - muhit-logo-on-white.png
+    - file://ZKaJQw2fOmNLWRkT
   title: '3 years aso co-founder & designer at Muhit'
   employer: Muhit
   text: 'non-profit platform for urban improvement, design, product & business development'
@@ -178,14 +178,14 @@ Work-xp:
     - 
       title: Muhit Platform
       image:
-        - muhit-cover-image.jpg
+        - file://AEOJvN6ILkdj1iBo
       linked: Project
       linked_project: [ ]
       linked_url: ""
 - 
   period: 2012-2015
   img:
-    - oefenweb-logo.png
+    - file://eGr4YobCnlFktE9N
   title: >
     3 years as Lead Designer at eLearning
     startup in Amsterdam
@@ -196,29 +196,29 @@ Work-xp:
     - 
       title: Game UI Design System
       image:
-        - game-ui-cover.jpg
+        - file://68UBOg0epxMbWyaM
       linked: Project
       linked_project:
-        - projects/math-garden
+        - page://IdnseyWEz0VlbjQR
       linked_url: ""
     - 
       title: 'Words & Birds'
       image:
-        - slide-wordsbirds.jpg
+        - file://PEppHoOLTZJjryhf
       linked: none
       linked_project: [ ]
       linked_url: ""
     - 
       title: Marketing Websites
       image:
-        - rekentuin-websites.jpg
+        - file://VznVHaNKBtB4Rva2
       linked: Project
       linked_project: [ ]
       linked_url: ""
 - 
   period: 2008-2023
   img:
-    - ldaniel-logo.png
+    - file://0FqBRlY2yiOfrBYZ
   title: + side projects and freelance
   employer: ldaniel.eu
   text: 'freelance graphic & web designer, branding & identity, front-end design, visualisations'
@@ -229,16 +229,16 @@ Work-xp:
 
 Work-projects:
 
-- projects/nebenan-design-system
-- projects/one4good
-- projects/gamer-one
-- projects/poltio
-- projects/muhit
-- projects/parasut-mobile
+- page://LDROCazS4e8VMEgo
+- page://BkOhu0IQ3lZZlVPO
+- page://cH97do6VThp0qptx
+- page://n0XN9d4BfziKpHXl
+- page://oNus8kc6as1De2bM
+- page://8lHk4kvhyR3rbLl6
 
 ----
 
-Cv-graph: - timeline.png
+Cv-graph: - file://HdeDn48M5mAOe5um
 
 ----
 
@@ -567,7 +567,7 @@ Text:
 
 ----
 
-Pdf-file: - ldanielswakman-cv.pdf
+Pdf-file: - file://fiYataH2u5nzQKoe
 
 ----
 
