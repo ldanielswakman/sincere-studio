@@ -1375,7 +1375,7 @@ p {
   line-height: 1.6em;
 }
 
-blockquote + p, ul + p, ol + p, p + p, h3 + p, h4 + p {
+blockquote + p, ul + p, ol + p, p + p, h2 + p, h3 + p, h4 + p {
   margin-top: 1rem;
 }
 
@@ -2593,6 +2593,11 @@ section.section--collapsed {
 .block--info {
   padding-top: 1.75rem;
   background: #fffefc;
+}
+@media screen and (min-width: 768px) {
+  .block--info {
+    padding-top: 3rem;
+  }
 }
 @media (prefers-color-scheme: dark) {
   .block--info {

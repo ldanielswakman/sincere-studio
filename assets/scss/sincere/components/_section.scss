@@ -232,6 +232,10 @@ section {
     padding-top: 1.75rem;
     background: $bg-day;
 
+    @include tabletAndUp {
+      padding-top: 3rem;
+    }
+
     @include darkMode {
       background: $bg-night;
     }

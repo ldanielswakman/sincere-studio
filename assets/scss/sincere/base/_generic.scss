@@ -123,7 +123,7 @@ p + blockquote {
 p {
   line-height: 1.6em;
 }
-blockquote, ul, ol, p, h3, h4 {
+blockquote, ul, ol, p, h2, h3, h4 {
   & + p {
     margin-top: 1rem;
   }
