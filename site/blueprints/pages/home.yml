@@ -100,14 +100,9 @@ fields:
         fields:
 
           recent:
+            extends: fields/project-tiles
             label: Recent work
-            type: pages
-            query: site.find('projects').children.listed
-            layout: cards
-            image:
-              back: white
             max: 5
-            size: tiny
 
           title:
             label: >

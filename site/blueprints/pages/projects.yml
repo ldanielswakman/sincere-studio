@@ -1,5 +1,6 @@
 title: Projects
 preset: page
+icon: grid
 
 pages:
   template: project
@@ -8,18 +9,10 @@ files: false
 sections:
 
   projects:
-    headline: Projects
-    type: pages
-    layout: cardlets
+    extends: fields/project-tiles
     create: project
     template: project
-    limit: 1000
-    text: "{{page.title}}"
-    info: "{{page.year}}"
-    image:
-      back: white
-      query: page.featuredimage.toFile
-      cover: true
+    # limit: 1000
 
   text:
     type: fields
