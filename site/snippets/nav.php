@@ -11,7 +11,8 @@
 
       <ul<?= e($hasActive, ' class="hasActive"') ?>>
         <?php foreach($pages->listed() as $p): ?>
-        <li><a <?php e($p->isOpen(), ' class="isActive"') ?> href="<?= $p->url() ?>"><?= strtolower($p->title()->html()) ?></a></li>
+          <?php $title = ($p->slug() == "cv") ? $p->slug() : strtolower($p->title()->html()) ?>
+          <li><a <?php e($p->isOpen(), ' class="isActive"') ?> href="<?= $p->url() ?>"><?= $title ?></a></li>
         <?php endforeach ?>
         <li><a href="mailto:hi@sincere.studio" target="_blank" class="button button--outline button--subtle">get in touch</a></li>
       </ul>

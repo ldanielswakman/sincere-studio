@@ -68,9 +68,19 @@ section {
     }
   }
   &.section--homeintro {
-    min-height: 100vh;
-    @include prefix(transition, all 2s cubic-bezier(0.5, 0, 0.5, 1));
-    @include prefix(transition-delay, 1s);
+    min-height: 50vh;
+
+    & ~ section {
+      transform: translateY(40vh);
+      transition: opacity 0.6s linear, transform 1.6s cubic-bezier(0.65, 0, 0.35, 1);
+      transition-delay: 0.6s;
+      opacity: 0;
+
+      .isLoaded & {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
   }
   &.section--stream_of_words,
   &.section--stream_of_images {
@@ -88,32 +98,30 @@ section {
   }
 }
 
-.section--featured {
-  padding: 0;
+.featured-grid {
+  display: grid;
+  gap: 4rem;
+  max-width: 80rem;
+  margin: 0 auto;
 
-  .featured-grid {
-    display: grid;
-    gap: 4rem;
-    max-width: 80rem;
-    margin: 0 auto;
+  @include tabletAndUp {
+    grid-template-columns: 1fr 1fr;
+  }
 
-    @include tabletAndUp {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    & > * {
-      &:nth-child(2n) {
-        @include tabletAndUp {
-          position: relative;
-          transform: translateY(-50%);
-        }
+  & > * {
+    &:nth-child(2n) {
+      @include tabletAndUp {
+        position: relative;
+        transform: translateY(-30%);
       }
     }
   }
+
   .item {
     display: block;
     box-shadow: 0 -0.5rem 0 rgba($bluedull, 0);
     transition: all 0.3s ease;
+    border-radius: 0.75rem;
 
     figure {
       position: relative;
@@ -130,15 +138,12 @@ section {
       }
     }
     &:hover {
-      transform: translateY(-2px);
+      transform: translateY(-0.25rem);
       box-shadow: 0 0.75rem 2.5rem rgba($bluedull, 0.15);
     }
   }
 }
 
-.isLoaded section.section--homeintro {
-  min-height: 50vh;
-}
 .section-undo-p {
   width: calc(100% + #{$sectionpadding * 2});
   margin-left: -#{$sectionpadding};
@@ -206,7 +211,7 @@ section {
   }
 }
 
-// Project: info section
+// Project page blocks
 .block {
   position: relative;
   padding: 3rem 1.25rem;
@@ -227,14 +232,14 @@ section {
     transform: translateY(0);
   }
 
+  // Project: info section
   &--info {
     padding-top: 1.75rem;
-    // padding: 1.25rem;
     background: $bg-day;
 
-    // @include tabletAndUp {
-    //   padding: 5rem 2rem;
-    // }
+    @include tabletAndUp {
+      padding-top: 3rem;
+    }
 
     @include darkMode {
       background: $bg-night;
@@ -315,7 +320,7 @@ section {
     }
   }
 
-  &--text_image {
+  &--gallery {
     .block__text,
     .block__image {
       @include tabletAndUp {
@@ -345,6 +350,9 @@ section {
     }
   }
 }
+
+
+// Project info main
 .project-info-main {
   & > * {
     transition: all cubic-bezier(0.5, 0, 0, 0.5) 1s;
@@ -374,8 +382,12 @@ section {
   margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: $grey-night;
+  color: $grey-day;
   gap: 1rem;
+
+  @include darkMode {
+    color: $grey-night;
+  }
 
   @include tabletAndUp {
     flex-direction: column;
@@ -439,11 +451,7 @@ section {
     font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 0.05rem;
-    color: $grey-subtle-day;
-
-    @include darkMode {
-      color: $grey-subtle-night;
-    }
+    opacity: 0.75;
   }
   .year {
     margin-top: 0.25rem;

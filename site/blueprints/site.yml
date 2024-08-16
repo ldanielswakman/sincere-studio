@@ -10,14 +10,7 @@ tabs:
 				width: 1/2
 				sections:
 					projects:
-						headline: Projects
-						type: pages
-						layout: cards
-						parent: site.find('projects')
-						template: project
-						image:
-							query: page.featuredimage.toFile
-							back: white
+            extends: fields/project-tiles
 
 			pages:
 				width: 1/2
@@ -27,11 +20,17 @@ tabs:
 						type: pages
 						layout: list
 						status: listed
+						image:
+							back: white
+							query: icon
 					unlisted:
 						headline: Other Pages
 						type: pages
 						layout: list
 						status: unlisted
+						image:
+							back: white
+							query: icon
 					draft:
 						headline: Draft Pages
 						type: pages
@@ -42,6 +41,9 @@ tabs:
 							- projects
 							- cv
 							- articles
+						image:
+							back: white
+							query: icon
 
 	options:
 		label: Site options

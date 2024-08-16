@@ -1,0 +1,17 @@
+# Basics
+label: Projects
+type: pages
+query: site.find('projects').children
+
+# Create
+parent: site.find('projects')
+template: project
+
+# Displaying projects in cardlets
+layout: cardlets
+text: "{{page.title}}"
+info: "{{page.year}}"
+image:
+  back: white
+  query: page.featuredimage.toFile
+  cover: true

@@ -2,59 +2,15 @@ Title: Poltio
 
 ----
 
-Builder:
-
-- 
-  image:
-    - project-homepage.jpg
-  _key: full_image
-  _uid: full_image_1690919791560_781
+Keyvisual: - file://Si6bpsDdPW2Ia5rK
 
 ----
 
-Sections:
+Builder: [{"content":{"text":"## Challenge\n\nIn their search for product-market-fit, Poltio asked me to help pivot their product; away from their original idea of a standalone social network for polls and questions, towards an embedded engagement solution that any website could plug in and play. By focusing on a simple and smooth interaction concept, founded in a small set of essential components, we were able to engage visitors early-on.\n\nOver a time span of about 10 years, my role in the company has grown to a strategic advisor and lead voice on design. I work directly with the founding team (CEO, CTO, COO) on steering strategy and prioritising design tasks, steering for maximum business impact.","image":["file://vBCnwg5fcqMdMAXy"]},"id":"4f66d74c-8f3b-49c5-aab3-4e533b1c8909","isHidden":false,"type":"gallery"},{"content":{"text":"## Research & Benchmark\n\nThe old user interface had several issues that hindered its effectiveness. The low contrast of elements and an illegible typeface at smaller sizes make it difficult for users to read and navigate. Additionally, the design lacks any sense of ‘fun’ or engagement, while the oversized cards, at 1.5 times the viewport height, lead to clumsy scrolling. The main interaction, such as voting, is not prominent, reducing its usability. Moreover, the absence of animations and stateful transitions results in a disjointed experience, highlighting the need for a more cohesive and user-friendly redesign.​\n<br /><br />\n(image: old-platform-ui.png)","full":"false"},"id":"29d9accf-c6a6-465b-8eba-c3b1ba48de57","isHidden":false,"type":"text"},{"content":{"text":"## Concept\n\n### 1. Expressive and Legible Design\n- *Icons*: Enhance expressiveness and inject more fun into the UI with visually engaging icons.\n- *Typography*: Prioritize legibility by using a clearer, more readable typeface, especially at smaller sizes.\n\n### 2. Card Elements: Memorable and Informative\n- *Memorable & Legible*: Design cards to be visually distinctive and easy to read, ensuring information is retained.\n- *Feedforward & Feedback*: Provide clear indications of actions and their outcomes, improving user understanding.\n\n### 3. Guided and Clear Card Layout\n- *Hierarchy*: Establish a better visual hierarchy in the card layout, guiding users’ focus through the content.\n- *Contrast* and Order: Improve UI contrast to create clear distinctions, emphasizing key elements like questions and vote buttons.\n\n### 4. Enhanced Interaction Flow\n- *Clickable Actions*: Make vote buttons more prominent and clickable, while differentiating between primary and secondary actions.\n- *Visual and Sequential Clarity*: Represent results more effectively, guide users through the sequence of actions, and promote the next steps after voting to maintain engagement.\n\n(image: concept-diagram.png)","full":"false"},"id":"2aebf830-6fae-4c9b-8ea1-ee8ca358b46c","isHidden":false,"type":"text"},{"content":{"image":["file://XWuLN2hpVhEKImN2"]},"id":"777c0a1d-d93f-40f9-962a-113db86e9c89","isHidden":false,"type":"image"},{"content":{"text":"## Marketing Website + Landing Pages\n\nTo complement the product design on the embed experience, we reworked the communication language and marketing website, in line with the new product promise. As primarily B2B product, we focused on a functional aesthetic and feature-focused communication, combined with subtle colour hues to reflect the positive engagement that the embed experience brings. To illustrate key features, I developed a language of simple animations on abstract devices, that can be used both for website as well as pitches, ads, and other promotional material.","full":"false"},"id":"877787d0-b0ea-43cc-a365-c80569dc021c","isHidden":false,"type":"text"},{"content":{"image":["file://oH9y1fu2d5Hua6Bj"]},"id":"786d5ce5-52cd-459e-980d-3bdfbe6e004b","isHidden":false,"type":"image"},{"content":{"text":"(video: create-content-animation.mp4 muted: true controls: false autoplay: true loop: true playsinline: true style: \"max-width: 100%\")\n<br /><br />\n(video: vote-user-animation.mp4 muted: true controls: false autoplay: true loop: true playsinline: true style: \"max-width: 100%\")","full":"false"},"id":"6534fc6e-bad4-43e4-bcae-16d9cff52cb7","isHidden":false,"type":"text"},{"content":{"image":["file://zuU6s7TSw2gIWIPT"]},"id":"51d37b26-3025-4293-874e-0fa415e61e2c","isHidden":false,"type":"image"},{"content":{"text":"<div class=\"u-aligncenter\" markdown=\"1\">(Project ongoing; more detailed case study upon request)</div>","full":"false"},"id":"b04b964c-3688-4bff-af94-e9b4722eb6c3","isHidden":false,"type":"text"}]
 
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - project-logo-image.jpg
-  bg_image_pos: full
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - project-homepage.jpg
-  bg_image_pos: full
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: |
-    <video autoplay loop playsinline muted style="max-width: 100%;">
-    <source src="https://ldaniel.eu/media/pages/projects/poltio/3955006866-1583406325/create-content-animation.mp4" type="video/mp4" />
-    </video>
-    
-    <video autoplay loop playsinline muted style="max-width: 100%;">
-    <source src="https://ldaniel.eu/media/pages/projects/poltio/3955006866-1583406325/create-content-animation.mp4" type="video/mp4" />
-    </video>
-  col_2: ""
-  bg_colour: fff
-  bg_image: [ ]
-  bg_image_pos: right
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: '<div class="u-aligncenter" markdown="1">(Project recently finished; more detailed case study upon request)</div>'
-  col_2: ""
-  bg_colour: ""
-  bg_image: [ ]
-  bg_image_pos: full
+----
+
+Sections: 
 
 ----
 
@@ -62,7 +18,7 @@ Year: 2019-current
 
 ----
 
-Description: Re-imagined visual language for an audience engagement tool
+Description: Strategic design of product experience and marketing language for an audience engagement tool
 
 ----
 
@@ -74,7 +30,12 @@ Tags: branding, visual design, ux, ui, front-end, design system
 
 ----
 
-Team: 
+Team:
+
+- 
+  name: Brett Myers
+  note: Landing Page design
+  link: https://brettbrettbrett.com/
 
 ----
 
@@ -82,15 +43,11 @@ Projecturl: https://www.poltio.com
 
 ----
 
-Keyvisual: 
-
-----
-
 Featured: true
 
 ----
 
-Featuredimage: - project-cover-image.jpg
+Featuredimage: - file://Si6bpsDdPW2Ia5rK
 
 ----
 

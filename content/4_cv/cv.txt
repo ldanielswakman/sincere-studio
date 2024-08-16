@@ -1,0 +1,574 @@
+Title: Daniel Swakman
+
+----
+
+Hero-title: Daniel Swakman
+
+----
+
+Hero-subtitle: Digital Design Leader  •  Berlin, Germany
+
+----
+
+Hero-description: I’m a designer with 10+ years of experience, working with startups and small businesses that want to innovate and create positive impact. I focus on:
+
+----
+
+Hero-usps:
+
+- 
+  image:
+    - file://8uIHvTUstDrFdK6l
+  title: Design
+  description: >
+    Meticulous craftsmanship, integrated
+    brand thinking, and an eye for detail
+    drive my design approach.
+- 
+  image:
+    - file://nqRMLu0GxvWly9IG
+  title: Tech
+  description: >
+    Tech-savvy and skilled at collaborating
+    with development teams, I bridge the gap
+    between design and code.
+- 
+  image:
+    - file://rvbasIfp9W97XGbV
+  title: Leadership
+  description: >
+    With leadership experience, I grow teams
+    and spearhead design change within
+    organisations.
+
+----
+
+Work-xp:
+
+- 
+  period: 2020-current
+  img:
+    - file://BHeu9nu6qxwwwqug
+  title: '3 years as Head of Design at (link: https://nebenan.de text: nebenan.de target: blank)'
+  employer: nebenan.de
+  text: 'Growing and leading a team of 8 designers, establishing consistency in design language, initiated and led a comprehensive brand & product redesign, implemented Figma design system & migrated organisation'
+  url: ""
+  projects:
+    - 
+      title: Product Redesign
+      image:
+        - file://1vxEOJW9NupNFe9d
+      linked: Project
+      linked_project: [ ]
+      linked_url: ""
+    - 
+      title: Brand Redesign
+      image:
+        - file://Ru3qhDENNP8HQZi9
+      linked: Project
+      linked_project: [ ]
+      linked_url: ""
+    - 
+      title: Landing Page System
+      image:
+        - file://g5TD0XXPFMNxXXTB
+      linked: Project
+      linked_project: [ ]
+      linked_url: ""
+    - 
+      title: Brand Guide
+      image:
+        - file://hFh016EBkeMU9mrH
+      linked: URL
+      linked_project: [ ]
+      linked_url: https://brand-guide.nebenan.de/
+    - 
+      title: Design System
+      image:
+        - file://BwODBcYKzwK8RzjT
+      linked: Project
+      linked_project: [ ]
+      linked_url: >
+        https://sincere.studio/projects/nebenan-design-system
+- 
+  period: 2017-2020
+  img:
+    - file://G51GdVpoA22Pykgk
+  title: >
+    3 years independent designer at Sincere
+    Studio
+  employer: Sincere Studio
+  text: >
+    Independent design studio, working with
+    startups and small businesses on
+    impactful digital design. Collaborations
+    with other freelancers as collective
+  url: https://sincere.studio/
+  projects:
+    - 
+      title: one4good
+      image:
+        - file://e42RKKITqwTt0Ef9
+      linked: Project
+      linked_project:
+        - page://BkOhu0IQ3lZZlVPO
+      linked_url: ""
+    - 
+      title: Gamer One
+      image:
+        - file://rVZa1ONVBUvxTz7N
+      linked: Project
+      linked_project:
+        - page://cH97do6VThp0qptx
+      linked_url: ""
+    - 
+      title: Poltio
+      image:
+        - file://eFBAaCBM4Bu2CGlE
+      linked: Project
+      linked_project: [ ]
+      linked_url: ""
+    - 
+      title: Inflight VR
+      image:
+        - file://UR17hh8onkxtjmCu
+      linked: Project
+      linked_project: [ ]
+      linked_url: ""
+    - 
+      title: LuxFox
+      image:
+        - file://2rG0oYMGVrOsXpTU
+      linked: Project
+      linked_project: [ ]
+      linked_url: ""
+- 
+  period: 2015-2018
+  img:
+    - file://XoooBlOZxTn1XMBt
+  title: 3 years Senior Designer at Paraşüt
+  employer: Paraşüt
+  text: 'Lead Mobile App Designer in growing team for accounting startup in Istanbul: joined startup at 10 employees, grew to 70 upon acquisition. In the team, I initiated and led the design and iterations of both iOS and Android apps. I also was responsible for the UX/UI design for countless features for the web application, as well as a modular marketing site/landing page solution'
+  url: http://www.parasut.com/
+  projects:
+    - 
+      title: Paraşüt Mobile App
+      image:
+        - file://qP0I9rJm7zV5Wbgc
+      linked: Project
+      linked_project:
+        - page://8lHk4kvhyR3rbLl6
+      linked_url: ""
+    - 
+      title: Paraşüt Web
+      image:
+        - file://7ULtSEil98Nrt2Jv
+      linked: none
+      linked_project: [ ]
+      linked_url: ""
+- 
+  period: 2015-2018
+  img:
+    - file://ZKaJQw2fOmNLWRkT
+  title: '3 years aso co-founder & designer at Muhit'
+  employer: Muhit
+  text: 'non-profit platform for urban improvement, design, product & business development'
+  url: projects/muhit
+  projects:
+    - 
+      title: Muhit Platform
+      image:
+        - file://AEOJvN6ILkdj1iBo
+      linked: Project
+      linked_project: [ ]
+      linked_url: ""
+- 
+  period: 2012-2015
+  img:
+    - file://eGr4YobCnlFktE9N
+  title: >
+    3 years as Lead Designer at eLearning
+    startup in Amsterdam
+  employer: Oefenweb.nl
+  text: 'Lead Designer for e-learning gaming applications (team of 3). Translating user needs for elementary school children (~300k daily users). Led comprehensive interface overhaul of game UI, brand streamlining & marketing website'
+  url: http://www.oefenweb.nl
+  projects:
+    - 
+      title: Game UI Design System
+      image:
+        - file://68UBOg0epxMbWyaM
+      linked: Project
+      linked_project:
+        - page://IdnseyWEz0VlbjQR
+      linked_url: ""
+    - 
+      title: 'Words & Birds'
+      image:
+        - file://PEppHoOLTZJjryhf
+      linked: none
+      linked_project: [ ]
+      linked_url: ""
+    - 
+      title: Marketing Websites
+      image:
+        - file://VznVHaNKBtB4Rva2
+      linked: Project
+      linked_project: [ ]
+      linked_url: ""
+- 
+  period: 2008-2023
+  img:
+    - file://0FqBRlY2yiOfrBYZ
+  title: + side projects and freelance
+  employer: ldaniel.eu
+  text: 'freelance graphic & web designer, branding & identity, front-end design, visualisations'
+  url: http://ldaniel.eu/
+  projects: [ ]
+
+----
+
+Work-projects:
+
+- page://LDROCazS4e8VMEgo
+- page://BkOhu0IQ3lZZlVPO
+- page://cH97do6VThp0qptx
+- page://n0XN9d4BfziKpHXl
+- page://oNus8kc6as1De2bM
+- page://8lHk4kvhyR3rbLl6
+
+----
+
+Cv-graph: - file://HdeDn48M5mAOe5um
+
+----
+
+Education:
+
+- 
+  period: "2015"
+  img: [ ]
+  title: Graphic Design Summer School
+  employer: ""
+  text: >
+    Central Saint Martin’s –University
+    of the Arts London
+  url: ""
+  projects: [ ]
+- 
+  period: "2014"
+  img: [ ]
+  title: Gamification Certificate
+  employer: ""
+  text: >
+    Online course by University of
+    Pennsylvania
+  url: ""
+  projects: [ ]
+- 
+  period: 2007-2011
+  img: [ ]
+  title: >
+    Dual Master’s Degree in Architecture
+    and Urbanism
+  employer: ""
+  text: >
+    Faculty of Architecture, TU Delft
+    graduation project ‘I solemnly pledge
+    to public space’
+  url: >
+    architecture/i-solemnly-pledge-to-public-space
+  projects: [ ]
+- 
+  period: "2008"
+  img: [ ]
+  title: 'Study Abroad - Architecture'
+  employer: ""
+  text: South Bank University, London, UK
+  url: ""
+  projects: [ ]
+- 
+  period: 2004-2007
+  img: [ ]
+  title: Bachelor’s Degree
+  employer: ""
+  text: Faculty of Architecture, TU Delft
+  url: ""
+  projects: [ ]
+- 
+  period: 1998-2004
+  img: [ ]
+  title: VWO diploma (gymnasium)
+  employer: ""
+  text: Vossius Gymnasium, Amsterdam
+  url: ""
+  projects: [ ]
+
+----
+
+Personal:
+
+- 
+  period: name
+  img: [ ]
+  title: L Daniel Swakman
+  employer: ""
+  text: ""
+  url: ""
+  projects: [ ]
+- 
+  period: date of birth
+  img: [ ]
+  title: 6 October 1986
+  employer: ""
+  text: ""
+  url: ""
+  projects: [ ]
+- 
+  period: place of birth
+  img: [ ]
+  title: Amsterdam, NL
+  employer: ""
+  text: ""
+  url: ""
+  projects: [ ]
+- 
+  period: location
+  img: [ ]
+  title: Berlin, DE
+  employer: ""
+  text: ""
+  url: ""
+  projects: [ ]
+- 
+  period: nationality
+  img: [ ]
+  title: Dutch
+  employer: ""
+  text: ""
+  url: ""
+  projects: [ ]
+
+----
+
+Languages:
+
+- 
+  period: ""
+  img: [ ]
+  title: English 🇬🇧
+  employer: ""
+  text: fluent
+  url: ""
+  projects: [ ]
+- 
+  period: ""
+  img: [ ]
+  title: Dutch 🇳🇱
+  employer: ""
+  text: fluent, native
+  url: ""
+  projects: [ ]
+- 
+  period: ""
+  img: [ ]
+  title: Turkish 🇹🇷
+  employer: ""
+  text: good
+  url: ""
+  projects: [ ]
+- 
+  period: ""
+  img: [ ]
+  title: German 🇩🇪
+  employer: ""
+  text: good
+  url: ""
+  projects: [ ]
+- 
+  period: ""
+  img: [ ]
+  title: French 🇫🇷
+  employer: ""
+  text: acceptable
+  url: ""
+  projects: [ ]
+
+----
+
+Skills:
+
+- 
+  period: visual
+  img: [ ]
+  title: ""
+  employer: ""
+  text: >
+    Sketch, Adobe Illustrator, Photoshop,
+    Indesign, Premiere, Fireworks, Invision,
+    Framer.js
+  url: ""
+  projects: [ ]
+- 
+  period: code
+  img: [ ]
+  title: ""
+  employer: ""
+  text: >
+    HTML(5), CSS(3), LESS/SASS, Javascript/
+    jQuery, gulp, PHP, Flash/Actionscript,
+    Git
+  url: ""
+  projects: [ ]
+- 
+  period: product
+  img: [ ]
+  title: ""
+  employer: ""
+  text: >
+    design thinking, brainstorming, brand
+    strategy, product management
+  url: ""
+  projects: [ ]
+- 
+  period: 3D
+  img: [ ]
+  title: ""
+  employer: ""
+  text: >
+    Rhino, Maya, 3Ds Max, Sketchup,
+    Pepakura, Vray, mental ray
+  url: ""
+  projects: [ ]
+- 
+  period: CAD
+  img: [ ]
+  title: ""
+  employer: ""
+  text: >
+    AutoCAD, Autodesk Revit (basic),
+    Vectorworks (basic)
+  url: ""
+  projects: [ ]
+
+----
+
+Interests:
+
+- 
+  period: design
+  img: [ ]
+  title: "Digital design as a responsive, context-sensitive solution that suits user's needs."
+  employer: ""
+  text: >
+    The main passion in my work lies in the
+    visual and graphic design; I deeply care
+    about how aspects like layout,
+    legibility, colours, typography and
+    contrast work together to form a well
+    designed environment, whether that’s
+    in a virtual 3D environment, a voice
+    operated interface, a web game on a
+    10” tablet or in print. The fluency
+    with creative software as well as
+    front-end programming languages (html,
+    css, javascript) helps me to indeed
+    realise this consistency of design.
+  url: ""
+  projects: [ ]
+- 
+  period: visual vs code
+  img: [ ]
+  title: 'Code is the grain and material of the web & app world'
+  employer: ""
+  text: "I believe that working in digital design means an inherent link between visual/interaction design and the code that makes this happen — much like a carpenter's knowledge & control of wood type and behaviour. Design < > code"
+  url: ""
+  projects: [ ]
+- 
+  period: responsive
+  img: [ ]
+  title: Orchestration of dynamic elements
+  employer: ""
+  text: "Designing for the web and mobile apps can no longer be seen as an exercise on a fixed canvas where one lays out objects. Instead, it is an orchestration of dynamic elements, that can have different states & behaviours. Responsive design is a key tool in this orchestration — I've never designed a project without it."
+  url: ""
+  projects: [ ]
+- 
+  period: architectural vs graphic
+  img: [ ]
+  title: 'Shaping the world we experience & interact with'
+  employer: ""
+  text: 'I believe the values and considerations that are concerned with visual design are just as present in architecture: colour, proportions, materials, tactility, usability, and the continuous process of revision in search for true quality.'
+  url: ""
+  projects: [ ]
+- 
+  period: other
+  img: [ ]
+  title: Keep exploring
+  employer: ""
+  text: 'Outside of this design spectrum I occupy myself with social innovation, infographics & visualisation, travelling, coffee and making music.'
+  url: ""
+  projects: [ ]
+
+----
+
+Preferences:
+
+- 
+  period: coffee
+  img: [ ]
+  title: Double espresso
+  employer: ""
+  text: ""
+  url: ""
+  projects: [ ]
+- 
+  period: code editor
+  img: [ ]
+  title: Visual Studio Code
+  employer: ""
+  text: ""
+  url: ""
+  projects: [ ]
+- 
+  period: workspace
+  img: [ ]
+  title: coworking spaces
+  employer: ""
+  text: ""
+  url: ""
+  projects: [ ]
+- 
+  period: design tool
+  img: [ ]
+  title: Figma
+  employer: ""
+  text: ""
+  url: ""
+  projects: [ ]
+- 
+  period: backpack
+  img: [ ]
+  title: Wandrd Prvke
+  employer: ""
+  text: ""
+  url: ""
+  projects: [ ]
+- 
+  period: Typeface
+  img: [ ]
+  title: TT Commons
+  employer: ""
+  text: (for now)
+  url: ""
+  projects: [ ]
+
+----
+
+Text: 
+
+----
+
+Pdf-file: - file://fiYataH2u5nzQKoe
+
+----
+
+Uuid: 7gLZ2lPbf37qyV3x

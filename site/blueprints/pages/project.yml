@@ -7,17 +7,26 @@ columns:
   - width: 2/3
     sticky: true    
     sections:
-      meta:
+      content:
         type: fields
         fields:
+        
+          keyvisual:
+            label: Key visual
+            help: Shown on project detail page just below opening info section
+            type: files
+            multiple: false
 
           builder:
             label: Blocks
-            type: builder
+            type: blocks
             fieldsets:
             
-              text:
+              - type: text
                 name: Text
+                wysiwyg: true
+                preview: fields
+                icon: paragraph
                 fields:
                   text:
                     label: Text
@@ -30,8 +39,11 @@ columns:
                       - "Default width"
                       - "Fullscreen"
             
-              text_image:
-                name: Text + Image
+              - type: gallery
+                name: Text + Image(s)
+                wysiwyg: true
+                preview: fields
+                icon: dashboard
                 fields:
                   text:
                     label: Text
@@ -46,7 +58,11 @@ columns:
                     image:
                       back: white
             
-              full_image:
+              - type: image
+                name: Full-width Image
+                wysiwyg: true
+                preview: fields
+                icon: image
                 name: Full-width Image
                 fields:
                   image:
@@ -59,7 +75,7 @@ columns:
                       back: white
 
           sections:
-            label: Sections (will be deprecated)
+            label: Sections (DO NOT USE)
             type: structure
             columns:
               col_1:
@@ -110,7 +126,7 @@ columns:
   - width: 1/3
     sticky: true
     sections:
-      content:
+      meta:
         type: fields
         fields:
 
@@ -157,10 +173,6 @@ columns:
           projecturl:
             label: Project URL
             type:  url
-          keyvisual:
-            label: Key visual
-            type: files
-            multiple: false
 
           h_featured:
             label: Featured

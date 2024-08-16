@@ -2,55 +2,7 @@ Title: one4good
 
 ----
 
-Builder:
-
-- 
-  text: |
-    ### Challenge
-    In 2021, I got approached by one4good to help shape a new digital-first donation platform, which a very simple concept: a curated selection of social good projects for positive impact, where users can subscribe to for a fixed monthly amount. They needed help to shape the initial brand, then landing page, and ultimately the product design of the actual platform.
-  full: 'false'
-  _key: text
-  _uid: text_1684494517542_601
-- 
-  image:
-    - file://hriCYQNqYZaJhNwQ
-  _key: full_image
-  _uid: full_image_1684494697247_601
-- 
-  text: 'Together, we shaped a multi-phase project, where we took the simple and clearly design logo and colour palette (by (link: https://franromero.es/ text: Fran Romero)), and figured out the full visual language that will help bring it to life. This resulted in a successful (link: https://www.startnext.com/one4good text: crowdfunding campaign) and a functional (link: https://www.one4good.com/en text: web platform) (also mobile-optimised and progressive web app).'
-  image:
-    - file://wYak5AgTUZcU5rgF
-    - file://GomQ3lUcR27Hr88E
-    - file://u8cNxihGqf2L4ezV
-  _key: text_image
-  _uid: text_image_1684495063025_601
-- 
-  image:
-    - file://Itchixk87Uwsr5OO
-  _key: full_image
-  _uid: full_image_1685569653772_7220
-- 
-  text: |
-    ### Design System
-    In order to set the foundations for a product language that could be iterated on and evolve, a flexible technology setup of a responsive web application was chosen (PWA). For this application, we designed a simple and effective design system, relying on a small set of essential patterns throughout the app: a tile-based overview, a versatile list view, and a media-rich detail page.
-  full: 'false'
-  _key: text
-  _uid: text_1684495090627_601
-- 
-  image:
-    - file://ZpvGv2tGEwcg8QEX
-  _key: full_image
-  _uid: full_image_1715816876588_947
-- 
-  image:
-    - file://D9D6ysQPtaAjFvRr
-  _key: full_image
-  _uid: full_image_1715817443247_947
-- 
-  image:
-    - file://BEksnyWY0KPAFrYk
-  _key: full_image
-  _uid: full_image_1685569638624_7220
+Builder: [{"content":{"text":"### Challenge\nIn 2021, I got approached by one4good to help shape a new digital-first donation platform, which a very simple concept: a curated selection of social good projects for positive impact, where users can subscribe to for a fixed monthly amount. They needed help to shape the initial brand, then landing page, and ultimately the product design of the actual platform.","full":"false"},"id":"a9ebdb34-f4ea-4084-92be-f181e18949d9","isHidden":false,"type":"text"},{"content":{"image":["file://hriCYQNqYZaJhNwQ"]},"id":"b1a3f958-55f3-4c4c-b5ce-92b0e651b9d9","isHidden":false,"type":"image"},{"content":{"text":"Together, we shaped a multi-phase project, where we took the simple and clearly design logo and colour palette (by (link: https://franromero.es/ text: Fran Romero)), and figured out the full visual language that will help bring it to life. This resulted in a successful (link: https://www.startnext.com/one4good text: crowdfunding campaign) and a functional (link: https://www.one4good.com/en text: web platform) (also mobile-optimised and progressive web app).","image":["file://wYak5AgTUZcU5rgF","file://GomQ3lUcR27Hr88E","file://u8cNxihGqf2L4ezV"]},"id":"abcddc23-bad6-4a45-ac46-7a17587eeb5e","isHidden":false,"type":"gallery"},{"content":{"image":["file://Itchixk87Uwsr5OO"]},"id":"f7dde934-1df2-48fc-940e-184d71059974","isHidden":false,"type":"image"},{"content":{"text":"### Design System\nIn order to set the foundations for a product language that could be iterated on and evolve, a flexible technology setup of a responsive web application was chosen (PWA). For this application, we designed a simple and effective design system, relying on a small set of essential patterns throughout the app: a tile-based overview, a versatile list view, and a media-rich detail page.","full":"false"},"id":"21473ad5-56d4-44ac-a11c-8a8ec0f17632","isHidden":false,"type":"text"},{"content":{"image":["file://ZpvGv2tGEwcg8QEX"]},"id":"6e6ad2bf-a8eb-426e-9a29-e6cfd8fcba28","isHidden":false,"type":"image"},{"content":{"image":["file://D9D6ysQPtaAjFvRr"]},"id":"e81cc511-a73e-4bd5-b2ab-a84795ec068b","isHidden":false,"type":"image"},{"content":{"image":["file://BEksnyWY0KPAFrYk"]},"id":"85bc2ee3-ea86-476a-bccb-fa54b7b3b798","isHidden":false,"type":"image"}]
 
 ----
 
@@ -108,6 +60,10 @@ Featuredimage: - file://C7I1uT3FNHTnv3P8
 ----
 
 Featuredcolour: 
+
+----
+
+Blocks: [{"content":{"image":["file://ZpvGv2tGEwcg8QEX"]},"id":"3f338da6-5291-4174-8324-801d8cf636a3","isHidden":false,"type":"image"},{"content":{"text":"Testing it","image":["file://wYak5AgTUZcU5rgF","file://GomQ3lUcR27Hr88E"]},"id":"a139fce7-b534-4b7d-a67d-f0f6bf058c6a","isHidden":false,"type":"gallery"},{"content":{"text":"sdlfkslkj","full":"true"},"id":"59dc9d16-789a-4663-b458-1201a9d71417","isHidden":false,"type":"text"}]
 
 ----
 

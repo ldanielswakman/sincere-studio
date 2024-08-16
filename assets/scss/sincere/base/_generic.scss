@@ -123,9 +123,19 @@ p + blockquote {
 p {
   line-height: 1.6em;
 }
-blockquote, ul, ol, p, h3, h4 {
+blockquote, ul, ol, p, h2, h3, h4 {
   & + p {
     margin-top: 1rem;
+  }
+}
+
+.block ul, .block ol {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1.25rem;
+
+  li {
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -144,14 +154,4 @@ figure {
     max-width: 90rem;
     margin: 0 auto;
   }
-
-  // &--comfy {
-  //   margin-left: -2rem;
-  //   margin-right: -2rem;
-
-  //   [class^="col-"] {
-  //     padding-left: 2rem;
-  //     padding-right: 2rem;
-  //   }
-  // }
 }

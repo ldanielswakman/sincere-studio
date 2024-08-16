@@ -2,63 +2,15 @@ Title: wine—art
 
 ----
 
-Sections:
+Keyvisual: - file://qXISwxS6sQMMtc7I
 
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - wineart-promo-image.jpg
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: u-pt10vh
-  col_1: '(image: wineart-home-browser.png)'
-  col_2: ""
-  bg_colour: '#313a42'
-  bg_image: [ ]
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: |
-    > <span style="color: #e01b3d; font-size: 2rem;">Taste for tasting</span>
-    
-    <span class="c-grey">
-    "Create a very minimal an elegant identity and website for a newly founded wine brand, in Zürich, CH." — The design of the page naturally floated to a collection of white and grey tones with a splash of wine-accented colours. Only after the visual design of the website took its final shape, we pulled these visual cues back to the logo.
-    </span>
-  col_2: ""
-  bg_colour: ""
-  bg_image: [ ]
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: u-aligncenter
-  col_1: '(image: wineart-logo-story.gif)'
-  col_2: ""
-  bg_colour: '#fafbfc'
-  bg_image: [ ]
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: u-pt10vh
-  col_1: '(image: wineart-services-browser.png)'
-  col_2: ""
-  bg_colour: '#313a42'
-  bg_image: [ ]
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - wineart-business-card.jpg
-  bg_image_pos: ""
+----
+
+Builder: [{"content":{"text":"(image: wineart-home-browser.png)\n\n### Taste for tasting\n\n\"Create a very minimal an elegant identity and website for a newly founded wine brand, in Zürich, CH.\" — The design of the page naturally floated to a collection of white and grey tones with a splash of wine-accented colours. Only after the visual design of the website took its final shape, we pulled these visual cues back to the logo.\n\n<br /><br /><br />\n\n(image: wineart-logo-story.gif)\n\n<br /><br /><br />\n\n(image: wineart-services-browser.png)","full":"false"},"id":"cd966873-1295-4ff2-bd45-46c57bd167d1","isHidden":false,"type":"text"},{"content":{"image":["file://g0MArJykTeCvEOi0"]},"id":"4ffc43d1-bb27-44db-8b4b-13b77a2e8c08","isHidden":false,"type":"image"}]
+
+----
+
+Sections: 
 
 ----
 
@@ -70,7 +22,15 @@ Description: minimal & playful experience for a wine consultancy
 
 ----
 
+Intro: 
+
+----
+
 Tags: web design, graphic, identity, branding, front-end
+
+----
+
+Team: 
 
 ----
 
@@ -82,7 +42,7 @@ Featured: false
 
 ----
 
-Featuredimage: - wine-art.jpg
+Featuredimage: - file://Pn2B0jmKiU75nAVV
 
 ----
 

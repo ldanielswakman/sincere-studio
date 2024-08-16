@@ -2,6 +2,14 @@ Title: Berlin by Food
 
 ----
 
+Keyvisual: 
+
+----
+
+Builder: [{"content":{"image":["file://YomRpv70FfWUKRM8"]},"id":"cef025f9-0c6f-4582-b29b-4a88a701660b","isHidden":false,"type":"image"},{"content":{"image":["file://mherZx2q4F3BkxJG"]},"id":"b79a5abd-f741-4ce0-81b2-b613ce3d02b8","isHidden":false,"type":"image"},{"content":{"image":["file://SCRBuEI2yDIvKpyX"]},"id":"5d7a0338-99dd-4d0a-abd7-af4dff371e22","isHidden":false,"type":"image"}]
+
+----
+
 Sections:
 
 - 
@@ -11,7 +19,7 @@ Sections:
   col_2: ""
   bg_colour: ""
   bg_image:
-    - mobile-mockup-adjusted.jpg
+    - file://YomRpv70FfWUKRM8
   bg_image_pos: full
 - 
   num_cols: 'true'
@@ -20,7 +28,7 @@ Sections:
   col_2: ""
   bg_colour: ""
   bg_image:
-    - logo-and-fruits.jpg
+    - file://mherZx2q4F3BkxJG
   bg_image_pos: full
 - 
   num_cols: 'true'
@@ -29,7 +37,7 @@ Sections:
   col_2: ""
   bg_colour: ""
   bg_image:
-    - imac-mockup.jpg
+    - file://SCRBuEI2yDIvKpyX
   bg_image_pos: full
 
 ----
@@ -42,7 +50,15 @@ Description: Who said Berlin was all about Currywurst?
 
 ----
 
+Intro: Berlin by Food is a boutique service, offering a unique experience through tailor-made food tours throughout Berlin. They asked me to define the branding in line with their service, as well as visual design and website development.
+
+----
+
 Tags: web design, branding, visual design, front-end
+
+----
+
+Team: 
 
 ----
 
@@ -54,7 +70,7 @@ Featured: false
 
 ----
 
-Featuredimage: - mobile-mockup-adjusted.jpg
+Featuredimage: - file://YomRpv70FfWUKRM8
 
 ----
 

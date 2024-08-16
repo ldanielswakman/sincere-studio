@@ -2,59 +2,11 @@ Title: Inflight VR Experience Concept
 
 ----
 
-Builder:
+Keyvisual: 
 
-- 
-  image:
-    - inflight-banner.jpg
-  _key: full_image
-  _uid: full_image_1686040221947_1141
-- 
-  text: |
-    ### Futuristic
-    
-    (link: https://inflight-vr.com/ text: Inflight VR target:blank) provides a revenue-generating VR platform for inflight entertainment. They combine profitability with a concept that is futuristic and ambitious: coming up with an immersive VR entertainment experience in passenger airline flights. They approached me at the start of 2017 to bring a user experience design angle to the table for the first iterations of the platform.
-  image:
-    - airplane-vr.jpg
-    - >
-      inflightvr-virtual-reality-immersive-experiences.png
-  _key: text_image
-  _uid: text_image_1686040242781_1141
-- 
-  image:
-    - inflight-bubble-sketches.jpg
-  _key: full_image
-  _uid: full_image_1686040661212_1302
-- 
-  text: |
-    ### Design Process
-    
-    A key part of the project at this stage was to explore and define the *constraints and opportunities* of working with VR — the fact that it is such a new medium blows the field of options wide open. I came up with a few categories to frame my research, applying both to the physical context of being in an airplane, as well as being fully immersed in a digital world: **Viewing & Angles**, **Input**, **Menu/interface**, and **Experience**.
-  image:
-    - screenshot-2023-06-06-at-10.41.10.png
-    - screenshot-2023-06-06-at-10.41.17.png
-    - screenshot-2023-06-06-at-10.40.26.png
-  _key: text_image
-  uniquekey: 0
-  showpreviewinitially: false
-  expandedinitially: true
-  activefieldsetinitially: content
-  _uid: text_image_1686040626146_2460
-- 
-  text: |
-    ### Solution
-    
-    We came up with an interface concept that emphasises the spatial character of the interface, while still preserving a sense of familiarity for the user. We drew inspiration from the multidirectional way of scrolling as seen on the (link: https://www.apple.com/watch/ text: Apple Watch target:_blank), coming up with a dynamic layout that encourages exploration. To be able to provide consistency throughout the interface and between different apps, a bottom system menu was introduced that is always reachable.
-  image:
-    - inflight-vr-xd-concept.png
-    - ref-apple-watch.gif
-  _key: text_image
-  _uid: text_image_1686040986715_3233
-- 
-  image:
-    - inflight-mockup.jpg
-  _key: full_image
-  _uid: full_image_1686041092502_3233
+----
+
+Builder: [{"content":{"image":["file://2FmG1dw938fLnmqR"]},"id":"49faa1f4-a48e-4718-9235-56015fa62f87","isHidden":false,"type":"image"},{"content":{"text":"### Futuristic\n\n(link: https://inflight-vr.com/ text: Inflight VR target:blank) provides a revenue-generating VR platform for inflight entertainment. They combine profitability with a concept that is futuristic and ambitious: coming up with an immersive VR entertainment experience in passenger airline flights. They approached me at the start of 2017 to bring a user experience design angle to the table for the first iterations of the platform.","image":["file://Ksp6MWTWhIXb0Jge","file://fQf3USjV8Fv094sb"]},"id":"5cfca4dd-a9a8-4f85-a3cf-db4a343b656f","isHidden":false,"type":"gallery"},{"content":{"image":["file://G68Z7wMJYR82jYTY"]},"id":"8fef5026-bc23-4f7e-9b5c-4906d1ecc061","isHidden":false,"type":"image"},{"content":{"text":"### Design Process\n\nA key part of the project at this stage was to explore and define the *constraints and opportunities* of working with VR — the fact that it is such a new medium blows the field of options wide open. I came up with a few categories to frame my research, applying both to the physical context of being in an airplane, as well as being fully immersed in a digital world: **Viewing & Angles**, **Input**, **Menu/interface**, and **Experience**.","image":["file://lzy24VTQJbSaMcWe","file://zUMZweeHGDrIOBCS","file://h2axZ5FeCtbFsS5x"]},"id":"cea9c1d2-a933-42ae-bbaa-3c2a9cc66689","isHidden":false,"type":"gallery"},{"content":{"text":"### Solution\n\nWe came up with an interface concept that emphasises the spatial character of the interface, while still preserving a sense of familiarity for the user. We drew inspiration from the multidirectional way of scrolling as seen on the (link: https://www.apple.com/watch/ text: Apple Watch target:_blank), coming up with a dynamic layout that encourages exploration. To be able to provide consistency throughout the interface and between different apps, a bottom system menu was introduced that is always reachable.","image":["file://3pNrdYLFXhJplNyc","file://zRbqpDKlKWo9TQrd"]},"id":"b7af831f-a751-4ab7-861d-dee27b519b10","isHidden":false,"type":"gallery"},{"content":{"image":["file://xOLzYFus5fmRlRYA"]},"id":"b319c55e-44c4-45e2-842a-3c0b0e4d1308","isHidden":false,"type":"image"}]
 
 ----
 
@@ -70,11 +22,11 @@ Description: Experience & interface concept for inflight entertainment — in v
 
 ----
 
-Intro: As a startup that has proven its worth as an innovator in the airline industry, I was invited to work with Inflight VR on one of their first concept interfaces that could be used in airline VR headsets. Given the early stage of VR/AR interaction research, a key part of the project was to identify emerging best practices and tailor them to the specific use case.
+Intro: As a startup that has proven its worth as an innovator in the airline industry, I was invited to work with (link: https://inflight-vr.com/ text: Inflight VR target:blank) on one of their first concept interfaces that could be used in airline VR headsets. Given the early stage of VR/AR interaction research, we had to identify emerging best practices and tailor them to the specific use case.
 
 ----
 
-Tags: ux, ui, concept development, VR
+Tags: ux, ui, concept development, VR, interaction-design, prototyping
 
 ----
 
@@ -86,15 +38,11 @@ Projecturl:
 
 ----
 
-Keyvisual: 
-
-----
-
 Featured: false
 
 ----
 
-Featuredimage: - inflight-mockup-narrow.jpg
+Featuredimage: - file://qKkWwewcQWf8TQKQ
 
 ----
 
