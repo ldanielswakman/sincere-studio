@@ -3,13 +3,15 @@ pages: false
 fields:
 
   sections:
-    type: builder
+    type: blocks
     label: Sections
     fieldsets:
 
-      hero:
+      - type: hero
         name: Hero
-        label: Hero
+        wysiwyg: true
+        preview: fields
+        icon: h1
         fields:
 
           text:
@@ -53,9 +55,11 @@ fields:
             icon: eyedropper
             width: 1/4
 
-      text:
+      - type: section
         name: Section
-        label: Section
+        wysiwyg: true
+        preview: fields
+        icon: grid-top
         fields:
 
           text:
@@ -88,9 +92,11 @@ fields:
             icon: eyedropper
             width: 1/4
 
-      recent_work:
+      - type: recent_work
         name: Recent work
-        label: Recent work
+        wysiwyg: true
+        preview: fields
+        icon: sparkling
         fields:
 
           recent:
@@ -128,9 +134,11 @@ fields:
             icon: eyedropper
             width: 1/4
 
-      stream_of_words:
+      - type: stream_of_words
         name: Stream of Words
-        label: Stream of Words
+        wysiwyg: true
+        preview: fields
+        icon: paragraph
         fields:
 
           number_of_slides:
@@ -164,9 +172,11 @@ fields:
             icon: eyedropper
             width: 1/4
 
-      stream_of_images:
+      - type: stream_of_images
         name: Stream of Images
-        label: Stream of Images
+        wysiwyg: true
+        preview: fields
+        icon: images
         fields:
 
           number_of_slides:

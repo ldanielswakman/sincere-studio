@@ -2,8 +2,8 @@
 
 <main>
 
-  <?php foreach ($page->sections()->toBuilderBlocks() as $key => $section): ?>
-    <section id="<?= str::slug($section->title()); ?>" class="section--<?= $section->_key()->html() ?> <?= $section->classes()->html() ?>">
+  <?php foreach ($page->sections()->toBlocks() as $key => $section): ?>
+    <section id="<?= str::slug($section->title()); ?>" class="section--<?= $section->type() ?> <?= $section->classes()->html() ?>">
 
       <?php
       $bg_style = 'background-color: ' . $section->bg_color() . ';';
@@ -13,7 +13,7 @@
       ?>
       <div class="section__bg-image" style="<?= $bg_style ?>"></div>
 
-      <?php if($section->_key() == 'text') : ?>
+      <?php if($section->type() == 'section') : ?>
 
         <div class="row">
           <div class="col-xs-12 col-sm-10 col-md-6">
@@ -21,7 +21,7 @@
           </div>
         </div>
 
-      <?php elseif($section->_key() == 'hero') : ?>
+      <?php elseif($section->type() == 'hero') : ?>
 
         <div class="row">
           <div class="col-xs-12 col-sm-10 col-md-6">
@@ -50,11 +50,11 @@
           </div>
         </div>
 
-      <?php elseif($section->_key() == 'recent_work') : ?>
+      <?php elseif($section->type() == 'recent_work') : ?>
 
         <?php snippet('featured', ['recent' => $section->recent()]) ?>
 
-      <?php elseif($section->_key() == 'stream_of_words') : ?>
+      <?php elseif($section->type() == 'stream_of_words') : ?>
 
         <div class="row">
           <div class="col-xs-12">
@@ -71,7 +71,7 @@
           </div>
         </div>
 
-      <?php elseif($section->_key() == 'stream_of_images') : ?>
+      <?php elseif($section->type() == 'stream_of_images') : ?>
 
             <div class="row">
               <div class="col-xs-12">
