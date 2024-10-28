@@ -6,11 +6,11 @@ Hero-title: Daniel Swakman
 
 ----
 
-Hero-subtitle: Digital Design Leader  •  Berlin, Germany
+Hero-subtitle: Design Leader  •  Berlin, Germany
 
 ----
 
-Hero-description: I’m a designer with 10+ years of experience, working with startups and small businesses that want to innovate and create positive impact. I focus on:
+Hero-description: I'm an incurably passionate design leader with over 10 years of experience at the intersection of product, brand, and web design. I love working with innovative tech companies to create positive impact, using design as an instrument to drive business. My focus areas include:
 
 ----
 
@@ -21,25 +21,25 @@ Hero-usps:
     - file://8uIHvTUstDrFdK6l
   title: Design
   description: >
-    Meticulous craftsmanship, integrated
-    brand thinking, and an eye for detail
-    drive my design approach.
+    Creating impact through meticulous
+    craftsmanship, integrated brand
+    thinking, and an eye for detail
 - 
   image:
     - file://nqRMLu0GxvWly9IG
   title: Tech
   description: >
-    Tech-savvy and skilled at collaborating
-    with development teams, I bridge the gap
-    between design and code.
+    Bridging design and code with hands-on
+    technical expertise, enabling seamless
+    collaboration with development teams
 - 
   image:
     - file://rvbasIfp9W97XGbV
   title: Leadership
   description: >
-    With leadership experience, I grow teams
-    and spearhead design change within
-    organisations.
+    Growing and inspiring teams around a
+    shared north star vision, driving design
+    change within organisations
 
 ----
 
@@ -49,9 +49,15 @@ Work-xp:
   period: 2020-current
   img:
     - file://BHeu9nu6qxwwwqug
-  title: '3 years as Head of Design at (link: https://nebenan.de text: nebenan.de target: blank)'
+  title: '4 years as Head of Design at (link: https://nebenan.de text: nebenan.de target: blank)'
   employer: nebenan.de
-  text: 'Growing and leading a team of 8 designers, establishing consistency in design language, initiated and led a comprehensive brand & product redesign, implemented Figma design system & migrated organisation'
+  text: |
+    Driving design on an organisational level at Germany’s largest social network for neighbourhoods:
+    
+    • Growing, leading and mentoring a cross-functional team of 8 designers
+    • Spearheaded a brand language redesign in close collaboration with C-level
+    • Leading cross-team effort for comprehensive product redesign aimed at consistency and simple usability
+    • Driving implementation of an accessible design system across client teams
   url: ""
   projects:
     - 
@@ -95,14 +101,10 @@ Work-xp:
   img:
     - file://G51GdVpoA22Pykgk
   title: >
-    3 years independent designer at Sincere
-    Studio
+    3 years as Design Director (freelance)
+    at Sincere Studio
   employer: Sincere Studio
-  text: >
-    Independent design studio, working with
-    startups and small businesses on
-    impactful digital design. Collaborations
-    with other freelancers as collective
+  text: 'Sincere—Studio is an independent design studio, helping startups designing and building the digital world of today and tomorrow. Services include strategic design thinking, brand design, web design & development & product design for mobile and web apps.'
   url: https://sincere.studio/
   projects:
     - 
@@ -146,7 +148,9 @@ Work-xp:
   period: 2015-2018
   img:
     - file://XoooBlOZxTn1XMBt
-  title: 3 years Senior Designer at Paraşüt
+  title: >
+    3 years as Lead Mobile Designer at
+    Paraşüt
   employer: Paraşüt
   text: 'Lead Mobile App Designer in growing team for accounting startup in Istanbul: joined startup at 10 employees, grew to 70 upon acquisition. In the team, I initiated and led the design and iterations of both iOS and Android apps. I also was responsible for the UX/UI design for countless features for the web application, as well as a modular marketing site/landing page solution'
   url: http://www.parasut.com/
@@ -167,10 +171,10 @@ Work-xp:
       linked_project: [ ]
       linked_url: ""
 - 
-  period: 2015-2018
+  period: 2015-2017
   img:
     - file://ZKaJQw2fOmNLWRkT
-  title: '3 years aso co-founder & designer at Muhit'
+  title: '2 years as co-founder & designer at Muhit'
   employer: Muhit
   text: 'non-profit platform for urban improvement, design, product & business development'
   url: projects/muhit

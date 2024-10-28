@@ -2,50 +2,19 @@ Title: Paraşüt Mobile
 
 ----
 
-Sections:
-
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - app-promo-banner.jpg
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: u-pt0
-  col_1: |
-    <div class="u-aligncenter"><div class="u-inlineblock" style="max-width: 600px;">
-    (image: app-devices-mockup.png)
-    </div></div>
-  col_2: ""
-  bg_colour: ""
-  bg_image: [ ]
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: u-minheight40vh
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - app-micro-moments-board.jpg
-  bg_image_pos: ""
-- 
-  num_cols: 'true'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - app-akbank-mockup.jpg
-  bg_image_pos: ""
+Keyvisual: - file://4TNpY8vu1sMaZAvX
 
 ----
 
-Year: 2016-
+Builder: [{"content":{"image":["file://ki2XLE93W1U3ywiv"]},"id":"41413be9-3a24-4e0c-a354-aa8971242c0a","isHidden":false,"type":"image"},{"content":{"image":["file://QcLXahfDiMzSacSw"]},"id":"a4c6b279-53d4-440d-9786-1ca04616cfa0","isHidden":false,"type":"image"},{"content":{"text":"## Through the eyelashes\n\nThe app's visual design language is organised so a user can easily recognise which section they are in: blue for invoicing, brown for expenses, slate grey for accounts, and green for checks.\n\nThis pattern firmly anchors a view in a use case and builds consistency for the user. The shaded header area shows key information, as well as a tab navigation.","image":["file://ILhwja83diug7Cn4","file://i7L6mxfWdP9o7SMV"]},"id":"26f8b79a-24bd-46e2-a9b1-07b53eba3177","isHidden":false,"type":"gallery"},{"content":{"image":["file://HBbfhcqKy8JSA67Q"]},"id":"d31b2666-d8a4-41c8-ac2a-e35f01eb6b3a","isHidden":false,"type":"image"},{"content":{"text":"## Micro Moments\n\nGiven the emergence of the mobile use case in society, the growth lever for the app was significant for the company. But doing admin tasks on a small device can be cumbersome, given the many details involved.\n\nThrough researching the key jobs our users were looking to do, we found out that many of them were centred around so-called (link: https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/micro-moments/ text: ‘micro moments’): checking on an invoice payment status, quickly sharing an invoice, settling a customer’s outstanding balance, entering a business expense. By focusing on quick user flows that maximise utility while minimising time spent in the app, we were able to tackle the bulk of these jobs — allowing the app to get out of the way, and the user to get on with their core business.\n\nHere below you can find the design process for sending eInvoices, an official government system.","full":"false"},"id":"c7dedab0-9b04-4ae2-8e8b-95e7f935c9db","isHidden":false,"type":"text"},{"content":{"image":["file://UwesJAH3kbXCyB9c"]},"id":"bf725cc9-3934-4584-9bec-dac1ee8be0e4","isHidden":false,"type":"image"},{"content":{"text":"### Maintaining a prototype?\n\nAs the lead designer rolling out features for both iOS and Android, it was key to set up a maintainable system, especially in the era before Design Systems and Figma. In order to demonstrate visual design an interaction principles, I worked out a full-fidelity HTML/CSS prototype. This became the base for our product work; we used it internally to build and QA feature implementations, but also externally to test new features with users.\n\nI wrote a detailed article on this process and its learnings, (link: https://medium.com/parasut/add-to-homescreen-prototype-77ce0f050ac4 text: here).","full":"false"},"id":"9d03902b-27a4-47fb-8856-eeedab3a1938","isHidden":false,"type":"text"},{"content":{"image":["file://HGecsYY3KFnIRHCJ"]},"id":"5bf4739d-cace-410b-b4e7-5eb05e4d6a1a","isHidden":false,"type":"image"}]
+
+----
+
+Sections: 
+
+----
+
+Year: 2016-2018
 
 ----
 
@@ -53,7 +22,15 @@ Description: Mobile app for invoicing SaaS startup that handles quick jobs on th
 
 ----
 
-Tags: app design, prototyping, ui, ux
+Intro: Paraşüt is the first online pre-accounting solution in the Turkish market, making it easy for SMEs to manage their invoicing, expenses, and accounts. I was responsible for fully designing the mobile experience, growing it from a tool to enter receipts, to a fully functional invoicing solution on the go.
+
+----
+
+Tags: product-design, ux, ui, visual-design, prototyping, app-design
+
+----
+
+Team: 
 
 ----
 
@@ -65,7 +42,7 @@ Featured: false
 
 ----
 
-Featuredimage: - dashboard-promo-2.jpg
+Featuredimage: - file://4TNpY8vu1sMaZAvX
 
 ----
 

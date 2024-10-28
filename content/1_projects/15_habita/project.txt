@@ -2,56 +2,15 @@ Title: Habita
 
 ----
 
-Sections:
+Keyvisual: - file://R5nCNGUiJJm53wGH
 
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - habita-promo-image.jpg
-  bg_image_pos: ""
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: |
-    <br>
-    <span style="font-size: 1em;">**habita** is *"an open & transparent coworking hub for everyone"* in Istanbul, Turkey. As one of the most important acquisition channels for a coworking space, its website design should immediately show the qualities of the workspace, and the community that is growing inside it.</span>
-    <br>
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - habita-title-opening.jpg
-  bg_image_pos: ""
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: |
-    <br><br>
-    <span style="font-size: 1.25em; color: white;">**habita** has just opened its doors, so the site should be able to grow as content (members, events, blog posts, new photos) grows. The site is built with (link: getkirby.com text: Kirby target:_blank) with an API system to dynamically load in extra content.</span>
-  col_2: '(image: habita-phasing-transparent.png)'
-  bg_colour: ff5000
-  bg_image: [ ]
-  bg_image_pos: ""
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: ""
-  col_2: ""
-  bg_colour: ""
-  bg_image:
-    - space-overview.jpg
-  bg_image_pos: ""
-- 
-  num_cols: 'false'
-  classes: ""
-  col_1: 'The visual system is based on a rule of thirds: the the logo always sits on the intersection of coloured planes. The use of the theme colour orange is sparse, and is contrasted with a faded dark blue for text and secondary colour.'
-  col_2: '(image: rule-of-thirds.png)'
-  bg_colour: ""
-  bg_image: [ ]
-  bg_image_pos: ""
+----
+
+Builder: [{"content":{"text":"**habita** was *\"an open & transparent coworking hub for everyone, open between 2016 and 2018 in Istanbul, Turkey. As one of the most important acquisition channels for a coworking space, its website design should immediately show the qualities of the workspace and the community that is growing inside it.\n\n(image: habita-title-opening.jpg)","full":"false"},"id":"89b1d8a4-d428-4f5f-89b4-5deb16f39368","isHidden":false,"type":"text"},{"content":{"text":"When **habita** just opened its doors, the site had to be able to grow as content (members, events, blog posts, new photos) grows. The site is built with (link: getkirby.com text: Kirby target:blank) with an content API system to dynamically load in extra content.\n\n<div style=\"margin-top: 3rem; padding: 3rem 2rem; background: #ff5000\">\n(image: habita-phasing-transparent.png)\n</div>","full":"false"},"id":"220747e9-defc-4b24-a0b5-d08cdfe52fcd","isHidden":false,"type":"text"},{"content":{"image":["file://05BVF0m763YJydks"]},"id":"4730b386-93e6-4580-9724-9e4257be126f","isHidden":false,"type":"image"},{"content":{"text":"### Layout\nThe visual system is based on a rule of thirds: the logo always sits on the intersection of coloured planes. The use of the theme colour orange is sparse, and is contrasted with a faded dark blue for text and secondary colour.","image":["file://8oAt2xl3Fbmt3ACQ"]},"id":"dca93734-01b6-4e7a-a5d4-5e1a9fbeacfd","isHidden":false,"type":"gallery"},{"content":{"image":["file://PaQJX9CSsqW4LODK"]},"id":"a3df394d-360b-41ea-a775-a9f8ac8baa05","isHidden":false,"type":"image"}]
+
+----
+
+Sections: 
 
 ----
 
@@ -63,7 +22,15 @@ Description: modular and full-bleed website for Istanbul's latest coworking spac
 
 ----
 
+Intro: 
+
+----
+
 Tags: web design, graphic, front-end
+
+----
+
+Team: 
 
 ----
 
@@ -75,7 +42,7 @@ Featured: false
 
 ----
 
-Featuredimage: - habita.jpg
+Featuredimage: - file://PaQJX9CSsqW4LODK
 
 ----
 

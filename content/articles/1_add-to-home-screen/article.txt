@@ -10,8 +10,12 @@ Canonical: https://medium.com/@ldanielswakman/add-to-homescreen-prototype-77ce0f
 
 ----
 
-Text: 
+Text:
 
 > TL;DR: at Paraşüt we built a prototype in HTML & CSS to be able to design, prototype and iteratively test our mobile app. Works great, you should try it.
 
 (image: devices-in-cloud.png)
+
+----
+
+Uuid: JyqcHC9qgFNcjct9

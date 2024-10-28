@@ -14,7 +14,7 @@ Cover-image: supercv-cover.jpg
 
 ----
 
-Text: 
+Text:
 
 I was invited by a new startup/startup-in-residence focusing on a job matching algorithm, to come up with a strong platform identity for their platform. Not beating around the bush, we got to work and formed the brief around the core sentence:
 
@@ -73,3 +73,7 @@ Since much of the usage of the platform would be about users browsing for jobs, 
 ----
 
 Tags: web design,case study,identity,strategy,ui
+
+----
+
+Uuid: ehsoCB1Fqe43hGjN
