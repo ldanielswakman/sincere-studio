@@ -19,7 +19,7 @@
   echo js($js_assets, true);
   ?>
 
-  <link rel="stylesheet" href="<?= $css_asset ?>" onload="this.media='all'">
+  <link rel="stylesheet" href="<?= url($css_asset) ?>" onload="this.media='all'">
 
   <link rel="manifest" href="<?= url('manifest.json') ?>">
   <link rel="icon" href="<?= url('assets/images/favicon.png') ?>">
