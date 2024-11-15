@@ -17,7 +17,7 @@
   );
 
   echo css($css_assets);
-  echo js($js_assets);
+  echo js($js_assets, true);
   ?>
 
   <link rel="manifest" href="<?= url('manifest.json') ?>">
