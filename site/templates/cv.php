@@ -6,7 +6,7 @@
       <div class="container">
 
         <div class="hero">
-          <figure><img src="<?= url('assets/images/avatar-daniel.png') ?>" /></figure>
+          <figure><img src="<?= url('assets/images/avatar-daniel.png') ?>" alt="profile image" /></figure>
           <div>
             <h1><?= $page->hero_title()->ktinline() ?></h1>
             <h2><?= $page->hero_subtitle()->ktinline() ?></h2>
@@ -19,10 +19,10 @@
           <?php foreach($page->hero_usps()->toStructure() as $item) : ?>
             <div class="usp">
               <?php if($img = $item->image()->toFile()) : ?>
-                  <img src="<?= $img->url() ?>" />
+                  <img src="<?= $img->url() ?>" alt="" />
               <?php endif ?>
               <div>
-                <h4><?= $item->title()->ktinline() ?></h4>
+                <h3><?= $item->title()->ktinline() ?></h3>
                 <p><?= $item->description()->ktinline() ?></p>
               </div>
             </div>
@@ -99,13 +99,15 @@
 
       <div class="nav-content" id="projects">
         <?php foreach($page->work_projects()->toPages() as $project): ?>
+
           <a href="<?= $project->url() . '?src=cv' ?>" class="project-item project-item--linked">
             <?php if($image = $project->featuredimage()->toFile()): ?>
-              <figure class="project-image"><img src="<?= $image->url() ?>" alt="<?= $project->title() ?>" /></figure>
+              <figure class="project-image"><img src="<?= $image->url() ?>" alt="Cover image for <?= $project->title() ?>" /></figure>
             <?php endif ?>
             <h4><?= $project->title() ?></h4>
             <p class="description"><?= $project->description() ?></p>
           </a>
+
         <?php endforeach ?>
         <div style="grid-column: -1 / 1;"><a href="<?= $pages->find('projects')->url() . '#all' ?>" class="button button--outline">see all projects</a></div>
       </div>

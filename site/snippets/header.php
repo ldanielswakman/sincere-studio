@@ -13,7 +13,7 @@
     $logoTarget = $site->url();
   }
   ?>
-  <a href="<?= $logoTarget ?>" class="logo logo--init">
+  <a href="<?= $logoTarget ?>" aria-label="Navigate home" class="logo logo--init">
     <?php if($site->theme() == 'ldaniel') : ?>
       <?php snippet('svg/logo') ?>
     <?php elseif($site->theme() == 'sincere') : ?>
@@ -22,5 +22,3 @@
   </a>
   
   <?php if(!isset($nav) || $nav !== false) : snippet('nav'); endif; ?>
-
-  <?php snippet('contact', ['page' => $page]) ?>

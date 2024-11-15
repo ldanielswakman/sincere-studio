@@ -841,7 +841,8 @@
     -ms-flex-order: 1;
     order: 1;
   }
-} /**
+}
+/**
  * Owl Carousel v2.2.1
  * Copyright 2013-2017 David Deutsch
  * Licensed under  ()
@@ -1733,7 +1734,7 @@ body.isTouch .u-hide-for-touch {
   margin-bottom: 0.5rem;
   padding: calc(0.5rem - 2px);
   border: 2px solid transparent;
-  background: #f0f0f2;
+  background: rgb(240.3684210526, 240.3684210526, 241.8315789474);
   color: #0D0533;
   -webkit-border-radius: 0.25rem;
   -moz-border-radius: 0.25rem;
@@ -1747,7 +1748,7 @@ body.isTouch .u-hide-for-touch {
 }
 .bubble .field:focus {
   outline: none;
-  background: #e3e3e6;
+  background: rgb(226.9473684211, 226.9473684211, 229.7526315789);
 }
 .bubble .field.hasError {
   border-color: #6547FE;
@@ -1767,7 +1768,7 @@ body.isTouch .u-hide-for-touch {
   color: #fff;
 }
 .button:hover {
-  background-color: #2a01f7;
+  background-color: rgb(41.6405405405, 1.3432432432, 247.1567567568);
   cursor: pointer;
 }
 .button:active, .button:focus {
@@ -1787,7 +1788,7 @@ body.isTouch .u-hide-for-touch {
   background-color: #0D0533;
 }
 .button.button--dark:hover {
-  background-color: #07031c;
+  background-color: rgb(7.0803571429, 2.7232142857, 27.7767857143);
 }
 .button.button--white {
   background-color: #fff;
@@ -1798,7 +1799,7 @@ body.isTouch .u-hide-for-touch {
   color: #6547FE;
 }
 .button.button--white:hover {
-  background-color: #e6e6e6;
+  background-color: rgb(229.5, 229.5, 229.5);
   border-color: transparent;
   color: #6547FE;
 }
@@ -2840,6 +2841,7 @@ section.section--collapsed {
   }
 }
 .section--cv-intro h2 {
+  margin-left: 0.25rem;
   color: #868197;
   font-weight: normal;
   font-size: 1.125rem;
@@ -2878,7 +2880,7 @@ section.section--collapsed {
     gap: 1rem;
   }
 }
-.section--cv-intro .usp h4 {
+.section--cv-intro .usp h3 {
   font-weight: 600;
   font-size: 1.5rem;
 }
