@@ -16,7 +16,7 @@
     'assets/js/scripts.js',
   );
 
-  echo js($js_assets, true);
+  echo js($js_assets);
   ?>
 
   <link rel="stylesheet" href="<?= url($css_asset) ?>" onload="this.media='all'">
