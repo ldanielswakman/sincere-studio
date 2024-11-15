@@ -5,7 +5,7 @@
   <?php
   $theme = $site->theme();
   // sets css & js assets based on ENV
-  $css_assets = array('assets/css/style-' . $theme . '.css');
+  $css_asset = 'assets/css/style-' . $theme . '.css';
 
   // checks if not on localhost, then serves assets from CDN
   $js_assets = (c::get('env') !== 'DEV') ? array(
@@ -16,9 +16,10 @@
     'assets/js/scripts.js',
   );
 
-  echo css($css_assets);
   echo js($js_assets, true);
   ?>
+
+  <link rel="stylesheet" href="<?= $css_asset ?>" onload="this.media='all'">
 
   <link rel="manifest" href="<?= url('manifest.json') ?>">
   <link rel="icon" href="<?= url('assets/images/favicon.png') ?>">
