@@ -2,6 +2,10 @@ Title: Diagnose Berlin
 
 ----
 
+Keyvisual: 
+
+----
+
 Builder: 
 
 ----
@@ -67,10 +71,6 @@ Team:
 ----
 
 Projecturl: https://diagnose-berlin.de/
-
-----
-
-Keyvisual: 
 
 ----
 
