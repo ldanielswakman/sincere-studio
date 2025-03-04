@@ -104,7 +104,7 @@ Work-xp:
     3 years as Design Director (freelance)
     at Sincere Studio
   employer: Sincere Studio
-  text: 'Sincere—Studio is an independent design studio, helping startups designing and building the digital world of today and tomorrow. Services include strategic design thinking, brand design, web design & development & product design for mobile and web apps.'
+  text: '(link: https://sincere.studio/ text: Sincere—Studio) is an independent design studio, helping startups designing and building the digital world of today and tomorrow. Services include strategic design thinking, brand design, web design & development & product design for mobile and web apps.'
   url: https://sincere.studio/
   projects:
     - 
@@ -220,7 +220,7 @@ Work-xp:
       linked_project: [ ]
       linked_url: ""
 - 
-  period: 2008-2023
+  period: 2008-2024
   img:
     - file://0FqBRlY2yiOfrBYZ
   title: + side projects and freelance

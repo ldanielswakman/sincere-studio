@@ -22,8 +22,12 @@ Featuredimage: impression1.png
 
 ----
 
-Sections: 
+Sections:
 
 - 
   textcolumn:
   imagecolumn: '(image: bar.png)'
+
+----
+
+Uuid: o9sVpnctrQ26TMs4
