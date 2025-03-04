@@ -3,10 +3,16 @@
 // Set title
 $short_title = r($page->isHomePage(), $site->title()->html(), $page->title()->html() . ' — §');
 $title = r($page->isHomePage(), $site->title()->html(), $page->title()->html() . ' — ' . $site->title()->html());
+if($page->meta_title()->isNotEmpty()) {
+	$title = $page->meta_title()->html();
+	$short_title = $page->meta_title()->html() . ' — §';
+}
 
 // Set description
 $descr = $site->description()->html();
-if($page->description()->isNotEmpty()) {
+if($page->meta_description()->isNotEmpty()) {
+	$descr = $page->meta_description()->html();
+} else if($page->description()->isNotEmpty()) {
 	$descr = $page->description()->excerpt(120);
 } else if($page->text()->isNotEmpty()) {
 	$descr = $page->text()->excerpt(120);
@@ -30,13 +36,21 @@ if($page->featuredimage()->isNotEmpty()) {
 
 <meta name="description" content="<?= $descr ?>">
 <meta name="keywords" content="<?= $site->keywords()->html() ?>">
-<meta name="author" content="<?php echo $site->author()->html() ?>" />
+<meta name="author" content="<?= $site->author()->html() ?>" />
+
+<!-- Performance/SEO -->
+<link rel="canonical" href="<?= $site->url() ?>">
+<meta name="referrer" content="no-referrer-when-downgrade">
 
 <!-- Social share parameters -->
 <meta property="og:image" content="<?= $image_url ?>" />
+<meta property="og:image:alt" content="<?= $descr ?>">
 <meta property="og:title" content="<?= $title ?>" />
 <meta property="og:site_name" content="<?= $site->title() ?>" />
 <meta property="og:description" content="<?= $descr ?>" />
+<meta property="og:url" content="<?= $site->url() ?>">
+<meta property="og:type" content="website">
+
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@ldanielswakman">

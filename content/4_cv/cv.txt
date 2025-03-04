@@ -1,4 +1,4 @@
-Title: Daniel Swakman
+Title: CV page (general)
 
 ----
 
@@ -53,7 +53,6 @@ Work-xp:
   employer: nebenan.de
   text: |
     Driving design on an organisational level at Germany’s largest social network for neighbourhoods:
-    
     • Growing, leading and mentoring a cross-functional team of 8 designers
     • Spearheaded a brand language redesign in close collaboration with C-level
     • Leading cross-team effort for comprehensive product redesign aimed at consistency and simple usability
@@ -572,6 +571,14 @@ Text:
 ----
 
 Pdf-file: - file://fiYataH2u5nzQKoe
+
+----
+
+Meta-title: Daniel Swakman • Design Leader
+
+----
+
+Meta-description: Incurably passionate design leader with over 10 years of experience at the intersection of product, brand, and web design
 
 ----
 

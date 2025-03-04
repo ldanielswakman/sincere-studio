@@ -25,5 +25,6 @@
   <link rel="icon" href="<?= url('assets/images/favicon.png') ?>">
   <link rel="shortcut icon" href="<?= url('assets/images/favicon.png') ?>">
   <link rel="apple-touch-icon" href="<?= url('assets/images/app-icon.png') ?>">
+  <meta name="theme-color" content="#ffffff">
 
 </head>

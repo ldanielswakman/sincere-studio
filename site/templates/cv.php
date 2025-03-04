@@ -55,13 +55,13 @@
                   <figure class="xp-image"><img src="<?= $image->resize(null, 120)->url() ?>" alt="<?= $item->title() ?>" /></figure>
                 <?php endif ?>
 
-                <div class="title"><?= $item->title()->kirbytextinline() ?> <span class="period"><?= $item->period() ?></span></div>
+                <div class="title"><?= $item->title()->kti() ?> <span class="period"><?= $item->period() ?></span></div>
 
                 <div class="icon"><?php snippet('svg/chevron-down') ?></div>
               </div>
 
               <div class="content">
-                <p><?= $item->text() ?></p>
+                <p><?= $item->text()->kti() ?></p>
 
                 <div class="project-list">
                   <?php foreach ($item->projects()->toStructure() as $project) : ?>

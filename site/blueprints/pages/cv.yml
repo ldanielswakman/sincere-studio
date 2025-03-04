@@ -99,5 +99,34 @@ tabs:
         type:  files
         multiple: false
         width: 1/2
+
+  meta:
+    label: Metadata
+    icon: info
+    fields:
+
+      meta_info:
+        label: Metadata Info
+        type: info
+        text: >
+          The following settings are used to generate the page's meta data. If left empty, the default metadata for the site will be used.
+        theme: empty
+
+      meta_title:
+        label: Meta Title
+        type: text
+        icon: title
+      
+      meta_description:
+        label: Meta Description
+        type: textarea
+        icon: info
+        buttons: false
+
+      featuredimage:
+        label: Featured/Meta image
+        type: files
+        max: 1
+        icon: image
   
   files: tabs/files
