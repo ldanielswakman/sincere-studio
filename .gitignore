@@ -53,3 +53,9 @@ site/email.log
 
 _
 package-lock.json
+
+
+# Kirby/vendor for composer dependencies
+# ---------------
+/kirby
+/vendor
