@@ -126,5 +126,10 @@ c::set('routes', [
 return [
   'panel' =>[
     'install' => true
-  ]
+  ],
+  'thathoff.git-content' => [
+    'pull' => true,
+    'push' => true,
+    'commitMessage' => 'Content update via Panel',
+  ],
 ];

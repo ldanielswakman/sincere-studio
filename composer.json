@@ -1,6 +1,7 @@
 {
   "require": {
-    "getkirby/cms": "^5.0"
+    "getkirby/cms": "^5.0",
+    "thathoff/kirby-git-content": "^5.4"
   },
   "config": {
     "optimize-autoloader": true,

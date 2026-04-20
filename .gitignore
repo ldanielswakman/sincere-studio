@@ -60,3 +60,6 @@ package-lock.json
 /kirby
 /vendor
 kirby/
+.env
+site/plugins
+content/**/_changes/**
