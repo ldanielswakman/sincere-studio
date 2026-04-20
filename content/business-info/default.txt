@@ -1,0 +1,78 @@
+Title: Business Info
+
+----
+
+Text:
+
+<div class="card" markdown="1" style="width: 100%; padding: 1.5rem 2rem; border: 1px solid #eee; box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1); border-radius: 1.25rem;">
+
+<h2 style="margin-bottom: 2rem; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.1rem; color: #B8C5CC;">Business info</h2>
+
+**Sincere Studio**
+Daniel Swakman
+Max-Beer-Str 14
+10119 Berlin
+Deutschland/Germany
+
+<br /><br />
+
+<table>
+<tr>
+<td>
+VAT-ID:
+</td>
+<td>
+
+<!-- VAT Copy Button Snippet - Insert anywhere in your HTML body -->
+<button onclick="(function(button) { const vatId = 'DE318759453'; const span = button.querySelector('span'); const originalText = span.textContent; if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(vatId).then(function() { span.textContent = 'Copied!'; span.style.color = '#16a34a'; setTimeout(function() { span.textContent = originalText; span.style.color = ''; }, 2000); }).catch(function() { fallbackCopy(); }); } else { fallbackCopy(); } function fallbackCopy() { const textArea = document.createElement('textarea'); textArea.value = vatId; textArea.style.position = 'fixed'; textArea.style.left = '-999999px'; textArea.style.top = '-999999px'; document.body.appendChild(textArea); textArea.focus(); textArea.select(); try { document.execCommand('copy'); span.textContent = 'Copied!'; span.style.color = '#16a34a'; setTimeout(function() { span.textContent = originalText; span.style.color = ''; }, 2000); } catch (err) { console.error('Copy failed:', err); } document.body.removeChild(textArea); } })(this)" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; font-size: 14px; font-weight: 500; color: #374151; background-color: white; border: 1px solid #d1d5db; border-radius: 6px; cursor: pointer; transition: all 0.2s ease; font-family: system-ui, -apple-system, sans-serif;" onmouseover="this.style.backgroundColor='#f9fafb'" onmouseout="this.style.backgroundColor='white'">
+    <span>DE318759453</span>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+        <path d="m4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+    </svg>
+</button>
+
+</td>
+</tr>
+<tr>
+<td>
+IBAN:
+</td>
+<td>
+
+<!-- IBAN Copy Button Snippet - Insert anywhere in your HTML body -->
+<button onclick="(function(button) { const vatId = 'DE62100101238047219144'; const span = button.querySelector('span'); const originalText = span.textContent; if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(vatId).then(function() { span.textContent = 'Copied!'; span.style.color = '#16a34a'; setTimeout(function() { span.textContent = originalText; span.style.color = ''; }, 2000); }).catch(function() { fallbackCopy(); }); } else { fallbackCopy(); } function fallbackCopy() { const textArea = document.createElement('textarea'); textArea.value = vatId; textArea.style.position = 'fixed'; textArea.style.left = '-999999px'; textArea.style.top = '-999999px'; document.body.appendChild(textArea); textArea.focus(); textArea.select(); try { document.execCommand('copy'); span.textContent = 'Copied!'; span.style.color = '#16a34a'; setTimeout(function() { span.textContent = originalText; span.style.color = ''; }, 2000); } catch (err) { console.error('Copy failed:', err); } document.body.removeChild(textArea); } })(this)" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; font-size: 14px; font-weight: 500; color: #374151; background-color: white; border: 1px solid #d1d5db; border-radius: 6px; cursor: pointer; transition: all 0.2s ease; font-family: system-ui, -apple-system, sans-serif;" onmouseover="this.style.backgroundColor='#f9fafb'" onmouseout="this.style.backgroundColor='white'">
+    <span>DE62100101238047219144</span>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+        <path d="m4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+    </svg>
+</button>
+
+</td>
+</tr>
+<tr>
+<td style="padding-right: 1rem;">
+BIC/SWIFT:
+</td>
+<td>
+
+<!-- BIC/SWIFT Copy Button Snippet - Insert anywhere in your HTML body -->
+<button onclick="(function(button) { const vatId = 'QNTODEB2XXX'; const span = button.querySelector('span'); const originalText = span.textContent; if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(vatId).then(function() { span.textContent = 'Copied!'; span.style.color = '#16a34a'; setTimeout(function() { span.textContent = originalText; span.style.color = ''; }, 2000); }).catch(function() { fallbackCopy(); }); } else { fallbackCopy(); } function fallbackCopy() { const textArea = document.createElement('textarea'); textArea.value = vatId; textArea.style.position = 'fixed'; textArea.style.left = '-999999px'; textArea.style.top = '-999999px'; document.body.appendChild(textArea); textArea.focus(); textArea.select(); try { document.execCommand('copy'); span.textContent = 'Copied!'; span.style.color = '#16a34a'; setTimeout(function() { span.textContent = originalText; span.style.color = ''; }, 2000); } catch (err) { console.error('Copy failed:', err); } document.body.removeChild(textArea); } })(this)" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; font-size: 14px; font-weight: 500; color: #374151; background-color: white; border: 1px solid #d1d5db; border-radius: 6px; cursor: pointer; transition: all 0.2s ease; font-family: system-ui, -apple-system, sans-serif;" onmouseover="this.style.backgroundColor='#f9fafb'" onmouseout="this.style.backgroundColor='white'">
+    <span>QNTODEB2XXX</span>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+        <path d="m4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+    </svg>
+</button>
+
+</td>
+</tr>
+</table>
+
+
+</div>
+
+----
+
+Uuid: rVS7FNoEr2A8ia92

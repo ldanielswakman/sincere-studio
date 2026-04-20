@@ -6,11 +6,15 @@ Hero-title: Daniel Swakman
 
 ----
 
-Hero-subtitle: Design Leader  •  Berlin, Germany
+Hero-subtitle: Head of Design · Leading Design Systems, Product UX & Team Growth
 
 ----
 
-Hero-description: I'm an incurably passionate design leader with over 10 years of experience at the intersection of product, brand, and web design. I love working with innovative tech companies to create positive impact, using design as an instrument to drive business. My focus areas include:
+Hero-description:
+
+I build design organisations that create lasting impact — through rigorous systems, a strong craft culture, and close collaboration with product and engineering.
+Over 15 years in tech, I've led cross-functional teams, built design systems at scale, and driven product and brand transformations from scrappy startup to acquisition. What I care about most is creating the conditions where great design can actually happen, consistently.
+I bring an unusual mix of deep craft, hands-on technical fluency, and executive-level strategic thinking — and I've learned those three only create real impact when they pull in the same direction.
 
 ----
 
@@ -46,17 +50,29 @@ Hero-usps:
 Work-xp:
 
 - 
-  period: 2020-current
+  period: 2025-current
+  img:
+    - file://FDqptwYdQndMlfbh
+  title: 'Lead UX Designer at (link: https://www.here.com/ text:HERE target: blank)'
+  employer: HERE Technologies
+  text: |
+    Global location technology platform powering navigation for automotive and enterprise clients. Driving product redesign and design systems evolution within the automotive team, working across engineering and product to shape both UX direction and technical implementation.
+    • Leading end-to-end product redesign of the HERE Navigation product — spanning research, discovery, and usability testing
+    • Evolving a token-based design system enabling scalable white-label theming across automotive partners, with reach across 500k+ vehicles
+    • Shaping design systems architecture in close collaboration with engineering and PM, influencing technical direction and implementation decisions
+  url: ""
+  projects: [ ]
+- 
+  period: 2020-2024
   img:
     - file://BHeu9nu6qxwwwqug
   title: '4 years as Head of Design at (link: https://nebenan.de text: nebenan.de target: blank)'
   employer: nebenan.de
   text: |
-    Driving design on an organisational level at Germany’s largest social network for neighbourhoods:
-    • Growing, leading and mentoring a cross-functional team of 8 designers
-    • Spearheaded a brand language redesign in close collaboration with C-level
-    • Leading cross-team effort for comprehensive product redesign aimed at consistency and simple usability
-    • Driving implementation of an accessible design system across client teams
+    Germany's largest social network for neighbourhoods, 3–5M users across Europe. Scaled the design function from 2 to 8 designers and embedded design as a strategic driver across product, tech, and brand.
+    • Built and led a cross-functional team of 8 from an initial 2, through structured hiring and a deliberate design culture build
+    • Architected an accessible Design System adopted across 3 engineering teams — reducing implementation time by 35% and resolving 65% of outstanding accessibility bugs
+    • Led a comprehensive product and brand redesign in close collaboration with C-level, unifying expression across product and marketing
   url: ""
   projects:
     - 
@@ -96,14 +112,17 @@ Work-xp:
       linked_url: >
         https://sincere.studio/projects/nebenan-design-system
 - 
-  period: 2017-2020
+  period: 2016-2025
   img:
     - file://G51GdVpoA22Pykgk
-  title: >
-    3 years as Design Director (freelance)
-    at Sincere Studio
+  title: '3 years as Design Director (freelance) at (link: https://sincere.studio/ text:Sincere Studio)'
   employer: Sincere Studio
-  text: '(link: https://sincere.studio/ text: Sincere—Studio) is an independent design studio, helping startups designing and building the digital world of today and tomorrow. Services include strategic design thinking, brand design, web design & development & product design for mobile and web apps.'
+  text: |
+    Independent design studio helping startups scale through product design, design systems, and brand.
+    Ran a parallel independent practice throughout my career, taking on strategic design engagements for early-stage and scaling startups across Europe — including a fractional Head of Design role for Poltio.
+    • Delivered end-to-end product design, accessible design systems, and brand identity for clients across fintech, gaming, and social impact
+    • Operated at director level across all engagements — owning client relationships, scoping work, and leading delivery independently
+    • Clients: Inflight VR, one4good, Gamer One, Poltio, LuxFox
   url: https://sincere.studio/
   projects:
     - 
@@ -144,14 +163,18 @@ Work-xp:
       linked_project: [ ]
       linked_url: ""
 - 
-  period: 2015-2018
+  period: 2014-2017
   img:
     - file://XoooBlOZxTn1XMBt
   title: >
     3 years as Lead Mobile Designer at
     Paraşüt
   employer: Paraşüt
-  text: 'Lead Mobile App Designer in growing team for accounting startup in Istanbul: joined startup at 10 employees, grew to 70 upon acquisition. In the team, I initiated and led the design and iterations of both iOS and Android apps. I also was responsible for the UX/UI design for countless features for the web application, as well as a modular marketing site/landing page solution'
+  text: |
+    Fast-growing accounting startup in Istanbul — joined at 10 employees, scaled to 70, acquired by Microgrup in 2017. Named by Wired as one of Europe's 100 Hottest Startups.
+    - Initiated and led mobile app design (iOS/Android) from the ground up, owning the full product design lifecycle
+    - Built and maintained the web application design system alongside a modular marketing site solution
+    - Operated as the design lead through a period of 7x team growth and successful acquisition
   url: http://www.parasut.com/
   projects:
     - 
@@ -193,7 +216,11 @@ Work-xp:
     3 years as Lead Designer at eLearning
     startup in Amsterdam
   employer: Oefenweb.nl
-  text: 'Lead Designer for e-learning gaming applications (team of 3). Translating user needs for elementary school children (~300k daily users). Led comprehensive interface overhaul of game UI, brand streamlining & marketing website'
+  text: |
+    E-learning startup and University of Amsterdam spin-off, building adaptive learning games for elementary school children — 300k+ daily users.
+    - Led and grew a design team of 3, owning the full design function across product, brand, and marketing
+    - Initiated and delivered a comprehensive interface overhaul establishing a consistent interaction language across the platform
+    - Responsible for brand streamlining and marketing website in parallel with core product work
   url: http://www.oefenweb.nl
   projects:
     - 
@@ -579,6 +606,10 @@ Meta-title: Daniel Swakman • Design Leader
 ----
 
 Meta-description: Incurably passionate design leader with over 10 years of experience at the intersection of product, brand, and web design
+
+----
+
+Featuredimage: 
 
 ----
 

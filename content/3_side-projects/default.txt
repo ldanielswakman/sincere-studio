@@ -10,6 +10,20 @@ Text:
 A brief overview of side projects, either initiated or driven by me.
 
 <br />
+
+(image: jazz-herald.jpg alt: Cover image for the website Jazz Herald)
+
+<h2 class="c-bluedark">Jazz Herald</h2>
+<span class="u-op50">2025- &nbsp;&nbsp;|&nbsp;&nbsp; role: founder, designer, vibe builder</span>
+
+Jazz Herald is your definitive guide to jazz concerts in Berlin — showcasing the city's top-rated performances, standout venues, and emerging talent. Updated weekly, we handpick the best live jazz experiences so you don't miss a beat — whether you're a local enthusiast or just visiting Berlin.
+
+This project has been fully 'vibe coded'; designed and built with the use of AI tools; a combination of (link: https://lovable.dev/ text: Lovable target:blank) (one-shot design to code platform) and (link: https://replit.com/ text: Replit target:blank)/(link: https://cursor.com/ text: Cursor target:blank). It contains a scraper to gather the best concerts int he city, as well as rating logic to float the best concerts. Work in progress.
+
+<a href="https://www.jazzherald.de/" target="_blank">Jazz Herald &#8599;</a>
+
+<br/><br/><br /><br />
+
 (image: designers-circle-zine-by-cheriebirkner-11.jpg alt: Photo by Cherie Birkner title: Photo by Cherie Birkner)
 
 <h2 class="c-bluedark">Designers Circle Berlin</h2>

@@ -10,13 +10,11 @@ Title-prefix: §
 
 ----
 
-Description: Sincere—Studio helps startups design and build the web of tomorrow
+Description: Craft-first design studio for startups — product UX, design systems, and brand identity, with hands-on front-end delivery. Based in Berlin.
 
 ----
 
-Meta-image:
-
-- meta-image.jpg
+Meta-image: - file://sbLu4lsnczPI13vZ
 
 ----
 
