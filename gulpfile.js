@@ -11,17 +11,6 @@ var minify = require('gulp-minify');
 // Browsersync
 var browserSync = require('browser-sync').create();
 
-function style_ldaniel() {
-  return gulp.src('assets/scss/ldaniel/style.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(rename({ suffix: '-ldaniel' }))
-    .pipe(gulp.dest('assets/css/'))
-    .pipe(browserSync.stream())
-    .pipe(cleanCSS({compatibility: 'ie9', debug: true}))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('assets/css'));
-}
-
 function style_sincere() {
   return gulp.src('assets/scss/sincere/style.scss')
     .pipe(sass().on('error', sass.logError))
@@ -53,7 +42,6 @@ function scripts() {
 
 function watch_simple() {
   console.log('\n👀 Watching SCSS files for changes...\n');
-  gulp.watch('assets/scss/ldaniel/**/*.scss', style_ldaniel);
   gulp.watch('assets/scss/sincere/**/*.scss', style_sincere);
   gulp.watch('assets/js/components/*.js', scripts);
 }
@@ -63,12 +51,10 @@ function watch() {
     proxy: 'http://localhost:8888/ldaniel-site',
     open: false
   });
-  gulp.watch('assets/scss/ldaniel/**/*.scss', style_ldaniel);
   gulp.watch('assets/scss/sincere/**/*.scss', style_sincere);
   gulp.watch('assets/js/components/*.js').on('change', browserSync.reload);
 }
 
-exports.style_ldaniel = style_ldaniel;
 exports.style_sincere = style_sincere;
 exports.scripts = scripts;
 exports.watch = watch_simple;

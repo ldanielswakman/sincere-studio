@@ -22,7 +22,7 @@
   "scripts": {
     "start": "gulp",
     "watch": "gulp watch",
-    "build": "gulp style_ldaniel style_sincere scripts"
+    "build": "gulp style_sincere scripts"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
