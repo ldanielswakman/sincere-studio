@@ -3,7 +3,7 @@
 var gulp = require('gulp');
 var rename = require("gulp-rename");
 // CSS compiling
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var cleanCSS = require('gulp-clean-css');
 // JS compiling
 var concat = require('gulp-concat');
@@ -51,6 +51,13 @@ function scripts() {
   .pipe(gulp.dest('./assets/js'));
 }
 
+function watch_simple() {
+  console.log('\n👀 Watching SCSS files for changes...\n');
+  gulp.watch('assets/scss/ldaniel/**/*.scss', style_ldaniel);
+  gulp.watch('assets/scss/sincere/**/*.scss', style_sincere);
+  gulp.watch('assets/js/components/*.js', scripts);
+}
+
 function watch() {
   browserSync.init({
     proxy: 'http://localhost:8888/ldaniel-site',
@@ -64,4 +71,5 @@ function watch() {
 exports.style_ldaniel = style_ldaniel;
 exports.style_sincere = style_sincere;
 exports.scripts = scripts;
+exports.watch = watch_simple;
 exports.default = watch;
