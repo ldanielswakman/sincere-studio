@@ -18,11 +18,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
 
-  // font-variant-alternates: stylistic(user-defined-ident);
-  // font-feature-settings: "salt" 1, "ss01" 1, "ss02" 1, "ss03" 1;
-  font-feature-settings: "ss01" 1, "onum" 1;
-
-
   &.dialogIsActive {
     overflow: hidden;
   }
@@ -81,12 +76,15 @@ p a {
 // Headings
 h1 {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
   color: $blue;
+}
+h2 {
+  font-weight: 500;
 }
 h3 {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 h4 {
   font-size: 1.25rem;
@@ -94,8 +92,9 @@ h4 {
 }
 h5 {
   text-transform: uppercase;
+  font-weight: 600;
   font-size: 0.875rem;
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.1;
   opacity: 0.25;
 }
 
@@ -121,7 +120,7 @@ p + blockquote {
 
 // Paragraph
 p {
-  line-height: 1.6em;
+  line-height: 2rem;
 }
 blockquote, ul, ol, p, h2, h3, h4 {
   & + p {

@@ -1,5 +1,3 @@
-@charset "UTF-8";
-@import url("//hello.myfonts.net/count/3d90b2");
 .container, .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -1104,7 +1102,7 @@
 }
 .bg-blue a, .bg-bluedull a, .bg-bluedark a {
   color: inherit;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .bg-blue {
@@ -1132,49 +1130,6 @@
   }
 }
 
-/**
- * @license
- * MyFonts Webfont Build ID 4034738, 2021-04-03T18:37:41-0400
- * 
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
- * explicitly restricted from using the Licensed Webfonts(s).
- * 
- * You may obtain a valid license at the URLs below.
- * 
- * Webfont: TTNormsPro-Regular by TypeType
- * URL: https://www.myfonts.com/fonts/type-type/tt-norms/regular/
- * 
- * Webfont: TTNormsPro-Bold by TypeType
- * URL: https://www.myfonts.com/fonts/type-type/tt-norms/bold/
- * 
- * Webfont: TTNormsPro-Medium by TypeType
- * URL: https://www.myfonts.com/fonts/type-type/tt-norms/medium/
- * 
- * 
- * Webfonts copyright: Copyright (c) 2016-2019 by TypeType. Designers Ivan Gladkikh, Pavel Emelyanov. Technical designers Vika Usmanova, Olexa Volochay, Nadyr Rakhimov, Yuri Nakonechny. All rights reserved.
- * 
- * © 2021 MyFonts Inc
-*/
-/* @import must be at top of file, otherwise CSS will not work */
-@font-face {
-  font-family: "TT Commons";
-  src: url("../fonts/TTCommons-DemiBold.woff2") format("woff2"), url("../fonts/TTCommons-DemiBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "TT Commons";
-  src: url("../fonts/TTCommons-Medium.woff2") format("woff2"), url("../fonts/TTCommons-Medium.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "TT Commons";
-  src: url("../fonts/TTCommons-Regular.woff2") format("woff2"), url("../fonts/TTCommons-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 /* --- Reset --- */
 html,
 body,
@@ -1275,12 +1230,11 @@ body {
   padding: 0;
   background-color: #FFFEFC;
   color: #0D0533;
-  font-family: "TT Commons", Helvetica, Arial, sans-serif;
+  font-family: "Inclusive Sans", Helvetica, Arial, sans-serif;
   font-size: 125%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
-  font-feature-settings: "ss01" 1, "onum" 1;
 }
 body.dialogIsActive {
   overflow: hidden;
@@ -1333,13 +1287,17 @@ p a:not(.button):hover {
 
 h1 {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #6547FE;
+}
+
+h2 {
+  font-weight: 500;
 }
 
 h3 {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h4 {
@@ -1349,8 +1307,9 @@ h4 {
 
 h5 {
   text-transform: uppercase;
+  font-weight: 600;
   font-size: 0.875rem;
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.1;
   opacity: 0.25;
 }
 
@@ -1373,7 +1332,7 @@ p + blockquote {
 }
 
 p {
-  line-height: 1.6em;
+  line-height: 2rem;
 }
 
 blockquote + p, ul + p, ol + p, p + p, h2 + p, h3 + p, h4 + p {
@@ -1768,7 +1727,7 @@ body.isTouch .u-hide-for-touch {
   color: #fff;
 }
 .button:hover {
-  background-color: rgb(41.6405405405, 1.3432432432, 247.1567567568);
+  background-color: rgb(58.5459459459, 20.2756756757, 253.7243243243);
   cursor: pointer;
 }
 .button:active, .button:focus {
@@ -2776,7 +2735,7 @@ section.section--collapsed {
   line-height: 1.5rem;
   font-size: 0.75rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   color: #ccccd4;
 }
 .project-info-side .year,
@@ -2812,7 +2771,7 @@ section.section--collapsed {
 }
 @media screen and (min-width: 768px) {
   .section--cv-intro .hero {
-    margin-left: -9rem;
+    margin-left: -6.5rem;
     gap: 1.5rem;
   }
 }
@@ -2832,7 +2791,7 @@ section.section--collapsed {
 }
 @media screen and (min-width: 768px) {
   .section--cv-intro h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -2848,7 +2807,7 @@ section.section--collapsed {
 }
 @media screen and (min-width: 768px) {
   .section--cv-intro h2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 }
 .section--cv-intro .tagline {
@@ -2881,7 +2840,7 @@ section.section--collapsed {
   }
 }
 .section--cv-intro .usp h3 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.5rem;
 }
 .section--cv-intro .usp p {
@@ -2936,7 +2895,7 @@ section.section--collapsed {
 .section--details .page-nav-item.isActive {
   background: #fffefc;
   color: #0D0533;
-  font-weight: 600;
+  font-weight: 500;
 }
 @media (prefers-color-scheme: dark) {
   .section--details .page-nav-item.isActive {
@@ -3147,7 +3106,7 @@ section.section--collapsed {
   transform: scale(1.05);
 }
 .section--details .project-item--linked h4 {
-  font-weight: 600;
+  font-weight: 500;
 }
 .section--details .project-item h4 {
   display: flex;
@@ -3185,5 +3144,3 @@ section.section--collapsed {
     color: #868197;
   }
 }
-
-/*# sourceMappingURL=style-sincere.css.map */

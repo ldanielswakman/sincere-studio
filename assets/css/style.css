@@ -886,7 +886,7 @@
   color: #fff; }
   .bg-blue a, .bg-bluedull a, .bg-bluedark a {
     color: inherit;
-    font-weight: 600; }
+    font-weight: 500; }
 
 .bg-blue {
   background-color: #00f; }

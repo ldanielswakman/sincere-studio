@@ -16,7 +16,7 @@
       <?php if($section->type() == 'section') : ?>
 
         <div class="row">
-          <div class="col-xs-12 col-sm-10 col-md-6">
+          <div class="col-xs-12 col-sm-10 col-lg-6">
             <?= $section->text()->kirbytext() ?>
           </div>
         </div>
@@ -24,7 +24,7 @@
       <?php elseif($section->type() == 'hero') : ?>
 
         <div class="row">
-          <div class="col-xs-12 col-sm-10 col-md-6">
+          <div class="col-xs-12 col-sm-10 col-lg-6">
             <?= $section->text()->kirbytext() ?>
 
             <div class="u-mt2">
