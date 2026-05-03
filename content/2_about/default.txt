@@ -6,7 +6,7 @@ Text:
 
 (new-section: bg-white c-grey)
 
-I'm a 'full-stack' designer, believe in great visual experiences in digital and analog context wherever the world takes me. Been designing & building things as an independent designer, for clients and startups, for the last (since: 2009) years. My work involves these themes:
+Sincere Studio is a small digital studio based in Berlin. It believes in great visual experiences in digital and analog context wherever the world takes me. Been designing & building things as an independent designer, for clients and startups, for the last (since: 2009) years. My work involves these themes:
 
 (new-section:  u-pv5vh)
 
