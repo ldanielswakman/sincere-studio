@@ -5,7 +5,7 @@ cd /data/www
 
 # Set up SSH key from environment variable (base64 encoded)
 mkdir -p ~/.ssh
-echo "$GITHUB_DEPLOY_KEY" -d > ~/.ssh/github_deploy
+echo "$GITHUB_DEPLOY_KEY" | base64 -d > ~/.ssh/github_deploy
 chmod 600 ~/.ssh/github_deploy
 
 cat > ~/.ssh/config << EOF
@@ -29,6 +29,6 @@ fi
 
 # Write Kirby license from environment variable
 if [ -n "$KIRBY_LICENSE" ]; then
-  echo "$KIRBY_LICENSE" > /data/www/site/config/.license
+  echo "$KIRBY_LICENSE" | base64 > /data/www/site/config/.license
   chmod 600 /data/www/site/config/.license
 fi
