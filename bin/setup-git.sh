@@ -3,9 +3,9 @@ set -e
 
 cd /data/www
 
-# Set up SSH key from environment variable
+# Set up SSH key from environment variable (base64 encoded)
 mkdir -p ~/.ssh
-echo "$GITHUB_DEPLOY_KEY" > ~/.ssh/github_deploy
+echo "$GITHUB_DEPLOY_KEY" -d > ~/.ssh/github_deploy
 chmod 600 ~/.ssh/github_deploy
 
 cat > ~/.ssh/config << EOF
@@ -25,4 +25,10 @@ if [ ! -d .git ]; then
   git fetch
   git checkout -f main
   git branch --set-upstream-to=origin/main main
+fi
+
+# Write Kirby license from environment variable
+if [ -n "$KIRBY_LICENSE" ]; then
+  echo "$KIRBY_LICENSE" > /data/www/site/config/.license
+  chmod 600 /data/www/site/config/.license
 fi
