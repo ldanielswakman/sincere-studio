@@ -27,8 +27,8 @@ if [ ! -d .git ]; then
   git branch --set-upstream-to=origin/main main
 fi
 
-# Write Kirby license from environment variable
+# Write Kirby license from environment variable (base64 encoded)
 if [ -n "$KIRBY_LICENSE" ]; then
-  echo "$KIRBY_LICENSE" | base64 > /data/www/site/config/.license
+  echo "$KIRBY_LICENSE" | base64 -d > /data/www/site/config/.license
   chmod 600 /data/www/site/config/.license
 fi
