@@ -1,14 +1,14 @@
 {
-  "name": "ldaniel.eu",
-  "author": "L Daniel Swkaman <hello@ldaniel.eu>",
-  "homepage": "https://ldaniel.eu",
-  "description": "ldaniel.eu is an independent design studio, designing + building the web for today and tomorrow.",
+  "name": "sincere-studio",
+  "author": "Daniel Swakman <daniel@sincere.studio>",
+  "homepage": "https://sincere.studio",
+  "description": "Craft-first design studio for startups — product UX, design systems, and brand identity, with hands-on front-end delivery. Based in Berlin.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ldanielswakman/ldaniel-site"
+    "url": "https://github.com/ldanielswakman/sincere-studio"
   },
   "bugs": {
-    "url": "https://github.com/ldanielswakman/ldaniel-site/issues"
+    "url": "https://github.com/ldanielswakman/sincere-studio/issues"
   },
   "keywords": [
     "kirby",
