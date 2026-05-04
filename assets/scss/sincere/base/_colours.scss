@@ -40,7 +40,7 @@ $black: #000;
   color: $grey-subtle-night;
 
   @include darkMode {
-    color: $grey-subtle-night;
+    color: $grey-day;
   }
 }
 
