@@ -10,11 +10,11 @@ Hero-subtitle: Head of Design · Leading Design Systems, Product UX & Team Growt
 
 ----
 
-Hero-description:
+Hero-description: I build design organisations that create lasting impact — through rigorous systems, a strong craft culture, and close collaboration with product and engineering.
 
-I build design organisations that create lasting impact — through rigorous systems, a strong craft culture, and close collaboration with product and engineering.
-Over 15 years in tech, I've led cross-functional teams, built design systems at scale, and driven product and brand transformations from scrappy startup to acquisition. What I care about most is creating the conditions where great design can actually happen, consistently.
-I bring an unusual mix of deep craft, hands-on technical fluency, and executive-level strategic thinking — and I've learned those three only create real impact when they pull in the same direction.
+----
+
+Hero-description2: Over 15 years in tech, I've led cross-functional teams, built design systems at scale, and driven product and brand transformations from scrappy startup to acquisition. What I care about most is creating the conditions where great design can actually happen, consistently. I bring an unusual mix of deep craft, hands-on technical fluency, and executive-level strategic thinking — and I've learned those three only create real impact when they pull in the same direction.
 
 ----
 
@@ -24,26 +24,20 @@ Hero-usps:
   image:
     - file://8uIHvTUstDrFdK6l
   title: Design
-  description: >
-    Creating impact through meticulous
-    craftsmanship, integrated brand
-    thinking, and an eye for detail
+  description: "Over 15 years in tech, I've led cross-functional teams, built design systems at scale, and driven product and brand transformations from scrappy startup to acquisition."
 - 
   image:
     - file://nqRMLu0GxvWly9IG
   title: Tech
   description: >
-    Bridging design and code with hands-on
-    technical expertise, enabling seamless
-    collaboration with development teams
+    What I care about most is creating the
+    conditions where great design can
+    actually happen, consistently.
 - 
   image:
     - file://rvbasIfp9W97XGbV
   title: Leadership
-  description: >
-    Growing and inspiring teams around a
-    shared north star vision, driving design
-    change within organisations
+  description: "I bring an unusual mix of deep craft, hands-on technical fluency, and executive-level strategic thinking — and I've learned those three only create real impact when they pull in the same direction."
 
 ----
 
