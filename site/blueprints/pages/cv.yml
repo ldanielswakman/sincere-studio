@@ -28,6 +28,12 @@ tabs:
         size: tiny
         buttons: false
 
+      hero_description2:
+        label: Hero description
+        type: textarea
+        size: small
+        buttons: false
+
       hero_usps:
         label: Hero USPs
         type: structure

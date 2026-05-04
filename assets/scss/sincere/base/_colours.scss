@@ -37,7 +37,7 @@ $black: #000;
   }
 }
 .c-text-subtle {
-  color: $grey-subtle-day;
+  color: $grey-subtle-night;
 
   @include darkMode {
     color: $grey-subtle-night;

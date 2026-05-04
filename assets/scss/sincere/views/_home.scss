@@ -1,0 +1,23 @@
+// Home Page Styles
+
+.hero-bg-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  transform: translateY(25vh);
+}
+
+// Ensure hero section is positioned relatively for absolute child
+.section--hero {
+  position: relative;
+  
+  // Content stays above the canvas background
+  .row {
+    position: relative;
+    z-index: 1;
+  }
+}

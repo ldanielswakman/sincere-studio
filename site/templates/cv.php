@@ -15,6 +15,8 @@
 
         <p class="tagline"><?= $page->hero_description()->ktinline() ?></p>
 
+        <p><?= $page->hero_description2()->kt() ?></p>
+
         <div class="usps">
           <?php foreach($page->hero_usps()->toStructure() as $item) : ?>
             <div class="usp">

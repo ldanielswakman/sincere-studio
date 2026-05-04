@@ -86,6 +86,25 @@ Object.defineProperty(item,'prepend',{configurable:true,enumerable:true,writable
 	http://www.jacklmoore.com/autosize
 */
 !function(e,t){if("function"==typeof define&&define.amd)define(["exports","module"],t);else if("undefined"!=typeof exports&&"undefined"!=typeof module)t(exports,module);else{var n={exports:{}};t(n.exports,n),e.autosize=n.exports}}(this,function(e,t){"use strict";function n(e){function t(){var t=window.getComputedStyle(e,null);"vertical"===t.resize?e.style.resize="none":"both"===t.resize&&(e.style.resize="horizontal"),s="content-box"===t.boxSizing?-(parseFloat(t.paddingTop)+parseFloat(t.paddingBottom)):parseFloat(t.borderTopWidth)+parseFloat(t.borderBottomWidth),isNaN(s)&&(s=0),l()}function n(t){var n=e.style.width;e.style.width="0px",e.offsetWidth,e.style.width=n,e.style.overflowY=t}function o(e){for(var t=[];e&&e.parentNode&&e.parentNode instanceof Element;)e.parentNode.scrollTop&&t.push({node:e.parentNode,scrollTop:e.parentNode.scrollTop}),e=e.parentNode;return t}function r(){var t=e.style.height,n=o(e),r=document.documentElement&&document.documentElement.scrollTop;e.style.height="auto";var i=e.scrollHeight+s;return 0===e.scrollHeight?void(e.style.height=t):(e.style.height=i+"px",u=e.clientWidth,n.forEach(function(e){e.node.scrollTop=e.scrollTop}),void(r&&(document.documentElement.scrollTop=r)))}function l(){r();var t=Math.round(parseFloat(e.style.height)),o=window.getComputedStyle(e,null),i=Math.round(parseFloat(o.height));if(i!==t?"visible"!==o.overflowY&&(n("visible"),r(),i=Math.round(parseFloat(window.getComputedStyle(e,null).height))):"hidden"!==o.overflowY&&(n("hidden"),r(),i=Math.round(parseFloat(window.getComputedStyle(e,null).height))),a!==i){a=i;var l=d("autosize:resized");try{e.dispatchEvent(l)}catch(e){}}}if(e&&e.nodeName&&"TEXTAREA"===e.nodeName&&!i.has(e)){var s=null,u=e.clientWidth,a=null,p=function(){e.clientWidth!==u&&l()},c=function(t){window.removeEventListener("resize",p,!1),e.removeEventListener("input",l,!1),e.removeEventListener("keyup",l,!1),e.removeEventListener("autosize:destroy",c,!1),e.removeEventListener("autosize:update",l,!1),Object.keys(t).forEach(function(n){e.style[n]=t[n]}),i.delete(e)}.bind(e,{height:e.style.height,resize:e.style.resize,overflowY:e.style.overflowY,overflowX:e.style.overflowX,wordWrap:e.style.wordWrap});e.addEventListener("autosize:destroy",c,!1),"onpropertychange"in e&&"oninput"in e&&e.addEventListener("keyup",l,!1),window.addEventListener("resize",p,!1),e.addEventListener("input",l,!1),e.addEventListener("autosize:update",l,!1),e.style.overflowX="hidden",e.style.wordWrap="break-word",i.set(e,{destroy:c,update:l}),t()}}function o(e){var t=i.get(e);t&&t.destroy()}function r(e){var t=i.get(e);t&&t.update()}var i="function"==typeof Map?new Map:function(){var e=[],t=[];return{has:function(t){return e.indexOf(t)>-1},get:function(n){return t[e.indexOf(n)]},set:function(n,o){e.indexOf(n)===-1&&(e.push(n),t.push(o))},delete:function(n){var o=e.indexOf(n);o>-1&&(e.splice(o,1),t.splice(o,1))}}}(),d=function(e){return new Event(e,{bubbles:!0})};try{new Event("test")}catch(e){d=function(e){var t=document.createEvent("Event");return t.initEvent(e,!0,!1),t}}var l=null;"undefined"==typeof window||"function"!=typeof window.getComputedStyle?(l=function(e){return e},l.destroy=function(e){return e},l.update=function(e){return e}):(l=function(e,t){return e&&Array.prototype.forEach.call(e.length?e:[e],function(e){return n(e,t)}),e},l.destroy=function(e){return e&&Array.prototype.forEach.call(e.length?e:[e],o),e},l.update=function(e){return e&&Array.prototype.forEach.call(e.length?e:[e],r),e}),t.exports=l});
+// Click Ripple Effect
+// Creates a circle that scales up and fades out on click
+
+document.addEventListener('click', function(e) {
+  const ripple = document.createElement('div');
+  ripple.classList.add('click-ripple');
+  
+  // Position ripple at click point
+  ripple.style.left = e.clientX + 'px';
+  ripple.style.top = e.clientY + 'px';
+  
+  document.body.appendChild(ripple);
+  
+  // Remove element after animation completes (1s)
+  setTimeout(() => {
+    ripple.remove();
+  }, 1000);
+});
+
 // Contact Form Dialog
 $(document).ready(function() {
 
@@ -355,6 +374,128 @@ function shuffle(o) {
   return o;
 };
 
+
+// Hero Background Animation - Concept C′: Rolling Hills Horizon
+// 3D landscape with rolling waves, viewed from a low camera pitch
+
+(function() {
+  const DOT_COLOR = [101, 71, 254]; // #6547FE as RGB
+  
+  function initHeroBackground() {
+    const canvas = document.getElementById('hero-bg-canvas');
+    if (!canvas) return;
+
+    function setupCanvas() {
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const w = canvas.clientWidth;
+      const h = canvas.clientHeight;
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      const ctx = canvas.getContext('2d');
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      return { ctx, w, h };
+    }
+
+    let { ctx, w, h } = setupCanvas();
+    let raf, t0;
+
+    // Camera & projection
+    const FOCAL = 700;
+    const CAM_HEIGHT = 350;
+    const PITCH = 0.3; // ~13° downward — angled more from above
+    const cosP = Math.cos(PITCH);
+    const sinP = Math.sin(PITCH);
+
+    // Grid extents (in world units)
+    const NEAR = 350;
+    const FAR = 2300;
+    const SPACING_X = 30;
+    const SPACING_Z = 38;
+
+    const BASE_R = 2;
+    const PERSP_MAX = 2.5;
+
+    const draw = (t) => {
+      ctx.clearRect(0, 0, w, h);
+      const cx = w / 2;
+      const cy = h / 2;
+
+      const numRows = Math.ceil((FAR - NEAR) / SPACING_Z);
+
+      for (let j = 0; j < numRows; j++) {
+        const gz = NEAR + j * SPACING_Z;
+
+        // Per-row x range: only generate cols that can land on screen
+        const approxZCam = CAM_HEIGHT * sinP + gz * cosP;
+        const halfRange = (Math.max(cx, w - cx) + 80) * approxZCam / FOCAL;
+        const numCols = Math.ceil((halfRange * 2) / SPACING_X);
+        const xStart = -halfRange;
+
+        for (let i = 0; i < numCols; i++) {
+          const gx = xStart + i * SPACING_X;
+
+          // Rolling-hill height — three layered traveling waves
+          const wy =
+            Math.sin(gx * 0.0042 + t * 0.20) * 28 +
+            Math.sin(gz * 0.0033 + t * 0.14) * 32 +
+            Math.sin((gx * 0.55 + gz) * 0.0026 + t * 0.10) * 38;
+
+          // Translate to camera, rotate by pitch, project
+          const ty = wy - CAM_HEIGHT;
+          const yCam = ty * cosP + gz * sinP;
+          const zCam = -ty * sinP + gz * cosP;
+          if (zCam < 1) continue;
+
+          const persp = FOCAL / zCam;
+          const sx = gx * persp + cx;
+          const sy = -yCam * persp + cy;
+          if (sx < -8 || sx > w + 8 || sy < -8 || sy > h + 8) continue;
+
+          // Horizon fade — squared falloff for smooth dissolve
+          const distFrac = (gz - NEAR) / (FAR - NEAR);
+          const fade = Math.max(0, Math.min(1, (1 - distFrac) * 1.3));
+          const fadeCurve = fade * fade;
+          if (fadeCurve < 0.005) continue;
+
+          const r = BASE_R * Math.min(persp, PERSP_MAX);
+          const alpha = 0.42 * fadeCurve;
+
+          ctx.fillStyle = `rgba(${DOT_COLOR[0]},${DOT_COLOR[1]},${DOT_COLOR[2]},${alpha.toFixed(3)})`;
+          ctx.beginPath();
+          ctx.arc(sx, sy, r, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+    };
+
+    const loop = (ts) => {
+      raf = requestAnimationFrame(loop);
+      if (!t0) t0 = ts;
+      draw((ts - t0) * 0.001);
+    };
+
+    raf = requestAnimationFrame(loop);
+
+    const onResize = () => {
+      ({ ctx, w, h } = setupCanvas());
+    };
+
+    window.addEventListener('resize', onResize);
+
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener('resize', onResize);
+      ctx.clearRect(0, 0, w, h);
+    };
+  }
+
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initHeroBackground);
+  } else {
+    initHeroBackground();
+  }
+})();
 
 function scrollActions() {
   scroll = $(window).scrollTop();

@@ -14,10 +14,17 @@ fields:
         icon: h1
         fields:
 
+          hero:
+            label: Hero
+            type:  textarea
+            size:  tiny
+            buttons: false
+
           text:
             label: Text
             type:  textarea
             size:  small
+            buttons: false
 
           current:
             label: Current

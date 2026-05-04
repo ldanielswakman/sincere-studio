@@ -6,7 +6,7 @@ nav {
   width: 100%;
   max-width: 100vw;
   padding: 0 1rem;
-  background: rgba($bg-day, 0.8);
+  background: rgba($bg-day, 0.6);
   @include prefix(backdrop-filter, blur(0.5rem));
   border-top: 1px solid $grey-subtle-day;
 
@@ -30,14 +30,13 @@ nav {
     width: 100%;
     padding: 0.5rem 0;
     list-style: none;
-    color: $bluedull;
+    color: $grey-day;
 
     @include tabletAndUp {
       margin-left: -1rem;
     }
 
     &.hasActive {
-      color: $grey;
 
       a.isActive {
         color: $text-day;
@@ -78,7 +77,7 @@ nav {
     a {
       white-space: nowrap;
 
-      &.a--twitter {
+      &.a--linkedin {
         display: none;
 
         @media screen and (min-width: $vp_phone) {

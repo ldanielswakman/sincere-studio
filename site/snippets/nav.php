@@ -14,11 +14,10 @@
           <?php $title = ($p->slug() == "cv") ? $p->slug() : strtolower($p->title()->html()) ?>
           <li><a <?php e($p->isOpen(), ' class="isActive"') ?> href="<?= $p->url() ?>"><?= $title ?></a></li>
         <?php endforeach ?>
-        <li><a href="mailto:hi@sincere.studio" target="_blank" class="button button--outline button--subtle">get in touch</a></li>
+        <li><a href="mailto:hi@sincere.studio" target="_blank" class="button button--outline button--subtle">contact</a></li>
       </ul>
-
       <ul class="menu-grey">
-        <li><a href="//twitter.com/intent/follow?screen_name=ldanielswakman" target="_blank" class="a--twitter"><?php snippet('svg/twitter-icon') ?></a></li>
+        <li><a href="https://www.linkedin.com/in/ldanielswakman" target="_blank" class="a--linkedin"><?php snippet('svg/linkedin-icon') ?></a></li>
       </ul>
 
     </div>

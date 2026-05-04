@@ -23,30 +23,36 @@
 
       <?php elseif($section->type() == 'hero') : ?>
 
+        <canvas id="hero-bg-canvas" class="hero-bg-canvas"></canvas>
+
         <div class="row">
-          <div class="col-xs-12 col-sm-10 col-lg-6">
-            <?= $section->text()->kirbytext() ?>
+          <div class="col-xs-12 col-sm-10 col-lg-8">
+            <h1 class="h1--hero u-mb1"><?= $section->hero()->ktinline() ?></h1>
+
+            <p class="p--hero c-text-subtle"><?= $section->text()->ktinline() ?></p>
 
             <div class="u-mt2">
                 <a href="<?= $pages->find('projects')->url() ?>" class="button u-mr1">see projects</a>
                 <a href="mailto:hi@sincere.studio" target="_blank" class="button button--outline u-op70">say hi</a>
               </div>
 
-              <h5 class="u-mt2">CURRENTLY WORKING ON</h5>
+              <div class="u-mt2" style="display: flex; align-items: center;">
+                <h5 class="u-mr05">CURRENTLY: </h5>
 
-              <p>
-                <?php
-                $items = $section->current()->toStructure();
-                foreach($items as $count => $item):
-                  e($item->link()->isNotEmpty(), '<a href="' . $item->link() . '" target="_blank">');
-                  echo $item->text()->html();
-                  e($item->link()->isNotEmpty(), '</a>');
-                  if($count < $items->count()-1) {
-                    e(($items->count()-2 == $count), ' &amp; ', ', ');
-                  }
-                endforeach;
-                ?>.
-              </p>
+                <p class="c-text-subtle">
+                  <?php
+                  $items = $section->current()->toStructure();
+                  foreach($items as $count => $item):
+                    e($item->link()->isNotEmpty(), '<a href="' . $item->link() . '" target="_blank">');
+                    echo $item->text()->html();
+                    e($item->link()->isNotEmpty(), '</a>');
+                    if($count < $items->count()-1) {
+                      e(($items->count()-2 == $count), ' &amp; ', ', ');
+                    }
+                  endforeach;
+                  ?>
+                </p>
+              </div>
           </div>
         </div>
 

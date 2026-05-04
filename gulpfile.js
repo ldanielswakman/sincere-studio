@@ -48,7 +48,7 @@ function watch_simple() {
 
 function watch() {
   browserSync.init({
-    proxy: 'http://localhost:8888/ldaniel-site',
+    proxy: 'http://localhost:8888/sincere-studio',
     open: false
   });
   gulp.watch('assets/scss/sincere/**/*.scss', style_sincere);
