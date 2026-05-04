@@ -14,7 +14,10 @@ Hero-description: I build design organisations that create lasting impact — th
 
 ----
 
-Hero-description2: Over 15 years in tech, I've led cross-functional teams, built design systems at scale, and driven product and brand transformations from scrappy startup to acquisition. What I care about most is creating the conditions where great design can actually happen, consistently.I bring an unusual mix of deep craft, hands-on technical fluency, and executive-level strategic thinking — and I've learned those three only create real impact when they pull in the same direction.
+Hero-description2:
+
+Over 15 years in tech, I've led cross-functional teams, built design systems at scale, and driven product and brand transformations from scrappy startup to acquisition. What I care about most is creating the conditions where great design can actually happen, consistently.
+I bring an unusual mix of deep craft, hands-on technical fluency, and executive-level strategic thinking — and I've learned those three only create real impact when they pull in the same direction.
 
 ----
 
