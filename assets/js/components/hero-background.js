@@ -59,9 +59,9 @@
 
           // Rolling-hill height — three layered traveling waves
           const wy =
-            Math.sin(gx * 0.0042 + t * 0.20) * 28 +
-            Math.sin(gz * 0.0033 + t * 0.14) * 32 +
-            Math.sin((gx * 0.55 + gz) * 0.0026 + t * 0.10) * 38;
+            Math.sin(gx * 0.0042 + t * 0.27) * 40 +
+            Math.sin(gz * 0.0033 + t * 0.19) * 46 +
+            Math.sin((gx * 0.55 + gz) * 0.0026 + t * 0.13) * 54;
 
           // Translate to camera, rotate by pitch, project
           const ty = wy - CAM_HEIGHT;
