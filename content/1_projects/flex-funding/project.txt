@@ -2,7 +2,7 @@ Title: Flex Funding
 
 ----
 
-Keyvisual: 
+Keyvisual: - file://mMzIiybKKnLy6Jsr
 
 ----
 
@@ -11,6 +11,14 @@ Builder:
 ----
 
 Sections: 
+
+----
+
+Year: 
+
+----
+
+Description: 
 
 ----
 
@@ -26,11 +34,19 @@ Team:
 
 ----
 
+Projecturl: 
+
+----
+
 Featured: false
 
 ----
 
 Featuredimage: 
+
+----
+
+Featuredcolour: 
 
 ----
 
