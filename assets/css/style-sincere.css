@@ -1495,20 +1495,12 @@ figure img {
   padding-top: 20vh !important;
 }
 
-.u-pt25vh {
-  padding-top: 25vh !important;
-}
-
 .u-pt30vh {
   padding-top: 30vh !important;
 }
 
 .u-pb5vh {
   padding-bottom: 5vh !important;
-}
-
-.u-pb10vh {
-  padding-bottom: 10vh !important;
 }
 
 .u-pb2 {
@@ -2438,12 +2430,15 @@ section.section--bg2 .section__bg-image {
 }
 section.section--homeintro {
   min-height: 50vh;
+  padding-top: 25vh;
+  padding-bottom: 5vh;
 }
 section.section--homeintro ~ section {
   transform: translateY(40vh);
   transition: opacity 0.6s linear, transform 1.6s cubic-bezier(0.65, 0, 0.35, 1);
   transition-delay: 0.6s;
   opacity: 0;
+  background: transparent;
 }
 .isLoaded section.section--homeintro ~ section {
   transform: translateY(0);
@@ -3202,7 +3197,7 @@ section.section--collapsed {
   height: 100%;
   pointer-events: none;
   z-index: 0;
-  transform: translateY(25vh);
+  transform: translateY(20vh);
 }
 
 .section--hero {
