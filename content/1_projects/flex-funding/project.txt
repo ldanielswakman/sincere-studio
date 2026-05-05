@@ -10,15 +10,11 @@ Builder:
 
 ----
 
-Sections: 
+Year: 2025
 
 ----
 
-Year: 
-
-----
-
-Description: 
+Description: Brand, website and application funnel for microlending platform
 
 ----
 
@@ -42,11 +38,15 @@ Featured: false
 
 ----
 
-Featuredimage: 
+Featuredimage: - file://0kHAssjsQpRgkGwK
 
 ----
 
 Featuredcolour: 
+
+----
+
+Sections: 
 
 ----
 
