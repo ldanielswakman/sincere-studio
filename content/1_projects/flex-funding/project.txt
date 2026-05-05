@@ -14,11 +14,11 @@ Year: 2025
 
 ----
 
-Description: Brand, website and application funnel for micro-lending platform
+Description: Brand, website and application funnel for crowdlending platform
 
 ----
 
-Intro: What do you do when you are relaunching a micro-loan platform without a strong brand or identity? You create one on the fly.
+Intro: What do you do when you are relaunching a crowdlending platform without a strong brand or identity? You create one on the fly.
 
 ----
 
@@ -30,7 +30,7 @@ Team:
 
 ----
 
-Projecturl: 
+Projecturl: https://flexfunding.com
 
 ----
 
