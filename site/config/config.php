@@ -128,8 +128,8 @@ return [
     'install' => true
   ],
   'thathoff.git-content' => [
-    'pull' => true,
-    'push' => true,
+    'pull' => (strpos($_SERVER['HTTP_HOST'] ?? '', 'localhost') === false),
+    'push' => (strpos($_SERVER['HTTP_HOST'] ?? '', 'localhost') === false),
     'commitMessage' => 'Content update via Panel',
   ],
 ];
