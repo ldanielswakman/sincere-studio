@@ -379,7 +379,7 @@ function shuffle(o) {
 // 3D landscape with rolling waves, viewed from a low camera pitch
 
 (function() {
-  const DOT_COLOR = [101, 71, 254]; // #6547FE as RGB
+  const DOT_COLOR = [120, 120, 120]; // #6547FE as RGB
   
   function initHeroBackground() {
     const canvas = document.getElementById('hero-bg-canvas');
@@ -402,7 +402,7 @@ function shuffle(o) {
     // Camera & projection
     const FOCAL = 700;
     const CAM_HEIGHT = 350;
-    const PITCH = 0.3; // ~13° downward — angled more from above
+    const PITCH = 0.2; // ~13° downward — angled more from above
     const cosP = Math.cos(PITCH);
     const sinP = Math.sin(PITCH);
 
@@ -436,9 +436,9 @@ function shuffle(o) {
 
           // Rolling-hill height — three layered traveling waves
           const wy =
-            Math.sin(gx * 0.0042 + t * 0.20) * 28 +
-            Math.sin(gz * 0.0033 + t * 0.14) * 32 +
-            Math.sin((gx * 0.55 + gz) * 0.0026 + t * 0.10) * 38;
+            Math.sin(gx * 0.0042 + t * 0.27) * 40 +
+            Math.sin(gz * 0.0033 + t * 0.19) * 46 +
+            Math.sin((gx * 0.55 + gz) * 0.0026 + t * 0.13) * 54;
 
           // Translate to camera, rotate by pitch, project
           const ty = wy - CAM_HEIGHT;

@@ -69,6 +69,8 @@ section {
   }
   &.section--homeintro {
     min-height: 50vh;
+    padding-top: 25vh;
+    padding-bottom: 5vh;
 
     & ~ section {
       transform: translateY(40vh);
