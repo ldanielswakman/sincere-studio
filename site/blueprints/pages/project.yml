@@ -126,7 +126,7 @@ columns:
             type:  url
 
           h_featured:
-            label: Featured
+            label: Featured on projects page
             type: headline
             width: 2/3
           featured:
