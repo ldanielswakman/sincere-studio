@@ -10,6 +10,42 @@ Builder:
 
 ----
 
+Year: 2018
+
+----
+
+Description: Digital acquisition experience for experts in sports performance
+
+----
+
+Intro: Diagnose Berlin specialises in sport performance optimisation, offering bike fitting and performance diagnostics services mostly through their digital channels. They asked us to design and build a clear information structure and a new super-low threshold booking experience on their website to book appointments.
+
+----
+
+Tags: web design, visual design, ux, front-end, interaction design
+
+----
+
+Team: 
+
+----
+
+Projecturl: https://diagnose-berlin.de/
+
+----
+
+Featured: false
+
+----
+
+Featuredimage: - file://yYet9O450MLaoWMN
+
+----
+
+Featuredcolour: 
+
+----
+
 Sections:
 
 - 
@@ -47,42 +83,6 @@ Sections:
   bg_image:
     - file://p18QzeHapGGnjNad
   bg_image_pos: full
-
-----
-
-Year: 2018
-
-----
-
-Description: Digital acquisition experience for experts in sports performance
-
-----
-
-Intro: Diagnose Berlin specialises in sport performance optimisation, offering bike fitting and performance diagnostics services mostly through their digital channels. They asked us to design and build a clear information structure and a new super-low threshold booking experience on their website to book appointments.
-
-----
-
-Tags: web design, visual design, ux, front-end, interaction design
-
-----
-
-Team: 
-
-----
-
-Projecturl: https://diagnose-berlin.de/
-
-----
-
-Featured: true
-
-----
-
-Featuredimage: - file://yYet9O450MLaoWMN
-
-----
-
-Featuredcolour: 
 
 ----
 
