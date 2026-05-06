@@ -22,7 +22,7 @@
     <?php snippet('page-header', ['page' => $page, 'subtitle' => $subtitle]) ?>
 
     <?php
-    $featuredProjects = $projects->filterBy('featured', 'in', ['1', 'true']);
+    $featuredProjects = $page->featured()->toPages();
     if (!param('tag') && $featuredProjects->count() > 0) :
     ?>
       <!-- Selected projects -->

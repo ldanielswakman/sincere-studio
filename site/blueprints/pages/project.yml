@@ -124,17 +124,6 @@ columns:
           projecturl:
             label: Project URL
             type:  url
-
-          h_featured:
-            label: Featured on projects page
-            type: headline
-            width: 2/3
-          featured:
-            type: toggle
-            width: 1/3
-            options:
-              0: "No"
-              1: "Yes"
           featuredimage:
             label: Featured Image
             type: files

@@ -14,12 +14,16 @@ sections:
     template: project
     # limit: 1000
 
-  text:
+  content:
     type: fields
     fields:
       title:
         label: Title
         type:  text
-      text:
-        label: Text
-        type:  textarea
+      featured:
+        label: Featured Projects
+        type: pages
+        query: site.find('projects').children
+        min: 0
+        max: 6
+        layout: cardlets
