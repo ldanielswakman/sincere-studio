@@ -10,15 +10,11 @@ Builder: [{"content":{"text":"## Challenge\n\nIn their search for product-market
 
 ----
 
-Sections: 
-
-----
-
 Year: 2019-current
 
 ----
 
-Description: Strategic design of product experience and marketing language for an audience engagement tool
+Description: Strategic UX redesign of product experience for an eCommerce engagement tool
 
 ----
 
@@ -43,15 +39,15 @@ Projecturl: https://www.poltio.com
 
 ----
 
-Featured: true
-
-----
-
 Featuredimage: - file://Si6bpsDdPW2Ia5rK
 
 ----
 
 Featuredcolour: 009EEC
+
+----
+
+Sections: 
 
 ----
 
