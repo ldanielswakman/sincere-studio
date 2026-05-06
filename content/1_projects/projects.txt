@@ -2,14 +2,11 @@ Title: Projects
 
 ----
 
-Text: 
+Text: lksdflkjdslkj
 
 ----
 
-Featured:
-
-- page://BkOhu0IQ3lZZlVPO
-- page://6NETcw4AAl063Ple
+Featured: 
 
 ----
 
