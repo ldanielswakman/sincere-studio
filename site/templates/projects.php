@@ -5,6 +5,8 @@
     <?php
     $projects = $page->children()->sortBy('year', 'desc');
     $filteredProjects = $projects;
+    $featuredProjects = $page->featured()->toPages();
+    
     $subtitle = 'selected';
     $list_title = 'all projects';
 
@@ -17,12 +19,15 @@
       $subtitle = '';
       $list_title = '<a href="' . $page->url() . '" class="u-floatright">&times;</a><span class="u-op30">projects tagged</span> ' . urldecode($tag) . '';
     }
+
+    if ($featuredProjects->count() == 0) {
+      $subtitle = '';
+    }
     ?>
 
     <?php snippet('page-header', ['page' => $page, 'subtitle' => $subtitle]) ?>
 
     <?php
-    $featuredProjects = $page->featured()->toPages();
     if (!param('tag') && $featuredProjects->count() > 0) :
     ?>
       <!-- Selected projects -->
