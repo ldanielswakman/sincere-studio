@@ -66,13 +66,13 @@
           <div class="col-xs-12">
 
             <h5 class="u-mb15">
-              <a href="//twitter.com/ldanielswakman" target="_blank" class="a--icon a--twitter u-floatright u-op70">
-                <?php snippet('svg/twitter-icon') ?>
+              <a href="//linkedin.com/in/ldanielswakman" target="_blank" class="a--icon a--linkedin u-floatright u-op70">
+                <?php snippet('svg/linkedin-icon') ?>
               </a>
               <?= $section->title()->html() ?>
             </h5>
 
-            <div id="twitterfeed"></div>
+            <div id="linkedinfeed"></div>
 
           </div>
         </div>

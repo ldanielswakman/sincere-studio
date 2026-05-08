@@ -36,6 +36,7 @@ Icon
 # License
 # ---------------
 /site/config/.license
+/site/config/linkedin-token.json
 
 
 # Other local files

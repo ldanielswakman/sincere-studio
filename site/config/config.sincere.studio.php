@@ -18,6 +18,11 @@ for more information: http://getkirby.com/license
 c::set('google_sheet_key', '171Ur45EUbxpG3f6sujgo_UgElyFSF2RKcXFohvGIG_M');
 c::set('dribbble_token', '92024af1ed1c7f87d7fe417bcad6de02afe6cafe6a539bafbbc1b56dda6c6628');
 
+// LinkedIn OAuth app credentials — set via LinkedIn Developer Portal
+// https://www.linkedin.com/developers/apps
+c::set('linkedin_client_id', '');
+c::set('linkedin_client_secret', '');
+
 /*
 
 ---------------------------------------
