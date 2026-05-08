@@ -6,7 +6,7 @@ Keyvisual: - file://mMzIiybKKnLy6Jsr
 
 ----
 
-Builder: 
+Builder: [{"content":{"image":["file://iabm7otdpxp1grub"]},"id":"8a93a84b-222c-43a9-92f3-f23195af64d4","isHidden":false,"type":"image"}]
 
 ----
 
@@ -32,7 +32,6 @@ Team:
 
 Projecturl: https://flexfunding.com
 
-
 ----
 
 Featuredimage: - file://0kHAssjsQpRgkGwK
@@ -48,3 +47,7 @@ Sections:
 ----
 
 Uuid: DaDIEHvGxLvOteab
+
+----
+
+Featured: 0
