@@ -36,9 +36,6 @@ Team:
 
 Projecturl: https://www.parasut.com/
 
-----
-
-Featured: false
 
 ----
 

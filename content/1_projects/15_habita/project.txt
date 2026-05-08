@@ -36,9 +36,6 @@ Team:
 
 Projecturl: http://www.habita.com.tr/en
 
-----
-
-Featured: false
 
 ----
 

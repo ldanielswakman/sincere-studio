@@ -32,9 +32,6 @@ Tags: web design, branding
 
 Projecturl: http://supercv.com/
 
-----
-
-Featured: false
 
 ----
 

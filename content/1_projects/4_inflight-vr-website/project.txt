@@ -41,9 +41,6 @@ Team:
 
 Projecturl: https://inflight-vr.com/
 
-----
-
-Featured: true
 
 ----
 

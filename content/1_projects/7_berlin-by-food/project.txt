@@ -64,9 +64,6 @@ Team:
 
 Projecturl: https://berlinbyfood.eu/
 
-----
-
-Featured: false
 
 ----
 

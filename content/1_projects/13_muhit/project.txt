@@ -140,9 +140,6 @@ Team:
 
 Projecturl: https://muhit.sincere.studio/
 
-----
-
-Featured: false
 
 ----
 

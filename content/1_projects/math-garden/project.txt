@@ -40,9 +40,6 @@ Team:
 
 Projecturl: https://www.prowise.com/en/product/prowise-learn/
 
-----
-
-Featured: false
 
 ----
 

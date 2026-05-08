@@ -49,9 +49,6 @@ Projecturl:
 
 Keyvisual: - file://aYYA0npIaSgAd5vB
 
-----
-
-Featured: true
 
 ----
 

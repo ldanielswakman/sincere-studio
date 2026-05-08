@@ -31,9 +31,6 @@ Sections:
 
 Description: A foundation website highlighting their projects rather than themselves
 
-----
-
-Featured: 0
 
 ----
 

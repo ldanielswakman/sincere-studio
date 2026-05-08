@@ -32,9 +32,6 @@ Team:
 
 Projecturl: https://flexfunding.com
 
-----
-
-Featured: false
 
 ----
 

@@ -32,9 +32,6 @@ Team:
 
 Projecturl: https://diagnose-berlin.de/
 
-----
-
-Featured: false
 
 ----
 

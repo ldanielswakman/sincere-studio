@@ -49,9 +49,6 @@ Featuredimage: feyclinic-home-ipad.jpg
 
 Description: Smooth transitions and a soft palette for a local beauty clinic
 
-----
-
-Featured: 0
 
 ----
 

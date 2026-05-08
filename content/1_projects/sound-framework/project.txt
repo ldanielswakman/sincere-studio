@@ -49,9 +49,6 @@ Sections:
 
 Description: Multi-faceted and ambitious music platform
 
-----
-
-Featured: 0
 
 ----
 

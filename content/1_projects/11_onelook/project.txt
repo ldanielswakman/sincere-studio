@@ -41,9 +41,6 @@ Team:
 
 Projecturl: http://www.onelook.com/thesaurus/beta/
 
-----
-
-Featured: false
 
 ----
 

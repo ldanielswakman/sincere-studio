@@ -67,9 +67,6 @@ Sections:
   col_1: ""
   col_2: '(image: homepage.jpg)'
 
-----
-
-Featured: 0
 
 ----
 

@@ -45,9 +45,6 @@ Team:
 
 Projecturl: https://www.lux-fox.com/
 
-----
-
-Featured: false
 
 ----
 

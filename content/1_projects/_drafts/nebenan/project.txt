@@ -39,9 +39,6 @@ Keyvisual:
 - >
   189_billboard_urban_poster_mockup-copy-1.jpg
 
-----
-
-Featured: true
 
 ----
 

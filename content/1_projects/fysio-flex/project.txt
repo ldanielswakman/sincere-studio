@@ -31,9 +31,6 @@ Sections:
 
 Description: Website for a physical therapy practice
 
-----
-
-Featured: 0
 
 ----
 

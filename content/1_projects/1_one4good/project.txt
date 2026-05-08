@@ -49,9 +49,6 @@ Projecturl: https://www.one4good.com/
 
 Keyvisual: - file://C7I1uT3FNHTnv3P8
 
-----
-
-Featured: true
 
 ----
 

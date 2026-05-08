@@ -57,9 +57,6 @@ Projecturl:
 
 Featuredimage: side-by-side-zoom.jpg
 
-----
-
-Featured: 0
 
 ----
 

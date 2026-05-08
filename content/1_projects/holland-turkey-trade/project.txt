@@ -47,9 +47,6 @@ Sections:
   col_2: ""
   bg_image: design-system.jpg
 
-----
-
-Featured: 0
 
 ----
 

@@ -64,9 +64,6 @@ Sections:
 
 Description: All-blue identity for a freelance coach
 
-----
-
-Featured: 0
 
 ----
 
