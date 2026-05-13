@@ -6,7 +6,7 @@ Keyvisual: - file://mMzIiybKKnLy6Jsr
 
 ----
 
-Builder: [{"content":{"image":["file://ivxhyb2xhy8axe74"]},"id":"4f9fca01-990e-47a5-9038-f8286d0c61b3","isHidden":false,"type":"image"}]
+Builder: [{"content":{"text":"","full":"false"},"id":"57e7296b-17ce-401f-839d-0b879396d2f4","isHidden":false,"type":"text"},{"content":{"image":["file://ivxhyb2xhy8axe74"]},"id":"4f9fca01-990e-47a5-9038-f8286d0c61b3","isHidden":false,"type":"image"}]
 
 ----
 
