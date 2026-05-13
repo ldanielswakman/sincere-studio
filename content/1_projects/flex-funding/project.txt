@@ -6,7 +6,7 @@ Keyvisual: - file://mMzIiybKKnLy6Jsr
 
 ----
 
-Builder: 
+Builder: [{"content":{"image":["file://ivxhyb2xhy8axe74"]},"id":"4f9fca01-990e-47a5-9038-f8286d0c61b3","isHidden":false,"type":"image"}]
 
 ----
 
@@ -31,7 +31,6 @@ Team:
 ----
 
 Projecturl: https://flexfunding.com
-
 
 ----
 
