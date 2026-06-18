@@ -6,7 +6,7 @@ Text:
 
 (new-section: bg-white c-grey)
 
-Sincere Studio is a small digital studio based in Berlin. It believes in great visual experiences in digital and analog context wherever the world takes me. Been designing & building things as an independent designer, for clients and startups, for the last (since: 2009) years. My work involves these themes:
+Every project starts with a clear opinion about what it should feel and say — and ends with something real, live, and built. That means working across the full range: visual identity, product UX, design systems, and the front-end code that holds it all together. Not because everything has to be done in one place, but because good design loses something at every handoff. Keeping it close is how the craft stays intact.
 
 (new-section:  u-pv5vh)
 
