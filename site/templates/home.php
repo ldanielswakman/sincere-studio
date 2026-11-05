@@ -60,41 +60,6 @@
 
         <?php snippet('featured', ['recent' => $section->recent()]) ?>
 
-      <?php elseif($section->type() == 'stream_of_words') : ?>
-
-        <div class="row">
-          <div class="col-xs-12">
-
-            <h5 class="u-mb15">
-              <a href="//twitter.com/ldanielswakman" target="_blank" class="a--icon a--twitter u-floatright u-op70">
-                <?php snippet('svg/twitter-icon') ?>
-              </a>
-              <?= $section->title()->html() ?>
-            </h5>
-
-            <div id="twitterfeed"></div>
-
-          </div>
-        </div>
-
-      <?php elseif($section->type() == 'stream_of_images') : ?>
-
-            <div class="row">
-              <div class="col-xs-12">
-
-                <h5 class="u-mb15">
-                  <a href="//dribbble.com/ldanielswakman" target="_blank" class="a--icon-lg a--twitter u-floatright" style="margin-top: -0.25rem;">
-                    <?php snippet('svg/dribbble-icon') ?>
-                  </a>
-                  <?= $section->title()->html() ?>
-                </h5>
-
-                <div class="card-container u-mt1" id="dribbblefeed">
-                </div>
-
-              </div>
-            </div>
-
       <?php endif ?>
 
     </section>

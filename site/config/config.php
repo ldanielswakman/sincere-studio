@@ -56,7 +56,7 @@ c::set('routes', [
 
       $code = 200;
 
-      if (!$form->success()) { 
+      if (!$form->success()) {
 
         $code = 400;
 
@@ -112,7 +112,7 @@ c::set('routes', [
 
         // Return response
         $json = ['status' => ['code' => 200, 'message' => 'OK'], 'response' => $data];
-        
+
       } else {
         $json = ['status' => ['code' => 400, 'message' => 'No URL parameter found']];
       }

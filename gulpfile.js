@@ -27,8 +27,7 @@ function scripts() {
   return gulp.src([
     './assets/js/vendor/jquery.smooth-scroll.min.js',
     './assets/js/vendor/owl.carousel.min.js',
-    './assets/js/vendor/twitterfetcher.min.js',
-    './assets/js/vendor/autosize.min.js',
+'./assets/js/vendor/autosize.min.js',
     './assets/js/components/*.js'
   ])
   .pipe(concat('scripts.js'))
