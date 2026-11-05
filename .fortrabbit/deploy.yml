@@ -1,0 +1,14 @@
+apiVersion: 1.0
+build:
+  buildCommands:
+    - composer install --no-dev --prefer-dist --no-interaction --no-ansi --no-progress
+    - npm install
+    - npm run build
+  postDeployCommands:
+    - rm -rf site/cache/*/pages
+    - bash bin/setup-git.sh
+  cachedDirectories:
+    - node_modules
+    - vendor
+    - .pnpm-store
+    - site/accounts
