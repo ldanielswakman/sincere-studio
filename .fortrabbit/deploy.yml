@@ -7,9 +7,12 @@ build:
   postDeployCommands:
     - rm -rf site/cache/*/pages
     - bash bin/setup-git.sh
-    - printf '%s' "$KIRBY_LICENSE" > site/config/.license
   cachedDirectories:
     - node_modules
     - vendor
     - .pnpm-store
+distribution:
+  excludePatterns:
     - site/accounts
+    - site/sessions
+    - site/config/.license
