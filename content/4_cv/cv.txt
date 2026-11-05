@@ -38,7 +38,7 @@ Work-xp:
   url: ""
   projects: [ ]
 - 
-  period: 2025-current
+  period: 2025-2026
   img:
     - file://FDqptwYdQndMlfbh
   title: 'Lead UX Designer at (link: https://www.here.com/ text:HERE target: blank)'
