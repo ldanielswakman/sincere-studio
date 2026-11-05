@@ -29,6 +29,15 @@ Hero-usps:
 Work-xp:
 
 - 
+  period: 2026-current
+  img:
+    - file://p6ufssxpwdbpo1r6
+  title: 'Staff Product Designer at (link: https://www.parloa.com/ text: Parloa target:blank)'
+  employer: Parloa
+  text: ""
+  url: ""
+  projects: [ ]
+- 
   period: 2025-current
   img:
     - file://FDqptwYdQndMlfbh
@@ -232,6 +241,14 @@ Work-xp:
   employer: ldaniel.eu
   text: 'freelance graphic & web designer, branding & identity, front-end design, visualisations'
   url: http://ldaniel.eu/
+  projects: [ ]
+- 
+  period: ""
+  img: [ ]
+  title: ""
+  employer: ""
+  text: ""
+  url: ""
   projects: [ ]
 
 ----
